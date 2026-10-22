@@ -165,6 +165,38 @@
   #highlights .feature-with-image .large { font-size:clamp(27px,8vw,38px) }
 }
 </style>
+
+<style>
+/* Casting measurements: compact visible essentials and accessible full detail disclosure. */
+.about-visual{min-width:0;align-self:start}
+.specs-panel{margin-top:12px;border:1px solid var(--line);background:var(--soft)}
+.specs-heading{padding:22px 22px 10px}
+.specs-heading .eyebrow{color:var(--muted)}
+.specs-heading h3{font:700 clamp(24px,2.8vw,34px)/1 'Space Grotesk',sans-serif;letter-spacing:-.06em;margin:8px 0 0}
+.specs-heading h3 span{color:#96b900}
+.specs-key-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0;padding:0 22px 18px;column-gap:20px}
+.spec-key{border-bottom:1px solid var(--line);padding:12px 0;min-width:0}
+.spec-key dt{font:700 9px/1.5 'Space Mono',monospace;letter-spacing:.09em;color:var(--muted)}
+.spec-key dd{font:700 clamp(12px,1.25vw,16px)/1.3 'Space Grotesk',sans-serif;letter-spacing:-.025em;margin:6px 0 0;overflow-wrap:anywhere}
+.specs-details{border-top:1px solid var(--line)}
+.specs-details summary{display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none;cursor:pointer;padding:17px 22px;font:700 11px 'Space Mono',monospace;letter-spacing:.03em;transition:background .2s,color .2s}
+.specs-details summary::-webkit-details-marker{display:none}
+.specs-details summary:hover{background:var(--accent);color:#111}
+.specs-details summary:focus-visible{outline:2px solid var(--focus);outline-offset:-3px}
+.specs-expand{font:700 22px/1 'Space Grotesk',sans-serif;transition:transform .25s}
+.specs-details[open] .specs-expand{transform:rotate(45deg)}
+.specs-detail-body{padding:5px 22px 20px;border-top:1px solid var(--line)}
+.specs-category{font:700 11px 'Space Mono',monospace;letter-spacing:.07em;margin:21px 0 8px}
+.specs-note{color:var(--muted);font:12px/1.5 'DM Sans',sans-serif;margin:0 0 10px}
+.specs-data{margin:0}
+.spec-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.spec-row dt{font:12px/1.5 'DM Sans',sans-serif;color:var(--muted)}
+.spec-row dd{font:700 12px/1.5 'Space Grotesk',sans-serif;text-align:right;margin:0;white-space:nowrap}
+@media(max-width:900px){.spec-key dd{font-size:14px}.specs-heading{padding:18px 16px 9px}.specs-key-list{padding:0 16px 16px;column-gap:14px}.specs-details summary{padding:16px}.specs-detail-body{padding:5px 16px 20px}}
+@media(max-width:600px){.spec-key dd{font-size:15px}.specs-heading h3{font-size:28px}}
+@media(prefers-reduced-motion:reduce){.specs-expand,.specs-details summary{transition:none}}
+</style>
+
 </head>
 <body>
 <header class="nav"><div class="wrap nav-inner">
@@ -222,7 +254,7 @@
 <div class="logos-window" aria-label="Selected brands and productions, first 17 scrolling left"><div class="logos-track logos-track--left" id="logosTrackTop"></div></div>
 <div class="logos-window" aria-label="Selected brands and productions, next 17 scrolling right"><div class="logos-track logos-track--right" id="logosTrackBottom"></div></div></section>
 <section class="section wrap" id="skills"><div class="section-head"><div><span class="eyebrow">04 / PHYSICAL CAPABILITIES</span><h2>MOVEMENT<br>IS THE MEDIUM.</h2></div><p>A hybrid skill set developed through years of movement, performance and physical storytelling.</p></div><div class="roles-grid" id="skillGrid"></div></section>
-<section class="section rule" id="reels"><div class="wrap"><div class="section-head"><div><span class="eyebrow">05 / ACTION IN MOTION</span><h2>SEE IT<br>IN ACTION.</h2></div><p>Press play to watch, or expand the video to fullscreen.</p></div>
+<section class="section rule" id="reels"><div class="wrap"><div class="section-head"><div><span class="eyebrow">05 / ACTION IN MOTION</span><h2>SEE IT<br>IN ACTION.</h2></div><p>Press play to watch, and expand the video to fullscreen.</p></div>
 <div class="reel-frame">
   <div class="reel-embed">
     <iframe src="https://www.youtube-nocookie.com/embed/_WfU2QeWXsQ?controls=1&amp;fs=1&amp;playsinline=1&amp;rel=0" title="Bogdan Pascal — Movement and stunt showreel" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -230,17 +262,70 @@
 </div>
 <div class="reel-meta"><p>MOVEMENT / STUNTS / PERFORMANCE</p><a href="https://www.youtube.com/watch?v=_WfU2QeWXsQ" target="_blank" rel="noopener noreferrer" class="action">WATCH ON YOUTUBE ↗</a></div>
 </div></section>
-<section class="section rule" id="about"><div class="wrap"><div class="section-head"><div><span class="eyebrow">06 / BEHIND THE MOVEMENT</span><h2>ABOUT<br>BOGDAN.</h2></div><p>Parkour athlete, professional performer and movement artist.</p></div>
+<section class="section rule" id="about"><div class="wrap"><div class="section-head"><div><span class="eyebrow">06 / BEHIND THE MOVEMENT</span><h2>ABOUT<br>BOGDAN.</h2></div></div>
 <div class="about-grid">
+<div class="about-visual">
 <figure class="about-portrait">
   <img src="assets/profile.jpg" alt="Portrait of Bogdan Pascal in an orange sweatshirt" loading="lazy" decoding="async">
   <figcaption class="eyebrow">BOGDAN PASCAL / PORTRAIT</figcaption>
 </figure>
+<section class="specs-panel" aria-labelledby="specs-title">
+ <div class="specs-heading"><span class="eyebrow">CASTING / WARDROBE PROFILE</span><h3 id="specs-title">PHYSICAL SPECS<span>.</span></h3></div>
+ <dl class="specs-key-list">
+ <div class="spec-key"><dt>HEIGHT</dt><dd>5′4″ (163 cm)</dd></div>
+<div class="spec-key"><dt>HAIR</dt><dd>Light Brown</dd></div>
+<div class="spec-key"><dt>EYES</dt><dd>Green</dd></div>
+<div class="spec-key"><dt>SHOES</dt><dd>EU 39 / UK 6</dd></div>
+<div class="spec-key"><dt>CHEST</dt><dd>38″ (96.5 cm)</dd></div>
+<div class="spec-key"><dt>WAIST</dt><dd>28″ (71.1 cm)</dd></div>
+ </dl>
+ <details class="specs-details">
+   <summary><span>VIEW ALL MEASUREMENTS</span><span class="specs-expand" aria-hidden="true">+</span></summary>
+   <div class="specs-detail-body">
+     <p class="specs-category">WARDROBE MEASUREMENTS</p>
+     <p class="specs-note">Imperial measurements with centimetre equivalents.</p>
+     <dl class="specs-data">
+     <div class="spec-row"><dt>Collar</dt><dd>14½″ (36.8 cm)</dd></div>
+<div class="spec-row"><dt>Seat</dt><dd>36″ (91.4 cm)</dd></div>
+<div class="spec-row"><dt>Nape to waist (back)</dt><dd>17″ (43.2 cm)</dd></div>
+<div class="spec-row"><dt>Nape to jacket length (back)</dt><dd>26″ (66 cm)</dd></div>
+<div class="spec-row"><dt>Nape to knee (back)</dt><dd>38″ (96.5 cm)</dd></div>
+<div class="spec-row"><dt>Nape to ground (back)</dt><dd>56″ (142.2 cm)</dd></div>
+<div class="spec-row"><dt>½ across back to elbow</dt><dd>19½″ (49.5 cm)</dd></div>
+<div class="spec-row"><dt>½ across back to wrist</dt><dd>30¼″ (76.8 cm)</dd></div>
+<div class="spec-row"><dt>Arm length</dt><dd>21½″ (54.6 cm)</dd></div>
+<div class="spec-row"><dt>Outside leg to knee</dt><dd>21″ (53.3 cm)</dd></div>
+<div class="spec-row"><dt>Outside leg to ground</dt><dd>39″ (99.1 cm)</dd></div>
+<div class="spec-row"><dt>Inside leg to knee</dt><dd>12″ (30.5 cm)</dd></div>
+<div class="spec-row"><dt>Inside leg to ground</dt><dd>30½″ (77.5 cm)</dd></div>
+<div class="spec-row"><dt>Head circumference</dt><dd>22″ (55.9 cm)</dd></div>
+<div class="spec-row"><dt>Across back</dt><dd>15¼″ (38.7 cm)</dd></div>
+<div class="spec-row"><dt>Across chest</dt><dd>14½″ (36.8 cm)</dd></div>
+<div class="spec-row"><dt>Shoulder</dt><dd>6″ (15.2 cm)</dd></div>
+<div class="spec-row"><dt>Lower neck</dt><dd>15½″ (39.4 cm)</dd></div>
+<div class="spec-row"><dt>Around thigh</dt><dd>22″ (55.9 cm)</dd></div>
+<div class="spec-row"><dt>Around knee</dt><dd>14″ (35.6 cm)</dd></div>
+<div class="spec-row"><dt>Below knee</dt><dd>12½″ (31.8 cm)</dd></div>
+<div class="spec-row"><dt>Around calf</dt><dd>13¾″ (34.9 cm)</dd></div>
+<div class="spec-row"><dt>Around ankle</dt><dd>8¾″ (22.2 cm)</dd></div>
+     </dl>
+     <p class="specs-category">ADDITIONAL BODY MEASUREMENTS</p>
+     <p class="specs-note">Recorded 01/05/2023; overlapping measurements are not repeated.</p>
+     <dl class="specs-data">
+     <div class="spec-row"><dt>Above knee</dt><dd>37 cm</dd></div>
+<div class="spec-row"><dt>Forearm</dt><dd>26 cm</dd></div>
+<div class="spec-row"><dt>Bicep</dt><dd>30 cm</dd></div>
+<div class="spec-row"><dt>Shoulders / back</dt><dd>114 cm</dd></div>
+     </dl>
+   </div>
+ </details>
+</section>
+</div>
 <div class="about-copy">
 <p class="about-lead">I started parkour at 11. What began as a passion for movement became a career across stages, streets and screens worldwide.</p><p>My background spans parkour and freerunning, gymnastics, trampoline, tricking, dance, climbing, high falls, acting and martial arts. This combination lets me develop movement that is physical, expressive and built for the camera or live audience.</p>
 <p>My film credits include <strong>Wicked</strong>, where I performed alongside <strong>Ariana Grande and Cynthia Erivo</strong> as part of a specialist parkour team, earning a <strong>2025 SAG Awards nomination for my stunt work</strong>; <strong>Cinderella</strong>, performing alongside <strong>Camila Cabello</strong>; and Netflix's <strong>Jingle Jangle</strong>, performing alongside <strong>Forest Whitaker and Keegan-Michael Key</strong>. Beyond film, my work spans commercial campaigns, music videos, documentaries, live performances and international events.</p>
 <p>My career has also taken me to the stages of <strong>Britain's Got Talent, Romania's Got Talent, Ninja Warrior and Got to Dance</strong>. Highlights include performing alongside <strong>Chris Hemsworth</strong> in a Dubai Expo commercial and <strong>Hugh Jackman</strong> during <em>The Greatest Showman</em> performance at the BRIT Awards, as well as appearing at <strong>Milan Fashion Week</strong> for Philipp Plein. My commercial work also includes collaborations with globally recognised brands such as <strong>Nike, Nikon, Vodafone and Beefeater Gin</strong>.</p><div class="social-row"><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@thebogdanpascal" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb ↗</a></div></div></div></div></section>
-<section class="section" id="contact"><div class="wrap"><div class="contact-block"><div><span class="eyebrow">07 / INQUIRIES & BOOKINGS</span><h2>LET'S MAKE<br>IT MOVE.</h2><p>Film, commercials, TV, live events and brand collaborations.<br>Based in Romania. Available for international productions.</p></div><a class="cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20%26%20Stunt%20Booking%20Enquiry">HELLO@BOGDANPASCAL.COM ↗</a></div></div></section>
+<section class="section" id="contact"><div class="wrap"><div class="contact-block"><div><span class="eyebrow">07 / INQUIRIES & BOOKINGS</span><h2>LET'S MAKE<br>IT MOVE.</h2><p>Film, commercials, TV, live events and brand collaborations.<br>Based in the UK. Available for international productions.</p></div><a class="cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20%26%20Stunt%20Booking%20Enquiry">HELLO@BOGDANPASCAL.COM ↗</a></div></div></section>
 </main>
 <footer class="footer"><div class="wrap footer-inner"><div class="footer-brand"><img class="footer-logo logo-light" src="assets/logo-light.svg" alt="Bogdan Pascal"><img class="footer-logo logo-dark" src="assets/logo-dark.svg" alt="" aria-hidden="true"><span>© <span id="year"></span> / PARKOUR & STUNTS</span></div><div class="footer-links"><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb</a><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a><a href="https://www.facebook.com/thebogdanpascal" target="_blank" rel="noopener noreferrer">FACEBOOK</a><a href="https://www.tiktok.com/@thebogdanpascal" target="_blank" rel="noopener noreferrer">TIKTOK</a><a href="#home">BACK TO TOP ↑</a></div></div></footer>
 <script>
