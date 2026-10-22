@@ -35,6 +35,28 @@
 @media(max-width:600px){.brand{width:140px}.footer-logo{width:155px}.footer-brand{gap:12px}.hero-display::before{right:13%;height:210px;width:140px}}
 </style>
 <link rel="icon" type="image/svg+xml" href="assets/symbol-light.svg">
+
+<style>
+/* Editorial photography using the original user-supplied photographs. */
+.hero-photo{position:relative;margin:58px 0 0;aspect-ratio:2.05;overflow:hidden;border:1px solid var(--line);background:#b7d1ef}
+.hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 49%}
+.photo-caption{position:absolute;bottom:22px;left:22px;background:#111;color:#fff;padding:12px 15px;font:700 11px 'Space Mono',monospace;letter-spacing:.07em}
+.photo-caption span{font-weight:400;opacity:.7}
+.photo-stories{display:grid;grid-template-columns:1.5fr .78fr;gap:14px;margin-top:14px}
+.photo-story{position:relative;margin:0;min-width:0;height:500px;overflow:hidden;background:var(--soft);border:1px solid var(--line)}
+.photo-story img{display:block;width:100%;height:100%;object-fit:cover}
+.photo-story:first-child img{object-position:50% 46%}
+.photo-story:last-child img{object-position:50% 50%}
+.photo-story figcaption{position:absolute;left:0;bottom:0;right:0;display:flex;flex-direction:column;gap:5px;padding:42px 22px 21px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.82))}
+.photo-story figcaption .eyebrow{color:rgba(255,255,255,.77)}
+.photo-story figcaption strong{font:700 clamp(17px,2.2vw,29px)/1 'Space Grotesk',sans-serif;letter-spacing:-.04em}
+.about-portrait{margin:0;position:relative;align-self:start;overflow:hidden;background:#1b171b}
+.about-portrait img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 42%}
+.about-portrait figcaption{position:absolute;bottom:16px;left:16px;color:#fff;background:rgba(0,0,0,.65);padding:9px 11px}
+.about-copy .about-lead{color:var(--fg);font:600 clamp(27px,3vw,41px)/1.18 'Space Grotesk',sans-serif;letter-spacing:-.055em;margin:0 0 28px}
+@media(max-width:900px){.photo-story{height:390px}.photo-stories{grid-template-columns:1.4fr .8fr}}
+@media(max-width:600px){.hero-photo{margin-top:32px;aspect-ratio:1.33}.hero-photo img{object-position:52% center}.photo-caption{bottom:12px;left:12px;padding:9px;font-size:9px}.photo-caption span{display:none}.photo-stories{grid-template-columns:1fr;gap:12px}.photo-story{height:auto;aspect-ratio:3/2}.photo-story:last-child{aspect-ratio:4/5}.photo-story figcaption{padding:50px 15px 15px}.about-copy .about-lead{font-size:28px}}
+</style>
 </head>
 <body>
 <header class="nav"><div class="wrap nav-inner">
@@ -53,7 +75,12 @@
 </div><div class="hero-display" aria-label="Personal identity graphic">
 <div class="display-head eyebrow"><span>THE ART OF MOVEMENT</span><span>01 / BP</span></div>
 <div class="display-body"><b>NO LIMITS.<br>JUST MOVEMENT.</b><small>Parkour meets stunts, acrobatics, creativity and performance.</small></div>
-</div></div></section>
+</div></div>
+<figure class="hero-photo">
+  <img src="assets/hero.jpg" alt="Bogdan Pascal leaping through the open sky during a parkour performance" fetchpriority="high" decoding="async">
+  <figcaption class="photo-caption">IN MOTION <span>／ THE ART OF FREERUNNING</span></figcaption>
+</figure>
+</section>
 <div class="wrap metrics" aria-label="Career at a glance">
 <div class="metric"><strong>20+</strong><span>Years in movement<br>Since age 7</span></div>
 <div class="metric"><strong>20+</strong><span>Countries<br>Across the globe</span></div>
@@ -65,7 +92,18 @@
 <article class="feature feature-acid"><div class="category">FEATURE FILM / 2024</div><div><div class="large">WICKED</div><div class="detail">Parkour, stunts and acting · Universal Pictures</div></div><span class="big-number">01</span></article>
 <article class="feature"><div class="category">LIVE TELEVISION / UK</div><div><div class="large">BRITAIN'S<br>GOT TALENT</div><div class="detail">Semi-finalist · Acrobat and performer</div></div><span class="big-number">02</span></article>
 <article class="feature"><div class="category">LIVE TELEVISION / ROMANIA</div><div><div class="large">ROMANIA'S<br>GOT TALENT</div><div class="detail">Golden Buzzer · 2nd place finalist</div></div><span class="big-number">03</span></article>
-</div></section>
+</div>
+<div class="photo-stories" aria-label="Television performance photography">
+  <figure class="photo-story">
+    <img src="assets/ninja-warrior.jpg" alt="Bogdan Pascal competing on the Ninja Warrior obstacle course" loading="lazy" decoding="async">
+    <figcaption><span class="eyebrow">NINJA WARRIOR ROMANIA</span><strong>FINALIST.</strong></figcaption>
+  </figure>
+  <figure class="photo-story">
+    <img src="assets/romanias-got-talent.jpg" alt="Bogdan Pascal performing with his group for Romania's Got Talent" loading="lazy" decoding="async">
+    <figcaption><span class="eyebrow">ROMANIA'S GOT TALENT</span><strong>GOLDEN BUZZER / 2ND PLACE.</strong></figcaption>
+  </figure>
+</div>
+</section>
 <section class="section rule" id="credits"><div class="wrap"><div class="section-head"><div><span class="eyebrow">02 / PROFESSIONAL EXPERIENCE</span><h2>SELECTED<br>CREDITS.</h2></div><p>Film, television, commercials, live performances and international events. Search or filter the archive.</p></div>
 <div class="credit-controls" id="filters"><button class="filter" data-filter="all" aria-pressed="true">ALL</button><button class="filter" data-filter="film" aria-pressed="false">FILM</button><button class="filter" data-filter="tv" aria-pressed="false">TV</button><button class="filter" data-filter="commercial" aria-pressed="false">COMMERCIALS</button><button class="filter" data-filter="live" aria-pressed="false">LIVE / EVENTS</button><button class="filter" data-filter="music" aria-pressed="false">MUSIC</button><input class="search" id="creditSearch" aria-label="Search credits" placeholder="SEARCH CREDITS..."></div>
 <div class="credits-list" id="creditsList"></div><div id="creditEmpty" class="empty">No credits match your search.</div>
@@ -78,7 +116,13 @@
 <div class="reel-frame"><span class="eyebrow muted">MOVEMENT / ACTION / PERFORMANCE</span><b>WATCH THE<br>MOVEMENT.</b><p>Your showreel will live here once you provide its file or direct video link. No fabricated footage or placeholder stock clips.</p><a href="https://www.youtube.com/pkbannutz" target="_blank" rel="noopener noreferrer" class="action primary">VISIT YOUTUBE ↗</a></div>
 </div></section>
 <section class="section rule" id="about"><div class="wrap"><div class="section-head"><div><span class="eyebrow">06 / BEHIND THE MOVEMENT</span><h2>ABOUT<br>BOGDAN.</h2></div><p>Parkour athlete, professional performer and movement artist.</p></div>
-<div class="about-grid"><p class="about-lead">I started parkour at 11. What began as a passion for movement became a career across stages, streets and screens worldwide.</p><div class="about-copy"><p>My background spans parkour and freerunning, gymnastics, trampoline, tricking, dance, climbing, high falls, acting and martial arts. This combination lets me develop movement that is physical, expressive and built for the camera or live audience.</p><p>From films including Wicked, Cinderella and Jingle Jangle to commercial campaigns, music videos, live performances and international events, I bring an adaptable movement language to every production.</p><p>My portfolio also documents appearances in Britain’s Got Talent, Romania’s Got Talent, Ninja Warrior Romania and Got to Dance, alongside collaborations with global brands and teams including 3RUN.</p><div class="social-row"><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@thebogdanpascal" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb ↗</a></div></div></div></div></section>
+<div class="about-grid">
+<figure class="about-portrait">
+  <img src="assets/profile.jpg" alt="Portrait of Bogdan Pascal in an orange sweatshirt" loading="lazy" decoding="async">
+  <figcaption class="eyebrow">BOGDAN PASCAL / PORTRAIT</figcaption>
+</figure>
+<div class="about-copy">
+<p class="about-lead">I started parkour at 7. What began as a passion for movement became a career across stages, streets and screens worldwide.</p><p>My background spans parkour and freerunning, gymnastics, trampoline, tricking, dance, climbing, high falls, acting and martial arts. This combination lets me develop movement that is physical, expressive and built for the camera or live audience.</p><p>From films including Wicked, Cinderella and Jingle Jangle to commercial campaigns, music videos, live performances and international events, I bring an adaptable movement language to every production.</p><p>My portfolio also documents appearances in Britain’s Got Talent, Romania’s Got Talent, Ninja Warrior Romania and Got to Dance, alongside collaborations with global brands and teams including 3RUN.</p><div class="social-row"><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@thebogdanpascal" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb ↗</a></div></div></div></div></section>
 <section class="section" id="contact"><div class="wrap"><div class="contact-block"><div><span class="eyebrow">07 / INQUIRIES & BOOKINGS</span><h2>LET'S MAKE<br>IT MOVE.</h2><p>Film, commercials, TV, live events and brand collaborations.<br>Based in Romania. Available for international productions.</p></div><a class="cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20%26%20Stunt%20Booking%20Enquiry">HELLO@BOGDANPASCAL.COM ↗</a></div></div></section>
 </main>
 <footer class="footer"><div class="wrap footer-inner"><div class="footer-brand"><img class="footer-logo logo-light" src="assets/logo-light.svg" alt="Bogdan Pascal"><img class="footer-logo logo-dark" src="assets/logo-dark.svg" alt="" aria-hidden="true"><span>© <span id="year"></span> / PARKOUR & STUNTS</span></div><div class="footer-links"><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb</a><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a><a href="https://www.facebook.com/thebogdanpascal" target="_blank" rel="noopener noreferrer">FACEBOOK</a><a href="https://www.tiktok.com/@thebogdanpascal" target="_blank" rel="noopener noreferrer">TIKTOK</a><a href="#home">BACK TO TOP ↑</a></div></div></footer>
