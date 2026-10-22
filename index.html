@@ -50,60 +50,109 @@
 @media(max-width:600px){.hero-photo{margin-top:32px;aspect-ratio:1.33}.hero-photo img{object-position:52% center}.photo-caption{bottom:12px;left:12px;padding:9px;font-size:9px}.photo-caption span{display:none}.about-copy .about-lead{font-size:28px}}
 </style>
 <style>
-/* Featured achievements share one typographic design but respond to photo orientation:
-   portrait photographs are tall, landscape action photographs are wide. */
-#highlights .featured{
+/* Editorial highlight grid, preserving full uncropped portrait imagery. */
+#highlights .featured {
   grid-template-columns:repeat(3,minmax(0,1fr));
   grid-template-rows:300px 385px;
   align-items:stretch;
 }
-#highlights .feature{min-width:0;min-height:0}
-#highlights .feature-portrait{grid-column:3;grid-row:1 / span 2}
-#highlights .feature-landscape{grid-column:1 / span 2;grid-row:2}
-#highlights .feature-with-image{isolation:isolate;background:var(--soft)}
-#highlights .feature-with-image .feature-image{
+#highlights .feature { min-width:0;min-height:0 }
+#highlights .feature-portrait { grid-column:3;grid-row:1 / span 2 }
+#highlights .feature-landscape { grid-column:1 / span 2;grid-row:2 }
+#highlights .feature-with-image { isolation:isolate;background:var(--soft) }
+#highlights .feature-with-image .feature-image {
   position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
 }
-#highlights .feature-portrait .feature-image{object-position:center 46%}
-#highlights .feature-landscape .feature-image{object-position:center 43%}
-#highlights .feature-with-image::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none}
-#highlights .feature-portrait::after{
-  background:linear-gradient(180deg,var(--soft) 0%,transparent 31%,transparent 53%,rgba(0,0,0,.88) 100%);
+#highlights .feature-landscape .feature-image { object-position:center 43% }
+#highlights .feature-with-image::after {
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
 }
-#highlights .feature-landscape::after{
+#highlights .feature-landscape::after {
   background:linear-gradient(180deg,rgba(0,0,0,.48) 0%,transparent 30%,rgba(0,0,0,.82) 100%);
 }
-#highlights .feature-with-image .feature-bottom{position:relative;z-index:1}
-#highlights .feature-with-image .large{font-size:clamp(28px,3vw,40px);color:#fff}
-#highlights .feature-with-image .detail{color:rgba(255,255,255,.85)}
-#highlights .feature-portrait .category{color:var(--fg)}
-#highlights .feature-portrait .big-number{color:#111;opacity:.10}
-#highlights .feature-landscape .category{color:#fff}
-#highlights .feature-landscape .big-number{color:#fff;opacity:.18}
-@media(max-width:1000px){
-  #highlights .featured{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:300px 380px 350px}
-  #highlights .feature-portrait{grid-column:1 / -1;grid-row:2}
-  #highlights .feature-landscape{grid-column:1 / -1;grid-row:3}
-  #highlights .feature-portrait .feature-image{left:auto;right:0;width:47%;object-position:center center}
-  #highlights .feature-portrait::after{background:linear-gradient(90deg,var(--soft) 0%,var(--soft) 44%,transparent 66%)}
-  #highlights .feature-portrait .feature-bottom{max-width:52%}
-  #highlights .feature-portrait .large{color:var(--fg)}
-  #highlights .feature-portrait .detail{color:var(--muted)}
-  #highlights .feature-portrait .big-number{color:var(--fg);opacity:.06}
+#highlights .feature-with-image .feature-bottom { position:relative;z-index:1 }
+#highlights .feature-with-image .large { font-size:clamp(28px,3vw,40px);color:#fff }
+#highlights .feature-with-image .detail { color:rgba(255,255,255,.85) }
+#highlights .feature-landscape .category { color:#fff }
+#highlights .feature-landscape .big-number { color:#fff;opacity:.18 }
+
+/* Romania's Got Talent: original aspect ratio, no clipping and no text over faces. */
+#highlights .feature-portrait {
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  grid-template-rows:auto minmax(0,1fr) auto;
+  gap:12px;
+  align-items:stretch;
+  background:var(--soft);
 }
-@media(max-width:600px){
-  #highlights .featured{grid-template-columns:minmax(0,1fr);grid-template-rows:auto}
-  #highlights .feature{min-height:270px}
-  #highlights .feature-portrait{grid-column:1;grid-row:auto;min-height:525px}
-  #highlights .feature-landscape{grid-column:1;grid-row:auto;min-height:290px}
-  #highlights .feature-portrait .feature-image{left:0;right:0;width:100%;height:100%;object-position:center 45%}
-  #highlights .feature-portrait::after{background:linear-gradient(180deg,var(--soft) 0%,transparent 30%,transparent 55%,rgba(0,0,0,.9) 100%)}
-  #highlights .feature-portrait .feature-bottom{max-width:none}
-  #highlights .feature-portrait .large{color:#fff}
-  #highlights .feature-portrait .detail{color:rgba(255,255,255,.87)}
-  #highlights .feature-portrait .big-number{color:#111;opacity:.10}
-  #highlights .feature-landscape .feature-image{object-position:center 35%}
-  #highlights .feature-with-image .large{font-size:clamp(27px,8vw,38px)}
+#highlights .feature-portrait::after { display:none }
+#highlights .feature-portrait .category {
+  grid-column:1;grid-row:1;position:relative;z-index:1;color:var(--fg);
+}
+#highlights .feature-portrait .feature-image {
+  grid-column:1;grid-row:2;
+  position:static;inset:auto;z-index:0;
+  display:block;width:100%;height:100%;min-height:0;
+  object-fit:contain;object-position:center;
+  background:#fff;
+}
+#highlights .feature-portrait .feature-bottom {
+  grid-column:1;grid-row:3;align-self:end;
+}
+#highlights .feature-portrait .large { color:var(--fg) }
+#highlights .feature-portrait .detail { color:var(--muted) }
+#highlights .feature-portrait .big-number { color:var(--fg);opacity:.055;pointer-events:none }
+
+@media(max-width:1000px) {
+  #highlights .featured {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-template-rows:300px 460px 350px;
+  }
+  #highlights .feature-portrait {
+    grid-column:1 / -1;grid-row:2;
+    grid-template-columns:minmax(0,0.8fr) minmax(0,1fr);
+    grid-template-rows:auto 1fr;
+    gap:20px;
+  }
+  #highlights .feature-portrait .feature-image {
+    grid-column:1;grid-row:1 / span 2;width:100%;height:100%;object-fit:contain;
+  }
+  #highlights .feature-portrait .category {
+    grid-column:2;grid-row:1;
+  }
+  #highlights .feature-portrait .feature-bottom {
+    grid-column:2;grid-row:2;
+  }
+  #highlights .feature-landscape { grid-column:1 / -1;grid-row:3 }
+}
+@media(max-width:600px) {
+  #highlights .featured {
+    grid-template-columns:minmax(0,1fr);
+    grid-template-rows:auto;
+  }
+  #highlights .feature { min-height:270px }
+  #highlights .feature-portrait {
+    grid-column:1;grid-row:auto;
+    grid-template-columns:minmax(0,1fr);
+    grid-template-rows:auto auto auto;
+    gap:14px;min-height:0;
+  }
+  #highlights .feature-portrait .category {
+    grid-column:1;grid-row:1;
+  }
+  #highlights .feature-portrait .feature-image {
+    grid-column:1;grid-row:2;
+    width:100%;height:auto;aspect-ratio:1440/1911;
+    object-fit:contain;
+  }
+  #highlights .feature-portrait .feature-bottom {
+    grid-column:1;grid-row:3;
+  }
+  #highlights .feature-landscape {
+    grid-column:1;grid-row:auto;min-height:290px;
+  }
+  #highlights .feature-landscape .feature-image { object-position:center 35% }
+  #highlights .feature-with-image .large { font-size:clamp(27px,8vw,38px) }
 }
 </style>
 </head>
