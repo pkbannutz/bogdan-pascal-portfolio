@@ -21,10 +21,24 @@
 <script>
 (function(){try{const p=localStorage.getItem('bp_theme');const dark=p?p==='dark':!matchMedia('(min-width:1024px)').matches;document.documentElement.classList.toggle('dark',dark)}catch(e){document.documentElement.classList.toggle('dark',!matchMedia('(min-width:1024px)').matches)}})();
 </script>
+<style>
+/* Official supplied logo artwork, faithfully vector-traced for small, sharp web assets. */
+.brand{display:flex;align-items:center;width:190px;flex-shrink:0}
+.logo-img{display:block;width:100%;height:auto;object-fit:contain}
+.logo-dark{display:none!important}
+:root.dark .logo-light{display:none!important}
+:root.dark .logo-dark{display:block!important}
+.hero-display::before{content:'';background-image:url("assets/symbol-light.svg");background-repeat:no-repeat;background-size:contain;background-position:center;position:absolute;width:205px;height:330px;top:10%;right:14%;transform:rotate(-13deg);opacity:.16;font:unset;letter-spacing:normal}
+:root.dark .hero-display::before{background-image:url("assets/symbol-dark.svg");opacity:.18}
+.footer-brand{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.footer-logo{width:175px;height:auto}
+@media(max-width:600px){.brand{width:140px}.footer-logo{width:155px}.footer-brand{gap:12px}.hero-display::before{right:13%;height:210px;width:140px}}
+</style>
+<link rel="icon" type="image/svg+xml" href="assets/symbol-light.svg">
 </head>
 <body>
 <header class="nav"><div class="wrap nav-inner">
-<a class="brand" href="#home" aria-label="Bogdan Pascal home"><span class="mark">BP</span> BOGDAN PASCAL</a>
+<a class="brand" href="#home" aria-label="Bogdan Pascal home"><img class="logo-img logo-light" src="assets/logo-light.svg" alt="Bogdan Pascal"><img class="logo-img logo-dark" src="assets/logo-dark.svg" alt="" aria-hidden="true"></a>
 <nav class="navlinks" id="navlinks" aria-label="Main navigation"><a href="#highlights">HIGHLIGHTS</a><a href="#credits">CREDITS</a><a href="#clients">CLIENTS</a><a href="#skills">SKILLS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
 <div class="navend"><button class="action" id="theme" aria-label="Toggle color theme">DARK / LIGHT</button><a class="action primary" href="mailto:hello@bogdanpascal.com?subject=Booking%20enquiry">BOOKING ↗</a><button class="action mobile-menu" id="menu" aria-controls="navlinks" aria-expanded="false">MENU</button></div>
 </div></header>
@@ -67,7 +81,7 @@
 <div class="about-grid"><p class="about-lead">I started parkour at 11. What began as a passion for movement became a career across stages, streets and screens worldwide.</p><div class="about-copy"><p>My background spans parkour and freerunning, gymnastics, trampoline, tricking, dance, climbing, high falls, acting and martial arts. This combination lets me develop movement that is physical, expressive and built for the camera or live audience.</p><p>From films including Wicked, Cinderella and Jingle Jangle to commercial campaigns, music videos, live performances and international events, I bring an adaptable movement language to every production.</p><p>My portfolio also documents appearances in Britain’s Got Talent, Romania’s Got Talent, Ninja Warrior Romania and Got to Dance, alongside collaborations with global brands and teams including 3RUN.</p><div class="social-row"><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@thebogdanpascal" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb ↗</a></div></div></div></div></section>
 <section class="section" id="contact"><div class="wrap"><div class="contact-block"><div><span class="eyebrow">07 / INQUIRIES & BOOKINGS</span><h2>LET'S MAKE<br>IT MOVE.</h2><p>Film, commercials, TV, live events and brand collaborations.<br>Based in Romania. Available for international productions.</p></div><a class="cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20%26%20Stunt%20Booking%20Enquiry">HELLO@BOGDANPASCAL.COM ↗</a></div></div></section>
 </main>
-<footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> BOGDAN PASCAL / PARKOUR & STUNTS</span><div class="footer-links"><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb</a><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a><a href="https://www.facebook.com/thebogdanpascal" target="_blank" rel="noopener noreferrer">FACEBOOK</a><a href="#home">BACK TO TOP ↑</a></div></div></footer>
+<footer class="footer"><div class="wrap footer-inner"><div class="footer-brand"><img class="footer-logo logo-light" src="assets/logo-light.svg" alt="Bogdan Pascal"><img class="footer-logo logo-dark" src="assets/logo-dark.svg" alt="" aria-hidden="true"><span>© <span id="year"></span> / PARKOUR & STUNTS</span></div><div class="footer-links"><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb</a><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a><a href="https://www.facebook.com/thebogdanpascal" target="_blank" rel="noopener noreferrer">FACEBOOK</a><a href="#home">BACK TO TOP ↑</a></div></div></footer>
 <script>
 const credits=[
 ['2024','Wicked','Actor, parkour and stunts','film'],
