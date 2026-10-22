@@ -178,6 +178,9 @@
 .spec-key{border-bottom:1px solid var(--line);padding:12px 0;min-width:0}
 .spec-key dt{font:700 9px/1.5 'Space Mono',monospace;letter-spacing:.09em;color:var(--muted)}
 .spec-key dd{font:700 clamp(12px,1.25vw,16px)/1.3 'Space Grotesk',sans-serif;letter-spacing:-.025em;margin:6px 0 0;overflow-wrap:anywhere}
+.specs-work{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:9px 18px;margin:0 22px 18px;padding:14px 15px;border-left:3px solid var(--accent);background:var(--bg)}
+.specs-work-label{font:700 9px/1.5 'Space Mono',monospace;letter-spacing:.08em;color:var(--muted)}
+.specs-work-value{font:700 12px/1.5 'Space Grotesk',sans-serif;letter-spacing:-.01em}
 .specs-details{border-top:1px solid var(--line)}
 .specs-details summary{display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none;cursor:pointer;padding:17px 22px;font:700 11px 'Space Mono',monospace;letter-spacing:.03em;transition:background .2s,color .2s}
 .specs-details summary::-webkit-details-marker{display:none}
@@ -190,7 +193,7 @@
 .spec-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
 .spec-row dt{font:12px/1.5 'DM Sans',sans-serif;color:var(--muted)}
 .spec-row dd{font:700 12px/1.5 'Space Grotesk',sans-serif;text-align:right;margin:0;white-space:nowrap}
-@media(max-width:900px){.spec-key dd{font-size:14px}.specs-heading{padding:18px 16px 9px}.specs-key-list{padding:0 16px 16px;column-gap:14px}.specs-details summary{padding:16px}.specs-detail-body{padding:5px 16px 20px}}
+@media(max-width:900px){.spec-key dd{font-size:14px}.specs-heading{padding:18px 16px 9px}.specs-key-list{padding:0 16px 16px;column-gap:14px}.specs-work{margin:0 16px 16px;padding:12px}.specs-details summary{padding:16px}.specs-detail-body{padding:5px 16px 20px}}
 @media(max-width:600px){.spec-key dd{font-size:15px}.specs-heading h3{font-size:28px}}
 @media(prefers-reduced-motion:reduce){.specs-expand,.specs-details summary{transition:none}}
 </style>
@@ -273,10 +276,16 @@
  <div class="spec-key"><dt>HAIR</dt><dd>Light Brown</dd></div>
 <div class="spec-key"><dt>EYES</dt><dd>Green</dd></div>
 <div class="spec-key"><dt>HEIGHT</dt><dd>5′4″ (163 cm)</dd></div>
+<div class="spec-key"><dt>WEIGHT</dt><dd>60 kg</dd></div>
+<div class="spec-key"><dt>BODY TYPE</dt><dd>Athletic / Lean</dd></div>
 <div class="spec-key"><dt>CHEST</dt><dd>38″ (96.5 cm)</dd></div>
 <div class="spec-key"><dt>WAIST</dt><dd>28″ (71.1 cm)</dd></div>
 <div class="spec-key"><dt>SHOES</dt><dd>EU 39 / UK 6</dd></div>
  </dl>
+ <div class="specs-work" aria-label="Passport and work eligibility">
+   <span class="specs-work-label">PASSPORT / WORK STATUS</span>
+   <span class="specs-work-value">EU passport holder <span aria-hidden="true">·</span> Right to work in the UK</span>
+ </div>
  <details class="specs-details">
    <summary><span>VIEW ALL MEASUREMENTS</span><span class="specs-expand" aria-hidden="true">+</span></summary>
    <div class="specs-detail-body">
