@@ -42,20 +42,69 @@
 .hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 49%}
 .photo-caption{position:absolute;bottom:22px;left:22px;background:#111;color:#fff;padding:12px 15px;font:700 11px 'Space Mono',monospace;letter-spacing:.07em}
 .photo-caption span{font-weight:400;opacity:.7}
-.photo-stories{display:grid;grid-template-columns:1.5fr .78fr;gap:14px;margin-top:14px}
-.photo-story{position:relative;margin:0;min-width:0;height:500px;overflow:hidden;background:var(--soft);border:1px solid var(--line)}
-.photo-story img{display:block;width:100%;height:100%;object-fit:cover}
-.photo-story:first-child img{object-position:50% 46%}
-.photo-story:last-child img{object-position:50% 50%}
-.photo-story figcaption{position:absolute;left:0;bottom:0;right:0;display:flex;flex-direction:column;gap:5px;padding:42px 22px 21px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.82))}
-.photo-story figcaption .eyebrow{color:rgba(255,255,255,.77)}
-.photo-story figcaption strong{font:700 clamp(17px,2.2vw,29px)/1 'Space Grotesk',sans-serif;letter-spacing:-.04em}
 .about-portrait{margin:0;position:relative;align-self:start;overflow:hidden;background:#1b171b}
 .about-portrait img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 42%}
 .about-portrait figcaption{position:absolute;bottom:16px;left:16px;color:#fff;background:rgba(0,0,0,.65);padding:9px 11px}
 .about-copy .about-lead{color:var(--fg);font:600 clamp(27px,3vw,41px)/1.18 'Space Grotesk',sans-serif;letter-spacing:-.055em;margin:0 0 28px}
-@media(max-width:900px){.photo-story{height:390px}.photo-stories{grid-template-columns:1.4fr .8fr}}
-@media(max-width:600px){.hero-photo{margin-top:32px;aspect-ratio:1.33}.hero-photo img{object-position:52% center}.photo-caption{bottom:12px;left:12px;padding:9px;font-size:9px}.photo-caption span{display:none}.photo-stories{grid-template-columns:1fr;gap:12px}.photo-story{height:auto;aspect-ratio:3/2}.photo-story:last-child{aspect-ratio:4/5}.photo-story figcaption{padding:50px 15px 15px}.about-copy .about-lead{font-size:28px}}
+
+@media(max-width:600px){.hero-photo{margin-top:32px;aspect-ratio:1.33}.hero-photo img{object-position:52% center}.photo-caption{bottom:12px;left:12px;padding:9px;font-size:9px}.photo-caption span{display:none}.about-copy .about-lead{font-size:28px}}
+</style>
+<style>
+/* Featured achievements share one typographic design but respond to photo orientation:
+   portrait photographs are tall, landscape action photographs are wide. */
+#highlights .featured{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-template-rows:300px 385px;
+  align-items:stretch;
+}
+#highlights .feature{min-width:0;min-height:0}
+#highlights .feature-portrait{grid-column:3;grid-row:1 / span 2}
+#highlights .feature-landscape{grid-column:1 / span 2;grid-row:2}
+#highlights .feature-with-image{isolation:isolate;background:var(--soft)}
+#highlights .feature-with-image .feature-image{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+}
+#highlights .feature-portrait .feature-image{object-position:center 46%}
+#highlights .feature-landscape .feature-image{object-position:center 43%}
+#highlights .feature-with-image::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none}
+#highlights .feature-portrait::after{
+  background:linear-gradient(180deg,var(--soft) 0%,transparent 31%,transparent 53%,rgba(0,0,0,.88) 100%);
+}
+#highlights .feature-landscape::after{
+  background:linear-gradient(180deg,rgba(0,0,0,.48) 0%,transparent 30%,rgba(0,0,0,.82) 100%);
+}
+#highlights .feature-with-image .feature-bottom{position:relative;z-index:1}
+#highlights .feature-with-image .large{font-size:clamp(28px,3vw,40px);color:#fff}
+#highlights .feature-with-image .detail{color:rgba(255,255,255,.85)}
+#highlights .feature-portrait .category{color:var(--fg)}
+#highlights .feature-portrait .big-number{color:#111;opacity:.10}
+#highlights .feature-landscape .category{color:#fff}
+#highlights .feature-landscape .big-number{color:#fff;opacity:.18}
+@media(max-width:1000px){
+  #highlights .featured{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:300px 380px 350px}
+  #highlights .feature-portrait{grid-column:1 / -1;grid-row:2}
+  #highlights .feature-landscape{grid-column:1 / -1;grid-row:3}
+  #highlights .feature-portrait .feature-image{left:auto;right:0;width:47%;object-position:center center}
+  #highlights .feature-portrait::after{background:linear-gradient(90deg,var(--soft) 0%,var(--soft) 44%,transparent 66%)}
+  #highlights .feature-portrait .feature-bottom{max-width:52%}
+  #highlights .feature-portrait .large{color:var(--fg)}
+  #highlights .feature-portrait .detail{color:var(--muted)}
+  #highlights .feature-portrait .big-number{color:var(--fg);opacity:.06}
+}
+@media(max-width:600px){
+  #highlights .featured{grid-template-columns:minmax(0,1fr);grid-template-rows:auto}
+  #highlights .feature{min-height:270px}
+  #highlights .feature-portrait{grid-column:1;grid-row:auto;min-height:525px}
+  #highlights .feature-landscape{grid-column:1;grid-row:auto;min-height:290px}
+  #highlights .feature-portrait .feature-image{left:0;right:0;width:100%;height:100%;object-position:center 45%}
+  #highlights .feature-portrait::after{background:linear-gradient(180deg,var(--soft) 0%,transparent 30%,transparent 55%,rgba(0,0,0,.9) 100%)}
+  #highlights .feature-portrait .feature-bottom{max-width:none}
+  #highlights .feature-portrait .large{color:#fff}
+  #highlights .feature-portrait .detail{color:rgba(255,255,255,.87)}
+  #highlights .feature-portrait .big-number{color:#111;opacity:.10}
+  #highlights .feature-landscape .feature-image{object-position:center 35%}
+  #highlights .feature-with-image .large{font-size:clamp(27px,8vw,38px)}
+}
 </style>
 </head>
 <body>
@@ -91,17 +140,18 @@
 <div class="featured">
 <article class="feature feature-acid"><div class="category">FEATURE FILM / 2024</div><div><div class="large">WICKED</div><div class="detail">Parkour, stunts and acting · Universal Pictures</div></div><span class="big-number">01</span></article>
 <article class="feature"><div class="category">LIVE TELEVISION / UK</div><div><div class="large">BRITAIN'S<br>GOT TALENT</div><div class="detail">Semi-finalist · Acrobat and performer</div></div><span class="big-number">02</span></article>
-<article class="feature"><div class="category">LIVE TELEVISION / ROMANIA</div><div><div class="large">ROMANIA'S<br>GOT TALENT</div><div class="detail">Golden Buzzer · 2nd place finalist</div></div><span class="big-number">03</span></article>
-</div>
-<div class="photo-stories" aria-label="Television performance photography">
-  <figure class="photo-story">
-    <img src="assets/ninja-warrior.jpg" alt="Bogdan Pascal competing on the Ninja Warrior obstacle course" loading="lazy" decoding="async">
-    <figcaption><span class="eyebrow">NINJA WARRIOR ROMANIA</span><strong>FINALIST.</strong></figcaption>
-  </figure>
-  <figure class="photo-story">
-    <img src="assets/romanias-got-talent.jpg" alt="Bogdan Pascal performing with his group for Romania's Got Talent" loading="lazy" decoding="async">
-    <figcaption><span class="eyebrow">ROMANIA'S GOT TALENT</span><strong>GOLDEN BUZZER / 2ND PLACE.</strong></figcaption>
-  </figure>
+<article class="feature feature-with-image feature-portrait">
+  <img class="feature-image" src="assets/romanias-got-talent.jpg" alt="Bogdan Pascal and his team at Romania's Got Talent" loading="lazy" decoding="async">
+  <div class="category">LIVE TELEVISION / ROMANIA</div>
+  <div class="feature-bottom"><div class="large">ROMANIA'S<br>GOT TALENT</div><div class="detail">Golden Buzzer · 2nd place finalist</div></div>
+  <span class="big-number" aria-hidden="true">03</span>
+</article>
+<article class="feature feature-with-image feature-landscape">
+  <img class="feature-image" src="assets/ninja-warrior.jpg" alt="Bogdan Pascal competing on the Ninja Warrior Romania obstacle course" loading="lazy" decoding="async">
+  <div class="category">LIVE TELEVISION / ROMANIA</div>
+  <div class="feature-bottom"><div class="large">NINJA WARRIOR</div><div class="detail">2018 Finalist · Parkour and obstacle course performance</div></div>
+  <span class="big-number" aria-hidden="true">04</span>
+</article>
 </div>
 </section>
 <section class="section rule" id="credits"><div class="wrap"><div class="section-head"><div><span class="eyebrow">02 / PROFESSIONAL EXPERIENCE</span><h2>SELECTED<br>CREDITS.</h2></div><p>Film, television, commercials, live performances and international events. Search or filter the archive.</p></div>
