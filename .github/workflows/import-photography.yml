@@ -1,0 +1,44 @@
+name: Import Original Portfolio Photography
+
+on:
+  push:
+    paths:
+      - '.github/workflows/import-photography.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download user's four original photos
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+          curl --fail --silent --show-error --location --retry 3 --max-time 120 'https://pikaso.cdnpk.net/private/production/5810659691/3765215516.jpg?token=exp=1792886400~hmac=b365047cc0b034335046e174bc255f962d8f19ec132708e0ee8d07a611eaf4ff' --output 'assets/hero.jpg'
+          test "$(wc -c < 'assets/hero.jpg')" -gt 20000
+          file 'assets/hero.jpg'
+          curl --fail --silent --show-error --location --retry 3 --max-time 120 'https://pikaso.cdnpk.net/private/production/5810667988/3765219333.jpg?token=exp=1792886400~hmac=f59a4a49a35037f697b7885e7d55510ad55030b116cf47cba3ba4446c49533df' --output 'assets/profile.jpg'
+          test "$(wc -c < 'assets/profile.jpg')" -gt 20000
+          file 'assets/profile.jpg'
+          curl --fail --silent --show-error --location --retry 3 --max-time 120 'https://pikaso.cdnpk.net/private/production/5810668440/3765219538.jpg?token=exp=1792886400~hmac=8a22b8d3def523f7e4439d8416e72eed2cdfaf248feda0d501500f04aa834a4c' --output 'assets/ninja-warrior.jpg'
+          test "$(wc -c < 'assets/ninja-warrior.jpg')" -gt 20000
+          file 'assets/ninja-warrior.jpg'
+          curl --fail --silent --show-error --location --retry 3 --max-time 120 'https://pikaso.cdnpk.net/private/production/5810669159/3765219894.jpg?token=exp=1792886400~hmac=9c8bd544e091dd1259fdc714a828d0fae70db5286707d58e7dadad7ebde1d825' --output 'assets/romanias-got-talent.jpg'
+          test "$(wc -c < 'assets/romanias-got-talent.jpg')" -gt 20000
+          file 'assets/romanias-got-talent.jpg'
+      - name: Commit photographs to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/hero.jpg assets/profile.jpg assets/ninja-warrior.jpg assets/romanias-got-talent.jpg
+          git diff --cached --quiet && exit 0
+          git commit -m "Add four original Bogdan Pascal portfolio photos"
+          git push origin HEAD:main
