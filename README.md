@@ -24,6 +24,12 @@ The career facts and credits are adapted from the user's 10-page Canva portfolio
 
 The hero photograph, portrait, Ninja Warrior image and Romania's Got Talent group image are the original user-supplied photos, permanently stored in `assets/` (not hotlinked to temporary media URLs). The showreel section links to YouTube until a direct, reliable video source can be added. No stock footage has been substituted.
 
+## Editorial rules (must follow for all future site edits)
+
+- **Never use em dashes in website text.** Unicode `U+2014` is forbidden in headings, paragraphs, credits, metadata, image alt text, buttons, placeholder labels, and JavaScript-generated text. Use a period, comma, colon, slash, or parentheses instead. Do not use it as a placeholder for unknown dates; leave unknown years blank. The GitHub Pages workflow checks this automatically.
+- **Put Bogdan's movement work first.** For each film, documentary, music video, commercial, and live performance, highlight his specific, factual parkour, freerunning, stunt, acrobatic, dance, or other movement involvement. Avoid generic descriptions such as "featured story" when the role can be described accurately. In particular, `13 Shades of Romanian` features his personal parkour beginnings and movement journey as one of the 13 primary documentary stories.
+- **Keep awards accurately attributed.** A production's wins or nominations are not necessarily individual awards for Bogdan. Preserve his explicitly credited SAG stunt-ensemble nomination separately.
+
 ## Editing
 
 - Main site and data: `index.html`
