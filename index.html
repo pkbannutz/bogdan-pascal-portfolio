@@ -218,9 +218,6 @@
 .feature-wicked .wicked-sag-mark{font-size:21px;line-height:1}
 .feature-wicked .wicked-sag b{display:block;font:700 11px/1.4 'Space Mono',monospace}
 .feature-wicked .wicked-sag small{display:block;font:600 11px/1.5 'DM Sans',sans-serif;margin-top:3px}
-.feature-wicked .wicked-source-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px}
-.feature-wicked .wicked-source-links a{font:700 9px/1.4 'Space Mono',monospace;text-decoration:underline;text-underline-offset:3px}
-.feature-wicked .wicked-source-links a:hover{opacity:.65}
 .credit-name-group{display:flex;flex-direction:column;align-items:start;gap:7px;min-width:0}
 .credit-award{font:700 10px/1.45 'Space Mono',monospace;color:var(--muted);text-decoration:none}
 .credit-award:hover{color:var(--fg);text-decoration:underline;text-underline-offset:3px}
@@ -284,10 +281,6 @@
       <div class="wicked-award"><strong>2</strong><span>OSCAR<br>WINS</span></div>
     </div>
     <div class="wicked-sag"><span class="wicked-sag-mark" aria-hidden="true">✦</span><div><b>2025 SAG AWARDS</b><small>Stunt Ensemble Nominee · Bogdan Pascal officially listed</small></div></div>
-    <div class="wicked-source-links">
-      <a href="https://www.oscars.org/oscars/ceremonies/2025" target="_blank" rel="noopener noreferrer">OSCARS ↗</a>
-      <a href="https://www.actorawards.org/media/news/releases/screen-actors-guild-awardsr-announce-years-stunt-ensemble-nominees-0" target="_blank" rel="noopener noreferrer">SAG NOMINEES ↗</a>
-    </div>
   </div>
   <span class="big-number" aria-hidden="true">01</span>
 </article>
@@ -433,7 +426,7 @@ const credits=[
 ['','Olivia Cipriani / Limitless','Freerunner and acrobat','music']
 ];
 const creditAwards={
-  'Wicked':{label:'127 AWARD WINS · 326 NOMINATIONS (IMDb) · 10 OSCAR NOMS / 2 WINS · 2025 SAG STUNT ENSEMBLE NOMINEE',url:'https://www.imdb.com/title/tt1262426/awards/'},
+  'Wicked':{label:'127 AWARD WINS · 326 NOMINATIONS (IMDb) · 10 OSCAR NOMS / 2 WINS · 2025 SAG STUNT ENSEMBLE NOMINEE'},
   'Cinderella':{label:'1 AWARD WIN · 6 NOMINATIONS (IMDb)',url:'https://www.imdb.com/title/tt10155932/awards/'},
   'Jingle Jangle: A Christmas Journey':{label:'4 AWARD WINS · 22 NOMINATIONS (IMDb)',url:'https://www.imdb.com/title/tt7736496/awards/'},
   '13 Shades of Romanian':{label:'6 FILM FESTIVAL AWARDS · 9 OFFICIAL SELECTIONS (FILMMAKER-REPORTED)',url:'https://creative-commission.com/users/anda-teglas'},
@@ -446,7 +439,7 @@ const yr=document.createElement('span');yr.className='year';yr.textContent=c[0];
 const nameGroup=document.createElement('div');nameGroup.className='credit-name-group';
 const name=document.createElement('span');name.className='name';name.textContent=c[1];nameGroup.appendChild(name);
 const award=creditAwards[c[1]];
-if(award){const a=document.createElement('a');a.className='credit-award';a.href=award.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=award.label+' ↗';nameGroup.appendChild(a)}
+if(award){const a=document.createElement(award.url?'a':'span');a.className='credit-award';if(award.url){a.href=award.url;a.target='_blank';a.rel='noopener noreferrer'}a.textContent=award.label+(award.url?' ↗':'');nameGroup.appendChild(a)}
 const role=document.createElement('span');role.className='role';role.textContent=c[2];
 el.append(yr,nameGroup,role);
 if(c[1]==='Wicked'){
@@ -455,13 +448,11 @@ if(c[1]==='Wicked'){
  const paragraph=document.createElement('p');
  paragraph.textContent="I was part of the specialist parkour team brought in for the tornado wheel in Wicked's 'Dancing Through Life' sequence. The enormous practical library set featured three independently rotating sections and constantly moving ladders. Its scale, speed and safety challenges demanded exceptional balance, timing and split-second reactions. Director Jon M. Chu explained that the production turned primarily to parkour specialists for this sequence.";
  const references=document.createElement('div');references.className='credit-story-links';
- for(const [label,href] of [
-  ['DIRECTOR INTERVIEW','https://cinemadailyus.com/?p=27463'],
-  ['SCENE BREAKDOWN','https://www.vanityfair.com/video/watch/vf-notes-on-a-scene-wicked'],
-  ['CINEMATOGRAPHER INTERVIEW','https://www.arrirental.com/en/about/overview/news/alice-brooks-asc-on-wicked']
- ]){
-  const a=document.createElement('a');a.href=href;a.target='_blank';a.rel='noopener noreferrer';a.textContent=label+' ↗';references.appendChild(a);
- }
+ const sceneLink=document.createElement('a');
+ sceneLink.href='https://www.vanityfair.com/video/watch/vf-notes-on-a-scene-wicked';
+ sceneLink.target='_blank';sceneLink.rel='noopener noreferrer';
+ sceneLink.textContent='SCENE BREAKDOWN ↗';
+ references.appendChild(sceneLink);
  story.append(heading,paragraph,references);el.appendChild(story);
 }
 return el}));empty.classList.toggle('show',!items.length)}
