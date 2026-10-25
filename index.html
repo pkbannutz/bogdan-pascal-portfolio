@@ -206,6 +206,27 @@
 @media(max-width:900px){.hero-display--portrait{aspect-ratio:16/10;min-height:0;max-height:490px}}
 @media(max-width:600px){.hero-display--portrait{aspect-ratio:1/1;min-height:0;max-height:none}}
 </style>
+<style>
+/* Verified award recognition across selected film and music-video credits. */
+.feature-wicked{min-height:398px;gap:20px}
+.feature-wicked .wicked-feature-content{position:relative;z-index:1}
+.feature-wicked .wicked-awards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:22px 0 0}
+.feature-wicked .wicked-award{display:flex;align-items:center;gap:10px;padding:12px 9px;background:rgba(17,17,17,.09);border:1px solid rgba(17,17,17,.14)}
+.feature-wicked .wicked-award strong{font:700 clamp(33px,3vw,45px)/1 'Space Grotesk',sans-serif;letter-spacing:-.07em}
+.feature-wicked .wicked-award span{font:700 9px/1.35 'Space Mono',monospace;letter-spacing:-.02em}
+.feature-wicked .wicked-sag{display:flex;align-items:start;gap:10px;margin-top:14px;color:#111}
+.feature-wicked .wicked-sag-mark{font-size:21px;line-height:1}
+.feature-wicked .wicked-sag b{display:block;font:700 11px/1.4 'Space Mono',monospace}
+.feature-wicked .wicked-sag small{display:block;font:600 11px/1.5 'DM Sans',sans-serif;margin-top:3px}
+.feature-wicked .wicked-source-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px}
+.feature-wicked .wicked-source-links a{font:700 9px/1.4 'Space Mono',monospace;text-decoration:underline;text-underline-offset:3px}
+.feature-wicked .wicked-source-links a:hover{opacity:.65}
+.credit-name-group{display:flex;flex-direction:column;align-items:start;gap:7px;min-width:0}
+.credit-award{font:700 10px/1.45 'Space Mono',monospace;color:var(--muted);text-decoration:none}
+.credit-award:hover{color:var(--fg);text-decoration:underline;text-underline-offset:3px}
+.about-copy p.about-accolades{font-size:13px;line-height:1.7;padding:15px 0 15px 17px;border-left:3px solid var(--accent);color:var(--muted)}
+@media(max-width:600px){.feature-wicked{min-height:0}.feature-wicked .wicked-awards{gap:6px}.feature-wicked .wicked-award{padding:10px}.feature-wicked .wicked-award strong{font-size:38px}.feature-wicked .wicked-award span{font-size:9px}.credit-award{font-size:9px}}
+</style>
 </head>
 <body>
 <header class="nav"><div class="wrap nav-inner">
@@ -237,7 +258,23 @@
 </div>
 <section class="section wrap" id="highlights"><div class="section-head"><div><span class="eyebrow">01 / SELECTED HIGHLIGHTS</span><h2>THE BIG<br>MOMENTS.</h2></div><p>From Hollywood productions to televised competitions and international performance stages.</p></div>
 <div class="featured">
-<article class="feature feature-acid"><div class="category">FEATURE FILM / 2024</div><div><div class="large">WICKED</div><div class="detail">Parkour, stunts and acting · Universal Pictures</div></div><span class="big-number">01</span></article>
+<article class="feature feature-acid feature-wicked">
+  <div class="category">FEATURE FILM / 2024</div>
+  <div class="wicked-feature-content">
+    <div class="large">WICKED</div>
+    <div class="detail">Parkour, stunts and acting · Universal Pictures</div>
+    <div class="wicked-awards" aria-label="Wicked film Oscar nominations and wins">
+      <div class="wicked-award"><strong>10</strong><span>OSCAR<br>NOMINATIONS</span></div>
+      <div class="wicked-award"><strong>2</strong><span>OSCAR<br>WINS</span></div>
+    </div>
+    <div class="wicked-sag"><span class="wicked-sag-mark" aria-hidden="true">✦</span><div><b>2025 SAG AWARDS</b><small>Stunt Ensemble Nominee · Bogdan Pascal officially listed</small></div></div>
+    <div class="wicked-source-links">
+      <a href="https://www.oscars.org/oscars/ceremonies/2025" target="_blank" rel="noopener noreferrer">OSCARS ↗</a>
+      <a href="https://www.actorawards.org/media/news/releases/screen-actors-guild-awardsr-announce-years-stunt-ensemble-nominees-0" target="_blank" rel="noopener noreferrer">SAG NOMINEES ↗</a>
+    </div>
+  </div>
+  <span class="big-number" aria-hidden="true">01</span>
+</article>
 <article class="feature"><div class="category">LIVE TELEVISION / UK</div><div><div class="large">BRITAIN'S<br>GOT TALENT</div><div class="detail">Semi-finalist · Acrobat and performer</div></div><span class="big-number">02</span></article>
 <article class="feature feature-with-image feature-portrait">
   <img class="feature-image" src="assets/romanias-got-talent.jpg" alt="Bogdan Pascal and his team at Romania's Got Talent" loading="lazy" decoding="async">
@@ -331,7 +368,8 @@
 </div>
 <div class="about-copy">
 <p class="about-lead">I started parkour at 11. What began as a passion for movement became a career across stages, streets and screens worldwide.</p><p>My background spans parkour and freerunning, gymnastics, trampoline, tricking, dance, climbing, high falls, acting and martial arts. This combination lets me develop movement that is physical, expressive and built for the camera or live audience.</p>
-<p>My film credits include <strong>Wicked</strong>, where I performed alongside <strong>Ariana Grande and Cynthia Erivo</strong> as part of a specialist parkour team, earning a <strong>2025 SAG Awards nomination for my stunt work</strong>; <strong>Cinderella</strong>, performing alongside <strong>Camila Cabello</strong>; and Netflix's <strong>Jingle Jangle</strong>, performing alongside <strong>Forest Whitaker and Keegan-Michael Key</strong>. Beyond film, my work spans commercial campaigns, music videos, documentaries, live performances and international events.</p>
+<p>My film credits include <strong>Wicked</strong>, where I performed alongside <strong>Ariana Grande and Cynthia Erivo</strong> as part of a specialist parkour team, and was <strong>officially named among the 2025 SAG Awards stunt-ensemble nominees</strong>; <strong>Cinderella</strong>, performing alongside <strong>Camila Cabello</strong>; and Netflix's <strong>Jingle Jangle</strong>, performing alongside <strong>Forest Whitaker and Keegan-Michael Key</strong>. Beyond film, my work spans commercial campaigns, music videos, documentaries, live performances and international events.</p>
+<p class="about-accolades">Award-recognised productions include <strong>Wicked</strong> (10 Oscar nominations, 2 wins), <strong>Jingle Jangle</strong> (4 award wins), <strong>Cinderella</strong> (1 award win), and <strong>13 Shades of Romanian</strong> (6 reported festival awards). The music video <strong>The 1975 — I'm in Love with You</strong> was also nominated for Best Choreography at the 2023 UK Music Video Awards.</p>
 <p>My career has also taken me to the stages of <strong>Britain's Got Talent, Romania's Got Talent, Ninja Warrior and Got to Dance</strong>. Highlights include performing alongside <strong>Chris Hemsworth</strong> in a Dubai Expo commercial and <strong>Hugh Jackman</strong> during <em>The Greatest Showman</em> performance at the BRIT Awards, as well as appearing at <strong>Milan Fashion Week</strong> for Philipp Plein. My commercial work also includes collaborations with globally recognised brands such as <strong>Nike, Nikon, Vodafone and Beefeater Gin</strong>.</p><div class="social-row"><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@thebogdanpascal" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb ↗</a></div></div></div></div></section>
 <section class="section" id="contact"><div class="wrap"><div class="contact-block"><div><span class="eyebrow">07 / INQUIRIES & BOOKINGS</span><h2>LET'S MAKE<br>IT MOVE.</h2><p>Film, commercials, TV, live events and brand collaborations.<br>Based in the UK. Available for international productions.</p></div><a class="cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20%26%20Stunt%20Booking%20Enquiry">HELLO@BOGDANPASCAL.COM ↗</a></div></div></section>
 </main>
@@ -378,8 +416,23 @@ const credits=[
 ['—','Alla Ray feat. Sneakbo / The Race','Freerunner and acrobat','music'],
 ['—','Olivia Cipriani / Limitless','Freerunner and acrobat','music']
 ];
+const creditAwards={
+  'Wicked':{label:'127 AWARD WINS · 326 NOMINATIONS (IMDb) · 10 OSCAR NOMS / 2 WINS · 2025 SAG STUNT ENSEMBLE NOMINEE',url:'https://www.imdb.com/title/tt1262426/awards/'},
+  'Cinderella':{label:'1 AWARD WIN · 6 NOMINATIONS (IMDb)',url:'https://www.imdb.com/title/tt10155932/awards/'},
+  'Jingle Jangle: A Christmas Journey':{label:'4 AWARD WINS · 22 NOMINATIONS (IMDb)',url:'https://www.imdb.com/title/tt7736496/awards/'},
+  '13 Shades of Romanian':{label:'6 FILM FESTIVAL AWARDS · 9 OFFICIAL SELECTIONS (FILMMAKER-REPORTED)',url:'https://creative-commission.com/users/anda-teglas'},
+  'The 1975 / I’m in Love with You':{label:'2023 UK MUSIC VIDEO AWARDS · BEST CHOREOGRAPHY NOMINEE',url:'https://awards.ukmva.com/years/2023'}
+};
 const list=document.getElementById('creditsList'),empty=document.getElementById('creditEmpty'),search=document.getElementById('creditSearch');let active='all';
-function renderCredits(){const q=search.value.trim().toLowerCase();const items=credits.filter(x=>(active==='all'||x[3]===active)&&x.join(' ').toLowerCase().includes(q));list.replaceChildren(...items.map(c=>{const el=document.createElement('div');el.className='credit';for(const [cls,s] of [['year',c[0]==='—'?'':c[0]],['name',c[1]],['role',c[2]]]){const ch=document.createElement('span');ch.className=cls;ch.textContent=s;el.appendChild(ch)}return el}));empty.classList.toggle('show',!items.length)}
+function renderCredits(){const q=search.value.trim().toLowerCase();const items=credits.filter(x=>(active==='all'||x[3]===active)&&(x.join(' ')+' '+(creditAwards[x[1]]?.label||'')).toLowerCase().includes(q));list.replaceChildren(...items.map(c=>{
+const el=document.createElement('div');el.className='credit';
+const yr=document.createElement('span');yr.className='year';yr.textContent=c[0]==='—'?'':c[0];
+const nameGroup=document.createElement('div');nameGroup.className='credit-name-group';
+const name=document.createElement('span');name.className='name';name.textContent=c[1];nameGroup.appendChild(name);
+const award=creditAwards[c[1]];
+if(award){const a=document.createElement('a');a.className='credit-award';a.href=award.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=award.label+' ↗';nameGroup.appendChild(a)}
+const role=document.createElement('span');role.className='role';role.textContent=c[2];
+el.append(yr,nameGroup,role);return el}));empty.classList.toggle('show',!items.length)}
 document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{active=b.dataset.filter;document.querySelectorAll('.filter').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCredits()}));search.addEventListener('input',renderCredits);renderCredits();
 const logosTop=[
   'YouTube','Nike','Netflix','Amazon Prime Video','Universal Pictures','NBA',
