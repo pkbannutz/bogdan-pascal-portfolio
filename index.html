@@ -198,6 +198,14 @@
 @media(prefers-reduced-motion:reduce){.specs-expand,.specs-details summary{transition:none}}
 </style>
 
+<style>
+/* Hero portrait uses the same original image as the About section, without touching that section. */
+.hero-display--portrait{aspect-ratio:4/5;min-height:390px;background:#17121b}
+.hero-display--portrait img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.hero-display.hero-display--portrait::before,.hero-display.hero-display--portrait::after{display:none}
+@media(max-width:900px){.hero-display--portrait{aspect-ratio:16/10;min-height:0;max-height:490px}}
+@media(max-width:600px){.hero-display--portrait{aspect-ratio:1/1;min-height:0;max-height:none}}
+</style>
 </head>
 <body>
 <header class="nav"><div class="wrap nav-inner">
@@ -213,9 +221,8 @@
 <div class="hero-roles">Parkour / Freerunning / Stunts / Acrobatics / Acting</div>
 <p class="hero-intro">From the streets to the screen. A professional parkour athlete and stunt performer bringing distinctive movement to film, television, global campaigns and live stages.</p>
 <div class="hero-cta"><a href="#credits" class="action primary">EXPLORE CREDITS ↗</a><a href="#contact" class="action">WORK WITH ME</a><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer" class="action">IMDb ↗</a></div>
-</div><div class="hero-display" aria-label="Personal identity graphic">
-<div class="display-head eyebrow"><span>THE ART OF MOVEMENT</span><span>01 / BP</span></div>
-<div class="display-body"><b>NO LIMITS.<br>JUST MOVEMENT.</b><small>Parkour meets stunts, acrobatics, creativity and performance.</small></div>
+</div><div class="hero-display hero-display--portrait">
+<img src="assets/profile.jpg" alt="Portrait of Bogdan Pascal in an orange sweatshirt" decoding="async">
 </div></div>
 <figure class="hero-photo">
   <img src="assets/hero.jpg" alt="Bogdan Pascal leaping through the open sky during a parkour performance" fetchpriority="high" decoding="async">
