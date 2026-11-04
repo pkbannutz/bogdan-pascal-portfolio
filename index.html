@@ -244,14 +244,14 @@
 <style>
 /* Compact parkour coordination panel replaces hero's IN MOTION wide photograph. */
 .coord-banner{margin:50px 0 0;background:var(--soft);color:var(--fg);border:1px solid var(--line);overflow:hidden}
-.coord-banner-header{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);align-items:end;gap:24px;padding:27px 30px 24px;border-bottom:1px solid var(--line)}
+.coord-banner-header{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(28px,4vw,55px);padding:31px 36px;border-bottom:1px solid var(--line)}
 .coord-banner-label{display:block;font:700 10px/1.5 'Space Mono',monospace;letter-spacing:.12em;color:var(--muted)}
-.coord-banner h2{font:700 clamp(34px,4.5vw,57px)/.93 'Space Grotesk',sans-serif;letter-spacing:-.073em;margin:14px 0 0}
+.coord-banner h2{font:700 clamp(34px,4.1vw,52px)/.96 'Space Grotesk',sans-serif;letter-spacing:-.073em;margin:18px 0 0}
 .coord-banner h2 em{font-style:italic;font-weight:500}
 .coord-banner h2>span{color:#86a400}
 :root.dark .coord-banner h2>span{color:var(--accent)}
-.coord-banner-intro p{max-width:450px;font-size:13px;line-height:1.65;color:var(--muted);margin:0 0 15px}
-.coord-banner-cta{display:inline-flex;justify-content:space-between;align-items:center;gap:19px;background:var(--accent);color:#111;padding:12px 15px;font:700 10px/1.5 'Space Mono',monospace;letter-spacing:.015em}
+.coord-banner-intro{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:19px;min-width:0}.coord-banner-intro p{max-width:520px;font-size:13px;line-height:1.66;color:var(--muted);margin:0}
+.coord-banner-cta{display:inline-flex;justify-content:space-between;align-items:center;gap:24px;min-height:44px;background:var(--accent);color:#111;padding:12px 18px;font:700 10px/1.5 'Space Mono',monospace;letter-spacing:.015em}
 .coord-banner-cta:hover{filter:brightness(.93)}
 .coord-banner-services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--bg)}
 .coord-banner-service{padding:19px 21px 18px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);min-width:0;min-height:132px}
@@ -264,15 +264,16 @@
 .coord-banner-bottom b{font:700 9px/1.6 'Space Mono',monospace;letter-spacing:.06em}
 .coord-banner-bottom span{font:700 10px/1.6 'Space Mono',monospace;color:var(--muted);text-align:right}
 @media(max-width:900px){
-.coord-banner-header{grid-template-columns:1fr 1fr;gap:20px}
-.coord-banner h2{font-size:clamp(32px,5.5vw,51px)}
+.coord-banner-header{grid-template-columns:1fr 1fr;gap:24px;padding:28px 26px}
+.coord-banner h2{font-size:clamp(32px,5.2vw,46px)}
 .coord-banner-service{padding:16px;min-height:145px}
 }
 @media(max-width:650px){
 .coord-banner{margin-top:32px}
-.coord-banner-header{grid-template-columns:1fr;gap:15px;padding:22px 20px}
+.coord-banner-header{grid-template-columns:1fr;gap:22px;padding:24px 20px}
 .coord-banner h2{font-size:clamp(35px,8.7vw,49px);margin-top:11px}
-.coord-banner-intro p{max-width:none;margin-bottom:13px}
+.coord-banner-intro{gap:15px;border-top:1px solid var(--line);padding-top:18px}
+.coord-banner-intro p{max-width:none}
 .coord-banner-services{grid-template-columns:repeat(2,minmax(0,1fr))}
 .coord-banner-service{padding:14px 15px;min-height:147px}
 .coord-banner-service:nth-child(3n){border-right:1px solid var(--line)}
