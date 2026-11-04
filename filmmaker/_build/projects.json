@@ -28,7 +28,8 @@
     "b9541c_d668832364ab42c9908cff34875c846f~mv2.jpg",
     "b9541c_e5608777eece48ca8bc526516b90916c~mv2.jpg",
     "b9541c_1e76c03436b54f35b25524e06c8604e1~mv2.jpg"
-   ]
+   ],
+   "home_sub": "Rhodos"
   },
   {
    "slug": "yutaka",
@@ -770,20 +771,22 @@
   }
  ],
  "clients": [
+  "TUI Romania",
   "Yutaka",
-  "Speedo",
+  "Dyla's Atelier",
+  "Therme Group",
   "GeoDomeX",
+  "Speedo",
+  "Fauness",
   "Particle",
   "Ffern",
   "Thorpe Park",
-  "Fauness",
+  "L'Orange",
+  "Miki with Love",
   "RawPot Health",
   "Renais",
   "Sarah Chapman",
-  "Miki with Love",
-  "L'Orange",
-  "TUI Romania",
-  "Dyla's Atelier",
-  "Therme Group"
+  "Mojo Skincare",
+  "Mojo Hair"
  ]
 }
