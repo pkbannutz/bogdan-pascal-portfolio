@@ -1,0 +1,17 @@
+{
+  "_note": "Set base to the public address of the Cloudflare R2 bucket (no trailing slash), for example https://pub-xxxx.r2.dev. While base is empty the pages keep using the current video sources. The file names are the ones in workspaces/bogdan-pascal-websites/video-for-upload/.",
+  "base": "https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev",
+  "files": {
+    "renais": ["renais.mp4"],
+    "miki": ["miki-main.mp4", "miki-teaser.mp4"],
+    "lorange": ["lorange.mp4"],
+    "leo": ["leo.mp4"],
+    "rawpot": ["rawpot-gold-landscape.mp4", "rawpot-short-portrait.mp4", "rawpot-short-ig-01.mp4"],
+    "sarah": ["sarah-best-sellers.mp4", "sarah-product-1.mp4", "sarah-product-2.mp4"],
+    "geodome": ["geodome-main.mp4", "geodome-night-reel.mp4", "geodome-day-reel.mp4"],
+    "ffern": ["ffern.mp4"],
+    "particle": ["particle.mp4"],
+    "push": ["speedo-push-repeat.mp4"],
+    "inanimate-girl": ["fauness.mp4"]
+  }
+}
