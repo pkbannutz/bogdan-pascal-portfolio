@@ -651,6 +651,18 @@ if(c[1]==='Wicked'){
  references.appendChild(sceneLink);
  story.append(heading,paragraph,references);el.appendChild(story);
 }
+const stories=[...el.querySelectorAll('details.credit-story')];
+if(stories.length){
+  el.classList.add('credit-expandable');
+  const syncOpen=()=>el.classList.toggle('expanded',stories.some(story=>story.open));
+  stories.forEach(story=>story.addEventListener('toggle',syncOpen));
+  el.addEventListener('click',event=>{
+    if(event.target.closest('a,summary,button,input,textarea,select'))return;
+    const next=!stories.some(story=>story.open);
+    stories.forEach(story=>{story.open=next});
+    syncOpen();
+  });
+}
 return el}));empty.classList.toggle('show',!items.length)}
 document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{active=b.dataset.filter;document.querySelectorAll('.filter').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCredits()}));search.addEventListener('input',renderCredits);renderCredits();
 const logosTop=[
