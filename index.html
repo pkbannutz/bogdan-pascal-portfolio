@@ -32,10 +32,8 @@ a{color:inherit;text-decoration:none}
 h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;line-height:.84;white-space:nowrap}
 .f h2 em{font-style:italic;color:var(--lime)}
 .bot{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
-.cr{display:flex;flex-wrap:wrap;gap:8px 22px;max-width:62ch}
-.cr span{position:relative;padding-left:14px;white-space:nowrap}
-.cr span:before{content:'';position:absolute;left:0;top:50%;width:6px;height:6px;margin-top:-3px;background:#fff}
-.f .cr span:before{background:var(--lime)}
+.cr{line-height:1.9;font-size:12px;letter-spacing:.18em;min-width:0}
+@media(min-width:1100px){.cr{white-space:nowrap}}
 .en{flex:none;display:inline-flex;align-items:center;gap:14px;padding:14px 22px;border:1.5px solid #fff;font-weight:700;transition:background .3s,color .3s,border-color .3s}
 .en b{font-weight:400;font-size:15px;letter-spacing:0;transition:transform .4s}
 .p:hover .en,.p:focus-visible .en{background:#fff;color:#000}
@@ -45,7 +43,7 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
  .p{padding:56px 22px 20px}
  h2{font-size:17vw}
  .bot{flex-direction:column;align-items:flex-start;gap:14px}
- .cr{gap:6px 16px;font-size:10px}
+ .cr{font-size:10px;letter-spacing:.14em;}
  .en{align-self:stretch;justify-content:space-between}
  .p:hover,.p:focus-visible{flex:1}
 }
@@ -60,7 +58,7 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
     <div class="top mono"><span>01 / Movement</span><span>Available worldwide</span></div>
     <h2>Athlete</h2>
     <div class="bot">
-      <div class="cr mono"><span>Parkour coordinator</span><span>Stunt performer, Wicked</span><span>Movement director</span><span>Britain's Got Talent</span></div>
+      <div class="cr mono">Parkour Coordinator &middot; Stunt Performer &middot; Movement Director</div>
       <span class="en mono">Enter the athlete <b>&rarr;</b></span>
     </div>
   </a>
@@ -69,7 +67,7 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
     <div class="top mono"><span>02 / Cinema</span><span>London based</span></div>
     <h2><em>Filmmaker</em></h2>
     <div class="bot">
-      <div class="cr mono"><span>Director of photography</span><span>Drone operator</span><span>Colourist</span><span>Commercials and music videos</span></div>
+      <div class="cr mono">Director of Photography &middot; Drone Operator &middot; Colourist</div>
       <span class="en mono">Enter the filmmaker <b>&rarr;</b></span>
     </div>
   </a>
