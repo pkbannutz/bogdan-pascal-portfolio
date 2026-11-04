@@ -99,7 +99,7 @@ NAV = """<nav class="nav mono"><a href="/filmmaker/">BP / FILMMAKER</a><div clas
 
 def foot():
     ig = " ".join('<a href="%s" target="_blank" rel="noopener">%s</a>' % (u, E(n)) for n, u in IG)
-    return """<footer class="foot"><h2>Let's<br>shoot.</h2><div class="r mono"><a href="mailto:%s">%s</a>%s<a href="/">Bogdan the athlete</a></div></footer>
+    return """<footer class="foot"><h2>Let's<br>shoot.</h2><div class="r mono"><a href="mailto:%s">%s</a>%s<a href="/athlete/">Bogdan the athlete</a></div></footer>
 <div class="legal mono"><span>&copy; Bogdan Pascal</span><span>Filmmaker, DoP and drone operator</span></div>
 <script src="/filmmaker/js/film.js"></script></body></html>
 """ % (EMAIL, EMAIL, ig)
