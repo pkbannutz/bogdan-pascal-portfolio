@@ -125,7 +125,8 @@ def home():
             continue
         t = "/assets/filmmaker/%s/t.jpg" % p["slug"]
         inv = " inv" if p.get("invert") else ""
-        sub = "<small>%s</small>" % E(p["sub"]) if p.get("sub") else ""
+        hs = p.get("home_sub") or p.get("sub")
+        sub = "<small>%s</small>" % E(hs) if hs else ""
         cards.append(
             '<a class="card" href="/filmmaker/work/%s/" style="--d:%.1fs" aria-label="%s"><span class="num mono">%02d</span>'
             '<div class="base"><img src="%s" alt="%s" loading="%s"></div>'
