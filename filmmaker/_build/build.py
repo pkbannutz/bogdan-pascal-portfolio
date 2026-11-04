@@ -86,7 +86,7 @@ def full_title(p):
 def head(title, desc, image=""):
     og = '<meta property="og:image" content="%s">' % E(image) if image else ""
     return """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>%s</title><meta name="description" content="%s"><meta property="og:title" content="%s"><meta property="og:description" content="%s">%s<meta name="theme-color" content="#0a0a0a">
+<title>%s</title><meta name="robots" content="noindex, nofollow"><meta name="description" content="%s"><meta property="og:title" content="%s"><meta property="og:description" content="%s">%s<meta name="theme-color" content="#0a0a0a">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/filmmaker/css/film.css"></head><body>
