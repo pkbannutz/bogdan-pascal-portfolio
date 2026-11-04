@@ -24,13 +24,15 @@ The career facts and credits are adapted from the user's 10-page Canva portfolio
 
 The hero photograph, portrait, Ninja Warrior image and Romania's Got Talent group image are the original user-supplied photos, permanently stored in `assets/` (not hotlinked to temporary media URLs). The showreel section links to YouTube until a direct, reliable video source can be added. No stock footage has been substituted.
 
-## Parkour coordination flagship section
+## Parkour coordination panel
 
-The main parkour and stunt website contains a substantial, standalone `#coordination` section placed immediately after Selected Highlights. **Treat it as a flagship destination, not a small feature card.** It should remain a major visual and editorial part of the portfolio, focused on unique parkour coordination services, usable production applications, a clear workflow and booking contact. Do not duplicate existing Big Moments, credits, awards, past productions, career metrics or photography inside this section.
+The main parkour and stunt website has a compact `#coordination` panel **inside the home hero, in place of the former wide "IN MOTION / THE ART OF FREERUNNING" photo**. This is deliberately integrated into the existing site's visual rhythm, not a separate large section. It is reachable through both the hero button and the COORDINATION navigation item.
 
-Its point of difference is the combination of professional parkour performance, an international performer network, and filmmaking/camera experience. Explain the actual services available to productions, not a second biography. Keep the distinction clear between past verified *performer* credits and the *parkour coordination service* offered to future productions. Never fabricate previous coordinator job titles or imply that production awards are personal awards.
+Preserve its at-a-glance layout: a short intro and email booking CTA, six concise service summaries in a three-column desktop / two-column mobile grid, and a single process line. Keep it quick to scan and avoid making it taller without a clear reason. Do not rebuild a standalone multi-screen coordinator landing page unless the owner explicitly asks.
 
-Keep all work confined to the root parkour site when editing this section. **Do not modify anything under `filmmaker/` or `assets/filmmaker/`** unless explicitly instructed. Continue to follow the no-em-dash and positive, factual tone rules.
+Avoid repeating the Big Moments, credits, awards, biography, career statistics or portfolio photographs. Focus on the distinctive service: movement and choreography design, sourcing specialist talent through an international network, location planning, coaching, and camera-aware on-set collaboration. Maintain the distinction between verified *performer* credits and coordination services offered for future productions. Do not invent coordinator credits.
+
+Do not modify anything under `filmmaker/` or `assets/filmmaker/` unless explicitly instructed. Keep following the no-em-dash and positive, factual copy rules below.
 
 ## Editorial rules (must follow for all future site edits)
 
