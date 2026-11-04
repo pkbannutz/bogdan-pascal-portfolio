@@ -20,7 +20,8 @@
 html,body{height:100%;background:#050505;color:#fff;font-family:'Space Grotesk',system-ui,sans-serif;overflow:hidden}
 a{color:inherit;text-decoration:none}
 .mono{font-family:'Space Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
-.brand{position:fixed;left:50%;top:16px;transform:translateX(-50%);z-index:50;pointer-events:none;mix-blend-mode:difference;color:#fff;opacity:.8}
+.brand{position:fixed;left:50%;top:14px;transform:translateX(-50%);z-index:50;pointer-events:none}
+.brand img{display:block;height:clamp(22px,2.4vw,30px);width:auto}
 .wrap{display:flex;flex-direction:column;height:100%;height:100dvh}
 .p{position:relative;flex:1;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(48px,7vh,72px) 5vw clamp(18px,3.4vh,34px);transition:flex .8s cubic-bezier(.2,.8,.2,1);border-bottom:1px solid #000}
 .p:last-child{border-bottom:0}
@@ -34,26 +35,22 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
 .bot{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
 .cr{line-height:1.9;font-size:12px;letter-spacing:.18em;min-width:0}
 @media(min-width:1100px){.cr{white-space:nowrap}}
-.en{flex:none;width:clamp(56px,5vw,76px);height:clamp(56px,5vw,76px);border-radius:50%;border:1.5px solid rgba(255,255,255,.85);display:grid;place-items:center;transition:background .35s,border-color .35s,color .35s,transform .5s cubic-bezier(.2,.8,.2,1)}
-.en svg{width:42%;height:42%;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
-.p:hover .en,.p:focus-visible .en{background:#fff;color:#000;transform:scale(1.12)}
-.f:hover .en,.f:focus-visible .en{background:var(--lime);border-color:var(--lime)}
-.p:hover .en svg,.p:focus-visible .en svg{transform:rotate(-45deg)}
-.ww{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:40;pointer-events:none;mix-blend-mode:difference;background:#fff;color:#000;border-radius:999px;padding:7px 14px 7px 11px;display:flex;align-items:center;gap:8px;font:700 9.5px 'Space Mono',ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
+.ww{position:fixed;right:5vw;top:50%;transform:translateY(-50%);z-index:40;pointer-events:none;mix-blend-mode:difference;background:#fff;color:#000;border-radius:999px;padding:7px 14px 7px 11px;display:flex;align-items:center;gap:8px;font:700 9.5px 'Space Mono',ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
 .ww i{width:7px;height:7px;border-radius:50%;background:#000;animation:pulse 1.8s ease-in-out infinite}
 @keyframes pulse{50%{transform:scale(.45);opacity:.5}}
 @media(max-width:720px){
+ .ww{right:22px}
  .p{padding:56px 22px 20px}
  h2{font-size:17vw}
  .bot{gap:14px}
  .cr{font-size:10px;letter-spacing:.14em;}
  .p:hover,.p:focus-visible{flex:1}
 }
-@media(prefers-reduced-motion:reduce){.p,.bg,.en,.en svg{transition:none}.ww i{animation:none}}
+@media(prefers-reduced-motion:reduce){.p,.bg{transition:none}.ww i{animation:none}}
 </style>
 </head>
 <body>
-<div class="brand mono">Bogdan Pascal</div>
+<div class="brand"><img src="/assets/logo-dark.svg" alt="Bogdan Pascal"></div>
 <div class="ww" aria-label="Available worldwide"><i></i>Available worldwide</div>
 <main class="wrap">
   <a class="p a" href="/athlete/" aria-label="Enter the athlete site">
@@ -62,7 +59,6 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
     <h2>Athlete</h2>
     <div class="bot">
       <div class="cr mono">Parkour Coordinator &middot; Stunt Performer &middot; Movement Director</div>
-      <span class="en" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
     </div>
   </a>
   <a class="p f" href="/filmmaker/" aria-label="Enter the filmmaker site">
@@ -71,7 +67,6 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
     <h2><em>Filmmaker</em></h2>
     <div class="bot">
       <div class="cr mono">Director of Photography &middot; Drone Operator &middot; Colourist</div>
-      <span class="en" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
     </div>
   </a>
 </main>
