@@ -26,9 +26,9 @@ The hero photograph, portrait, Ninja Warrior image and Romania's Got Talent grou
 
 ## Parkour coordination flagship section
 
-The main parkour and stunt website contains a substantial, standalone `#coordination` section placed immediately after Selected Highlights. **Treat it as a flagship destination, not a small feature card.** It should remain a major visual and editorial part of the portfolio, with its own identity, case study, specialist services, real project evidence, workflow and booking contact.
+The main parkour and stunt website contains a substantial, standalone `#coordination` section placed immediately after Selected Highlights. **Treat it as a flagship destination, not a small feature card.** It should remain a major visual and editorial part of the portfolio, focused on unique parkour coordination services, usable production applications, a clear workflow and booking contact. Do not duplicate existing Big Moments, credits, awards, past productions, career metrics or photography inside this section.
 
-Its point of difference is Bogdan's combination of 20+ years in movement, specialist physical performance, a global working network, and filmmaking/camera experience. Keep the distinction clear between past verified *performer* credits and the *parkour coordination service* offered to future productions. Never fabricate previous parkour coordinator job titles or imply that a production's awards are solely personal awards.
+Its point of difference is the combination of professional parkour performance, an international performer network, and filmmaking/camera experience. Explain the actual services available to productions, not a second biography. Keep the distinction clear between past verified *performer* credits and the *parkour coordination service* offered to future productions. Never fabricate previous coordinator job titles or imply that production awards are personal awards.
 
 Keep all work confined to the root parkour site when editing this section. **Do not modify anything under `filmmaker/` or `assets/filmmaker/`** unless explicitly instructed. Continue to follow the no-em-dash and positive, factual tone rules.
 
