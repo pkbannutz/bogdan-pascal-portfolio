@@ -39,9 +39,15 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
  .p{padding:56px 22px 20px}
  h2{font-size:17vw}
  .bot{gap:14px}
- .cr{font-size:10px;letter-spacing:.14em;}
+ .cr{font-size:2.2vw;letter-spacing:.06em;white-space:nowrap}
  .p:hover,.p:focus-visible{flex:1}
 }
+@media(hover:none){
+ .bg{animation:kb 14s ease-in-out infinite alternate;filter:brightness(.66)}
+ .p.auto{flex:1.5}
+ .p.auto .bg{filter:brightness(.9)}
+}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12)}}
 @media(prefers-reduced-motion:reduce){.p,.bg{transition:none}}
 </style>
 </head>
@@ -65,5 +71,9 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
     </div>
   </a>
 </main>
+<script>
+if(matchMedia('(hover:none)').matches){var ps=[].slice.call(document.querySelectorAll('.p')),n=0;
+function cyc(){ps.forEach(function(p,i){p.classList.toggle('auto',i===n)});n=(n+1)%ps.length}cyc();setInterval(cyc,3600)}
+</script>
 </body>
 </html>

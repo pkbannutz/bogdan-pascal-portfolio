@@ -23,6 +23,17 @@ if(cards.length&&'IntersectionObserver' in window){
 var touch=window.matchMedia('(hover:none)').matches;
 if(touch){cards.forEach(function(c){c.addEventListener('click',function(e){if(!c.classList.contains('tap')){e.preventDefault();cards.forEach(function(o){o.classList.remove('tap')});c.classList.add('tap')}})})}
 
+/* touch screens: the card nearest the middle of the screen reveals itself, no cursor needed */
+if(touch&&cards.length){
+  var ticking=false,pick=function(){
+    ticking=false;var mid=window.innerHeight/2,best=null,bd=1e9;
+    cards.forEach(function(c){var r=c.getBoundingClientRect();if(r.bottom<0||r.top>window.innerHeight)return;var dd=Math.abs((r.top+r.bottom)/2-mid);if(dd<bd){bd=dd;best=c}});
+    cards.forEach(function(c){c.classList.toggle('auto',c===best)});
+  };
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(pick)}},{passive:true});
+  setInterval(pick,2500);setTimeout(pick,1200);
+}
+
 /* stills lightbox */
 var links=[].slice.call(document.querySelectorAll('[data-lb]'));
 if(links.length){
