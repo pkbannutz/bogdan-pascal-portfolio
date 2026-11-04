@@ -27,7 +27,7 @@ jobs:
 
       - name: Check site text contains no em dashes
         run: |
-          python3 -c 'from pathlib import Path; files = [Path("index.html")] + [p for d in ("assets", "filmmaker") if Path(d).exists() for p in Path(d).rglob("*") if p.suffix.lower() in {".svg", ".html", ".css", ".js"}]; banned = (chr(0x2014), "&mdash;", "&#8212;", "&#x2014;"); violations = [str(p) for p in files if any(t in p.read_text(encoding="utf-8").lower() for t in banned)]; assert not violations, "Website text must not contain em dashes: " + ", ".join(violations)'
+          python3 -c 'from pathlib import Path; files = [Path("index.html")] + [p for d in ("assets", "athlete", "filmmaker") if Path(d).exists() for p in Path(d).rglob("*") if p.suffix.lower() in {".svg", ".html", ".css", ".js"}]; banned = (chr(0x2014), "&mdash;", "&#8212;", "&#x2014;"); violations = [str(p) for p in files if any(t in p.read_text(encoding="utf-8").lower() for t in banned)]; assert not violations, "Website text must not contain em dashes: " + ", ".join(violations)'
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -37,6 +37,7 @@ jobs:
           mkdir -p _site
           cp index.html _site/index.html
           if [ -d assets ]; then cp -R assets _site/assets; fi
+          if [ -d athlete ]; then cp -R athlete _site/athlete; fi
           if [ -d filmmaker ]; then cp -R filmmaker _site/filmmaker; rm -rf _site/filmmaker/_build; fi
           touch _site/.nojekyll
 
