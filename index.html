@@ -35,7 +35,9 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
 .bot{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
 .cr{line-height:1.9;font-size:12px;letter-spacing:.18em;min-width:0}
 @media(min-width:1100px){.cr{white-space:nowrap}}
-.ww{position:fixed;right:5vw;top:50%;transform:translateY(-50%);z-index:40;pointer-events:none;mix-blend-mode:difference;color:#fff;font:400 10px 'Space Mono',ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;opacity:.9}
+.ww{position:fixed;right:5vw;top:50%;transform:translateY(-50%);z-index:40;pointer-events:none;display:grid;font:700 11px 'Space Mono',ui-monospace,monospace;letter-spacing:.22em;text-transform:uppercase;white-space:nowrap}
+.ww span{grid-area:1/1;color:#fff;text-shadow:0 0 14px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.55)}
+.ww .lo{color:var(--lime);clip-path:inset(0 0 100% 0)}
 @media(max-width:720px){
  .ww{right:22px}
  .p{padding:56px 22px 20px}
@@ -49,7 +51,7 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
 </head>
 <body>
 <div class="brand"><img src="/assets/logo-dark.svg" alt="Bogdan Pascal"></div>
-<div class="ww" aria-label="Available worldwide">Available worldwide</div>
+<div class="ww" id="ww" aria-label="Available worldwide"><span class="hi" aria-hidden="true">Available worldwide</span><span class="lo" aria-hidden="true">Available worldwide</span></div>
 <main class="wrap">
   <a class="p a" href="/athlete/" aria-label="Enter the athlete site">
     <div class="bg" style="background-image:url(/assets/hero.jpg)"></div>
@@ -68,5 +70,13 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
     </div>
   </a>
 </main>
+<script>
+(function(){var w=document.getElementById('ww'),hi=w.querySelector('.hi'),lo=w.querySelector('.lo'),top=document.querySelector('.p');
+function upd(){var r=w.getBoundingClientRect(),y=top.getBoundingClientRect().bottom-r.top;y=Math.max(0,Math.min(r.height,y));
+hi.style.clipPath='inset(0 0 '+(r.height-y)+'px 0)';lo.style.clipPath='inset('+y+'px 0 0 0)'}
+var raf;function run(t0){cancelAnimationFrame(raf);var end=performance.now()+1100;(function f(){upd();if(performance.now()<end)raf=requestAnimationFrame(f)})()}
+document.querySelectorAll('.p').forEach(function(p){['mouseenter','mouseleave','focus','blur'].forEach(function(e){p.addEventListener(e,run)})});
+addEventListener('resize',upd);addEventListener('load',upd);upd();})();
+</script>
 </body>
 </html>
