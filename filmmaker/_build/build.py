@@ -141,7 +141,7 @@ def home():
     body = (
         head("Bogdan Pascal | Filmmaker and DoP", "Director of photography and drone operator. Commercials, brand films, music videos and shorts.", "/assets/filmmaker/%s/t.jpg" % first["slug"])
         + NAV
-        + '<header class="hero" id="hero" data-bgs=\'%s\' data-names=\'%s\'><div class="title"><span>Cinema</span><span>in motion.</span></div>'
+        + '<header class="hero" id="hero" data-bgs=\'%s\' data-names=\'%s\'><div class="title"><span>Every frame</span><span>on purpose.</span></div>'
         '<div class="meta mono"><span class="tc" id="tc">00:00:00:00</span><span id="cur">%s</span><a class="btn mono" href="#work">See the work</a></div></header>'
         % (E(bgs, quote=True).replace("&#x27;", "&#39;"), E(names, quote=True).replace("&#x27;", "&#39;"), E(first["title"]))
         + '<div class="marquee mono" aria-label="Clients"><div>%s</div></div>' % strip
