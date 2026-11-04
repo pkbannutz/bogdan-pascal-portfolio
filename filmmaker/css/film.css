@@ -98,3 +98,7 @@ a{color:inherit;text-decoration:none}img{display:block}
 @media(max-width:900px){.grid{grid-template-columns:1fr 1fr}.cols{grid-template-columns:1fr}.credits{text-align:left}.nav{padding:16px 18px}.hero,.ph,.foot,.lab,.media,.pg{padding-left:18px;padding-right:18px}.sg{grid-template-columns:1fr}.next{aspect-ratio:16/9}.marquee div{font-size:24px}}
 @media(max-width:560px){.grid{grid-template-columns:1fr}.hero .meta{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.hs{position:absolute;left:0;right:0;top:calc(50% + var(--fs) * .62);text-align:center;color:#fff;font-size:clamp(11px,1.5vw,22px);letter-spacing:.5em;text-indent:.5em;text-shadow:0 1px 12px rgba(0,0,0,.55);pointer-events:none;opacity:0;transition:opacity .6s}
+.card.in .hs{opacity:1}
+.card:hover .hs,.card:focus-visible .hs,.card.tap .hs{opacity:0;transition:opacity .3s}
