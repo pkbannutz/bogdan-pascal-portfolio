@@ -24,6 +24,14 @@ The career facts and credits are adapted from the user's 10-page Canva portfolio
 
 The hero photograph, portrait, Ninja Warrior image and Romania's Got Talent group image are the original user-supplied photos, permanently stored in `assets/` (not hotlinked to temporary media URLs). The showreel section links to YouTube until a direct, reliable video source can be added. No stock footage has been substituted.
 
+## Parkour coordination flagship section
+
+The main parkour and stunt website contains a substantial, standalone `#coordination` section placed immediately after Selected Highlights. **Treat it as a flagship destination, not a small feature card.** It should remain a major visual and editorial part of the portfolio, with its own identity, case study, specialist services, real project evidence, workflow and booking contact.
+
+Its point of difference is Bogdan's combination of 20+ years in movement, specialist physical performance, a global working network, and filmmaking/camera experience. Keep the distinction clear between past verified *performer* credits and the *parkour coordination service* offered to future productions. Never fabricate previous parkour coordinator job titles or imply that a production's awards are solely personal awards.
+
+Keep all work confined to the root parkour site when editing this section. **Do not modify anything under `filmmaker/` or `assets/filmmaker/`** unless explicitly instructed. Continue to follow the no-em-dash and positive, factual tone rules.
+
 ## Editorial rules (must follow for all future site edits)
 
 - **Never use em dashes in website text.** Unicode `U+2014` is forbidden in headings, paragraphs, credits, metadata, image alt text, buttons, placeholder labels, and JavaScript-generated text. Use a period, comma, colon, slash, or parentheses instead. Do not use it as a placeholder for unknown dates; leave unknown years blank. The GitHub Pages workflow checks this automatically.
