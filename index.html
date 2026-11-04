@@ -240,11 +240,135 @@
 @media(max-width:600px){.credit-story{grid-column:2/-1}.credit-story summary{font-size:9px}.credit-story p{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.credit-story summary::after{transition:none}}
 </style>
+
+<style>
+/* Flagship parkour coordination section. Scoped to .pc; independent of /filmmaker. */
+.pc{background:var(--fg);color:var(--bg);border-top:1px solid var(--line);overflow:hidden;isolation:isolate}
+.pc .eyebrow{opacity:.7}
+.pc a:focus-visible{outline-color:var(--accent)}
+.pc-inner{padding-bottom:105px}
+.pc-top{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid currentColor;padding:32px 0 16px}
+.pc-head{display:grid;grid-template-columns:minmax(0,1fr) 205px;gap:25px;align-items:end;padding:72px 0 85px}
+.pc-overline{font:700 11px/1.5 'Space Mono',monospace;letter-spacing:.12em;opacity:.7}
+.pc-head h2{font:700 clamp(48px,8.5vw,113px)/.88 'Space Grotesk',sans-serif;letter-spacing:-.093em;margin:23px 0 0 -5px}
+.pc-head h2 em,.pc h3 em,.pc-wicked h4 em{font-style:italic;font-weight:500}
+.pc-stop{color:var(--accent)}
+.pc-head-aside{border-top:1px solid currentColor;display:flex;flex-direction:column;gap:17px;padding-bottom:5px}
+.pc-head-aside>span{font-size:52px;line-height:1;color:var(--accent)}
+.pc-head-aside strong{font:700 13px/1.55 'Space Mono',monospace}
+.pc-head-aside small{font:700 10px/1.7 'Space Mono',monospace;opacity:.64}
+.pc-intro{border-top:1px solid currentColor;padding-top:16px;display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(25px,4vw,60px)}
+.pc-intro-photo{margin:0}
+.pc-intro-photo img{display:block;width:100%;height:clamp(360px,42vw,570px);object-fit:cover;object-position:center;filter:grayscale(1) contrast(1.1)}
+.pc-intro-photo figcaption{font:700 9px/1.6 'Space Mono',monospace;letter-spacing:.06em;margin-top:12px}
+.pc-intro-copy{padding:28px 0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.pc-intro-copy h3{font:700 clamp(30px,3.6vw,49px)/1 'Space Grotesk',sans-serif;letter-spacing:-.07em;margin:24px 0}
+.pc-intro-copy h3 em{color:var(--accent)}
+.pc-intro-copy p{font-size:15px;line-height:1.85;opacity:.86;margin:0 0 19px}
+.pc-outline-link{display:flex;gap:30px;justify-content:space-between;align-items:center;border:1px solid currentColor;padding:17px 19px;margin-top:12px;font:700 11px/1.4 'Space Mono',monospace}
+.pc-outline-link:hover{background:var(--accent);border-color:var(--accent);color:#111}
+.pc-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid currentColor;border-bottom:1px solid currentColor;margin-top:60px}
+.pc-metrics>div{padding:33px 22px;min-width:0;border-right:1px solid currentColor}
+.pc-metrics>div:first-child{padding-left:0}.pc-metrics>div:last-child{border-right:0}
+.pc-metrics strong{display:block;font:700 clamp(33px,4vw,53px)/1 'Space Grotesk',sans-serif;letter-spacing:-.08em}
+.pc-metrics strong span{color:var(--accent)}
+.pc-metrics small{display:block;margin-top:12px;font:700 10px/1.55 'Space Mono',monospace;opacity:.73}
+.pc-section-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(190px,330px);align-items:end;column-gap:35px;row-gap:16px;padding:160px 0 36px}
+.pc-section-heading .eyebrow{grid-column:1/-1}
+.pc-section-heading h3{font:700 clamp(40px,6.5vw,82px)/.9 'Space Grotesk',sans-serif;letter-spacing:-.085em;margin:0}
+.pc-section-heading>p{font-size:14px;line-height:1.8;margin:0 0 5px;opacity:.77}
+.pc-wicked{background:var(--accent);color:#111;padding:28px 33px 0}
+.pc-wicked-top{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #1115;padding-bottom:18px;font:700 10px/1.5 'Space Mono',monospace}
+.pc-wicked-grid{display:grid;grid-template-columns:1.18fr .82fr;min-height:520px}
+.pc-wicked-copy{padding:42px 6px 43px 0;position:relative;z-index:1}
+.pc-kicker{font:700 10px/1.5 'Space Mono',monospace}
+.pc-wicked-copy h4{font:700 clamp(37px,5vw,64px)/.94 'Space Grotesk',sans-serif;letter-spacing:-.08em;margin:25px 0}
+.pc-wicked-copy p{font-size:14px;line-height:1.75;margin:0 0 16px;max-width:590px}
+.pc-wicked-copy a{display:inline-block;font:700 11px/1.5 'Space Mono',monospace;border-bottom:2px solid #111;padding:12px 0;margin-top:7px}
+.pc-wicked-copy a:hover{opacity:.65}
+.pc-wheel{position:relative;display:grid;place-items:center;min-width:0;overflow:hidden}
+.pc-ring{position:absolute;aspect-ratio:1;border-radius:50%;border:2px solid #111}
+.pc-ring-one{width:94%;box-shadow:inset 0 0 0 14px #1112,inset 0 0 0 42px #1111}
+.pc-ring-two{width:68%;border:12px dashed #1117;animation:pc-turn 32s linear infinite}
+.pc-ring-three{width:38%;border-width:3px;box-shadow:0 0 0 20px #1111}
+.pc-wheel>span{position:relative;font:700 clamp(125px,16vw,220px)/1 'Space Grotesk',sans-serif;letter-spacing:-.12em}
+.pc-wheel small{position:absolute;bottom:25px;font:700 9px 'Space Mono',monospace}
+@keyframes pc-turn{to{transform:rotate(360deg)}}
+.pc-wicked-bottom{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #1115}
+.pc-wicked-bottom span{padding:19px 12px 19px 0;font:700 10px/1.5 'Space Mono',monospace}
+.pc-wicked-bottom b{display:block;opacity:.65;margin-bottom:4px}
+.pc-services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid currentColor;border-left:1px solid currentColor}
+.pc-service{min-height:355px;min-width:0;display:flex;flex-direction:column;border-right:1px solid currentColor;border-bottom:1px solid currentColor;padding:26px;transition:background .2s,color .2s}
+.pc-service:hover{background:var(--accent);color:#111}
+.pc-service-top{display:flex;justify-content:space-between;gap:15px;align-items:start}
+.pc-service-top span{font:700 10px/1.5 'Space Mono',monospace}
+.pc-service-top b{font:500 45px/1 'Space Grotesk',sans-serif;color:var(--accent)}
+.pc-service:hover .pc-service-top b{color:#111}
+.pc-service h4{font:700 clamp(23px,2.7vw,32px)/1.05 'Space Grotesk',sans-serif;letter-spacing:-.06em;margin:37px 0 20px}
+.pc-service p{font-size:13px;line-height:1.8;opacity:.82;margin:0 0 25px}
+.pc-service-foot{margin-top:auto;border-top:1px solid currentColor;padding-top:12px;font:700 9px/1.5 'Space Mono',monospace;opacity:.72}
+.pc-proof-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.pc-proof{border:1px solid currentColor;min-height:330px;padding:29px;display:flex;flex-direction:column;align-items:flex-start;position:relative;overflow:hidden}
+.pc-proof:after{content:"✳";position:absolute;right:-10px;bottom:-45px;font:700 180px/.9 'Space Grotesk',sans-serif;color:var(--accent);opacity:.09;pointer-events:none}
+.pc-proof-no{font:700 10px 'Space Mono',monospace;opacity:.7}
+.pc-proof h4{font:700 clamp(30px,4vw,47px)/.98 'Space Grotesk',sans-serif;letter-spacing:-.07em;margin:28px 0 16px}
+.pc-proof p{font-size:14px;line-height:1.7;opacity:.84;margin:0 0 22px;max-width:440px}
+.pc-proof-tag,.pc-proof a{margin-top:auto;font:700 10px/1.5 'Space Mono',monospace}
+.pc-proof a{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+.pc-manifesto{border-top:1px solid currentColor;border-bottom:1px solid currentColor;margin:155px 0 0;padding:55px 0 75px}
+.pc-manifesto-label{font:700 10px/1.5 'Space Mono',monospace;opacity:.7}
+.pc-manifesto-words{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:28px 0}
+.pc-manifesto-words span,.pc-manifesto-words em{font:700 clamp(36px,7vw,88px)/1 'Space Grotesk',sans-serif;letter-spacing:-.08em}
+.pc-manifesto-words em{color:var(--accent);font-style:italic;font-weight:500}
+.pc-manifesto p{font-size:17px;line-height:1.8;max-width:670px;opacity:.82}
+.pc-process{display:grid;grid-template-columns:.9fr 1.1fr;gap:75px;padding:120px 0 70px}
+.pc-process-intro h3{font:700 clamp(42px,5.5vw,75px)/.93 'Space Grotesk',sans-serif;letter-spacing:-.075em;margin:30px 0 20px}
+.pc-process-intro h3 em{color:var(--accent)}
+.pc-process-intro p{font-size:14px;line-height:1.8;opacity:.77;max-width:350px}
+.pc-process ol{padding:0;margin:0;list-style:none}
+.pc-process li{display:grid;grid-template-columns:110px 1fr;gap:8px 20px;border-bottom:1px solid currentColor;padding:20px 0}
+.pc-process li:first-child{padding-top:0}
+.pc-process li>span{font:700 9px/1.5 'Space Mono',monospace;opacity:.65}
+.pc-process li strong{font:700 26px/1.1 'Space Grotesk',sans-serif;letter-spacing:-.05em}
+.pc-process li p{grid-column:2;font-size:13px;line-height:1.75;margin:0;opacity:.76}
+.pc-final{background:var(--accent);color:#111;display:grid;grid-template-columns:1fr .85fr;gap:65px;align-items:end;padding:clamp(30px,5vw,65px);margin-top:75px}
+.pc-final h3{font:700 clamp(51px,7vw,91px)/.91 'Space Grotesk',sans-serif;letter-spacing:-.08em;margin:22px 0}
+.pc-final>div:first-child p{font-size:14px;line-height:1.8;max-width:450px}
+.pc-final-actions{display:flex;flex-direction:column;gap:13px}
+.pc-final-actions a{padding:20px;display:flex;justify-content:space-between;align-items:center;gap:18px;font:700 11px/1.55 'Space Mono',monospace}
+.pc-book{background:#111;color:#fff!important}
+.pc-more{border:1px solid #111}
+.pc-final-actions a:hover{opacity:.8}
+.pc-final-actions small{font:700 9px/1.5 'Space Mono',monospace;margin-top:8px}
+.navlinks{gap:clamp(9px,1.1vw,19px)}
+@media(max-width:1000px){.pc-head{grid-template-columns:1fr}.pc-head-aside{display:none}.pc-services{grid-template-columns:repeat(2,minmax(0,1fr))}.pc-process{gap:32px}}
+@media(max-width:720px){
+.pc-inner{padding-bottom:55px}.pc-top{align-items:flex-start;padding:23px 0 14px}.pc-top .eyebrow:last-child{text-align:right}
+.pc-head{padding:55px 0}.pc-head h2{font-size:clamp(39px,10vw,71px);letter-spacing:-.079em;margin-left:0}
+.pc-intro{grid-template-columns:1fr}.pc-intro-photo img{height:auto;aspect-ratio:4/3}.pc-intro-copy{padding:25px 0 6px}
+.pc-intro-copy h3{font-size:clamp(30px,7vw,46px)}
+.pc-metrics{grid-template-columns:repeat(2,1fr);margin-top:45px}.pc-metrics>div{padding:24px 14px}
+.pc-metrics>div:nth-child(2){border-right:0}.pc-metrics>div:nth-child(-n+2){border-bottom:1px solid currentColor}.pc-metrics>div:nth-child(3){padding-left:0}
+.pc-metrics strong{font-size:35px}
+.pc-section-heading{grid-template-columns:1fr;padding-top:95px;gap:12px}.pc-section-heading h3{font-size:clamp(38px,8.5vw,60px)}
+.pc-wicked{padding:21px 20px 0}.pc-wicked-top{flex-direction:column;gap:4px}
+.pc-wicked-grid{grid-template-columns:1fr}.pc-wicked-copy{padding:30px 0 15px}.pc-wicked-copy h4{font-size:clamp(36px,8vw,53px)}
+.pc-wheel{min-height:250px}.pc-ring-one{width:260px}.pc-ring-two{width:185px}.pc-ring-three{width:90px}.pc-wheel>span{font-size:115px}
+.pc-wicked-bottom{grid-template-columns:1fr}.pc-wicked-bottom span{padding:8px 0;border-bottom:1px solid #1113}
+.pc-services{grid-template-columns:1fr}.pc-service{min-height:290px}.pc-service h4{margin:23px 0 15px}
+.pc-proof-grid{grid-template-columns:1fr}.pc-proof{min-height:280px;padding:24px}
+.pc-manifesto{margin-top:100px;padding:42px 0}.pc-manifesto-words{grid-template-columns:1fr;gap:7px}.pc-manifesto-words span,.pc-manifesto-words em{font-size:clamp(53px,12vw,80px)}
+.pc-process{grid-template-columns:1fr;padding:75px 0 50px;gap:30px}
+.pc-final{grid-template-columns:1fr;gap:25px;margin-top:45px;padding:30px 24px}.pc-final h3{font-size:clamp(48px,11vw,74px)}
+}
+@media(max-width:400px){.pc-head h2{font-size:9.9vw}.pc-process li{grid-template-columns:95px 1fr;gap:8px}.pc-process li strong{font-size:23px}.pc-final-actions a{font-size:10px;padding:16px}}
+@media(prefers-reduced-motion:reduce){.pc-ring-two{animation:none}}
+</style>
 </head>
 <body>
 <header class="nav"><div class="wrap nav-inner">
 <a class="brand" href="#home" aria-label="Bogdan Pascal home"><img class="logo-img logo-light" src="assets/logo-light.svg" alt="Bogdan Pascal"><img class="logo-img logo-dark" src="assets/logo-dark.svg" alt="" aria-hidden="true"></a>
-<nav class="navlinks" id="navlinks" aria-label="Main navigation"><a href="#highlights">HIGHLIGHTS</a><a href="#credits">CREDITS</a><a href="#clients">CLIENTS</a><a href="#skills">SKILLS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
+<nav class="navlinks" id="navlinks" aria-label="Main navigation"><a href="#highlights">HIGHLIGHTS</a><a href="#coordination">COORDINATION</a><a href="#credits">CREDITS</a><a href="#clients">CLIENTS</a><a href="#skills">SKILLS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
 <div class="navend"><button class="action" id="theme" aria-label="Toggle color theme">DARK / LIGHT</button><a class="action primary" href="mailto:hello@bogdanpascal.com?subject=Booking%20enquiry">BOOKING ↗</a><button class="action mobile-menu" id="menu" aria-controls="navlinks" aria-expanded="false">MENU</button></div>
 </div></header>
 <main>
@@ -254,7 +378,7 @@
 <h1><span>BOGDAN</span><span>PASCAL.</span></h1>
 <div class="hero-roles">Parkour / Freerunning / Stunts / Acrobatics / Acting</div>
 <p class="hero-intro">From the streets to the screen. A professional parkour athlete and stunt performer bringing distinctive movement to film, television, global campaigns and live stages.</p>
-<div class="hero-cta"><a href="#credits" class="action primary">EXPLORE CREDITS ↗</a><a href="#contact" class="action">WORK WITH ME</a><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer" class="action">IMDb ↗</a></div>
+<div class="hero-cta"><a href="#credits" class="action primary">EXPLORE CREDITS ↗</a><a href="#coordination" class="action">PARKOUR COORDINATION ↗</a><a href="#contact" class="action">WORK WITH ME</a><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer" class="action">IMDb ↗</a></div>
 </div><div class="hero-display hero-display--portrait">
 <img src="assets/profile.jpg" alt="Portrait of Bogdan Pascal in an orange sweatshirt" decoding="async">
 </div></div>
@@ -299,16 +423,76 @@
 </article>
 </div>
 </section>
-<section class="section rule" id="credits"><div class="wrap"><div class="section-head"><div><span class="eyebrow">02 / PROFESSIONAL EXPERIENCE</span><h2>SELECTED<br>CREDITS.</h2></div><p>Film, television, commercials, live performances and international events. Search or filter the archive.</p></div>
+
+<section class="pc" id="coordination" aria-labelledby="pc-title">
+<div class="wrap pc-inner">
+  <div class="pc-top eyebrow"><span>02 / SPECIALIST MOVEMENT DIRECTION</span><span>UK BASED · AVAILABLE WORLDWIDE</span></div>
+  <header class="pc-head">
+    <div><span class="pc-overline">TWENTY YEARS IN MOTION. A NEW WAY TO BUILD ACTION.</span>
+      <h2 id="pc-title">PARKOUR<br><em>COORDINATION</em><span class="pc-stop">.</span></h2>
+    </div>
+    <aside class="pc-head-aside"><span aria-hidden="true">✳</span><strong>CREATIVE MOVEMENT.<br>ENGINEERED FOR THE CAMERA.</strong><small>CONCEPT / CHOREOGRAPHY / TALENT / EXECUTION</small></aside>
+  </header>
+  <div class="pc-intro">
+    <figure class="pc-intro-photo"><img src="assets/hero.jpg" alt="Bogdan Pascal performing an airborne parkour movement" loading="lazy" decoding="async"><figcaption>BOGDAN PASCAL / PARKOUR IN PRACTICE</figcaption></figure>
+    <div class="pc-intro-copy"><span class="eyebrow">THE ATHLETE'S INSTINCT. THE FILMMAKER'S EYE.</span>
+      <h3>IMAGINE IT.<br><em>MAKE IT MOVE.</em></h3>
+      <p>I've spent over 20 years developing movement and more than a decade bringing it to stages, sets and screens. I know how a sequence feels to perform, how movement reads through a lens and how to turn an ambitious idea into physical, camera-ready action.</p>
+      <p>I bring that experience to parkour coordination: specialist movement design, a far-reaching network of athletes and performers, and practical collaboration with the people responsible for bringing a production to life.</p>
+      <a class="pc-outline-link" href="mailto:hello@bogdanpascal.com?subject=Parkour%20Coordination%20Enquiry">LET'S DISCUSS A SEQUENCE <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <div class="pc-metrics" aria-label="Movement experience">
+    <div><strong>20<span>+</span></strong><small>YEARS DEVELOPING<br>MOVEMENT</small></div>
+    <div><strong>11<span>+</span></strong><small>YEARS OF PROFESSIONAL<br>SET & STAGE EXPERIENCE</small></div>
+    <div><strong>2025</strong><small>SAG AWARDS<br>STUNT ENSEMBLE NOMINEE</small></div>
+    <div><strong>GLOBAL</strong><small>INTERNATIONAL<br>PERFORMER NETWORK</small></div>
+  </div>
+  <div class="pc-section-heading"><span class="eyebrow">01 / THE PROOF</span><h3>MADE FOR<br><em>THE UNEXPECTED.</em></h3><p>When a production demands movement beyond a standard sequence, specialist parkour experience makes a difference.</p></div>
+  <article class="pc-wicked" aria-labelledby="pc-wicked-title">
+    <div class="pc-wicked-top"><span>FEATURED CASE STUDY / WICKED (2024)</span><span>THE TORNADO WHEEL</span></div>
+    <div class="pc-wicked-grid">
+      <div class="pc-wicked-copy">
+        <span class="pc-kicker">UNIVERSAL PICTURES / DANCING THROUGH LIFE</span>
+        <h4 id="pc-wicked-title">WHEN THE<br>ENTIRE SET<br><em>IS MOVING.</em></h4>
+        <p>The enormous practical library set featured three rotating wheel sections and shifting ladders. The production brought in specialist parkour performers for the challenging tornado-wheel sequence. I was part of that team, applying balance, timing and split-second reactions to movement on a constantly changing surface.</p>
+        <p>Wicked received <strong>10 Oscar nominations and 2 wins</strong>. My name was also included in the officially listed <strong>2025 SAG Awards stunt-ensemble nominees</strong>.</p>
+        <a href="https://www.vanityfair.com/video/watch/vf-notes-on-a-scene-wicked" target="_blank" rel="noopener noreferrer">WATCH THE SCENE BREAKDOWN ↗</a>
+      </div>
+      <div class="pc-wheel" aria-hidden="true"><div class="pc-ring pc-ring-one"></div><div class="pc-ring pc-ring-two"></div><div class="pc-ring pc-ring-three"></div><span>01</span><small>BALANCE / TIMING / PRECISION</small></div>
+    </div>
+    <div class="pc-wicked-bottom"><span><b>ROLE</b> SPECIALIST PARKOUR PERFORMER</span><span><b>CHALLENGE</b> MOVING PRACTICAL SET</span><span><b>RECOGNITION</b> SAG STUNT ENSEMBLE NOMINEE</span></div>
+  </article>
+  <div class="pc-section-heading pc-services-heading"><span class="eyebrow">02 / THE OFFER</span><h3>THE COMPLETE<br><em>MOVEMENT TOOLKIT.</em></h3><p>From story-driven movement design to the right team and an effective on-set execution.</p></div>
+  <div class="pc-services"><article class="pc-service"><div class="pc-service-top"><span>01 / DESIGN</span><b aria-hidden="true">↗</b></div><h4>MOVEMENT & SEQUENCE DESIGN</h4><p>Creative parkour routes, rhythm, transitions and choreography shaped around the story, the performer and the camera.</p><span class="pc-service-foot">STORY · ROUTES · TIMING</span></article>
+<article class="pc-service"><div class="pc-service-top"><span>02 / TALENT</span><b aria-hidden="true">◎</b></div><h4>SPECIALIST TALENT & TEAMS</h4><p>Connecting productions with parkour athletes, freerunners, acrobats, doubles and physical performers through my international network.</p><span class="pc-service-foot">ATHLETES · DOUBLES · TEAMS</span></article>
+<article class="pc-service"><div class="pc-service-top"><span>03 / SPACE</span><b aria-hidden="true">⌗</b></div><h4>LOCATIONS & MOVEMENT LINES</h4><p>Seeing architecture as a performer. Exploring surfaces, obstacles, run-ups, landings and creative possibilities with the stunt and safety teams.</p><span class="pc-service-foot">RECCES · FEASIBILITY · ROUTES</span></article>
+<article class="pc-service"><div class="pc-service-top"><span>04 / PERFORMANCE</span><b aria-hidden="true">✳</b></div><h4>ACTOR & PERFORMER COACHING</h4><p>Helping talent develop confidence, physical vocabulary, repeatable movement and the timing needed to sell a sequence on camera.</p><span class="pc-service-foot">REHEARSAL · PRECISION · CONTINUITY</span></article>
+<article class="pc-service"><div class="pc-service-top"><span>05 / CAMERA</span><b aria-hidden="true">▣</b></div><h4>CAMERA-FIRST ACTION THINKING</h4><p>As a working filmmaker, I understand framing, lenses, camera movement, coverage and editing. I design motion to read clearly on screen.</p><span class="pc-service-foot">FRAMING · COVERAGE · EDITING</span></article>
+<article class="pc-service"><div class="pc-service-top"><span>06 / EXECUTION</span><b aria-hidden="true">↗</b></div><h4>ON-SET SPECIALIST SUPPORT</h4><p>Working alongside directors, stunt coordinators, camera teams and performers to develop and refine complex physical action during production.</p><span class="pc-service-foot">COLLABORATION · DETAIL · DELIVERY</span></article></div>
+  <div class="pc-section-heading pc-proof-heading"><span class="eyebrow">03 / THE EXPERIENCE</span><h3>FROM FILM SET<br><em>TO STADIUM.</em></h3><p>Real physical work across film, live television, commercial projects and international performance stages.</p></div>
+  <div class="pc-proof-grid"><article class="pc-proof"><span class="pc-proof-no">01 / FEATURE FILMS</span><h4>WICKED.<br>CINDERELLA.<br>JINGLE JANGLE.</h4><p>Specialist parkour, stunt and acrobatic performance on large-scale musical productions.</p><span class="pc-proof-tag">FEATURE FILM / ON-SET MOVEMENT</span></article>
+<article class="pc-proof"><span class="pc-proof-no">02 / LIVE TELEVISION</span><h4>OK<br>WORLDWIDE.</h4><p>Parkour, dance and acrobatics with my team on Britain's Got Talent, Romania's Got Talent and Italy's Tú Sí Que Vales.</p><span class="pc-proof-tag">TEAMWORK / BROADCAST PERFORMANCE</span></article>
+<article class="pc-proof"><span class="pc-proof-no">03 / STADIUM SHOWS</span><h4>HARLEQUINS<br>BIG GAME 9.</h4><p>Named as a freerunner for the EXTREME stadium entertainment at Twickenham, alongside other action-sport specialists.</p><a href="https://www.extremeinternational.com/post/2016/11/24/extreme-partners-with-harlequins-as-official-big-game-9-entertainment-partner" target="_blank" rel="noopener noreferrer">EXTREME EVENT ANNOUNCEMENT ↗</a></article>
+<article class="pc-proof"><span class="pc-proof-no">04 / INTERNATIONAL STAGES</span><h4>THE BRIT AWARDS.<br>GLOBAL EVENTS.</h4><p>Acrobatic performance alongside Hugh Jackman in The Greatest Showman live number, plus international festivals and stadium events.</p><span class="pc-proof-tag">LIVE SHOWS / STAGECRAFT</span></article></div>
+  <div class="pc-manifesto"><div class="pc-manifesto-label">THE DIFFERENCE / A CREATIVE WHO CAN PERFORM</div><div class="pc-manifesto-words"><span>MOVE.</span><span>THINK.</span><em>FRAME.</em></div><p>Years spent performing at speed and working behind the camera have given me an unusual perspective. The best movement is not simply technically impressive. It has purpose, character, rhythm and a place in the shot.</p></div>
+  <div class="pc-process"><div class="pc-process-intro"><span class="eyebrow">04 / HOW WE BUILD IT</span><h3>FROM IDEA<br>TO <em>FIRST TAKE.</em></h3><p>Bring me in early to explore the movement, plan its visual language and prepare the right people for the production.</p></div><ol><li><span>01 / DISCOVER</span><strong>THE BRIEF.</strong><p>Understand the story, movement ambition, references, location and camera plan.</p></li>
+<li><span>02 / DEVELOP</span><strong>THE MOVEMENT.</strong><p>Explore routes, rehearse physical ideas and shape camera-readable action beats.</p></li>
+<li><span>03 / ASSEMBLE</span><strong>THE TEAM.</strong><p>Connect suitable athletes and prepare performances in collaboration with the appointed stunt and safety teams.</p></li>
+<li><span>04 / SHOOT</span><strong>THE MOMENT.</strong><p>Support the people and movement on set, adjusting timing and execution for the camera.</p></li></ol></div>
+  <div class="pc-final"><div><span class="eyebrow">SPECIALIST MOVEMENT / CREATIVE COLLABORATION</span><h3>HAVE AN<br><em>IMPOSSIBLE</em><br>IDEA?</h3><p>Let's turn it into a movement sequence worth remembering. Film, television, commercials, music videos and live productions.</p></div><div class="pc-final-actions"><a class="pc-book" href="mailto:hello@bogdanpascal.com?subject=Parkour%20Coordination%20Enquiry">INQUIRE ABOUT PARKOUR COORDINATION <span aria-hidden="true">↗</span></a><a class="pc-more" href="#credits">EXPLORE PRODUCTION CREDITS <span aria-hidden="true">↓</span></a><small>BASED IN THE UK / AVAILABLE FOR INTERNATIONAL PRODUCTIONS</small></div></div>
+</div>
+</section>
+<section class="section rule" id="credits"><div class="wrap"><div class="section-head"><div><span class="eyebrow">03 / PROFESSIONAL EXPERIENCE</span><h2>SELECTED<br>CREDITS.</h2></div><p>Film, television, commercials, live performances and international events. Search or filter the archive.</p></div>
 <div class="credit-controls" id="filters"><button class="filter" data-filter="all" aria-pressed="true">ALL</button><button class="filter" data-filter="film" aria-pressed="false">FILM</button><button class="filter" data-filter="tv" aria-pressed="false">TV</button><button class="filter" data-filter="commercial" aria-pressed="false">COMMERCIALS</button><button class="filter" data-filter="live" aria-pressed="false">LIVE / EVENTS</button><button class="filter" data-filter="music" aria-pressed="false">MUSIC</button><input class="search" id="creditSearch" aria-label="Search credits" placeholder="SEARCH CREDITS..."></div>
 <div class="credits-list" id="creditsList"></div><div id="creditEmpty" class="empty">No credits match your search.</div>
 <div style="margin-top:25px"><a class="action" target="_blank" rel="noopener noreferrer" href="https://www.imdb.com/name/nm11164253/">EXPLORE MY IMDb PROFILE ↗</a></div>
 </div></section>
-<section class="logos-wrap" id="clients"><div class="wrap"><div class="section-head"><div><span class="eyebrow">03 / WORKED WITH & FEATURED IN</span><h2>THE COMPANY<br>I KEEP.</h2></div><p class="muted">Selected brands, networks and productions associated with projects in my career portfolio.</p></div></div>
+<section class="logos-wrap" id="clients"><div class="wrap"><div class="section-head"><div><span class="eyebrow">04 / WORKED WITH & FEATURED IN</span><h2>THE COMPANY<br>I KEEP.</h2></div><p class="muted">Selected brands, networks and productions associated with projects in my career portfolio.</p></div></div>
 <div class="logos-window" aria-label="Selected brands and productions, first 17 scrolling left"><div class="logos-track logos-track--left" id="logosTrackTop"></div></div>
 <div class="logos-window" aria-label="Selected brands and productions, next 17 scrolling right"><div class="logos-track logos-track--right" id="logosTrackBottom"></div></div></section>
-<section class="section wrap" id="skills"><div class="section-head"><div><span class="eyebrow">04 / PHYSICAL CAPABILITIES</span><h2>MOVEMENT<br>IS THE MEDIUM.</h2></div><p>A hybrid skill set developed through years of movement, performance and physical storytelling.</p></div><div class="roles-grid" id="skillGrid"></div></section>
-<section class="section rule" id="reels"><div class="wrap"><div class="section-head"><div><span class="eyebrow">05 / ACTION IN MOTION</span><h2>SEE IT<br>IN ACTION.</h2></div><p>Press play to watch, and expand the video to fullscreen.</p></div>
+<section class="section wrap" id="skills"><div class="section-head"><div><span class="eyebrow">05 / PHYSICAL CAPABILITIES</span><h2>MOVEMENT<br>IS THE MEDIUM.</h2></div><p>A hybrid skill set developed through years of movement, performance and physical storytelling.</p></div><div class="roles-grid" id="skillGrid"></div></section>
+<section class="section rule" id="reels"><div class="wrap"><div class="section-head"><div><span class="eyebrow">06 / ACTION IN MOTION</span><h2>SEE IT<br>IN ACTION.</h2></div><p>Press play to watch, and expand the video to fullscreen.</p></div>
 <div class="reel-frame">
   <div class="reel-embed">
     <iframe src="https://www.youtube-nocookie.com/embed/_WfU2QeWXsQ?controls=1&amp;fs=1&amp;playsinline=1&amp;rel=0" title="Bogdan Pascal | Movement and stunt showreel" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -316,7 +500,7 @@
 </div>
 <div class="reel-meta"><p>MOVEMENT / STUNTS / PERFORMANCE</p><a href="https://www.youtube.com/watch?v=_WfU2QeWXsQ" target="_blank" rel="noopener noreferrer" class="action">WATCH ON YOUTUBE ↗</a></div>
 </div></section>
-<section class="section rule" id="about"><div class="wrap"><div class="section-head"><div><span class="eyebrow">06 / BEHIND THE MOVEMENT</span><h2>ABOUT<br>BOGDAN.</h2></div></div>
+<section class="section rule" id="about"><div class="wrap"><div class="section-head"><div><span class="eyebrow">07 / BEHIND THE MOVEMENT</span><h2>ABOUT<br>BOGDAN.</h2></div></div>
 <div class="about-grid">
 <div class="about-visual">
 <figure class="about-portrait">
@@ -380,7 +564,7 @@
 <p>My film credits include <strong>Wicked</strong>, where I performed alongside <strong>Ariana Grande and Cynthia Erivo</strong> as part of a specialist parkour team and was <strong>officially named among the 2025 SAG Awards stunt-ensemble nominees</strong>; <strong>Cinderella</strong>, performing alongside <strong>Camila Cabello</strong>; and Netflix's <strong>Jingle Jangle</strong>, performing alongside <strong>Forest Whitaker and Keegan-Michael Key</strong>. Beyond film, my work spans commercial campaigns, music videos, documentaries, live performances and international events.</p>
 <p class="about-accolades">Award-recognised productions include <strong>Wicked</strong> (10 Oscar nominations, 2 wins), <strong>Jingle Jangle</strong> (4 award wins), <strong>Cinderella</strong> (1 award win), and <strong>13 Shades of Romanian</strong> (my parkour journey featured as one of its 13 main stories; 6 director-reported festival awards). The music video <strong>The 1975's "I'm in Love with You"</strong> was also nominated for Best Choreography at the 2023 UK Music Video Awards.</p>
 <p>My career has also taken me to the stages of <strong>Britain's Got Talent, Romania's Got Talent, Ninja Warrior and Got to Dance</strong>. Highlights include performing alongside <strong>Chris Hemsworth</strong> in a Dubai Expo commercial and <strong>Hugh Jackman</strong> during <em>The Greatest Showman</em> performance at the BRIT Awards, as well as appearing at <strong>Milan Fashion Week</strong> for Philipp Plein. My commercial work also includes collaborations with globally recognised brands such as <strong>Nike, Nikon, Vodafone and Beefeater Gin</strong>.</p><div class="social-row"><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@thebogdanpascal" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb ↗</a></div></div></div></div></section>
-<section class="section" id="contact"><div class="wrap"><div class="contact-block"><div><span class="eyebrow">07 / INQUIRIES & BOOKINGS</span><h2>LET'S MAKE<br>IT MOVE.</h2><p>Film, commercials, TV, live events and brand collaborations.<br>Based in the UK. Available for international productions.</p></div><a class="cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20%26%20Stunt%20Booking%20Enquiry">HELLO@BOGDANPASCAL.COM ↗</a></div></div></section>
+<section class="section" id="contact"><div class="wrap"><div class="contact-block"><div><span class="eyebrow">08 / INQUIRIES & BOOKINGS</span><h2>LET'S MAKE<br>IT MOVE.</h2><p>Film, commercials, TV, live events and brand collaborations.<br>Based in the UK. Available for international productions.</p></div><a class="cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20%26%20Stunt%20Booking%20Enquiry">HELLO@BOGDANPASCAL.COM ↗</a></div></div></section>
 </main>
 <footer class="footer"><div class="wrap footer-inner"><div class="footer-brand"><img class="footer-logo logo-light" src="assets/logo-light.svg" alt="Bogdan Pascal"><img class="footer-logo logo-dark" src="assets/logo-dark.svg" alt="" aria-hidden="true"><span>© <span id="year"></span> / PARKOUR & STUNTS</span></div><div class="footer-links"><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb</a><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a><a href="https://www.facebook.com/thebogdanpascal" target="_blank" rel="noopener noreferrer">FACEBOOK</a><a href="https://www.tiktok.com/@thebogdanpascal" target="_blank" rel="noopener noreferrer">TIKTOK</a><a href="#home">BACK TO TOP ↑</a></div></div></footer>
 <script>
