@@ -248,8 +248,8 @@
 .coord-banner-label{display:block;font:700 10px/1.5 'Space Mono',monospace;letter-spacing:.12em;color:var(--muted)}
 .coord-banner h2{font:700 clamp(34px,4.1vw,52px)/.96 'Space Grotesk',sans-serif;letter-spacing:-.073em;margin:18px 0 0}
 .coord-banner h2 em{font-style:italic;font-weight:500}
-.coord-banner h2>span{color:#86a400}
-:root.dark .coord-banner h2>span{color:var(--accent)}
+.coord-banner h2>span{color:#111}
+:root.dark .coord-banner h2>span{color:#111}
 .coord-banner-intro{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:19px;min-width:0}.coord-banner-intro p{max-width:520px;font-size:13px;line-height:1.66;color:var(--muted);margin:0}
 .coord-banner-cta{display:inline-flex;justify-content:space-between;align-items:center;gap:24px;min-height:44px;background:var(--accent);color:#111;padding:12px 18px;font:700 10px/1.5 'Space Mono',monospace;letter-spacing:.015em}
 .coord-banner-cta:hover{filter:brightness(.93)}
@@ -363,7 +363,7 @@
 </section>
 
 <section class="section rule" id="credits"><div class="wrap"><div class="section-head"><div><span class="eyebrow">02 / PROFESSIONAL EXPERIENCE</span><h2>SELECTED<br>CREDITS.</h2></div><p>Film, television, commercials, live performances and international events. Search or filter the archive.</p></div>
-<div class="credit-controls" id="filters"><button class="filter" data-filter="all" aria-pressed="true">ALL</button><button class="filter" data-filter="film" aria-pressed="false">FILM</button><button class="filter" data-filter="tv" aria-pressed="false">TV</button><button class="filter" data-filter="commercial" aria-pressed="false">COMMERCIALS</button><button class="filter" data-filter="live" aria-pressed="false">LIVE / EVENTS</button><button class="filter" data-filter="music" aria-pressed="false">MUSIC</button><input class="search" id="creditSearch" aria-label="Search credits" placeholder="SEARCH CREDITS..."></div>
+<div class="credit-controls" id="filters"><button class="filter" data-filter="film" aria-pressed="true">FILM</button><button class="filter" data-filter="tv" aria-pressed="false">TV</button><button class="filter" data-filter="commercial" aria-pressed="false">COMMERCIALS</button><button class="filter" data-filter="live" aria-pressed="false">LIVE / EVENTS</button><button class="filter" data-filter="music" aria-pressed="false">MUSIC</button><button class="filter" data-filter="all" aria-pressed="false">ALL</button><input class="search" id="creditSearch" aria-label="Search credits" placeholder="SEARCH CREDITS..."></div>
 <div class="credits-list" id="creditsList"></div><div id="creditEmpty" class="empty">No credits match your search.</div>
 <div style="margin-top:25px"><a class="action" target="_blank" rel="noopener noreferrer" href="https://www.imdb.com/name/nm11164253/">EXPLORE MY IMDb PROFILE ↗</a></div>
 </div></section>
@@ -618,7 +618,7 @@ const creditProjects={
     ]
   }
 };
-const list=document.getElementById('creditsList'),empty=document.getElementById('creditEmpty'),search=document.getElementById('creditSearch');let active='all';
+const list=document.getElementById('creditsList'),empty=document.getElementById('creditEmpty'),search=document.getElementById('creditSearch');let active='film';
 function renderCredits(){const q=search.value.trim().toLowerCase();const items=credits.filter(x=>(active==='all'||x[3]===active)&&(x.join(' ')+' '+(creditAwards[x[1]]?.label||'')+' '+(creditProjects[x[1]]?.text||'')).toLowerCase().includes(q));list.replaceChildren(...items.map(c=>{
 const el=document.createElement('div');el.className='credit';
 const yr=document.createElement('span');yr.className='year';yr.textContent=c[0];
