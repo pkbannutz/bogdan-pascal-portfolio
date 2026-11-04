@@ -160,12 +160,28 @@ def video(p, mid, kind):
     return '<div class="v"><video controls playsinline preload="metadata" poster="%s"><source src="https://video.wixstatic.com/video/%s/1080p/mp4/file.mp4" type="video/mp4"></video></div>' % (poster, mid)
 
 
+def file_video(p, url):
+    poster = "/assets/filmmaker/%s/t.jpg" % p["slug"]
+    return '<div class="v"><video controls playsinline preload="metadata" poster="%s"><source src="%s" type="video/mp4"></video></div>' % (poster, E(url))
+
+
+def hosted_videos(p):
+    """Videos played from files. Uses the Cloudflare R2 bucket when videos-r2.json has a base address,
+    otherwise the Wix hosted files listed under mp4 in projects.json."""
+    cfg = json.load(open(os.path.join(HERE, "videos-r2.json"), encoding="utf-8"))
+    base = cfg.get("base", "").rstrip("/")
+    files = cfg.get("files", {}).get(p["slug"])
+    if base and files:
+        return [file_video(p, "%s/%s" % (base, f)) for f in files]
+    return [video(p, m, "mp4") for m in p["mp4"]]
+
+
 def project_pages():
     n = len(PROJECTS)
     for i, p in enumerate(PROJECTS):
         t = "/assets/filmmaker/%s/t.jpg" % p["slug"]
         nxt = PROJECTS[(i + 1) % n]
-        vids = [video(p, m, "vimeo") for m in p["vimeo"]] + [video(p, m, "youtube") for m in p["youtube"]] + [video(p, m, "mp4") for m in p["mp4"]]
+        vids = [video(p, m, "vimeo") for m in p["vimeo"]] + [video(p, m, "youtube") for m in p["youtube"]] + hosted_videos(p)
         sts = stills(p)
         sub = "<em>%s</em>" % E(p["sub"]) if p.get("sub") else ""
         credits = "".join("<li><b>%s</b> %s</li>" % (E(c.split(":", 1)[0] + ":"), E(c.split(":", 1)[1].strip())) if ":" in c else "<li>%s</li>" % E(c) for c in p["credits"])
