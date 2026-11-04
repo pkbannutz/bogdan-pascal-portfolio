@@ -39,6 +39,11 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
 .p:hover .en,.p:focus-visible .en{background:#fff;color:#000}
 .f:hover .en,.f:focus-visible .en{background:var(--lime);border-color:var(--lime);color:#000}
 .p:hover .en b{transform:translateX(6px)}
+.ww{position:fixed;left:50%;top:50%;width:clamp(150px,14vw,220px);height:clamp(150px,14vw,220px);margin:calc(clamp(150px,14vw,220px) / -2) 0 0 calc(clamp(150px,14vw,220px) / -2);z-index:40;pointer-events:none;mix-blend-mode:difference;background:#fff;border-radius:50%}
+.ww svg{width:100%;height:100%;animation:spin 26s linear infinite;overflow:visible}
+.ww text{font:700 14px 'Space Mono',ui-monospace,monospace;letter-spacing:0;fill:#000;text-transform:uppercase}
+.ww:after{content:'';position:absolute;left:50%;top:50%;width:9px;height:9px;margin:-4.5px;border-radius:50%;background:#000}
+@keyframes spin{to{transform:rotate(360deg)}}
 @media(max-width:720px){
  .p{padding:56px 22px 20px}
  h2{font-size:17vw}
@@ -47,15 +52,16 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
  .en{align-self:stretch;justify-content:space-between}
  .p:hover,.p:focus-visible{flex:1}
 }
-@media(prefers-reduced-motion:reduce){.p,.bg,.en b{transition:none}}
+@media(prefers-reduced-motion:reduce){.p,.bg,.en b{transition:none}.ww svg{animation:none}}
 </style>
 </head>
 <body>
 <div class="brand mono">Bogdan Pascal</div>
+<div class="ww" aria-label="Available worldwide"><svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="ring" d="M100 100 m-74 0 a74 74 0 1 1 148 0 a74 74 0 1 1 -148 0"/></defs><text><textPath href="#ring" textLength="456" lengthAdjust="spacing">Available worldwide &#183; Available worldwide &#183;</textPath></text></svg></div>
 <main class="wrap">
   <a class="p a" href="/athlete/" aria-label="Enter the athlete site">
     <div class="bg" style="background-image:url(/assets/hero.jpg)"></div>
-    <div class="top mono"><span>01 / Movement</span><span>Available worldwide</span></div>
+    <div class="top mono"><span>01 / Movement</span></div>
     <h2>Athlete</h2>
     <div class="bot">
       <div class="cr mono">Parkour Coordinator &middot; Stunt Performer &middot; Movement Director</div>
@@ -64,7 +70,7 @@ h2{font-size:clamp(46px,12.5vw,230px);font-weight:700;letter-spacing:-.055em;lin
   </a>
   <a class="p f" href="/filmmaker/" aria-label="Enter the filmmaker site">
     <div class="bg" style="background-image:url(/assets/filmmaker/geodome/t.jpg)"></div>
-    <div class="top mono"><span>02 / Cinema</span><span>London based</span></div>
+    <div class="top mono"><span>02 / Cinema</span></div>
     <h2><em>Filmmaker</em></h2>
     <div class="bot">
       <div class="cr mono">Director of Photography &middot; Drone Operator &middot; Colourist</div>
