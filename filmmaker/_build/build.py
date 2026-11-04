@@ -86,7 +86,7 @@ def full_title(p):
 def head(title, desc, image=""):
     og = '<meta property="og:image" content="%s">' % E(image) if image else ""
     return """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>%s</title><meta name="robots" content="noindex, nofollow"><meta name="description" content="%s"><meta property="og:title" content="%s"><meta property="og:description" content="%s">%s<meta name="theme-color" content="#0a0a0a">
+<title>%s</title><meta name="description" content="%s"><meta property="og:title" content="%s"><meta property="og:description" content="%s">%s<meta name="theme-color" content="#0a0a0a">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/filmmaker/css/film.css"></head><body>
@@ -103,6 +103,12 @@ def foot():
 <div class="legal mono"><span>&copy; Bogdan Pascal</span><span>Filmmaker, DoP and drone operator</span></div>
 <script src="/filmmaker/js/film.js"></script></body></html>
 """ % (EMAIL, EMAIL, ig)
+
+
+def mk_html(p):
+    if p.get("home_sub"):
+        return "<span>%s</span><span>%s</span>" % (E(p["title"]), E(p["home_sub"]))
+    return E(p["title"])
 
 
 def fs_for(title):
@@ -126,13 +132,12 @@ def home():
         t = "/assets/filmmaker/%s/t.jpg" % p["slug"]
         inv = " inv" if p.get("invert") else ""
         sub = "<small>%s</small>" % E(p["sub"]) if p.get("sub") else ""
-        cov = '<div class="hs mono" style="--fs:%svw">%s</div>' % (fs_for(p["title"]), E(p["home_sub"])) if p.get("home_sub") else ""
         cards.append(
             '<a class="card" href="/filmmaker/work/%s/" style="--d:%.1fs" aria-label="%s"><span class="num mono">%02d</span>'
             '<div class="base"><img src="%s" alt="%s" loading="%s"></div>'
-            '<div class="mk%s" style="background-image:url(%s);--fs:%svw">%s</div>%s'
+            '<div class="mk%s" style="background-image:url(%s);--fs:%svw">%s</div>'
             '<div class="cap"><h3>%s%s</h3><span class="mono">%s</span></div></a>'
-            % (p["slug"], (i % 6) * 0.1, E(full_title(p)), i + 1, t, E(full_title(p)), "eager" if i < 6 else "lazy", inv, t, fs_for(p["title"]), E(p["title"]), cov, E(p["title"]), sub, E(p["category"]))
+            % (p["slug"], (i % 6) * 0.1, E(full_title(p)), i + 1, t, E(full_title(p)), "eager" if i < 6 else "lazy", inv, t, fs_for(p["title"]), mk_html(p), E(p["title"]), sub, E(p["category"]))
         )
     hero_slugs = [s for s in ["sky-above", "geodome", "speedo", "inanimate-girl", "particle", "thorpepark"] if have(s, "t.jpg")]
     bgs = json.dumps(["/assets/filmmaker/%s/t.jpg" % s for s in hero_slugs])
@@ -146,7 +151,7 @@ def home():
         '<div class="meta mono"><span class="tc" id="tc">00:00:00:00</span><span id="cur">%s</span><a class="btn mono" href="#work">See the work</a></div></header>'
         % (E(bgs, quote=True).replace("&#x27;", "&#39;"), E(names, quote=True).replace("&#x27;", "&#39;"), E(first["title"]))
         + '<div class="marquee mono" aria-label="Clients"><div>%s</div></div>' % strip
-        + '<section id="work"><div class="lab mono"><span>Selected work</span><span>%02d films, hover a title to open it</span></div><div class="grid">%s</div></section>' % (len(cards), "".join(cards))
+        + '<section id="work"><div class="lab mono"><span>Selected work</span><span>%02d films <i class="hv">hover a title to open it</i><i class="tp">tap a title to open it</i></span></div><div class="grid">%s</div></section>' % (len(cards), "".join(cards))
         + foot()
     )
     write(os.path.join(OUT, "index.html"), body)
