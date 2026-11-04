@@ -125,14 +125,14 @@ def home():
             continue
         t = "/assets/filmmaker/%s/t.jpg" % p["slug"]
         inv = " inv" if p.get("invert") else ""
-        hs = p.get("home_sub") or p.get("sub")
-        sub = "<small>%s</small>" % E(hs) if hs else ""
+        sub = "<small>%s</small>" % E(p["sub"]) if p.get("sub") else ""
+        cov = '<div class="hs mono" style="--fs:%svw">%s</div>' % (fs_for(p["title"]), E(p["home_sub"])) if p.get("home_sub") else ""
         cards.append(
             '<a class="card" href="/filmmaker/work/%s/" style="--d:%.1fs" aria-label="%s"><span class="num mono">%02d</span>'
             '<div class="base"><img src="%s" alt="%s" loading="%s"></div>'
-            '<div class="mk%s" style="background-image:url(%s);--fs:%svw">%s</div>'
+            '<div class="mk%s" style="background-image:url(%s);--fs:%svw">%s</div>%s'
             '<div class="cap"><h3>%s%s</h3><span class="mono">%s</span></div></a>'
-            % (p["slug"], (i % 6) * 0.1, E(full_title(p)), i + 1, t, E(full_title(p)), "eager" if i < 6 else "lazy", inv, t, fs_for(p["title"]), E(p["title"]), E(p["title"]), sub, E(p["category"]))
+            % (p["slug"], (i % 6) * 0.1, E(full_title(p)), i + 1, t, E(full_title(p)), "eager" if i < 6 else "lazy", inv, t, fs_for(p["title"]), E(p["title"]), cov, E(p["title"]), sub, E(p["category"]))
         )
     hero_slugs = [s for s in ["sky-above", "geodome", "speedo", "inanimate-girl", "particle", "thorpepark"] if have(s, "t.jpg")]
     bgs = json.dumps(["/assets/filmmaker/%s/t.jpg" % s for s in hero_slugs])
