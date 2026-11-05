@@ -404,38 +404,6 @@
    ]
   },
   {
-   "slug": "mojo-skincare",
-   "title": "Mojo Skincare",
-   "sub": "Scrub and Go",
-   "category": "Online Commercials",
-   "credits": [
-    "Director and Producer: Anda Teglas",
-    "DoP: Simon Rowling",
-    "Agency: Trigger",
-    "Production Company: BTHEVISUAL"
-   ],
-   "note": "Added at Bogdan's request. His own role on this one is not stated on Wix, so no role line for him yet. Ask him and add it.",
-   "quote": {
-    "text": "Featured as one of the Best Cosmetic Ads in the Video Design section of Design Rush.",
-    "by": "Design Rush"
-   },
-   "vimeo": [
-    "565712976"
-   ],
-   "vimeo_off": [
-    "456491475",
-    "565720340"
-   ],
-   "youtube": [],
-   "mp4": [],
-   "thumb": "14a189_c1319f3b33594b80acdeb91ed966bdad~mv2.jpg",
-   "ids": [
-    "14a189_d610a010ee0046c7a0ca5297530c77d9~mv2.png",
-    "14a189_0a722297d1de452888b463853a21dcd1~mv2.png",
-    "14a189_4a50789d69744ea7845ef814857bf4ed~mv2.png"
-   ]
-  },
-  {
    "slug": "had-a-dream",
    "title": "I Had A Dream Last Night",
    "sub": "",
@@ -705,6 +673,38 @@
     "b9541c_1c4701ff2e8349cd8cbb964d4158ef06~mv2.png",
     "b9541c_944367d3cd954ddeba578f1b2c9fb301~mv2.png",
     "b9541c_b2b234e86c2d43539ff9f9aaee4c2a18~mv2.png"
+   ]
+  },
+  {
+   "slug": "mojo-skincare",
+   "title": "Mojo Skincare",
+   "sub": "Scrub and Go",
+   "category": "Online Commercials",
+   "credits": [
+    "Director and Producer: Anda Teglas",
+    "DoP: Simon Rowling",
+    "Agency: Trigger",
+    "Production Company: BTHEVISUAL"
+   ],
+   "note": "Added at Bogdan's request. His own role on this one is not stated on Wix, so no role line for him yet. Ask him and add it.",
+   "quote": {
+    "text": "Featured as one of the Best Cosmetic Ads in the Video Design section of Design Rush.",
+    "by": "Design Rush"
+   },
+   "vimeo": [
+    "565712976"
+   ],
+   "vimeo_off": [
+    "456491475",
+    "565720340"
+   ],
+   "youtube": [],
+   "mp4": [],
+   "thumb": "14a189_c1319f3b33594b80acdeb91ed966bdad~mv2.jpg",
+   "ids": [
+    "14a189_d610a010ee0046c7a0ca5297530c77d9~mv2.png",
+    "14a189_0a722297d1de452888b463853a21dcd1~mv2.png",
+    "14a189_4a50789d69744ea7845ef814857bf4ed~mv2.png"
    ]
   }
  ],
