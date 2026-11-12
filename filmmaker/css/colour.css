@@ -116,3 +116,16 @@
 @media(max-width:1040px){.cg-workspace{grid-template-columns:minmax(0,1fr)}.cg-screen{border-right:0;border-bottom:1px solid var(--edge)}.cg-projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 16px}.cg-project{grid-template-columns:26px 1fr auto}.cg-sequence{margin-top:20px}.cg-filmstrip{max-width:350px}.cg-hero h1{font-size:clamp(68px,12vw,140px)}}
 @media(max-width:700px){.cg-hero{min-height:690px;min-height:83svh;padding:23px}.cg-hero:before{background-position:55% center}.cg-hero h1{font-size:clamp(61px,14.5vw,98px)}.cg-hero-top,.cg-hero-bottom{flex-direction:column;align-items:flex-start}.cg-hero-meta{display:none}.cg-hero-bottom p{font-size:17px;max-width:37ch}.cg-hero-bottom .cg-jump{margin-top:15px}.cg-stripe>span{display:none}.cg-stripe nav{gap:15px}.cg-intro,.cg-info{grid-template-columns:1fr;gap:15px}.cg-intro{padding:80px 0}.cg-intro-copy{padding:0}.cg-section{padding-top:65px}.cg-section-top{flex-direction:column}.cg-section-top .cg-headline{font-size:clamp(45px,11vw,75px)}.cg-workspace{margin-inline:calc(-1 * clamp(1rem,5vw,5rem));border-inline:0}.cg-screen-frame{aspect-ratio:4/3}.cg-screen-details{padding:20px}.cg-projects{grid-template-columns:1fr 1fr;gap:0 12px}.cg-project{grid-template-columns:20px 1fr;gap:5px}.cg-project .cg-arrow{display:none}.cg-work-name{font-size:16px}.cg-archive{grid-template-columns:1fr 1fr;gap:5px}.cg-archive-card{aspect-ratio:3/4}.cg-archive-card span{font-size:21px;left:10px;bottom:12px}.cg-methods{grid-template-columns:1fr}.cg-method{padding:20px 0 26px}.cg-method+.cg-method{border-left:0;border-top:1px solid var(--edge);padding:20px 0 26px}.cg-method h3{margin:24px 0 15px;font-size:40px}.cg-statement{padding:95px 0}.cg-cta{grid-template-columns:1fr}.cg-cta h2{font-size:clamp(60px,14vw,105px)}.cg-cta a{justify-self:start}.cg-bottom{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.cg-hero:before{animation:none}.cg *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* Moving image viewing room. */
+.cg-motion-stage{background:var(--panel);border:1px solid var(--edge);padding:clamp(8px,1.4vw,18px)}
+.cg-motion-stage video{aspect-ratio:16/9;object-fit:contain;display:block;background:#060606;width:100%}
+.cg-motion-controls{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:20px;align-items:center;padding:22px 6px 9px}
+.cg-motion-controls h3{font-size:clamp(20px,2.5vw,36px);letter-spacing:-.055em;text-transform:uppercase;line-height:1;margin:7px 0}
+.cg-film-choices{display:flex;flex-wrap:wrap;gap:6px}
+.cg-film-choices button{border:1px solid var(--edge);background:transparent;padding:11px 12px;font:700 10px 'Space Mono',monospace;letter-spacing:.05em}
+.cg-film-choices button[aria-pressed=true],.cg-film-choices button:hover{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+.cg-motion-controls>a{font:700 11px 'Space Mono',monospace;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+.cg-motion-controls>a:hover{color:var(--accent)}
+@media(max-width:1040px){.cg-motion-controls{grid-template-columns:1fr}.cg-film-choices{margin:5px 0}.cg-motion-controls>a{justify-self:start}}
