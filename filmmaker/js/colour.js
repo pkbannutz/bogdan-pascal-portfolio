@@ -27,6 +27,7 @@
   const dialogImage = document.querySelector('#cg-dialog-image');
   const dialogCaption = document.querySelector('#cg-dialog-caption');
   let currentProject = 0, currentShot = 0, token = 0;
+  let activeFilmId = 'geodome';
   const shotPath = (project, number) => '/assets/filmmaker/' + project.folder + '/' + String(number + 1).padStart(2,'0') + '.jpg';
 
   function update(projectIndex, shotIndex) {
@@ -67,6 +68,7 @@
       button.setAttribute('aria-label', 'View ' + project.title + ' frame ' + (index + 1));
       button.setAttribute('aria-pressed',String(index === currentShot));
     });
+    selectFilm(project.id);
   }
   projectButtons.forEach((button,index)=>{
     button.addEventListener('click',()=>update(index,0));
@@ -132,28 +134,40 @@
     particle:{title:'Particle / For Men',poster:'/assets/filmmaker/particle/t.jpg',type:'video',url:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/particle.mp4',page:'/filmmaker/work/particle/'},
     leo:{title:'Dear Leo',poster:'/assets/filmmaker/leo/t.jpg',type:'video',url:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/leo.mp4',page:'/filmmaker/work/leo/'}
   };
+  // The top frame explorer and the film viewer share one selected project.
+  // Switching shots within the same project does not restart a playing film.
+  function selectFilm(projectId) {
+    const film = films[projectId];
+    if (!film || !filmPlayer || !filmEmbed) return;
+    filmButtons.forEach(button => {
+      button.setAttribute('aria-pressed', String(button.dataset.cgFilm === projectId));
+    });
+    filmTitle.textContent = film.title;
+    filmLink.href = film.page;
+    filmLink.setAttribute('aria-label', 'View ' + film.title + ' project details');
+    if (activeFilmId === projectId) return;
+    filmPlayer.pause();
+    // Clear previous embedded playback when moving away from Vimeo.
+    filmEmbed.src = 'about:blank';
+    filmEmbed.hidden = true;
+    filmPlayer.hidden = true;
+    if (film.type === 'vimeo') {
+      filmEmbed.title = film.title;
+      filmEmbed.src = film.url;
+      filmEmbed.hidden = false;
+    } else {
+      filmPlayer.poster = film.poster;
+      filmPlayer.src = film.url;
+      filmPlayer.load();
+      filmPlayer.hidden = false;
+    }
+    activeFilmId = projectId;
+  }
+  // The player buttons work in both directions: they also select the project above.
   if (filmPlayer && filmEmbed) {
-    filmButtons.forEach(button => button.addEventListener('click',()=>{
-      const film = films[button.dataset.cgFilm];
-      if (!film) return;
-      filmPlayer.pause();
-      filmEmbed.removeAttribute('src');
-      if (film.type === 'vimeo') {
-        filmPlayer.hidden = true;
-        filmEmbed.hidden = false;
-        filmEmbed.title = film.title;
-        filmEmbed.src = film.url;
-      } else {
-        filmEmbed.hidden = true;
-        filmPlayer.hidden = false;
-        filmPlayer.poster = film.poster;
-        filmPlayer.src = film.url;
-        filmPlayer.load();
-      }
-      filmTitle.textContent = film.title;
-      filmLink.href = film.page;
-      filmLink.setAttribute('aria-label','View ' + film.title + ' project details');
-      filmButtons.forEach(other=>other.setAttribute('aria-pressed',String(other === button)));
+    filmButtons.forEach(button => button.addEventListener('click', () => {
+      const index = projects.findIndex(project => project.id === button.dataset.cgFilm);
+      if (index >= 0) update(index, 0);
     }));
   }
   // This site intentionally shows only genuine portfolio frames. A true
