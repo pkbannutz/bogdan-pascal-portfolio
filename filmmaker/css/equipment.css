@@ -147,3 +147,32 @@
   .gear-media img{transition:none}
   .gear-row figure:hover .gear-media img{scale:1}
 }
+
+/* Five secondary categories are fetched only after Show more is selected. */
+.gear-more{border-top:1px solid var(--edge);padding:2rem 0 1.2rem}
+.gear-more-toggle{
+  width:100%;display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;text-align:left;background:var(--panel);color:var(--text);
+  border:1px solid var(--edge);padding:1.2rem clamp(1.1rem,3vw,2rem);
+  transition:border-color 200ms ease,background-color 200ms ease;
+}
+.gear-more-toggle:hover:not(:disabled),.gear-more-toggle:focus-visible{
+  background:var(--panel);color:var(--text);border-color:var(--accent);
+}
+.gear-more-toggle:disabled{cursor:progress;opacity:.7}
+.gear-more-text{display:flex;flex-direction:column;gap:.5rem}
+.gear-more-text small{
+  font:700 .68rem ui-monospace,monospace;letter-spacing:.13em;
+  color:var(--muted)
+}
+.gear-more-text strong{
+  font-size:clamp(1.12rem,2.2vw,1.7rem);font-weight:700;
+  letter-spacing:-.04em
+}
+.gear-more-icon{display:grid;place-items:center;flex:none;
+  width:2.6rem;height:2.6rem;border:1px solid var(--edge);
+  border-radius:50%;font-size:1.55rem;line-height:1
+}
+.gear-more-toggle:hover .gear-more-icon{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+.gear-more-status{font:.8rem/1.5 ui-monospace,monospace;color:var(--muted)}
+#gear-extra-sections[hidden]{display:none}

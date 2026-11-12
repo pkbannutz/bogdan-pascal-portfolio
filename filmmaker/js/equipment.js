@@ -83,7 +83,7 @@ function fitGearImage(img) {
   new ResizeObserver(fit).observe(media);
 }
 
-document.querySelectorAll('.gear-section:has(.gear-row)').forEach((section) => {
+function initializeGearSection(section) {
   const row = section.querySelector('.gear-row');
   const previous = section.querySelector('[data-gear-step="-1"]');
   const next = section.querySelector('[data-gear-step="1"]');
@@ -231,7 +231,66 @@ document.querySelectorAll('.gear-section:has(.gear-row)').forEach((section) => {
   }
   measureCycle();
   updateControls();
-});
+}
+
+document.querySelectorAll('.gear-section:has(.gear-row)').forEach(initializeGearSection);
+
+// Secondary equipment categories stay in a separate HTML fragment.
+// No card DOM, images, fitting logic or animation instances are loaded
+// until a visitor explicitly requests the additional categories.
+const extraToggle = document.querySelector('[data-gear-more-toggle]');
+const extraRegion = document.querySelector('#gear-extra-sections');
+if (extraToggle && extraRegion) {
+  const label = extraToggle.querySelector('[data-gear-more-label]');
+  const icon = extraToggle.querySelector('[data-gear-more-icon]');
+  const status = document.querySelector('[data-gear-more-status]');
+  let loaded = false;
+  let loading = false;
+
+  function setExpanded(open) {
+    extraRegion.hidden = !open;
+    extraToggle.setAttribute('aria-expanded', String(open));
+    label.textContent = open ? 'SHOW LESS EQUIPMENT' : 'SHOW MORE EQUIPMENT';
+    icon.textContent = open ? '−' : '+';
+  }
+
+  extraToggle.addEventListener('click', async () => {
+    if (loading) return;
+    if (loaded) {
+      setExpanded(extraRegion.hidden);
+      return;
+    }
+
+    loading = true;
+    extraToggle.disabled = true;
+    label.textContent = 'LOADING EQUIPMENT...';
+    if (status) status.hidden = true;
+    try {
+      const response = await fetch('/filmmaker/equipment/extra-sections.html?v=20261112');
+      if (!response.ok) throw new Error('Equipment categories could not be loaded.');
+      const template = document.createElement('template');
+      template.innerHTML = await response.text();
+      const sections = [...template.content.children].filter((node) =>
+        node.matches('.gear-section:has(.gear-row)')
+      );
+      if (sections.length !== 5) throw new Error('Equipment category list is incomplete.');
+      extraRegion.appendChild(template.content);
+      extraRegion.hidden = false;
+      sections.forEach(initializeGearSection);
+      loaded = true;
+      setExpanded(true);
+    } catch (err) {
+      setExpanded(false);
+      if (status) {
+        status.textContent = 'Could not load the additional equipment. Please try again.';
+        status.hidden = false;
+      }
+    } finally {
+      loading = false;
+      extraToggle.disabled = false;
+    }
+  });
+}
 
 // A single animation loop services all overflowing rows, with alternating
 // directions and a continuous, non-reversing wrap between identical cycles.

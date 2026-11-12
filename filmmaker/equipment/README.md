@@ -6,7 +6,8 @@ This is the source of truth for adding or changing equipment on [the equipment p
 
 | Purpose | File |
 | --- | --- |
-| Equipment names, descriptions, quantities, order, and image paths | `filmmaker/equipment/index.html` |
+| Visible equipment categories, overview and Show more control | `filmmaker/equipment/index.html` |
+| Five secondary categories fetched only after Show more | `filmmaker/equipment/extra-sections.html` |
 | Grid, card size, image frame, typography, theme styles | `filmmaker/css/equipment.css` |
 | Horizontal navigation and transparent-image auto-fit | `filmmaker/js/equipment.js` |
 | Original committed images and cutouts | `assets/filmmaker/studio/` and `assets/filmmaker/studio/kit/` |
@@ -21,6 +22,23 @@ This is the source of truth for adding or changing equipment on [the equipment p
 5. **Consistent captions.** Product name and quantity first, short description beneath. The image slot, name area, description baseline, card gap, and alignment should remain consistent even when names wrap onto extra lines. Long names may wrap; do not shrink the entire card to fit.
 6. **Consistent light and dark themes.** Retain the lime accent for quantities in dark mode and a bright lime highlight with readable dark text in light mode. Check text contrast and both themes.
 7. **No missing-image layout collapse.** Items without an image may temporarily use the existing `.gear-text` placeholder, which reserves the same media height. Replace it with the image when available.
+
+## Deferred categories and current ordering
+
+Keep the top of the Equipment page limited to the primary categories: **Cameras, Sound & Recording, Director's Monitor & Wireless Transmission, Stabilisation, Electric Crane, Motorised Edelkrone**.
+
+A single **Show more equipment** button follows those primary categories and loads five additional sections in this exact order:
+1. **Media & DIT**
+2. **Batteries**
+3. **Lenses & Filters** (combines the former Lenses and Filters & camera care cards without removing any products)
+4. **Grip & support**
+5. **Lighting**
+
+The extra categories live in `filmmaker/equipment/extra-sections.html`, **not** the main page. Only fetch that fragment when the button is clicked for the first time. Do not add preload/prefetch hints, hidden image tags, or duplicate category markup to the initial HTML; the objective is **zero requests for secondary product images and zero secondary carousel setup until click**. Opening again can reuse the previously fetched DOM. The animation system in `filmmaker/js/equipment.js` must initialise newly appended rows when requested and keep the alternating directions, hover zoom, manual control, and reduced-motion preferences.
+
+Maintain sequential visible category labels 01 through 11 across both files. The displayed item count excludes temporarily hidden cards; retain all the originally hidden entries and their image paths for restoration.
+
+**Protect the rest of the live site.** When changing equipment, fetch the latest main branch and modify only the affected equipment files. Do not overwrite the navigation, service links, hero, unrelated service pages, or assets from an older snapshot.
 
 ## Automatic motion and hover interaction
 
@@ -91,6 +109,8 @@ Cameras and lenses use `<figure>` directly inside their `.gear-row` rather than 
 - [ ] Inspect actual rendered products, not just CSS: small products with padded transparency are scaled up; wide, tall, grouped, and unusually shaped images stay fully inside the invisible frame.
 - [ ] No product is missing a name, image or intentional placeholder, quantity, or description. Images load without broken URLs.
 - [ ] No cards are accidentally duplicated or lost; every section count matches its number of visible figures. Temporarily hidden cards remain in the source but do not count toward the displayed total.
+- [ ] Before Show more is clicked, the extra HTML fragment and its product images have not been requested, and only six primary sections exist in the DOM.
+- [ ] After Show more is clicked, the five sections appear in their documented order; all equipment is present and carousels initialise. Collapsing does not delete anything.
 - [ ] The deployed live page is visually checked after GitHub Pages reports success. Compare a screenshot before and after when changing layout or image scaling.
 - [ ] No em dashes in website text. Keep copy accurate and minimal.
 
