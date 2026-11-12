@@ -163,3 +163,6 @@
   .cg .cg-screen .cg-shot-label{left:5px;bottom:5px;padding:3px 5px;font-size:9px}
   .cg .cg-screen .cg-sequence{margin-top:14px}
 }
+
+/* Heading removed from viewing room: keep the player visually connected to the frame archive. */
+.cg.cg-motion,.cg .cg-motion{padding-top:clamp(24px,4vw,52px)}
