@@ -7,7 +7,8 @@ This is the source of truth for adding or changing equipment on [the equipment p
 | Purpose | File |
 | --- | --- |
 | Visible equipment categories, overview and Show more control | `filmmaker/equipment/index.html` |
-| Five secondary categories fetched only after Show more | `filmmaker/equipment/extra-sections.html` |
+| Motorised Edelkrone and Electric Crane, fetched on first Show more | `filmmaker/equipment/motion-sections.html` |
+| Five remaining categories, fetched on second Show more | `filmmaker/equipment/extra-sections.html` |
 | Grid, card size, image frame, typography, theme styles | `filmmaker/css/equipment.css` |
 | Horizontal navigation and transparent-image auto-fit | `filmmaker/js/equipment.js` |
 | Original committed images and cutouts | `assets/filmmaker/studio/` and `assets/filmmaker/studio/kit/` |
@@ -23,22 +24,37 @@ This is the source of truth for adding or changing equipment on [the equipment p
 6. **Consistent light and dark themes.** Retain the lime accent for quantities in dark mode and a bright lime highlight with readable dark text in light mode. Check text contrast and both themes.
 7. **No missing-image layout collapse.** Items without an image may temporarily use the existing `.gear-text` placeholder, which reserves the same media height. Replace it with the image when available.
 
-## Deferred categories and current ordering
+## Hero, ownership and two-stage expansion
 
-Keep the primary categories above Show more in this order: **Cameras, Lenses, Sound & Recording, Director's Monitor & Wireless Transmission, Stabilisation, Motorised Edelkrone, Electric Crane**. Lenses must always remain **second, immediately after Cameras**.
+The hero is titled **In-House Equipment** and explains that the listed gear is **personally owned and available for shoots**, not simply equipment the filmmaker has used or can hire. Keep the language factual, brief and ownership-focused.
 
-The centered, compact **Show more equipment** button follows those seven categories and fetches five extra sections in this order:
-1. **Media & DIT**
-2. **Batteries**
-3. **Filters & Camera Care** (the three filters/care products, not the five lenses)
-4. **Grip & support**
-5. **Lighting**
+Initially show only **five core categories** in this order:
+1. Cameras
+2. Lenses
+3. Sound & Recording
+4. Director's Monitor & Wireless Transmission
+5. Stabilisation
 
-The extra categories live in `filmmaker/equipment/extra-sections.html`, **not** the main page. Only fetch that fragment when the button is clicked for the first time. Do not add preload/prefetch hints, hidden image tags, or duplicate category markup to the initial HTML; the objective is **zero requests for secondary product images and zero secondary carousel setup until click**. Opening again can reuse the previously fetched DOM. The animation system in `filmmaker/js/equipment.js` must initialise newly appended rows when requested and keep the alternating directions, hover zoom, manual control, and reduced-motion preferences.
+Use a single compact, horizontally centered **SHOW MORE EQUIPMENT** button under the visible categories.
 
-Maintain sequential visible category labels 01 through 12 across both files. The displayed item count excludes temporarily hidden cards; retain all the originally hidden entries and their image paths for restoration.
+**First click:** Request `filmmaker/equipment/motion-sections.html` for the first time and append two additional categories, keeping this order:
+6. Motorised Edelkrone
+7. Electric Crane
 
-**Protect the rest of the live site.** When changing equipment, fetch the latest main branch and modify only the affected equipment files. Do not overwrite the navigation, service links, hero, unrelated service pages, or assets from an older snapshot.
+The button remains **SHOW MORE EQUIPMENT** and follows the newly displayed categories.
+
+**Second click:** Request `filmmaker/equipment/extra-sections.html` for the first time and reveal the remaining categories, keeping this order:
+8. Media & DIT
+9. Batteries
+10. Filters & Camera Care
+11. Grip & support
+12. Lighting
+
+After both stages are open, the button can read **SHOW LESS EQUIPMENT** and collapse both sections. Subsequent expansions should reuse the already fetched content without extra network requests. The two sections have their own independent hidden containers, which remain empty until the relevant click. Do not preload, prefetch, inject hidden images or initialise a hidden carousel before its stage is opened.
+
+Keep all original item cards and previously hidden entries. Displayed counts exclude hidden products, and category numbers run 01 through 12. Maintain transparent image fitting, alternating continuous loops, working manual controls and reduced-motion preferences at each stage.
+
+**Protect the rest of the live site.** Start with the current `main` branch and modify only related equipment files. Do not revert navigation, service links, hero content outside this page, unrelated service pages, or assets from older revisions.
 
 ## Automatic motion and hover interaction
 
@@ -109,8 +125,9 @@ Cameras and lenses use `<figure>` directly inside their `.gear-row` rather than 
 - [ ] Inspect actual rendered products, not just CSS: small products with padded transparency are scaled up; wide, tall, grouped, and unusually shaped images stay fully inside the invisible frame.
 - [ ] No product is missing a name, image or intentional placeholder, quantity, or description. Images load without broken URLs.
 - [ ] No cards are accidentally duplicated or lost; every section count matches its number of visible figures. Temporarily hidden cards remain in the source but do not count toward the displayed total.
-- [ ] Before Show more is clicked, the extra HTML fragment and its product images have not been requested, and only seven primary sections exist in the DOM (including Lenses second, and Motorised Edelkrone before Electric Crane).
-- [ ] After Show more is clicked, the five sections appear in their documented order (Filters & Camera Care third); all equipment is present and carousels initialise. Collapsing does not delete anything.
+- [ ] Initial page has exactly five category sections. No motion or secondary fragment is fetched or present in the DOM yet.
+- [ ] First click loads only Motorised Edelkrone then Electric Crane, increasing the visible sections to seven and keeping the second fragment unfetched.
+- [ ] Second click loads the remaining five categories in order, increasing visible sections to twelve. Show less collapses both stages without deleting content, and reopening does not refetch.
 - [ ] The Show more button stays compact and horizontally centered at desktop and mobile widths.
 - [ ] The deployed live page is visually checked after GitHub Pages reports success. Compare a screenshot before and after when changing layout or image scaling.
 - [ ] No em dashes in website text. Keep copy accurate and minimal.

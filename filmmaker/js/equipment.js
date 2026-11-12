@@ -235,50 +235,67 @@ function initializeGearSection(section) {
 
 document.querySelectorAll('.gear-section:has(.gear-row)').forEach(initializeGearSection);
 
-// Secondary equipment categories stay in a separate HTML fragment.
-// No card DOM, images, fitting logic or animation instances are loaded
-// until a visitor explicitly requests the additional categories.
+// Load each expansion level only when its Show more click occurs.
+// The two motion rigs are fetched on click one, and the five secondary
+// categories are fetched on click two. Nothing is fetched on initial load.
 const extraToggle = document.querySelector('[data-gear-more-toggle]');
+const motionRegion = document.querySelector('#gear-motion-sections');
 const extraRegion = document.querySelector('#gear-extra-sections');
-if (extraToggle && extraRegion) {
+if (extraToggle && motionRegion && extraRegion) {
   const label = extraToggle.querySelector('[data-gear-more-label]');
   const status = document.querySelector('[data-gear-more-status]');
-  let loaded = false;
+  const levels = [
+    { region: motionRegion, path: '/filmmaker/equipment/motion-sections.html?v=20261112', expected: 2, loaded: false },
+    { region: extraRegion, path: '/filmmaker/equipment/extra-sections.html?v=20261112b', expected: 5, loaded: false }
+  ];
+  let openCount = 0;
   let loading = false;
 
-  function setExpanded(open) {
-    extraRegion.hidden = !open;
-    extraToggle.setAttribute('aria-expanded', String(open));
-    label.textContent = open ? 'SHOW LESS EQUIPMENT' : 'SHOW MORE EQUIPMENT';
+  function updateExpanded() {
+    levels.forEach((entry, index) => {
+      entry.region.hidden = index >= openCount;
+    });
+    extraToggle.setAttribute('aria-expanded', String(openCount > 0));
+    label.textContent = openCount === levels.length ? 'SHOW LESS EQUIPMENT' : 'SHOW MORE EQUIPMENT';
+  }
+
+  async function ensureLoaded(entry) {
+    if (entry.loaded) return;
+    const response = await fetch(entry.path);
+    if (!response.ok) throw new Error('Could not load equipment categories.');
+    const template = document.createElement('template');
+    template.innerHTML = await response.text();
+    const sections = [...template.content.children].filter((node) =>
+      node.matches('.gear-section:has(.gear-row)')
+    );
+    if (sections.length !== entry.expected) throw new Error('Incomplete equipment list.');
+    entry.region.appendChild(template.content);
+    // Make layout measurable before setting up image frames and carousel loops.
+    entry.region.hidden = false;
+    sections.forEach(initializeGearSection);
+    entry.loaded = true;
   }
 
   extraToggle.addEventListener('click', async () => {
     if (loading) return;
-    if (loaded) {
-      setExpanded(extraRegion.hidden);
+
+    if (openCount === levels.length) {
+      openCount = 0;
+      updateExpanded();
       return;
     }
 
+    const entry = levels[openCount];
     loading = true;
     extraToggle.disabled = true;
     label.textContent = 'LOADING EQUIPMENT...';
     if (status) status.hidden = true;
     try {
-      const response = await fetch('/filmmaker/equipment/extra-sections.html?v=20261112b');
-      if (!response.ok) throw new Error('Equipment categories could not be loaded.');
-      const template = document.createElement('template');
-      template.innerHTML = await response.text();
-      const sections = [...template.content.children].filter((node) =>
-        node.matches('.gear-section:has(.gear-row)')
-      );
-      if (sections.length !== 5) throw new Error('Equipment category list is incomplete.');
-      extraRegion.appendChild(template.content);
-      extraRegion.hidden = false;
-      sections.forEach(initializeGearSection);
-      loaded = true;
-      setExpanded(true);
+      await ensureLoaded(entry);
+      openCount++;
+      updateExpanded();
     } catch (err) {
-      setExpanded(false);
+      updateExpanded();
       if (status) {
         status.textContent = 'Could not load the additional equipment. Please try again.';
         status.hidden = false;

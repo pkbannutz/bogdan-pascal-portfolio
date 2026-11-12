@@ -165,4 +165,4 @@
   letter-spacing:-.04em
 }
 .gear-more-status{font:.8rem/1.5 ui-monospace,monospace;color:var(--muted);text-align:center}
-#gear-extra-sections[hidden]{display:none}
+#gear-motion-sections[hidden],#gear-extra-sections[hidden]{display:none}
