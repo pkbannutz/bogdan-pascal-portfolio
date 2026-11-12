@@ -32,12 +32,16 @@ This is the source of truth for adding or changing equipment on [the equipment p
 - For a set of the same model in different capacities, keep accurate capacity and quantity labels. Example: SanDisk Portable SSD 1TB, 2TB, and 8TB are separate `×1` entries using the same appropriately matching model image.
 - Never crop object edges to make a product appear bigger. If transparency detection or product shape causes a poor visual result, correct the source image or fix the shared fitting logic, then inspect the result visually.
 
+## Temporarily hide a product without deleting it
+
+For an item the owner wants hidden but restorable, keep the complete card and its committed image unchanged. Add `hidden data-temporarily-hidden="true"` to the opening `<li>` (or `<figure>` for camera/lens cards). The browser excludes that card from the visible carousel, while the original markup and image path remain in GitHub. Update the category's displayed `NN / XX ITEMS` count to **visible cards only**. To restore the product, remove those attributes and increase the visible count. Do not delete, rename, or move the original image just because its card is hidden. Check navigation and card positions after changing the visible count.
+
 ## Adding one new item
 
 1. Choose the correct category; move an existing card rather than duplicating it.
 2. Prepare and inspect the transparent PNG; commit it to `assets/filmmaker/studio/kit/`.
 3. Add one `<figure>` with the image, accessible `alt`, a `<strong>` product name and `gear-qty` span, and one concise description. For the support/category carousels, wrap the figure in an `<li>`.
-4. Update that section's visible `NN / XX ITEMS` count to match its actual number of cards. **Never** count quantity `×4` as four separate cards.
+4. Update that section's visible `NN / XX ITEMS` count to match the number of **visible** cards (exclude temporarily hidden entries). **Never** count quantity `×4` as four separate cards.
 5. Keep each item in the appropriate equipment category. Do not change category labels or reorder unrelated items without being asked.
 6. Preserve existing scroll controls, class names, theme switching, and `noindex, nofollow` on the draft equipment page.
 7. When modifying a CSS or JS asset, change the corresponding `?v=` cache-busting version in `filmmaker/equipment/index.html` so live visitors see the update.
@@ -71,7 +75,7 @@ Cameras and lenses use `<figure>` directly inside their `.gear-row` rather than 
 - [ ] **Dark and light modes** both preserve product legibility and highlighted quantities.
 - [ ] Inspect actual rendered products, not just CSS: small products with padded transparency are scaled up; wide, tall, grouped, and unusually shaped images stay fully inside the invisible frame.
 - [ ] No product is missing a name, image or intentional placeholder, quantity, or description. Images load without broken URLs.
-- [ ] No cards are duplicated or lost; every section count matches its number of figures.
+- [ ] No cards are accidentally duplicated or lost; every section count matches its number of visible figures. Temporarily hidden cards remain in the source but do not count toward the displayed total.
 - [ ] The deployed live page is visually checked after GitHub Pages reports success. Compare a screenshot before and after when changing layout or image scaling.
 - [ ] No em dashes in website text. Keep copy accurate and minimal.
 
