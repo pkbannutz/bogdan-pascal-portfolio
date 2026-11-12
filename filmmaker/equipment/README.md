@@ -22,6 +22,18 @@ This is the source of truth for adding or changing equipment on [the equipment p
 6. **Consistent light and dark themes.** Retain the lime accent for quantities in dark mode and a bright lime highlight with readable dark text in light mode. Check text contrast and both themes.
 7. **No missing-image layout collapse.** Items without an image may temporarily use the existing `.gear-text` placeholder, which reserves the same media height. Replace it with the image when available.
 
+## Automatic motion and hover interaction
+
+- A category **auto-scrolls only when it contains more than four visible equipment cards**. Count actual visible cards, not card quantities or hidden entries.
+- The movement is intentionally slow (currently 19 pixels per second), horizontal, continuous, and infinite: the last card is followed seamlessly by the first with no reverse or visible jump.
+- Successive **animated** categories alternate direction. Categories with four or fewer visible cards remain stationary and do not affect the alternation.
+- JavaScript duplicates the visible cards as an **aria-hidden visual loop**. Duplicates are not real inventory and must not affect item counts, labels, or future edits. Hidden original cards are never cloned.
+- Auto-scrolling pauses when the visitor hovers over the row, focuses it, or interacts manually. Arrows, desktop mouse drag, wheel scrolling, and mobile touch scrolling should remain usable.
+- Hovering over a product image produces a subtle **5% zoom**, using the CSS `scale` property so it does not erase the existing transparent-pixel auto-fit transform. Never zoom enough to clip the actual product.
+- When the visitor requests **reduced motion**, remove visual loop copies from layout, turn off automatic movement and animated zoom, and leave manual navigation available.
+- Scrolling should pause for offscreen categories and background tabs to avoid unnecessary motion and resource use.
+- Implement looping behavior in `filmmaker/js/equipment.js`, its visual states in `filmmaker/css/equipment.css`. Do not add per-category animations or duplicate product cards in the HTML.
+
 ## Product image rules
 
 - Prefer an accurate image of the **exact listed model**. Never substitute a similar-looking but different piece of equipment. Preserve product shapes, branding, labels, and cables that are genuinely part of the listed item.
@@ -73,6 +85,9 @@ Cameras and lenses use `<figure>` directly inside their `.gear-row` rather than 
 - [ ] On **tablet (around 768px)**, two cards are comfortably readable; horizontal navigation works.
 - [ ] On **mobile (around 390px)**, one dominant card is visible with a partial next-card cue; swiping and arrow controls work without horizontal page overflow.
 - [ ] **Dark and light modes** both preserve product legibility and highlighted quantities.
+- [ ] Any category with **more than four visible cards** smoothly loops without a jump; successive animated rows move in opposite directions. Rows with four or fewer cards do not move.
+- [ ] Hovering pauses its row and enlarges only the image by around 5%, without clipping; moving away resumes scrolling. Test arrow navigation, desktop dragging and touch swiping.
+- [ ] **Reduced motion** prevents automatic movement and hover animation; the original cards remain available for manual navigation.
 - [ ] Inspect actual rendered products, not just CSS: small products with padded transparency are scaled up; wide, tall, grouped, and unusually shaped images stay fully inside the invisible frame.
 - [ ] No product is missing a name, image or intentional placeholder, quantity, or description. Images load without broken URLs.
 - [ ] No cards are accidentally duplicated or lost; every section count matches its number of visible figures. Temporarily hidden cards remain in the source but do not count toward the displayed total.

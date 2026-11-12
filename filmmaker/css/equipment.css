@@ -119,3 +119,31 @@
   .gear-section{padding:1.7rem 0 2rem}
   .gear-row strong{font-size:1.12rem}
 }
+
+/* Seamless horizontal motion only for categories with more than four visible cards. */
+.gear-row.gear-is-looping{
+  scroll-snap-type:none;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+}
+.gear-row.gear-is-looping::-webkit-scrollbar{display:none}
+.gear-row.gear-is-looping.gear-is-dragging{cursor:grabbing;user-select:none}
+@media(hover:hover){
+  .gear-row.gear-is-looping{cursor:grab}
+}
+/* Hover lift composes with the separate transparency-aware transform from JS. */
+.gear-media img{
+  scale:1;
+  transition:scale 280ms cubic-bezier(.22,1,.36,1);
+}
+.gear-row figure:hover .gear-media img{scale:1.05}
+/* The extra cycle is visual only and disappears completely for reduced motion. */
+@media(prefers-reduced-motion:reduce){
+  .gear-row.gear-is-looping{
+    scroll-snap-type:x mandatory;
+    scrollbar-width:thin;
+  }
+  .gear-row.gear-is-looping>.gear-loop-copy{display:none!important}
+  .gear-media img{transition:none}
+  .gear-row figure:hover .gear-media img{scale:1}
+}
