@@ -118,6 +118,30 @@
   } else {
     zoomButton.hidden = true;
   }
+
+  const filmPlayer = root.querySelector('#cg-film-player');
+  const filmTitle = root.querySelector('#cg-film-title');
+  const filmLink = root.querySelector('#cg-film-link');
+  const filmButtons = [...root.querySelectorAll('[data-cg-film]')];
+  const films = {
+    ffern:{title:'Ffern / Discover Summer 23',poster:'/assets/filmmaker/ffern/t.jpg',url:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/ffern.mp4',page:'/filmmaker/work/ffern/'},
+    geodome:{title:'GeoDomeX / Hers by Day, His by Night',poster:'/assets/filmmaker/geodome/t.jpg',url:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/geodome-main.mp4',page:'/filmmaker/work/geodome/'},
+    fauness:{title:'Fauness / Inanimate Girl',poster:'/assets/filmmaker/inanimate-girl/t.jpg',url:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/fauness.mp4',page:'/filmmaker/work/inanimate-girl/'}
+  };
+  if (filmPlayer) {
+    filmButtons.forEach(button => button.addEventListener('click',()=>{
+      const film = films[button.dataset.cgFilm];
+      if (!film) return;
+      filmPlayer.pause();
+      filmPlayer.poster = film.poster;
+      filmPlayer.src = film.url;
+      filmPlayer.load();
+      filmTitle.textContent = film.title;
+      filmLink.href = film.page;
+      filmLink.setAttribute('aria-label','View ' + film.title + ' project details');
+      filmButtons.forEach(other=>other.setAttribute('aria-pressed',String(other === button)));
+    }));
+  }
   // This site intentionally shows only genuine portfolio frames. A true
   // original/final comparison needs matching source and graded image assets.
   update(0,0);
