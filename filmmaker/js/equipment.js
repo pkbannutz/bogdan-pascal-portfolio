@@ -1,9 +1,5 @@
-/* One consistent visual frame and seamless alternating equipment carousels. */
+/* Equipment gallery: fixed image frames, finite manual browsing, two lazy expansion stages. */
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
-const loopingRows = [];
-let alternatingDirection = 1;
-const SCROLL_SPEED_PX_PER_SECOND = 19;
-const MANUAL_PAUSE_MS = 2600;
 
 function fitGearImage(img) {
   // A stable frame preserves card heights while images load.
@@ -87,94 +83,27 @@ function initializeGearSection(section) {
   const row = section.querySelector('.gear-row');
   const previous = section.querySelector('[data-gear-step="-1"]');
   const next = section.querySelector('[data-gear-step="1"]');
-  // Hidden, restorable products must never be shown or duplicated.
-  const originals = [...row.children].filter((card) => !card.hidden);
-  const shouldLoop = originals.length > 4;
-  let loop = null;
-
-  if (shouldLoop) {
-    const copies = originals.map((card) => {
-      const copy = card.cloneNode(true);
-      copy.classList.add('gear-loop-copy');
-      copy.setAttribute('aria-hidden', 'true');
-      copy.querySelectorAll('[id]').forEach((el) => el.removeAttribute('id'));
-      copy.querySelectorAll('[tabindex]').forEach((el) => el.setAttribute('tabindex', '-1'));
-      row.appendChild(copy);
-      return copy;
-    });
-
-    row.classList.add('gear-is-looping');
-    loop = {
-      row,
-      originals,
-      copies,
-      direction: alternatingDirection,
-      distance: 0,
-      position: 0,
-      visible: false,
-      pointerDown: false,
-      pauseUntil: 0
-    };
-    alternatingDirection *= -1;
-    loopingRows.push(loop);
-  }
-
-  // Fit both original cards and visually repeated cards, never generating
-  // another product image or changing its original file.
-  row.querySelectorAll('figure img').forEach(fitGearImage);
-
-  function measureCycle() {
-    if (!loop || motionPreference.matches) return;
-    const first = loop.originals[0].getBoundingClientRect();
-    const nextFirst = loop.copies[0].getBoundingClientRect();
-    const distance = nextFirst.left - first.left;
-    if (!(distance > 0)) return;
-    if (!loop.distance) {
-      loop.distance = distance;
-      // Starting at the repeated first item makes reverse scrolling seamless.
-      loop.position = loop.direction < 0 ? distance : 0;
-      row.scrollLeft = loop.position;
-    } else if (Math.abs(loop.distance - distance) > 0.5) {
-      const previousDistance = loop.distance;
-      const phase = ((loop.position % previousDistance) + previousDistance) % previousDistance;
-      loop.distance = distance;
-      loop.position = phase / previousDistance * distance;
-      row.scrollLeft = loop.position;
-    }
-  }
+  // Keep saved-but-hidden entries excluded from navigation and image fitting.
+  const visibleCards = [...row.children].filter((card) => !card.hidden);
+  row.querySelectorAll('figure img').forEach((img) => {
+    if (!img.closest('[hidden]')) fitGearImage(img);
+  });
 
   function updateControls() {
-    if (loop && !motionPreference.matches) {
-      previous.disabled = false;
-      next.disabled = false;
-      return;
-    }
-    previous.disabled = row.scrollLeft < 2;
-    next.disabled = row.scrollWidth - row.clientWidth - row.scrollLeft < 2;
-  }
-
-  function pauseForInteraction() {
-    if (loop) loop.pauseUntil = performance.now() + MANUAL_PAUSE_MS;
+    const maximum = Math.max(0, row.scrollWidth - row.clientWidth);
+    row.classList.toggle('gear-can-scroll', maximum > 2);
+    previous.disabled = row.scrollLeft <= 2;
+    next.disabled = row.scrollLeft >= maximum - 2;
   }
 
   function move(direction) {
-    pauseForInteraction();
-    const first = originals[0];
-    if (!first) return;
+    const firstCard = visibleCards[0];
+    if (!firstCard) return;
     const gap = parseFloat(getComputedStyle(row).columnGap) || 0;
-    const step = first.getBoundingClientRect().width + gap;
-    let target = row.scrollLeft + direction * step;
-    if (loop && loop.distance && !motionPreference.matches) {
-      if (target < 0) {
-        row.scrollLeft += loop.distance;
-        target += loop.distance;
-      } else if (target >= loop.distance) {
-        row.scrollLeft -= loop.distance;
-        target -= loop.distance;
-      }
-    }
+    const step = firstCard.getBoundingClientRect().width + gap;
+    const maximum = Math.max(0, row.scrollWidth - row.clientWidth);
     row.scrollTo({
-      left: target,
+      left: Math.max(0, Math.min(maximum, row.scrollLeft + direction * step)),
       behavior: motionPreference.matches ? 'instant' : 'smooth'
     });
   }
@@ -182,54 +111,36 @@ function initializeGearSection(section) {
   previous.addEventListener('click', () => move(-1));
   next.addEventListener('click', () => move(1));
   row.addEventListener('scroll', updateControls, { passive: true });
+  new ResizeObserver(updateControls).observe(row);
 
-  const observer = new ResizeObserver(() => {
-    measureCycle();
-    updateControls();
-  });
-  observer.observe(row);
-  if (loop) observer.observe(originals[0]);
-
-  if (loop) {
-    row.addEventListener('wheel', pauseForInteraction, { passive: true });
-    row.addEventListener('touchstart', pauseForInteraction, { passive: true });
-    row.addEventListener('touchend', pauseForInteraction, { passive: true });
-    row.addEventListener('focusin', pauseForInteraction);
-    row.addEventListener('pointerdown', (event) => {
-      pauseForInteraction();
-      if (event.pointerType === 'mouse' && event.button !== 0) return;
-      loop.pointerDown = true;
-      if (event.pointerType !== 'mouse') return;
-      loop.dragging = true;
-      loop.startX = event.clientX;
-      loop.startScroll = row.scrollLeft;
-      row.classList.add('gear-is-dragging');
-      try {
-        row.setPointerCapture(event.pointerId);
-      } catch (err) {
-        loop.pointerDown = false;
-        loop.dragging = false;
-        row.classList.remove('gear-is-dragging');
-      }
-    });
-    row.addEventListener('pointermove', (event) => {
-      if (!loop.dragging) return;
-      row.scrollLeft = loop.startScroll - (event.clientX - loop.startX);
-    });
-    const endDrag = () => {
-      loop.pointerDown = false;
-      loop.dragging = false;
+  // Keep drag-to-browse for desktop mouse users. Touch swiping and trackpad
+  // scrolling remain native; no automatic movement or duplicate products.
+  let drag = null;
+  row.addEventListener('pointerdown', (event) => {
+    if (event.pointerType !== 'mouse' || event.button !== 0 ||
+        row.scrollWidth - row.clientWidth < 2) return;
+    drag = { id: event.pointerId, x: event.clientX, left: row.scrollLeft };
+    row.classList.add('gear-is-dragging');
+    try {
+      row.setPointerCapture(event.pointerId);
+    } catch (err) {
+      drag = null;
       row.classList.remove('gear-is-dragging');
-      pauseForInteraction();
-    };
-    row.addEventListener('pointerup', endDrag);
-    row.addEventListener('pointercancel', endDrag);
-    const intersection = new IntersectionObserver((entries) => {
-      loop.visible = entries[0]?.isIntersecting ?? false;
-    }, { rootMargin: '160px 0px' });
-    intersection.observe(row);
-  }
-  measureCycle();
+    }
+  });
+  row.addEventListener('pointermove', (event) => {
+    if (!drag || drag.id !== event.pointerId) return;
+    row.scrollLeft = drag.left - (event.clientX - drag.x);
+  });
+  const endDrag = (event) => {
+    if (!drag || drag.id !== event.pointerId) return;
+    drag = null;
+    row.classList.remove('gear-is-dragging');
+    updateControls();
+  };
+  row.addEventListener('pointerup', endDrag);
+  row.addEventListener('pointercancel', endDrag);
+  row.addEventListener('dragstart', (event) => event.preventDefault());
   updateControls();
 }
 
@@ -270,7 +181,7 @@ if (extraToggle && motionRegion && extraRegion) {
     );
     if (sections.length !== entry.expected) throw new Error('Incomplete equipment list.');
     entry.region.appendChild(template.content);
-    // Make layout measurable before setting up image frames and carousel loops.
+    // Make the newly requested row visible before measuring image frames and controls.
     entry.region.hidden = false;
     sections.forEach(initializeGearSection);
     entry.loaded = true;
@@ -307,54 +218,3 @@ if (extraToggle && motionRegion && extraRegion) {
   });
 }
 
-// A single animation loop services all overflowing rows, with alternating
-// directions and a continuous, non-reversing wrap between identical cycles.
-let lastTime = 0;
-function animateGear(time) {
-  const elapsed = lastTime ? Math.min((time - lastTime) / 1000, 0.06) : 0;
-  lastTime = time;
-  if (!document.hidden && !motionPreference.matches) {
-    for (const loop of loopingRows) {
-      if (!loop.visible || !loop.distance || loop.pointerDown ||
-          time < loop.pauseUntil || loop.row.matches(':focus-within')) {
-        loop.position = loop.row.scrollLeft;
-        continue;
-      }
-      const distance = loop.distance;
-      // Keep a fractional position: browsers can round element.scrollLeft to
-      // integer pixels, losing subpixel movement at a deliberately slow speed.
-      const position = loop.position + loop.direction * SCROLL_SPEED_PX_PER_SECOND * elapsed;
-      loop.position = ((position % distance) + distance) % distance;
-      loop.row.scrollLeft = loop.position;
-    }
-  }
-  requestAnimationFrame(animateGear);
-}
-
-motionPreference.addEventListener('change', () => {
-  for (const loop of loopingRows) {
-    loop.distance = 0;
-    loop.position = 0;
-    loop.row.scrollLeft = 0;
-    const previous = loop.row.closest('.gear-section').querySelector('[data-gear-step="-1"]');
-    const next = loop.row.closest('.gear-section').querySelector('[data-gear-step="1"]');
-    if (motionPreference.matches) {
-      previous.disabled = true;
-      next.disabled = loop.row.scrollWidth - loop.row.clientWidth < 2;
-    } else {
-      previous.disabled = false;
-      next.disabled = false;
-    }
-    if (!motionPreference.matches) requestAnimationFrame(() => {
-      const first = loop.originals[0].getBoundingClientRect();
-      const copy = loop.copies[0].getBoundingClientRect();
-      const distance = copy.left - first.left;
-      if (distance > 0) {
-        loop.distance = distance;
-        loop.position = loop.direction < 0 ? distance : 0;
-        loop.row.scrollLeft = loop.position;
-      }
-    });
-  }
-});
-requestAnimationFrame(animateGear);
