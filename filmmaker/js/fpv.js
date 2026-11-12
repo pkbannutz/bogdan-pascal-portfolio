@@ -97,9 +97,10 @@
   window.addEventListener('pagehide',function(){stop();if(audioCtx){audioCtx.close().catch(function(){});}});
   setMode('chase');
   var films={
+    thorpe:{title:'THORPE PARK / THRILL RUNNERS',type:'iframe',src:'https://www.youtube-nocookie.com/embed/0lZ2EZRtzok',url:'/filmmaker/work/thorpepark/'},
+    therme:{title:'THERME / BBC STORYWORKS',type:'iframe',src:'https://player.vimeo.com/video/1181302232?title=0&byline=0&portrait=0&dnt=1',url:'/filmmaker/work/therme/'},
     tui:{title:'TUI ROMANIA',type:'iframe',src:'https://player.vimeo.com/video/1211936322?title=0&byline=0&portrait=0&dnt=1',url:'/filmmaker/work/tui-romania/'},
-    geodome:{title:'GEODOMEX',type:'video',src:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/geodome-main.mp4',url:'/filmmaker/work/geodome/'},
-    sky:{title:'SKY ABOVE',type:'iframe',src:'https://player.vimeo.com/video/768199549?title=0&byline=0&portrait=0&dnt=1',url:'/filmmaker/work/sky-above/'}
+    push:{title:'SPEEDO / PUSH. REPEAT',type:'video',src:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/speedo-push-repeat.mp4',url:'/filmmaker/work/push/'}
   };
   var dialog=document.getElementById('fp-dialog'),player=document.getElementById('fp-dialog-player');
   var close=document.getElementById('fp-dialog-close'),dialogTitle=document.getElementById('fp-dialog-title');

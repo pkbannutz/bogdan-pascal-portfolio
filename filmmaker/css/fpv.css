@@ -74,15 +74,15 @@
 .fp-statement p{font-size:clamp(45px,7.1vw,112px);font-weight:700;line-height:.93;letter-spacing:-.078em;margin:16px 0 0}
 .fp-statement p em{color:#647d14}
 .fp-statement svg{width:min(20%,210px);flex-shrink:0;opacity:.7}
-.fp-film-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
-.fp-film{min-width:0}.fp-film-open{position:relative;width:100%;padding:0;aspect-ratio:4/3;border:0;display:block;overflow:hidden;background:var(--panel)}
+.fp-film-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.fp-film{min-width:0}.fp-film-open{position:relative;width:100%;padding:0;aspect-ratio:16/9;border:0;display:block;overflow:hidden;background:var(--panel)}
 .fp-film-open>img{height:100%;width:100%;object-fit:cover;filter:saturate(.75);transition:transform .55s,filter .4s}
 .fp-film-open:hover>img,.fp-film-open:focus-visible>img{transform:scale(1.06);filter:saturate(1)}
 .fp-film-open:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#06090685,transparent 45%);pointer-events:none}
 .fp-film-play{position:absolute;inset:0;display:grid;place-items:center;color:#d7ff3a;font-size:35px;text-shadow:0 0 20px #060906a0;z-index:1}
 .fp-film-hover{position:absolute;bottom:17px;left:17px;color:white;z-index:1}
 .fp-film-meta{display:grid;grid-template-columns:1fr auto;gap:5px 12px;padding-top:14px}.fp-film-meta>span{color:var(--muted);grid-column:1/-1}
-.fp-film-meta h3{font-size:clamp(18px,2.2vw,28px);letter-spacing:-.04em;line-height:1.1;margin:0}
+.fp-film-meta h3{font-size:clamp(18px,2.2vw,28px);letter-spacing:-.04em;line-height:1.1;margin:0}.fp-film-meta h3 small{display:block;font:700 10px/1.6 "Space Mono",monospace;letter-spacing:.07em;color:var(--muted);margin-top:5px}
 .fp-film-meta a{align-self:end;color:var(--accent);font-size:9px}.fp-film-meta a:hover{text-decoration:underline}
 .fp-cap-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--edge);gap:1px;background:var(--edge)}
 .fp-cap-grid article{background:var(--panel);padding:clamp(20px,2.4vw,36px);min-width:0;display:flex;flex-direction:column}
