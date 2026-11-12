@@ -177,3 +177,6 @@ a{color:inherit;text-decoration:none}img{display:block}
   .client-testimonial-person small{font-size:9px}
   .client-testimonial-source{display:none}
 }
+
+/* Keep four filmmaker navigation links readable on smaller screens. */
+@media(max-width:560px){.nav .links{gap:12px}.nav.mono{font-size:10px;letter-spacing:.02em}}
