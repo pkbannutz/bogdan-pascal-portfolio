@@ -52,7 +52,7 @@
     };
     preload.src = path;
     sceneTitle.textContent = project.title;
-    sceneSubtitle.textContent = project.subtitle;
+    sceneSubtitle.textContent = project.subtitle + ' / Colour grade by Bogdan Pascal';
     link.href = project.url;
     link.setAttribute('aria-label', 'Open ' + project.title + ' in the filmmaker portfolio');
     count.textContent = String(currentProject + 1).padStart(2,'0') + ' / ' + String(projects.length).padStart(2,'0');
