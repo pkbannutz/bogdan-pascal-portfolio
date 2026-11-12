@@ -1,6 +1,5 @@
 /* One consistent visual frame and seamless alternating equipment carousels. */
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
-const hoverCapable = window.matchMedia('(hover: hover)');
 const loopingRows = [];
 let alternatingDirection = 1;
 const SCROLL_SPEED_PX_PER_SECOND = 19;
@@ -243,8 +242,7 @@ function animateGear(time) {
   if (!document.hidden && !motionPreference.matches) {
     for (const loop of loopingRows) {
       if (!loop.visible || !loop.distance || loop.pointerDown ||
-          time < loop.pauseUntil || loop.row.matches(':focus-within') ||
-          (hoverCapable.matches && loop.row.matches(':hover'))) {
+          time < loop.pauseUntil || loop.row.matches(':focus-within')) {
         loop.position = loop.row.scrollLeft;
         continue;
       }
