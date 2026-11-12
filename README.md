@@ -41,6 +41,10 @@ Do not modify anything under `filmmaker/` or `assets/filmmaker/` unless explicit
 - **Keep the public-facing tone positive and achievement-focused.** Describe the interesting movement work, teamwork, performances, recognition and growth in an affirmative, professional way. Do not insert negative opinions, criticism of productions or people, or defensive disclaimers into website copy. Keep claims accurate and source-supported; never imply individual awards or specific scenes without evidence. Credit OK WorldWide as Bogdan's team for Britain's Got Talent, Romania's Got Talent and Tú Sí Que Vales.
 - **Keep awards accurately attributed.** A production's wins or nominations are not necessarily individual awards for Bogdan. Preserve his explicitly credited SAG stunt-ensemble nomination separately.
 
+## Equipment gallery maintenance (future updates)
+
+For every new equipment item or image replacement, follow [the equipment gallery maintenance and visual standards](filmmaker/equipment/README.md). The guide covers transparent cutouts, equal four-card desktop grids, responsive alignment, caption baselines, quantities, both themes, card counts, and visual checks of the deployed page. Keep the shared sizing logic intact rather than adding individual image-size overrides.
+
 ## Editing
 
 - Main site and data: `index.html`
