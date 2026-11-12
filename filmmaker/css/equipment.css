@@ -151,7 +151,7 @@
 /* Five secondary categories are fetched only after Show more is selected. */
 .gear-more{border-top:1px solid var(--edge);padding:1.6rem 0 1rem}
 .gear-more-toggle{
-  width:min(100%,340px);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;
+  width:min(100%,300px);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;
   gap:1rem;text-align:left;background:var(--panel);color:var(--text);
   border:1px solid var(--edge);padding:.8rem 1rem;
   transition:border-color 200ms ease,background-color 200ms ease;
