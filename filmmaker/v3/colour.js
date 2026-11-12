@@ -41,6 +41,7 @@
     openButton.focus({preventScroll: true});
   }
   closeButton.addEventListener('click', closeDialog);
+  dialog.addEventListener('cancel', (event) => { event.preventDefault(); closeDialog(); });
   dialog.addEventListener('close', () => {
     clearMedia();
     openButton.focus({preventScroll: true});
