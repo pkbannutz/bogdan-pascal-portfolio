@@ -58,3 +58,17 @@
 }
 
 .gear-row figure.gear-text{display:flex;flex-direction:column;justify-content:center;min-height:12rem}.gear-row figure.gear-text figcaption{margin:auto 0}
+
+/* Keep the dark-mode lime accent visible on light equipment cards. */
+:root[data-theme=light] .gear-row figcaption .gear-qty{
+  display:inline-block;
+  padding:.08em .32em;
+  border-radius:.2em;
+  background:#d7ff3a;
+  color:#171b11;
+  font-size:.85rem;
+  font-weight:700;
+  letter-spacing:0;
+  white-space:nowrap;
+  vertical-align:baseline;
+}
