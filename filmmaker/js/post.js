@@ -83,7 +83,7 @@
    thumbs.forEach(thumb=>thumb.addEventListener('click',()=>setFrame(thumb.dataset.frame)));
    range.addEventListener('input',()=>setFrame(range.value));
  }
- if(root.classList.contains('dl')){
+ if(root.querySelector('#dl-crop')){
    const buttons=[...root.querySelectorAll('[data-ratio]')],crop=root.querySelector('#dl-crop'),image=root.querySelector('#dl-crop-image'),label=root.querySelector('#dl-ratio-label'),corner=root.querySelector('#dl-crop-corner'),position=root.querySelector('#dl-position');
    const shapes={'16:9':['wide','WIDESCREEN'],'9:16':['vertical','VERTICAL'],'1:1':['square','SQUARE'],'4:5':['portrait','PORTRAIT']};
    buttons.forEach(b=>b.addEventListener('click',()=>{
