@@ -57,7 +57,7 @@
 }
 .gear-row figcaption{
   display:grid;
-  grid-template-rows:minmax(3.5em,auto) auto;
+  grid-template-rows:minmax(4.75em,auto) auto;
   align-content:start;
   gap:.35rem;
   text-align:center;
