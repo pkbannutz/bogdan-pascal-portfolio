@@ -111,6 +111,7 @@ document.querySelectorAll('.gear-section:has(.gear-row)').forEach((section) => {
       copies,
       direction: alternatingDirection,
       distance: 0,
+      position: 0,
       visible: false,
       pointerDown: false,
       pauseUntil: 0
@@ -132,12 +133,14 @@ document.querySelectorAll('.gear-section:has(.gear-row)').forEach((section) => {
     if (!loop.distance) {
       loop.distance = distance;
       // Starting at the repeated first item makes reverse scrolling seamless.
-      row.scrollLeft = loop.direction < 0 ? distance : 0;
+      loop.position = loop.direction < 0 ? distance : 0;
+      row.scrollLeft = loop.position;
     } else if (Math.abs(loop.distance - distance) > 0.5) {
       const previousDistance = loop.distance;
-      const phase = ((row.scrollLeft % previousDistance) + previousDistance) % previousDistance;
+      const phase = ((loop.position % previousDistance) + previousDistance) % previousDistance;
       loop.distance = distance;
-      row.scrollLeft = phase / previousDistance * distance;
+      loop.position = phase / previousDistance * distance;
+      row.scrollLeft = loop.position;
     }
   }
 
@@ -241,10 +244,16 @@ function animateGear(time) {
     for (const loop of loopingRows) {
       if (!loop.visible || !loop.distance || loop.pointerDown ||
           time < loop.pauseUntil || loop.row.matches(':focus-within') ||
-          (hoverCapable.matches && loop.row.matches(':hover'))) continue;
+          (hoverCapable.matches && loop.row.matches(':hover'))) {
+        loop.position = loop.row.scrollLeft;
+        continue;
+      }
       const distance = loop.distance;
-      const position = loop.row.scrollLeft + loop.direction * SCROLL_SPEED_PX_PER_SECOND * elapsed;
-      loop.row.scrollLeft = ((position % distance) + distance) % distance;
+      // Keep a fractional position: browsers can round element.scrollLeft to
+      // integer pixels, losing subpixel movement at a deliberately slow speed.
+      const position = loop.position + loop.direction * SCROLL_SPEED_PX_PER_SECOND * elapsed;
+      loop.position = ((position % distance) + distance) % distance;
+      loop.row.scrollLeft = loop.position;
     }
   }
   requestAnimationFrame(animateGear);
@@ -253,6 +262,7 @@ function animateGear(time) {
 motionPreference.addEventListener('change', () => {
   for (const loop of loopingRows) {
     loop.distance = 0;
+    loop.position = 0;
     loop.row.scrollLeft = 0;
     const previous = loop.row.closest('.gear-section').querySelector('[data-gear-step="-1"]');
     const next = loop.row.closest('.gear-section').querySelector('[data-gear-step="1"]');
@@ -269,7 +279,8 @@ motionPreference.addEventListener('change', () => {
       const distance = copy.left - first.left;
       if (distance > 0) {
         loop.distance = distance;
-        loop.row.scrollLeft = loop.direction < 0 ? distance : 0;
+        loop.position = loop.direction < 0 ? distance : 0;
+        loop.row.scrollLeft = loop.position;
       }
     });
   }
