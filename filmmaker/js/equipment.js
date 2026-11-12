@@ -242,7 +242,6 @@ const extraToggle = document.querySelector('[data-gear-more-toggle]');
 const extraRegion = document.querySelector('#gear-extra-sections');
 if (extraToggle && extraRegion) {
   const label = extraToggle.querySelector('[data-gear-more-label]');
-  const icon = extraToggle.querySelector('[data-gear-more-icon]');
   const status = document.querySelector('[data-gear-more-status]');
   let loaded = false;
   let loading = false;
@@ -251,7 +250,6 @@ if (extraToggle && extraRegion) {
     extraRegion.hidden = !open;
     extraToggle.setAttribute('aria-expanded', String(open));
     label.textContent = open ? 'SHOW LESS EQUIPMENT' : 'SHOW MORE EQUIPMENT';
-    icon.textContent = open ? '−' : '+';
   }
 
   extraToggle.addEventListener('click', async () => {
