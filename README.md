@@ -52,3 +52,10 @@ Do not modify anything under `filmmaker/` or `assets/filmmaker/` unless explicit
 ## Contact
 
 hello@bogdanpascal.com
+
+
+## Unlisted page development
+
+Build new pages in this GitHub repository and deploy drafts to their final direct URLs on bogdanpascal.com. Keep drafts out of navigation, menus, page lists and sitemaps on the existing published site. Draft service pages may link to each other for review. Keep draft HTML marked noindex, nofollow. Add public navigation links only when Bogdan confirms that the page is finished and ready to show.
+
+The current draft entry points are /filmmaker/services/ and /filmmaker/equipment/. Keep all page source and required assets committed to GitHub. Local preview servers are optional conveniences.
