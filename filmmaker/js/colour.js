@@ -3,11 +3,11 @@
   'use strict';
   const projects = [
     {id:'geodome',title:'GeoDomeX',subtitle:'Commercial',url:'/filmmaker/work/geodome/',folder:'geodome'},
-    {id:'ffern',title:'Ffern',subtitle:'Spec commercial',url:'/filmmaker/work/ffern/',folder:'ffern'},
-    {id:'tui-romania',title:'TUI Romania',subtitle:'Travel commercial',url:'/filmmaker/work/tui-romania/',folder:'tui-romania'},
-    {id:'inanimate-girl',title:'Fauness',subtitle:'Music video',url:'/filmmaker/work/inanimate-girl/',folder:'inanimate-girl'},
-    {id:'sky-above',title:'Sky Above',subtitle:'Short film',url:'/filmmaker/work/sky-above/',folder:'sky-above'},
-    {id:'new-grounds',title:'New Grounds',subtitle:'Fashion film',url:'/filmmaker/work/new-grounds/',folder:'new-grounds'}
+    {id:'therme',title:'Therme',subtitle:'Branded documentary',url:'/filmmaker/work/therme/',folder:'therme'},
+    {id:'dyla',title:'Dyla\'s Atelier',subtitle:'Portrait documentary',url:'/filmmaker/work/dyla/',folder:'dyla'},
+    {id:'push',title:'Speedo: Push. Repeat',subtitle:'Push. Repeat',url:'/filmmaker/work/push/',folder:'push'},
+    {id:'particle',title:'Particle',subtitle:'Commercial',url:'/filmmaker/work/particle/',folder:'particle'},
+    {id:'leo',title:'Dear Leo',subtitle:'Online content series',url:'/filmmaker/work/leo/',folder:'leo'}
   ];
   const root = document.querySelector('.cg');
   if (!root) return;
@@ -120,22 +120,36 @@
   }
 
   const filmPlayer = root.querySelector('#cg-film-player');
+  const filmEmbed = root.querySelector('#cg-film-embed');
   const filmTitle = root.querySelector('#cg-film-title');
   const filmLink = root.querySelector('#cg-film-link');
   const filmButtons = [...root.querySelectorAll('[data-cg-film]')];
   const films = {
-    ffern:{title:'Ffern / Discover Summer 23',poster:'/assets/filmmaker/ffern/t.jpg',url:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/ffern.mp4',page:'/filmmaker/work/ffern/'},
-    geodome:{title:'GeoDomeX / Hers by Day, His by Night',poster:'/assets/filmmaker/geodome/t.jpg',url:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/geodome-main.mp4',page:'/filmmaker/work/geodome/'},
-    fauness:{title:'Fauness / Inanimate Girl',poster:'/assets/filmmaker/inanimate-girl/t.jpg',url:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/fauness.mp4',page:'/filmmaker/work/inanimate-girl/'}
+    geodome:{title:'GeoDomeX / Hers by Day, His by Night',poster:'/assets/filmmaker/geodome/t.jpg',type:'video',url:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/geodome-main.mp4',page:'/filmmaker/work/geodome/'},
+    therme:{title:'Therme / BBC StoryWorks',poster:'/assets/filmmaker/therme/t.jpg',type:'vimeo',url:'https://player.vimeo.com/video/1181302232?title=0&byline=0&portrait=0&dnt=1',page:'/filmmaker/work/therme/'},
+    dyla:{title:"Dyla's Atelier / A Designer's Story",poster:'/assets/filmmaker/dyla/t.jpg',type:'vimeo',url:'https://player.vimeo.com/video/1047813220?title=0&byline=0&portrait=0&dnt=1',page:'/filmmaker/work/dyla/'},
+    push:{title:'Speedo / Push. Repeat',poster:'/assets/filmmaker/push/t.jpg',type:'video',url:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/speedo-push-repeat.mp4',page:'/filmmaker/work/push/'},
+    particle:{title:'Particle / For Men',poster:'/assets/filmmaker/particle/t.jpg',type:'video',url:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/particle.mp4',page:'/filmmaker/work/particle/'},
+    leo:{title:'Dear Leo',poster:'/assets/filmmaker/leo/t.jpg',type:'video',url:'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/leo.mp4',page:'/filmmaker/work/leo/'}
   };
-  if (filmPlayer) {
+  if (filmPlayer && filmEmbed) {
     filmButtons.forEach(button => button.addEventListener('click',()=>{
       const film = films[button.dataset.cgFilm];
       if (!film) return;
       filmPlayer.pause();
-      filmPlayer.poster = film.poster;
-      filmPlayer.src = film.url;
-      filmPlayer.load();
+      filmEmbed.removeAttribute('src');
+      if (film.type === 'vimeo') {
+        filmPlayer.hidden = true;
+        filmEmbed.hidden = false;
+        filmEmbed.title = film.title;
+        filmEmbed.src = film.url;
+      } else {
+        filmEmbed.hidden = true;
+        filmPlayer.hidden = false;
+        filmPlayer.poster = film.poster;
+        filmPlayer.src = film.url;
+        filmPlayer.load();
+      }
       filmTitle.textContent = film.title;
       filmLink.href = film.page;
       filmLink.setAttribute('aria-label','View ' + film.title + ' project details');
