@@ -89,7 +89,6 @@
 .svc-end{padding:20px 0 40px;border-top:1px solid var(--edge);display:flex;justify-content:space-between;gap:20px;font:700 10px 'Space Mono',monospace;text-transform:uppercase;color:var(--muted)}
 .svc-end a:hover{color:var(--accent)}
 @keyframes svc-reveal{from{opacity:.2;transform:scale(1.07)}to{opacity:1;transform:scale(1.035)}}
-}
 @media(max-width:970px){
  .svc-browser{grid-template-columns:1fr}.svc-browser-image{min-height:350px}.svc-browser-side{gap:20px}
  .svc-browser-buttons{grid-template-columns:repeat(3,minmax(0,1fr));border-top:0;gap:8px}
