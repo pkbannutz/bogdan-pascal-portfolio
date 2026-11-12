@@ -16,23 +16,6 @@ document.querySelectorAll('.gear-section:has(.gear-row)').forEach((section) => {
   }
   previous.addEventListener('click', () => move(-1));
   next.addEventListener('click', () => move(1));
-  let drag;
-  row.addEventListener('pointerdown', (event) => {
-    if (event.pointerType !== 'mouse' || event.button !== 0) return;
-    drag = { x: event.clientX, left: row.scrollLeft };
-    row.setPointerCapture(event.pointerId);
-  });
-  row.addEventListener('pointermove', (event) => {
-    if (!drag) return;
-    const delta = event.clientX - drag.x;
-    if (Math.abs(delta) < 4 && !row.classList.contains('is-dragging')) return;
-    row.classList.add('is-dragging');
-    row.scrollLeft = drag.left - delta;
-  });
-  row.addEventListener('lostpointercapture', () => {
-    drag = undefined;
-    row.classList.remove('is-dragging');
-  });
   row.addEventListener('scroll', updateControls, { passive: true });
   new ResizeObserver(updateControls).observe(row);
   updateControls();

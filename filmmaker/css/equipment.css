@@ -13,7 +13,6 @@
 
 
 @media(max-width:600px){.gear-row{grid-auto-columns:80%}.gear-section{padding-bottom:1.8rem}}
-@media(pointer:fine){.gear-row{cursor:grab}.gear-row.is-dragging{cursor:grabbing;scroll-snap-type:none;user-select:none}}
 #lenses img[src$="/samyang.png"]{height:70%}
 
 .support-row{list-style:none;margin:1.3rem 0 0;grid-auto-columns:clamp(220px,37vw,390px)}
