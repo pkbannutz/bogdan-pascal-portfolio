@@ -266,7 +266,7 @@ if (extraToggle && extraRegion) {
     label.textContent = 'LOADING EQUIPMENT...';
     if (status) status.hidden = true;
     try {
-      const response = await fetch('/filmmaker/equipment/extra-sections.html?v=20261112');
+      const response = await fetch('/filmmaker/equipment/extra-sections.html?v=20261112b');
       if (!response.ok) throw new Error('Equipment categories could not be loaded.');
       const template = document.createElement('template');
       template.innerHTML = await response.text();
