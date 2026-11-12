@@ -1,55 +1,212 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sound design and SFX | Bogdan Pascal</title><meta name="description" content="Explore sound design by filmmaker Bogdan Pascal. Listen to an interactive original versus sound effects comparison, plus dialogue, atmosphere and mix."><meta property="og:title" content="Sound design and SFX | Bogdan Pascal"><meta property="og:description" content="Explore sound design by filmmaker Bogdan Pascal. Listen to an interactive original versus sound effects comparison, plus dialogue, atmosphere and mix."><meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"><script src="/filmmaker/js/theme.js"></script><link rel="stylesheet" href="/filmmaker/css/folio.css"><link rel="stylesheet" href="/filmmaker/css/service-experience.css"></head>
-<body><header class="mast"><a href="/filmmaker/">BP <span>/ FILMMAKER</span></a><div><a href="/filmmaker/#work">Work</a><a href="/filmmaker/about/">About</a><a href="/filmmaker/contact/">Contact</a><button type="button" data-theme-toggle aria-label="Switch colour theme">Light</button></div></header>
-<main class="folio svc"><nav class="rail" aria-label="Filmmaking service pages"><a href="/filmmaker/services/">Overview</a><a href="/filmmaker/services/pre-production/">Pre Production</a><a href="/filmmaker/services/on-set/">On Set</a><a href="/filmmaker/services/editing/">Editing</a><a href="/filmmaker/services/colour-grading/">Colour Grading</a><a href="/filmmaker/services/sound-design/" aria-current="page">Sound & SFX</a><a href="/filmmaker/services/delivery/">Delivery</a><a href="/filmmaker/equipment/">Equipment</a></nav>
-<section class="svc-hero svc-sound-hero" aria-labelledby="sound-heading">
-  <img src="/assets/filmmaker/sky-above/t.jpg" alt="Cinematic frame used as the visual backdrop for this sound study" fetchpriority="high">
-  <div class="svc-sound-mark" aria-hidden="true"><i style="--h:12%"></i><i style="--h:26%"></i><i style="--h:48%"></i><i style="--h:68%"></i><i style="--h:34%"></i><i style="--h:58%"></i><i style="--h:90%"></i><i style="--h:53%"></i><i style="--h:25%"></i><i style="--h:79%"></i><i style="--h:100%"></i><i style="--h:48%"></i><i style="--h:73%"></i><i style="--h:28%"></i><i style="--h:62%"></i><i style="--h:37%"></i><i style="--h:87%"></i><i style="--h:55%"></i><i style="--h:21%"></i><i style="--h:46%"></i><i style="--h:72%"></i><i style="--h:39%"></i><i style="--h:61%"></i><i style="--h:18%"></i><i style="--h:49%"></i><i style="--h:82%"></i><i style="--h:35%"></i><i style="--h:64%"></i><i style="--h:20%"></i><i style="--h:42%"></i></div>
-  <div class="svc-hero-top"><span>05 / SOUND DESIGN & SFX</span><span>STORYTELLING<br>BEYOND THE IMAGE</span></div>
-  <div class="svc-hero-main"><h1 id="sound-heading"><span>FEEL THE</span><span><em>SOUND.</em></span></h1><p class="svc-subtitle">Sound gives an image its weight, space and emotion. The smallest detail can change how a whole scene lands.</p></div>
-  <div class="svc-hero-bottom"><span>DIALOGUE / ATMOSPHERE / FOLEY / SFX / MIX</span><a href="#sound-lab">PUT ON HEADPHONES <span aria-hidden="true">↓</span></a></div>
-</section>
-<div class="svc-meta-strip"><span>BEST EXPERIENCED WITH AUDIO</span><a href="#sound-lab">01 / LISTEN</a><a href="#sound-layers">02 / THE LAYERS</a><a href="#sound-approach">03 / THE APPROACH</a></div>
-<div class="svc-lede"><strong>A convincing world is built with what you hear.</strong><div><p>I work on sound alongside the picture, cleaning dialogue, building atmospheres, adding sound effects and finding a balance that supports the story.</p><p>The goal isn't to make everything louder. It's to give the right moments detail and impact, and let the quiet moments breathe.</p></div></div>
-<section class="svc-section" id="sound-lab" aria-labelledby="sound-lab-heading">
- <div class="svc-section-head"><div><span class="svc-kicker">01 / THE SOUND LAB</span><h2 id="sound-lab-heading">SAME IMAGE.<br><em>NEW FEELING.</em></h2></div><p>Play the existing sound study and switch between Original and Designed. The image stays in sync while you hear the difference.</p></div>
- <div class="svc-sound-studio" data-svc-sound tabindex="0" aria-label="Interactive sound design demo">
-  <div class="svc-sound-top"><span>BP / INTERACTIVE SOUND STUDY</span><span>HEADPHONES RECOMMENDED</span></div>
-  <div class="svc-sound-video"><video data-svc-video controls playsinline preload="metadata" poster="/assets/filmmaker/sky-above/t.jpg" src="/assets/filmmaker/studio/sound-demo.mp4" aria-label="Sound design study video with original and designed audio tracks"></video><div class="svc-sound-video-tag">SAME FOOTAGE / TWO AUDIO VERSIONS</div></div>
-  <div class="svc-sound-console">
-   <div class="svc-sound-console-head"><h3>LISTEN TO THE DIFFERENCE.</h3><span>LIVE AUDIO WAVEFORM</span></div>
-   <canvas class="svc-wave" data-svc-wave width="980" height="120" role="img" aria-label="Real-time audio waveform, visible while the demonstration plays"></canvas>
-   <input class="svc-seek" data-svc-seek type="range" min="0" max="1000" value="0" step="1" aria-label="Seek through the sound study">
-   <div class="svc-sound-controls">
-    <button data-svc-play type="button">PLAY</button>
-    <div class="svc-mix" role="group" aria-label="Compare audio versions">
-     <button data-svc-mix="0" aria-pressed="true" type="button">01 / ORIGINAL</button>
-     <button data-svc-mix="1" aria-pressed="false" type="button">02 / DESIGNED SFX</button>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0e0d">
+  <meta name="description" content="Sound design and SFX by filmmaker Bogdan Pascal. Listen to an interactive before-and-after sound study, explore the layers of a soundtrack, and watch selected films.">
+  <meta property="og:title" content="Sound Design & SFX | Bogdan Pascal">
+  <meta property="og:description" content="The sound makes the feeling. Explore the interactive listening room and the craft behind cinematic sound.">
+  <meta property="og:image" content="https://bogdanpascal.com/assets/filmmaker/sky-above/t.jpg">
+  <title>Sound Design & SFX | Bogdan Pascal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="/filmmaker/js/theme.js"></script>
+  <link rel="stylesheet" href="/filmmaker/css/folio.css">
+  <link rel="stylesheet" href="/filmmaker/css/sound.css">
+</head>
+<body>
+  <header class="mast">
+    <a href="/filmmaker/">BP <span>/ FILMMAKER</span></a>
+    <div>
+      <a href="/filmmaker/about/">About</a>
+      <a href="/filmmaker/contact/">Contact</a>
+      <button type="button" data-theme-toggle aria-label="Switch colour theme">Light</button>
     </div>
-    <button data-svc-mute type="button" aria-pressed="false">MUTE</button>
-    <output data-svc-time aria-live="off">00:00 / 00:00</output>
-   </div>
-   <p class="svc-sound-message" data-svc-message>Press play, then switch mixes at any moment. You can also press <strong>1</strong> or <strong>2</strong> while the sound lab is focused.</p>
-  </div>
- </div>
- <div class="svc-note"><b>ABOUT THIS DEMO</b><span>This is an illustrative sound study using the existing two-channel sample, not a claimed before-and-after from a named client production. The moving waveform reacts to the audio you actually hear.</span></div>
-</section>
-<section class="svc-section" id="sound-layers" aria-labelledby="sound-layers-heading">
- <div class="svc-section-head"><div><span class="svc-kicker">02 / BUILDING THE WORLD</span><h2 id="sound-layers-heading">THE SOUND<br><em>HAS LAYERS.</em></h2></div><p>These are the main ingredients I work with, each serving a different part of the scene.</p></div>
- <div class="svc-layers">
-  <article class="svc-layer"><div class="svc-layer-index"><span>01 / VOICE</span><span>◉</span></div><h3>Dialogue.</h3><div class="svc-layer-pattern" aria-hidden="true"><i style="--h:12%"></i><i style="--h:26%"></i><i style="--h:48%"></i><i style="--h:68%"></i><i style="--h:34%"></i><i style="--h:58%"></i><i style="--h:90%"></i><i style="--h:53%"></i><i style="--h:25%"></i><i style="--h:79%"></i><i style="--h:100%"></i><i style="--h:48%"></i><i style="--h:73%"></i><i style="--h:28%"></i></div><p>Reduce distractions, refine transitions and preserve natural presence so the words feel close and clear.</p></article>
-  <article class="svc-layer"><div class="svc-layer-index"><span>02 / SPACE</span><span>◉</span></div><h3>Atmosphere.</h3><div class="svc-layer-pattern" aria-hidden="true"><i style="--h:12%"></i><i style="--h:26%"></i><i style="--h:48%"></i><i style="--h:68%"></i><i style="--h:34%"></i><i style="--h:58%"></i><i style="--h:90%"></i><i style="--h:53%"></i><i style="--h:25%"></i><i style="--h:79%"></i><i style="--h:100%"></i><i style="--h:48%"></i><i style="--h:73%"></i><i style="--h:28%"></i></div><p>Room tone, wind, distance and environmental texture give the picture a believable space.</p></article>
-  <article class="svc-layer"><div class="svc-layer-index"><span>03 / DETAIL</span><span>◉</span></div><h3>Foley & SFX.</h3><div class="svc-layer-pattern" aria-hidden="true"><i style="--h:12%"></i><i style="--h:26%"></i><i style="--h:48%"></i><i style="--h:68%"></i><i style="--h:34%"></i><i style="--h:58%"></i><i style="--h:90%"></i><i style="--h:53%"></i><i style="--h:25%"></i><i style="--h:79%"></i><i style="--h:100%"></i><i style="--h:48%"></i><i style="--h:73%"></i><i style="--h:28%"></i></div><p>Footsteps, movement, cloth, impacts and designed effects give actions weight and character.</p></article>
-  <article class="svc-layer"><div class="svc-layer-index"><span>04 / FEELING</span><span>◉</span></div><h3>The mix.</h3><div class="svc-layer-pattern" aria-hidden="true"><i style="--h:12%"></i><i style="--h:26%"></i><i style="--h:48%"></i><i style="--h:68%"></i><i style="--h:34%"></i><i style="--h:58%"></i><i style="--h:90%"></i><i style="--h:53%"></i><i style="--h:25%"></i><i style="--h:79%"></i><i style="--h:100%"></i><i style="--h:48%"></i><i style="--h:73%"></i><i style="--h:28%"></i></div><p>Balance speech, ambience, effects and music so important moments reach the audience.</p></article>
- </div>
- <div class="svc-sound-tip"><b>WHAT THIS DEMONSTRATES</b><p>These four cards explain the sound-design process. They are not separate playable stems from the demonstration. The A/B controls above switch between the two full demo mixes.</p></div>
-</section>
-<section class="svc-section" id="sound-approach" aria-labelledby="sound-approach-heading">
- <div class="svc-section-head"><div><span class="svc-kicker">03 / SOUND FOLLOWS STORY</span><h2 id="sound-approach-heading">DETAIL WHERE<br><em>IT MATTERS.</em></h2></div></div>
- <div class="svc-two-up"><article class="svc-panel"><span class="svc-label">SUBTLE WORK</span><h3>Make it feel real.</h3><p>A clean piece of dialogue, the right distant ambience, or the sound of a body passing close to camera can make a scene feel present without calling attention to itself.</p></article>
- <article class="svc-panel"><span class="svc-label">DESIGNED MOMENTS</span><h3>Give it impact.</h3><p>Sometimes a movement needs a stronger texture, a shift in perspective needs a change in space, or silence is the most powerful sound choice.</p></article></div>
-</section>
-<div class="svc-cta"><div><span class="svc-kicker">HAVE A FILM THAT NEEDS SOUND?</span><h2>LET'S MAKE<br>IT FELT.</h2><p>Send a cut and a reference for the atmosphere you have in mind. We can discuss dialogue, SFX and the final mix.</p></div><a href="/filmmaker/contact/">DISCUSS SOUND DESIGN ↗</a></div>
+  </header>
 
-<footer class="svc-end"><span>BOGDAN PASCAL / FILMMAKER</span><a href="/filmmaker/">BACK TO SELECTED WORK ↗</a></footer></main>
-<script src="/filmmaker/js/studio.js"></script><script src="/filmmaker/js/service-experience.js"></script></body></html>
+  <main class="folio sd">
+    <nav class="rail" aria-label="Filmmaking service pages">
+      <a href="/filmmaker/services/">Overview</a>
+      <a href="/filmmaker/services/pre-production/">Pre Production</a>
+      <a href="/filmmaker/services/on-set/">On Set</a>
+      <a href="/filmmaker/services/editing/">Editing</a>
+      <a href="/filmmaker/services/colour-grading/">Colour Grading</a>
+      <a href="/filmmaker/services/sound-design/" aria-current="page">Sound &amp; SFX</a>
+      <a href="/filmmaker/services/delivery/">Delivery</a>
+      <a href="/filmmaker/equipment/">Equipment</a>
+    </nav>
+
+    <section class="sd-hero sd-bleed" id="top" aria-labelledby="sd-title">
+      <div class="sd-hero-image" aria-hidden="true"></div>
+      <div class="sd-hero-scrim" aria-hidden="true"></div>
+      <div class="sd-hero-top">
+        <span class="sd-label">05 / SOUND DESIGN &amp; SFX</span>
+        <span class="sd-label sd-hero-identity">BOGDAN PASCAL<br>FILMMAKER / POST PRODUCTION</span>
+      </div>
+      <div class="sd-hero-body">
+        <p class="sd-overline">THE PART OF THE PICTURE YOU FEEL</p>
+        <h1 id="sd-title">SOUND<br>IS THE<br><em>FEELING.</em></h1>
+      </div>
+      <div class="sd-hero-bottom">
+        <p>Picture tells you what happens. Sound makes you feel it. I use dialogue, texture, atmosphere and effects to build a world around the story.</p>
+        <a class="sd-hero-action" href="#listening-room">STEP INTO THE LISTENING ROOM <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="sd-hero-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </section>
+
+    <div class="sd-section-nav" aria-label="Explore this page">
+      <nav>
+        <a href="#listening-room">01 / LISTEN</a>
+        <a href="#anatomy">02 / INSIDE THE SOUND</a>
+        <a href="#films">03 / THE FILMS</a>
+        <a href="#approach">04 / THE APPROACH</a>
+      </nav>
+      <span class="sd-label">BEST EXPERIENCED WITH HEADPHONES <span aria-hidden="true">◖))</span></span>
+    </div>
+
+    <section class="sd-section sd-listen" id="listening-room" aria-labelledby="sd-listen-title">
+      <div class="sd-section-heading">
+        <div>
+          <span class="sd-label">01 / THE LISTENING ROOM</span>
+          <h2 id="sd-listen-title">HEAR THE<br><em>DIFFERENCE.</em></h2>
+        </div>
+        <p>Same picture. Same moment. A completely different feeling. Play the scene, then switch between the original ambient bed and the SFX treatment without losing your place.</p>
+      </div>
+
+      <div class="sd-console" aria-label="Interactive sound design comparison">
+        <div class="sd-console-top">
+          <span class="sd-label">BP / SOUND STUDY NO. 01</span>
+          <span class="sd-console-live"><span aria-hidden="true"></span> SYNCHRONISED A/B PLAYBACK</span>
+        </div>
+        <div class="sd-video-area">
+          <video id="sd-ab-video" playsinline preload="metadata" poster="/assets/filmmaker/sky-above/t.jpg" aria-label="Short illustrative scene with an original sound bed and an SFX treatment">
+            <source src="/assets/filmmaker/studio/sound-demo.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+          <span class="sd-video-corner">PICTURE / 01</span>
+          <span class="sd-video-mode" id="sd-video-mode">LISTENING TO / ORIGINAL</span>
+          <button class="sd-video-play" id="sd-video-play" type="button" aria-label="Play sound comparison"><span aria-hidden="true">▶</span></button>
+        </div>
+        <div class="sd-transport">
+          <button class="sd-transport-play" id="sd-play" type="button" aria-label="Play sound comparison">PLAY <span aria-hidden="true">▶</span></button>
+          <div class="sd-progress">
+            <label for="sd-seek" class="sd-label">TIMELINE</label>
+            <input id="sd-seek" type="range" min="0" max="1000" step="1" value="0" aria-label="Seek in sound comparison">
+          </div>
+          <output id="sd-time" for="sd-seek">00:00 / 00:00</output>
+        </div>
+        <div class="sd-abbar">
+          <div class="sd-ab-intro">
+            <span class="sd-label">THE A/B SWITCH</span>
+            <p>Change the sound, not the picture.</p>
+          </div>
+          <div class="sd-ab-switch" role="group" aria-label="Choose which soundtrack to hear">
+            <button class="sd-ab-option" type="button" data-sd-mix="0" aria-pressed="true"><small>A / SOURCE</small><strong>ORIGINAL</strong></button>
+            <button class="sd-ab-option" type="button" data-sd-mix="1" aria-pressed="false"><small>B / TREATMENT</small><strong>WITH SFX</strong></button>
+          </div>
+        </div>
+        <div class="sd-signal">
+          <div class="sd-signal-heading"><span class="sd-label">LIVE AUDIO SIGNAL</span><span id="sd-signal-label" class="sd-label" aria-live="polite">A / ORIGINAL</span></div>
+          <canvas id="sd-waveform" width="1000" height="105" aria-hidden="true"></canvas>
+          <p class="sd-status" id="sd-status" role="status" aria-live="polite">Press play to start. Then switch A and B while the scene runs.</p>
+        </div>
+      </div>
+      <div class="sd-after-console">
+        <span class="sd-label">AN ACTUAL A/B DEMO, NOT A MOCKUP</span>
+        <p>This is a short illustrative sound study with two audio treatments built into one video. The original uses the ambient bed. The second adds timed sound effects. Switching changes the audio in sync, not the playback position.</p>
+      </div>
+    </section>
+
+    <section class="sd-section sd-anatomy" id="anatomy" aria-labelledby="sd-anatomy-title">
+      <div class="sd-section-heading">
+        <div><span class="sd-label">02 / THE ANATOMY OF A SOUNDTRACK</span><h2 id="sd-anatomy-title">THE ART OF<br><em>THE LAYERS.</em></h2></div>
+        <p>What sounds effortless on screen is often built one detail at a time. Select a layer to explore what it contributes to the story.</p>
+      </div>
+      <div class="sd-layer-room">
+        <div class="sd-layer-stack">
+          <div class="sd-layer-timeline"><span>SESSION / LAYERS</span><span>00:00 <span aria-hidden="true">────────</span> 00:12</span></div>
+          <div class="sd-layer-tracks" role="group" aria-label="Explore sound design layers">
+            <button type="button" class="sd-track" data-sd-layer="voice" aria-pressed="true"><span class="sd-track-id">01</span><span class="sd-track-name">VOICE<small>CLARITY / EMOTION</small></span><span class="sd-track-wave" aria-hidden="true"></span><span class="sd-track-plus" aria-hidden="true">↗</span></button>
+            <button type="button" class="sd-track" data-sd-layer="foley" aria-pressed="false"><span class="sd-track-id">02</span><span class="sd-track-name">FOLEY &amp; SFX<small>MOVEMENT / IMPACT</small></span><span class="sd-track-wave" aria-hidden="true"></span><span class="sd-track-plus" aria-hidden="true">↗</span></button>
+            <button type="button" class="sd-track" data-sd-layer="world" aria-pressed="false"><span class="sd-track-id">03</span><span class="sd-track-name">THE WORLD<small>ATMOSPHERE / DETAIL</small></span><span class="sd-track-wave" aria-hidden="true"></span><span class="sd-track-plus" aria-hidden="true">↗</span></button>
+            <button type="button" class="sd-track" data-sd-layer="space" aria-pressed="false"><span class="sd-track-id">04</span><span class="sd-track-name">SPACE &amp; MIX<small>DEPTH / BALANCE</small></span><span class="sd-track-wave" aria-hidden="true"></span><span class="sd-track-plus" aria-hidden="true">↗</span></button>
+          </div>
+          <p class="sd-layer-footnote">INTERACTIVE EXPLAINER / THESE TRACKS ILLUSTRATE THE PROCESS, NOT SEPARATE AUDIO STEMS</p>
+        </div>
+        <div class="sd-layer-detail" aria-live="polite" aria-atomic="true">
+          <span class="sd-label" id="sd-layer-index">01 / THE HUMAN ELEMENT</span>
+          <div class="sd-layer-orbit" aria-hidden="true"><span class="sd-orbit-one"></span><span class="sd-orbit-two"></span><span class="sd-orbit-three"></span><span class="sd-orbit-dot"></span></div>
+          <div class="sd-layer-detail-copy">
+            <h3 id="sd-layer-title">MAKE EVERY<br>WORD LAND.</h3>
+            <p id="sd-layer-desc">The quietest part of a film can carry the most meaning. Dialogue cleanup, consistent tone and careful placement keep the voice natural and the story clear.</p>
+            <span class="sd-layer-tag" id="sd-layer-tags">DIALOGUE EDIT / NOISE CONTROL / PRESENCE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sd-banner" aria-label="Sound design statement">
+      <span class="sd-label">LESS NOISE / MORE INTENTION</span>
+      <p>IF THE SOUND<br>FEELS <em>REAL,</em> YOU<br>STOP NOTICING IT.</p>
+    </section>
+
+    <section class="sd-section sd-films" id="films" aria-labelledby="sd-films-title">
+      <div class="sd-section-heading">
+        <div><span class="sd-label">03 / THE FILMS</span><h2 id="sd-films-title">WATCH IT.<br><em>LISTEN CLOSER.</em></h2></div>
+        <p>Sound belongs in motion. Explore a few completed films from my wider filmmaking portfolio with their finished soundtracks. Open each project for the full production credits.</p>
+      </div>
+      <div class="sd-film-room">
+        <div class="sd-film-screen">
+          <div class="sd-film-screen-label"><span class="sd-label">FINISHED FILM / SELECTED WORK</span><span class="sd-label">SOUND ON FOR THE FULL EXPERIENCE</span></div>
+          <video id="sd-film-video" controls playsinline preload="none" poster="/assets/filmmaker/geodome/t.jpg" aria-label="Selected completed film">
+            <source src="https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/geodome-main.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+          <div class="sd-film-caption">
+            <div><span class="sd-label">NOW SHOWING</span><h3 id="sd-film-title">GEODOMEX</h3><p id="sd-film-sub">Hers by Day, His by Night / Commercial</p></div>
+            <a id="sd-film-link" href="/filmmaker/work/geodome/">FULL PROJECT <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="sd-film-picks">
+          <span class="sd-label">CHOOSE A FILM / 01 TO 03</span>
+          <button type="button" class="sd-film-pick" data-sd-film="geodome" aria-pressed="true"><img src="/assets/filmmaker/geodome/t.jpg" alt="" loading="lazy"><span><small>01 / COMMERCIAL</small><strong>GEODOMEX</strong><span>Hers by Day, His by Night</span></span><b aria-hidden="true">↗</b></button>
+          <button type="button" class="sd-film-pick" data-sd-film="ffern" aria-pressed="false"><img src="/assets/filmmaker/ffern/t.jpg" alt="" loading="lazy"><span><small>02 / SPEC AD</small><strong>FFERN</strong><span>Discover Summer 23</span></span><b aria-hidden="true">↗</b></button>
+          <button type="button" class="sd-film-pick" data-sd-film="push" aria-pressed="false"><img src="/assets/filmmaker/push/t.jpg" alt="" loading="lazy"><span><small>03 / BRANDED CONTENT</small><strong>SPEEDO</strong><span>Push. Repeat</span></span><b aria-hidden="true">↗</b></button>
+          <div class="sd-film-note">
+            <span class="sd-label">ABOUT THESE FILMS</span>
+            <p>Selected completed productions, presented to experience the film as a whole. My role varies by project. The individual project pages contain the credited roles. These are not isolated SFX before-and-after demonstrations.</p>
+          </div>
+        </div>
+      </div>
+      <blockquote class="sd-quote">
+        <span class="sd-label">WORDS FROM THE GEODOMEX CLIENT</span>
+        <p>“The production quality, lighting and sounds used within the video helped to really create an amazing atmosphere for the piece.”</p>
+        <cite>LUKE BROOKES / MARKETING DIRECTOR, GEODOMEX</cite>
+      </blockquote>
+    </section>
+
+    <section class="sd-section sd-approach" id="approach" aria-labelledby="sd-approach-title">
+      <div class="sd-section-heading">
+        <div><span class="sd-label">04 / HOW I THINK ABOUT SOUND</span><h2 id="sd-approach-title">NOT LOUDER.<br><em>MORE ALIVE.</em></h2></div>
+        <p>The job is not to fill every second. It is to make the important moments feel present, and to know when silence does more than another effect.</p>
+      </div>
+      <div class="sd-craft-grid">
+        <article><span class="sd-label">01 / CLEAN</span><div class="sd-craft-mark">01<span aria-hidden="true">/</span></div><h3>LET THE<br>VOICE BREATHE.</h3><p>Reduce distracting noise, shape transitions and keep dialogue clear without stripping away the human quality of the recording.</p></article>
+        <article><span class="sd-label">02 / BUILD</span><div class="sd-craft-mark">02<span aria-hidden="true">/</span></div><h3>GIVE ACTION<br>ITS WEIGHT.</h3><p>Build movement, impact and texture through layered sound effects that feel connected to what happens on screen.</p></article>
+        <article><span class="sd-label">03 / PLACE</span><div class="sd-craft-mark">03<span aria-hidden="true">/</span></div><h3>MAKE THE<br>WORLD EXIST.</h3><p>Shape ambience, distance and space so the world continues beyond the edge of the frame.</p></article>
+        <article><span class="sd-label">04 / FINISH</span><div class="sd-craft-mark">04<span aria-hidden="true">/</span></div><h3>MAKE IT<br>ONE STORY.</h3><p>Balance voice, music and effects into a coherent final mix that supports the cut and the platform it is made for.</p></article>
+      </div>
+    </section>
+
+    <section class="sd-cta sd-bleed" aria-labelledby="sd-cta-title">
+      <div><span class="sd-label">HAVE SOMETHING IN THE EDIT?</span><h2 id="sd-cta-title">LET'S MAKE<br>IT <em>FELT.</em></h2></div>
+      <div class="sd-cta-right"><p>Send me a cut, a reference or even just an idea. Tell me what it needs to sound like, and what you want people to feel.</p><a href="mailto:hello@bogdanpascal.com?subject=Sound%20design%20enquiry">LET'S TALK SOUND <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <footer class="sd-footer"><span>BOGDAN PASCAL / FILMMAKER / SOUND DESIGN</span><div><a href="/filmmaker/">FILMMAKER HOME</a><a href="/athlete/">ATHLETE</a><a href="/filmmaker/contact/">CONTACT</a></div><a href="#top">BACK TO TOP ↑</a></footer>
+  </main>
+  <script src="/filmmaker/js/studio.js"></script>
+  <script src="/filmmaker/js/sound.js"></script>
+</body>
+</html>
