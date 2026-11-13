@@ -42,3 +42,33 @@
  .v3-watch-head h2{font-size:18px}
  .v3-watch-foot{align-items:flex-start}
 }
+
+/* Editorial quote replacing the oversized More Than a Look title, V3 only. */
+.v3-preview .cg-intro.v3-intention-quote{
+  grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);
+  gap:clamp(28px,5vw,80px);
+  min-height:250px;
+  align-items:center;
+  padding:clamp(28px,4.5vw,62px) 0;
+}
+.v3-quote-intro{align-self:center}
+.v3-quote-copy{min-width:0;max-width:770px;margin:0;position:relative;
+  border-left:2px solid var(--accent);
+  padding:clamp(12px,1.4vw,22px) 0 clamp(10px,1.4vw,22px) clamp(24px,3.3vw,50px)}
+.v3-quote-mark{display:block;color:var(--accent);font-family:Georgia,serif;
+  font-size:clamp(54px,6.2vw,82px);line-height:.55;margin:0 0 17px}
+.v3-quote-copy p{margin:0;color:var(--text);font-size:clamp(20px,2.3vw,33px);
+  font-weight:500;line-height:1.4;letter-spacing:-.038em}
+.v3-quote-copy footer{margin-top:22px;color:var(--text);
+  font:700 11px/1.6 'Space Mono',ui-monospace,monospace;letter-spacing:.09em}
+.v3-quote-copy footer span{color:var(--muted)}
+@media(max-width:800px){
+  .v3-preview .cg-intro.v3-intention-quote{display:flex;flex-direction:column;gap:25px;
+    min-height:0;align-items:center;padding:36px 0 40px;text-align:center}
+  .v3-quote-intro{align-self:center}
+  .v3-quote-copy{width:100%;max-width:650px;box-sizing:border-box;
+    border-left:0;border-top:2px solid var(--accent);padding:29px 7px 0}
+  .v3-quote-mark{margin:0 0 15px;font-size:62px}
+  .v3-quote-copy p{font-size:clamp(19px,4.4vw,27px);line-height:1.46}
+  .v3-quote-copy footer{margin-top:20px}
+}
