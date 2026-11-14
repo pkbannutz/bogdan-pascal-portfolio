@@ -539,12 +539,39 @@ html{scroll-padding-top:166px}
 }
 
 
-/* The two Wicked role chips remain on one line on every screen size. */
-#highlights .moment-role-tags--wicked{flex-wrap:nowrap;gap:6px}
-#highlights .moment-role-tags--wicked .moment-credit-badge{font-size:clamp(10px,1.02vw,13px);padding:8px 7px;white-space:nowrap}
-@media(max-width:420px){
-  #highlights .moment-role-tags--wicked .moment-credit-badge{font-size:11px;padding:7px 6px}
+/* All three Wicked roles stay on a single line, including narrow phones. */
+#highlights .moment-role-tags--wicked{flex-wrap:nowrap;gap:4px}
+#highlights .moment-role-tags--wicked .moment-credit-badge{
+  flex:0 0 auto;min-width:0;
+  font-size:clamp(9px,.95vw,11px);
+  padding:7px 5px;white-space:nowrap;
+  letter-spacing:-.055em;border-left-width:2px;
 }
+@media(max-width:420px){
+  #highlights .moment-role-tags--wicked{gap:3px}
+  #highlights .moment-role-tags--wicked .moment-credit-badge{
+    font-size:9.5px;padding:7px 4px;
+  }
+}
+/* A personal casting credit, distinct from the films' official honors. */
+#highlights .feature-moment .moment-choreographer{
+  width:100%;margin-top:17px;padding:12px 13px;
+  border-left:3px solid var(--accent);
+  background:color-mix(in srgb,var(--fg) 5%,transparent);
+}
+#highlights .feature-moment .moment-choreographer > span{
+  display:block;margin-bottom:5px;
+  font:700 9px/1.4 'Space Mono',monospace;letter-spacing:.08em;
+  color:var(--muted);
+}
+#highlights .feature-moment .moment-choreographer p{
+  font:500 12px/1.48 'DM Sans',sans-serif;
+  margin:0;color:var(--fg);
+}
+#highlights .feature-moment .moment-choreographer strong{
+  font-weight:700;
+}
+
 
 /* Original flat achievement label dimensions, with a gold finish. */
 #highlights .feature-moment.rgt-buzzer-card,
@@ -795,10 +822,10 @@ html{scroll-padding-top:166px}
         <div class="moment-role-tags moment-role-tags--wicked" aria-label="Wicked production roles">
           <strong class="moment-credit-badge">STUNT PERFORMER</strong>
           <strong class="moment-credit-badge">PARKOUR ATHLETE</strong>
+          <strong class="moment-credit-badge">DANCER</strong>
         </div>
         <div class="moment-credits moment-credits--wicked">
           <strong class="moment-parkour-headline">Part of the <span>specialist parkour team</span></strong>
-          <p class="moment-parkour-sequence">Specialist parkour expertise for the rotating library wheel sequence</p>
         </div>
         <strong class="moment-sag">2025 SAG Awards · Bogdan Pascal officially listed among the nominated stunt ensemble</strong>
         <p class="moment-cast"><span>FEATURED CAST</span><strong>Ariana Grande</strong> · <strong>Cynthia Erivo</strong> · <strong>Jeff Goldblum</strong></p>
@@ -816,6 +843,10 @@ html{scroll-padding-top:166px}
           <strong class="moment-credit-badge">ACROBAT</strong>
           <strong class="moment-credit-badge">DANCER</strong>
         </div>
+        <div class="moment-choreographer">
+          <span>SELECTED TALENT</span>
+          <p>Selected by <strong>Ashley Wallen</strong>, the award-winning Australian choreographer behind <em>The Greatest Showman</em>.</p>
+        </div>
         <p class="moment-cast"><span>FEATURED CAST</span><strong>Camila Cabello</strong> · <strong>Pierce Brosnan</strong> · <strong>Idina Menzel</strong></p>
         <div class="moment-achievements"><span class="moment-awards"><b>FILM HONOURS</b> 1 award win · 6 nominations</span></div>
       </div>
@@ -829,6 +860,10 @@ html{scroll-padding-top:166px}
         <div class="moment-role-tags" aria-label="Jingle Jangle production roles">
           <strong class="moment-credit-badge">STUNT PERFORMER</strong>
           <strong class="moment-credit-badge">ACROBAT</strong>
+        </div>
+        <div class="moment-choreographer">
+          <span>SELECTED TALENT</span>
+          <p>Selected by <strong>Ashley Wallen</strong>, the award-winning Australian choreographer behind <em>The Greatest Showman</em>.</p>
         </div>
         <p class="moment-cast"><span>FEATURED CAST</span><strong>Forest Whitaker</strong> · <strong>Ricky Martin</strong> · <strong>Keegan-Michael Key</strong></p>
         <div class="moment-achievements"><span class="moment-awards"><b>FILM HONOURS</b> 4 award wins · 22 nominations</span></div>
