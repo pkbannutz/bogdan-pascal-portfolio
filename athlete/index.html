@@ -310,6 +310,44 @@ html{scroll-padding-top:166px}
   .wordmark:nth-child(5n){font-size:13px}
 }
 </style>
+
+<style>
+/* Scan-first recognition labels in the Big Moments cards. */
+#highlights .moment-accolade{
+  display:inline-flex;flex-direction:column;align-items:flex-start;gap:5px;
+  max-width:100%;margin-top:15px;padding:11px 13px;
+  background:#111;color:#fff;border-left:4px solid var(--accent);
+  position:relative;z-index:2;
+}
+#highlights .moment-accolade strong{
+  display:block;font:700 clamp(20px,2.25vw,28px)/1 'Space Grotesk',sans-serif;
+  letter-spacing:-.06em;text-transform:uppercase;
+}
+#highlights .moment-accolade span{
+  font:600 10px/1.45 'Space Mono',monospace;letter-spacing:.015em;
+  text-transform:uppercase;opacity:.84;
+}
+#highlights .feature-landscape .moment-accolade{background:#fff;color:#111}
+#highlights .moment-accolades{
+  display:flex;flex-wrap:wrap;align-items:center;gap:7px;
+  margin-top:12px;position:relative;z-index:2;
+}
+#highlights .moment-stamp{
+  display:inline-block;padding:9px 10px;
+  background:var(--fg);color:var(--bg);border-left:3px solid var(--accent);
+  font:700 clamp(12px,1.35vw,17px)/1.1 'Space Grotesk',sans-serif;
+  letter-spacing:-.045em;text-transform:uppercase;
+}
+#highlights .wicked-sag .moment-major{
+  display:block;font:700 clamp(14px,1.5vw,17px)/1.08 'Space Grotesk',sans-serif;
+  letter-spacing:-.04em;text-transform:uppercase;
+}
+@media(max-width:600px){
+  #highlights .moment-accolade{margin-top:13px;padding:10px 12px}
+  #highlights .moment-accolade strong{font-size:24px}
+  #highlights .moment-stamp{font-size:14px}
+}
+</style>
 </head>
 <body>
 <header class="nav"><div class="wrap nav-inner">
@@ -350,21 +388,21 @@ html{scroll-padding-top:166px}
       <div class="wicked-award"><strong>10</strong><span>OSCAR<br>NOMINATIONS</span></div>
       <div class="wicked-award"><strong>2</strong><span>OSCAR<br>WINS</span></div>
     </div>
-    <div class="wicked-sag"><span class="wicked-sag-mark" aria-hidden="true">✦</span><div><b>2025 SAG AWARDS</b><small>Stunt Ensemble Nominee · Bogdan Pascal officially listed</small></div></div>
+    <div class="wicked-sag"><span class="wicked-sag-mark" aria-hidden="true">✦</span><div><strong class="moment-major">STUNT ENSEMBLE NOMINEE</strong><small>2025 SAG Awards · Bogdan Pascal officially listed</small></div></div>
   </div>
   <span class="big-number" aria-hidden="true">01</span>
 </article>
-<article class="feature"><div class="category">LIVE TELEVISION / UK</div><div><div class="large">BRITAIN'S<br>GOT TALENT</div><div class="detail">Semi-finalist · Acrobat and performer</div></div><span class="big-number">02</span></article>
+<article class="feature feature-bgt"><div class="category">LIVE TELEVISION / UK</div><div><div class="large">BRITAIN'S<br>GOT TALENT</div><div class="moment-accolade"><strong>SEMI-FINALIST</strong><span>Acrobat and performer</span></div></div><span class="big-number" aria-hidden="true">02</span></article>
 <article class="feature feature-with-image feature-portrait">
   <img class="feature-image" src="/assets/romanias-got-talent.jpg" alt="Bogdan Pascal and his team at Romania's Got Talent" loading="lazy" decoding="async">
   <div class="category">LIVE TELEVISION / ROMANIA</div>
-  <div class="feature-bottom"><div class="large">ROMANIA'S<br>GOT TALENT</div><div class="detail">OK WorldWide · Golden Buzzer · 2nd place</div></div>
+  <div class="feature-bottom"><div class="large">ROMANIA'S<br>GOT TALENT</div><div class="detail">OK WorldWide</div><div class="moment-accolades"><strong class="moment-stamp">GOLDEN BUZZER</strong><strong class="moment-stamp">2ND PLACE</strong></div></div>
   <span class="big-number" aria-hidden="true">03</span>
 </article>
 <article class="feature feature-with-image feature-landscape">
   <img class="feature-image" src="/assets/ninja-warrior.jpg" alt="Bogdan Pascal competing on the Ninja Warrior Romania obstacle course" loading="lazy" decoding="async">
   <div class="category">LIVE TELEVISION / ROMANIA</div>
-  <div class="feature-bottom"><div class="large">NINJA WARRIOR</div><div class="detail">2018 Finalist · Parkour and obstacle course performance</div></div>
+  <div class="feature-bottom"><div class="large">NINJA WARRIOR</div><div class="moment-accolade"><strong>FINALIST</strong><span>2018 · Parkour and obstacle course performance</span></div></div>
   <span class="big-number" aria-hidden="true">04</span>
 </article>
 </div>
