@@ -790,12 +790,21 @@ html{scroll-padding-top:166px}
   font-size:clamp(22px,2.15vw,30px);
   margin:9px 0 0;line-height:1.03;
 }
-#highlights .moment-editorial-role{
-  display:inline-block;max-width:100%;
-  margin:13px 0 0;padding:8px 10px;
-  font:700 9px/1.45 'Space Mono',monospace;
-  letter-spacing:.015em;color:var(--bg);background:var(--fg);
+/* Match the first three film cards: small department label and one role per badge.
+   Supporting achievements, famous collaborators, and awards stay separate. */
+#highlights .moment-editorial .moment-role-tags{
+  margin-top:11px;align-items:flex-start;
 }
+#highlights .moment-editorial .moment-role-tags .moment-credit-badge{
+  font-size:clamp(11px,1.08vw,14px);
+  padding:8px 9px;
+}
+#highlights .moment-editorial-photo-credit{
+  margin-top:0;display:inline-block;
+  font:600 9px/1.55 'Space Mono',monospace;
+  color:var(--muted);text-decoration:underline;text-underline-offset:3px;
+}
+#highlights .moment-editorial-photo-credit:hover{color:var(--fg)}
 #highlights .moment-editorial-headline{
   display:block;margin-top:23px;
   font:700 clamp(23px,2.6vw,35px)/1.03 'Space Grotesk',sans-serif;
@@ -1006,7 +1015,11 @@ html{scroll-padding-top:166px}
       <div class="moment-content">
         <div class="moment-overline">2016 · FEATURE DOCUMENTARY</div>
         <h3>13 SHADES OF ROMANIAN</h3>
-        <p class="moment-editorial-role">FEATURED SUBJECT · PERSONAL STORY</p>
+        <span class="moment-department">DOCUMENTARY</span>
+        <div class="moment-role-tags" aria-label="13 Shades of Romanian personal roles">
+          <strong class="moment-credit-badge">FEATURED PERSONAL STORY</strong>
+          <strong class="moment-credit-badge">PARKOUR ATHLETE</strong>
+        </div>
         <strong class="moment-editorial-headline">ONE OF THE 13<br><em>FEATURED STORIES.</em></strong>
         <p class="moment-editorial-copy">My journey into parkour, told as part of a documentary exploring Romanian lives in Britain. Directed by Anda and Dragoș Teglaș, with television and on-demand versions.</p>
         <div class="moment-editorial-foot">
@@ -1024,7 +1037,15 @@ html{scroll-padding-top:166px}
       <div class="moment-content">
         <div class="moment-overline">2019 · THE O2, LONDON · ITV</div>
         <h3>BRIT AWARDS</h3>
-        <p class="moment-editorial-role">ACROBAT · LIVE ENSEMBLE PERFORMER</p>
+        <span class="moment-department">LIVE PERFORMANCE</span>
+        <div class="moment-role-tags" aria-label="BRIT Awards performance roles">
+          <strong class="moment-credit-badge">ACROBAT</strong>
+          <strong class="moment-credit-badge">DANCER</strong>
+        </div>
+        <div class="moment-choreographer">
+          <span>SELECTED TALENT</span>
+          <p>Selected by <strong>Ashley Wallen</strong>, the award-winning Australian choreographer behind <em>The Greatest Showman</em>.</p>
+        </div>
         <strong class="moment-editorial-headline">THE GREATEST SHOW<br><em>WITH HUGH JACKMAN.</em></strong>
         <p class="moment-editorial-copy">Part of the circus-inspired opening performance, directed for the stage by Michael Gracey. The televised ceremony was hosted by Jack Whitehall.</p>
         <div class="moment-editorial-foot">
@@ -1043,7 +1064,11 @@ html{scroll-padding-top:166px}
       <div class="moment-content">
         <div class="moment-overline">2021 CAMPAIGN · EMIRATES AIRLINE</div>
         <h3>EXPO 2020 DUBAI</h3>
-        <p class="moment-editorial-role">ACROBAT · COMMERCIAL PERFORMANCE</p>
+        <span class="moment-department">COMMERCIAL PERFORMANCE</span>
+        <div class="moment-role-tags" aria-label="Dubai Expo campaign roles">
+          <strong class="moment-credit-badge">ACROBAT</strong>
+          <strong class="moment-credit-badge">SELF-CHOREOGRAPHED MOVEMENT</strong>
+        </div>
         <strong class="moment-editorial-headline">ON SET WITH<br><em>CHRIS HEMSWORTH.</em></strong>
         <p class="moment-editorial-copy">A large-scale global campaign inviting the world to Expo 2020 Dubai, directed by two-time Academy Award winner Robert Stromberg.</p>
         <div class="moment-editorial-foot">
@@ -1057,18 +1082,24 @@ html{scroll-padding-top:166px}
     <div class="moment-feature-pair" aria-label="Fashion and music video highlights">
       <article class="feature feature-moment moment-editorial" aria-label="Plein Sport, Milan Fashion Week runway show">
         <div class="moment-cover">
-          <img src="https://img.youtube.com/vi/Z97mGOjnpTU/hqdefault.jpg" alt="Plein Sport Fall Winter 2017/18 runway show at Milan Men's Fashion Week" loading="lazy" decoding="async">
+          <img src="https://www.bestdressedmanotp.com/wp-content/gallery/plein-sport-fw1718_atmosphere-4/PLEIN-SPORT-FW1718_ATMOSPHERE.JPG" alt="The two-level Plein Sport runway and parkour performance setup at Milan Men's Fashion Week 2017" loading="lazy" decoding="async">
           <span class="moment-index">10 / FASHION SHOW</span>
         </div>
         <div class="moment-content">
           <div class="moment-overline">2017 · MILAN MEN'S FASHION WEEK</div>
           <h3>MILAN FASHION WEEK</h3>
-          <p class="moment-editorial-role">PLEIN SPORT · PHILIPP PLEIN · PARKOUR PERFORMER</p>
+          <span class="moment-department">PLEIN SPORT / PHILIPP PLEIN</span>
+        <div class="moment-role-tags" aria-label="Plein Sport performance roles">
+          <strong class="moment-credit-badge">PARKOUR PERFORMER</strong>
+          <strong class="moment-credit-badge">ATHLETE</strong>
+          <strong class="moment-credit-badge">ACROBAT</strong>
+        </div>
           <strong class="moment-editorial-headline">PARKOUR ON<br><em>THE RUNWAY.</em></strong>
           <p class="moment-editorial-copy">A runway transformed into an athletic performance arena for the Plein Sport debut. Freerunners performed live alongside the brand's fashion presentation.</p>
           <div class="moment-editorial-foot">
             <span class="moment-editorial-kicker">RUNWAY · LIVE PERFORMANCE</span>
             <strong class="moment-editorial-stat">Plein Sport debut <small>Fashion meets freerunning · Milan</small></strong>
+            <a class="moment-editorial-photo-credit" href="https://www.bestdressedmanotp.com/2017/01/phillipp-plein-launches-plein-sport-milano-fashion-week/" target="_blank" rel="noopener noreferrer">RUNWAY SET PHOTO · VINCENZO LOMBARDO / GETTY IMAGES FOR PLEIN SPORT ↗</a>
             <span class="moment-editorial-extra">Paris Hilton was among the show's attendees; Ryan Doyle was featured in its parkour cast.</span>
             <a href="https://www.pleinsport.com/ps-fs-aw-17-18" target="_blank" rel="noopener noreferrer" class="moment-editorial-link">SEE THE OFFICIAL SHOW ↗</a>
           </div>
@@ -1082,7 +1113,11 @@ html{scroll-padding-top:166px}
         <div class="moment-content">
           <div class="moment-overline">2022 · THE 1975 · DIRTY HIT</div>
           <h3>I'M IN LOVE WITH YOU</h3>
-          <p class="moment-editorial-role">CREDITED DANCER · MUSIC VIDEO CAST</p>
+          <span class="moment-department">MUSIC VIDEO</span>
+        <div class="moment-role-tags" aria-label="The 1975 music video roles">
+          <strong class="moment-credit-badge">DANCER</strong>
+          <strong class="moment-credit-badge">ACROBAT</strong>
+        </div>
           <strong class="moment-editorial-headline">BEST CHOREOGRAPHY<br><em>UKMVA NOMINEE.</em></strong>
           <p class="moment-editorial-copy">Performed in the black-and-white music video directed by Samuel Bradley and choreographed by Katie Collins, with a guest appearance by Phoebe Bridgers.</p>
           <div class="moment-editorial-foot">
