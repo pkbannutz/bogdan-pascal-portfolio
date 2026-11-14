@@ -425,6 +425,31 @@ html{scroll-padding-top:166px}
 
 /* Film credits take visual priority over cast associations and production awards. */
 #highlights .feature-moment .moment-credits{margin-top:14px;max-width:100%}
+/* The specialist parkour role is the main Wicked credit, not a footnote to stunts. */
+#highlights .feature-moment .moment-credits--wicked{
+  width:100%;max-width:none;margin-top:14px;
+}
+#highlights .feature-moment .moment-parkour-headline{
+  display:block;width:100%;padding:14px 13px;
+  background:var(--accent);color:#111;border-left:5px solid #111;
+  font:700 clamp(21px,2.1vw,27px)/1.09 'Space Grotesk',sans-serif;
+  text-transform:uppercase;letter-spacing:-.055em;
+}
+#highlights .feature-moment .moment-parkour-headline span{
+  display:block;font-weight:700;
+}
+#highlights .feature-moment .moment-credits--wicked .moment-parkour-sequence{
+  font:600 12px/1.5 'DM Sans',sans-serif;margin:10px 0 0;
+  color:var(--fg);
+}
+#highlights .feature-moment .moment-department{
+  display:block;margin-top:9px;color:var(--muted);
+  font:700 9px/1.45 'Space Mono',monospace;letter-spacing:.08em;
+}
+@media(max-width:600px){
+  #highlights .feature-moment .moment-parkour-headline{font-size:24px}
+}
+
 #highlights .feature-moment .moment-credit-badge{
   display:inline-block;max-width:100%;padding:9px 10px;
   background:var(--fg);color:var(--bg);border-left:4px solid var(--accent);
@@ -503,7 +528,11 @@ html{scroll-padding-top:166px}
       <div class="moment-content">
         <div class="moment-overline">2024 · UNIVERSAL PICTURES</div>
         <h3>WICKED</h3>
-        <div class="moment-credits"><strong class="moment-credit-badge">STUNT DEPARTMENT</strong><p>Part of the <strong>specialist parkour team</strong></p></div>
+        <div class="moment-credits moment-credits--wicked">
+          <strong class="moment-parkour-headline">Part of the <span>specialist parkour team</span></strong>
+          <p class="moment-parkour-sequence">Specialist parkour expertise for the rotating library wheel sequence</p>
+          <span class="moment-department">STUNT DEPARTMENT</span>
+        </div>
         <strong class="moment-sag">2025 SAG Awards · Bogdan Pascal officially listed among the nominated stunt ensemble</strong>
         <p class="moment-cast"><span>FEATURED CAST</span><strong>Ariana Grande</strong> · <strong>Cynthia Erivo</strong> · <strong>Jeff Goldblum</strong></p>
         <div class="moment-achievements"><span class="moment-awards"><b>FILM HONOURS</b> 10 Oscar nominations · 2 Oscar wins</span></div>
