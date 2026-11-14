@@ -291,6 +291,25 @@
 .coord-banner-service:last-child{border-bottom:0!important}
 }
 </style>
+
+<style>
+/* Two compact, continuously scrolling client rows remain below the sticky navigation. */
+html{scroll-padding-top:148px}
+.logos-wrap{position:sticky;top:72px;z-index:99;padding:8px 0 9px;border-bottom:1px solid var(--line)}
+.logos-window{margin-top:0}
+.logos-window + .logos-window{margin-top:7px}
+.logos-set{gap:36px;padding-right:36px}
+.wordmark{font-size:15px;line-height:1.2}
+.wordmark:nth-child(5n){font-size:12px}
+@media(max-width:600px){
+  html{scroll-padding-top:125px}
+  .logos-wrap{top:66px;padding:6px 0}
+  .logos-window + .logos-window{margin-top:5px}
+  .logos-set{gap:24px;padding-right:24px}
+  .wordmark{font-size:13px}
+  .wordmark:nth-child(5n){font-size:11px}
+}
+</style>
 </head>
 <body>
 <header class="nav"><div class="wrap nav-inner">
@@ -298,6 +317,9 @@
 <nav class="navlinks" id="navlinks" aria-label="Main navigation"><a href="#highlights">HIGHLIGHTS</a><a href="#coordination">COORDINATION</a><a href="#credits">CREDITS</a><a href="#clients">CLIENTS</a><a href="#skills">SKILLS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
 <div class="navend"><button class="action" id="theme" aria-label="Toggle color theme">DARK / LIGHT</button><a class="action primary" href="mailto:hello@bogdanpascal.com?subject=Booking%20enquiry">BOOKING ↗</a><button class="action mobile-menu" id="menu" aria-controls="navlinks" aria-expanded="false">MENU</button></div>
 </div></header>
+<section class="logos-wrap" id="clients" aria-label="Selected clients and productions">
+<div class="logos-window" aria-label="Selected brands and productions, first 17 scrolling left"><div class="logos-track logos-track--left" id="logosTrackTop"></div></div>
+<div class="logos-window" aria-label="Selected brands and productions, next 17 scrolling right"><div class="logos-track logos-track--right" id="logosTrackBottom"></div></div></section>
 <main>
 <section class="hero wrap" id="home">
 <div class="hero-top eyebrow"><span>SPECIALIST PARKOUR / STUNTS / MOVEMENT</span><span class="muted">AVAILABLE WORLDWIDE</span></div>
@@ -309,21 +331,7 @@
 </div><div class="hero-display hero-display--portrait">
 <img src="/assets/profile.jpg" alt="Portrait of Bogdan Pascal in an orange sweatshirt" decoding="async">
 </div></div>
-<section class="coord-banner" id="coordination" aria-labelledby="coord-banner-title">
-  <div class="coord-banner-header">
-    <div><span class="coord-banner-label">MOVEMENT DIRECTION / SPECIALIST PARKOUR COORDINATION</span><h2 id="coord-banner-title">PARKOUR<br><em>COORDINATION</em><span>.</span></h2></div>
-    <div class="coord-banner-intro"><p>For over 15 years, I&#39;ve developed, performed and filmed stunts and choreography alongside acrobats, dancers and stunt performers. That experience has sharpened my instinct for movement, rhythm, timing and camera composition, helping me turn creative ideas into dynamic action for the screen and live audiences.</p><a class="coord-banner-cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20Coordination%20Enquiry&amp;body=Project%3A%0AFormat%3A%0ALocation%3A%0ADates%3A%0AMovement%20brief%3A%0A">DISCUSS YOUR SEQUENCE <span aria-hidden="true">↗</span></a></div>
-  </div>
-  <div class="coord-banner-services" aria-label="Parkour coordination services">
-    <div class="coord-banner-service"><span class="coord-banner-no">01 / CONCEPT</span><strong>SCRIPT & ACTION DESIGN</strong><p>Turn a script into movement beats, route options and shot-ready action.</p></div>
-    <div class="coord-banner-service"><span class="coord-banner-no">02 / MOVEMENT</span><strong>MOVEMENT DIRECTION</strong><p>Create expressive, repeatable movement across parkour and acrobatics, with rhythm and timing built for the camera.</p></div>
-    <div class="coord-banner-service"><span class="coord-banner-no">03 / PEOPLE</span><strong>PERFORMER CASTING</strong><p>Source and assemble international parkour talent, acrobats and doubles.</p></div>
-    <div class="coord-banner-service"><span class="coord-banner-no">04 / ENVIRONMENT</span><strong>RECCES & FEASIBILITY</strong><p>Assess surfaces, routes, take-off and landing zones with stunt and safety teams.</p></div>
-    <div class="coord-banner-service"><span class="coord-banner-no">05 / PREPARATION</span><strong>ACTOR & TALENT COACHING</strong><p>Prepare actors, presenters and doubles for credible, consistent movement.</p></div>
-    <div class="coord-banner-service"><span class="coord-banner-no">06 / CAMERA</span><strong>CAMERA-LED ACTION</strong><p>Plan angles, blocking, coverage and edit points alongside camera and stunt crews.</p></div>
-  </div>
-  <div class="coord-banner-bottom"><b>FROM SCRIPT TO SCREEN</b><span>BREAKDOWN &nbsp; / &nbsp; DESIGN &nbsp; / &nbsp; CAST &amp; REHEARSE &nbsp; / &nbsp; FILM</span></div>
-</section>
+
 </section>
 <div class="wrap metrics" aria-label="Career at a glance">
 <div class="metric"><strong>20+</strong><span>Years in movement<br>Since age 7</span></div>
@@ -361,15 +369,30 @@
 </article>
 </div>
 </section>
+<div class="wrap">
+<section class="coord-banner" id="coordination" aria-labelledby="coord-banner-title">
+  <div class="coord-banner-header">
+    <div><span class="coord-banner-label">MOVEMENT DIRECTION / SPECIALIST PARKOUR COORDINATION</span><h2 id="coord-banner-title">PARKOUR<br><em>COORDINATION</em><span>.</span></h2></div>
+    <div class="coord-banner-intro"><p>For over 15 years, I&#39;ve developed, performed and filmed stunts and choreography alongside acrobats, dancers and stunt performers. That experience has sharpened my instinct for movement, rhythm, timing and camera composition, helping me turn creative ideas into dynamic action for the screen and live audiences.</p><a class="coord-banner-cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20Coordination%20Enquiry&amp;body=Project%3A%0AFormat%3A%0ALocation%3A%0ADates%3A%0AMovement%20brief%3A%0A">DISCUSS YOUR SEQUENCE <span aria-hidden="true">↗</span></a></div>
+  </div>
+  <div class="coord-banner-services" aria-label="Parkour coordination services">
+    <div class="coord-banner-service"><span class="coord-banner-no">01 / CONCEPT</span><strong>SCRIPT & ACTION DESIGN</strong><p>Turn a script into movement beats, route options and shot-ready action.</p></div>
+    <div class="coord-banner-service"><span class="coord-banner-no">02 / MOVEMENT</span><strong>MOVEMENT DIRECTION</strong><p>Create expressive, repeatable movement across parkour and acrobatics, with rhythm and timing built for the camera.</p></div>
+    <div class="coord-banner-service"><span class="coord-banner-no">03 / PEOPLE</span><strong>PERFORMER CASTING</strong><p>Source and assemble international parkour talent, acrobats and doubles.</p></div>
+    <div class="coord-banner-service"><span class="coord-banner-no">04 / ENVIRONMENT</span><strong>RECCES & FEASIBILITY</strong><p>Assess surfaces, routes, take-off and landing zones with stunt and safety teams.</p></div>
+    <div class="coord-banner-service"><span class="coord-banner-no">05 / PREPARATION</span><strong>ACTOR & TALENT COACHING</strong><p>Prepare actors, presenters and doubles for credible, consistent movement.</p></div>
+    <div class="coord-banner-service"><span class="coord-banner-no">06 / CAMERA</span><strong>CAMERA-LED ACTION</strong><p>Plan angles, blocking, coverage and edit points alongside camera and stunt crews.</p></div>
+  </div>
+  <div class="coord-banner-bottom"><b>FROM SCRIPT TO SCREEN</b><span>BREAKDOWN &nbsp; / &nbsp; DESIGN &nbsp; / &nbsp; CAST &amp; REHEARSE &nbsp; / &nbsp; FILM</span></div>
+</section>
+</div>
 
 <section class="section rule" id="credits"><div class="wrap"><div class="section-head"><div><span class="eyebrow">02 / PROFESSIONAL EXPERIENCE</span><h2>SELECTED<br>CREDITS.</h2></div><p>Film, television, commercials, live performances and international events. Search or filter the archive.</p></div>
 <div class="credit-controls" id="filters"><button class="filter" data-filter="film" aria-pressed="true">FILM</button><button class="filter" data-filter="tv" aria-pressed="false">TV</button><button class="filter" data-filter="commercial" aria-pressed="false">COMMERCIALS</button><button class="filter" data-filter="live" aria-pressed="false">LIVE / EVENTS</button><button class="filter" data-filter="music" aria-pressed="false">MUSIC</button><button class="filter" data-filter="all" aria-pressed="false">ALL</button><input class="search" id="creditSearch" aria-label="Search credits" placeholder="SEARCH CREDITS..."></div>
 <div class="credits-list" id="creditsList"></div><div id="creditEmpty" class="empty">No credits match your search.</div>
 <div style="margin-top:25px"><a class="action" target="_blank" rel="noopener noreferrer" href="https://www.imdb.com/name/nm11164253/">EXPLORE MY IMDb PROFILE ↗</a></div>
 </div></section>
-<section class="logos-wrap" id="clients"><div class="wrap"><div class="section-head"><div><span class="eyebrow">03 / WORKED WITH & FEATURED IN</span><h2>THE COMPANY<br>I KEEP.</h2></div><p class="muted">Selected brands, networks and productions associated with projects in my career portfolio.</p></div></div>
-<div class="logos-window" aria-label="Selected brands and productions, first 17 scrolling left"><div class="logos-track logos-track--left" id="logosTrackTop"></div></div>
-<div class="logos-window" aria-label="Selected brands and productions, next 17 scrolling right"><div class="logos-track logos-track--right" id="logosTrackBottom"></div></div></section>
+
 <section class="section wrap" id="skills"><div class="section-head"><div><span class="eyebrow">04 / PHYSICAL CAPABILITIES</span><h2>MOVEMENT<br>IS THE MEDIUM.</h2></div><p>A hybrid skill set developed through years of movement, performance and physical storytelling.</p></div><div class="roles-grid" id="skillGrid"></div></section>
 <section class="section rule" id="reels"><div class="wrap"><div class="section-head"><div><span class="eyebrow">05 / ACTION IN MOTION</span><h2>SEE IT<br>IN ACTION.</h2></div><p>Press play to watch, and expand the video to fullscreen.</p></div>
 <div class="reel-frame">
