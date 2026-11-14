@@ -348,6 +348,83 @@ html{scroll-padding-top:166px}
   #highlights .moment-stamp{font-size:14px}
 }
 </style>
+<style>
+/* Six matching editorial highlight cards: film / TV, 3 by 2, with 16:9 cover art. */
+#highlights .featured{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-template-rows:none;grid-auto-rows:1fr;gap:14px;align-items:stretch;
+}
+#highlights .feature-moment{
+  display:flex;flex-direction:column;min-height:0;padding:0;gap:0;
+  border:1px solid var(--line);background:var(--soft);
+  transform:none;overflow:hidden;isolation:isolate;
+}
+#highlights .feature-moment:hover{transform:translateY(-3px);background:var(--soft);border-color:var(--muted)}
+#highlights .feature-moment .moment-cover{
+  width:100%;aspect-ratio:16/9;overflow:hidden;position:relative;
+  background:#262626;flex:none;
+}
+#highlights .feature-moment .moment-cover img{
+  display:block;width:100%;height:100%;object-fit:cover;object-position:center;
+  transition:transform .4s cubic-bezier(.2,.8,.2,1);
+}
+#highlights .feature-moment:hover .moment-cover img{transform:scale(1.035)}
+#highlights .feature-moment .moment-index{
+  position:absolute;top:12px;left:12px;z-index:1;
+  padding:7px 9px;background:rgba(0,0,0,.83);color:#fff;
+  font:700 9px/1.2 'Space Mono',monospace;letter-spacing:.09em;
+}
+#highlights .feature-moment .moment-content{
+  flex:1;display:flex;flex-direction:column;align-items:flex-start;
+  min-width:0;padding:20px 20px 18px;
+}
+#highlights .feature-moment .moment-overline{
+  font:700 9px/1.5 'Space Mono',monospace;
+  letter-spacing:.07em;color:var(--muted);
+}
+#highlights .feature-moment h3{
+  font:700 clamp(21px,2.1vw,30px)/1 'Space Grotesk',sans-serif;
+  letter-spacing:-.055em;margin:10px 0 0;overflow-wrap:anywhere;
+}
+#highlights .feature-moment .moment-role{
+  font-size:12px;line-height:1.5;color:var(--muted);margin:8px 0 0;
+}
+#highlights .feature-moment .moment-achievements{
+  width:100%;display:flex;flex-direction:column;align-items:flex-start;
+  gap:7px;margin-top:auto;padding-top:19px;position:relative;z-index:2;
+}
+#highlights .feature-moment .moment-prize{
+  font:700 clamp(16px,1.5vw,20px)/1.12 'Space Grotesk',sans-serif;
+  letter-spacing:-.038em;color:#111;background:var(--accent);
+  padding:8px 10px;text-transform:uppercase;
+}
+#highlights .feature-moment .moment-prize-secondary{
+  font-size:clamp(13px,1.35vw,17px);background:var(--fg);color:var(--bg);
+}
+#highlights .feature-moment .moment-awards{
+  font:500 10px/1.55 'Space Mono',monospace;color:var(--fg);
+}
+#highlights .feature-moment .moment-awards b{
+  display:block;font:700 9px/1.45 'Space Mono',monospace;color:var(--muted);
+  letter-spacing:.07em;
+}
+#highlights .feature-moment .moment-note{
+  margin:10px 0 0;font:500 10px/1.5 'DM Sans',sans-serif;color:var(--muted);
+}
+@media(max-width:1000px){
+  #highlights .featured{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:1fr}
+}
+@media(max-width:600px){
+  #highlights .featured{grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-auto-rows:auto;gap:12px}
+  #highlights .feature-moment{min-height:0}
+  #highlights .feature-moment .moment-content{padding:18px}
+  #highlights .feature-moment h3{font-size:26px}
+}
+@media(prefers-reduced-motion:reduce){
+  #highlights .feature-moment .moment-cover img{transition:none}
+  #highlights .feature-moment:hover .moment-cover img{transform:none}
+}
+</style>
 </head>
 <body>
 <header class="nav"><div class="wrap nav-inner">
@@ -377,35 +454,73 @@ html{scroll-padding-top:166px}
 <div class="metric"><strong>150+</strong><span class="metric-label">CITIES</span><span class="metric-detail">Visited · and counting</span></div>
 <div class="metric"><strong>100K+</strong><span class="metric-label">FOLLOWERS</span><span class="metric-detail">Combined social following</span></div>
 </div>
-<section class="section wrap" id="highlights"><div class="section-head"><div><span class="eyebrow">01 / SELECTED HIGHLIGHTS</span><h2>THE BIG<br>MOMENTS.</h2></div><p>From Hollywood productions to televised competitions and international performance stages.</p></div>
-<div class="featured">
-<article class="feature feature-acid feature-wicked">
-  <div class="category">FEATURE FILM / 2024</div>
-  <div class="wicked-feature-content">
-    <div class="large">WICKED</div>
-    <div class="detail">Parkour, stunts and acting · Universal Pictures</div>
-    <div class="wicked-awards" aria-label="Wicked film Oscar nominations and wins">
-      <div class="wicked-award"><strong>10</strong><span>OSCAR<br>NOMINATIONS</span></div>
-      <div class="wicked-award"><strong>2</strong><span>OSCAR<br>WINS</span></div>
-    </div>
-    <div class="wicked-sag"><span class="wicked-sag-mark" aria-hidden="true">✦</span><div><strong class="moment-major">STUNT ENSEMBLE NOMINEE</strong><small>2025 SAG Awards · Bogdan Pascal officially listed</small></div></div>
+<section class="section wrap" id="highlights">
+  <div class="section-head">
+    <div><span class="eyebrow">01 / SELECTED HIGHLIGHTS</span><h2>THE BIG<br>MOMENTS.</h2></div>
+    <p>Selected film credits and competition milestones. My credits and the productions' awards are shown separately.</p>
   </div>
-  <span class="big-number" aria-hidden="true">01</span>
-</article>
-<article class="feature feature-bgt"><div class="category">LIVE TELEVISION / UK</div><div><div class="large">BRITAIN'S<br>GOT TALENT</div><div class="moment-accolade"><strong>SEMI-FINALIST</strong><span>Acrobat and performer</span></div></div><span class="big-number" aria-hidden="true">02</span></article>
-<article class="feature feature-with-image feature-portrait">
-  <img class="feature-image" src="/assets/romanias-got-talent.jpg" alt="Bogdan Pascal and his team at Romania's Got Talent" loading="lazy" decoding="async">
-  <div class="category">LIVE TELEVISION / ROMANIA</div>
-  <div class="feature-bottom"><div class="large">ROMANIA'S<br>GOT TALENT</div><div class="detail">OK WorldWide</div><div class="moment-accolades"><strong class="moment-stamp">GOLDEN BUZZER</strong><strong class="moment-stamp">2ND PLACE</strong></div></div>
-  <span class="big-number" aria-hidden="true">03</span>
-</article>
-<article class="feature feature-with-image feature-landscape">
-  <img class="feature-image" src="/assets/ninja-warrior.jpg" alt="Bogdan Pascal competing on the Ninja Warrior Romania obstacle course" loading="lazy" decoding="async">
-  <div class="category">LIVE TELEVISION / ROMANIA</div>
-  <div class="feature-bottom"><div class="large">NINJA WARRIOR</div><div class="moment-accolade"><strong>FINALIST</strong><span>2018 · Parkour and obstacle course performance</span></div></div>
-  <span class="big-number" aria-hidden="true">04</span>
-</article>
-</div>
+  <div class="featured" aria-label="Three feature films followed by three television appearances">
+    <article class="feature feature-moment" aria-label="Wicked, film credit">
+      <div class="moment-cover"><img src="https://images.contentstack.io/v3/assets/blt13adb7e2033fcee5/bltdca52087fe5501b8/692a5f08bddc8805641ffb13/Wicked_keyart_mobile_3840x2160.jpg?width=2560" alt="Wicked (2024) official film artwork with Glinda and Elphaba" loading="lazy" decoding="async"><span class="moment-index">01 / FILM</span></div>
+      <div class="moment-content">
+        <div class="moment-overline">2024 · UNIVERSAL PICTURES</div>
+        <h3>WICKED</h3>
+        <p class="moment-role">Stunts, specialist parkour &amp; performance · Tornado Wheel</p>
+        <div class="moment-achievements"><strong class="moment-prize">SAG STUNT ENSEMBLE NOMINEE</strong><span class="moment-awards"><b>FILM HONOURS</b> 10 Oscar nominations · 2 Oscar wins</span></div>
+        <p class="moment-note">2025 SAG Awards · Bogdan Pascal officially listed among the nominated stunt ensemble</p>
+      </div>
+    </article>
+    <article class="feature feature-moment" aria-label="Cinderella, film credit">
+      <div class="moment-cover"><img src="https://ntvb.tmsimg.com/assets/p18793859_v_h8_aa.jpg?h=720&amp;w=1280" alt="Cinderella (2021) Amazon Original movie artwork featuring Camila Cabello" loading="lazy" decoding="async"><span class="moment-index">02 / FILM</span></div>
+      <div class="moment-content">
+        <div class="moment-overline">2021 · AMAZON PRIME VIDEO</div>
+        <h3>CINDERELLA</h3>
+        <p class="moment-role">Dancer, stunts &amp; acrobat · alongside Camila Cabello</p>
+        <div class="moment-achievements"><strong class="moment-prize">FEATURE FILM CREDIT</strong><span class="moment-awards"><b>FILM HONOURS</b> 1 award win · 6 nominations</span></div>
+        <p class="moment-note">Musical feature film · My contribution was performance and movement</p>
+      </div>
+    </article>
+    <article class="feature feature-moment" aria-label="Jingle Jangle, film credit">
+      <div class="moment-cover"><img src="https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/MgXQGyNr1xbI8tJSYiMWv5kXg5g/AAAABdBDgQQ5zbXPxNMFAM84vDOcwA57F2tHRMgx3D6a9lgklNMib6rC3P9dZFGTre_D7PG-aM8SOdm1paGJsjzM9kEHWLzs0abAOrmgz24pGlFlYqgYY7wIqyhGYQclGOc.jpg?r=d0b" alt="Netflix Jingle Jangle: A Christmas Journey (2020) movie key artwork" loading="lazy" decoding="async"><span class="moment-index">03 / FILM</span></div>
+      <div class="moment-content">
+        <div class="moment-overline">2020 · NETFLIX</div>
+        <h3>JINGLE JANGLE</h3>
+        <p class="moment-role">Actor, stunt performer &amp; acrobat · A Christmas Journey</p>
+        <div class="moment-achievements"><strong class="moment-prize">FEATURE FILM CREDIT</strong><span class="moment-awards"><b>FILM HONOURS</b> 4 award wins · 22 nominations</span></div>
+        <p class="moment-note">Production featuring Forest Whitaker and Keegan-Michael Key</p>
+      </div>
+    </article>
+    <article class="feature feature-moment" aria-label="Ninja Warrior Romania, television credit">
+      <div class="moment-cover"><img src="/assets/ninja-warrior.jpg" alt="Bogdan Pascal on the Ninja Warrior Romania obstacle course" loading="lazy" decoding="async"><span class="moment-index">04 / TELEVISION</span></div>
+      <div class="moment-content">
+        <div class="moment-overline">2018 · ROMANIA</div>
+        <h3>NINJA WARRIOR</h3>
+        <p class="moment-role">Parkour &amp; obstacle course competition</p>
+        <div class="moment-achievements"><strong class="moment-prize">FINALIST</strong></div>
+        <p class="moment-note">Television competition result</p>
+      </div>
+    </article>
+    <article class="feature feature-moment" aria-label="Britain's Got Talent, television credit">
+      <div class="moment-cover"><img src="https://img.youtube.com/vi/DyDth7cQqxs/hqdefault.jpg" alt="OK Worldwide performing on Britain's Got Talent in the official 2015 semi-final performance video" loading="lazy" decoding="async"><span class="moment-index">05 / TELEVISION</span></div>
+      <div class="moment-content">
+        <div class="moment-overline">2015 · UNITED KINGDOM</div>
+        <h3>BRITAIN'S GOT TALENT</h3>
+        <p class="moment-role">OK Worldwide · Parkour, acrobatics &amp; live performance</p>
+        <div class="moment-achievements"><strong class="moment-prize">SEMI-FINALIST</strong></div>
+        <p class="moment-note">ITV talent competition · Live semi-finals</p>
+      </div>
+    </article>
+    <article class="feature feature-moment" aria-label="Romania's Got Talent, television credit">
+      <div class="moment-cover"><img src="/assets/romanias-got-talent.jpg" alt="Bogdan Pascal and OK Worldwide performing on Romania's Got Talent" loading="lazy" decoding="async"><span class="moment-index">06 / TELEVISION</span></div>
+      <div class="moment-content">
+        <div class="moment-overline">2017 · ROMANIA</div>
+        <h3>ROMANIA'S GOT TALENT</h3>
+        <p class="moment-role">OK Worldwide · Group acrobatics and parkour</p>
+        <div class="moment-achievements"><strong class="moment-prize">2ND PLACE</strong><strong class="moment-prize moment-prize-secondary">GOLDEN BUZZER</strong></div>
+        <p class="moment-note">National television competition · Final placement</p>
+      </div>
+    </article>
+  </div>
 </section>
 <div class="wrap">
 <section class="coord-banner" id="coordination" aria-labelledby="coord-banner-title">
