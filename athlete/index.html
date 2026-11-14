@@ -422,6 +422,42 @@ html{scroll-padding-top:166px}
   #highlights .feature-moment .moment-content{padding:18px}
   #highlights .feature-moment h3{font-size:26px}
 }
+
+/* Film credits take visual priority over cast associations and production awards. */
+#highlights .feature-moment .moment-credits{margin-top:14px;max-width:100%}
+#highlights .feature-moment .moment-credit-badge{
+  display:inline-block;max-width:100%;padding:9px 10px;
+  background:var(--fg);color:var(--bg);border-left:4px solid var(--accent);
+  font:700 clamp(14px,1.3vw,17px)/1.2 'Space Grotesk',sans-serif;
+  letter-spacing:-.035em;overflow-wrap:normal;
+}
+#highlights .feature-moment .moment-credits p{
+  margin:8px 0 0;font:500 12px/1.55 'DM Sans',sans-serif;color:var(--muted)
+}
+#highlights .feature-moment .moment-credits p strong{
+  color:var(--fg);font-weight:700
+}
+#highlights .feature-moment .moment-cast{
+  margin:13px 0 0;font:500 11px/1.7 'DM Sans',sans-serif;color:var(--muted);
+}
+#highlights .feature-moment .moment-cast span{
+  display:block;margin-bottom:4px;font:700 9px/1.4 'Space Mono',monospace;
+  letter-spacing:.08em;color:var(--muted);
+}
+#highlights .feature-moment .moment-cast strong{
+  font-weight:700;color:var(--fg);
+}
+#highlights .feature-moment .moment-sag{
+  display:block;max-width:100%;background:var(--accent);color:#111;
+  padding:11px 12px;border-left:4px solid #111;
+  font:700 12px/1.45 'Space Grotesk',sans-serif;
+  letter-spacing:-.013em;text-transform:none;
+}
+@media(max-width:600px){
+  #highlights .feature-moment .moment-credit-badge{font-size:16px}
+  #highlights .feature-moment .moment-sag{font-size:12px}
+}
+
 @media(prefers-reduced-motion:reduce){
   #highlights .feature-moment .moment-cover img{transition:none}
   #highlights .feature-moment:hover .moment-cover img{transform:none}
@@ -467,9 +503,9 @@ html{scroll-padding-top:166px}
       <div class="moment-content">
         <div class="moment-overline">2024 · UNIVERSAL PICTURES</div>
         <h3>WICKED</h3>
-        <p class="moment-role">Stunts, specialist parkour &amp; performance · Tornado Wheel</p>
-        <div class="moment-achievements"><strong class="moment-prize">SAG STUNT ENSEMBLE NOMINEE</strong><span class="moment-awards"><b>FILM HONOURS</b> 10 Oscar nominations · 2 Oscar wins</span></div>
-        <p class="moment-note">2025 SAG Awards · Bogdan Pascal officially listed among the nominated stunt ensemble</p>
+        <div class="moment-credits"><strong class="moment-credit-badge">STUNT DEPARTMENT</strong><p>Part of the <strong>specialist parkour team</strong></p></div>
+        <p class="moment-cast"><span>FEATURED CAST</span><strong>Ariana Grande</strong> · <strong>Cynthia Erivo</strong> · <strong>Jeff Goldblum</strong></p>
+        <div class="moment-achievements"><strong class="moment-sag">2025 SAG Awards · Bogdan Pascal officially listed among the nominated stunt ensemble</strong><span class="moment-awards"><b>FILM HONOURS</b> 10 Oscar nominations · 2 Oscar wins</span></div>
       </div>
     </article>
     <article class="feature feature-moment" aria-label="Cinderella, film credit">
@@ -477,9 +513,9 @@ html{scroll-padding-top:166px}
       <div class="moment-content">
         <div class="moment-overline">2021 · AMAZON PRIME VIDEO</div>
         <h3>CINDERELLA</h3>
-        <p class="moment-role">Dancer, stunts &amp; acrobat · alongside Camila Cabello</p>
-        <div class="moment-achievements"><strong class="moment-prize">FEATURE FILM CREDIT</strong><span class="moment-awards"><b>FILM HONOURS</b> 1 award win · 6 nominations</span></div>
-        <p class="moment-note">Musical feature film · My contribution was performance and movement</p>
+        <div class="moment-credits"><strong class="moment-credit-badge">DANCER · STUNT PERFORMER · ACROBAT</strong><p>Alongside <strong>Camila Cabello</strong></p></div>
+        <p class="moment-cast"><span>ALSO STARRING</span><strong>Pierce Brosnan</strong> · <strong>Idina Menzel</strong></p>
+        <div class="moment-achievements"><span class="moment-awards"><b>FILM HONOURS</b> 1 award win · 6 nominations</span></div>
       </div>
     </article>
     <article class="feature feature-moment" aria-label="Jingle Jangle, film credit">
@@ -487,9 +523,9 @@ html{scroll-padding-top:166px}
       <div class="moment-content">
         <div class="moment-overline">2020 · NETFLIX</div>
         <h3>JINGLE JANGLE</h3>
-        <p class="moment-role">Actor, stunt performer &amp; acrobat · A Christmas Journey</p>
-        <div class="moment-achievements"><strong class="moment-prize">FEATURE FILM CREDIT</strong><span class="moment-awards"><b>FILM HONOURS</b> 4 award wins · 22 nominations</span></div>
-        <p class="moment-note">Production featuring Forest Whitaker and Keegan-Michael Key</p>
+        <div class="moment-credits"><strong class="moment-credit-badge">STUNT PERFORMER · ACROBAT</strong></div>
+        <p class="moment-cast"><span>FEATURED CAST</span><strong>Forest Whitaker</strong> · <strong>Ricky Martin</strong> · <strong>Keegan-Michael Key</strong></p>
+        <div class="moment-achievements"><span class="moment-awards"><b>FILM HONOURS</b> 4 award wins · 22 nominations</span></div>
       </div>
     </article>
     <article class="feature feature-moment" aria-label="Ninja Warrior Romania, television credit">
