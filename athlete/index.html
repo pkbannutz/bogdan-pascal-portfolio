@@ -364,7 +364,8 @@ html{scroll-padding-top:166px}
   width:100%;aspect-ratio:16/9;overflow:hidden;position:relative;
   background:#262626;flex:none;
 }
-#highlights .feature-moment .moment-cover img[src$="romanias-got-talent-group.png"]{object-position:center 57%}
+#highlights .feature-moment .moment-cover--rgt{background:#fff}
+#highlights .feature-moment .moment-cover--rgt img{object-fit:cover;object-position:center;background:#fff}
 #highlights .feature-moment .moment-cover img{
   display:block;width:100%;height:100%;object-fit:cover;object-position:center;
   transition:transform .4s cubic-bezier(.2,.8,.2,1);
@@ -375,8 +376,6 @@ html{scroll-padding-top:166px}
   padding:7px 9px;background:rgba(0,0,0,.83);color:#fff;
   font:700 9px/1.2 'Space Mono',monospace;letter-spacing:.09em;
 }
-/* Keep the RGT group photo's faces clear: move its category tag to the right. */
-#highlights .feature-moment .moment-index--right{left:auto;right:12px;}
 #highlights .feature-moment .moment-content{
   flex:1;display:flex;flex-direction:column;align-items:flex-start;
   min-width:0;padding:20px 20px 18px;
@@ -514,7 +513,7 @@ html{scroll-padding-top:166px}
       </div>
     </article>
     <article class="feature feature-moment" aria-label="Romania's Got Talent, television credit">
-      <div class="moment-cover"><img src="/assets/romanias-got-talent-group.png" alt="Bogdan Pascal and OK Worldwide group publicity photograph for Romania's Got Talent" loading="lazy" decoding="async"><span class="moment-index moment-index--right">06 / TELEVISION</span></div>
+      <div class="moment-cover moment-cover--rgt"><img src="/assets/romanias-got-talent-layout.jpg" alt="Bogdan Pascal and OK Worldwide group photograph, positioned right on a white background" loading="lazy" decoding="async"><span class="moment-index">06 / TELEVISION</span></div>
       <div class="moment-content">
         <div class="moment-overline">2017 · ROMANIA</div>
         <h3>ROMANIA'S GOT TALENT</h3>
