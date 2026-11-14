@@ -633,9 +633,9 @@ html{scroll-padding-top:166px}
 .credits-dialog-backdrop.is-closing{opacity:.26}
 .credits-dialog-panel{
   display:flex;flex-direction:column;min-width:0;
-  width:min(760px,calc(100vw - 36px),calc(100dvh - 48px));
-  aspect-ratio:1/1;max-height:calc(100dvh - 36px);
-  padding:clamp(21px,3vw,35px);
+  width:min(1120px,calc(100vw - 32px));
+  height:min(91dvh,920px);max-height:calc(100dvh - 24px);
+  padding:clamp(16px,2.2vw,30px);
   overflow:hidden;
   background:var(--fg);color:var(--bg);
   box-shadow:0 25px 100px rgba(0,0,0,.26);
@@ -646,21 +646,8 @@ html{scroll-padding-top:166px}
 .credits-dialog-backdrop.is-open .credits-dialog-panel{opacity:1;transform:none}
 .credits-dialog-backdrop.is-closing .credits-dialog-panel{opacity:0;transform:translateY(10px) scale(.985)}
 .credits-dialog-heading{
-  display:flex;justify-content:space-between;align-items:flex-start;
-  gap:16px;padding-bottom:23px;flex-shrink:0;
-  border-bottom:1px solid color-mix(in srgb,var(--bg) 24%,transparent);
-}
-.credits-dialog-eyebrow{
-  font:700 10px/1.4 'Space Mono',monospace;letter-spacing:.13em;
-  opacity:.6;
-}
-.credits-dialog-heading h2{
-  margin:8px 0 8px;
-  font:700 clamp(30px,4.8vw,50px)/.93 'Space Grotesk',sans-serif;
-  letter-spacing:-.07em;
-}
-.credits-dialog-heading p{
-  margin:0;font:500 12px/1.5 'DM Sans',sans-serif;opacity:.65;
+  display:flex;justify-content:flex-end;align-items:flex-start;
+  gap:12px;padding-bottom:7px;flex-shrink:0;
 }
 .credits-dialog-close{
   display:flex;gap:9px;align-items:center;justify-content:center;
@@ -676,21 +663,27 @@ html{scroll-padding-top:166px}
 .credits-dialog-grid{
   flex:1;min-height:0;overflow:auto;
   display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
-  grid-auto-rows:minmax(61px,1fr);
+  grid-auto-rows:minmax(76px,1fr);
   align-content:start;
-  padding:16px 1px 12px 0;
+  padding:6px 1px 11px 0;
   scrollbar-width:thin;
   scrollbar-color:var(--bg) transparent;
 }
 .credits-dialog-cell{
   display:flex;justify-content:center;align-items:center;text-align:center;
-  min-width:0;min-height:54px;
-  padding:10px 7px;
+  min-width:0;min-height:69px;
+  padding:12px 9px;
   color:var(--bg);
   border-right:1px solid color-mix(in srgb,var(--bg) 14%,transparent);
   border-bottom:1px solid color-mix(in srgb,var(--bg) 14%,transparent);
-  font:700 clamp(10px,1.15vw,12px)/1.35 'Space Grotesk',sans-serif;
-  text-transform:uppercase;letter-spacing:-.03em;overflow-wrap:anywhere;
+  font:700 clamp(15px,1.55vw,21px)/1.18 'Space Grotesk',sans-serif;
+  text-transform:uppercase;letter-spacing:-.045em;overflow-wrap:anywhere;
+}
+.credits-dialog-cell.is-italic{font-style:italic}
+.credits-dialog-cell.is-mono{
+  font-family:'Space Mono',monospace;
+  font-size:clamp(12px,1.22vw,17px);
+  letter-spacing:-.065em;font-style:normal;
 }
 .credits-dialog-cell:nth-child(5n){border-right:none}
 .credits-dialog-bottom{
@@ -711,21 +704,24 @@ html{scroll-padding-top:166px}
 }
 @media(max-width:700px){
   .credits-dialog-panel{
-    width:calc(100vw - 24px);
-    height:min(82dvh,760px);max-height:calc(100dvh - 28px);
-    aspect-ratio:auto;padding:20px;
+    width:calc(100vw - 18px);
+    height:min(94dvh,940px);max-height:calc(100dvh - 18px);
+    padding:18px;
   }
   .credits-dialog-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .credits-dialog-cell{font-size:clamp(14px,2.5vw,18px)}
+  .credits-dialog-cell.is-mono{font-size:clamp(12px,2.1vw,16px)}
   .credits-dialog-cell:nth-child(5n){border-right:1px solid color-mix(in srgb,var(--bg) 14%,transparent)}
   .credits-dialog-cell:nth-child(3n){border-right:none}
 }
 @media(max-width:420px){
   .credits-dialog-backdrop{padding:9px}
-  .credits-dialog-panel{width:calc(100vw - 18px);padding:18px}
-  .credits-dialog-heading{padding-bottom:17px}
-  .credits-dialog-heading h2{font-size:35px}
+  .credits-dialog-panel{width:calc(100vw - 12px);height:95dvh;padding:13px}
+  .credits-dialog-heading{padding-bottom:8px}
   .credits-dialog-close{padding:9px}
-  .credits-dialog-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:minmax(53px,auto)}
+  .credits-dialog-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:minmax(68px,auto)}
+  .credits-dialog-cell{font-size:clamp(14px,4vw,17px);min-height:65px}
+  .credits-dialog-cell.is-mono{font-size:clamp(11px,3vw,14px)}
   .credits-dialog-cell:nth-child(3n){border-right:1px solid color-mix(in srgb,var(--bg) 14%,transparent)}
   .credits-dialog-cell:nth-child(2n){border-right:none}
   .credits-dialog-bottom{font-size:8px}
@@ -746,14 +742,9 @@ html{scroll-padding-top:166px}
 <div class="logos-window" aria-label="Selected brands and productions, first 17 scrolling left"><div class="logos-track logos-track--left" id="logosTrackTop"></div></div>
 <div class="logos-window" aria-label="Selected brands and productions, next 17 scrolling right"><div class="logos-track logos-track--right" id="logosTrackBottom"></div></div></section>
 <div class="credits-dialog-backdrop" id="creditsDialog" hidden>
-  <section class="credits-dialog-panel" role="dialog" aria-modal="true" aria-labelledby="creditsDialogTitle" aria-describedby="creditsDialogIntro">
+  <section class="credits-dialog-panel" role="dialog" aria-modal="true" aria-label="Selected clients and productions">
     <div class="credits-dialog-heading">
-      <div>
-        <span class="credits-dialog-eyebrow">PORTFOLIO / SELECTED CLIENTS</span>
-        <h2 id="creditsDialogTitle">CLIENTS<br>IN MOTION.</h2>
-        <p id="creditsDialogIntro">Selected clients, productions and collaborators.</p>
-      </div>
-      <button class="credits-dialog-close" id="creditsDialogClose" type="button" aria-label="Close credits modal">CLOSE <span aria-hidden="true">×</span></button>
+      <button class="credits-dialog-close" id="creditsDialogClose" type="button" aria-label="Close clients modal">CLOSE <span aria-hidden="true">×</span></button>
     </div>
     <div class="credits-dialog-grid" id="creditsDialogGrid" role="list" aria-label="Names from both scrolling credit rows"></div>
     <div class="credits-dialog-bottom"><span id="creditsDialogCount">35 SELECTED NAMES</span><span>CLICK OUTSIDE OR PRESS ESC TO CLOSE</span></div>
@@ -1251,6 +1242,10 @@ window.addEventListener('resize',syncLogoSpeed);
     cell.role='listitem';
     cell.textContent=label;
     cell.dataset.creditsIndex=String(index);
+    // Preserve the original marquee variations: bold, italic, and Space Mono.
+    const rowPosition=(index<logosTop.length?index:index-logosTop.length)+1;
+    if(rowPosition%3===0)cell.classList.add('is-italic');
+    if(rowPosition%5===0)cell.classList.add('is-mono');
     grid.appendChild(cell);
     return cell;
   });
@@ -1299,7 +1294,9 @@ window.addEventListener('resize',syncLogoSpeed);
       x:clamp(rect.left,7,Math.max(7,window.innerWidth-Math.min(rect.width,150)-7)),
       y:clamp(rect.top,5,window.innerHeight-26),
       width:Math.max(rect.width,20),height:Math.max(rect.height,15),
-      fontSize:parseFloat(style.fontSize)||18
+      fontSize:parseFloat(style.fontSize)||18,
+      fontFamily:style.fontFamily,
+      fontStyle:style.fontStyle
     };
   }
 
@@ -1308,7 +1305,8 @@ window.addEventListener('resize',syncLogoSpeed);
     const cell=cells[index];
     const target=cell.getBoundingClientRect();
     if(!origin||!target.width)return Promise.resolve();
-    const scale=Math.min(.82,(target.width-12)/Math.max(origin.width,1),1);
+    const intendedSize=parseFloat(window.getComputedStyle(cell).fontSize)||origin.fontSize;
+    const scale=Math.max(.25,Math.min(1.28,intendedSize/origin.fontSize,(target.width-12)/Math.max(origin.width,1)));
     const targetX=target.left+(target.width-origin.width*scale)/2;
     const targetY=target.top+(target.height-origin.height*scale)/2;
     const dx=targetX-origin.x,dy=targetY-origin.y;
@@ -1320,6 +1318,8 @@ window.addEventListener('resize',syncLogoSpeed);
     node.style.left=origin.x+'px';
     node.style.top=origin.y+'px';
     node.style.fontSize=origin.fontSize+'px';
+    if(origin.fontFamily)node.style.fontFamily=origin.fontFamily;
+    if(origin.fontStyle)node.style.fontStyle=origin.fontStyle;
     document.body.appendChild(node);
     if(toGrid){
       toggleWord(index,true);
