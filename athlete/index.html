@@ -537,81 +537,58 @@ html{scroll-padding-top:166px}
   #highlights .moment-role-tags--wicked .moment-credit-badge{font-size:11px;padding:7px 6px}
 }
 
-/* Gold buzzer award on a clean white RGT card, in both page themes. */
+/* Original flat achievement label dimensions, with a gold finish. */
 #highlights .feature-moment.rgt-buzzer-card,
 #highlights .feature-moment.rgt-buzzer-card:hover{background:#fff;color:#171717}
-#highlights .rgt-buzzer-card .moment-content{position:relative;z-index:2;background:#fff;padding-bottom:40px}
+#highlights .rgt-buzzer-card .moment-content{
+  position:relative;z-index:2;background:#fff;padding-bottom:34px;
+}
 #highlights .rgt-buzzer-card .moment-overline,
 #highlights .rgt-buzzer-card .moment-note,
 #highlights .rgt-buzzer-card .moment-role{color:#5b5b5b}
 #highlights .rgt-buzzer-card .moment-achievements{position:relative;z-index:2}
-#highlights .rgt-buzzer{
-  position:relative;width:162px;height:92px;display:block;
-  margin-top:5px;isolation:isolate;
+#highlights .rgt-buzzer-card .moment-prize-gold{
+  display:inline-block;
+  background:linear-gradient(110deg,#b8841c 0%,#f9cf64 46%,#d6a12c 100%);
+  color:#271907;
 }
-#highlights .rgt-buzzer-base{
-  position:absolute;left:3px;bottom:11px;width:156px;height:63px;border-radius:50%;
-  background:linear-gradient(180deg,#ffec9a 0%,#e1af3c 22%,#8e5913 77%,#60400f 100%);
-  border:2px solid #a47722;
-  box-shadow:0 6px 0 #69430e,0 10px 16px rgba(68,42,6,.27),inset 0 3px 4px #fff2bc;
+#highlights .rgt-buzzer-card .moment-prize-gold.is-buzzing{
+  animation:rgtGoldBadgeBuzz .95s ease-in-out both;
 }
-#highlights .rgt-buzzer-plunger{
-  position:absolute;left:19px;top:6px;width:124px;height:67px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;text-align:center;
-  color:#503008;text-shadow:0 1px 1px #fff5c3;
-  background:radial-gradient(ellipse at 32% 22%,#fffaca 0%,#ffe18a 20%,#e1ae3e 55%,#aa6c18 85%,#77470e 100%);
-  border:3px solid #c28a21;
-  box-shadow:inset 0 3px 5px rgba(255,255,255,.75),inset 0 -6px 7px rgba(104,65,11,.24),
-    0 5px 0 #7f4e12,0 8px 9px rgba(74,42,9,.3);
-  transform-origin:center center;
+@keyframes rgtGoldBadgeBuzz{
+  0%,100%{filter:brightness(1);transform:scale(1)}
+  18%,45%{filter:brightness(1.3);transform:scale(.975)}
+  28%,57%,76%{filter:brightness(1.1);transform:scale(1.025)}
 }
-#highlights .rgt-buzzer-plunger span{
-  font:900 13px/.99 'Space Grotesk',sans-serif;
-  letter-spacing:-.055em;
-}
-#highlights .rgt-buzzer.is-buzzing .rgt-buzzer-plunger{
-  animation:rgtBuzzerPress 1s cubic-bezier(.23,.8,.28,1) both;
-}
-#highlights .rgt-buzzer.is-buzzing::after{
-  content:"";position:absolute;inset:-9px -12px;z-index:-1;border-radius:50%;
-  border:3px solid rgba(237,183,45,.8);
-  animation:rgtBuzzerRing 1s ease-out forwards;
-}
-@keyframes rgtBuzzerPress{
-  0%,100%{transform:translateY(0) scale(1);filter:brightness(1)}
-  14%,38%,62%{transform:translateY(7px) scale(.95);filter:brightness(1.3)}
-  22%,48%,72%{transform:translateY(1px) scale(1.025);filter:brightness(1.15)}
-}
-@keyframes rgtBuzzerRing{
-  0%{opacity:0;transform:scale(.7)}
-  25%{opacity:1}
-  100%{opacity:0;transform:scale(1.4)}
-}
-/* Particles burst from the buzzer, fall, and remain on the card until this tab's session ends. */
+/* Every page load starts fresh. The first visible view of the RGT photo starts a gold shower. */
 #highlights .rgt-buzzer-card .rgt-confetti-layer{
   position:absolute;inset:0;z-index:3;overflow:hidden;pointer-events:none;
 }
 #highlights .rgt-confetti-layer .rgt-piece{
-  position:absolute;width:var(--piece-w,6px);height:var(--piece-h,10px);
-  opacity:0;border-radius:1px;will-change:transform,opacity;
-  background:var(--piece-color,#d4a12b);box-shadow:0 0 1px rgba(80,50,8,.25);
+  position:absolute;
+  width:var(--piece-w,6px);height:var(--piece-h,9px);
+  opacity:0;border-radius:1px;
+  background:var(--piece-color,#e0b43b);
+  box-shadow:0 0 1px rgba(80,45,8,.3);
+  will-change:transform,opacity;
 }
 #highlights .rgt-confetti-layer .rgt-piece.is-flying{
-  animation:rgtConfettiFall var(--flight,3.5s) cubic-bezier(.22,.55,.28,1) var(--delay,0s) forwards;
+  animation:rgtConfettiShower var(--flight,3.4s) cubic-bezier(.2,.45,.32,1)
+    var(--delay,0s) forwards;
 }
 #highlights .rgt-confetti-layer .rgt-piece.is-settled{
-  opacity:1;transform:translate(var(--land-x),var(--land-y)) rotate(var(--spin));
+  opacity:1;
+  transform:translate(var(--land-x),var(--land-y)) rotate(var(--spin));
   will-change:auto;
 }
-@keyframes rgtConfettiFall{
-  0%{opacity:0;transform:translate(0,0) scale(.4) rotate(0deg)}
-  7%{opacity:1}
-  24%{opacity:1;transform:translate(var(--burst-x),var(--burst-y)) rotate(var(--mid-spin))}
+@keyframes rgtConfettiShower{
+  0%{opacity:0;transform:translate(0,-8px) rotate(0deg)}
+  10%{opacity:1}
+  58%{opacity:1;transform:translate(var(--mid-x),var(--mid-y)) rotate(var(--mid-spin))}
   100%{opacity:1;transform:translate(var(--land-x),var(--land-y)) rotate(var(--spin))}
 }
 @media(prefers-reduced-motion:reduce){
-  #highlights .rgt-buzzer.is-buzzing .rgt-buzzer-plunger,
-  #highlights .rgt-buzzer.is-buzzing::after,
+  #highlights .rgt-buzzer-card .moment-prize-gold.is-buzzing,
   #highlights .rgt-confetti-layer .rgt-piece.is-flying{animation:none}
 }
 
@@ -731,10 +708,7 @@ html{scroll-padding-top:166px}
         <p class="moment-role">Part of OK Worldwide Team · Breakdance, Parkour, Acrobatics</p>
         <div class="moment-achievements">
           <strong class="moment-prize">2ND PLACE</strong>
-          <div class="rgt-buzzer" id="rgtGoldenBuzzer" role="img" aria-label="Golden Buzzer award">
-            <span class="rgt-buzzer-base" aria-hidden="true"></span>
-            <span class="rgt-buzzer-plunger"><span>GOLDEN<br>BUZZER</span></span>
-          </div>
+          <strong class="moment-prize moment-prize-secondary moment-prize-gold" id="rgtGoldenBuzzer">GOLDEN BUZZER</strong>
         </div>
         <p class="moment-note">National television competition · Final placement</p>
       </div>
@@ -1108,70 +1082,81 @@ if(document.fonts?.ready)document.fonts.ready.then(syncLogoSpeed);
 window.addEventListener('resize',syncLogoSpeed);
 const skills=['Parkour / Freerunning','Stunt Performance','Acrobatics / Tumbling','Gymnastics','High Falls / Airbag','Trampoline','Tricking','Acting','Martial Arts','Cliff / High Diving','Hand Balancing','Breakdance','Modelling','Climbing','Boxing / Capoeira','Brazilian Jiu-jitsu'];const grid=document.getElementById('skillGrid');skills.forEach((s,i)=>{const e=document.createElement('div');e.className='role-card';const t=document.createElement('strong');t.textContent=s;const n=document.createElement('span');n.textContent=String(i+1).padStart(2,'0');e.append(t,n);grid.appendChild(e)});
 
-/* One Golden Buzzer celebration per tab visit; settled confetti survives page reloads. */
+/* Gold confetti replays on every page load, but only when the RGT picture is in view. */
 (function(){
   const card=document.querySelector('#highlights .rgt-buzzer-card');
-  const buzzer=document.getElementById('rgtGoldenBuzzer');
+  const badge=document.getElementById('rgtGoldenBuzzer');
+  const image=card?.querySelector('.moment-cover');
   const layer=card?.querySelector('.rgt-confetti-layer');
-  if(!card||!buzzer||!layer)return;
-  const sessionKey='bp_rgt_golden_buzzer_seen_v1';
-  let alreadyCelebrated=false;
-  try{alreadyCelebrated=sessionStorage.getItem(sessionKey)==='1'}catch(err){}
+  if(!card||!badge||!image||!layer)return;
   const reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches===true;
-  const rand=(i,n)=>{const x=Math.sin(i*79.71+n*131.43)*43758.5453;return x-Math.floor(x)};
+  const rand=(i,salt)=>{
+    const n=Math.sin(i*79.71+salt*131.43)*43758.5453;
+    return n-Math.floor(n);
+  };
   const colors=['#b67b1f','#d69f28','#ffda65','#f5c148','#8b5d19','#ebc66b','#c8983a'];
-  function makeConfetti(animated){
-    if(layer.childElementCount)return;
-    const cardBox=card.getBoundingClientRect();
-    const domeBox=buzzer.querySelector('.rgt-buzzer-plunger').getBoundingClientRect();
-    const originX=domeBox.left-cardBox.left+domeBox.width/2;
-    const originY=domeBox.top-cardBox.top+domeBox.height/2;
-    const width=card.clientWidth,height=card.clientHeight;
+  let played=false;
+  function addConfetti(animate){
+    const width=card.clientWidth;
+    const height=card.clientHeight;
+    const imageTop=image.offsetTop;
+    if(width<=0||height<=0)return;
     const fragment=document.createDocumentFragment();
-    for(let i=0;i<54;i++){
+    for(let i=0;i<60;i++){
       const piece=document.createElement('span');
-      piece.className='rgt-piece '+(animated?'is-flying':'is-settled');
-      const angle=-Math.PI*1.1+rand(i,2)*Math.PI*1.2;
-      const radius=45+rand(i,3)*160;
-      const finalX=8+rand(i,4)*Math.max(0,width-16);
-      const finalY=height-8-rand(i,5)*18;
-      piece.style.left=originX+'px';
-      piece.style.top=originY+'px';
-      piece.style.setProperty('--piece-w',(3+rand(i,6)*6).toFixed(1)+'px');
-      piece.style.setProperty('--piece-h',(5+rand(i,7)*7).toFixed(1)+'px');
+      piece.className='rgt-piece '+(animate?'is-flying':'is-settled');
+      const startX=8+rand(i,1)*Math.max(0,width-16);
+      const startY=imageTop+2;
+      const endingX=Math.max(5,Math.min(width-9,startX+(rand(i,2)-.5)*width*.4));
+      const endingY=height-8-rand(i,3)*25;
+      const fall=endingY-startY;
+      piece.style.left=startX+'px';
+      piece.style.top=startY+'px';
+      piece.style.setProperty('--piece-w',(3+rand(i,4)*6).toFixed(1)+'px');
+      piece.style.setProperty('--piece-h',(5+rand(i,5)*7).toFixed(1)+'px');
       piece.style.setProperty('--piece-color',colors[i%colors.length]);
-      piece.style.setProperty('--burst-x',(Math.cos(angle)*radius).toFixed(1)+'px');
-      piece.style.setProperty('--burst-y',(-35-Math.abs(Math.sin(angle))*radius).toFixed(1)+'px');
-      piece.style.setProperty('--land-x',(finalX-originX).toFixed(1)+'px');
-      piece.style.setProperty('--land-y',(finalY-originY).toFixed(1)+'px');
-      piece.style.setProperty('--mid-spin',(120+rand(i,8)*540).toFixed(0)+'deg');
-      piece.style.setProperty('--spin',(360+rand(i,9)*720).toFixed(0)+'deg');
-      piece.style.setProperty('--flight',(2.9+rand(i,10)*1.1).toFixed(2)+'s');
-      piece.style.setProperty('--delay',(rand(i,11)*.25).toFixed(2)+'s');
+      piece.style.setProperty('--mid-x',((rand(i,6)-.5)*width*.3).toFixed(1)+'px');
+      piece.style.setProperty('--mid-y',(fall*.56).toFixed(1)+'px');
+      piece.style.setProperty('--land-x',(endingX-startX).toFixed(1)+'px');
+      piece.style.setProperty('--land-y',fall.toFixed(1)+'px');
+      piece.style.setProperty('--mid-spin',(180+rand(i,7)*360).toFixed(0)+'deg');
+      piece.style.setProperty('--spin',(540+rand(i,8)*720).toFixed(0)+'deg');
+      piece.style.setProperty('--flight',(3.1+rand(i,9)*1.2).toFixed(2)+'s');
+      piece.style.setProperty('--delay',(rand(i,10)*.55).toFixed(2)+'s');
       fragment.appendChild(piece);
     }
     layer.appendChild(fragment);
   }
-  if(alreadyCelebrated||reduced){
-    try{sessionStorage.setItem(sessionKey,'1')}catch(err){}
-    makeConfetti(false);
-    return;
-  }
   function celebrate(){
-    if(card.dataset.rgtCelebrated==='yes')return;
-    card.dataset.rgtCelebrated='yes';
-    try{sessionStorage.setItem(sessionKey,'1')}catch(err){}
-    makeConfetti(true);
-    buzzer.classList.add('is-buzzing');
-    buzzer.addEventListener('animationend',()=>buzzer.classList.remove('is-buzzing'),{once:true});
+    if(played)return;
+    played=true;
+    addConfetti(!reduced);
+    if(!reduced){
+      badge.classList.add('is-buzzing');
+      badge.addEventListener('animationend',()=>badge.classList.remove('is-buzzing'),{once:true});
+    }
   }
   if('IntersectionObserver' in window){
     const observer=new IntersectionObserver(entries=>{
-      if(entries.some(entry=>entry.isIntersecting)){observer.disconnect();celebrate()}
-    },{threshold:0.38});
-    observer.observe(card);
+      if(entries.some(entry=>entry.isIntersecting)){
+        observer.disconnect();
+        celebrate();
+      }
+    },{threshold:0.5,rootMargin:'0px 0px -8% 0px'});
+    observer.observe(image);
   }else{
-    celebrate();
+    // Older browsers: start on the first real scroll into the image.
+    const check=()=>{
+      const rect=image.getBoundingClientRect();
+      if(rect.top<window.innerHeight*.92 && rect.bottom>window.innerHeight*.08){
+        window.removeEventListener('scroll',check);
+        window.removeEventListener('resize',check);
+        celebrate();
+      }
+    };
+    window.addEventListener('scroll',check,{passive:true});
+    window.addEventListener('resize',check);
+    check();
   }
 })();
 
