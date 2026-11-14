@@ -606,6 +606,124 @@ html{scroll-padding-top:166px}
   #highlights .feature-moment .moment-cover img{transition:none}
   #highlights .feature-moment:hover .moment-cover img{transform:none}
 }
+
+/* Credits flyout shares the marquee's foreground/background token.
+   Both marquee rows provide the actual source positions for the grid transition. */
+.credits-dialog-scroll-lock{overflow:hidden}
+.credits-dialog-backdrop[hidden]{display:none!important}
+.credits-dialog-backdrop{
+  position:fixed;inset:0;z-index:330;
+  display:flex;justify-content:center;align-items:center;
+  padding:18px;
+  background:rgba(5,7,9,.68);
+  backdrop-filter:blur(8px);
+  opacity:0;transition:opacity .36s ease;
+}
+.credits-dialog-backdrop.is-open{opacity:1}
+.credits-dialog-backdrop.is-closing{opacity:.26}
+.credits-dialog-panel{
+  display:flex;flex-direction:column;min-width:0;
+  width:min(760px,calc(100vw - 36px),calc(100dvh - 48px));
+  aspect-ratio:1/1;max-height:calc(100dvh - 36px);
+  padding:clamp(21px,3vw,35px);
+  overflow:hidden;
+  background:var(--fg);color:var(--bg);
+  box-shadow:0 25px 100px rgba(0,0,0,.26);
+  border:1px solid color-mix(in srgb,var(--bg) 20%,transparent);
+  opacity:0;transform:translateY(13px) scale(.98);
+  transition:opacity .32s ease,transform .4s cubic-bezier(.2,.8,.2,1);
+}
+.credits-dialog-backdrop.is-open .credits-dialog-panel{opacity:1;transform:none}
+.credits-dialog-backdrop.is-closing .credits-dialog-panel{opacity:0;transform:translateY(10px) scale(.985)}
+.credits-dialog-heading{
+  display:flex;justify-content:space-between;align-items:flex-start;
+  gap:16px;padding-bottom:23px;flex-shrink:0;
+  border-bottom:1px solid color-mix(in srgb,var(--bg) 24%,transparent);
+}
+.credits-dialog-eyebrow{
+  font:700 10px/1.4 'Space Mono',monospace;letter-spacing:.13em;
+  opacity:.6;
+}
+.credits-dialog-heading h2{
+  margin:8px 0 8px;
+  font:700 clamp(30px,4.8vw,50px)/.93 'Space Grotesk',sans-serif;
+  letter-spacing:-.07em;
+}
+.credits-dialog-heading p{
+  margin:0;font:500 12px/1.5 'DM Sans',sans-serif;opacity:.65;
+}
+.credits-dialog-close{
+  display:flex;gap:9px;align-items:center;justify-content:center;
+  flex:none;border:1px solid color-mix(in srgb,var(--bg) 42%,transparent);
+  color:var(--bg);background:transparent;
+  padding:11px 13px;cursor:pointer;
+  font:700 10px/1 'Space Mono',monospace;
+}
+.credits-dialog-close span{font:500 21px/.65 'Space Grotesk',sans-serif}
+.credits-dialog-close:hover,.credits-dialog-close:focus-visible{
+  outline:2px solid var(--bg);outline-offset:3px;
+}
+.credits-dialog-grid{
+  flex:1;min-height:0;overflow:auto;
+  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+  grid-auto-rows:minmax(61px,1fr);
+  align-content:start;
+  padding:16px 1px 12px 0;
+  scrollbar-width:thin;
+  scrollbar-color:var(--bg) transparent;
+}
+.credits-dialog-cell{
+  display:flex;justify-content:center;align-items:center;text-align:center;
+  min-width:0;min-height:54px;
+  padding:10px 7px;
+  color:var(--bg);
+  border-right:1px solid color-mix(in srgb,var(--bg) 14%,transparent);
+  border-bottom:1px solid color-mix(in srgb,var(--bg) 14%,transparent);
+  font:700 clamp(10px,1.15vw,12px)/1.35 'Space Grotesk',sans-serif;
+  text-transform:uppercase;letter-spacing:-.03em;overflow-wrap:anywhere;
+}
+.credits-dialog-cell:nth-child(5n){border-right:none}
+.credits-dialog-bottom{
+  display:flex;justify-content:space-between;gap:12px;flex:none;
+  padding-top:16px;border-top:1px solid color-mix(in srgb,var(--bg) 24%,transparent);
+  font:700 9px/1.4 'Space Mono',monospace;letter-spacing:.05em;opacity:.68;
+}
+.logos-track.credits-track-frozen{animation-play-state:paused!important}
+.logos-wrap .wordmark.credits-mark-ported{opacity:0!important}
+.credits-flight-name{
+  position:fixed;z-index:360;pointer-events:none;
+  display:block;width:max-content;max-width:none;
+  padding:2px 4px;white-space:nowrap;
+  background:var(--fg);color:var(--bg);
+  text-transform:uppercase;letter-spacing:-.06em;
+  font-family:'Space Grotesk',sans-serif;font-weight:700;
+  transform-origin:top left;will-change:transform,opacity;
+}
+@media(max-width:700px){
+  .credits-dialog-panel{
+    width:calc(100vw - 24px);
+    height:min(82dvh,760px);max-height:calc(100dvh - 28px);
+    aspect-ratio:auto;padding:20px;
+  }
+  .credits-dialog-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .credits-dialog-cell:nth-child(5n){border-right:1px solid color-mix(in srgb,var(--bg) 14%,transparent)}
+  .credits-dialog-cell:nth-child(3n){border-right:none}
+}
+@media(max-width:420px){
+  .credits-dialog-backdrop{padding:9px}
+  .credits-dialog-panel{width:calc(100vw - 18px);padding:18px}
+  .credits-dialog-heading{padding-bottom:17px}
+  .credits-dialog-heading h2{font-size:35px}
+  .credits-dialog-close{padding:9px}
+  .credits-dialog-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:minmax(53px,auto)}
+  .credits-dialog-cell:nth-child(3n){border-right:1px solid color-mix(in srgb,var(--bg) 14%,transparent)}
+  .credits-dialog-cell:nth-child(2n){border-right:none}
+  .credits-dialog-bottom{font-size:8px}
+}
+@media(prefers-reduced-motion:reduce){
+  .credits-dialog-backdrop,.credits-dialog-panel{transition:none!important}
+}
+
 </style>
 </head>
 <body>
@@ -617,6 +735,20 @@ html{scroll-padding-top:166px}
 <section class="logos-wrap" id="clients" aria-label="Selected clients and productions">
 <div class="logos-window" aria-label="Selected brands and productions, first 17 scrolling left"><div class="logos-track logos-track--left" id="logosTrackTop"></div></div>
 <div class="logos-window" aria-label="Selected brands and productions, next 17 scrolling right"><div class="logos-track logos-track--right" id="logosTrackBottom"></div></div></section>
+<div class="credits-dialog-backdrop" id="creditsDialog" hidden>
+  <section class="credits-dialog-panel" role="dialog" aria-modal="true" aria-labelledby="creditsDialogTitle" aria-describedby="creditsDialogIntro">
+    <div class="credits-dialog-heading">
+      <div>
+        <span class="credits-dialog-eyebrow">PORTFOLIO / SELECTED WORK</span>
+        <h2 id="creditsDialogTitle">CREDITS<br>IN MOTION.</h2>
+        <p id="creditsDialogIntro">Selected clients, productions and collaborators.</p>
+      </div>
+      <button class="credits-dialog-close" id="creditsDialogClose" type="button" aria-label="Close credits modal">CLOSE <span aria-hidden="true">×</span></button>
+    </div>
+    <div class="credits-dialog-grid" id="creditsDialogGrid" role="list" aria-label="Names from both scrolling credit rows"></div>
+    <div class="credits-dialog-bottom"><span id="creditsDialogCount">35 SELECTED NAMES</span><span>CLICK OUTSIDE OR PRESS ESC TO CLOSE</span></div>
+  </section>
+</div>
 <main>
 <section class="hero wrap" id="home">
 <div class="hero-top eyebrow"><span>SPECIALIST PARKOUR / STUNTS / MOVEMENT</span><span class="muted">AVAILABLE WORLDWIDE</span></div>
@@ -639,7 +771,7 @@ html{scroll-padding-top:166px}
 <section class="section wrap" id="highlights">
   <div class="section-head">
     <div><span class="eyebrow">01 / SELECTED HIGHLIGHTS</span><h2>THE BIG<br>MOMENTS.</h2></div>
-    <p>Selected film credits and competition milestones. My credits and the productions' awards are shown separately.</p>
+    <p>Selected film credits and competition milestones.</p>
   </div>
   <div class="featured" aria-label="Three feature films followed by three television appearances">
     <article class="feature feature-moment" aria-label="Wicked, film credit">
@@ -1061,10 +1193,11 @@ function buildLogoRow(id,labels){
     const group=document.createElement('div');
     group.className='logos-set';
     if(copy===1)group.setAttribute('aria-hidden','true');
-    for(const label of labels){
+    for(const [index,label] of labels.entries()){
       const mark=document.createElement('span');
       mark.className='wordmark';
       mark.textContent=label;
+      mark.dataset.creditsIndex=String(index+(id==='logosTrackBottom'?logosTop.length:0));
       group.appendChild(mark);
     }
     track.appendChild(group);
@@ -1090,6 +1223,204 @@ function syncLogoSpeed(){
 syncLogoSpeed();
 if(document.fonts?.ready)document.fonts.ready.then(syncLogoSpeed);
 window.addEventListener('resize',syncLogoSpeed);
+
+/* Marquee-to-grid credit choreography, with a reversible flight on dismissal. */
+(function(){
+  const backdrop=document.getElementById('creditsDialog');
+  const panel=backdrop?.querySelector('.credits-dialog-panel');
+  const grid=document.getElementById('creditsDialogGrid');
+  const closeButton=document.getElementById('creditsDialogClose');
+  const triggerLinks=[...document.querySelectorAll('a[href="#credits"]')];
+  if(!backdrop||!panel||!grid||!closeButton||!logoTracks.length)return;
+  const names=[...logosTop,...logosBottom];
+  document.getElementById('creditsDialogCount').textContent=names.length+' SELECTED NAMES';
+  const cells=names.map((label,index)=>{
+    const cell=document.createElement('div');
+    cell.className='credits-dialog-cell';
+    cell.role='listitem';
+    cell.textContent=label;
+    cell.dataset.creditsIndex=String(index);
+    grid.appendChild(cell);
+    return cell;
+  });
+  const sourceMarks=names.map((_,index)=>
+    [...document.querySelectorAll('.logos-wrap .wordmark[data-credits-index="'+index+'"]')]
+  );
+  const reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches===true;
+  let phase='closed',epoch=0,previousFocus=null,launchTimer=0;
+  let activeAnimations=[];
+  let originRects=[];
+  const clamp=(n,min,max)=>Math.min(max,Math.max(min,n));
+
+  function toggleMarquee(paused){
+    logoTracks.forEach(track=>track.classList.toggle('credits-track-frozen',paused));
+  }
+  function toggleWord(index,hidden){
+    for(const mark of sourceMarks[index])mark.classList.toggle('credits-mark-ported',hidden);
+  }
+  function restoreWords(){
+    sourceMarks.forEach((_,i)=>toggleWord(i,false));
+  }
+  function stopFlights(){
+    if(launchTimer){clearTimeout(launchTimer);launchTimer=0;}
+    for(const entry of activeAnimations){
+      try{entry.animation.cancel()}catch(err){}
+      entry.node.remove();
+    }
+    activeAnimations=[];
+    document.querySelectorAll('.credits-flight-name').forEach(n=>n.remove());
+  }
+
+  function findOrigin(index){
+    const options=sourceMarks[index];
+    let best=null,bestScore=-Infinity;
+    for(const element of options){
+      const rect=element.getBoundingClientRect();
+      const visibleX=Math.max(0,Math.min(window.innerWidth,rect.right)-Math.max(0,rect.left));
+      const visibleY=Math.max(0,Math.min(window.innerHeight,rect.bottom)-Math.max(0,rect.top));
+      const score=visibleX*visibleY*10-Math.abs((rect.left+rect.right)/2-window.innerWidth/2)*.01;
+      if(score>bestScore){bestScore=score;best={element,rect};}
+    }
+    if(!best)return {x:window.innerWidth/2,y:105,width:90,height:20,fontSize:18};
+    const {element,rect}=best;
+    const style=window.getComputedStyle(element);
+    return {
+      x:clamp(rect.left,7,Math.max(7,window.innerWidth-Math.min(rect.width,150)-7)),
+      y:clamp(rect.top,5,window.innerHeight-26),
+      width:Math.max(rect.width,20),height:Math.max(rect.height,15),
+      fontSize:parseFloat(style.fontSize)||18
+    };
+  }
+
+  function createFlight(index,toGrid,token){
+    const origin=originRects[index];
+    const cell=cells[index];
+    const target=cell.getBoundingClientRect();
+    if(!origin||!target.width)return Promise.resolve();
+    const scale=Math.min(.82,(target.width-12)/Math.max(origin.width,1),1);
+    const targetX=target.left+(target.width-origin.width*scale)/2;
+    const targetY=target.top+(target.height-origin.height*scale)/2;
+    const dx=targetX-origin.x,dy=targetY-origin.y;
+    const from='translate3d(0,0,0) scale(1)';
+    const to='translate3d('+dx.toFixed(1)+'px,'+dy.toFixed(1)+'px,0) scale('+scale.toFixed(3)+')';
+    const node=document.createElement('span');
+    node.className='credits-flight-name';
+    node.textContent=names[index];
+    node.style.left=origin.x+'px';
+    node.style.top=origin.y+'px';
+    node.style.fontSize=origin.fontSize+'px';
+    document.body.appendChild(node);
+    if(toGrid){
+      toggleWord(index,true);
+      cell.style.opacity='0';
+    }else{
+      cell.style.opacity='0';
+    }
+    if(reduced||typeof node.animate!=='function'){
+      if(toGrid)cell.style.opacity='1';
+      else toggleWord(index,false);
+      node.remove();
+      return Promise.resolve();
+    }
+    const delay=(index%10)*19;
+    const duration=570+(index%7)*48;
+    const start={transform:toGrid?from:to,opacity:1};
+    const end={transform:toGrid?to:from,opacity:1};
+    const animation=node.animate([start,end],{
+      duration,delay,easing:'cubic-bezier(.18,.82,.22,1)',fill:'both'
+    });
+    activeAnimations.push({animation,node});
+    return animation.finished.catch(()=>{}).then(()=>{
+      node.remove();
+      if(token!==epoch)return;
+      if(toGrid)cell.style.opacity='1';
+      else toggleWord(index,false);
+    });
+  }
+
+  function finishClose(token){
+    if(token!==epoch)return;
+    stopFlights();
+    restoreWords();
+    cells.forEach(cell=>{cell.style.opacity='';});
+    toggleMarquee(false);
+    backdrop.classList.remove('is-open','is-closing');
+    backdrop.hidden=true;
+    document.body.classList.remove('credits-dialog-scroll-lock');
+    phase='closed';
+    if(previousFocus?.isConnected)previousFocus.focus({preventScroll:true});
+  }
+
+  function closeCredits(){
+    if(phase==='closed'||phase==='closing')return;
+    phase='closing';
+    const token=++epoch;
+    stopFlights();
+    cells.forEach(cell=>{cell.style.opacity='1';});
+    sourceMarks.forEach((_,i)=>toggleWord(i,true));
+    backdrop.classList.add('is-closing');
+    if(reduced){finishClose(token);return;}
+    Promise.all(cells.map((_,i)=>createFlight(i,false,token))).then(()=>{
+      finishClose(token);
+    });
+  }
+
+  function openCredits(trigger){
+    if(phase!=='closed')return;
+    phase='opening';
+    const token=++epoch;
+    previousFocus=trigger;
+    toggleMarquee(true);
+    originRects=names.map((_,index)=>findOrigin(index));
+    cells.forEach(cell=>{cell.style.opacity='0';});
+    backdrop.hidden=false;
+    backdrop.classList.remove('is-closing');
+    document.body.classList.add('credits-dialog-scroll-lock');
+    requestAnimationFrame(()=>backdrop.classList.add('is-open'));
+    closeButton.focus({preventScroll:true});
+    if(reduced){
+      sourceMarks.forEach((_,i)=>toggleWord(i,true));
+      cells.forEach(cell=>{cell.style.opacity='1';});
+      phase='open';
+      return;
+    }
+    launchTimer=window.setTimeout(()=>{
+      launchTimer=0;
+      if(token!==epoch)return;
+      Promise.all(cells.map((_,i)=>createFlight(i,true,token))).then(()=>{
+        if(token===epoch)phase='open';
+      });
+    },170);
+  }
+
+  triggerLinks.forEach(link=>{
+    link.setAttribute('aria-haspopup','dialog');
+    link.setAttribute('aria-controls','creditsDialog');
+    link.addEventListener('click',event=>{
+      if(event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+      event.preventDefault();
+      const nav=document.getElementById('navlinks');
+      const menu=document.getElementById('menu');
+      nav?.classList.remove('open');
+      menu?.setAttribute('aria-expanded','false');
+      openCredits(link);
+    });
+  });
+  closeButton.addEventListener('click',closeCredits);
+  backdrop.addEventListener('pointerdown',event=>{
+    if(event.target===backdrop)closeCredits();
+  });
+  document.addEventListener('keydown',event=>{
+    if(phase==='closed')return;
+    if(event.key==='Escape'){event.preventDefault();closeCredits();}
+    if(event.key==='Tab'){
+      // The close button is the only interactive element inside the modal.
+      event.preventDefault();
+      closeButton.focus({preventScroll:true});
+    }
+  });
+})();
+
 const skills=['Parkour / Freerunning','Stunt Performance','Acrobatics / Tumbling','Gymnastics','High Falls / Airbag','Trampoline','Tricking','Acting','Martial Arts','Cliff / High Diving','Hand Balancing','Breakdance','Modelling','Climbing','Boxing / Capoeira','Brazilian Jiu-jitsu'];const grid=document.getElementById('skillGrid');skills.forEach((s,i)=>{const e=document.createElement('div');e.className='role-card';const t=document.createElement('strong');t.textContent=s;const n=document.createElement('span');n.textContent=String(i+1).padStart(2,'0');e.append(t,n);grid.appendChild(e)});
 
 /* Restart the gold shower each time the RGT image is revisited.
