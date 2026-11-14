@@ -933,6 +933,11 @@ html{scroll-padding-top:166px}
   #home .hero-cta .action[href="#contact"]::after{content:" ↗"}
 }
 
+
+/* Mobile-only: remove ALL from the Credits category controls. */
+@media(max-width:600px){
+  #filters .filter[data-filter="all"]{display:none}
+}
 </style>
 </head>
 <body>
