@@ -472,6 +472,24 @@ html{scroll-padding-top:166px}
 #highlights .feature-moment .moment-cast strong{
   font-weight:700;color:var(--fg);
 }
+/* The three film cards share cast and honours baselines, regardless of differing credit lengths. */
+#highlights .featured > .feature-moment:nth-child(-n+3) .moment-cast{
+  margin-top:auto;
+  padding-top:16px;
+  min-height:72px;
+  width:100%;
+}
+#highlights .featured > .feature-moment:nth-child(-n+3) .moment-achievements{
+  margin-top:0;
+  padding-top:15px;
+}
+@media(max-width:600px){
+  #highlights .featured > .feature-moment:nth-child(-n+3) .moment-cast{
+    min-height:0;
+    padding-top:16px;
+  }
+}
+
 #highlights .feature-moment .moment-sag{
   display:block;max-width:100%;margin-top:14px;background:var(--accent);color:#111;
   padding:11px 12px;border-left:4px solid #111;
@@ -535,7 +553,7 @@ html{scroll-padding-top:166px}
         </div>
         <strong class="moment-sag">2025 SAG Awards · Bogdan Pascal officially listed among the nominated stunt ensemble</strong>
         <p class="moment-cast"><span>FEATURED CAST</span><strong>Ariana Grande</strong> · <strong>Cynthia Erivo</strong> · <strong>Jeff Goldblum</strong></p>
-        <div class="moment-achievements"><span class="moment-awards"><b>FILM HONOURS</b> 10 Oscar nominations · 2 Oscar wins</span></div>
+        <div class="moment-achievements"><span class="moment-awards"><b>FILM HONOURS</b> 2 Oscar wins · 10 Oscar nominations</span></div>
       </div>
     </article>
     <article class="feature feature-moment" aria-label="Cinderella, film credit">
