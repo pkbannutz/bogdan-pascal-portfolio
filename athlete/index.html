@@ -553,16 +553,24 @@ html{scroll-padding-top:166px}
   color:#271907;
 }
 #highlights .rgt-buzzer-card .moment-prize-gold.is-buzzing{
-  animation:rgtGoldBadgeBuzz .95s ease-in-out both;
+  animation:rgtGoldBadgeBuzz .72s ease-in-out infinite;
 }
 @keyframes rgtGoldBadgeBuzz{
   0%,100%{filter:brightness(1);transform:scale(1)}
-  18%,45%{filter:brightness(1.3);transform:scale(.975)}
-  28%,57%,76%{filter:brightness(1.1);transform:scale(1.025)}
+  22%,58%{filter:brightness(1.28);transform:scale(.978)}
+  40%,78%{filter:brightness(1.12);transform:scale(1.028)}
 }
 /* Every page load starts fresh. The first visible view of the RGT photo starts a gold shower. */
 #highlights .rgt-buzzer-card .rgt-confetti-layer{
   position:absolute;inset:0;z-index:3;overflow:hidden;pointer-events:none;
+}
+/* Old confetti fades as a group, including any pieces still in flight. */
+#highlights .rgt-confetti-layer .rgt-confetti-batch{
+  position:absolute;inset:0;opacity:1;
+  transition:opacity .8s ease-in-out;
+}
+#highlights .rgt-confetti-layer .rgt-confetti-batch.is-fading{
+  opacity:0;
 }
 #highlights .rgt-confetti-layer .rgt-piece{
   position:absolute;
@@ -1084,7 +1092,8 @@ if(document.fonts?.ready)document.fonts.ready.then(syncLogoSpeed);
 window.addEventListener('resize',syncLogoSpeed);
 const skills=['Parkour / Freerunning','Stunt Performance','Acrobatics / Tumbling','Gymnastics','High Falls / Airbag','Trampoline','Tricking','Acting','Martial Arts','Cliff / High Diving','Hand Balancing','Breakdance','Modelling','Climbing','Boxing / Capoeira','Brazilian Jiu-jitsu'];const grid=document.getElementById('skillGrid');skills.forEach((s,i)=>{const e=document.createElement('div');e.className='role-card';const t=document.createElement('strong');t.textContent=s;const n=document.createElement('span');n.textContent=String(i+1).padStart(2,'0');e.append(t,n);grid.appendChild(e)});
 
-/* Replay a continuous gold shower on each page load once the RGT image enters view. */
+/* Restart the gold shower each time the RGT image is revisited.
+   Previous confetti fades away rather than disappearing abruptly. */
 (function(){
   const card=document.querySelector('#highlights .rgt-buzzer-card');
   const badge=document.getElementById('rgtGoldenBuzzer');
@@ -1096,8 +1105,21 @@ const skills=['Parkour / Freerunning','Stunt Performance','Acrobatics / Tumbling
   const colors=['#b67b1f','#d69f28','#ffda65','#f5c148','#8b5d19','#ebc66b','#c8983a'];
   const rand=(min,max)=>min+Math.random()*(max-min);
   const clamp=(value,min,max)=>Math.min(max,Math.max(min,value));
-  let played=false;
-  function addConfetti(animate){
+  let viewing=false;
+  let currentRun=0;
+
+  function fadePreviousConfetti(){
+    for(const batch of layer.querySelectorAll('.rgt-confetti-batch:not(.is-fading)')){
+      batch.classList.add('is-fading');
+      batch.addEventListener('transitionend',event=>{
+        if(event.target===batch&&event.propertyName==='opacity')batch.remove();
+      });
+      // Also clear old layers when the tab was backgrounded during the fade.
+      window.setTimeout(()=>batch.remove(),950);
+    }
+  }
+
+  function createShower(animate,run){
     const width=card.clientWidth;
     const height=card.clientHeight;
     const imageTop=image.getBoundingClientRect().top-card.getBoundingClientRect().top;
@@ -1107,14 +1129,19 @@ const skills=['Parkour / Freerunning','Stunt Performance','Acrobatics / Tumbling
     const titleLeft=titleBounds.left-cardBounds.left;
     const titleTop=titleBounds.top-cardBounds.top;
     const titleWidth=titleBounds.width;
+    const batch=document.createElement('div');
+    batch.className='rgt-confetti-batch';
     const fragment=document.createDocumentFragment();
-    for(let i=0;i<64;i++){
+    const total=64;
+    let landed=0;
+    let longestFlight=0;
+
+    for(let i=0;i<total;i++){
       const piece=document.createElement('span');
       piece.className='rgt-piece '+(animate?'is-flying':'is-settled');
       const startX=rand(8,Math.max(9,width-12));
       const startY=imageTop+2;
-      // Six pieces catch on the upper edge of the ROMANIA'S GOT TALENT lettering.
-      // The other 58 fall in a single uninterrupted path to the foot of the card.
+      // A small number strand on the title, while the rest fall uninterrupted.
       const landsOnTitle=i%11===0;
       const targetX=landsOnTitle
         ?clamp(titleLeft+rand(.08,.92)*titleWidth,8,width-10)
@@ -1128,6 +1155,9 @@ const skills=['Parkour / Freerunning','Stunt Performance','Acrobatics / Tumbling
       const middle=clamp(startX+dx*.5+rand(-width*.16,width*.16),5,width-10)-startX;
       const threeQuarter=clamp(startX+dx*.75+rand(-width*.11,width*.11),5,width-10)-startX;
       const spin=rand(480,1260)*(Math.random()<.5?-1:1);
+      const flight=rand(5.2,8.7);
+      const delay=rand(0,1.2);
+      longestFlight=Math.max(longestFlight,flight+delay);
       piece.style.left=startX+'px';
       piece.style.top=startY+'px';
       piece.style.setProperty('--piece-w',rand(3,9).toFixed(1)+'px');
@@ -1145,37 +1175,63 @@ const skills=['Parkour / Freerunning','Stunt Performance','Acrobatics / Tumbling
       piece.style.setProperty('--spin50',(spin*.5).toFixed(0)+'deg');
       piece.style.setProperty('--spin75',(spin*.75).toFixed(0)+'deg');
       piece.style.setProperty('--spin',spin.toFixed(0)+'deg');
-      piece.style.setProperty('--flight',rand(5.2,8.7).toFixed(2)+'s');
-      piece.style.setProperty('--delay',rand(0,1.2).toFixed(2)+'s');
+      piece.style.setProperty('--flight',flight.toFixed(2)+'s');
+      piece.style.setProperty('--delay',delay.toFixed(2)+'s');
       fragment.appendChild(piece);
     }
-    layer.appendChild(fragment);
-  }
-  function celebrate(){
-    if(played)return;
-    played=true;
-    addConfetti(!reduced);
-    if(!reduced){
-      badge.classList.add('is-buzzing');
-      badge.addEventListener('animationend',()=>badge.classList.remove('is-buzzing'),{once:true});
+    batch.appendChild(fragment);
+    layer.appendChild(batch);
+
+    if(animate){
+      // Keep the gold badge buzzing until the LAST particle lands.
+      batch.addEventListener('animationend',event=>{
+        if(event.target.classList?.contains('rgt-piece')){
+          landed++;
+          if(landed===total&&run===currentRun)badge.classList.remove('is-buzzing');
+        }
+      });
+      // Safety stop if a browser drops an animationend event.
+      window.setTimeout(()=>{
+        if(run===currentRun)badge.classList.remove('is-buzzing');
+      },Math.ceil(longestFlight*1000)+450);
     }
   }
+
+  function replay(){
+    currentRun++;
+    const run=currentRun;
+    fadePreviousConfetti();
+    badge.classList.remove('is-buzzing');
+    createShower(!reduced,run);
+    if(!reduced)badge.classList.add('is-buzzing');
+  }
+
+  function updateVisibility(ratio){
+    // Hysteresis avoids replaying repeatedly while hovering around the edge.
+    if(!viewing&&ratio>=.6){
+      viewing=true;
+      replay();
+    }else if(viewing&&ratio<=.25){
+      viewing=false;
+    }
+  }
+
   if('IntersectionObserver' in window){
     const observer=new IntersectionObserver(entries=>{
-      if(entries.some(entry=>entry.isIntersecting)){
-        observer.disconnect();
-        celebrate();
+      for(const entry of entries){
+        if(entry.target===image){
+          updateVisibility(entry.isIntersecting?entry.intersectionRatio:0);
+        }
       }
-    },{threshold:0.5,rootMargin:'0px 0px -8% 0px'});
+    },{threshold:[0,.25,.6,1],rootMargin:'0px 0px -8% 0px'});
     observer.observe(image);
   }else{
     const check=()=>{
       const rect=image.getBoundingClientRect();
-      if(rect.top<window.innerHeight*.92 && rect.bottom>window.innerHeight*.08){
-        window.removeEventListener('scroll',check);
-        window.removeEventListener('resize',check);
-        celebrate();
-      }
+      const viewportTop=window.innerHeight*.08;
+      const viewportBottom=window.innerHeight*.92;
+      const intersection=Math.max(0,Math.min(rect.bottom,viewportBottom)-Math.max(rect.top,viewportTop));
+      updateVisibility(rect.height?intersection/rect.height:0);
     };
     window.addEventListener('scroll',check,{passive:true});
     window.addEventListener('resize',check);
