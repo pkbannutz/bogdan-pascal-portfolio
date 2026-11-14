@@ -540,9 +540,19 @@ html{scroll-padding-top:166px}
 /* Original flat achievement label dimensions, with a gold finish. */
 #highlights .feature-moment.rgt-buzzer-card,
 #highlights .feature-moment.rgt-buzzer-card:hover{background:#fff;color:#171717}
+#highlights .rgt-buzzer-card{position:relative}
 #highlights .rgt-buzzer-card .moment-content{
-  position:relative;z-index:2;background:#fff;padding-bottom:34px;
+  position:relative;z-index:2;background:transparent;padding-bottom:34px;
 }
+/* Transparent cutout breaks free of the 16:9 image frame and overlaps the headline. */
+#highlights .rgt-buzzer-card .rgt-photo-cutout{
+  position:absolute;top:0;left:8%;width:105%;height:auto;max-width:none;
+  transform:translateY(-16%);z-index:4;pointer-events:none;
+  user-select:none;-webkit-user-drag:none;
+}
+#highlights .rgt-buzzer-card .moment-cover--rgt .moment-index{z-index:6}
+#highlights .rgt-buzzer-card .rgt-confetti-layer{z-index:5}
+
 #highlights .rgt-buzzer-card .moment-overline,
 #highlights .rgt-buzzer-card .moment-note,
 #highlights .rgt-buzzer-card .moment-role{color:#5b5b5b}
@@ -739,8 +749,8 @@ html{scroll-padding-top:166px}
   <section class="credits-dialog-panel" role="dialog" aria-modal="true" aria-labelledby="creditsDialogTitle" aria-describedby="creditsDialogIntro">
     <div class="credits-dialog-heading">
       <div>
-        <span class="credits-dialog-eyebrow">PORTFOLIO / SELECTED WORK</span>
-        <h2 id="creditsDialogTitle">CREDITS<br>IN MOTION.</h2>
+        <span class="credits-dialog-eyebrow">PORTFOLIO / SELECTED CLIENTS</span>
+        <h2 id="creditsDialogTitle">CLIENTS<br>IN MOTION.</h2>
         <p id="creditsDialogIntro">Selected clients, productions and collaborators.</p>
       </div>
       <button class="credits-dialog-close" id="creditsDialogClose" type="button" aria-label="Close credits modal">CLOSE <span aria-hidden="true">×</span></button>
@@ -843,7 +853,8 @@ html{scroll-padding-top:166px}
       </div>
     </article>
     <article class="feature feature-moment rgt-buzzer-card" aria-label="Romania's Got Talent, television credit">
-      <div class="moment-cover moment-cover--rgt"><img src="/assets/romanias-got-talent-layout.jpg" alt="Bogdan Pascal and OK Worldwide group photograph, positioned right on a white background" loading="lazy" decoding="async"><span class="moment-index">06 / TELEVISION</span></div>
+      <div class="moment-cover moment-cover--rgt"><span class="moment-index">06 / TELEVISION</span></div>
+      <img class="rgt-photo-cutout" src="/assets/romanias-got-talent-cutout.png" alt="Bogdan Pascal and OK Worldwide group performing a balancing acrobatic pose" loading="lazy" decoding="async">
       <div class="moment-content">
         <div class="moment-overline">2017 · ROMANIA</div>
         <h3>ROMANIA'S GOT TALENT</h3>
@@ -1230,7 +1241,7 @@ window.addEventListener('resize',syncLogoSpeed);
   const panel=backdrop?.querySelector('.credits-dialog-panel');
   const grid=document.getElementById('creditsDialogGrid');
   const closeButton=document.getElementById('creditsDialogClose');
-  const triggerLinks=[...document.querySelectorAll('a[href="#credits"]')];
+  const triggerLinks=[...document.querySelectorAll('a[href="#clients"]')];
   if(!backdrop||!panel||!grid||!closeButton||!logoTracks.length)return;
   const names=[...logosTop,...logosBottom];
   document.getElementById('creditsDialogCount').textContent=names.length+' SELECTED NAMES';
