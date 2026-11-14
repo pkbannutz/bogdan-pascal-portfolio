@@ -352,7 +352,7 @@ html{scroll-padding-top:166px}
 /* Six matching editorial highlight cards: film / TV, 3 by 2, with 16:9 cover art. */
 #highlights .featured{
   display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
-  grid-template-rows:none;grid-auto-rows:1fr;gap:14px;align-items:stretch;
+  grid-template-rows:none;grid-auto-rows:auto;gap:14px;align-items:stretch;
 }
 #highlights .feature-moment{
   display:flex;flex-direction:column;min-height:0;padding:0;gap:0;
@@ -414,7 +414,7 @@ html{scroll-padding-top:166px}
   margin:10px 0 0;font:500 10px/1.5 'DM Sans',sans-serif;color:var(--muted);
 }
 @media(max-width:1000px){
-  #highlights .featured{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:1fr}
+  #highlights .featured{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:auto}
 }
 @media(max-width:600px){
   #highlights .featured{grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-auto-rows:auto;gap:12px}
@@ -446,6 +446,34 @@ html{scroll-padding-top:166px}
   display:block;margin-top:9px;color:var(--muted);
   font:700 9px/1.45 'Space Mono',monospace;letter-spacing:.08em;
 }
+
+/* Every film uses the same small department label and separate black role tags. */
+#highlights .feature-moment .moment-role-tags{
+  display:flex;flex-wrap:wrap;align-content:start;gap:6px;
+  width:100%;margin-top:11px;
+}
+#highlights .feature-moment .moment-role-tags .moment-credit-badge{
+  font-size:clamp(11px,1.08vw,14px);
+  padding:8px 9px;
+  white-space:nowrap;
+}
+/* Compact TV cards: don't stretch their short content into the taller film row. */
+#highlights .featured > .feature-moment:nth-child(n+4){
+  align-self:start;
+}
+#highlights .featured > .feature-moment:nth-child(n+4) .moment-content{
+  flex:0 0 auto;
+}
+#highlights .featured > .feature-moment:nth-child(n+4) .moment-achievements{
+  margin-top:0;
+  padding-top:14px;
+}
+@media(max-width:600px){
+  #highlights .feature-moment .moment-role-tags .moment-credit-badge{
+    font-size:13px;
+  }
+}
+
 @media(max-width:600px){
   #highlights .feature-moment .moment-parkour-headline{font-size:24px}
 }
@@ -546,10 +574,15 @@ html{scroll-padding-top:166px}
       <div class="moment-content">
         <div class="moment-overline">2024 · UNIVERSAL PICTURES</div>
         <h3>WICKED</h3>
+        <span class="moment-department">STUNT DEPARTMENT</span>
+        <div class="moment-role-tags" aria-label="Wicked production roles">
+          <strong class="moment-credit-badge">STUNT PERFORMER</strong>
+          <strong class="moment-credit-badge">PARKOUR ATHLETE</strong>
+          <strong class="moment-credit-badge">ACTOR</strong>
+        </div>
         <div class="moment-credits moment-credits--wicked">
           <strong class="moment-parkour-headline">Part of the <span>specialist parkour team</span></strong>
           <p class="moment-parkour-sequence">Specialist parkour expertise for the rotating library wheel sequence</p>
-          <span class="moment-department">STUNT DEPARTMENT</span>
         </div>
         <strong class="moment-sag">2025 SAG Awards · Bogdan Pascal officially listed among the nominated stunt ensemble</strong>
         <p class="moment-cast"><span>FEATURED CAST</span><strong>Ariana Grande</strong> · <strong>Cynthia Erivo</strong> · <strong>Jeff Goldblum</strong></p>
@@ -561,7 +594,12 @@ html{scroll-padding-top:166px}
       <div class="moment-content">
         <div class="moment-overline">2021 · AMAZON PRIME VIDEO</div>
         <h3>CINDERELLA</h3>
-        <div class="moment-credits"><strong class="moment-credit-badge">DANCER · STUNT PERFORMER · ACROBAT</strong></div>
+        <span class="moment-department">STUNT DEPARTMENT</span>
+        <div class="moment-role-tags" aria-label="Cinderella production roles">
+          <strong class="moment-credit-badge">STUNT PERFORMER</strong>
+          <strong class="moment-credit-badge">ACROBAT</strong>
+          <strong class="moment-credit-badge">DANCER</strong>
+        </div>
         <p class="moment-cast"><span>FEATURED CAST</span><strong>Camila Cabello</strong> · <strong>Pierce Brosnan</strong> · <strong>Idina Menzel</strong></p>
         <div class="moment-achievements"><span class="moment-awards"><b>FILM HONOURS</b> 1 award win · 6 nominations</span></div>
       </div>
@@ -571,7 +609,11 @@ html{scroll-padding-top:166px}
       <div class="moment-content">
         <div class="moment-overline">2020 · NETFLIX</div>
         <h3>JINGLE JANGLE</h3>
-        <div class="moment-credits"><strong class="moment-credit-badge">STUNT PERFORMER · ACROBAT</strong></div>
+        <span class="moment-department">STUNT DEPARTMENT</span>
+        <div class="moment-role-tags" aria-label="Jingle Jangle production roles">
+          <strong class="moment-credit-badge">STUNT PERFORMER</strong>
+          <strong class="moment-credit-badge">ACROBAT</strong>
+        </div>
         <p class="moment-cast"><span>FEATURED CAST</span><strong>Forest Whitaker</strong> · <strong>Ricky Martin</strong> · <strong>Keegan-Michael Key</strong></p>
         <div class="moment-achievements"><span class="moment-awards"><b>FILM HONOURS</b> 4 award wins · 22 nominations</span></div>
       </div>
