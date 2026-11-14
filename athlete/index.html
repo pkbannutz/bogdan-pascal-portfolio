@@ -572,12 +572,8 @@ html{scroll-padding-top:166px}
   color:#271907;
 }
 #highlights .rgt-buzzer-card .moment-prize-gold.is-buzzing{
-  animation:rgtGoldBadgeBuzz .72s ease-in-out infinite;
-}
-@keyframes rgtGoldBadgeBuzz{
-  0%,100%{filter:brightness(1);transform:scale(1)}
-  22%,58%{filter:brightness(1.28);transform:scale(.978)}
-  40%,78%{filter:brightness(1.12);transform:scale(1.028)}
+  /* JS continuously reduces the pulse strength and frequency as confetti falls. */
+  will-change:transform,filter;
 }
 /* Every page load starts fresh. The first visible view of the RGT photo starts a gold shower. */
 #highlights .rgt-buzzer-card .rgt-confetti-layer{
@@ -702,6 +698,7 @@ html{scroll-padding-top:166px}
 }
 .logos-track.credits-track-frozen{animation-play-state:paused!important}
 .logos-wrap .wordmark.credits-mark-ported{opacity:0!important}
+.logos-wrap{cursor:pointer}
 .logos-wrap .wordmark[data-credits-index]{cursor:pointer}
 .logos-wrap .wordmark[data-credits-index]:focus-visible{
   outline:2px solid currentColor;outline-offset:5px;opacity:1;
@@ -1445,10 +1442,12 @@ window.addEventListener('resize',syncLogoSpeed);
       return mark&&marquee.contains(mark)?mark:null;
     };
     marquee.addEventListener('click',event=>{
-      const mark=clientWordFrom(event.target);
-      if(!mark)return;
+      // Open from any black-bar position, even between moving names.
       event.preventDefault();
-      openCredits(mark);
+      const source=clientWordFrom(event.target)
+        ||document.querySelector('.navlinks a[href="#clients"]')
+        ||marquee;
+      openCredits(source);
     });
     marquee.addEventListener('keydown',event=>{
       if(event.key!=='Enter'&&event.key!==' ')return;
@@ -1490,6 +1489,40 @@ const skills=['Parkour / Freerunning','Stunt Performance','Acrobatics / Tumbling
   const clamp=(value,min,max)=>Math.min(max,Math.max(min,value));
   let viewing=false;
   let currentRun=0;
+  let buzzFrame=0;
+
+  function stopBuzz(){
+    if(buzzFrame){window.cancelAnimationFrame(buzzFrame);buzzFrame=0;}
+    badge.classList.remove('is-buzzing');
+    badge.style.transform='';
+    badge.style.filter='';
+  }
+
+  function startBuzz(run,stopAfterMs){
+    // Same initial strength and pace as before, becoming calmer over time.
+    const start=performance.now();
+    let previous=start;
+    let phase=0;
+    badge.classList.add('is-buzzing');
+    function tick(now){
+      if(run!==currentRun){stopBuzz();return;}
+      const progress=Math.min(1,(now-start)/stopAfterMs);
+      if(progress>=1){stopBuzz();return;}
+      const strength=Math.pow(1-progress,1.5);
+      const period=.72+progress*.78;
+      const dt=Math.min(.06,(now-previous)/1000);
+      previous=now;
+      phase+=dt*2*Math.PI/period;
+      const wave=Math.sin(phase);
+      const ripple=Math.sin(phase*2);
+      const scale=1+(wave*.023+ripple*.005)*strength;
+      const light=1+Math.abs(wave)*.28*strength;
+      badge.style.transform='scale('+scale.toFixed(4)+')';
+      badge.style.filter='brightness('+light.toFixed(3)+')';
+      buzzFrame=window.requestAnimationFrame(tick);
+    }
+    buzzFrame=window.requestAnimationFrame(tick);
+  }
 
   function fadePreviousConfetti(){
     for(const batch of layer.querySelectorAll('.rgt-confetti-batch:not(.is-fading)')){
@@ -1508,7 +1541,7 @@ const skills=['Parkour / Freerunning','Stunt Performance','Acrobatics / Tumbling
     const imageTop=image.getBoundingClientRect().top-card.getBoundingClientRect().top;
     const titleBounds=title.getBoundingClientRect();
     const cardBounds=card.getBoundingClientRect();
-    if(width<=0||height<=0)return;
+    if(width<=0||height<=0)return 0;
     const titleLeft=titleBounds.left-cardBounds.left;
     const titleTop=titleBounds.top-cardBounds.top;
     const titleWidth=titleBounds.width;
@@ -1516,7 +1549,6 @@ const skills=['Parkour / Freerunning','Stunt Performance','Acrobatics / Tumbling
     batch.className='rgt-confetti-batch';
     const fragment=document.createDocumentFragment();
     const total=64;
-    let landed=0;
     let longestFlight=0;
 
     for(let i=0;i<total;i++){
@@ -1565,28 +1597,18 @@ const skills=['Parkour / Freerunning','Stunt Performance','Acrobatics / Tumbling
     batch.appendChild(fragment);
     layer.appendChild(batch);
 
-    if(animate){
-      // Keep the gold badge buzzing until the LAST particle lands.
-      batch.addEventListener('animationend',event=>{
-        if(event.target.classList?.contains('rgt-piece')){
-          landed++;
-          if(landed===total&&run===currentRun)badge.classList.remove('is-buzzing');
-        }
-      });
-      // Safety stop if a browser drops an animationend event.
-      window.setTimeout(()=>{
-        if(run===currentRun)badge.classList.remove('is-buzzing');
-      },Math.ceil(longestFlight*1000)+450);
-    }
+    return longestFlight*1000;
   }
 
   function replay(){
     currentRun++;
     const run=currentRun;
+    stopBuzz();
     fadePreviousConfetti();
-    badge.classList.remove('is-buzzing');
-    createShower(!reduced,run);
-    if(!reduced)badge.classList.add('is-buzzing');
+    const lastLandingMs=createShower(!reduced,run);
+    if(!reduced&&lastLandingMs>0){
+      startBuzz(run,Math.max(1200,lastLandingMs-2500));
+    }
   }
 
   function updateVisibility(ratio){
