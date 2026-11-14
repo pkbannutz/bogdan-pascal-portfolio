@@ -1,0 +1,29 @@
+name: Import unmodified The 1975 cover
+on:
+  push:
+    paths:
+      - .github/workflows/import-1975-cover.yml
+permissions:
+  contents: write
+jobs:
+  import-cover:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download uploaded artwork byte-for-byte
+        env:
+          IMAGE_URL: "https://pikaso.cdnpk.net/private/production/6041065092/3870545712.png?token=exp=1794960000~hmac=4af38d288f09553ef8e87620c306ed2040d7bed996d19ebbea4bce631fcb2020"
+        run: |
+          curl --fail --location --retry 3 --retry-delay 2 --output assets/the-1975-original-cover.png "$IMAGE_URL"
+          printf '%s  %s\n' 'aa73fa7bbba4e1bdcf2cc6d62bdd6edd51fe56506be7f937b9eba4ef184208bb' 'assets/the-1975-original-cover.png' | sha256sum --check --status
+          file --mime-type assets/the-1975-original-cover.png | grep -q 'image/png'
+      - name: Commit original image
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/the-1975-original-cover.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Add unmodified user-supplied The 1975 cover"
+            git push origin HEAD:main
+          fi
