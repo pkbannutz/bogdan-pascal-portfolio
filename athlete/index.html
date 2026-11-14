@@ -582,8 +582,8 @@ html{scroll-padding-top:166px}
 }
 /* Transparent cutout breaks free of the 16:9 image frame and overlaps the headline. */
 #highlights .rgt-buzzer-card .rgt-photo-cutout{
-  position:absolute;top:0;left:8%;width:105%;height:auto;max-width:none;
-  transform:translateY(-23%);z-index:4;pointer-events:none;
+  position:absolute;top:0;left:9%;width:101.5%;height:auto;max-width:none;
+  transform:translateY(-21%);z-index:4;pointer-events:none;
   user-select:none;-webkit-user-drag:none;
 }
 #highlights .rgt-buzzer-card .moment-cover--rgt .moment-index{z-index:6}
@@ -768,6 +768,99 @@ html{scroll-padding-top:166px}
   .credits-dialog-backdrop,.credits-dialog-panel{transition:none!important}
 }
 
+
+/* Additional film, live, campaign and music highlights. */
+#highlights .featured > .feature-moment.moment-editorial{
+  align-self:stretch;
+}
+#highlights .featured > .feature-moment.moment-editorial .moment-content{
+  flex:1 1 auto;
+}
+#highlights .feature-moment.moment-editorial .moment-cover{background:#181818}
+#highlights .feature-moment.moment-editorial .moment-cover--poster{
+  background:#f7f7f7;
+}
+#highlights .feature-moment.moment-editorial .moment-cover--poster img{
+  object-fit:cover;object-position:center 47%;
+}
+#highlights .feature-moment.moment-editorial .moment-content{
+  gap:0;padding:22px 22px 20px;
+}
+#highlights .feature-moment.moment-editorial h3{
+  font-size:clamp(22px,2.15vw,30px);
+  margin:9px 0 0;line-height:1.03;
+}
+#highlights .moment-editorial-role{
+  display:inline-block;max-width:100%;
+  margin:13px 0 0;padding:8px 10px;
+  font:700 9px/1.45 'Space Mono',monospace;
+  letter-spacing:.015em;color:var(--bg);background:var(--fg);
+}
+#highlights .moment-editorial-headline{
+  display:block;margin-top:23px;
+  font:700 clamp(23px,2.6vw,35px)/1.03 'Space Grotesk',sans-serif;
+  letter-spacing:-.062em;color:var(--fg);
+}
+#highlights .moment-editorial-headline em{
+  font-style:italic;font-weight:500;
+}
+#highlights .moment-editorial-copy{
+  margin:16px 0 0;
+  font:500 12px/1.65 'DM Sans',sans-serif;color:var(--muted);
+}
+#highlights .moment-editorial-foot{
+  width:100%;margin-top:auto;padding-top:24px;
+  display:flex;flex-direction:column;align-items:flex-start;gap:9px;
+}
+#highlights .moment-editorial-kicker{
+  font:700 9px/1.5 'Space Mono',monospace;
+  letter-spacing:.085em;color:var(--muted);
+}
+#highlights .moment-editorial-stat{
+  display:block;width:100%;padding:12px 13px;
+  font:700 clamp(16px,1.7vw,21px)/1.2 'Space Grotesk',sans-serif;
+  letter-spacing:-.04em;
+  background:var(--accent);color:#111;
+  border-left:4px solid #111;
+}
+#highlights .moment-editorial-stat small{
+  display:block;margin-top:4px;
+  font:700 9px/1.45 'Space Mono',monospace;
+  letter-spacing:.005em;
+}
+#highlights .moment-editorial-extra{
+  font:500 11px/1.55 'DM Sans',sans-serif;
+  color:var(--muted);
+}
+#highlights .moment-editorial-link{
+  display:inline-flex;align-items:center;
+  margin-top:3px;padding:7px 0;
+  font:700 10px/1.45 'Space Mono',monospace;
+  letter-spacing:.01em;
+  border-bottom:1px solid var(--fg);
+}
+#highlights .moment-editorial-link:hover{
+  opacity:.66;
+}
+#highlights .moment-feature-pair{
+  grid-column:1/-1;
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;min-width:0;
+}
+#highlights .moment-feature-pair .feature-moment{
+  align-self:stretch;
+}
+@media(max-width:900px){
+  #highlights .moment-editorial-headline{font-size:clamp(21px,3.5vw,32px)}
+  #highlights .moment-feature-pair{gap:12px}
+}
+@media(max-width:600px){
+  #highlights .moment-feature-pair{grid-template-columns:minmax(0,1fr)}
+  #highlights .feature-moment.moment-editorial .moment-content{padding:18px}
+  #highlights .moment-editorial-headline{font-size:27px}
+  #highlights .moment-editorial-stat{font-size:19px}
+}
+
 </style>
 </head>
 <body>
@@ -810,9 +903,9 @@ html{scroll-padding-top:166px}
 <section class="section wrap" id="highlights">
   <div class="section-head">
     <div><span class="eyebrow">01 / SELECTED HIGHLIGHTS</span><h2>THE BIG<br>MOMENTS.</h2></div>
-    <p>Selected film credits and competition milestones.</p>
+    <p>Film roles, broadcast stages, international campaigns, fashion shows and career-defining moments.</p>
   </div>
-  <div class="featured" aria-label="Three feature films followed by three television appearances">
+  <div class="featured" aria-label="Selected film, documentary, television, commercial, fashion and music-video highlights">
     <article class="feature feature-moment" aria-label="Wicked, film credit">
       <div class="moment-cover"><img src="https://images.contentstack.io/v3/assets/blt13adb7e2033fcee5/bltdca52087fe5501b8/692a5f08bddc8805641ffb13/Wicked_keyart_mobile_3840x2160.jpg?width=2560" alt="Wicked (2024) official film artwork with Glinda and Elphaba" loading="lazy" decoding="async"><span class="moment-index">01 / FILM</span></div>
       <div class="moment-content">
@@ -904,6 +997,103 @@ html{scroll-padding-top:166px}
       </div>
       <div class="rgt-confetti-layer" aria-hidden="true"></div>
     </article>
+
+    <article class="feature feature-moment moment-editorial" aria-label="13 Shades of Romanian, documentary subject">
+      <div class="moment-cover moment-cover--poster">
+        <img src="https://m.media-amazon.com/images/M/MV5BN2IzN2MwOGUtMDY2Mi00NmYyLWI3YWEtZmYwNzhiZjYwM2ViXkEyXkFqcGc%40._V1_.jpg" alt="Official poster for 13 Shades of Romanian, a documentary about 13 Romanian lives in Britain" loading="lazy" decoding="async">
+        <span class="moment-index">07 / DOCUMENTARY</span>
+      </div>
+      <div class="moment-content">
+        <div class="moment-overline">2016 · FEATURE DOCUMENTARY</div>
+        <h3>13 SHADES OF ROMANIAN</h3>
+        <p class="moment-editorial-role">FEATURED SUBJECT · PERSONAL STORY</p>
+        <strong class="moment-editorial-headline">ONE OF THE 13<br><em>FEATURED STORIES.</em></strong>
+        <p class="moment-editorial-copy">My journey into parkour, told as part of a documentary exploring Romanian lives in Britain. Directed by Anda and Dragoș Teglaș, with television and on-demand versions.</p>
+        <div class="moment-editorial-foot">
+          <span class="moment-editorial-kicker">DOCUMENTARY RECOGNITION</span>
+          <strong class="moment-editorial-stat">2 award wins · 3 nominations <small>IMDb-listed</small></strong>
+          <a href="https://www.imdb.com/title/tt4488632/" target="_blank" rel="noopener noreferrer" class="moment-editorial-link">VIEW DOCUMENTARY &amp; AWARDS ↗</a>
+        </div>
+      </div>
+    </article>
+    <article class="feature feature-moment moment-editorial" aria-label="2019 BRIT Awards, opening performance with Hugh Jackman">
+      <div class="moment-cover">
+        <img src="https://img.youtube.com/vi/3E2m5RRZNS0/hqdefault.jpg" alt="Hugh Jackman and ensemble performing The Greatest Show at the 2019 BRIT Awards" loading="lazy" decoding="async">
+        <span class="moment-index">08 / LIVE TELEVISION</span>
+      </div>
+      <div class="moment-content">
+        <div class="moment-overline">2019 · THE O2, LONDON · ITV</div>
+        <h3>BRIT AWARDS</h3>
+        <p class="moment-editorial-role">ACROBAT · LIVE ENSEMBLE PERFORMER</p>
+        <strong class="moment-editorial-headline">THE GREATEST SHOW<br><em>WITH HUGH JACKMAN.</em></strong>
+        <p class="moment-editorial-copy">Part of the circus-inspired opening performance, directed for the stage by Michael Gracey. The televised ceremony was hosted by Jack Whitehall.</p>
+        <div class="moment-editorial-foot">
+          <span class="moment-editorial-kicker">LIVE STAGE · BROADCAST REACH</span>
+          <strong class="moment-editorial-stat">12,000 arena guests <small>ITV broadcast · international audience</small></strong>
+          <span class="moment-editorial-extra">Also on the night's bill: Dua Lipa, P!nk and The 1975</span>
+          <a href="https://www.youtube.com/watch?v=3E2m5RRZNS0" target="_blank" rel="noopener noreferrer" class="moment-editorial-link">WATCH THE OFFICIAL PERFORMANCE ↗</a>
+        </div>
+      </div>
+    </article>
+    <article class="feature feature-moment moment-editorial" aria-label="Emirates Expo 2020 Dubai global campaign with Chris Hemsworth">
+      <div class="moment-cover">
+        <img src="https://travelweekly.com.au/wp-content/uploads/2021/09/Expo-2020-Dubai-campaign.png" alt="Chris Hemsworth in the Emirates global campaign promoting Expo 2020 Dubai" loading="lazy" decoding="async">
+        <span class="moment-index">09 / GLOBAL CAMPAIGN</span>
+      </div>
+      <div class="moment-content">
+        <div class="moment-overline">2021 CAMPAIGN · EMIRATES AIRLINE</div>
+        <h3>EXPO 2020 DUBAI</h3>
+        <p class="moment-editorial-role">ACROBAT · COMMERCIAL PERFORMANCE</p>
+        <strong class="moment-editorial-headline">ON SET WITH<br><em>CHRIS HEMSWORTH.</em></strong>
+        <p class="moment-editorial-copy">A large-scale global campaign inviting the world to Expo 2020 Dubai, directed by two-time Academy Award winner Robert Stromberg.</p>
+        <div class="moment-editorial-foot">
+          <span class="moment-editorial-kicker">GLOBAL ADVERTISING CAMPAIGN</span>
+          <strong class="moment-editorial-stat">Emirates × Expo 2020 <small>Chris Hemsworth · Robert Stromberg</small></strong>
+          <span class="moment-editorial-extra">Campaign launched in 2021, filmed in 2019</span>
+          <a href="https://www.emirates.com/media-centre/emirates-partners-with-chris-hemsworth-in-a-bold-new-campaign-inviting-visitors-to-experience-expo-2020-dubai/" target="_blank" rel="noopener noreferrer" class="moment-editorial-link">VIEW THE CAMPAIGN ↗</a>
+        </div>
+      </div>
+    </article>
+    <div class="moment-feature-pair" aria-label="Fashion and music video highlights">
+      <article class="feature feature-moment moment-editorial" aria-label="Plein Sport, Milan Fashion Week runway show">
+        <div class="moment-cover">
+          <img src="https://img.youtube.com/vi/Z97mGOjnpTU/hqdefault.jpg" alt="Plein Sport Fall Winter 2017/18 runway show at Milan Men's Fashion Week" loading="lazy" decoding="async">
+          <span class="moment-index">10 / FASHION SHOW</span>
+        </div>
+        <div class="moment-content">
+          <div class="moment-overline">2017 · MILAN MEN'S FASHION WEEK</div>
+          <h3>MILAN FASHION WEEK</h3>
+          <p class="moment-editorial-role">PLEIN SPORT · PHILIPP PLEIN · PARKOUR PERFORMER</p>
+          <strong class="moment-editorial-headline">PARKOUR ON<br><em>THE RUNWAY.</em></strong>
+          <p class="moment-editorial-copy">A runway transformed into an athletic performance arena for the Plein Sport debut. Freerunners performed live alongside the brand's fashion presentation.</p>
+          <div class="moment-editorial-foot">
+            <span class="moment-editorial-kicker">RUNWAY · LIVE PERFORMANCE</span>
+            <strong class="moment-editorial-stat">Plein Sport debut <small>Fashion meets freerunning · Milan</small></strong>
+            <span class="moment-editorial-extra">Paris Hilton was among the show's attendees; Ryan Doyle was featured in its parkour cast.</span>
+            <a href="https://www.pleinsport.com/ps-fs-aw-17-18" target="_blank" rel="noopener noreferrer" class="moment-editorial-link">SEE THE OFFICIAL SHOW ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="feature feature-moment moment-editorial" aria-label="The 1975 I'm in Love with You music video, dancer credit and choreography nomination">
+        <div class="moment-cover">
+          <img src="https://www.nme.com/wp-content/uploads/2022/09/PhoebeBridgers-The-1975-Im-In-Love-With-You-video-.jpg" alt="Black-and-white music video image of The 1975 with a guest appearance by Phoebe Bridgers" loading="lazy" decoding="async">
+          <span class="moment-index">11 / MUSIC VIDEO</span>
+        </div>
+        <div class="moment-content">
+          <div class="moment-overline">2022 · THE 1975 · DIRTY HIT</div>
+          <h3>I'M IN LOVE WITH YOU</h3>
+          <p class="moment-editorial-role">CREDITED DANCER · MUSIC VIDEO CAST</p>
+          <strong class="moment-editorial-headline">BEST CHOREOGRAPHY<br><em>UKMVA NOMINEE.</em></strong>
+          <p class="moment-editorial-copy">Performed in the black-and-white music video directed by Samuel Bradley and choreographed by Katie Collins, with a guest appearance by Phoebe Bridgers.</p>
+          <div class="moment-editorial-foot">
+            <span class="moment-editorial-kicker">2023 UK MUSIC VIDEO AWARDS</span>
+            <strong class="moment-editorial-stat">Best Choreography shortlist <small>UK Music Video Awards · 2023</small></strong>
+            <span class="moment-editorial-extra">Production company Amelia Studios names Bogdan Pascal in the cast as a dancer.</span>
+            <a href="https://ameliastudios.co.uk/projects/the-1975-im-in-love-with-you/" target="_blank" rel="noopener noreferrer" class="moment-editorial-link">VIEW PRODUCTION &amp; MY CREDIT ↗</a>
+          </div>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 <section class="section rule" id="reels"><div class="wrap"><div class="section-head"><div><span class="eyebrow">02 / ACTION IN MOTION</span><h2>SEE IT<br>IN ACTION.</h2></div><p>Press play to watch, and expand the video to fullscreen.</p></div>
