@@ -6,7 +6,7 @@
 <title>Bogdan Pascal | Parkour Coordinator · Stunt Performer · Movement Director</title>
 <meta name="description" content="Bogdan Pascal, parkour coordinator, stunt performer and movement director. Specialist action choreography, performer networks and camera-led movement for film, TV, commercials and live production.">
 <meta property="og:title" content="Bogdan Pascal | Parkour Coordinator · Stunt Performer · Movement Director">
-<meta property="og:description" content="Specialist movement direction, parkour coordination and stunt performance for film, television, commercials and live production.">
+<meta property="og:description" content="Parkour coordinator, movement director and stunt performer for films, music videos, television, commercials and live productions.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -242,7 +242,7 @@
 </style>
 
 <style>
-/* Compact parkour coordination panel replaces hero's IN MOTION wide photograph. */
+/* Parkour coordinator section follows the showreel. */
 .coord-banner{margin:50px 0 0;background:var(--soft);color:var(--fg);border:1px solid var(--line);overflow:hidden}
 .coord-banner-header{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(28px,4vw,55px);padding:31px 36px;border-bottom:1px solid var(--line)}
 .coord-banner-label{display:block;font:700 10px/1.5 'Space Mono',monospace;letter-spacing:.12em;color:var(--muted)}
@@ -251,6 +251,15 @@
 .coord-banner h2>span{color:#111}
 :root.dark .coord-banner h2>span{color:#111}
 .coord-banner-intro{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:19px;min-width:0}.coord-banner-intro p{max-width:520px;font-size:13px;line-height:1.66;color:var(--muted);margin:0}
+.coord-banner-intro p.coord-banner-formats{
+  max-width:540px;padding:10px 0 0;border-top:1px solid var(--line);
+  font-size:12px;line-height:1.7;color:var(--fg);
+}
+.coord-banner-formats strong{
+  display:block;margin-bottom:5px;
+  font:700 9px/1.4 'Space Mono',monospace;
+  letter-spacing:.12em;color:var(--muted);
+}
 .coord-banner-cta{display:inline-flex;justify-content:space-between;align-items:center;gap:24px;min-height:44px;background:var(--accent);color:#111;padding:12px 18px;font:700 10px/1.5 'Space Mono',monospace;letter-spacing:.015em}
 .coord-banner-cta:hover{filter:brightness(.93)}
 .coord-banner-services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--bg)}
@@ -693,6 +702,11 @@ html{scroll-padding-top:166px}
 }
 .logos-track.credits-track-frozen{animation-play-state:paused!important}
 .logos-wrap .wordmark.credits-mark-ported{opacity:0!important}
+.logos-wrap .wordmark[data-credits-index]{cursor:pointer}
+.logos-wrap .wordmark[data-credits-index]:focus-visible{
+  outline:2px solid currentColor;outline-offset:5px;opacity:1;
+}
+
 .credits-flight-name{
   position:fixed;z-index:360;pointer-events:none;
   display:block;width:max-content;max-width:none;
@@ -735,7 +749,7 @@ html{scroll-padding-top:166px}
 <body>
 <header class="nav"><div class="wrap nav-inner">
 <a class="brand" href="#home" aria-label="Bogdan Pascal home"><img class="logo-img logo-light" src="/assets/logo-light.svg" alt="Bogdan Pascal"><img class="logo-img logo-dark" src="/assets/logo-dark.svg" alt="" aria-hidden="true"></a>
-<nav class="navlinks" id="navlinks" aria-label="Main navigation"><a href="#highlights">HIGHLIGHTS</a><a href="#coordination">COORDINATION</a><a href="#credits">CREDITS</a><a href="#clients">CLIENTS</a><a href="#skills">SKILLS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
+<nav class="navlinks" id="navlinks" aria-label="Main navigation"><a href="#highlights">HIGHLIGHTS</a><a href="#coordinator">PARKOUR COORDINATOR</a><a href="#credits">CREDITS</a><a href="#clients">CLIENTS</a><a href="#skills">SKILLS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
 <div class="navend"><button class="action" id="theme" aria-label="Toggle color theme">DARK / LIGHT</button><a class="action primary" href="mailto:hello@bogdanpascal.com?subject=Booking%20enquiry">BOOKING ↗</a><button class="action mobile-menu" id="menu" aria-controls="navlinks" aria-expanded="false">MENU</button></div>
 </div></header>
 <section class="logos-wrap" id="clients" aria-label="Selected clients and productions">
@@ -757,7 +771,7 @@ html{scroll-padding-top:166px}
 <h1><span>BOGDAN</span><span>PASCAL.</span></h1>
 <div class="hero-roles">PARKOUR COORDINATOR · STUNT PERFORMER · MOVEMENT DIRECTOR</div>
 <p class="hero-intro">From the streets to the screen. I design movement, perform it and understand how to capture it, combining parkour expertise, specialist talent and a filmmaker&#39;s eye for productions worldwide.</p>
-<div class="hero-cta"><a href="#credits" class="action primary">EXPLORE CREDITS ↗</a><a href="#coordination" class="action">PARKOUR COORDINATION ↗</a><a href="#contact" class="action">WORK WITH ME</a><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer" class="action">IMDb ↗</a></div>
+<div class="hero-cta"><a href="#credits" class="action primary">EXPLORE CREDITS ↗</a><a href="#coordinator" class="action">PARKOUR COORDINATOR ↗</a><a href="#contact" class="action">WORK WITH ME</a><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer" class="action">IMDb ↗</a></div>
 </div><div class="hero-display hero-display--portrait">
 <img src="/assets/profile.jpg" alt="Portrait of Bogdan Pascal in an orange sweatshirt" decoding="async">
 </div></div>
@@ -860,13 +874,21 @@ html{scroll-padding-top:166px}
     </article>
   </div>
 </section>
-<div class="wrap">
-<section class="coord-banner" id="coordination" aria-labelledby="coord-banner-title">
-  <div class="coord-banner-header">
-    <div><span class="coord-banner-label">MOVEMENT DIRECTION / SPECIALIST PARKOUR COORDINATION</span><h2 id="coord-banner-title">PARKOUR<br><em>COORDINATION</em><span>.</span></h2></div>
-    <div class="coord-banner-intro"><p>For over 15 years, I&#39;ve developed, performed and filmed stunts and choreography alongside acrobats, dancers and stunt performers. That experience has sharpened my instinct for movement, rhythm, timing and camera composition, helping me turn creative ideas into dynamic action for the screen and live audiences.</p><a class="coord-banner-cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20Coordination%20Enquiry&amp;body=Project%3A%0AFormat%3A%0ALocation%3A%0ADates%3A%0AMovement%20brief%3A%0A">DISCUSS YOUR SEQUENCE <span aria-hidden="true">↗</span></a></div>
+<section class="section rule" id="reels"><div class="wrap"><div class="section-head"><div><span class="eyebrow">02 / ACTION IN MOTION</span><h2>SEE IT<br>IN ACTION.</h2></div><p>Press play to watch, and expand the video to fullscreen.</p></div>
+<div class="reel-frame">
+  <div class="reel-embed">
+    <iframe src="https://www.youtube-nocookie.com/embed/_WfU2QeWXsQ?controls=1&amp;fs=1&amp;playsinline=1&amp;rel=0" title="Bogdan Pascal | Movement and stunt showreel" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
-  <div class="coord-banner-services" aria-label="Parkour coordination services">
+</div>
+<div class="reel-meta"><p>MOVEMENT / STUNTS / PERFORMANCE</p><a href="https://www.youtube.com/watch?v=_WfU2QeWXsQ" target="_blank" rel="noopener noreferrer" class="action">WATCH ON YOUTUBE ↗</a></div>
+</div></section>
+<div class="wrap">
+<section class="coord-banner" id="coordinator" aria-labelledby="coord-banner-title">
+  <div class="coord-banner-header">
+    <div><span class="coord-banner-label">03 / MOVEMENT DIRECTION / PARKOUR COORDINATOR</span><h2 id="coord-banner-title">PARKOUR<br><em>COORDINATOR</em><span>.</span></h2></div>
+    <div class="coord-banner-intro"><p>For over 15 years, I&#39;ve developed, performed and filmed stunts and choreography alongside acrobats, dancers and stunt performers. That experience has sharpened my instinct for movement, rhythm, timing and camera composition, helping me turn creative ideas into dynamic action for the screen and live audiences.</p><p class="coord-banner-formats"><strong>FOR ANY PRODUCTION</strong> Feature films · TV series &amp; shows · Music videos · Commercials · Branded content · Theatre · Live performances · Events</p><a class="coord-banner-cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20Coordinator%20Enquiry&amp;body=Project%3A%0AFormat%3A%0ALocation%3A%0ADates%3A%0AMovement%20brief%3A%0A">DISCUSS YOUR SEQUENCE <span aria-hidden="true">↗</span></a></div>
+  </div>
+  <div class="coord-banner-services" aria-label="Parkour coordinator services">
     <div class="coord-banner-service"><span class="coord-banner-no">01 / CONCEPT</span><strong>SCRIPT & ACTION DESIGN</strong><p>Turn a script into movement beats, route options and shot-ready action.</p></div>
     <div class="coord-banner-service"><span class="coord-banner-no">02 / MOVEMENT</span><strong>MOVEMENT DIRECTION</strong><p>Create expressive, repeatable movement across parkour and acrobatics, with rhythm and timing built for the camera.</p></div>
     <div class="coord-banner-service"><span class="coord-banner-no">03 / PEOPLE</span><strong>PERFORMER CASTING</strong><p>Source and assemble international parkour talent, acrobats and doubles.</p></div>
@@ -878,21 +900,14 @@ html{scroll-padding-top:166px}
 </section>
 </div>
 
-<section class="section rule" id="credits"><div class="wrap"><div class="section-head"><div><span class="eyebrow">02 / PROFESSIONAL EXPERIENCE</span><h2>SELECTED<br>CREDITS.</h2></div><p>Film, television, commercials, live performances and international events. Search or filter the archive.</p></div>
+<section class="section rule" id="credits"><div class="wrap"><div class="section-head"><div><span class="eyebrow">04 / PROFESSIONAL EXPERIENCE</span><h2>SELECTED<br>CREDITS.</h2></div><p>Film, television, commercials, live performances and international events. Search or filter the archive.</p></div>
 <div class="credit-controls" id="filters"><button class="filter" data-filter="film" aria-pressed="true">FILM</button><button class="filter" data-filter="tv" aria-pressed="false">TV</button><button class="filter" data-filter="commercial" aria-pressed="false">COMMERCIALS</button><button class="filter" data-filter="live" aria-pressed="false">LIVE / EVENTS</button><button class="filter" data-filter="music" aria-pressed="false">MUSIC</button><button class="filter" data-filter="all" aria-pressed="false">ALL</button><input class="search" id="creditSearch" aria-label="Search credits" placeholder="SEARCH CREDITS..."></div>
 <div class="credits-list" id="creditsList"></div><div id="creditEmpty" class="empty">No credits match your search.</div>
 <div style="margin-top:25px"><a class="action" target="_blank" rel="noopener noreferrer" href="https://www.imdb.com/name/nm11164253/">EXPLORE MY IMDb PROFILE ↗</a></div>
 </div></section>
 
-<section class="section wrap" id="skills"><div class="section-head"><div><span class="eyebrow">04 / PHYSICAL CAPABILITIES</span><h2>MOVEMENT<br>IS THE MEDIUM.</h2></div><p>A hybrid skill set developed through years of movement, performance and physical storytelling.</p></div><div class="roles-grid" id="skillGrid"></div></section>
-<section class="section rule" id="reels"><div class="wrap"><div class="section-head"><div><span class="eyebrow">05 / ACTION IN MOTION</span><h2>SEE IT<br>IN ACTION.</h2></div><p>Press play to watch, and expand the video to fullscreen.</p></div>
-<div class="reel-frame">
-  <div class="reel-embed">
-    <iframe src="https://www.youtube-nocookie.com/embed/_WfU2QeWXsQ?controls=1&amp;fs=1&amp;playsinline=1&amp;rel=0" title="Bogdan Pascal | Movement and stunt showreel" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-</div>
-<div class="reel-meta"><p>MOVEMENT / STUNTS / PERFORMANCE</p><a href="https://www.youtube.com/watch?v=_WfU2QeWXsQ" target="_blank" rel="noopener noreferrer" class="action">WATCH ON YOUTUBE ↗</a></div>
-</div></section>
+<section class="section wrap" id="skills"><div class="section-head"><div><span class="eyebrow">05 / PHYSICAL CAPABILITIES</span><h2>MOVEMENT<br>IS THE MEDIUM.</h2></div><p>A hybrid skill set developed through years of movement, performance and physical storytelling.</p></div><div class="roles-grid" id="skillGrid"></div></section>
+
 <section class="section rule" id="about"><div class="wrap"><div class="section-head"><div><span class="eyebrow">06 / BEHIND THE MOVEMENT</span><h2>ABOUT<br>BOGDAN.</h2></div></div>
 <div class="about-grid">
 <div class="about-visual">
@@ -957,9 +972,9 @@ html{scroll-padding-top:166px}
 <p>My film credits include <strong>Wicked</strong>, where I performed alongside <strong>Ariana Grande and Cynthia Erivo</strong> as part of a specialist parkour team and was <strong>officially named among the 2025 SAG Awards stunt-ensemble nominees</strong>; <strong>Cinderella</strong>, performing alongside <strong>Camila Cabello</strong>; and Netflix's <strong>Jingle Jangle</strong>, performing alongside <strong>Forest Whitaker and Keegan-Michael Key</strong>. Beyond film, my work spans commercial campaigns, music videos, documentaries, live performances and international events.</p>
 <p class="about-accolades">Award-recognised productions include <strong>Wicked</strong> (10 Oscar nominations, 2 wins), <strong>Jingle Jangle</strong> (4 award wins), <strong>Cinderella</strong> (1 award win), and <strong>13 Shades of Romanian</strong> (my parkour journey featured as one of its 13 main stories; 6 director-reported festival awards). The music video <strong>The 1975's "I'm in Love with You"</strong> was also nominated for Best Choreography at the 2023 UK Music Video Awards.</p>
 <p>My career has also taken me to the stages of <strong>Britain's Got Talent, Romania's Got Talent, Ninja Warrior and Got to Dance</strong>. Highlights include performing alongside <strong>Chris Hemsworth</strong> in a Dubai Expo commercial and <strong>Hugh Jackman</strong> during <em>The Greatest Showman</em> performance at the BRIT Awards, as well as appearing at <strong>Milan Fashion Week</strong> for Philipp Plein. My commercial work also includes collaborations with globally recognised brands such as <strong>Nike, Nikon, Vodafone and Beefeater Gin</strong>.</p><div class="social-row"><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@thebogdanpascal" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb ↗</a></div></div></div></div></section>
-<section class="section" id="contact"><div class="wrap"><div class="contact-block"><div><span class="eyebrow">07 / INQUIRIES & BOOKINGS</span><h2>LET'S MAKE<br>IT MOVE.</h2><p>Parkour coordination, movement direction and stunt performance for film, TV, commercials and live events.<br>Based in the UK. Available for international productions.</p></div><a class="cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20%26%20Stunt%20Booking%20Enquiry">HELLO@BOGDANPASCAL.COM ↗</a></div></div></section>
+<section class="section" id="contact"><div class="wrap"><div class="contact-block"><div><span class="eyebrow">07 / INQUIRIES & BOOKINGS</span><h2>LET'S MAKE<br>IT MOVE.</h2><p>Parkour coordinator, movement director and stunt performer for films, music videos, TV shows, commercials, branded productions and live performances.<br>Based in the UK. Available for international productions.</p></div><a class="cta" href="mailto:hello@bogdanpascal.com?subject=Parkour%20%26%20Stunt%20Booking%20Enquiry">HELLO@BOGDANPASCAL.COM ↗</a></div></div></section>
 </main>
-<footer class="footer"><div class="wrap footer-inner"><div class="footer-brand"><img class="footer-logo logo-light" src="/assets/logo-light.svg" alt="Bogdan Pascal"><img class="footer-logo logo-dark" src="/assets/logo-dark.svg" alt="" aria-hidden="true"><span>© <span id="year"></span> / PARKOUR COORDINATION · STUNTS · MOVEMENT DIRECTION</span></div><div class="footer-links"><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb</a><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a><a href="https://www.facebook.com/thebogdanpascal" target="_blank" rel="noopener noreferrer">FACEBOOK</a><a href="https://www.tiktok.com/@thebogdanpascal" target="_blank" rel="noopener noreferrer">TIKTOK</a><a href="#home">BACK TO TOP ↑</a></div></div></footer>
+<footer class="footer"><div class="wrap footer-inner"><div class="footer-brand"><img class="footer-logo logo-light" src="/assets/logo-light.svg" alt="Bogdan Pascal"><img class="footer-logo logo-dark" src="/assets/logo-dark.svg" alt="" aria-hidden="true"><span>© <span id="year"></span> / PARKOUR COORDINATOR · STUNTS · MOVEMENT DIRECTION</span></div><div class="footer-links"><a href="https://www.imdb.com/name/nm11164253/" target="_blank" rel="noopener noreferrer">IMDb</a><a href="https://www.instagram.com/thebogdanpascal/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a><a href="https://www.facebook.com/thebogdanpascal" target="_blank" rel="noopener noreferrer">FACEBOOK</a><a href="https://www.tiktok.com/@thebogdanpascal" target="_blank" rel="noopener noreferrer">TIKTOK</a><a href="#home">BACK TO TOP ↑</a></div></div></footer>
 <script>
 const credits=[
 ['2024','Wicked','Actor, stunts & specialist parkour · Tornado Wheel','film'],
@@ -1200,6 +1215,11 @@ function buildLogoRow(id,labels){
       mark.className='wordmark';
       mark.textContent=label;
       mark.dataset.creditsIndex=String(index+(id==='logosTrackBottom'?logosTop.length:0));
+      mark.setAttribute('role','button');
+      mark.setAttribute('aria-haspopup','dialog');
+      mark.setAttribute('aria-controls','creditsDialog');
+      mark.setAttribute('aria-label','View clients: '+label);
+      mark.tabIndex=copy===0?0:-1;
       group.appendChild(mark);
     }
     track.appendChild(group);
@@ -1417,6 +1437,27 @@ window.addEventListener('resize',syncLogoSpeed);
       openCredits(link);
     });
   });
+  // Both continuously scrolling rows remain untouched until a name is clicked.
+  const marquee=document.querySelector('.logos-wrap');
+  if(marquee){
+    const clientWordFrom=target=>{
+      const mark=target?.closest?.('.wordmark[data-credits-index]');
+      return mark&&marquee.contains(mark)?mark:null;
+    };
+    marquee.addEventListener('click',event=>{
+      const mark=clientWordFrom(event.target);
+      if(!mark)return;
+      event.preventDefault();
+      openCredits(mark);
+    });
+    marquee.addEventListener('keydown',event=>{
+      if(event.key!=='Enter'&&event.key!==' ')return;
+      const mark=clientWordFrom(event.target);
+      if(!mark)return;
+      event.preventDefault();
+      openCredits(mark);
+    });
+  }
   closeButton.addEventListener('click',closeCredits);
   backdrop.addEventListener('pointerdown',event=>{
     if(event.target===backdrop)closeCredits();
