@@ -529,6 +529,92 @@ html{scroll-padding-top:166px}
   #highlights .feature-moment .moment-sag{font-size:12px}
 }
 
+
+/* The two Wicked role chips remain on one line on every screen size. */
+#highlights .moment-role-tags--wicked{flex-wrap:nowrap;gap:6px}
+#highlights .moment-role-tags--wicked .moment-credit-badge{font-size:clamp(10px,1.02vw,13px);padding:8px 7px;white-space:nowrap}
+@media(max-width:420px){
+  #highlights .moment-role-tags--wicked .moment-credit-badge{font-size:11px;padding:7px 6px}
+}
+
+/* Gold buzzer award on a clean white RGT card, in both page themes. */
+#highlights .feature-moment.rgt-buzzer-card,
+#highlights .feature-moment.rgt-buzzer-card:hover{background:#fff;color:#171717}
+#highlights .rgt-buzzer-card .moment-content{position:relative;z-index:2;background:#fff;padding-bottom:40px}
+#highlights .rgt-buzzer-card .moment-overline,
+#highlights .rgt-buzzer-card .moment-note,
+#highlights .rgt-buzzer-card .moment-role{color:#5b5b5b}
+#highlights .rgt-buzzer-card .moment-achievements{position:relative;z-index:2}
+#highlights .rgt-buzzer{
+  position:relative;width:162px;height:92px;display:block;
+  margin-top:5px;isolation:isolate;
+}
+#highlights .rgt-buzzer-base{
+  position:absolute;left:3px;bottom:11px;width:156px;height:63px;border-radius:50%;
+  background:linear-gradient(180deg,#ffec9a 0%,#e1af3c 22%,#8e5913 77%,#60400f 100%);
+  border:2px solid #a47722;
+  box-shadow:0 6px 0 #69430e,0 10px 16px rgba(68,42,6,.27),inset 0 3px 4px #fff2bc;
+}
+#highlights .rgt-buzzer-plunger{
+  position:absolute;left:19px;top:6px;width:124px;height:67px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  color:#503008;text-shadow:0 1px 1px #fff5c3;
+  background:radial-gradient(ellipse at 32% 22%,#fffaca 0%,#ffe18a 20%,#e1ae3e 55%,#aa6c18 85%,#77470e 100%);
+  border:3px solid #c28a21;
+  box-shadow:inset 0 3px 5px rgba(255,255,255,.75),inset 0 -6px 7px rgba(104,65,11,.24),
+    0 5px 0 #7f4e12,0 8px 9px rgba(74,42,9,.3);
+  transform-origin:center center;
+}
+#highlights .rgt-buzzer-plunger span{
+  font:900 13px/.99 'Space Grotesk',sans-serif;
+  letter-spacing:-.055em;
+}
+#highlights .rgt-buzzer.is-buzzing .rgt-buzzer-plunger{
+  animation:rgtBuzzerPress 1s cubic-bezier(.23,.8,.28,1) both;
+}
+#highlights .rgt-buzzer.is-buzzing::after{
+  content:"";position:absolute;inset:-9px -12px;z-index:-1;border-radius:50%;
+  border:3px solid rgba(237,183,45,.8);
+  animation:rgtBuzzerRing 1s ease-out forwards;
+}
+@keyframes rgtBuzzerPress{
+  0%,100%{transform:translateY(0) scale(1);filter:brightness(1)}
+  14%,38%,62%{transform:translateY(7px) scale(.95);filter:brightness(1.3)}
+  22%,48%,72%{transform:translateY(1px) scale(1.025);filter:brightness(1.15)}
+}
+@keyframes rgtBuzzerRing{
+  0%{opacity:0;transform:scale(.7)}
+  25%{opacity:1}
+  100%{opacity:0;transform:scale(1.4)}
+}
+/* Particles burst from the buzzer, fall, and remain on the card until this tab's session ends. */
+#highlights .rgt-buzzer-card .rgt-confetti-layer{
+  position:absolute;inset:0;z-index:3;overflow:hidden;pointer-events:none;
+}
+#highlights .rgt-confetti-layer .rgt-piece{
+  position:absolute;width:var(--piece-w,6px);height:var(--piece-h,10px);
+  opacity:0;border-radius:1px;will-change:transform,opacity;
+  background:var(--piece-color,#d4a12b);box-shadow:0 0 1px rgba(80,50,8,.25);
+}
+#highlights .rgt-confetti-layer .rgt-piece.is-flying{
+  animation:rgtConfettiFall var(--flight,3.5s) cubic-bezier(.22,.55,.28,1) var(--delay,0s) forwards;
+}
+#highlights .rgt-confetti-layer .rgt-piece.is-settled{
+  opacity:1;transform:translate(var(--land-x),var(--land-y)) rotate(var(--spin));
+  will-change:auto;
+}
+@keyframes rgtConfettiFall{
+  0%{opacity:0;transform:translate(0,0) scale(.4) rotate(0deg)}
+  7%{opacity:1}
+  24%{opacity:1;transform:translate(var(--burst-x),var(--burst-y)) rotate(var(--mid-spin))}
+  100%{opacity:1;transform:translate(var(--land-x),var(--land-y)) rotate(var(--spin))}
+}
+@media(prefers-reduced-motion:reduce){
+  #highlights .rgt-buzzer.is-buzzing .rgt-buzzer-plunger,
+  #highlights .rgt-buzzer.is-buzzing::after,
+  #highlights .rgt-confetti-layer .rgt-piece.is-flying{animation:none}
+}
+
 @media(prefers-reduced-motion:reduce){
   #highlights .feature-moment .moment-cover img{transition:none}
   #highlights .feature-moment:hover .moment-cover img{transform:none}
@@ -575,10 +661,9 @@ html{scroll-padding-top:166px}
         <div class="moment-overline">2024 · UNIVERSAL PICTURES</div>
         <h3>WICKED</h3>
         <span class="moment-department">STUNT DEPARTMENT</span>
-        <div class="moment-role-tags" aria-label="Wicked production roles">
+        <div class="moment-role-tags moment-role-tags--wicked" aria-label="Wicked production roles">
           <strong class="moment-credit-badge">STUNT PERFORMER</strong>
           <strong class="moment-credit-badge">PARKOUR ATHLETE</strong>
-          <strong class="moment-credit-badge">ACTOR</strong>
         </div>
         <div class="moment-credits moment-credits--wicked">
           <strong class="moment-parkour-headline">Part of the <span>specialist parkour team</span></strong>
@@ -633,20 +718,27 @@ html{scroll-padding-top:166px}
       <div class="moment-content">
         <div class="moment-overline">2015 · UNITED KINGDOM</div>
         <h3>BRITAIN'S GOT TALENT</h3>
-        <p class="moment-role">OK Worldwide · Parkour, acrobatics &amp; live performance</p>
+        <p class="moment-role">Part of OK Worldwide Team · Breakdance, Parkour, Acrobatics</p>
         <div class="moment-achievements"><strong class="moment-prize">SEMI-FINALIST</strong></div>
         <p class="moment-note">ITV talent competition · Live semi-finals</p>
       </div>
     </article>
-    <article class="feature feature-moment" aria-label="Romania's Got Talent, television credit">
+    <article class="feature feature-moment rgt-buzzer-card" aria-label="Romania's Got Talent, television credit">
       <div class="moment-cover moment-cover--rgt"><img src="/assets/romanias-got-talent-layout.jpg" alt="Bogdan Pascal and OK Worldwide group photograph, positioned right on a white background" loading="lazy" decoding="async"><span class="moment-index">06 / TELEVISION</span></div>
       <div class="moment-content">
         <div class="moment-overline">2017 · ROMANIA</div>
         <h3>ROMANIA'S GOT TALENT</h3>
-        <p class="moment-role">OK Worldwide · Group acrobatics and parkour</p>
-        <div class="moment-achievements"><strong class="moment-prize">2ND PLACE</strong><strong class="moment-prize moment-prize-secondary">GOLDEN BUZZER</strong></div>
+        <p class="moment-role">Part of OK Worldwide Team · Breakdance, Parkour, Acrobatics</p>
+        <div class="moment-achievements">
+          <strong class="moment-prize">2ND PLACE</strong>
+          <div class="rgt-buzzer" id="rgtGoldenBuzzer" role="img" aria-label="Golden Buzzer award">
+            <span class="rgt-buzzer-base" aria-hidden="true"></span>
+            <span class="rgt-buzzer-plunger"><span>GOLDEN<br>BUZZER</span></span>
+          </div>
+        </div>
         <p class="moment-note">National television competition · Final placement</p>
       </div>
+      <div class="rgt-confetti-layer" aria-hidden="true"></div>
     </article>
   </div>
 </section>
@@ -1015,6 +1107,74 @@ syncLogoSpeed();
 if(document.fonts?.ready)document.fonts.ready.then(syncLogoSpeed);
 window.addEventListener('resize',syncLogoSpeed);
 const skills=['Parkour / Freerunning','Stunt Performance','Acrobatics / Tumbling','Gymnastics','High Falls / Airbag','Trampoline','Tricking','Acting','Martial Arts','Cliff / High Diving','Hand Balancing','Breakdance','Modelling','Climbing','Boxing / Capoeira','Brazilian Jiu-jitsu'];const grid=document.getElementById('skillGrid');skills.forEach((s,i)=>{const e=document.createElement('div');e.className='role-card';const t=document.createElement('strong');t.textContent=s;const n=document.createElement('span');n.textContent=String(i+1).padStart(2,'0');e.append(t,n);grid.appendChild(e)});
+
+/* One Golden Buzzer celebration per tab visit; settled confetti survives page reloads. */
+(function(){
+  const card=document.querySelector('#highlights .rgt-buzzer-card');
+  const buzzer=document.getElementById('rgtGoldenBuzzer');
+  const layer=card?.querySelector('.rgt-confetti-layer');
+  if(!card||!buzzer||!layer)return;
+  const sessionKey='bp_rgt_golden_buzzer_seen_v1';
+  let alreadyCelebrated=false;
+  try{alreadyCelebrated=sessionStorage.getItem(sessionKey)==='1'}catch(err){}
+  const reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches===true;
+  const rand=(i,n)=>{const x=Math.sin(i*79.71+n*131.43)*43758.5453;return x-Math.floor(x)};
+  const colors=['#b67b1f','#d69f28','#ffda65','#f5c148','#8b5d19','#ebc66b','#c8983a'];
+  function makeConfetti(animated){
+    if(layer.childElementCount)return;
+    const cardBox=card.getBoundingClientRect();
+    const domeBox=buzzer.querySelector('.rgt-buzzer-plunger').getBoundingClientRect();
+    const originX=domeBox.left-cardBox.left+domeBox.width/2;
+    const originY=domeBox.top-cardBox.top+domeBox.height/2;
+    const width=card.clientWidth,height=card.clientHeight;
+    const fragment=document.createDocumentFragment();
+    for(let i=0;i<54;i++){
+      const piece=document.createElement('span');
+      piece.className='rgt-piece '+(animated?'is-flying':'is-settled');
+      const angle=-Math.PI*1.1+rand(i,2)*Math.PI*1.2;
+      const radius=45+rand(i,3)*160;
+      const finalX=8+rand(i,4)*Math.max(0,width-16);
+      const finalY=height-8-rand(i,5)*18;
+      piece.style.left=originX+'px';
+      piece.style.top=originY+'px';
+      piece.style.setProperty('--piece-w',(3+rand(i,6)*6).toFixed(1)+'px');
+      piece.style.setProperty('--piece-h',(5+rand(i,7)*7).toFixed(1)+'px');
+      piece.style.setProperty('--piece-color',colors[i%colors.length]);
+      piece.style.setProperty('--burst-x',(Math.cos(angle)*radius).toFixed(1)+'px');
+      piece.style.setProperty('--burst-y',(-35-Math.abs(Math.sin(angle))*radius).toFixed(1)+'px');
+      piece.style.setProperty('--land-x',(finalX-originX).toFixed(1)+'px');
+      piece.style.setProperty('--land-y',(finalY-originY).toFixed(1)+'px');
+      piece.style.setProperty('--mid-spin',(120+rand(i,8)*540).toFixed(0)+'deg');
+      piece.style.setProperty('--spin',(360+rand(i,9)*720).toFixed(0)+'deg');
+      piece.style.setProperty('--flight',(2.9+rand(i,10)*1.1).toFixed(2)+'s');
+      piece.style.setProperty('--delay',(rand(i,11)*.25).toFixed(2)+'s');
+      fragment.appendChild(piece);
+    }
+    layer.appendChild(fragment);
+  }
+  if(alreadyCelebrated||reduced){
+    try{sessionStorage.setItem(sessionKey,'1')}catch(err){}
+    makeConfetti(false);
+    return;
+  }
+  function celebrate(){
+    if(card.dataset.rgtCelebrated==='yes')return;
+    card.dataset.rgtCelebrated='yes';
+    try{sessionStorage.setItem(sessionKey,'1')}catch(err){}
+    makeConfetti(true);
+    buzzer.classList.add('is-buzzing');
+    buzzer.addEventListener('animationend',()=>buzzer.classList.remove('is-buzzing'),{once:true});
+  }
+  if('IntersectionObserver' in window){
+    const observer=new IntersectionObserver(entries=>{
+      if(entries.some(entry=>entry.isIntersecting)){observer.disconnect();celebrate()}
+    },{threshold:0.38});
+    observer.observe(card);
+  }else{
+    celebrate();
+  }
+})();
+
 document.getElementById('year').textContent=new Date().getFullYear();
 const btn=document.getElementById('theme');function updateThemeLabel(){btn.textContent=document.documentElement.classList.contains('dark')?'☀ LIGHT':'◐ DARK'}updateThemeLabel();
 btn.addEventListener('click',()=>{const d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('bp_theme',d?'dark':'light')}catch(e){}updateThemeLabel()});
