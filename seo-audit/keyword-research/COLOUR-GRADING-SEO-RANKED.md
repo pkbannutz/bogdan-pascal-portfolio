@@ -2,6 +2,8 @@
 
 **Status:** **DONE, research recommendations only; NOT APPLIED.** **Date:** 18 November 2026. **Page:** https://bogdanpascal.com/filmmaker/services/colour-grading/. **Market:** UK Google Search, English. **Scope:** filmmaker's genuine colour finishing services for screen, commercials, branded projects and music videos. **Inputs:** 62 UK keywords (39 numeric volume, 23 null), Google Ads monthly histories Nov 2025–Oct 2026, organic difficulty and intent, UK Google Trends since 2004, last 5 years / 12 months / 3 months, seven UK Google desktop result checks, verified competitor and professional body terminology, current source and live site.
 
+> **POST-RESEARCH SOURCE CORRECTION, 18 NOVEMBER 2026:** Current GitHub `filmmaker/services/colour-grading/index.html` contains **`index, follow`** robots meta and no HTML self-canonical. The initial live `noindex,nofollow` finding in this older family report is **historical**, not confirmed current. **No fresh independent deployed live raw HTML, header or GSC recheck for grading during F14/F15**, so live site/index remains unverified. Read individual [F14](individual/F14-COLOUR-GRADING-SERVICE-RESEARCH-2026-11-18.md) and [F15](individual/F15-COLOURIST-RESEARCH-2026-11-18.md) before implementation. No website code changed by these reports.
+
 ## Executive decision
 
 **Primary industry job title:** **Film & Commercial Colourist** or **Freelance Colourist**.
