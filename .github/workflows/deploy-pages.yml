@@ -29,6 +29,12 @@ jobs:
         run: |
           python3 -c 'from pathlib import Path; files = [Path("index.html")] + [p for d in ("assets", "athlete", "filmmaker") if Path(d).exists() for p in Path(d).rglob("*") if p.suffix.lower() in {".svg", ".html", ".css", ".js"}]; banned = (chr(0x2014), "&mdash;", "&#8212;", "&#x2014;"); violations = [str(p) for p in files if any(t in p.read_text(encoding="utf-8").lower() for t in banned)]; assert not violations, "Website text must not contain em dashes: " + ", ".join(violations)'
 
+      - name: Validate GA4 event tracking and privacy checks
+        run: |
+          node --check assets/analytics-consent.js
+          node --check assets/analytics-events.js
+          node --test tests/analytics-events.test.cjs
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
