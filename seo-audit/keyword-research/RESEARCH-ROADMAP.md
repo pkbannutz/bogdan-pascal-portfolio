@@ -1,6 +1,6 @@
 # Service-by-service keyword and naming research roadmap
 
-**Last updated:** 18 November 2026 (athlete, FPV, DoP/camera and commercial filmmaking DONE; video editing next)
+**Last updated:** 18 November 2026 (families 1-5 research DONE; colour grading next)
 **Status:** Research and documentation only. No production SEO/visual changes applied.
 **Read first:** [Full handoff](../START-HERE-NEXT-CHAT.md) and [principles](../RESEARCH-DECISION-PRINCIPLES.md).
 
@@ -29,7 +29,7 @@ A service family can be marked **DONE** only after the report provides:
 | 2 | **FPV / drone / aerial cinematography** | **DONE (research only, 18 Nov 2026)**: 57 UK terms with Ads volume/KD/intent; Trends 2004-present, 5y/12m/3m; 6 UK desktop Google SERP attempts (4 usable), verified specialist competitors and CAA guidance; role titles, copy and technical priorities. **Live FPV service noindex confirmed, not fixed.** | [Final ranked FPV report](FPV-DRONE-AERIAL-SEO-RANKED.md) |
 | 3 | **DoP, cinematography, camera, action camera, gimbal, DJI Ronin** | **DONE (research, NOT APPLIED)**: 61 UK queries (37 numeric/24 null), industry ScreenSkills/camera checks, four Trends horizons (one specialty panel unavailable), seven partial SERP checks, exact attribution safeguards and service hierarchy. | [CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md](CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md) |
 | 4 | **Commercial filmmaking, branded films, music videos, small production** | **DONE (research, NOT APPLIED)**: 57 UK queries (53 numeric/4 null), four Trends horizons, seven SERP attempts (three no usable results), industry freelancer-vs-agency language, actual project scope and service hub recommendations. | [COMMERCIAL-FILMMAKING-SEO-RANKED.md](COMMERCIAL-FILMMAKING-SEO-RANKED.md) |
-| 5 | **Film and commercial editing, narrative editing, finishing** | NOT STARTED quantitative ranking. | `VIDEO-EDITING-SEO-RANKED.md` |
+| 5 | **Film and commercial editing, narrative editing, finishing** | **DONE (research, NOT APPLIED)**: 61 UK queries (50 numeric/11 null), 4 Trends horizons, 7 partial Google SERPs, recognized editor titles, individual-credit caveats and critical verified LIVE `noindex,nofollow` blocker. | [VIDEO-EDITING-SEO-RANKED.md](VIDEO-EDITING-SEO-RANKED.md) |
 | 6 | **Colour grading and commercial colourist** | NOT STARTED quantitative ranking. | `COLOUR-GRADING-SEO-RANKED.md` |
 | 7 | **Sound design / sound effects / SFX / audio post** | NOT STARTED quantitative ranking. | `SOUND-DESIGN-SFX-SEO-RANKED.md` |
 | 8 | **Other directly verified specialties, e.g. underwater cinematography** | NOT STARTED; verify actual client offering and current scope. | `ADDITIONAL-VERIFIED-SERVICES-SEO-RANKED.md` |
@@ -47,7 +47,7 @@ A service family can be marked **DONE** only after the report provides:
 
 **Athlete research finished 18 Nov 2026:** [ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md). Final recommendations distinguish active on-camera performance from specialist coordination. A prior independent [athlete naming study](../ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md) is preserved as source evidence. **DONE means the research chapter and proposals are complete, not that changes are published or that Google indexing/leads are verified.**
 
-**Next action:** Begin family #5 **Film/video editing, narrative and commercial post-production**. Read `filmmaker/services/editing/index.html` and project-specific editing credits, run UK search demand/intent/difficulty, four Trends windows and competitor SERPs, rank exact industry titles and produce `VIDEO-EDITING-SEO-RANKED.md`. Continue only afterward to colour and sound.
+**Next action:** Begin family #6 **Colour Grading / Film Colourist / Commercial Colourist**. Critically, the public colour-grading URL currently carries verified `noindex,nofollow`; follow the [live indexing blockers report](LIVE-INDEXING-BLOCKERS-2026-11-18.md). Inspect exact source, buyer terminology, verified credits and UK demand/competition/Trends/SERPs. Save `COLOUR-GRADING-SEO-RANKED.md`, then research Sound Design / SFX. **Do not alter the public site without approval**.
 
 ## FPV research evidence and completion
 
@@ -67,6 +67,11 @@ A service family can be marked **DONE** only after the report provides:
 ## Commercial filmmaking completed research
 
 - [COMMERCIAL-FILMMAKING-SEO-RANKED.md](COMMERCIAL-FILMMAKING-SEO-RANKED.md); [57-keyword CSV](COMMERCIAL-FILM-KEYWORD-METRICS-57.csv); [raw volume/intent](commercial-film-data-raw-2026-11-18.json); [Trends](commercial-film-trends-raw-2026-11-18.json); [partial Google SERPs](commercial-film-google-serp-raw-2026-11-18.json).
+
+## Editing research evidence and live blocker
+
+- [VIDEO-EDITING-SEO-RANKED.md](VIDEO-EDITING-SEO-RANKED.md), [61-row UK table](EDITING-KEYWORD-METRICS-61.csv), [raw UK keyword data](editing-data-raw-2026-11-18.json), [Trends](editing-trends-raw-2026-11-18.json), [Google desktop SERP attempts](editing-google-serp-raw-2026-11-18.json).
+- [LIVE-INDEXING-BLOCKERS-2026-11-18.md](LIVE-INDEXING-BLOCKERS-2026-11-18.md) is a **P0 verified live SEO blocker** for FPV, Editing and Colour Grading; each has `noindex,nofollow`. Check intention and get approval before production fixes.
 
 ## Research workflow, repeated per family
 
