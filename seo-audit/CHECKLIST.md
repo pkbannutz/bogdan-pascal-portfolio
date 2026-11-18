@@ -1,5 +1,20 @@
 # SEO implementation checklist
 
+## Guiding research standard, new athlete findings
+
+**Always read [RESEARCH-DECISION-PRINCIPLES.md](RESEARCH-DECISION-PRINCIPLES.md) before acting.** The user wants the best **industry-standard service names** and proven discoverability for qualified production bookings, even when the recommended research or optimization method differs from a tactic they suggested. Challenge assumptions, use evidenced demand and accurate roles, and never equate Google Trends peaks with actual hiring or monthly searches.
+
+First completed keyword family: [ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md](ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md).
+
+- [ ] **R01 | ATHLETE | P0 | VISIBLE, approval required:** Hero currently lists Coordinator / Stunt Performer / Movement Director, without active **Parkour Athlete**. Recommend a clear active performer-led role line while retaining specialist coordination.
+- [ ] **R02 | ATHLETE | P0 | SEARCH:** Draft title `Bogdan Pascal | Parkour Athlete, Stunt Performer & Coordinator`; use contextually accurate descriptive snippet (research chapter has full proposal).
+- [ ] **R03 | ATHLETE | P0 | VISIBLE, approval required:** Distinguish `Book as Performer` from `Discuss Parkour Coordination` contact paths without clutter.
+- [ ] **R04 | ATHLETE | P1 | BACKEND/MEASURE:** Use 76 UK keyword estimates as preliminary evidence; validate with Google Search Console actual impressions, indexed landing URLs and qualified leads. Do not sum grouped variants or mistake a null estimate for zero.
+- [ ] **R05 | ATHLETE | P1 | VERIFY:** Confirm exact authority/eligibility before advertising `Stunt Coordinator`; it is not a simple synonym for `Parkour Coordinator`.
+- [ ] **R06 | ATHLETE | P1 | RESEARCH:** Keep Trends ambiguities out of SEO naming conclusions: `Acrobat` often references Adobe software and `freerunning` can reference games. Use buyer intent/industry labels instead.
+- [ ] **R07 | ALL OTHER SERVICE FAMILIES | P1 | RESEARCH:** Repeat independent industry naming, volume, competition, intent and multiple time horizons, one real service family at a time. Do **not** claim the athlete study validates filmmaker/FPV/colour/sound search demand.
+
+
 **Snapshot:** 18 November 2026 (expanded with live deep dive)  
 **Repository:** `pkbannutz/bogdan-pascal-portfolio`  
 **Implementation status:** **0 SEO fixes implemented**. The four companion audit documents are already written; existing website code is untouched.
