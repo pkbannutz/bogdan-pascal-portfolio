@@ -1,6 +1,6 @@
 # Service-by-service keyword and naming research roadmap
 
-**Last updated:** 18 November 2026
+**Last updated:** 18 November 2026 (athlete ranked report saved, next FPV)
 **Status:** Research and documentation only. No production SEO/visual changes applied.
 **Read first:** [Full handoff](../START-HERE-NEXT-CHAT.md) and [principles](../RESEARCH-DECISION-PRINCIPLES.md).
 
@@ -25,7 +25,7 @@ A service family can be marked **DONE** only after the report provides:
 
 | Order | Family | Research status | Required next output |
 |---:|---|---|---|
-| 1 | **Athlete, freerunner, parkour performer, acrobat, stunt performance, coordinator and movement direction** | **DONE (research/recommendation only, 18 Nov 2026)**: sourced ranked industry names; 76 UK queries; four Trends windows; assessed ten imperfect UK desktop SERPs and verified industry/agency pages; exact proposed visible/search/backend changes. All site changes remain unimplemented, with GSC, live bookings and credential checks flagged. | [Final ranked report](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md) |
+| 1 | **Athlete, freerunner, parkour performer, acrobat, stunt performance, coordinator and movement direction** | **DONE (research, NOT APPLIED)**: direct source review, 76 UK queries/44 volume estimates, full 2004/5y/12m/3m Trends synthesis, industry labels, ten incomplete SERP classifications, ranked booking recommendation, copy/SEO/action plan. Exact real Google positions and GSC conversions remain unverified. | [ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md) |
 | 2 | **FPV / drone / aerial cinematography** | **IN PROGRESS**, begun after athlete completion; base keyword/competitor discovery exists, provider-grade volume/Trends and full ranked chapter still required. | `FPV-DRONE-AERIAL-SEO-RANKED.md` |
 | 3 | **DoP, cinematography, camera, action camera, gimbal, DJI Ronin** | NOT STARTED quantitative ranking. | `CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md` |
 | 4 | **Commercial filmmaking, branded films, music videos, small production** | NOT STARTED quantitative ranking. | `COMMERCIAL-FILMMAKING-SEO-RANKED.md` |
