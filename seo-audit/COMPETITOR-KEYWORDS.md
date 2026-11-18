@@ -1,6 +1,8 @@
 # Competitor search keyword map
 
-> **Important research standard:** For any keyword recommendations, first read [RESEARCH-DECISION-PRINCIPLES.md](RESEARCH-DECISION-PRINCIPLES.md). The AI must prioritize industry-recognized service names, honest hireability and actual hiring intent over the user's initial suggested SEO tactic or largest raw search volume. The completed athlete study is in [ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md](ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md). The other service families are not yet researched to that quantitative depth.
+> **18 NOV 2026 RESEARCH UPDATE:** The historical generic competitor discovery below has now been supplemented by separate detailed industry naming, UK volume, Trends and SERP reviews for seven core role/service families. See [Research roadmap](keyword-research/RESEARCH-ROADMAP.md) and [Whole-site strategy](keyword-research/WHOLE-SITE-SEO-PRIORITIZED-PLAN.md). Older text stating other families are unresearched is **obsolete**, and the generic discovery listings are still not verified Google top-ten positions.
+
+> **Important research standard:** For any keyword recommendations, first read [RESEARCH-DECISION-PRINCIPLES.md](RESEARCH-DECISION-PRINCIPLES.md). The AI must prioritize industry-recognized service names, honest hireability and actual hiring intent over the user's initial suggested SEO tactic or largest raw search volume. The completed athlete study is in [ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md](ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md). The other service families have now been researched with their own quantitative UK datasets; see updated roadmap.
 
 
 **Date:** 18 November 2026
