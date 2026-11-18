@@ -1,6 +1,6 @@
 # SEO implementation checklist
 
-**Snapshot:** 18 November 2026  
+**Snapshot:** 18 November 2026 (expanded with live deep dive)  
 **Repository:** `pkbannutz/bogdan-pascal-portfolio`  
 **Implementation status:** **0 SEO fixes implemented**. The four companion audit documents are already written; existing website code is untouched.
 
@@ -11,6 +11,22 @@
 - **VISIBLE:** Text, hero wording, cases, CTAs, sections, layout or navigation visibly changes on the website. Show proposed designs/copy for review first.
 - **VERIFY:** Cannot establish without Google Search Console, OpenSEO/live crawler, browser or performance test.
 - **P0:** Start here; **P1:** Next phase; **P2:** Improvement after measurement.
+
+## New high-priority issues from the live deep dive (18 Nov 2026)
+
+Read [the second-pass deep dive](DEEP-DIVE-2026-11-18.md) for evidence and caveats. These were found after the original checklist and **should be considered before less impactful metadata work**.
+
+- [ ] **D01 | FILMMAKER | P0 | BACKEND/performance:** Prevent all 23 portfolio JPGs (~4.83 MB image payload observed) from downloading during initial view. Investigate CSS background overlays defeating lazy image loading. Preserve transitions; verify cold mobile waterfall.
+- [ ] **D02 | FILMMAKER | P0 | VISIBLE/INTERACTION:** Rework touch card interaction: current handler blocks project navigation on first tap, requiring a second tap. Review a one-tap pattern or explicit preview button.
+- [ ] **D03 | FILMMAKER | P0 | VISIBLE/INTERACTION:** Increase mobile nav and footer contact hit areas: browser inspection measured ~15px nav and ~16px footer anchor heights; preserve typography where possible.
+- [ ] **D04 | FILMMAKER | P1 | VISIBLE:** Narrow-screen CSS currently hides `See the work` hero CTA; propose a discreet mobile CTA/scroll affordance.
+- [ ] **D05 | OVERALL | P1 | BACKEND:** Live 404s confirmed for `/robots.txt` and `/sitemap.xml`; address with O01-O04. Note missing robots.txt alone is not a ranking error.
+- [ ] **D07 | FILMMAKER | P1 | BACKEND:** Pause unnecessary JS hero/timecode/touch timers when hidden/offscreen and respect reduced motion behavior.
+- [ ] **D08 | FILMMAKER | P1 | BACKEND + SEARCH:** Evaluate video watch-page semantics, valid VideoObject metadata, permanent thumbnails and optional video sitemap for real featured projects.
+- [ ] **D09 | FILMMAKER | P1 | BACKEND/ACCESSIBILITY:** Improve lightbox dialog semantics, focus management and keyboard behavior.
+- [ ] **D10 | OVERALL | P1 | VERIFY:** Obtain actual GSC indexing/search data, cold mobile Lighthouse/CrUX measurements and conversion tracking. Neither is established by the source-only first pass.
+
+**New positive live evidence:** A bounded crawl found 35 production pages returned HTTP 200. No need to treat those tested URLs as broken. These new P0 findings are about actual user experience and unnecessary downloads, not generic SEO checkboxes.
 
 ## Priority 0: Core technical SEO
 
