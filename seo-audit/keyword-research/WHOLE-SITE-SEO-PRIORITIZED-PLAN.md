@@ -121,6 +121,8 @@ Provider: DataForSEO / Google Ads estimated UK English searches/month, monthly h
 
 **Deployment QA gate:** valid sitemap/canonical, no accidental noindex on public services, intentional preview noindex intact, unique titles/appropriate descriptions, canonical vs redirect parity, correct asset links and responsive images, credible project-role data, functioning phone navigation/video, and no em dashes in new site copy.
 
+**Additional source check, 18 November 2026:** All **23 filmmaker work/index.html files** were directly fetched from the connected GitHub repo. **None** has a robots noindex meta, and **all 23** lack a self-canonical. Separately, root, athlete, filmmaker, filmmaker services hub, about and contact source pages also lack self-canonicals and have no robots noindex meta. These are **GitHub source findings**, not separate fresh live rawHTML confirmation of every page; the five service URLs and root sitemap/robots were checked live. This strengthens the proposal for a shared template/build canonical fix rather than individual manual changes.
+
 ## 6. Evidence confidence and limits
 
 **HIGH:** Actual live noindex HTML on three service pages; missing canonical on five tested pages; two 404 root SEO endpoints; GitHub build copy constraints; current hero/service/credit labels; resource and mobile tap observations from earlier browser audits; professional terms confirmed through industry bodies and real supplier pages.
