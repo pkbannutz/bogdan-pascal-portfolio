@@ -18,6 +18,10 @@
 
 **Urgency:** **P0** at the top of the later approved implementation backlog. The goal is targeted qualified production bookings from these actual service pages. These noindex tags are a direct conflict with that goal, **assuming those pages are intended to be public and indexable**, as the service menu and user SEO goals indicate.
 
+## Expanded repository-source verification, 18 November 2026
+
+Direct connected GitHub reads of all **23 work page index.html** files found **no robots noindex meta** on any of them, but **no rel=canonical** on any. Additionally, source files for root, athlete, filmmaker homepage, filmmaker services hub, About and Contact all lack self-canonical and show no robots noindex. These 29 are **static source checks** only, not individually rechecked live for HTML. The live noindex finding remains specifically verified on FPV, Editing and Colour Grading. This is a strong reason to implement canonical metadata in shared build/templates and validate deployment after approval, while avoiding mislabeling all 23 project pages as currently noindexed.
+
 ## Exact implementation proposal, not yet authorized
 
 1. **VERIFY INTENT**: Confirm these three are intended for public search rather than deliberately unindexed previews. They are existing public service URLs linked from the filmmaker service hub, not standalone V2/V3 preview routes, so this appears unintended.
