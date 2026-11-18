@@ -38,6 +38,7 @@ function createHarness(consent) {
 
 function makeLink(href) {
   return {
+    nodeType: 1,
     href: new URL(href, "https://bogdanpascal.com/filmmaker/").href,
     getAttribute(name) { return name === "href" ? href : null; },
     closest(selector) {
