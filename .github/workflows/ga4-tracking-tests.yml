@@ -1,4 +1,4 @@
-name: GA4 interaction tracking tests
+name: GA4 and Clarity privacy tracking tests
 
 on:
   pull_request:
@@ -6,6 +6,7 @@ on:
       - 'assets/analytics-consent.js'
       - 'assets/analytics-events.js'
       - 'tests/analytics-events.test.cjs'
+      - 'tests/analytics-consent.test.cjs'
       - '.github/workflows/ga4-tracking-tests.yml'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
@@ -19,9 +20,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      - name: Check syntax of both analytics scripts
+      - name: Check analytics scripts syntax
         run: |
           node --check assets/analytics-consent.js
           node --check assets/analytics-events.js
-      - name: Test consent and event behaviour
-        run: node --test tests/analytics-events.test.cjs
+      - name: Test consent, Clarity and event behaviour
+        run: node --test tests/analytics-events.test.cjs tests/analytics-consent.test.cjs
