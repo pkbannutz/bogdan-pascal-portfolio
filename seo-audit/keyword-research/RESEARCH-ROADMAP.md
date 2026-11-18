@@ -33,7 +33,7 @@ A service family can be marked **DONE** only after the report provides:
 | 6 | **Colour grading and commercial colourist** | **DONE (research, NOT APPLIED)**: 62 UK queries (39 numeric/23 null), four Trends horizons, 7 SERPs, verified ScreenSkills and freelancer names, live noindex blocker and case-credit needs. | [COLOUR-GRADING-SEO-RANKED.md](COLOUR-GRADING-SEO-RANKED.md) |
 | 7 | **Sound design / sound effects / SFX / audio post** | **DONE (research, NOT APPLIED)**: 64 UK queries (52 numeric/12 null), 4 UK Trends horizons, 7 partial SERPs, AMPS and ScreenSkills terminology, audio SFX versus VFX ambiguity, role-specific proof/UX and metadata recommendations. | [SOUND-DESIGN-SFX-SEO-RANKED.md](SOUND-DESIGN-SFX-SEO-RANKED.md) |
 | 8 | **Other directly verified specialties, e.g. underwater cinematography** | NOT STARTED; verify actual client offering and current scope. | `ADDITIONAL-VERIFIED-SERVICES-SEO-RANKED.md` |
-| 9 | **Whole-site final implementation strategy** | NOT STARTED; depends on completed chapters. | `WHOLE-SITE-SEO-PRIORITIZED-PLAN.md` |
+| 9 | **Whole-site final implementation strategy** | **COMPLETED INTEGRATED DRAFT (research only, 18 Nov 2026)**: synthesizes all seven required service chapters, live noindex blockers, accurate professional title/credit safeguards, page title/visible wording candidates, P0–P3 staged deployment plan and measurement requirements. **Not published**; optional family #8 remains unstudied. | [WHOLE-SITE-SEO-PRIORITIZED-PLAN.md](WHOLE-SITE-SEO-PRIORITIZED-PLAN.md) |
 
 ## Athlete inputs already collected and finalized
 
@@ -47,7 +47,7 @@ A service family can be marked **DONE** only after the report provides:
 
 **Athlete research finished 18 Nov 2026:** [ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md). Final recommendations distinguish active on-camera performance from specialist coordination. A prior independent [athlete naming study](../ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md) is preserved as source evidence. **DONE means the research chapter and proposals are complete, not that changes are published or that Google indexing/leads are verified.**
 
-**Next action:** Family #8 **Other directly verified specialties, starting with underwater cinematography**, only after checking the exact offered scope, UK demand and buyer/industry language. Then produce family #9 final whole-site priority plan. All public website changes remain pending explicit approval.
+**Next action:** Seven requested service families and their evidence-ranked final implementation draft are complete in documentation. Optional family #8 (underwater/action specialties) is still pending actual offering, job proof, keywords and market validation; do not claim complete quantitative research. Before any production SEO changes, user approval is required, followed by targeted P0 live noindex/canonical/sitemap/indexing changes and role-correct visible copy. **No public site edits have been made.**
 
 ## FPV research evidence and completion
 
@@ -92,3 +92,9 @@ Inspect existing page and industry roles -> classify buyer personas -> establish
 - Search Console / GA4 connection status not established. Actual query clicks, rankings and conversions remain unknown.
 - Do not create fake volume, scores, credentials, or Google rank claims; do not promote paid listings as organic.
 - Favor concise chat summaries and complete GitHub documentation, including date/geo/provider and any incomplete tasks.
+
+
+## Whole-site integrated synthesis (seven requested chapters)
+
+- [WHOLE-SITE-SEO-PRIORITIZED-PLAN.md](WHOLE-SITE-SEO-PRIORITIZED-PLAN.md): prioritized exact professional service names, page titles/visible copy, confirmed live indexing blockers, personal-credit and regulatory safeguards, and staged **approval-only** technical/UX/Search Console work. This is a documentation/decision draft and is **not applied**.
+- Family #8 other verified specialties stays open; no unsupported numeric estimates or service claims are inferred from the seven completed families.
