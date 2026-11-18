@@ -1,10 +1,10 @@
 # INDIVIDUAL SERVICE RESEARCH TRACKER: 30 CATEGORIES
 
-**Started:** 18 November 2026. **Progress:** **9 / 30 individually reviewed**. **Last individual completed:** **P09 Extreme Athlete / Action Sports Talent** (research complete, recommended as supporting market category rather than separate occupation).
+**Started:** 18 November 2026. **Progress:** **13 / 30 individually reviewed**. **Last individual completed:** **F03 Cinematographer** (research complete, recognized occupational synonym of F02 DoP, not a duplicate standalone service page).
 
 ## New operating rule from the user
 
-**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user explicitly requested P03-P05 together, followed by the **next four P06-P09**. Both batches are complete. **Do not proceed to P10 automatically.**
+**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user requested batches P03-P05, P06-P09, then **P10 plus F01-F03**. All three batches are complete. **Do not proceed to F04 automatically.**
 
 **Important:** The older seven **family-level** reports remain useful background. They are **not** a substitute for reviewing each of the original 30 categories separately. A family being marked DONE does **not** mark its individual service rows done.
 
@@ -23,11 +23,11 @@ Each individual report must document: precise job/service scope and reality chec
 | 7 | **P07** | Movement director | CORE | **DONE: NAMED ROLE PROOF TO VERIFY** | [Full P07 decision](individual/P07-MOVEMENT-DIRECTOR-RESEARCH-2026-11-18.md) |
 | 8 | **P08** | Action choreographer | CORE/adjacent | **DONE: SPECIALIST SCOPE PREFERRED** | [Full P08 decision](individual/P08-ACTION-CHOREOGRAPHER-RESEARCH-2026-11-18.md) |
 | 9 | **P09** | Extreme athlete / action sports talent | CORE/adjacent | **DONE: SUPPORTING CASTING CATEGORY, NOT SEPARATE SERVICE** | [Full P09 decision](individual/P09-EXTREME-ATHLETE-ACTION-SPORTS-TALENT-RESEARCH-2026-11-18.md) |
-| 10 | **P10** | Parkour performance / live show | CORE/adjacent | **WAITING for next instruction** |  |
-| 11 | **F01** | Commercial filmmaker | CORE | **NOT STARTED** |  |
-| 12 | **F02** | Director of Photography (DoP) | CORE | **NOT STARTED** |  |
-| 13 | **F03** | Cinematographer | CORE | **NOT STARTED** |  |
-| 14 | **F04** | Camera operator | CORE | **NOT STARTED** |  |
+| 10 | **P10** | Parkour performance / live show | CORE/adjacent | **DONE: LIVE PERFORMER CORE; FULL SHOW TEAM CONDITIONAL** | [Full P10 decision](individual/P10-PARKOUR-PERFORMANCE-LIVE-SHOW-RESEARCH-2026-11-18.md) |
+| 11 | **F01** | Commercial filmmaker | CORE | **DONE** | [Full F01 decision](individual/F01-COMMERCIAL-FILMMAKER-RESEARCH-2026-11-18.md) |
+| 12 | **F02** | Director of Photography (DoP) | CORE | **DONE: SHARED ROLE WITH F03** | [Full F02 decision](individual/F02-DIRECTOR-OF-PHOTOGRAPHY-DOP-RESEARCH-2026-11-18.md) |
+| 13 | **F03** | Cinematographer | CORE | **DONE: F02 OCCUPATIONAL SYNONYM, DIFFERENT SEARCH LANGUAGE** | [Full F03 decision](individual/F03-CINEMATOGRAPHER-RESEARCH-2026-11-18.md) |
+| 14 | **F04** | Camera operator | CORE | **WAITING for next instruction** |  |
 | 15 | **F05** | Gimbal operator | CORE | **NOT STARTED** |  |
 | 16 | **F06** | DJI Ronin operator | CORE | **NOT STARTED** |  |
 | 17 | **F07** | Action / movement camera specialist | CORE | **NOT STARTED** |  |
@@ -68,7 +68,7 @@ Each individual report must document: precise job/service scope and reality chec
 - **No production website edits.**
 - **Report:** [P02 Freerunning Performer](individual/P02-FREERUNNING-PERFORMER-RESEARCH-2026-11-18.md).
 
-**NEXT ONLY AFTER ANOTHER USER REQUEST: P10 Parkour Performance / Live Show.** P01-P09 each have dedicated individual research. P05 personal full-stunt-coordinator service remains unverified; P09 is supporting discovery/casting categorization, not an independent core service.
+**NEXT ONLY AFTER ANOTHER USER REQUEST: F04 Camera Operator.** P01-P10 and F01-F03 each have separate individual research; F02 DoP and F03 Cinematographer are overlapping names for one professional job and should share one service URL. P05 full-stunt-coordinator offer remains unverified; P09 remains supporting category.
 
 ## P03-P05 individual completion record (18 November 2026)
 
@@ -128,6 +128,43 @@ Each individual report must document: precise job/service scope and reality chec
 - **Research:** [P09 full report](individual/P09-EXTREME-ATHLETE-ACTION-SPORTS-TALENT-RESEARCH-2026-11-18.md).
 
 **Checkpoint:** **9 of 30 original categories individually researched**. Original family reports remain useful separate background, but do not count as remaining 21 category reviews. **Website unchanged**.
+
+## P10 and F01-F03 individual completion record (18 November 2026)
+
+### P10: Parkour Performance / Live Show
+- **Decision:** core directly bookable **individual LIVE parkour/freerunning performer**, with distinctive event buyers and substantial live project evidence. **Full team/show-package provision conditional**, not evidenced by prior ensemble performances alone.
+- **Best label:** **Parkour & Freerunning Live Performer** (person); **Parkour & Freerunning Live Performance** (service/section).
+- **Portfolio proof:** Plein Sport Milan Fashion Week, 2019 BRIT Awards/Greatest Showman, Romania's/Britain's Got Talent, live TV and events. These are performer contributions, not proof of personally producing, rigging or safety-supervising full live shows.
+- **Keyword evidence:** UK `parkour show` ~10/month, `parkour performance` ~10, `freerunning show` ~10; exact five P10 variants unknown; `stunt show` ~110 is a different broader market. Do not add near-synonyms or equate with qualified bookings.
+- **Competitors:** Team Kinetix, Scarlett Entertainment freerunning team, Parkour Experiences, Movement Management and stage production suppliers. Original search-provider positions were too noisy to certify rankings.
+- **Site recommendation:** create a visible live-performance evidence/booking pathway within existing athlete profile, with actual solo/team logistics clearly scoped; no new page by default.
+- [Full P10 report](individual/P10-PARKOUR-PERFORMANCE-LIVE-SHOW-RESEARCH-2026-11-18.md).
+
+### F01: Commercial Filmmaker
+- **Decision:** core personal professional identity and client-outcome service **Branded Films & Commercial Video Production**; do not falsely claim full-service agency/producer/director role on every project.
+- **Recommended personal name:** **Commercial Filmmaker & Cinematographer**, alternative **Freelance Commercial Filmmaker**.
+- **First-party proof:** 23 film portfolio items including TUI Romania, Yutaka, Therme, Speedo, Renais etc. Direct `DoP` is common role, `Renais` personal Director+DoP, `GeoDomeX` Co-DoP; `Mojo Hair` personal post-only, `Mojo Skincare` personal camera role unverified; `Ffern` and `This Is an Ode` spec ads.
+- **UK search:** `commercial filmmaker` ~10/month, `commercial videographer` ~110, `commercial video production` ~90, `branded video production` ~50, `video production company` ~590 but company-intent mismatches true solo professional. No provider revenue or real lead estimates.
+- **Site:** existing `/filmmaker/` is best central F01 home. Improve project-specific real role text, scoped brand-film CTA and internal services links; no automatic duplicate general service page.
+- [Full F01 report](individual/F01-COMMERCIAL-FILMMAKER-RESEARCH-2026-11-18.md).
+
+### F02: Director of Photography (DoP)
+- **Decision:** strong CORE role with numerous personally credited DoP projects and real `/filmmaker/services/dop/` section. **Same professional job as F03 Cinematographer** in UK ScreenSkills terminology, with different search phrases.
+- **Professional name:** **Director of Photography (DoP)**; alternative `Cinematographer`.
+- **UK estimated search demand:** `director of photography` ~480/month, `director of photography for hire` ~10, `freelance director of photography` ~10; broad `cinematographer` ~6,600 (mostly informational). Near-identical role queries not additive.
+- **Project proof:** TUI, Yutaka, Therme, Speedo, Particle, Thorpe Park, Renais, specific co-DoP GeoDomeX. Do not mislabel Simon Rowling's role on Mojo Hair/Skincare, or turn spec ads into commissioned clients.
+- **Site:** existing DoP page already has direct service copy, Sony FX3/DJI RS3 Pro camera approach and `DISCUSS YOUR SHOOT`; candidate title/role line can add `Cinematographer`; verify live canonical/indexing and project-specific links first.
+- [Full F02 report](individual/F02-DIRECTOR-OF-PHOTOGRAPHY-DOP-RESEARCH-2026-11-18.md).
+
+### F03: Cinematographer
+- **Decision:** CORE professional **identity and keyword research cluster**, but **occupational synonym of F02**, not separate independent commercial service.
+- **Recommended combined name:** **Cinematographer & Director of Photography**. One relevant canonical F02/F03 URL `/filmmaker/services/dop/` rather than near-duplicate new `/cinematographer/`.
+- **UK demand:** `cinematographer` ~6,600/month (mostly informational), `freelance cinematographer` ~20, `cinematographer for hire` ~10, `commercial cinematographer` ~10, `music video cinematographer` ~10; F02 `director of photography` ~480. Broad differences **do not establish different services or 13.75× better bookings**.
+- **Authority:** ScreenSkills and UK National Careers Service explicitly describe Cinematographer as alternate name for DoP; the British Society of Cinematographers likewise uses both. A single film professional often uses both terms. F04 Camera Operator is a distinct production role and awaits its own review.
+- **Site:** add role noun and accurate film context to existing DoP landing where useful, with self-canonical/index checks and proper case links; never add a doorway duplicate just for 6,600 search estimate.
+- [Full F03 report](individual/F03-CINEMATOGRAPHER-RESEARCH-2026-11-18.md).
+
+**Checkpoint: 13 of 30 individually researched, 17 not yet.** P10 is not a guaranteed full team show package; F03 is a documented **search/terminology category, not separate headcount or occupation**. No website code, SEO or live pages were edited.
 
 ## Background source inventory
 
