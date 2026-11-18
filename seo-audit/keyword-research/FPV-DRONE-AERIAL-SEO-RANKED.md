@@ -4,7 +4,7 @@
 
 **This is service family 2 of the [roadmap](RESEARCH-ROADMAP.md)**, following [completed athlete research](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md). No HTML/CSS/JS, deployment configuration, public metadata or images changed.
 
-> **CRITICAL LIVE FINDING ADDED 18 NOV 2026:** Independent fresh rawHtml fetch confirmed the public FPV service URL returns HTTP 200 but contains robots `noindex,nofollow`. This is a direct indexing obstacle for the service and more urgent than any keyword change if the page is intended to rank. It also lacks a self canonical. See [verified full blocker audit](LIVE-INDEXING-BLOCKERS-2026-11-18.md). **Research only, no public source changes made.**
+> **UPDATED LIVE FPV RECHECK, 18 NOV 2026, superseding earlier noindex warning:** A newer maxAge:0 raw HTML scrape returned HTTP 200 and robots **`index, follow`**, without an HTML self-canonical. The original earlier `noindex,nofollow` observation is **historical, not current**. GSC indexing/canonical and HTTP `X-Robots-Tag` remain unverified. This correction documents observations only, **no public website changes performed by research**. See [live directive audit with recheck](LIVE-INDEXING-BLOCKERS-2026-11-18.md) and [individual F08 study](individual/F08-FPV-DRONE-FILMING-RESEARCH-2026-11-18.md).
 
 ## Executive decision
 
