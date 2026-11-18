@@ -1,5 +1,8 @@
 # Competitor search keyword map
 
+> **Important research standard:** For any keyword recommendations, first read [RESEARCH-DECISION-PRINCIPLES.md](RESEARCH-DECISION-PRINCIPLES.md). The AI must prioritize industry-recognized service names, honest hireability and actual hiring intent over the user's initial suggested SEO tactic or largest raw search volume. The completed athlete study is in [ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md](ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md). The other service families are not yet researched to that quantitative depth.
+
+
 **Date:** 18 November 2026
 **Primary market:** United Kingdom, English-language search, Google desktop (repeat for Romania and mobile later if useful)
 **Scope:** 30 separate search-intent categories; a primary search query and semantic variants for each. Services described as `Adjacent` are research keywords, not an assertion that Bogdan is qualified, currently offering, or advertising those exact regulated roles.
