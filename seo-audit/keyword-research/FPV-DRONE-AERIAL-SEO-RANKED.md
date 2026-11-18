@@ -4,6 +4,8 @@
 
 **This is service family 2 of the [roadmap](RESEARCH-ROADMAP.md)**, following [completed athlete research](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md). No HTML/CSS/JS, deployment configuration, public metadata or images changed.
 
+> **CRITICAL LIVE FINDING ADDED 18 NOV 2026:** Independent fresh rawHtml fetch confirmed the public FPV service URL returns HTTP 200 but contains robots `noindex,nofollow`. This is a direct indexing obstacle for the service and more urgent than any keyword change if the page is intended to rank. It also lacks a self canonical. See [verified full blocker audit](LIVE-INDEXING-BLOCKERS-2026-11-18.md). **Research only, no public source changes made.**
+
 ## Executive decision
 
 **Lead with “FPV Drone Pilot” and “Aerial Cinematography” as complementary, distinct production capabilities.** Keep one coherent existing service page rather than separate duplicate synonym pages. Human service labels should serve film, advertising and branded-content clients rather than chasing broad real-estate, surveying, hobby or drone training searches.
