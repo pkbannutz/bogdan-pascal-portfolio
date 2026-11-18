@@ -46,6 +46,9 @@ jobs:
       - name: Generate and validate sitemap
         run: python3 .github/scripts/generate_sitemap.py _site
 
+      - name: Enable consent-based Google Analytics on public pages
+        run: python3 .github/scripts/inject_analytics.py _site
+
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
