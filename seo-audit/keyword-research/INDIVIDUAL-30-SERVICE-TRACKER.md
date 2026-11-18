@@ -1,10 +1,10 @@
 # INDIVIDUAL SERVICE RESEARCH TRACKER: 30 CATEGORIES
 
-**Started:** 18 November 2026. **Progress:** **21 / 30 individually reviewed**. **Last individual completed:** **F11 Underwater Cinematography** (individual qualitative research complete; specific personal commercial underwater role and current certification **NOT VERIFIED**, fresh underwater search-volume measurements unavailable).
+**Started:** 18 November 2026. **Progress:** **26 / 30 individually reviewed**. **Last individual completed:** **F16 Sound Design** (individual UK market/role and website research complete; project-specific personal sound credits require verification).
 
 ## New operating rule from the user
 
-**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user requested P03-P05, P06-P09, P10+F01-F03, F04-F07, then **F08-F11 in depth** with extra stunt-camera synonym research. All five batches are now individually reported. **Do not proceed to F12 automatically.**
+**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user requested P03-P05, P06-P09, P10+F01-F03, F04-F07, F08-F11 with stunt-camera synonyms, then **F12-F16 in depth**. All six requested batches are now separately researched. **Do not proceed to F17 automatically.**
 
 **Important:** The older seven **family-level** reports remain useful background. They are **not** a substitute for reviewing each of the original 30 categories separately. A family being marked DONE does **not** mark its individual service rows done.
 
@@ -35,12 +35,12 @@ Each individual report must document: precise job/service scope and reality chec
 | 19 | **F09** | Commercial drone operator | CORE | **DONE: PRODUCTION PILOT/OPERATOR ROLE** | [Full F09 decision](individual/F09-COMMERCIAL-DRONE-OPERATOR-RESEARCH-2026-11-18.md) |
 | 20 | **F10** | Aerial cinematography | CORE | **DONE: CINEMATIC OUTCOME, SAME DRONE PAGE AS F08-F09** | [Full F10 decision](individual/F10-AERIAL-CINEMATOGRAPHY-RESEARCH-2026-11-18.md) |
 | 21 | **F11** | Underwater cinematography | SCOPE TO VERIFY | **DONE: RESEARCH / QUALIFICATION GATED; NUMERIC UK DEMAND UNAVAILABLE** | [Full F11 decision](individual/F11-UNDERWATER-CINEMATOGRAPHY-RESEARCH-2026-11-18.md) |
-| 22 | **F12** | Video editing | CORE | **WAITING for next instruction** |  |
-| 23 | **F13** | Film / narrative editing | CORE | **NOT STARTED** |  |
-| 24 | **F14** | Colour grading service | CORE | **NOT STARTED** |  |
-| 25 | **F15** | Colourist | CORE | **NOT STARTED** |  |
-| 26 | **F16** | Sound design | CORE | **NOT STARTED** |  |
-| 27 | **F17** | SFX / sound effects | CORE | **NOT STARTED** |  |
+| 22 | **F12** | Video editing | CORE | **DONE: COMMERCIAL VIDEO EDITING CORE, PERSONAL EDIT CREDITS TO CHECK** | [Full F12 decision](individual/F12-VIDEO-EDITING-RESEARCH-2026-11-18.md) |
+| 23 | **F13** | Film / narrative editing | CORE | **DONE: FILM EDITOR BUYER PATH, PERSONAL EDIT CREDITS TO VERIFY** | [Full F13 decision](individual/F13-FILM-NARRATIVE-EDITING-RESEARCH-2026-11-18.md) |
+| 24 | **F14** | Colour grading service | CORE | **DONE: CORE COLOUR GRADING & LOOK DEVELOPMENT SERVICE** | [Full F14 decision](individual/F14-COLOUR-GRADING-SERVICE-RESEARCH-2026-11-18.md) |
+| 25 | **F15** | Colourist | CORE | **DONE: PROFESSIONAL ROLE PROVIDING F14 SERVICE** | [Full F15 decision](individual/F15-COLOURIST-RESEARCH-2026-11-18.md) |
+| 26 | **F16** | Sound design | CORE | **DONE: CORE SOUND DESIGN, PROJECT ROLE PROOF TO VERIFY** | [Full F16 decision](individual/F16-SOUND-DESIGN-RESEARCH-2026-11-18.md) |
+| 27 | **F17** | SFX / sound effects | CORE | **WAITING for next instruction** |  |
 | 28 | **F18** | Film post-production | CORE | **NOT STARTED** |  |
 | 29 | **F19** | Music video filmmaking | CORE | **NOT STARTED** |  |
 | 30 | **F20** | Independent film production | CORE/adjacent | **NOT STARTED** |  |
@@ -68,7 +68,7 @@ Each individual report must document: precise job/service scope and reality chec
 - **No production website edits.**
 - **Report:** [P02 Freerunning Performer](individual/P02-FREERUNNING-PERFORMER-RESEARCH-2026-11-18.md).
 
-**NEXT ONLY AFTER ANOTHER USER REQUEST: F12 Video Editing.** P01-P10 and F01-F11 each have individual reports. F07 now includes **extensive stunt-camera lexical variants** from `stunt camera` to `stunt camera crew` and `stunt cameraman`, separated by personal-operator vs team/hardware intent. F08-F10 are overlapping but distinct drone production buying tasks. F11 full commercial underwater qualification/role remains unverified and its fresh UK monthly demand was not obtained. No public website changes.
+**NEXT ONLY AFTER ANOTHER USER REQUEST: F17 SFX / Sound Effects.** P01-P10 and F01-F16 each have independent reports. F12/F13 are different editing buyer briefs using one main editing page; F14 Colour Grading Service and F15 Colourist are the result and professional title for the same craft; F16 Sound Design is its own screen audio craft with F17 effects-only specialty still pending. The new GitHub editing and grading source contains `index, follow` but independently current live page directives and actual GSC index status remain unverified. F07's requested stunt camera synonym expansion is documented. No published website changes.
 
 ## P03-P05 individual completion record (18 November 2026)
 
@@ -235,6 +235,46 @@ Each individual report must document: precise job/service scope and reality chec
 - [Full F11 research](individual/F11-UNDERWATER-CINEMATOGRAPHY-RESEARCH-2026-11-18.md).
 
 **Checkpoint: 21 / 30 individually researched. Nine remain F12-F20. Exactly four new individual reports saved for F08-F11, plus F07 keyword expansion. No live website changes.**
+
+## F12-F16 individual completion record (18 November 2026)
+
+### F12: Video Editing
+- **Verdict:** core commercially bookable `Video Editing & Post-Production`, best person `Commercial Video Editor`. Real brand/agency cut, short-form versions and delivery buyer paths. Shares existing `/filmmaker/services/editing/` with F13; no duplicate generic editing URLs.
+- **UK UK/English historic keyword estimates:** `freelance video editor` ~390/month, `video editor for hire` ~210, `video editing services` ~170, `commercial video editor` ~10 (KD53), `social media video editor` ~90. `video editor` ~14,800 is **mainly app/software/informational**, not thousands of premium client briefs. Close variant `video editing freelancer` shares 390 monthly history; do not sum.
+- **Existing website:** interactive eight-film gallery with six-video viewing room, GeoDomeX frame study, real RawPot widescreen/portrait outputs and an accessible creative cut/delivery process. **Important proof caveat:** individual personal editing credit not confirmed for all showcased films; many project pages attribute DoP only.
+- **Index:** newly fetched GitHub source `index, follow`, no self canonical. An earlier *live* noindex observation is historical. **No newer live raw response/GSC recheck for editing** in this batch, so actual Google index state not claimed.
+- **Recommendation:** preserve `THE ART OF THE CUT.`; add one visible commercial video editor role cue and verified personally edited case studies; common CTA.
+- [Full F12 standalone report](individual/F12-VIDEO-EDITING-RESEARCH-2026-11-18.md).
+
+### F13: Film / Narrative Editing
+- **Verdict:** distinct director/film/documentary **buyer task** but performed within film picture-editor craft; best human name **Film Editor**, subtitle `Film & Documentary Editing` or `Story-Led Picture Editing`. Same editing URL as F12 until substantial unique credits/film cases warrant otherwise.
+- **UK exact keyword estimates:** `film editor` ~590/month (mostly informational), `freelance film editor` ~10, `film editor for hire` ~10, `short film editor` ~10 (KD45), `documentary film editor` ~10 (KD43). Four original wordings unmeasured. **Don't label Wicked stunt performer credit or a DoP credit as film Editor**.
+- **Market evidence:** ScreenSkills film and TV editor role, actual documentary and narrative freelance competitors Shane Cooke, Tristan Martin, Tom Laws-Brown, Dan Robinson, JP Davidson, Romany Rowell. Role-specific edit credits and scenes differentiate film specialists.
+- **Recommended first step:** personally edited fiction/doc film evidence and director confirmation, then two clear hire choices `Commercial/Brand Edit` and `Film/Documentary Edit`, not overlapping landing-page SEO.
+- [Full F13 standalone report](individual/F13-FILM-NARRATIVE-EDITING-RESEARCH-2026-11-18.md).
+
+### F14: Colour Grading Service
+- **Verdict:** CORE genuine client-result service. Best **Colour Grading for Film & Commercials**; supporting `Colour Grading & Look Development`; shares `/filmmaker/services/colour-grading/` with F15 professional.
+- **UK keyword estimates:** `colour grading services` ~10/month, `commercial colour grading` ~10, `video colour grading` ~90, `film colour grading` ~90, generic `colour grading` ~1,900, `colour correction` ~8,100 but almost entirely mixed tutorials/photo/software context. UK `colour`/US `color` frequently have identical monthly histories **NOT additive**.
+- **Website:** currently states all six showcased GeoDomeX, Therme, Dyla, Speedo, Particle, Dear Leo projects colour graded personally, with finished-frame triptychs/contact sheet. These are **first-party assertions** and should be reconciled to actual per-project credits before structured data. **Mojo Hair explicitly credits Bogdan Colour Grading & Graphics, Simon Rowling DoP**, valuable distinct proof.
+- **Technical caveat:** finished film stills are **not a true ungraded-vs-graded comparison**, and equipment list does not prove calibrated high-end reference suite or Dolby mastering. Show actual original/approved grade only where available.
+- [Full F14 standalone report](individual/F14-COLOUR-GRADING-SERVICE-RESEARCH-2026-11-18.md).
+
+### F15: Colourist
+- **Verdict:** Recognised **Film & Commercial Colourist** profession, same underlying craft/outcome as F14. UK professional `Colourist`, not `Colorist` US spelling as separate site.
+- **UK keyword estimates:** `freelance colourist` ~20/month (KD36), `film colourist` ~50, `commercial colorist` ~10, `colourist london` ~30 (London location must be truthful), `hire a colourist` unknown. `colour grader` ~1,900 and `color grader` ~1,900 with identical history, general/mixed intent; `color correction` ~8,100 not qualified hiring.
+- **Industry proof:** ScreenSkills Colourist role; individual Jay Rogers, Craig Schwartz and Kenny Gibb and larger grading-suite/studio comparison. No invented Resolve training certificate, HDR reference facility, film awards or role on every source film.
+- **Site:** one strong grading page, small visible `FILM & COMMERCIAL COLOURIST` phrase, actual role-verified film examples and shared grade enquiry. Do not create F14/F15 doorway duplicates.
+- [Full F15 standalone report](individual/F15-COLOURIST-RESEARCH-2026-11-18.md).
+
+### F16: Sound Design
+- **Verdict:** CORE identifiable screen sound craft, best individual role **Film & Commercial Sound Designer**, service **Sound Design & Audio Post-Production**. F17 Sound Effects/SFX is adjacent distinct specialism, independently **not yet reviewed**; do not mark complete here.
+- **UK keyword estimates:** `sound designer` ~720/month, `film sound designer` ~20, `freelance sound designer` ~10 (KD43), `sound designer for hire` ~10, `sound design services` ~10, `commercial sound design` ~10. Broad `sound effects` ~22,200 is **mostly downloads and media files**, not independent sound design client leads.
+- **Site:** four layers (voice, Foley/SFX, atmosphere, mix), dialogue/ambience/impact examples, three selected films GeoDomeX, Ffern (spec ad), Speedo and actual GeoDomeX customer quote. Site explicitly says project role varies, so **don't attribute all displayed soundtracks or full mixed credits to Bogdan** without precise verification. No proof of Foley recording stage, theatrical multichannel mix, ADR studio or supervising sound editor rank.
+- **Competition:** genuine UK professionals Martin Cantwell, Rob Ackerman Diaz, Matt Cane/Final Round, Richard Spooner and AMPS/ScreenSkills. One main `/filmmaker/services/sound-design/` page with honest case-specific audio A/B and shared contact.
+- [Full F16 standalone report](individual/F16-SOUND-DESIGN-RESEARCH-2026-11-18.md).
+
+**Checkpoint: 26 of 30 original categories individually researched. Remaining ONLY F17 SFX, F18 Film Post-Production, F19 Music Video Filmmaking and F20 Independent Film Production. Exactly five new reports F12-F16 saved. Public website untouched.**
 
 ## Background source inventory
 
