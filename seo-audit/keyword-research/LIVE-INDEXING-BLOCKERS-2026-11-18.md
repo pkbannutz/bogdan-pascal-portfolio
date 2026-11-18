@@ -1,8 +1,10 @@
-# URGENT verified live indexing blockers on filmmaker service pages
+# Live indexing directives on filmmaker service pages: historical observations and latest FPV recheck
 
 **Check date:** 18 November 2026. **Status:** EVIDENCED via live `rawHtml` HTTP 200 responses, plus corresponding GitHub source. **Scope:** five public service URLs. **Website changes:** NONE.
 
-## Confirmed: three of the five active service pages explicitly exclude themselves from Google indexing
+> **LATEST FPV RECHECK, 18 NOVEMBER 2026 (newer than initial table below):** A fresh **maxAge:0 live raw HTML** request of `https://bogdanpascal.com/filmmaker/services/fpv/` returned HTTP **200**, robots **`<meta name="robots" content="index, follow">`**, **no HTML self-canonical**. **The earlier FPV `noindex,nofollow` finding shown below has been superseded and must NOT be reported as current.** This is an observational change, not an edit by the research agent. Actual Google index/selected canonical, response `X-Robots-Tag` and crawler history remain unverified. Editing and Colour Grading service pages were **not** independently rechecked in this later pass, so their earlier status is historical, not claimed refreshed. See [F08 individual current audit](individual/F08-FPV-DRONE-FILMING-RESEARCH-2026-11-18.md).
+
+## Historical earlier snapshot: three of five service pages served noindex at the time
 
 | Live public URL | HTTP | Live HTML robots meta | Canonical |
 |---|---:|---|---|
@@ -14,7 +16,7 @@
 
 **Source method:** Fresh Firecrawl `rawHtml` fetch (`maxAge:0`) of each canonical live service URL, inspecting HTTP status and raw `<head>` meta-robots/canonical elements; also direct GitHub repository `filmmaker/services/{fpv,editing,colour-grading,sound-design,dop}/index.html` inspection. On an earlier `html` processed output test, the HTML was transformed and appeared to lack the directives. That was an **extraction artefact**, corrected with `rawHtml`.
 
-**Impact:** A `noindex` tag explicitly instructs compliant search engines not to include the page in search results; `nofollow` tells them not to follow links from it. Thus keyword optimization alone cannot make these three URLs effective searchable landing pages while they carry the live directives. Lack of a self-referencing canonical does *not* itself block indexing, but is a missed canonicalization signal and should be corrected with the rest of site-wide SEO.
+**Impact of historical directives (for FPV now superseded; current editing/colour requires fresh check):** A `noindex` tag explicitly instructs compliant search engines not to include the page in search results; `nofollow` tells them not to follow links from it. Thus keyword optimization alone cannot make these three URLs effective searchable landing pages while they carry the live directives. Lack of a self-referencing canonical does *not* itself block indexing, but is a missed canonicalization signal and should be corrected with the rest of site-wide SEO.
 
 **Urgency:** **P0** at the top of the later approved implementation backlog. The goal is targeted qualified production bookings from these actual service pages. These noindex tags are a direct conflict with that goal, **assuming those pages are intended to be public and indexable**, as the service menu and user SEO goals indicate.
 
