@@ -215,3 +215,61 @@ Only include film/stunt team terms where actual role and working arrangement are
 - https://www.screenskills.com/skills-checklists/scripted-film-and-tv/camera-department/camera-operator-skills/
 
 **END OF REQUESTED BATCH. Next F08 FPV Drone Filming only on future user instruction.**
+
+## 12. Follow-up amendment: stunt-camera search phrase expansion (18 November 2026)
+
+**Added following explicit owner instruction to include `stunt camera`, `stunt camera crew`, `stunt camera man` and adjacent lexical variants.** This updates **F07's keyword/intent research**, not its professional credit or the other 30-category progress count. **Research only, no published changes.**
+
+### A. Exact words are not interchangeable search or business intents
+
+The words the owner named refer to at least four distinct real searches:
+1. **Hire a person** to operate a camera while filming stunt/action sequences.
+2. **Hire a specialist team** who supplies multiple crew, sometimes grip/rigs/spotters/stunt camera support.
+3. **Hire cameras or rigs** (e.g. GoPro `action camera`, crash cam) rather than hire a filming professional.
+4. **Find a producer, film example or career information** about action/stunt camerawork.
+
+A truthful personal site should prioritise the first, describe actual collaborative support where arranged, and avoid selling a company/department or devices not provided.
+
+### B. Broad expanded keyword map, grouped by *search intent*, not stuffed as unrelated synonyms
+
+| Cluster | Exact candidate keywords and keyphrases | Buyer meaning and natural use | Recommended priority / proof gate | UK exact volume measured? |
+|---|---|---|---|---|
+| **Recognised individual role** | `stunt camera operator`; `action camera operator`; `action & stunt camera operator`; `stunt cameraman`; `stunt camera man`; `stunt cameraperson`; `stunt camera person` | Film producer looking for an operator to work around action. `stunt cameraman` is colloquial and gendered; `stunt camera man` uncommon spacing but searchers might type it | **HIGH**: actual title `Camera Operator`, supported in text by `Action & Stunt Camera Operator` if **own stunt-camera shots/roles are validated** | **`stunt camera operator` ~10/month** from saved 61-term UK dataset; **ALL other exact forms UNKNOWN** |
+| **Stunt camera as topic** | `stunt camera`; `stunt camera filming`; `stunt camera work`; `stunt camerawork`; `stunt cinematography`; `action stunt cinematography`; `stunt camera footage` | Mixed hardware, film craft, rigs, creative coverage and informational browsing | **MEDIUM**, when paired with truthful `stunt camera work for film` case studies; `stunt camera` alone is **highly ambiguous** | **UNKNOWN for all**; `action cinematography` nearby but different exact query ~10 |
+| **Hire one specialist** | `stunt camera operator for hire`; `hire stunt camera operator`; `stunt cameraman for hire`; `stunt camera operator UK`; `freelance stunt camera operator`; `action camera operator for film`; `stunt filming camera operator`; `action sequence camera operator` | Higher conceptual buying intent, low-volume niche, production location matters | **HIGH** for FAQ, visible role + CTA **once real camera footage proven**; never claim exact search numbers | **UNKNOWN for every exact variant** |
+| **Team/department** | `stunt camera crew`; `stunt camera team`; `action camera crew`; `stunt camera unit`; `action filming crew`; `stunt filming crew`; `stunt camera operators`; `stunt unit cameraman`; `stunt camera department` | May mean multiple operators, focus puller, AC, grip, spotter and equipment/stunt-team integration | **SUPPORTING MARKET RESEARCH, NOT personal one-person service title.** If a genuine pre-arranged crew exists later, verify team, insurance, contracting, camera roles and safety leads first | **UNKNOWN for all** |
+| **Action filmmaking service** | `stunt filming`; `stunt video production`; `action cinematography`; `stunt sequence filming`; `action scene camera operator`; `action scene filming`; `stunt sequence cinematographer`; `action filmmaking camera crew`; `high-speed action filming` | Producers buying *results* rather than a narrow credited role; some expect complete production | **HIGH** when actual film action is shown, but **do not imply being Stunt Coordinator, Action Director or full production company** | **`action cinematography` ~10/month** archived; other exact strings UNKNOWN |
+| **Parkour movement niche** | `parkour camera operator`; `parkour cameraman`; `parkour camera crew`; `parkour filmmaker`; `freerunning filmmaker`; `parkour filming`; `parkour chase camera`; `parkour action cameraman`; `freerunning camera operator`; `stunt-aware camera operator`; `athlete tracking camera operator` | Bogdan's genuine movement/film crossover, high product fit but mostly unmeasured | **TOP real differentiator** if actual personally-filmed action sequence is identified; label actual operator/DoP contribution | **UNKNOWN for all exact forms** |
+| **Technique and platform** | `stunt tracking shot`; `stunt follow camera`; `action tracking shot`; `parkour tracking shot`; `gimbal stunt camera`; `dynamic handheld stunt camera`; `stunt POV filming`; `stunt camera stabiliser`; `stunt camera rig`; `action camera gimbal`; `high-speed camera operator` | Could be camera operator skill, camera hardware, fast action POV or rental rig | **Use as precise case captions**, not separate job titles. Claims about gimbal/POV/high-speed kit depend on real operator footage and actual hardware | **UNKNOWN**, except related **`tracking shot cinematography` ~10/month**, different exact phrase |
+| **Different services, exclude** | `stunt coordinator`; `stunt rigging team`; `precision stunt driver camera`; `stunt crash cam rental`; `Steadicam stunt operator`; `stunt camera car`; `action camera rental`; `GoPro action camera`; `stunt camera vehicle` | Higher-risk rigs, vehicle logistics, separate devices/safety duties or generic product shopping | **DO NOT TARGET** as offered service without actual experience, personnel, equipment, risk/production authority | Volume not relevant to unsupported role |
+
+**UK/US spelling variants and naturalness:**
+- `camera operator`, `cameraman`, `cameraperson`, `camera person`: terms can be queries for a human professional; **Camera Operator** is the clearest modern official role.
+- `stunt cameraman` (one word) is a plausible colloquial professional search; `stunt camera man` (two words) is less natural. Index both as **research variants only**. Don't mechanically put both in a public sentence or exact-match hidden tag bank.
+- `stabilised` versus `stabilized`, `filming` versus `videography`, `camera work` versus `camerawork` can be understood contextually by search engines; **do not make a page for each orthography**.
+- `stunt camera` alone can refer to stunt crash cameras, GoPros, `action cameras` for sale, behind-the-scenes or a camera used to shoot stunts. **No presumption of qualified purchase intent.**
+
+### C. Independent validation of the owner-requested terminology
+
+**[Stunt Camera Crew, official service/portfolio](https://www.stuntcameracrew.com/)** uses exact **`Stunt Camera Crew`** as a real **team/business name** and `Action Sports Camera Operator` positioning in its site metadata. [Their About page](https://www.stuntcameracrew.com/about/) describes a creative team dedicated to athletic action cinematography and camera/support technology. This establishes **real industry use of a company/team-oriented phrase**, not a universal UK crew certification.
+
+**[ONEblademag, Stunt Camera Crew interview](https://www.oneblademag.com/spotlight/stunt-camera-crew/)** independently describes parkour/inline-skating athletes who combined movement expertise with camera work to form an **action-filming business for hire**. An editorial profile from 2018 is **historical evidence** of real use; don't assume the current team structure or revenue from the old article.
+
+**[Gimbalninja](https://gimbalninja.com/)** markets **`Action & Stunt Camera Operator`** as an individual/crew-specialist role, specifically grounded in parkour/action sports. This is strong evidence to use that phrase in truthful scope. Gimbalninja's camera systems/Steadicam and commercial credits belong to them, **not Bogdan**.
+
+**[DJI parkour film case](https://viewpoints.dji.com/blog/dji-ronin-4d-and-parkour-movement-and-filmmaking-reborn)** refers to `Stunt Camera Crew` in an actual technical action filming context; it must not be construed as Bogdan's own footage or Ronin 4D capability.
+
+**Documented industry use has been verified, but:** this does NOT independently measure the UK Google search volume of `stunt camera crew`, `stunt cameraman` or `stunt camera`; no indexed term volume should be invented or estimated by analogy. The only measured close phrase in the archived dataset remains `stunt camera operator` **~10 UK searches/month**. A fresh tool-backed provider measurement of the exact expanded strings and a UK-location true SERP check would be needed before ranking them by numeric demand. Until then, the table's priorities are **professional/buyer-intent judgments, not verified monthly-volume ranks**.
+
+### D. Practical SEO decision and honest public copy
+
+**Lead:** `ACTION & MOVEMENT CAMERA OPERATOR` or `ACTION & STUNT CAMERA OPERATOR` **only after personal action-camera operation examples are verified**. This communicates a person. For a specialist case study, write `Stunt camera work for a fast parkour sequence, filmed under the production's appropriate stunt/safety direction` **only if that precise role and collaboration happened**.
+
+**A concise human-readable copy candidate:**
+> I film fast-moving parkour, freerunning and stunt action as a movement-aware camera operator, working with directors and stunt teams to plan controlled, repeatable camera moves. My background as a parkour and stunt performer helps me understand timing and athlete trajectories from the inside.
+
+This is a **proposal, not published copy**. `Stunt action` refers to type of footage, **not an unsupported personal Stunt Coordinator credit**. Do not present an on-screen performer project such as `Wicked` as a camera-operator credit. Current project **DoP** credit does not prove a separate booked stunt-camera job.
+
+**Where the variants should live if approved later:** one readable service section, an accurate short reel title and 1-2 captioned personally filmed project examples, plus a service enquiry. The company/team phrase `stunt camera crew` belongs in a **service capability FAQ** only if real collaborators can be assembled, otherwise not on the page. **Do not publish the full keyword table as visitor-facing SEO copy**, add a `meta keywords` tag, or create doorway pages for each phrase.
+
+**F07 original conclusion is unchanged:** specialty operator role and genuine movement differentiation, but still requires **shot-by-shot personal proof**, true current camera equipment details and separate producer/team safety arrangements. This amendment also informs F08-F10 only when a real **stunt-drone camera unit** is offered, not by assuming FPV equals a production-wide stunt camera crew.
