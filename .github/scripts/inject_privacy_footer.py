@@ -79,7 +79,7 @@ def add_in_existing_footer(html: str, route: str) -> str:
     # (colour grading, editing, sound design and similar). Preserve their
     # layout by nesting the new link inside their existing attribution span.
     footers = list(re.finditer(
-        r'<footer\\b[^>]*>.*?</footer>', html, re.DOTALL | re.IGNORECASE
+        r'<footer\b[^>]*>.*?</footer>', html, re.DOTALL | re.IGNORECASE
     ))
     if footers:
         match = footers[-1]
