@@ -605,28 +605,21 @@
       ],
       "pattern": "talent agency|talent representation|athlete management|movement talent agency",
       "status": "evidenced",
-      "providerCount": 3,
+      "providerCount": 2,
       "directoryCount": 1,
       "evidence": [
         {
-          "site": "https://movementmanagement.co.uk/hire-parkour-performer",
+          "site": "https://movementmanagement.co.uk/",
           "host": "movementmanagement.co.uk",
-          "label": "what is a movement talent agency",
-          "link": "https://movementmanagement.co.uk/what-is-a-movement-talent-agency",
+          "label": "Movement and parkour talent representation",
+          "link": "https://movementmanagement.co.uk/",
           "kind": "provider"
         },
         {
-          "site": "https://movementproductionsuk.com/",
-          "host": "movementproductionsuk.com",
-          "label": "parkour talent agency",
-          "link": "https://movementmanagement.co.uk",
-          "kind": "provider"
-        },
-        {
-          "site": "https://sohoeditors.com/?srsltid=AYCX9vK6OWH4kuBqy5FnkKSt-ok43otizQ9lpD5znw11siXkoTndtXih",
-          "host": "sohoeditors.com",
-          "label": "London Talent Agency",
-          "link": "https://sohoeditors.com/contact/london-talent-agency",
+          "site": "https://rocketsports.co.uk/",
+          "host": "rocketsports.co.uk",
+          "label": "Athlete management",
+          "link": "https://rocketsports.co.uk/",
           "kind": "provider"
         }
       ],
@@ -1492,7 +1485,7 @@
     {
       "id": "E36",
       "group": "Production",
-      "service": "Commercial still photography",
+      "service": "Photography services / commercial stills",
       "variants": [
         "advertising still photographer",
         "commercial photo production",
@@ -1502,35 +1495,21 @@
       ],
       "pattern": "commercial photograph|photography service|photograph",
       "status": "evidenced",
-      "providerCount": 33,
+      "providerCount": 2,
       "directoryCount": 3,
       "evidence": [
         {
-          "site": "https://scarlettentertainment.com/gb/categories/circus-entertainment/free-running-and-parkour",
-          "host": "scarlettentertainment.com",
-          "label": "Photo Booths and Photographers",
-          "link": "https://scarlettentertainment.com/gb/categories/event-design/photo-booths-and-photographers",
+          "site": "https://www.filmfolk.com/services/photography",
+          "host": "filmfolk.com",
+          "label": "Photography services",
+          "link": "https://www.filmfolk.com/services/photography",
           "kind": "provider"
         },
         {
-          "site": "https://www.contrabandevents.com/free-runners-parkour-performers/",
-          "host": "contrabandevents.com",
-          "label": "Paparazzi Photographers",
-          "link": "https://www.contrabandevents.com/paparazzi-photographers/",
-          "kind": "provider"
-        },
-        {
-          "site": "https://www.alivenetwork.com/bandsearch.asp?style=Street%20Entertainers",
-          "host": "alivenetwork.com",
-          "label": "Paparazzi Photographers",
-          "link": "https://www.alivenetwork.com/bandsearch.asp?style=Paparazzi%20Photographers",
-          "kind": "provider"
-        },
-        {
-          "site": "https://www.juliacharleseventmanagement.co.uk/entertainment/opening-shows/themed-stunt-show/",
-          "host": "juliacharleseventmanagement.co.uk",
-          "label": "Fake Paparazzi Photographers",
-          "link": "https://www.juliacharleseventmanagement.co.uk/entertainment/walkabout-entertainment/fake-paparazzi-photographers-leeds/",
+          "site": "https://www.filmfolk.com/services/freelance-photographer",
+          "host": "filmfolk.com",
+          "label": "Freelance photographer",
+          "link": "https://www.filmfolk.com/services/freelance-photographer",
           "kind": "provider"
         }
       ],
@@ -2120,25 +2099,11 @@
       ],
       "pattern": "producing|film producer|line production|production management",
       "status": "evidenced",
-      "providerCount": 3,
+      "providerCount": 1,
       "directoryCount": 0,
       "evidence": [
         {
-          "site": "https://theplace.org.uk/profile/benjamin-jonsson/",
-          "host": "theplace.org.uk",
-          "label": "Producing and Touring",
-          "link": "https://theplace.org.uk/work-with-us/producing-touring",
-          "kind": "provider"
-        },
-        {
-          "site": "https://lightningstrikeproductions.co.uk/drone-pilot-uk/",
-          "host": "lightningstrikeproductions.co.uk",
-          "label": "Producing 2D geo-referenced maps. 3D digital twins",
-          "link": "https://lightningstrikeproductions.co.uk/drone-mapping/",
-          "kind": "provider"
-        },
-        {
-          "site": "https://klaxon.studio/services/sound-design",
+          "site": "https://klaxon.studio/services/production-management",
           "host": "klaxon.studio",
           "label": "Production Management",
           "link": "https://klaxon.studio/services/production-management",
@@ -2919,28 +2884,21 @@
       ],
       "pattern": "audio mix|sound mix|mixing and mastering|audio master",
       "status": "evidenced",
-      "providerCount": 3,
+      "providerCount": 2,
       "directoryCount": 1,
       "evidence": [
         {
-          "site": "https://looptalent.co.uk/dop-agency-london/",
-          "host": "looptalent.co.uk",
-          "label": "Production Sound Mixers",
-          "link": "https://looptalent.co.uk/production-sound-mixers/",
-          "kind": "provider"
-        },
-        {
-          "site": "https://www.mediadoghire.com/new-dji-ronin-rs-5-in-stock-available-to-hire-now/",
-          "host": "mediadoghire.com",
-          "label": "Audio Mixers",
-          "link": "https://www.mediadoghire.com/audio-mixers",
-          "kind": "provider"
-        },
-        {
-          "site": "https://goldcrestfilms.com/post-production/",
+          "site": "https://goldcrestfilms.com/facility/sound-mixing-theatre-one/",
           "host": "goldcrestfilms.com",
-          "label": "Sound Mixing Theatre One",
+          "label": "Sound Mixing Theatre",
           "link": "https://goldcrestfilms.com/facility/sound-mixing-theatre-one/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://goldcrestfilms.com/post-production/services/",
+          "host": "goldcrestfilms.com",
+          "label": "Post-production sound services",
+          "link": "https://goldcrestfilms.com/post-production/services/",
           "kind": "provider"
         }
       ],
