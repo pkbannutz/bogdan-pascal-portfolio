@@ -1,12 +1,15 @@
-# Google-verified UK SERPs
+# Partial Google SERP source checks (diagnostic only)
 
-**Date:** 18 November 2026. **Country:** United Kingdom. **Language:** English. **Device:** Desktop. Google organic results from the DataForSEO SERP provider. Rank is organic rank, *not* editor selection. Sponsored entries listed only when the provider explicitly returned `paid` SERP items.
+**Date:** 18 November 2026. **Location:** United Kingdom. **Language:** English. **Device:** Desktop.
 
-**URL note:** The provider obfuscated some search links into Google `/goto` URLs. For those records, the website's actual domain was extracted from its displayed Google breadcrumb and linked at the domain root. This preserves the ranked website, but not the exact landing page. Never present opaque Google redirect links as an actual competitor URL.
+**Important limitation:** Google results are increasingly wrapped in `google.com/goto` links. The SERP provider returned rank names, but usable original destination URLs were not resolved for these recorded checks. Consequently, **this file is not a usable full top-10 website URL list**, and some queries returned fewer than ten results or no results. Do not treat a blank result as a zero-ranking finding. Paid ads were not identifiable in these returned items; do not assume there were no ads.
+
+**Use [COMPETITORS-ALL-30.md](COMPETITORS-ALL-30.md) for 300 clickable websites.** Those are from a ranked web search discovery service, not certified Google position data. Precise Google positions would require an accessible live Google SERP with resolved destination URLs.
 
 ## P03: Parkour coordinator / consultant
 
-Search: `parkour coordinator film TV UK`\nGoogle checked: 2026-11-18 09:35:26 +00:00
+Search: `parkour coordinator film TV UK`
+Google checked: 2026-11-18 09:35:26 +00:00
 
 1. Movement Management UK
 2. LinkedIn · Chima Akenzua
@@ -23,7 +26,8 @@ Sponsored extras: None identifiable in returned items. This does not establish t
 
 ## P05: Stunt coordinator
 
-Search: `stunt coordinator film UK`\nGoogle checked: 2026-11-18 09:35:30 +00:00
+Search: `stunt coordinator film UK`
+Google checked: 2026-11-18 09:35:30 +00:00
 
 1. go-talent.co.uk
 2. talentbooster.co.uk
@@ -40,7 +44,8 @@ Sponsored extras: None identifiable in returned items. This does not establish t
 
 ## F02: Director of Photography
 
-Search: `freelance director of photography UK`\nGoogle checked: 2026-11-18 09:35:26 +00:00
+Search: `freelance director of photography UK`
+Google checked: 2026-11-18 09:35:26 +00:00
 
 1. iconiccreative.co.uk
 2. Facebook
@@ -57,16 +62,15 @@ Sponsored extras: None identifiable in returned items. This does not establish t
 
 ## F08: FPV drone cinematography
 
-Search: `FPV drone pilot commercial filming UK`\nGoogle checked: 2026-11-18
+Search: `FPV drone pilot commercial filming UK`
 
-
-
-Sponsored extras: None identifiable in returned items. This does not establish that no ads appeared in other Google sessions.
+No usable SERP rows returned in this attempt; **not evidence of no competitors**.
 
 
 ## F14: Colour grading services
 
-Search: `film colour grading services UK`\nGoogle checked: 2026-11-18 09:35:30 +00:00
+Search: `film colour grading services UK`
+Google checked: 2026-11-18 09:35:30 +00:00
 
 1. mediagnite.com
 2. JJ Agency Films
