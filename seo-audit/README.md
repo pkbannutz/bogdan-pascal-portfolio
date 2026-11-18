@@ -5,6 +5,23 @@
 **Scope:** Entire domain, athlete portfolio, filmmaker portfolio.  
 **Status:** AUDIT COMPLETE, IMPLEMENTATION NOT STARTED. No live HTML, CSS, JS, SEO settings, or tracking were changed by this audit.
 
+## Expanded complete-page audit (18 November 2026)
+
+The follow-up request expanded the scope beyond the initial 10-pass report and second deep dive. **All 35 current production content pages** now have an individual resource-weight measurement; all **23 project galleries** were fully scrolled and measured; both dynamic equipment fragments were activated and measured. The legacy on-set redirect and unlisted/working pages have also been inventoried. **V2/V3 previews are excluded from detailed content/performance scoring, as requested.**
+
+New detailed documents:
+
+| Document | Scope |
+|---|---|
+| [SPEED-ALL-PAGES.md](SPEED-ALL-PAGES.md) | Every production page's initial and full-scroll image-resource weight; heavy routes and remediation |
+| [SERVICE-SEO-DETAIL.md](SERVICE-SEO-DETAIL.md) | Standalone search strategy and backend/visible changes for each of five active filmmaker services, service hub, equipment, about/contact |
+| [PROJECT-SEO-ALL-23.md](PROJECT-SEO-ALL-23.md) | All 23 film pages, verified role distinctions, images, live video presence and separate case-study recommendations |
+| [HIDDEN-ROUTES-AND-CLEANUP.md](HIDDEN-ROUTES-AND-CLEANUP.md) | 38 non-V2/V3 HTML files including 35 pages, redirect, 2 equipment fragments; safe vs unsafe deletion, asset duplicates |
+
+**High-value new findings:** Equipment reaches roughly 27.2MiB of images if fully expanded; athlete reaches about 13.5-14.5MiB across a long scroll; some project galleries exceed 10MiB; four project pages had no `<video>` or `<iframe>` in their inspected DOM; Mojo Hair credits Bogdan for colour/graphics rather than cinematography; Mojo Skincare's source credits another DoP and requires personal role verification. Filmmaker service pages are more substantial than the homepage and should each be optimized independently. These are measured code/content findings, not user-traffic/ranking claims.
+
+**What still needs external testing:** Official PageSpeed/Lighthouse and CrUX scores, true mobile INP/LCP/CLS, activated audio/video data, user Google Search Console clicks/indexation and real enquiry conversion rates. Do not confuse downloaded image data with a PageSpeed score. All work so far remains documentation only.
+
 ## New: second-pass live audit
 
 **Read the [DEEP DIVE (18 Nov 2026)](DEEP-DIVE-2026-11-18.md) first for the newly confirmed issues and revised priorities.** A later live crawl verified 35 production URLs at HTTP 200 and confirmed `/robots.txt` and `/sitemap.xml` both return 404. Browser testing found all 23 filmmaker JPG thumbnails fetched (~4.83 MB image payload), two-tap project card navigation on touch devices, and unusually small mobile navigation/contact tap targets. These findings were **not covered by the initial source-only 10 passes**.
