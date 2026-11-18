@@ -1,5 +1,17 @@
 # Bogdan Pascal Portfolio: SEO Audit
 
+## New chat continuation: current starting point
+
+**The user wants the AI to optimize for verified results, NOT follow the user's guessed SEO tactics literally.** Read [RESEARCH-DECISION-PRINCIPLES.md](RESEARCH-DECISION-PRINCIPLES.md) to understand this requirement. The best visitor-facing service names are **recognized industry job/service titles**; related SEO phrases belong naturally in useful page content, appropriate metadata and supporting internal links. High generic search volume alone is not a business objective.
+
+- [START-HERE-NEXT-CHAT.md](START-HERE-NEXT-CHAT.md): Full chronological research handoff and next task.
+- [NEXT-CHAT-PROMPT.md](NEXT-CHAT-PROMPT.md): Copy-paste prompt for a new conversation.
+- [keyword-research/RESEARCH-ROADMAP.md](keyword-research/RESEARCH-ROADMAP.md): Which service family is DONE/PARTIAL/NOT STARTED.
+- [keyword-research/ATHLETE-RESEARCH-STATUS.md](keyword-research/ATHLETE-RESEARCH-STATUS.md): Current quantitative athlete findings, known uncertainty and next step.
+
+**Current research status:** Athlete first, **PARTIAL**. 76 UK phrases were checked for search volume/difficulty/intent; Google Trends data spans long history, 5 years, 12 months and 3 months; 10 Google SERP attempts were saved. **Final ranked industry naming and SEO recommendations for the athlete section have not yet been completed**. Do not claim otherwise. Film/FPV service-family quantitative chapters come next after athlete. No site files have been modified.
+
+
 ## START HERE: outcome-first research and completed athlete naming study
 
 **Essential instructions for any future AI assistant continuing this work:** Read [RESEARCH-DECISION-PRINCIPLES.md](RESEARCH-DECISION-PRINCIPLES.md) **before** recommending keywords, service names, new pages, speed changes or implementation. The user's suggested methods are hypotheses; the AI must act as the researcher, correct flawed assumptions, use validated data, avoid vanity metrics and prioritize **being hired for genuine services**. Do not blindly chase high-volume keywords or copy the first Google result.
