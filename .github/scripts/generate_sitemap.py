@@ -32,6 +32,7 @@ REQUIRED_ROUTES = {
     "/filmmaker/services/editing/",
     "/filmmaker/services/colour-grading/",
     "/filmmaker/services/sound-design/",
+    "/privacy/",
 }
 
 
@@ -71,7 +72,7 @@ def collect_urls(root: Path) -> list[str]:
         parts = relative.parent.parts
 
         # Keep the sitemap limited to the published personal portfolio.
-        if parts and parts[0] not in {"athlete", "filmmaker"}:
+        if parts and parts[0] not in {"athlete", "filmmaker", "privacy"}:
             continue
         if any(parts[:len(prefix)] == prefix for prefix in EXCLUDED_PREFIXES):
             continue

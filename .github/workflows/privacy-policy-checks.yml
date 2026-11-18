@@ -1,0 +1,38 @@
+name: Privacy policy and footer checks
+
+on:
+  pull_request:
+    paths:
+      - 'privacy/**'
+      - '.github/scripts/inject_privacy_footer.py'
+      - '.github/scripts/generate_sitemap.py'
+      - '.github/workflows/deploy-pages.yml'
+      - '.github/workflows/privacy-policy-checks.yml'
+      - 'tests/privacy_footer_test.py'
+      - 'assets/analytics-consent.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-public-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website source
+        uses: actions/checkout@v4
+      - name: Prepare production-like public website
+        run: |
+          mkdir -p _site
+          cp index.html robots.txt _site/
+          cp -R assets athlete filmmaker privacy _site/
+          rm -rf _site/filmmaker/_build
+          touch _site/.nojekyll
+      - name: Generate sitemap and inject consent
+        run: |
+          python3 .github/scripts/generate_sitemap.py _site
+          python3 .github/scripts/inject_analytics.py _site
+      - name: Install privacy links in existing footers
+        run: python3 .github/scripts/inject_privacy_footer.py _site
+      - name: Verify all public pages and preview boundaries
+        run: python3 tests/privacy_footer_test.py _site

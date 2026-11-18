@@ -117,6 +117,7 @@
     box.innerHTML = [
       "<h2>Privacy choices</h2>",
       "<p>Both services are optional. Choose which website tracking you allow. We do not send your form entries to analytics.</p>",
+      '<p><a href="/privacy/" style="color:inherit;text-decoration:underline">Read our Privacy Policy</a> for how tracking data is used, stored and managed.</p>',
       '<label class="bp-option"><input id="bp-consent-ga" type="checkbox"><span>Google Analytics<small>Page visits, clicks and scrolling.</small></span></label>',
       '<label class="bp-option"><input id="bp-consent-clarity" type="checkbox"><span>Microsoft Clarity<small>Heatmaps and replays of page activity, such as mouse movement and scrolling. Personal input fields are masked.</small></span></label>',
       '<div class="bp-actions"><button id="bp-privacy-save" type="button">Save choices</button><button id="bp-privacy-all" type="button">Accept both</button><button id="bp-privacy-decline" type="button">Decline both</button></div>',
