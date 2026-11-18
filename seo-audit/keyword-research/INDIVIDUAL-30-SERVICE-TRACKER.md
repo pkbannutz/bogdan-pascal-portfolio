@@ -1,6 +1,6 @@
 # INDIVIDUAL SERVICE RESEARCH TRACKER: 30 CATEGORIES
 
-**Started:** 18 November 2026. **Progress:** **1 / 30 individually reviewed**. **Last individual completed:** **P01 Parkour Athlete / Performer**.
+**Started:** 18 November 2026. **Progress:** **2 / 30 individually reviewed**. **Last individual completed:** **P02 Freerunning Performer**.
 
 ## New operating rule from the user
 
@@ -15,8 +15,8 @@ Each individual report must document: precise job/service scope and reality chec
 | # | ID | Original category | Original scope | Individual research | Evidence |
 |---:|---|---|---|---|---|
 | 1 | **P01** | Parkour athlete / performer | CORE | **DONE** | [Full P01 decision](individual/P01-PARKOUR-ATHLETE-PERFORMER-RESEARCH-2026-11-18.md) |
-| 2 | **P02** | Freerunning performer | CORE | **WAITING for user continue** |  |
-| 3 | **P03** | Parkour coordinator / consultant | CORE | **NOT STARTED** |  |
+| 2 | **P02** | Freerunning performer | CORE | **DONE** | [Full P02 decision](individual/P02-FREERUNNING-PERFORMER-RESEARCH-2026-11-18.md) |
+| 3 | **P03** | Parkour coordinator / consultant | CORE | **WAITING for user continue** |  |
 | 4 | **P04** | Stunt performer | CORE | **NOT STARTED** |  |
 | 5 | **P05** | Stunt coordinator | ADJACENT: qualification check | **NOT STARTED** |  |
 | 6 | **P06** | Acrobat / acrobatic performer | CORE | **NOT STARTED** |  |
@@ -56,7 +56,19 @@ Each individual report must document: precise job/service scope and reality chec
 - **Public website status:** **UNTOUCHED.**
 - **Report:** [P01 Parkour Athlete & Performer](individual/P01-PARKOUR-ATHLETE-PERFORMER-RESEARCH-2026-11-18.md).
 
-**NEXT ONLY AFTER USER SAYS "CONTINUE": P02 Freerunning Performer.** P02 is not complete merely because prior athlete family report contains general freerunning data.
+## P02 research record (18 November 2026)
+
+- **Verdict:** **Core, commercially distinct performance specialization** with a recognized freerunning movement aesthetic. Strong enough to be presented as a named bookable service; **not automatically strong enough for a second, overlapping SEO URL**.
+- **Best client-facing name:** **Freerunning Performer**. Best professional identity: **Professional Freerunner**. Suggested broader section `Freerunning & Acrobatic Performance`.
+- **Buyer intent:** expressive/flowing camera performance, flips/tricking when demonstrated, brand campaigns, commercials, music videos, some screen and live work. P01's parkour traversal is related but not identical.
+- **Actual UK estimates:** `freerunner`, `freerunning`, `free running` each **~390/month**, but **identical underlying monthly histories** imply close-variant grouping; **do not add them**. `professional freerunner` ~10/month (KD 45, informational); `free runner for hire` and `freerunning performer` exact volume unknown. August 2026 reported 2,400 versus 110-320 most other months, reason unverified; current Trends includes unrelated MTG game intent.
+- **Current site evidence:** `freerunning` appears only twice in source readable text (About and Plein Sport), not in current title, hero, headings or performer CTA. A clearer named P02 showcase should be visible once approved.
+- **Independent sources:** Cambridge freerunning definition; Movement Management's explicit P01-vs-P02 casting advice; Scarlett Entertainment's free runner booking page; personal freelancer Mike Wilson; independent Parkour Generations performance category. The historical Google snapshot is too noisy to prove ranks.
+- **Strategy:** distinguish P02 skill and offer within `/athlete/`, provide personally attributable expressive-footage proof, track enquiries separately. Do not claim new specialist skill/credit, stunt qualification or current base without verification.
+- **No production website edits.**
+- **Report:** [P02 Freerunning Performer](individual/P02-FREERUNNING-PERFORMER-RESEARCH-2026-11-18.md).
+
+**NEXT ONLY AFTER USER SAYS "CONTINUE": P03 Parkour Coordinator / Consultant.** P03 is not complete merely because previous seven family-level reports included it.
 
 ## Background source inventory
 
