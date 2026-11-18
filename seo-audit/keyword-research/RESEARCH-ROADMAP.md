@@ -4,6 +4,8 @@
 **Status:** Research and documentation only. No production SEO/visual changes applied.
 **Read first:** [Full handoff](../START-HERE-NEXT-CHAT.md) and [principles](../RESEARCH-DECISION-PRINCIPLES.md).
 
+> **NEW 30-CATEGORY OPERATING RULE (18 November 2026):** The prior seven service-family reports are complete at the **family** level, but they do NOT mean all 30 original professional categories have received an individual research verdict. The user now requires **one original service category per user turn**, saved in a standalone file, followed by a hard stop pending "continue". See the authoritative [individual 30-category tracker](INDIVIDUAL-30-SERVICE-TRACKER.md). **P01 complete (1/30); next P02 only after permission.** No website edits.
+
 ## The rule for future AI
 
 **The user has a clear outcome, but their proposed method may be wrong.** Optimize for qualified hiring, truthful professional positioning, audience experience, demonstrated results and effective current SEO techniques. Challenge unsupported assumptions with alternatives. The user wants the **best industry-standard service names**, not just obscure synonyms with traffic numbers. Keyword research informs the names and the supporting discoverable content, but does not dictate meaningless over-optimized copy.
