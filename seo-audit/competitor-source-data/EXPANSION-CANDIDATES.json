@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "E01",
+    "group": "Performance",
+    "service": "Parkour workshops and classes",
+    "variants": [
+      "parkour coaching classes",
+      "freerunning lessons",
+      "parkour skills workshops",
+      "guided parkour sessions",
+      "parkour group training"
+    ],
+    "pattern": "parkour.*(?:class|workshop|lesson|train|coach)|free.?run.*(?:class|workshop|lesson|train)|parkour.?experiences"
+  },
+  {
+    "id": "E02",
+    "group": "Performance",
+    "service": "Stunt training and education",
+    "variants": [
+      "stunt skills training",
+      "stunt performer workshops",
+      "on-set stunt courses",
+      "stunt action coaching",
+      "screen stunt masterclasses"
+    ],
+    "pattern": "stunt.*(?:train|course|class|workshop|school|academy|education)"
+  },
+  {
+    "id": "E03",
+    "group": "Performance",
+    "service": "Gymnastics training",
+    "variants": [
+      "gymnastics coaching",
+      "gymnastics classes",
+      "tumbling instruction",
+      "acro gymnastics lessons",
+      "gymnastics technique workshops"
+    ],
+    "pattern": "gymnastics.*(?:train|coach|lesson|class|workshop)|tumbling.*(?:class|workshop|course)"
+  },
+  {
+    "id": "E04",
+    "group": "Performance",
+    "service": "Fight choreography and fight direction",
+    "variants": [
+      "screen combat choreography",
+      "film fight director",
+      "stage combat choreography",
+      "fight-scene design",
+      "action combat arranger"
+    ],
+    "pattern": "fight.*(?:choreograph|director|coordina)|combat.*(?:choreograph|director|train)|action arranger"
+  },
+  {
+    "id": "E05",
+    "group": "Performance",
+    "service": "Martial arts performance",
+    "variants": [
+      "martial arts stunt performer",
+      "combat demonstration artist",
+      "screen martial arts talent",
+      "martial arts show act",
+      "martial arts action performance"
+    ],
+    "pattern": "martial arts|combat perform"
+  },
+  {
+    "id": "E06",
+    "group": "Performance",
+    "service": "Wire stunts and wirework",
+    "variants": [
+      "cinematic wirework",
+      "flying stunt rigging",
+      "wire-assisted action",
+      "harness stunt sequences",
+      "wire flying effects"
+    ],
+    "pattern": "wire.*(?:stunt|work|rig|flying)|flying.*(?:stunt|rig)|harness.*stunt"
+  },
+  {
+    "id": "E07",
+    "group": "Performance",
+    "service": "Stunt rigging",
+    "variants": [
+      "stunt rigging crew",
+      "action rigging specialist",
+      "film safety rigging",
+      "stunt harness rigging",
+      "special action rigging"
+    ],
+    "pattern": "stunt rigg|rigging.*stunt"
+  },
+  {
+    "id": "E08",
+    "group": "Performance",
+    "service": "Stunt safety and supervision",
+    "variants": [
+      "on-set stunt safety",
+      "action safety supervision",
+      "film stunt risk assessment",
+      "stunt safety coordinator",
+      "stunt safety advisor"
+    ],
+    "pattern": "stunt.*(?:safety|risk|supervis)|(?:safety|supervis).*stunt"
+  },
+  {
+    "id": "E09",
+    "group": "Performance",
+    "service": "Special action extras (SPACT) casting",
+    "variants": [
+      "special action casting",
+      "SPACT performer booking",
+      "special action background artists",
+      "action extras casting",
+      "stunt-capable extras hire"
+    ],
+    "pattern": "spact|special action cast|action extras"
+  },
+  {
+    "id": "E10",
+    "group": "Performance",
+    "service": "Sports talent casting",
+    "variants": [
+      "sports performer casting",
+      "athlete casting agency",
+      "sporting talent hire",
+      "sports double casting",
+      "athlete casting for adverts"
+    ],
+    "pattern": "sports talent|sports cast|athlete cast|sports double"
+  },
+  {
+    "id": "E11",
+    "group": "Performance",
+    "service": "Movement talent representation",
+    "variants": [
+      "movement performer agency",
+      "parkour athlete management",
+      "freerunning talent representation",
+      "urban athlete booking agency",
+      "movement artist management"
+    ],
+    "pattern": "talent agency|talent representation|athlete management|movement talent agency"
+  },
+  {
+    "id": "E12",
+    "group": "Performance",
+    "service": "Stunt doubles and body doubles",
+    "variants": [
+      "action body double",
+      "stunt double casting",
+      "physical performance double",
+      "sports body doubles",
+      "action double performer"
+    ],
+    "pattern": "body double|stunt double"
+  },
+  {
+    "id": "E13",
+    "group": "Performance",
+    "service": "Live event brand activations",
+    "variants": [
+      "parkour brand activation",
+      "experiential stunt marketing",
+      "brand launch action show",
+      "live sports brand campaign",
+      "experiential performer activation"
+    ],
+    "pattern": "brand activat|experiential activat|live events.*brand activat"
+  },
+  {
+    "id": "E14",
+    "group": "Performance",
+    "service": "Corporate entertainment acts",
+    "variants": [
+      "corporate stunt show",
+      "acrobatic corporate act",
+      "parkour entertainment booking",
+      "corporate action performance",
+      "live event stunt talent"
+    ],
+    "pattern": "corporate entertainment|corporate.*entertain"
+  },
+  {
+    "id": "E15",
+    "group": "Performance",
+    "service": "Team building workshops",
+    "variants": [
+      "corporate team building events",
+      "movement-based team building",
+      "physical group activity workshop",
+      "sport team building experience",
+      "experiential group training"
+    ],
+    "pattern": "team building|team-building"
+  },
+  {
+    "id": "E16",
+    "group": "Performance",
+    "service": "Street dance performances",
+    "variants": [
+      "urban dance performer",
+      "street dance show",
+      "breakdance event act",
+      "commercial hip hop dancer",
+      "acrobatic dance group"
+    ],
+    "pattern": "street dance|breakdance|b.?boy|acrobatic dance"
+  },
+  {
+    "id": "E17",
+    "group": "Performance",
+    "service": "Aerial circus performers",
+    "variants": [
+      "aerial acrobat act",
+      "aerialist for events",
+      "silks performer",
+      "aerial stunt show",
+      "trapeze entertainment"
+    ],
+    "pattern": "aerialist|aerial acts|aerial acrobat|aerial show|trapeze"
+  },
+  {
+    "id": "E18",
+    "group": "Performance",
+    "service": "Hand balancing acts",
+    "variants": [
+      "hand balancing performer",
+      "handstand artist",
+      "equilibrist act",
+      "acrobatic hand balance",
+      "circus balance performance"
+    ],
+    "pattern": "hand balanc|handstand artist|equilibri"
+  },
+  {
+    "id": "E19",
+    "group": "Performance",
+    "service": "Fire performance and pyrotechnic acts",
+    "variants": [
+      "fire stunt act",
+      "fire performer hire",
+      "flame show entertainer",
+      "pyrotechnic performance",
+      "fire juggling show"
+    ],
+    "pattern": "fire perform|fire show|fire act|pyrotechnic"
+  },
+  {
+    "id": "E20",
+    "group": "Performance",
+    "service": "Stunt show production",
+    "variants": [
+      "live stunt show creation",
+      "action entertainment production",
+      "bespoke stunt performance",
+      "theatrical stunt show",
+      "public stunt demonstration production"
+    ],
+    "pattern": "stunt show|production shows|stunt act"
+  },
+  {
+    "id": "E21",
+    "group": "Performance",
+    "service": "Obstacle course and ninja experiences",
+    "variants": [
+      "ninja obstacle event",
+      "parkour obstacle challenge",
+      "urban obstacle course",
+      "ninja course experience",
+      "obstacle skills workshop"
+    ],
+    "pattern": "ninja.*(?:course|obstacle|trail|experience)|obstacle course"
+  },
+  {
+    "id": "E22",
+    "group": "Performance",
+    "service": "Parkour facility or course consulting",
+    "variants": [
+      "parkour facility design",
+      "freerunning park consultancy",
+      "movement space design",
+      "parkour obstacle planning",
+      "urban movement facility advice"
+    ],
+    "pattern": "parkour consult|parkour park|parkour.*design|obstacle.*design"
+  },
+  {
+    "id": "E23",
+    "group": "Performance",
+    "service": "Talent management and agency booking",
+    "variants": [
+      "entertainment talent booking",
+      "performer management agency",
+      "live artist representation",
+      "sports star booking",
+      "talent agency services"
+    ],
+    "pattern": "talent management|artist management|booking agency|talent representation"
+  },
+  {
+    "id": "E24",
+    "group": "Performance",
+    "service": "Casting services",
+    "variants": [
+      "performer casting services",
+      "commercial talent casting",
+      "screen performer casting",
+      "casting agency production",
+      "specialist talent sourcing"
+    ],
+    "pattern": "casting service|casting agency|casting and|talent casting"
+  },
+  {
+    "id": "E25",
+    "group": "Performance",
+    "service": "Weapons and armoury services",
+    "variants": [
+      "film armourer",
+      "on-set weapons supervision",
+      "prop weapons coordination",
+      "screen armoury support",
+      "action weapon handling"
+    ],
+    "pattern": "armour|weapons coordinator|weapons.*(?:film|screen|stunt)"
+  },
+  {
+    "id": "E26",
+    "group": "Performance",
+    "service": "Special effects physical stunts",
+    "variants": [
+      "practical action effects",
+      "special effects stunt crew",
+      "physical SFX supervisor",
+      "on-set practical effects",
+      "stunt effects supervisor"
+    ],
+    "pattern": "sfx supervisor|special effects.*stunt|practical effects|sfx stunts"
+  },
+  {
+    "id": "E27",
+    "group": "Performance",
+    "service": "Stunt camera vehicles",
+    "variants": [
+      "action camera car",
+      "camera tracking vehicles",
+      "stunt chase camera vehicle",
+      "vehicle camera rigs",
+      "camera car filming"
+    ],
+    "pattern": "camera vehicles|tracking vehicles|camera car"
+  },
+  {
+    "id": "E28",
+    "group": "Performance",
+    "service": "Venue and studio hire",
+    "variants": [
+      "studio space rental",
+      "filming venue hire",
+      "production studio rental",
+      "event venue hire",
+      "creative studio space hire"
+    ],
+    "pattern": "venue hire|studio hire|production facilities"
+  },
+  {
+    "id": "E29",
+    "group": "Production",
+    "service": "Corporate video production",
+    "variants": [
+      "business video production",
+      "corporate brand films",
+      "company overview video",
+      "business promotional films",
+      "internal corporate filmmaking"
+    ],
+    "pattern": "corporate video|company film|business video"
+  },
+  {
+    "id": "E30",
+    "group": "Production",
+    "service": "Documentary production",
+    "variants": [
+      "documentary filmmaking service",
+      "branded documentary production",
+      "factual film production",
+      "short documentary studio",
+      "human interest film production"
+    ],
+    "pattern": "documentary production|documentary filmmaking|micro-documentar"
+  },
+  {
+    "id": "E31",
+    "group": "Production",
+    "service": "Interview filming",
+    "variants": [
+      "filmed interview production",
+      "on-camera interview shoot",
+      "executive interview video",
+      "interview cinematography",
+      "talking-head filming"
+    ],
+    "pattern": "interview filming|interview video|filmed interview"
+  },
+  {
+    "id": "E32",
+    "group": "Production",
+    "service": "Customer testimonial videos",
+    "variants": [
+      "client testimonial filming",
+      "video customer stories",
+      "case study video production",
+      "customer success films",
+      "testimonial film creator"
+    ],
+    "pattern": "testimonial video|customer stories|case study video"
+  },
+  {
+    "id": "E33",
+    "group": "Production",
+    "service": "Event video production",
+    "variants": [
+      "conference videographer",
+      "live event filming",
+      "corporate event coverage",
+      "event highlight film",
+      "event video crew"
+    ],
+    "pattern": "event videograph|event filming|event video|event coverage"
+  },
+  {
+    "id": "E34",
+    "group": "Production",
+    "service": "Live streaming production",
+    "variants": [
+      "live video streaming",
+      "multi-platform livestream filming",
+      "event live broadcast",
+      "livestream production team",
+      "real-time online video production"
+    ],
+    "pattern": "live.?stream|broadcast streaming|live broadcast"
+  },
+  {
+    "id": "E35",
+    "group": "Production",
+    "service": "Multicamera filming",
+    "variants": [
+      "multi-camera video crew",
+      "multicam event filming",
+      "multi-camera concert production",
+      "live multicam capture",
+      "multi-camera studio recording"
+    ],
+    "pattern": "multi.?camera|multicam|multi-cam"
+  },
+  {
+    "id": "E36",
+    "group": "Production",
+    "service": "Commercial still photography",
+    "variants": [
+      "advertising still photographer",
+      "commercial photo production",
+      "brand campaign photography",
+      "commercial product photography",
+      "professional brand photographer"
+    ],
+    "pattern": "commercial photograph|photography service|photograph"
+  },
+  {
+    "id": "E37",
+    "group": "Production",
+    "service": "Product photography",
+    "variants": [
+      "ecommerce product photography",
+      "studio product photos",
+      "packshot photo production",
+      "product advertising photography",
+      "retail product shoot"
+    ],
+    "pattern": "product photography|packshot|ecommerce photography"
+  },
+  {
+    "id": "E38",
+    "group": "Production",
+    "service": "Sports photography",
+    "variants": [
+      "athlete sports photography",
+      "sporting event photographer",
+      "action sports photos",
+      "extreme sports photography",
+      "sport commercial stills"
+    ],
+    "pattern": "sports photograph|sport photography|action photography"
+  },
+  {
+    "id": "E39",
+    "group": "Production",
+    "service": "Aerial photography",
+    "variants": [
+      "drone still photography",
+      "overhead commercial photographs",
+      "aerial property images",
+      "professional UAV photography",
+      "cinematic drone photos"
+    ],
+    "pattern": "aerial photography|drone photography"
+  },
+  {
+    "id": "E40",
+    "group": "Production",
+    "service": "Real estate video production",
+    "variants": [
+      "property film production",
+      "estate agent video tours",
+      "commercial real estate filming",
+      "real estate drone video",
+      "architectural property videography"
+    ],
+    "pattern": "real estate video|property videograph|property filming"
+  },
+  {
+    "id": "E41",
+    "group": "Production",
+    "service": "Architectural filming",
+    "variants": [
+      "architecture videography",
+      "building film production",
+      "built environment cinematography",
+      "architecture commercial video",
+      "construction property film"
+    ],
+    "pattern": "architectural video|architecture filming|architecture videograph"
+  },
+  {
+    "id": "E42",
+    "group": "Production",
+    "service": "360-degree virtual tours",
+    "variants": [
+      "360 immersive tour video",
+      "virtual reality property tour",
+      "360 video filming",
+      "interactive virtual tour",
+      "immersive tour production"
+    ],
+    "pattern": "360.?video|virtual tours?|360.?tour|360 photography"
+  },
+  {
+    "id": "E43",
+    "group": "Production",
+    "service": "Time-lapse filming",
+    "variants": [
+      "timelapse film capture",
+      "time lapse construction video",
+      "long-duration interval filming",
+      "cinematic hyperlapse",
+      "time-lapse production"
+    ],
+    "pattern": "time.?lapse|hyperlapse"
+  },
+  {
+    "id": "E44",
+    "group": "Production",
+    "service": "High speed slow-motion filming",
+    "variants": [
+      "slow motion camera filming",
+      "high frame rate cinematography",
+      "Phantom high speed camera",
+      "super slow-mo video",
+      "high speed sports filming"
+    ],
+    "pattern": "slow.?motion|high speed camer|high frame rate"
+  },
+  {
+    "id": "E45",
+    "group": "Production",
+    "service": "Camera equipment hire",
+    "variants": [
+      "camera rental services",
+      "cinema camera hire",
+      "camera kit rental",
+      "professional filmmaking gear hire",
+      "video camera equipment rental"
+    ],
+    "pattern": "camera hire|camera rental|equipment hire|kit rental"
+  },
+  {
+    "id": "E46",
+    "group": "Production",
+    "service": "Lighting hire and design",
+    "variants": [
+      "film lighting hire",
+      "on-set lighting design",
+      "cinematography lighting services",
+      "lighting rental film",
+      "commercial shoot lighting"
+    ],
+    "pattern": "lighting hire|lighting design|lighting rental|lighting cameraman"
+  },
+  {
+    "id": "E47",
+    "group": "Production",
+    "service": "Steadicam operation",
+    "variants": [
+      "steadicam camera operator",
+      "body-mounted stabilised camera",
+      "steadicam filming crew",
+      "steadicam tracking shots",
+      "stabilized camera system operator"
+    ],
+    "pattern": "steadicam"
+  },
+  {
+    "id": "E48",
+    "group": "Production",
+    "service": "Camera crane and jib services",
+    "variants": [
+      "film camera crane operator",
+      "jib arm cinematography",
+      "camera crane rental crew",
+      "telescopic camera crane",
+      "elevated tracking shot filming"
+    ],
+    "pattern": "camera crane|jib operator|jib camera|crane filming"
+  },
+  {
+    "id": "E49",
+    "group": "Production",
+    "service": "Location scouting and permits",
+    "variants": [
+      "filming location scouting",
+      "film locations management",
+      "shoot location research",
+      "film permit coordination",
+      "location production services"
+    ],
+    "pattern": "location scout|locations and permits|location management|filming permit"
+  },
+  {
+    "id": "E50",
+    "group": "Production",
+    "service": "Production fixer services",
+    "variants": [
+      "film production fixer",
+      "local crew fixer",
+      "shoot logistics coordinator",
+      "international shoot support",
+      "on-location production fixer"
+    ],
+    "pattern": "fixer|fixing services"
+  },
+  {
+    "id": "E51",
+    "group": "Production",
+    "service": "Crew sourcing and hiring",
+    "variants": [
+      "film crew hire",
+      "video production crew booking",
+      "freelance crew sourcing",
+      "camera crew staffing",
+      "on-set crew hire"
+    ],
+    "pattern": "film crew hire|crew by role|hire crew|production crew hire"
+  },
+  {
+    "id": "E52",
+    "group": "Production",
+    "service": "Creative direction",
+    "variants": [
+      "commercial creative direction",
+      "branded video creative lead",
+      "film concept direction",
+      "advertising creative director",
+      "creative treatment direction"
+    ],
+    "pattern": "creative direction|creative director"
+  },
+  {
+    "id": "E53",
+    "group": "Production",
+    "service": "Film directing",
+    "variants": [
+      "commercial film director",
+      "music video direction",
+      "film scene direction",
+      "advertising director",
+      "branded film directing"
+    ],
+    "pattern": "film directing|video directing|director services"
+  },
+  {
+    "id": "E54",
+    "group": "Production",
+    "service": "Film producing",
+    "variants": [
+      "commercial film producer",
+      "production management",
+      "line producer for video",
+      "brand video producing",
+      "on-set film production management"
+    ],
+    "pattern": "producing|film producer|line production|production management"
+  },
+  {
+    "id": "E55",
+    "group": "Production",
+    "service": "Scriptwriting and copywriting",
+    "variants": [
+      "commercial script writer",
+      "video script development",
+      "film screenplay writing",
+      "brand film writing",
+      "screenwriting services"
+    ],
+    "pattern": "scriptwriting|script writing|screenwriting|copywriting"
+  },
+  {
+    "id": "E56",
+    "group": "Production",
+    "service": "Storyboarding and previsualization",
+    "variants": [
+      "film storyboard artist",
+      "previsualisation services",
+      "3D shot previsualization",
+      "camera shot planning",
+      "commercial storyboard design"
+    ],
+    "pattern": "storyboard|previs|previsual"
+  },
+  {
+    "id": "E57",
+    "group": "Production",
+    "service": "Content strategy",
+    "variants": [
+      "video content strategy",
+      "branded film strategy",
+      "social content planning",
+      "creative content consulting",
+      "marketing content roadmap"
+    ],
+    "pattern": "content strategy|content planning|creative strategy"
+  },
+  {
+    "id": "E58",
+    "group": "Production",
+    "service": "Social media video production",
+    "variants": [
+      "social video agency",
+      "short-form brand content filming",
+      "TikTok ad videos",
+      "Instagram Reels production",
+      "vertical commercial film"
+    ],
+    "pattern": "social media video|social video|social content creation"
+  },
+  {
+    "id": "E59",
+    "group": "Production",
+    "service": "TV commercial production",
+    "variants": [
+      "television advert production",
+      "broadcast ad filming",
+      "TV ad production studio",
+      "commercial broadcast production",
+      "television commercial filmmaking"
+    ],
+    "pattern": "tv commercial|television commercial|tv advert"
+  },
+  {
+    "id": "E60",
+    "group": "Production",
+    "service": "Brand activation video",
+    "variants": [
+      "experiential marketing video",
+      "event activation film",
+      "brand experience filming",
+      "promotional activation video",
+      "live brand campaign film"
+    ],
+    "pattern": "brand activation video|brand activations.*video"
+  },
+  {
+    "id": "E61",
+    "group": "Production",
+    "service": "Drone inspection and surveys",
+    "variants": [
+      "UAV property inspection",
+      "industrial drone survey",
+      "commercial aerial inspection",
+      "roof drone survey",
+      "drone survey operator"
+    ],
+    "pattern": "drone survey|drone inspect"
+  },
+  {
+    "id": "E62",
+    "group": "Production",
+    "service": "Drone mapping and photogrammetry",
+    "variants": [
+      "drone photogrammetry",
+      "UAV mapping survey",
+      "3D aerial mapping",
+      "drone terrain model",
+      "aerial orthomosaic capture"
+    ],
+    "pattern": "drone mapping|photogrammetry|aerial mapping"
+  },
+  {
+    "id": "E63",
+    "group": "Production",
+    "service": "Production sound recording",
+    "variants": [
+      "location sound recording",
+      "on-set audio capture",
+      "film sound recordist",
+      "location audio mixer",
+      "production sound crew"
+    ],
+    "pattern": "production sound|location sound|sound recordist|sound mixer"
+  },
+  {
+    "id": "E64",
+    "group": "Post",
+    "service": "Motion graphics",
+    "variants": [
+      "animated graphic design",
+      "motion design for film",
+      "kinetic type animation",
+      "commercial graphics animation",
+      "motion graphic titles"
+    ],
+    "pattern": "motion graphics|motion design"
+  },
+  {
+    "id": "E65",
+    "group": "Post",
+    "service": "2D animation",
+    "variants": [
+      "two-dimensional video animation",
+      "flat graphic animation",
+      "illustrated explainer animation",
+      "2D character animation",
+      "hand-drawn motion animation"
+    ],
+    "pattern": "2d animation|2d animated"
+  },
+  {
+    "id": "E66",
+    "group": "Post",
+    "service": "3D animation and CGI",
+    "variants": [
+      "3D video animation",
+      "CGI product films",
+      "computer generated imagery",
+      "3D visual animation",
+      "3D motion design"
+    ],
+    "pattern": "3d animation|cgi|computer generated"
+  },
+  {
+    "id": "E67",
+    "group": "Post",
+    "service": "Visual effects and compositing",
+    "variants": [
+      "VFX post production",
+      "digital compositing",
+      "visual effects artist",
+      "film VFX services",
+      "screen effects compositing"
+    ],
+    "pattern": "visual effects|vfx|compositing"
+  },
+  {
+    "id": "E68",
+    "group": "Post",
+    "service": "Green screen / chroma key",
+    "variants": [
+      "green screen production",
+      "chroma key background removal",
+      "green screen video shoot",
+      "virtual backdrop filming",
+      "keying and compositing"
+    ],
+    "pattern": "green screen|chroma key|greenscreen"
+  },
+  {
+    "id": "E69",
+    "group": "Post",
+    "service": "Video retouching and cleanup",
+    "variants": [
+      "video object removal",
+      "digital video cleanup",
+      "screen blemish retouch",
+      "film cleanup effects",
+      "beauty video retouching"
+    ],
+    "pattern": "video retouch|cleanup|object removal|digital cleanup"
+  },
+  {
+    "id": "E70",
+    "group": "Post",
+    "service": "Film scanning and restoration",
+    "variants": [
+      "cine film scanning",
+      "film digitisation service",
+      "motion picture restoration",
+      "archive film transfer",
+      "negative film scanning"
+    ],
+    "pattern": "film scanning|film restoration|digitisation"
+  },
+  {
+    "id": "E71",
+    "group": "Post",
+    "service": "Online finishing and conform",
+    "variants": [
+      "online film finishing",
+      "post production conform",
+      "final picture online",
+      "broadcast video conforming",
+      "commercial finishing editor"
+    ],
+    "pattern": "online finishing|conform|online edit"
+  },
+  {
+    "id": "E72",
+    "group": "Post",
+    "service": "Mastering and delivery",
+    "variants": [
+      "video mastering services",
+      "film export finishing",
+      "broadcast delivery masters",
+      "platform-ready video encoding",
+      "final film technical delivery"
+    ],
+    "pattern": "mastering|deliverables|final delivery|broadcast delivery"
+  },
+  {
+    "id": "E73",
+    "group": "Post",
+    "service": "Subtitles and captioning",
+    "variants": [
+      "video subtitle services",
+      "closed caption production",
+      "film accessibility captions",
+      "subtitling for commercials",
+      "social video captions"
+    ],
+    "pattern": "subtitle|captioning|closed captions"
+  },
+  {
+    "id": "E74",
+    "group": "Post",
+    "service": "Localization and dubbing",
+    "variants": [
+      "video localisation",
+      "film language dubbing",
+      "multilingual video versions",
+      "international film localization",
+      "subtitle translation for film"
+    ],
+    "pattern": "locali[sz]ation|dubbing|translation.*video"
+  },
+  {
+    "id": "E75",
+    "group": "Post",
+    "service": "Voiceover recording and direction",
+    "variants": [
+      "commercial voiceover recording",
+      "narration production",
+      "voice artist direction",
+      "advertisement voice casting",
+      "video narration services"
+    ],
+    "pattern": "voiceover|voice over|voice director|narration"
+  },
+  {
+    "id": "E76",
+    "group": "Post",
+    "service": "ADR dialogue replacement",
+    "variants": [
+      "automated dialogue replacement",
+      "film ADR recording",
+      "dialogue re-recording",
+      "looping session for film",
+      "post sync dialogue"
+    ],
+    "pattern": "adr|dialogue replacement|dialogue re.record"
+  },
+  {
+    "id": "E77",
+    "group": "Post",
+    "service": "Dialogue editing and cleanup",
+    "variants": [
+      "speech audio restoration",
+      "film dialogue noise reduction",
+      "voice cleanup editing",
+      "dialogue audio repair",
+      "speech post-production"
+    ],
+    "pattern": "dialogue edit|dialogue clean|dialogue restoration"
+  },
+  {
+    "id": "E78",
+    "group": "Post",
+    "service": "Audio mixing and mastering",
+    "variants": [
+      "film soundtrack mixing",
+      "commercial audio final mix",
+      "video sound mastering",
+      "stereo film mix",
+      "broadcast loudness mixing"
+    ],
+    "pattern": "audio mix|sound mix|mixing and mastering|audio master"
+  },
+  {
+    "id": "E79",
+    "group": "Post",
+    "service": "Original music composition",
+    "variants": [
+      "film score composition",
+      "commercial jingle composition",
+      "bespoke soundtrack music",
+      "original music for film",
+      "brand video music composition"
+    ],
+    "pattern": "music composition|original music|film score|soundtrack composition"
+  },
+  {
+    "id": "E80",
+    "group": "Post",
+    "service": "Audio branding",
+    "variants": [
+      "sonic brand identity",
+      "audio logo design",
+      "branded sound signature",
+      "sonic identity creation",
+      "sound branding agency"
+    ],
+    "pattern": "audio branding|sonic branding|audio logo"
+  },
+  {
+    "id": "E81",
+    "group": "Post",
+    "service": "Audio advertising",
+    "variants": [
+      "radio advertisement production",
+      "podcast audio ads",
+      "commercial voice and sound advert",
+      "audio ad creative",
+      "radio spot sound design"
+    ],
+    "pattern": "audio advertising|radio advertising|radio advert"
+  },
+  {
+    "id": "E82",
+    "group": "Post",
+    "service": "Podcast production and editing",
+    "variants": [
+      "podcast editor for hire",
+      "podcast post production",
+      "spoken word audio editing",
+      "podcast recording and mixing",
+      "professional podcast production"
+    ],
+    "pattern": "podcast produc|podcast edit"
+  },
+  {
+    "id": "E83",
+    "group": "Post",
+    "service": "Video game sound and audio",
+    "variants": [
+      "video game audio design",
+      "interactive game soundtrack",
+      "game effects sound design",
+      "game audio integration",
+      "game music production"
+    ],
+    "pattern": "game audio|video game audio|game sound"
+  },
+  {
+    "id": "E84",
+    "group": "Post",
+    "service": "Graphic design",
+    "variants": [
+      "commercial graphic designer",
+      "branding graphic design",
+      "marketing visual graphics",
+      "digital design services",
+      "graphic artwork for advertising"
+    ],
+    "pattern": "graphic design|graphics and design"
+  },
+  {
+    "id": "E85",
+    "group": "Post",
+    "service": "VFX editing",
+    "variants": [
+      "visual effects editor",
+      "VFX editorial workflow",
+      "digital effects cut assembly",
+      "film VFX edit support",
+      "visual effects conform"
+    ],
+    "pattern": "vfx editor|vfx editing"
+  },
+  {
+    "id": "E86",
+    "group": "Post",
+    "service": "Assistant editing",
+    "variants": [
+      "assistant film editor",
+      "postproduction assistant editor",
+      "media ingest assistant",
+      "picture assistant editor",
+      "edit assist services"
+    ],
+    "pattern": "assistant editor|edit assistant"
+  },
+  {
+    "id": "E87",
+    "group": "Post",
+    "service": "AI-generated commercial video",
+    "variants": [
+      "AI advertisement creation",
+      "generative video production",
+      "synthetic commercial filmmaking",
+      "AI content for brands",
+      "AI-driven video creative"
+    ],
+    "pattern": "ai video|generative video|ai ad"
+  },
+  {
+    "id": "E88",
+    "group": "Post",
+    "service": "Product render and 3D visualization",
+    "variants": [
+      "CG product render",
+      "3D product visualisation",
+      "photorealistic packshot render",
+      "3D advertising product visual",
+      "virtual product photography"
+    ],
+    "pattern": "3d render|product visualization|product visualisation"
+  },
+  {
+    "id": "E89",
+    "group": "Post",
+    "service": "Interactive film experiences",
+    "variants": [
+      "interactive branded content",
+      "interactive video experience",
+      "web-based film interactive",
+      "digital interactive storytelling",
+      "immersive interactive media"
+    ],
+    "pattern": "interactive film|interactive video|interactive experience"
+  },
+  {
+    "id": "E90",
+    "group": "Post",
+    "service": "Virtual production LED filming",
+    "variants": [
+      "LED volume virtual production",
+      "in-camera VFX stage filming",
+      "virtual studio production",
+      "XR filming production",
+      "real-time film virtual set"
+    ],
+    "pattern": "virtual production|led volume|xr production"
+  },
+  {
+    "id": "E91",
+    "group": "Production",
+    "service": "Training and production workshops",
+    "variants": [
+      "filmmaking classes",
+      "creative filmmaking workshop",
+      "film production training",
+      "camera operator courses",
+      "video editing lessons"
+    ],
+    "pattern": "filmmaking course|film workshop|video training"
+  },
+  {
+    "id": "E92",
+    "group": "Production",
+    "service": "Film equipment sales",
+    "variants": [
+      "cinema gear retail",
+      "professional camera equipment sales",
+      "film kit reseller",
+      "video equipment purchase",
+      "cinema accessory sales"
+    ],
+    "pattern": "equipment sales|camera sales|equipment shop"
+  },
+  {
+    "id": "E93",
+    "group": "Production",
+    "service": "Video distribution and advertising",
+    "variants": [
+      "online video campaign delivery",
+      "paid video distribution",
+      "video ad media buying",
+      "campaign amplification",
+      "digital video ad placement"
+    ],
+    "pattern": "video distribution|paid advertising|media buying"
+  },
+  {
+    "id": "E94",
+    "group": "Production",
+    "service": "Photo booths and event photography",
+    "variants": [
+      "event photo booth hire",
+      "event instant photography",
+      "branded photo booth activation",
+      "mobile photo studio events",
+      "photobooth event entertainment"
+    ],
+    "pattern": "photo booth|photo booths"
+  },
+  {
+    "id": "E95",
+    "group": "Performance",
+    "service": "Sports brand ambassador representation",
+    "variants": [
+      "athlete brand ambassador booking",
+      "sports sponsorship talent",
+      "brand athlete representative",
+      "sports influencer campaign",
+      "athlete endorsement arrangement"
+    ],
+    "pattern": "brand ambassador|athlete sponsorship|sports influencer"
+  },
+  {
+    "id": "E96",
+    "group": "Production",
+    "service": "Drone light shows",
+    "variants": [
+      "drone swarm light display",
+      "aerial drone performance",
+      "night sky drone show",
+      "animated drone light event",
+      "commercial drone display"
+    ],
+    "pattern": "drone shows|drone light show"
+  },
+  {
+    "id": "E97",
+    "group": "Post",
+    "service": "Film trailer and promo editing",
+    "variants": [
+      "film teaser editing",
+      "movie trailer cutting",
+      "social promo edit",
+      "cinema trailer post production",
+      "promotional cutdown editing"
+    ],
+    "pattern": "trailer edit|promo editing"
+  },
+  {
+    "id": "E98",
+    "group": "Production",
+    "service": "Wedding videography",
+    "variants": [
+      "wedding cinematic film",
+      "wedding event filmmaker",
+      "ceremony videography",
+      "wedding highlight film",
+      "marriage event video production"
+    ],
+    "pattern": "wedding video|wedding film"
+  },
+  {
+    "id": "E99",
+    "group": "Production",
+    "service": "Fashion film production",
+    "variants": [
+      "fashion campaign video",
+      "runway film production",
+      "luxury clothing video",
+      "fashion editorial film",
+      "apparel brand filmmaking"
+    ],
+    "pattern": "fashion film|fashion video"
+  },
+  {
+    "id": "E100",
+    "group": "Production",
+    "service": "Beauty and skincare commercial production",
+    "variants": [
+      "beauty product video",
+      "cosmetics commercial filming",
+      "skincare branded content",
+      "makeup brand video",
+      "beauty advertising production"
+    ],
+    "pattern": "beauty video|beauty commercial|skincare video"
+  }
+]
