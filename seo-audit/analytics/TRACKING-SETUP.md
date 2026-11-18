@@ -8,16 +8,18 @@ Updated: 2026-11-18
 - Google Analytics 4: Bogdan Pascal Portfolio, measurement ID `G-X789N5N0QX`
 - Google Search Console: domain property `bogdanpascal.com`
 - OpenSEO: https://app.openseo.so/p/e1f98904-1b3a-4e68-8ae2-f6b3cbdcf8fc
-- Microsoft Clarity: not installed yet, awaiting the owner's Clarity project
+- Microsoft Clarity: Bogdan Pascal Portfolio, project ID `zfp1d5boaq`, created 2026-11-18
 
 ## How tracking is installed
 
 - GitHub Actions generates a sitemap and injects `assets/analytics-consent.js` into public pages in the deployment folder.
-- The Google Analytics tag only loads after visitors select **Accept analytics**.
-- Once accepted, that loader also loads `assets/analytics-events.js`.
-- Declining leaves GA4 unloaded. Withdrawing consent prevents new events and refreshes the page.
+- Google Analytics and Microsoft Clarity each have their own unchecked opt-in choice for new visitors.
+- The Google Analytics tag loads only after **Google Analytics** permission; that loader also loads `assets/analytics-events.js`.
+- The Microsoft Clarity tag loads only after separate **Microsoft Clarity** permission. Its `consentv2` call grants analytics storage while denying advertising storage.
+- Previously stored GA4 permission is carried forward but never silently reused as permission for Clarity. Visitors who already accepted GA4 see the new Clarity choice once.
+- Rejecting all choices loads neither provider. Withdrawing either permission stops further tracking and reloads the website.
 - Tracking is deliberately excluded from preview and noindex pages. The source HTML files remain untouched.
-- The deployment workflow validates JavaScript syntax and runs privacy and event tests before publishing.
+- The deployment workflow validates JavaScript syntax and runs GA4 event and Clarity consent tests before publishing.
 
 ## Which events are measured
 
@@ -76,15 +78,35 @@ This extra GA4 UI setup cannot be performed by the site's GitHub build. Register
 
 For longer event-level exploration history, review **GA4 Admin > Data collection and modification > Data retention** and choose the suitable permitted retention (standard GA4 properties support up to 14 months). This changes only GA4 storage settings, not GitHub or OpenSEO.
 
-## Microsoft Clarity follow-up
+## Microsoft Clarity, heatmaps and replay
 
-Clarity is not yet installed. Create a free project at https://clarity.microsoft.com and save its Project ID. A separate, optional session-replay consent category is recommended before installation. Do not commit Clarity API tokens or allow recordings to capture form contents, personal messages or sensitive fields.
+- Project: **Bogdan Pascal Portfolio**
+- Clarity project ID: `zfp1d5boaq`
+- Dashboard: https://clarity.microsoft.com/projects/view/zfp1d5boaq/gettingstarted
+- Public website: https://bogdanpascal.com
+- Tracking method: Clarity JavaScript tag is added only after explicit Clarity opt-in through `assets/analytics-consent.js`. The script is never inserted on denied or undecided visits.
+- The Clarity consent V2 API sends `analytics_Storage: granted` and `ad_Storage: denied`. No advertising permission is given.
+- Sensitive form fields and contenteditable regions are explicitly marked for masking prior to Clarity loading. Clarity's own built-in masking is an additional layer.
+- Optional GA4 permission and optional Clarity permission can be changed any time with the site's **Privacy choices** control.
+- Recordings are reconstructions of page activity, not webcam videos or native videos of visitors' entire computers.
+- Recordings and heatmaps are stored in Microsoft's Clarity service, not GitHub. Ordinary recordings typically remain available 30 days; see Microsoft's latest retention policy for exceptions.
 
-Clarity records visual reconstructions of interactions, not literal webcam or screen video. Recordings and heatmaps live in Microsoft's Clarity dashboard, and they are not stored in this GitHub repository.
+### Actions the website owner still needs inside Clarity
 
-After Clarity setup, connect Google Analytics within Clarity (Settings > Integrations) for a combined view. OpenSEO remains the hub for search and GA4 metrics; native Clarity heatmaps and replays remain in Clarity.
+1. **Settings > Masking:** Choose **Strict** for the greatest privacy, at least until you've reviewed what appears in example recordings. Note: it hides most website text. Clarity defaults to **Balanced**, and the explicit form masking code is already included.
+2. **Settings > Setup > Google Analytics integration:** Select **Get Started**, sign in to the Google account with access to the property, and connect **Bogdan Pascal Portfolio**. GA4 property ID is `565047122`, Account ID is `130547458` and Measurement ID is `G-X789N5N0QX`.
+3. **Test:** Visit the public site in a fresh browser, accept Clarity separately, click and scroll. Check **Settings > Setup** for installation status, then **Recordings** and **Heatmaps** once data arrives.
+4. **Privacy notice:** Publish/update a privacy notice explaining Google Analytics, Microsoft Clarity, consent changes and how recordings are handled. Review compliance for relevant visitor jurisdictions.
 
-Clarity's aggregate export API can supply a separate private reporting dashboard, limited by its API quota and date range. The official Clarity MCP server may also support AI analysis with an API token, but it is not automatically connected to OpenSEO or ChatGPT.
+Clarity doesn't automatically connect to OpenSEO through the existing GA4 and Search Console integration. Use the Clarity dashboard to replay sessions and view heatmaps, and OpenSEO for search and GA4 performance. Optional API/MCP integration can be evaluated separately.
+
+### Reference material
+
+- Clarity installation: https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-setup
+- ConsentV2: https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-consent-api-v2
+- Masking: https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-masking
+- Google Analytics integration: https://learn.microsoft.com/en-us/clarity/ga-integration/ga-integration
+- Retention: https://learn.microsoft.com/en-us/clarity/setup-and-installation/data-retention
 
 ## Documentation
 
