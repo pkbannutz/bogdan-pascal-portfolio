@@ -1,6 +1,6 @@
 # Service-by-service keyword and naming research roadmap
 
-**Last updated:** 18 November 2026 (families 1-7 research DONE; additional verified specialties next)
+**Last updated:** 18 November 2026 (seven core family research chapters and whole-site plan DONE; optional additional specialties proof-gated)
 **Status:** Research and documentation only. No production SEO/visual changes applied.
 **Read first:** [Full handoff](../START-HERE-NEXT-CHAT.md) and [principles](../RESEARCH-DECISION-PRINCIPLES.md).
 
@@ -32,8 +32,8 @@ A service family can be marked **DONE** only after the report provides:
 | 5 | **Film and commercial editing, narrative editing, finishing** | **DONE (research, NOT APPLIED)**: 61 UK queries (50 numeric/11 null), 4 Trends horizons, 7 partial Google SERPs, recognized editor titles, individual-credit caveats and critical verified LIVE `noindex,nofollow` blocker. | [VIDEO-EDITING-SEO-RANKED.md](VIDEO-EDITING-SEO-RANKED.md) |
 | 6 | **Colour grading and commercial colourist** | **DONE (research, NOT APPLIED)**: 62 UK queries (39 numeric/23 null), four Trends horizons, 7 SERPs, verified ScreenSkills and freelancer names, live noindex blocker and case-credit needs. | [COLOUR-GRADING-SEO-RANKED.md](COLOUR-GRADING-SEO-RANKED.md) |
 | 7 | **Sound design / sound effects / SFX / audio post** | **DONE (research, NOT APPLIED)**: 64 UK queries (52 numeric/12 null), 4 UK Trends horizons, 7 partial SERPs, AMPS and ScreenSkills terminology, audio SFX versus VFX ambiguity, role-specific proof/UX and metadata recommendations. | [SOUND-DESIGN-SFX-SEO-RANKED.md](SOUND-DESIGN-SFX-SEO-RANKED.md) |
-| 8 | **Other directly verified specialties, e.g. underwater cinematography** | NOT STARTED; verify actual client offering and current scope. | `ADDITIONAL-VERIFIED-SERVICES-SEO-RANKED.md` |
-| 9 | **Whole-site final implementation strategy** | **COMPLETED INTEGRATED DRAFT (research only, 18 Nov 2026)**: synthesizes all seven required service chapters, live noindex blockers, accurate professional title/credit safeguards, page title/visible wording candidates, P0–P3 staged deployment plan and measurement requirements. **Not published**; optional family #8 remains unstudied. | [WHOLE-SITE-SEO-PRIORITIZED-PLAN.md](WHOLE-SITE-SEO-PRIORITIZED-PLAN.md) |
+| 8 | **Other directly verified specialties, e.g. underwater cinematography** | **SCREENED / GATED, NOT QUANTITATIVELY DONE**: no individually verified underwater production proof and actual offered scope established. Deliberately do not advertise or spin up a keyword page until reality checks pass. | [ADDITIONAL-VERIFIED-SERVICES-SCREENING.md](ADDITIONAL-VERIFIED-SERVICES-SCREENING.md) |
+| 9 | **Whole-site final implementation strategy** | **DONE (research strategy, NOT APPLIED)** for seven completed actual core families; includes verified live noindex critical blocker, sitemap/robots 404, canonicals, 23 project proof, mobile and performance, controlled approval-gated release plan. Optional #8 remains gated. | [WHOLE-SITE-SEO-PRIORITIZED-PLAN.md](WHOLE-SITE-SEO-PRIORITIZED-PLAN.md) |
 
 ## Athlete inputs already collected and finalized
 
@@ -80,6 +80,11 @@ A service family can be marked **DONE** only after the report provides:
 ## Sound design research evidence
 
 - [SOUND-DESIGN-SFX-SEO-RANKED.md](SOUND-DESIGN-SFX-SEO-RANKED.md), [64-row UK keyword CSV](SOUND-KEYWORD-METRICS-64.csv), [raw DataForSEO volume/difficulty/intent](sound-data-raw-2026-11-18.json), [UK Trends](sound-trends-raw-2026-11-18.json), [partial UK Google SERPs](sound-google-serp-raw-2026-11-18.json).
+
+## Whole-site finished strategy / optional specialty screening
+
+- [WHOLE-SITE-SEO-PRIORITIZED-PLAN.md](WHOLE-SITE-SEO-PRIORITIZED-PLAN.md): prioritised, approval-gated action roadmap for the completed seven core families.
+- [ADDITIONAL-VERIFIED-SERVICES-SCREENING.md](ADDITIONAL-VERIFIED-SERVICES-SCREENING.md): optional underwater and other skills not marketed without real proof; category #8 intentionally not quantitatively done.
 
 ## Research workflow, repeated per family
 
