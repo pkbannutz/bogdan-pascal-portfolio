@@ -1,10 +1,12 @@
 # START HERE: Full SEO research handoff for Bogdan Pascal
 
+> **CURRENT UPDATE, 18 NOV 2026:** The work below is the ORIGINAL historical handoff. **Do not follow its now-obsolete “finish ATHLETE next” instruction.** Seven core service-family studies and the whole-site implementation plan have been completed and saved under [the roadmap](keyword-research/RESEARCH-ROADMAP.md). Start from [the final integrated strategy](keyword-research/WHOLE-SITE-SEO-PRIORITIZED-PLAN.md) and [the verified live indexing blockers](keyword-research/LIVE-INDEXING-BLOCKERS-2026-11-18.md). Live FPV, Editing and Colour pages are **noindex,nofollow**; all five service pages lack self canonicals; sitemap and robots.txt return 404. The public website remains **UNMODIFIED**. Obtain approval before production SEO/code/visible changes. Optional underwater skill remains proof-gated.
+
 **Prepared:** 18 November 2026  
 **Repo:** https://github.com/pkbannutz/bogdan-pascal-portfolio  
 **Research folder:** https://github.com/pkbannutz/bogdan-pascal-portfolio/tree/main/seo-audit  
 **Live:** https://bogdanpascal.com/ | https://bogdanpascal.com/athlete/ | https://bogdanpascal.com/filmmaker/  
-**Project status:** Research in progress. **No SEO changes have been applied to the public website.**
+**Project status (latest):** Seven core research chapters and whole-site plan DONE; **no SEO changes applied to public website**. Remaining old tasks in this historical handoff are superseded.
 
 ## 1. Mission and decision-making principles
 
@@ -58,7 +60,7 @@ Read [keyword-research/ATHLETE-RESEARCH-STATUS.md](keyword-research/ATHLETE-RESE
 
 **ATHLETE RESEARCH IS ONLY PARTIALLY COMPLETE.** Raw numbers and SERP snapshots have been gathered; no final defensible role-name rankings, complete buyer-intent study, site copy/metadata plans or family-completion document has yet been published.
 
-## 3. Exact next task. Start HERE, not from scratch.
+## 3. Historical exact next task (NOW COMPLETED; consult current update above)
 
 **Finish ATHLETE first.** User specifically switched initial order from FPV to athlete because that page is closest to ready.
 
