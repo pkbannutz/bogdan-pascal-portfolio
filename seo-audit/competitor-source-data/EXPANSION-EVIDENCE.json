@@ -1,0 +1,3573 @@
+{
+  "date": "2026-11-18",
+  "sourceCount": 274,
+  "successfulSources": 248,
+  "base": [
+    {
+      "id": "P01",
+      "name": "Parkour athlete / performer",
+      "scope": "Core",
+      "variants": [
+        "professional traceur",
+        "parkour action performer",
+        "parkour talent for film",
+        "parkour athlete for commercials",
+        "specialist parkour performer"
+      ]
+    },
+    {
+      "id": "P02",
+      "name": "Freerunning performer",
+      "scope": "Core",
+      "variants": [
+        "free runner for hire",
+        "professional freerunner",
+        "freerunning stunt artist",
+        "urban freerunning athlete",
+        "freerunning performer for film"
+      ]
+    },
+    {
+      "id": "P03",
+      "name": "Parkour coordinator / consultant",
+      "scope": "Core",
+      "variants": [
+        "parkour sequence coordinator",
+        "parkour stunt consultant",
+        "parkour movement coordinator",
+        "freerunning coordinator",
+        "parkour action adviser"
+      ]
+    },
+    {
+      "id": "P04",
+      "name": "Stunt performer",
+      "scope": "Core",
+      "variants": [
+        "stunt actor",
+        "special action performer",
+        "stunt double",
+        "action stunt performer",
+        "film stunt artist"
+      ]
+    },
+    {
+      "id": "P05",
+      "name": "Stunt coordinator",
+      "scope": "Adjacent, credentials/scope to confirm",
+      "variants": [
+        "film stunt supervisor",
+        "stunts department coordinator",
+        "stunt action director",
+        "stunt scene coordinator",
+        "on-set stunt coordination"
+      ]
+    },
+    {
+      "id": "P06",
+      "name": "Acrobat / acrobatic performer",
+      "scope": "Core",
+      "variants": [
+        "acrobatic stunt performer",
+        "professional acrobat",
+        "gymnastic performer",
+        "tumbling artist for film",
+        "acrobatic movement athlete"
+      ]
+    },
+    {
+      "id": "P07",
+      "name": "Movement director",
+      "scope": "Core",
+      "variants": [
+        "movement direction for film",
+        "performance movement director",
+        "physical performance director",
+        "movement specialist for productions",
+        "movement coach for screen action"
+      ]
+    },
+    {
+      "id": "P08",
+      "name": "Action choreographer",
+      "scope": "Core/adjacent by production",
+      "variants": [
+        "stunt choreography",
+        "parkour action choreography",
+        "freerunning sequence design",
+        "physical action choreographer",
+        "screen movement choreography"
+      ]
+    },
+    {
+      "id": "P09",
+      "name": "Extreme athlete / action sports talent",
+      "scope": "Core/adjacent by discipline",
+      "variants": [
+        "extreme sports performer",
+        "action sports athlete for hire",
+        "urban sports athlete",
+        "adventure sports talent",
+        "extreme movement specialist"
+      ]
+    },
+    {
+      "id": "P10",
+      "name": "Parkour performance / live show",
+      "scope": "Core/adjacent by booking",
+      "variants": [
+        "freerunning event performance",
+        "parkour live act",
+        "parkour demonstration show",
+        "action sports show performer",
+        "acrobatic parkour entertainment"
+      ]
+    },
+    {
+      "id": "F01",
+      "name": "Commercial filmmaker",
+      "scope": "Core",
+      "variants": [
+        "commercial film creator",
+        "branded content filmmaker",
+        "advertising film producer",
+        "brand video filmmaker",
+        "commercial videographer"
+      ]
+    },
+    {
+      "id": "F02",
+      "name": "Director of Photography (DoP)",
+      "scope": "Core",
+      "variants": [
+        "cinematography director",
+        "DP for commercials",
+        "director of cinematography",
+        "DoP for music videos",
+        "lighting and camera director"
+      ]
+    },
+    {
+      "id": "F03",
+      "name": "Cinematographer",
+      "scope": "Core",
+      "variants": [
+        "commercial cinematographer",
+        "cinematic camera artist",
+        "brand film cinematography",
+        "film image maker",
+        "cinematography specialist"
+      ]
+    },
+    {
+      "id": "F04",
+      "name": "Camera operator",
+      "scope": "Core",
+      "variants": [
+        "cinema camera operator",
+        "on-set camera specialist",
+        "freelance camera op",
+        "film camera operator",
+        "commercial camera crew"
+      ]
+    },
+    {
+      "id": "F05",
+      "name": "Gimbal operator",
+      "scope": "Core",
+      "variants": [
+        "stabilized camera operator",
+        "handheld gimbal cinematographer",
+        "camera stabilizer operator",
+        "stabilised tracking-shot operator",
+        "moving camera specialist"
+      ]
+    },
+    {
+      "id": "F06",
+      "name": "DJI Ronin operator",
+      "scope": "Core",
+      "variants": [
+        "Ronin RS3 Pro operator",
+        "DJI RS gimbal specialist",
+        "Ronin camera rig operator",
+        "motorized 3-axis gimbal operator",
+        "Ronin stabilizer cinematographer"
+      ]
+    },
+    {
+      "id": "F07",
+      "name": "Action / movement camera specialist",
+      "scope": "Core",
+      "variants": [
+        "parkour cameraman",
+        "stunt sequence camera operator",
+        "dynamic action cinematographer",
+        "movement-led camera operator",
+        "high-motion tracking-shot specialist"
+      ]
+    },
+    {
+      "id": "F08",
+      "name": "FPV drone filming",
+      "scope": "Core",
+      "variants": [
+        "FPV drone cinematographer",
+        "first-person-view aerial filming",
+        "FPV action drone pilot",
+        "cinematic FPV videography",
+        "FPV chase-shot operator"
+      ]
+    },
+    {
+      "id": "F09",
+      "name": "Commercial drone operator",
+      "scope": "Core",
+      "variants": [
+        "licensed aerial filming pilot",
+        "cinematic drone operator",
+        "UAV camera pilot",
+        "commercial drone cinematography",
+        "aerial filming drone crew"
+      ]
+    },
+    {
+      "id": "F10",
+      "name": "Aerial cinematography",
+      "scope": "Core",
+      "variants": [
+        "aerial camera operator",
+        "drone cinematographer",
+        "cinematic aerial photography",
+        "overhead filming specialist",
+        "aerial moving-camera filming"
+      ]
+    },
+    {
+      "id": "F11",
+      "name": "Underwater cinematography",
+      "scope": "Scope/availability to confirm",
+      "variants": [
+        "underwater camera operator",
+        "aquatic film cinematographer",
+        "submerged commercial filming",
+        "underwater videographer",
+        "pool underwater camera specialist"
+      ]
+    },
+    {
+      "id": "F12",
+      "name": "Video editing",
+      "scope": "Core",
+      "variants": [
+        "commercial video editor",
+        "branded video post editor",
+        "cinematic content editing",
+        "promotional film editing",
+        "online video editing services"
+      ]
+    },
+    {
+      "id": "F13",
+      "name": "Film / narrative editing",
+      "scope": "Core",
+      "variants": [
+        "story-led film editor",
+        "short-film picture editor",
+        "documentary film editor",
+        "narrative post-production editing",
+        "film sequence editor"
+      ]
+    },
+    {
+      "id": "F14",
+      "name": "Colour grading service",
+      "scope": "Core",
+      "variants": [
+        "color grading for film",
+        "cinematic look development",
+        "commercial colour finishing",
+        "video colour correction",
+        "DaVinci Resolve grading"
+      ]
+    },
+    {
+      "id": "F15",
+      "name": "Colourist",
+      "scope": "Core",
+      "variants": [
+        "freelance film colourist",
+        "commercial finishing colourist",
+        "professional colorist",
+        "image colour specialist",
+        "digital colour timing artist"
+      ]
+    },
+    {
+      "id": "F16",
+      "name": "Sound design",
+      "scope": "Core",
+      "variants": [
+        "cinematic audio design",
+        "film sound designer",
+        "commercial audio post-production",
+        "soundscape creation for video",
+        "film soundtrack design"
+      ]
+    },
+    {
+      "id": "F17",
+      "name": "SFX / sound effects",
+      "scope": "Core",
+      "variants": [
+        "sound effects editing",
+        "Foley effects design",
+        "cinematic effects sound design",
+        "impact and ambience editing",
+        "audio effects for commercials"
+      ]
+    },
+    {
+      "id": "F18",
+      "name": "Film post-production",
+      "scope": "Core",
+      "variants": [
+        "end-to-end video finishing",
+        "picture and sound post",
+        "commercial postproduction services",
+        "film finishing pipeline",
+        "video post-production studio"
+      ]
+    },
+    {
+      "id": "F19",
+      "name": "Music video filmmaking",
+      "scope": "Core",
+      "variants": [
+        "music video cinematography",
+        "artist music video production",
+        "performance video filming",
+        "music video camera operator",
+        "cinematic music video creator"
+      ]
+    },
+    {
+      "id": "F20",
+      "name": "Independent film production",
+      "scope": "Core/adjacent as team scope",
+      "variants": [
+        "small-crew film production",
+        "boutique commercial production",
+        "independent branded-film studio",
+        "full-service film production",
+        "creative video production team"
+      ]
+    }
+  ],
+  "additional": [
+    {
+      "id": "E01",
+      "group": "Performance",
+      "service": "Parkour workshops and classes",
+      "variants": [
+        "parkour coaching classes",
+        "freerunning lessons",
+        "parkour skills workshops",
+        "guided parkour sessions",
+        "parkour group training"
+      ],
+      "pattern": "parkour.*(?:class|workshop|lesson|train|coach)|free.?run.*(?:class|workshop|lesson|train)|parkour.?experiences",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://teamkinetix.co.uk/home-page-v3/",
+          "host": "teamkinetix.co.uk",
+          "label": "Ages 5-11 Parkour Classes",
+          "link": "https://teamkinetix.co.uk/ages-5-11-parkour-classes/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://parkour.uk/",
+          "host": "parkour.uk",
+          "label": "Find your community Join local parkour classes and get involved in your community.",
+          "link": "https://parkour.uk/discover-parkour/find-a-class",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E02",
+      "group": "Performance",
+      "service": "Stunt training and education",
+      "variants": [
+        "stunt skills training",
+        "stunt performer workshops",
+        "on-set stunt courses",
+        "stunt action coaching",
+        "screen stunt masterclasses"
+      ],
+      "pattern": "stunt.*(?:train|course|class|workshop|school|academy|education)",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E03",
+      "group": "Performance",
+      "service": "Gymnastics training",
+      "variants": [
+        "gymnastics coaching",
+        "gymnastics classes",
+        "tumbling instruction",
+        "acro gymnastics lessons",
+        "gymnastics technique workshops"
+      ],
+      "pattern": "gymnastics.*(?:train|coach|lesson|class|workshop)|tumbling.*(?:class|workshop|course)",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E04",
+      "group": "Performance",
+      "service": "Fight choreography and fight direction",
+      "variants": [
+        "screen combat choreography",
+        "film fight director",
+        "stage combat choreography",
+        "fight-scene design",
+        "action combat arranger"
+      ],
+      "pattern": "fight.*(?:choreograph|director|coordina)|combat.*(?:choreograph|director|train)|action arranger",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.dj-danjohnson.com/action",
+          "host": "dj-danjohnson.com",
+          "label": "STUNT / FIGHT COORDINATOR",
+          "link": "https://www.dj-danjohnson.com/action",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E05",
+      "group": "Performance",
+      "service": "Martial arts performance",
+      "variants": [
+        "martial arts stunt performer",
+        "combat demonstration artist",
+        "screen martial arts talent",
+        "martial arts show act",
+        "martial arts action performance"
+      ],
+      "pattern": "martial arts|combat perform",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E06",
+      "group": "Performance",
+      "service": "Wire stunts and wirework",
+      "variants": [
+        "cinematic wirework",
+        "flying stunt rigging",
+        "wire-assisted action",
+        "harness stunt sequences",
+        "wire flying effects"
+      ],
+      "pattern": "wire.*(?:stunt|work|rig|flying)|flying.*(?:stunt|rig)|harness.*stunt",
+      "status": "directory_only",
+      "providerCount": 0,
+      "directoryCount": 1,
+      "evidence": [],
+      "directoryEvidence": [
+        {
+          "site": "https://www.4rfv.co.uk/directory/286x1/stunt-coordinators-performers",
+          "host": "4rfv.co.uk",
+          "label": "Specialist Wire Rigs Ltd (for Special Effects & Stunts in film & Television)",
+          "link": "https://www.4rfv.co.uk/c/44506/specialist-wire-rigs-ltd-for-special-effects-stunts-in-film-television",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E07",
+      "group": "Performance",
+      "service": "Stunt rigging",
+      "variants": [
+        "stunt rigging crew",
+        "action rigging specialist",
+        "film safety rigging",
+        "stunt harness rigging",
+        "special action rigging"
+      ],
+      "pattern": "stunt rigg|rigging.*stunt",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://stuntjudge.co.uk/",
+          "host": "stuntjudge.co.uk",
+          "label": "Stunt Rigging | Engineering",
+          "link": "https://stuntjudge.co.uk/stunt-rigging-engineering/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E08",
+      "group": "Performance",
+      "service": "Stunt safety and supervision",
+      "variants": [
+        "on-set stunt safety",
+        "action safety supervision",
+        "film stunt risk assessment",
+        "stunt safety coordinator",
+        "stunt safety advisor"
+      ],
+      "pattern": "stunt.*(?:safety|risk|supervis)|(?:safety|supervis).*stunt",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://stuntjudge.co.uk/",
+          "host": "stuntjudge.co.uk",
+          "label": "Stunt Safety Management",
+          "link": "https://stuntjudge.co.uk/stunt-safety-management/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E09",
+      "group": "Performance",
+      "service": "Special action extras (SPACT) casting",
+      "variants": [
+        "special action casting",
+        "SPACT performer booking",
+        "special action background artists",
+        "action extras casting",
+        "stunt-capable extras hire"
+      ],
+      "pattern": "spact|special action cast|action extras",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E10",
+      "group": "Performance",
+      "service": "Sports talent casting",
+      "variants": [
+        "sports performer casting",
+        "athlete casting agency",
+        "sporting talent hire",
+        "sports double casting",
+        "athlete casting for adverts"
+      ],
+      "pattern": "sports talent|sports cast|athlete cast|sports double",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E11",
+      "group": "Performance",
+      "service": "Movement talent representation",
+      "variants": [
+        "movement performer agency",
+        "parkour athlete management",
+        "freerunning talent representation",
+        "urban athlete booking agency",
+        "movement artist management"
+      ],
+      "pattern": "talent agency|talent representation|athlete management|movement talent agency",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://movementmanagement.co.uk/hire-parkour-performer",
+          "host": "movementmanagement.co.uk",
+          "label": "what is a movement talent agency",
+          "link": "https://movementmanagement.co.uk/what-is-a-movement-talent-agency",
+          "kind": "provider"
+        },
+        {
+          "site": "https://movementproductionsuk.com/",
+          "host": "movementproductionsuk.com",
+          "label": "parkour talent agency",
+          "link": "https://movementmanagement.co.uk",
+          "kind": "provider"
+        },
+        {
+          "site": "https://sohoeditors.com/?srsltid=AYCX9vK6OWH4kuBqy5FnkKSt-ok43otizQ9lpD5znw11siXkoTndtXih",
+          "host": "sohoeditors.com",
+          "label": "London Talent Agency",
+          "link": "https://sohoeditors.com/contact/london-talent-agency",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://www.4rfv.co.uk/directory/74x1/choreographers",
+          "host": "4rfv.co.uk",
+          "label": "Mass Talent - Europe's Premier Talent Agency",
+          "link": "https://www.4rfv.co.uk/c/56122/mass-talent-europe-s-premier-talent-agency",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E12",
+      "group": "Performance",
+      "service": "Stunt doubles and body doubles",
+      "variants": [
+        "action body double",
+        "stunt double casting",
+        "physical performance double",
+        "sports body doubles",
+        "action double performer"
+      ],
+      "pattern": "body double|stunt double",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E13",
+      "group": "Performance",
+      "service": "Live event brand activations",
+      "variants": [
+        "parkour brand activation",
+        "experiential stunt marketing",
+        "brand launch action show",
+        "live sports brand campaign",
+        "experiential performer activation"
+      ],
+      "pattern": "brand activat|experiential activat|live events.*brand activat",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://movementmanagement.co.uk/hire-parkour-performer",
+          "host": "movementmanagement.co.uk",
+          "label": "parkour performers for live events and brand activations",
+          "link": "https://movementmanagement.co.uk/parkour-performers-live-events-brand-activations",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.juliacharleseventmanagement.co.uk/entertainment/opening-shows/themed-stunt-show/",
+          "host": "juliacharleseventmanagement.co.uk",
+          "label": "Brand Activations",
+          "link": "https://www.juliacharleseventmanagement.co.uk/event-services/brand-activations/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E14",
+      "group": "Performance",
+      "service": "Corporate entertainment acts",
+      "variants": [
+        "corporate stunt show",
+        "acrobatic corporate act",
+        "parkour entertainment booking",
+        "corporate action performance",
+        "live event stunt talent"
+      ],
+      "pattern": "corporate entertainment|corporate.*entertain",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.live-entertainment.co.uk/hire/hire-circus-acts/",
+          "host": "live-entertainment.co.uk",
+          "label": "Corporate Entertainment",
+          "link": "https://www.live-entertainment.co.uk/hire/corporate-entertainment/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://coventgardenentertainment.co.uk/acts/acrobatic-performers/",
+          "host": "coventgardenentertainment.co.uk",
+          "label": "Corporate Event Entertainment",
+          "link": "https://coventgardenentertainment.co.uk/acts/corporate-event-entertainment/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E15",
+      "group": "Performance",
+      "service": "Team building workshops",
+      "variants": [
+        "corporate team building events",
+        "movement-based team building",
+        "physical group activity workshop",
+        "sport team building experience",
+        "experiential group training"
+      ],
+      "pattern": "team building|team-building",
+      "status": "evidenced",
+      "providerCount": 6,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://scarlettentertainment.com/gb/categories/circus-entertainment/free-running-and-parkour",
+          "host": "scarlettentertainment.com",
+          "label": "Virtual Team Building",
+          "link": "https://scarlettentertainment.com/gb/categories/virtual-entertainment/virtual-team-building",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.contrabandevents.com/free-runners-parkour-performers/",
+          "host": "contrabandevents.com",
+          "label": "Team Building",
+          "link": "https://www.contrabandevents.com/team-building-and-away-days/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.alivenetwork.com/bandsearch.asp?style=Street%20Entertainers",
+          "host": "alivenetwork.com",
+          "label": "Team Building Activities",
+          "link": "https://www.alivenetwork.com/bandsearch.asp?style=Team%20Building%20and%20Workshops",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.live-entertainment.co.uk/hire/hire-circus-acts/",
+          "host": "live-entertainment.co.uk",
+          "label": "Team building & Corporate Fun Days",
+          "link": "https://www.live-entertainment.co.uk/hire/team-building-corporate-fun-days/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E16",
+      "group": "Performance",
+      "service": "Acrobatic dance entertainment",
+      "variants": [
+        "urban dance performer",
+        "street dance show",
+        "breakdance event act",
+        "commercial hip hop dancer",
+        "acrobatic dance group"
+      ],
+      "pattern": "street dance|breakdance|b.?boy|acrobatic dance",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://scarlettentertainment.com/gb/categories/circus-entertainment/free-running-and-parkour",
+          "host": "scarlettentertainment.com",
+          "label": "Acrobatic Dance",
+          "link": "https://scarlettentertainment.com/gb/categories/dancers/acrobatic-dance",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.juliacharleseventmanagement.co.uk/entertainment/acrobatic-shows/air-track-acrobat-performers/",
+          "host": "juliacharleseventmanagement.co.uk",
+          "label": "Acrobatic Dancers",
+          "link": "https://www.juliacharleseventmanagement.co.uk/entertainment/dancers-for-parties/acrobatic-dancers-kent/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E17",
+      "group": "Performance",
+      "service": "Aerial circus performers",
+      "variants": [
+        "aerial acrobat act",
+        "aerialist for events",
+        "silks performer",
+        "aerial stunt show",
+        "trapeze entertainment"
+      ],
+      "pattern": "aerialist|aerial acts|aerial acrobat|aerial show|trapeze",
+      "status": "evidenced",
+      "providerCount": 7,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://scarlettentertainment.com/gb/categories/circus-entertainment/free-running-and-parkour",
+          "host": "scarlettentertainment.com",
+          "label": "Aerialists",
+          "link": "https://scarlettentertainment.com/gb/categories/circus-entertainment/aerialists",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.contrabandevents.com/free-runners-parkour-performers/",
+          "host": "contrabandevents.com",
+          "label": "Aerial Acts & Aerial Performers",
+          "link": "https://www.contrabandevents.com/aerial-acts-aerial-performers/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.alivenetwork.com/bandsearch.asp?style=Street%20Entertainers",
+          "host": "alivenetwork.com",
+          "label": "Aerialists",
+          "link": "https://www.alivenetwork.com/bandsearch.asp?style=Aerialists",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.poptop.uk.com/suppliers/circus-entertainment/",
+          "host": "poptop.uk.com",
+          "label": "Aerialists",
+          "link": "https://www.poptop.uk.com/suppliers/circus-entertainment/aerialist/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E18",
+      "group": "Performance",
+      "service": "Hand balancing acts",
+      "variants": [
+        "hand balancing performer",
+        "handstand artist",
+        "equilibrist act",
+        "acrobatic hand balance",
+        "circus balance performance"
+      ],
+      "pattern": "hand balanc|handstand artist|equilibri",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://scarlettentertainment.com/gb/categories/circus-entertainment/free-running-and-parkour",
+          "host": "scarlettentertainment.com",
+          "label": "Acrobatics and Hand Balance",
+          "link": "https://scarlettentertainment.com/gb/categories/circus-entertainment/acrobatics-and-hand-balance",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.calmerkarma.org.uk/WHEEL-ACROBATIC-ACT.html",
+          "host": "calmerkarma.org.uk",
+          "label": "DIAMONDS HAND BALANCING ACROBAT",
+          "link": "https://www.calmerkarma.org.uk/DIAMONDS-THEMED-HAND-BALANCING-ACROBAT.html",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E19",
+      "group": "Performance",
+      "service": "Fire performance acts",
+      "variants": [
+        "fire stunt act",
+        "fire performer hire",
+        "flame show entertainer",
+        "pyrotechnic performance",
+        "fire juggling show"
+      ],
+      "pattern": "fire perform|fire show|fire act|pyrotechnic",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.liveperformers.co.uk/act-profile/acrobatic-duo/",
+          "host": "liveperformers.co.uk",
+          "label": "Fire Performers",
+          "link": "https://www.liveperformers.co.uk/acts/fire-performers-for-hire/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://findaperformer.net/circus-performers",
+          "host": "findaperformer.net",
+          "label": "The Brighton Fire Performer",
+          "link": "https://findaperformer.net/hire/2304/brighton-fire-performer",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E20",
+      "group": "Performance",
+      "service": "Stunt show production",
+      "variants": [
+        "live stunt show creation",
+        "action entertainment production",
+        "bespoke stunt performance",
+        "theatrical stunt show",
+        "public stunt demonstration production"
+      ],
+      "pattern": "stunt show|production shows|stunt act",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://scarlettentertainment.com/gb/categories/circus-entertainment/free-running-and-parkour",
+          "host": "scarlettentertainment.com",
+          "label": "Stunt Shows",
+          "link": "https://scarlettentertainment.com/gb/categories/cabaret-and-stage-shows/stunt-shows",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.contrabandevents.com/free-runners-parkour-performers/",
+          "host": "contrabandevents.com",
+          "label": "Production Shows",
+          "link": "https://www.contrabandevents.com/production-shows/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.scottmaydaredevil.co.uk/hire/",
+          "host": "scottmaydaredevil.co.uk",
+          "label": "Stunt Show",
+          "link": "https://www.scottmaydaredevil.co.uk/hire/stunt-show/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E21",
+      "group": "Performance",
+      "service": "Obstacle course and ninja experiences",
+      "variants": [
+        "ninja obstacle event",
+        "parkour obstacle challenge",
+        "urban obstacle course",
+        "ninja course experience",
+        "obstacle skills workshop"
+      ],
+      "pattern": "ninja.*(?:course|obstacle|trail|experience)|obstacle course",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E22",
+      "group": "Performance",
+      "service": "Parkour facility or course consulting",
+      "variants": [
+        "parkour facility design",
+        "freerunning park consultancy",
+        "movement space design",
+        "parkour obstacle planning",
+        "urban movement facility advice"
+      ],
+      "pattern": "parkour consult|parkour park|parkour.*design|obstacle.*design",
+      "status": "overlap_or_weak",
+      "providerCount": 1,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://movementmanagement.co.uk/hire-parkour-performer",
+          "host": "movementmanagement.co.uk",
+          "label": "Parkour Consultancy",
+          "link": "https://movementmanagement.co.uk/parkour-consultancy",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E23",
+      "group": "Performance",
+      "service": "Talent management and agency booking",
+      "variants": [
+        "entertainment talent booking",
+        "performer management agency",
+        "live artist representation",
+        "sports star booking",
+        "talent agency services"
+      ],
+      "pattern": "talent management|artist management|booking agency|talent representation",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E24",
+      "group": "Performance",
+      "service": "Casting services",
+      "variants": [
+        "performer casting services",
+        "commercial talent casting",
+        "screen performer casting",
+        "casting agency production",
+        "specialist talent sourcing"
+      ],
+      "pattern": "casting service|casting agency|casting and|talent casting",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://www.nationalcircus.org.uk/opportunity/acrobatics-gymnastics-parkour-stunts-performers-wanted/",
+          "host": "nationalcircus.org.uk",
+          "label": "Casting and Corporate Events",
+          "link": "https://www.nationalcircus.org.uk/venue-hire-and-casting/casting-and-corporate-events/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://www.4rfv.co.uk/directory/74x1/choreographers",
+          "host": "4rfv.co.uk",
+          "label": "Casting and Agents",
+          "link": "https://www.4rfv.co.uk/m12_casting-and-agents",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E25",
+      "group": "Performance",
+      "service": "Weapons and armoury services",
+      "variants": [
+        "film armourer",
+        "on-set weapons supervision",
+        "prop weapons coordination",
+        "screen armoury support",
+        "action weapon handling"
+      ],
+      "pattern": "armour|weapons coordinator|weapons.*(?:film|screen|stunt)",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E26",
+      "group": "Performance",
+      "service": "Practical SFX supervision",
+      "variants": [
+        "practical action effects",
+        "special effects stunt crew",
+        "physical SFX supervisor",
+        "on-set practical effects",
+        "stunt effects supervisor"
+      ],
+      "pattern": "sfx supervisor|special effects.*stunt|practical effects|sfx stunts",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://www.thestuntalliance.co.uk/stunt-coordinators/",
+          "host": "thestuntalliance.co.uk",
+          "label": "SFX Supervisor",
+          "link": "https://www.thestuntalliance.co.uk/sfx-supervisor/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://www.4rfv.co.uk/c/38853/parkour-generations-ltd",
+          "host": "4rfv.co.uk",
+          "label": "SFX Stunts & Prosthetics",
+          "link": "https://www.4rfv.co.uk/m29_sfx-stunts-prosthetics",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E27",
+      "group": "Performance",
+      "service": "Stunt camera vehicles",
+      "variants": [
+        "action camera car",
+        "camera tracking vehicles",
+        "stunt chase camera vehicle",
+        "vehicle camera rigs",
+        "camera car filming"
+      ],
+      "pattern": "camera vehicles|tracking vehicles|camera car",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://www.thestuntalliance.co.uk/stunt-coordinators/",
+          "host": "thestuntalliance.co.uk",
+          "label": "Camera Vehicles",
+          "link": "https://www.thestuntalliance.co.uk/camera-vehicles/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://lightcoloursound.co.uk/gimbal-operator",
+          "host": "lightcoloursound.co.uk",
+          "label": "Remote Camera Car",
+          "link": "https://lightcoloursound.co.uk/remote-camera-car",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.dlpremotes.com/dji-ronin-2-hire",
+          "host": "dlpremotes.com",
+          "label": "Camera Tracking Vehicles",
+          "link": "https://www.dlpremotes.com/camera-tracking-vehicles",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://dronesaferegister.org.uk/",
+          "host": "dronesaferegister.org.uk",
+          "label": "Camera Vehicles",
+          "link": "https://dronesaferegister.org.uk/services/camera-car-tracking-vehicles",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E28",
+      "group": "Performance",
+      "service": "Venue and studio hire",
+      "variants": [
+        "studio space rental",
+        "filming venue hire",
+        "production studio rental",
+        "event venue hire",
+        "creative studio space hire"
+      ],
+      "pattern": "venue hire|studio hire|production facilities",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 3,
+      "evidence": [
+        {
+          "site": "https://www.nationalcircus.org.uk/opportunity/acrobatics-gymnastics-parkour-stunts-performers-wanted/",
+          "host": "nationalcircus.org.uk",
+          "label": "Creation Studio Hire",
+          "link": "https://www.nationalcircus.org.uk/professional-artists/1041-2/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "Film Studio Hire",
+          "link": "https://www.filmfolk.com/services/film-studio",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.roundhouse.org.uk/whats-on/sound-for-film-au26/",
+          "host": "roundhouse.org.uk",
+          "label": "Venue hire",
+          "link": "https://www.roundhouse.org.uk/venue-hire/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://nfts.co.uk/production-coordinators",
+          "host": "nfts.co.uk",
+          "label": "Production facilities",
+          "link": "https://nfts.co.uk/production-facilities",
+          "kind": "directory"
+        },
+        {
+          "site": "https://www.bfi.org.uk/bfi-film-academy-opportunities-young-creatives/bfi-film-academy-how-do-i-work-film-television-industries/how-do-i-become-cinematographer",
+          "host": "bfi.org.uk",
+          "label": "Venue hire",
+          "link": "https://www.bfi.org.uk/hire-our-venues",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E29",
+      "group": "Production",
+      "service": "Corporate video production",
+      "variants": [
+        "business video production",
+        "corporate brand films",
+        "company overview video",
+        "business promotional films",
+        "internal corporate filmmaking"
+      ],
+      "pattern": "corporate video|company film|business video",
+      "status": "evidenced",
+      "providerCount": 10,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.thefilmfarmers.co.uk/commercial-video-production",
+          "host": "thefilmfarmers.co.uk",
+          "label": "Corporate Videos",
+          "link": "https://www.thefilmfarmers.co.uk/corporate-video-production",
+          "kind": "provider"
+        },
+        {
+          "site": "https://ryanblackwood.co.uk/",
+          "host": "ryanblackwood.co.uk",
+          "label": "Corporate Video Edinburgh",
+          "link": "https://ryanblackwood.co.uk/corporate-video-edinburgh/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.herenow.film/film-crew-hire/london/dop",
+          "host": "herenow.film",
+          "label": "Corporate video",
+          "link": "https://www.herenow.film/corporate-video-production",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "Corporate Video Editing",
+          "link": "https://www.filmfolk.com/services/corporate-video-editing",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E30",
+      "group": "Production",
+      "service": "Documentary production",
+      "variants": [
+        "documentary filmmaking service",
+        "branded documentary production",
+        "factual film production",
+        "short documentary studio",
+        "human interest film production"
+      ],
+      "pattern": "documentary production|documentary filmmaking|micro-documentar",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://www.thefilmfarmers.co.uk/commercial-video-production",
+          "host": "thefilmfarmers.co.uk",
+          "label": "documentary production",
+          "link": "https://www.thefilmfarmers.co.uk/documentary",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.herenow.film/film-crew-hire/london/dop",
+          "host": "herenow.film",
+          "label": "Micro-documentaries",
+          "link": "https://www.herenow.film/micro-documentary-production",
+          "kind": "provider"
+        },
+        {
+          "site": "https://clockwise.film/post-production-services/",
+          "host": "clockwise.film",
+          "label": "Documentary Production",
+          "link": "https://clockwise.film/documentary-production/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://www.sae.edu/gbr/insights/sound-design-the-unsung-hero-of-film/",
+          "host": "sae.edu",
+          "label": "MA Documentary Filmmaking",
+          "link": "https://www.sae.edu/gbr/courses/ma-documentary-filmmaking/",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E31",
+      "group": "Production",
+      "service": "Interview filming",
+      "variants": [
+        "filmed interview production",
+        "on-camera interview shoot",
+        "executive interview video",
+        "interview cinematography",
+        "talking-head filming"
+      ],
+      "pattern": "interview filming|interview video|filmed interview",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E32",
+      "group": "Production",
+      "service": "Customer testimonial videos",
+      "variants": [
+        "client testimonial filming",
+        "video customer stories",
+        "case study video production",
+        "customer success films",
+        "testimonial film creator"
+      ],
+      "pattern": "testimonial video|customer stories|case study video",
+      "status": "evidenced",
+      "providerCount": 4,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.thefilmfarmers.co.uk/commercial-video-production",
+          "host": "thefilmfarmers.co.uk",
+          "label": "Case Study Videos",
+          "link": "https://www.thefilmfarmers.co.uk/case-study-videos",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.herenow.film/film-crew-hire/london/dop",
+          "host": "herenow.film",
+          "label": "Customer stories",
+          "link": "https://www.herenow.film/customer-story-video-production",
+          "kind": "provider"
+        },
+        {
+          "site": "https://tailoredmedia.co.uk/freefly-movi-pro-hire-london/",
+          "host": "tailoredmedia.co.uk",
+          "label": "Case study video production",
+          "link": "https://tailoredmedia.co.uk/case-study-videos/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://beast.agency/services/feature-film-production/",
+          "host": "beast.agency",
+          "label": "CORPORATE INTERVIEW & CASE STUDY VIDEO PRODUCTION",
+          "link": "https://beast.agency/industries/corporate-interview-video-production-uk/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E33",
+      "group": "Production",
+      "service": "Event video production",
+      "variants": [
+        "conference videographer",
+        "live event filming",
+        "corporate event coverage",
+        "event highlight film",
+        "event video crew"
+      ],
+      "pattern": "event videograph|event filming|event video|event coverage",
+      "status": "evidenced",
+      "providerCount": 8,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://scarlettentertainment.com/gb/categories/circus-entertainment/free-running-and-parkour",
+          "host": "scarlettentertainment.com",
+          "label": "Event Filming and Production",
+          "link": "https://scarlettentertainment.com/gb/categories/event-design/event-filming-and-production",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.thefilmfarmers.co.uk/commercial-video-production",
+          "host": "thefilmfarmers.co.uk",
+          "label": "Event Videography",
+          "link": "https://www.thefilmfarmers.co.uk/event-videography",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.dannycooke.co.uk/",
+          "host": "dannycooke.co.uk",
+          "label": "Event Coverage",
+          "link": "https://www.dannycooke.co.uk/portfolio/event-coverage/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://tailoredmedia.co.uk/freefly-movi-pro-hire-london/",
+          "host": "tailoredmedia.co.uk",
+          "label": "Event videography",
+          "link": "https://tailoredmedia.co.uk/services/event-videography/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://dronesaferegister.org.uk/",
+          "host": "dronesaferegister.org.uk",
+          "label": "Drone Event Filming Services",
+          "link": "https://dronesaferegister.org.uk/drone-event-filming",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E34",
+      "group": "Production",
+      "service": "Live streaming production",
+      "variants": [
+        "live video streaming",
+        "multi-platform livestream filming",
+        "event live broadcast",
+        "livestream production team",
+        "real-time online video production"
+      ],
+      "pattern": "live.?stream|broadcast streaming|live broadcast",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "livestreaming",
+          "link": "https://www.filmfolk.com/services/livestreaming",
+          "kind": "provider"
+        },
+        {
+          "site": "https://aerialworx.co.uk/",
+          "host": "aerialworx.co.uk",
+          "label": "Live Broadcast Drone",
+          "link": "https://aerialworx.co.uk/live-broadcast-drone/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.silvertipfilms.co.uk/music-videos/",
+          "host": "silvertipfilms.co.uk",
+          "label": "Live Streaming Production",
+          "link": "https://www.silvertipfilms.co.uk/live-streaming-production/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E35",
+      "group": "Production",
+      "service": "Multicamera filming",
+      "variants": [
+        "multi-camera video crew",
+        "multicam event filming",
+        "multi-camera concert production",
+        "live multicam capture",
+        "multi-camera studio recording"
+      ],
+      "pattern": "multi.?camera|multicam|multi-cam",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "Multicamera Livestreaming",
+          "link": "https://www.filmfolk.com/services/multicamera-livestreaming",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E36",
+      "group": "Production",
+      "service": "Commercial still photography",
+      "variants": [
+        "advertising still photographer",
+        "commercial photo production",
+        "brand campaign photography",
+        "commercial product photography",
+        "professional brand photographer"
+      ],
+      "pattern": "commercial photograph|photography service|photograph",
+      "status": "evidenced",
+      "providerCount": 33,
+      "directoryCount": 3,
+      "evidence": [
+        {
+          "site": "https://scarlettentertainment.com/gb/categories/circus-entertainment/free-running-and-parkour",
+          "host": "scarlettentertainment.com",
+          "label": "Photo Booths and Photographers",
+          "link": "https://scarlettentertainment.com/gb/categories/event-design/photo-booths-and-photographers",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.contrabandevents.com/free-runners-parkour-performers/",
+          "host": "contrabandevents.com",
+          "label": "Paparazzi Photographers",
+          "link": "https://www.contrabandevents.com/paparazzi-photographers/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.alivenetwork.com/bandsearch.asp?style=Street%20Entertainers",
+          "host": "alivenetwork.com",
+          "label": "Paparazzi Photographers",
+          "link": "https://www.alivenetwork.com/bandsearch.asp?style=Paparazzi%20Photographers",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.juliacharleseventmanagement.co.uk/entertainment/opening-shows/themed-stunt-show/",
+          "host": "juliacharleseventmanagement.co.uk",
+          "label": "Fake Paparazzi Photographers",
+          "link": "https://www.juliacharleseventmanagement.co.uk/entertainment/walkabout-entertainment/fake-paparazzi-photographers-leeds/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://www.twine.net/find/stunt-performers/uk",
+          "host": "twine.net",
+          "label": "Photographers",
+          "link": "https://www.twine.net/find/photographers/uk",
+          "kind": "directory"
+        },
+        {
+          "site": "https://saraputt.co.uk/department/heads-of-department/stunt-coordinators/",
+          "host": "saraputt.co.uk",
+          "label": "Directors of Photography",
+          "link": "https://saraputt.co.uk/department/heads-of-department/directors-of-photography/",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E37",
+      "group": "Production",
+      "service": "Product photography",
+      "variants": [
+        "ecommerce product photography",
+        "studio product photos",
+        "packshot photo production",
+        "product advertising photography",
+        "retail product shoot"
+      ],
+      "pattern": "product photography|packshot|ecommerce photography",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "Affordable Product Photography",
+          "link": "https://www.filmfolk.com/services/product-photography",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E38",
+      "group": "Production",
+      "service": "Sports photography",
+      "variants": [
+        "athlete sports photography",
+        "sporting event photographer",
+        "action sports photos",
+        "extreme sports photography",
+        "sport commercial stills"
+      ],
+      "pattern": "sports photograph|sport photography|action photography",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E39",
+      "group": "Production",
+      "service": "Aerial photography",
+      "variants": [
+        "drone still photography",
+        "overhead commercial photographs",
+        "aerial property images",
+        "professional UAV photography",
+        "cinematic drone photos"
+      ],
+      "pattern": "aerial photography|drone photography",
+      "status": "evidenced",
+      "providerCount": 9,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "Aerial Photography",
+          "link": "https://www.filmfolk.com/services/aerial-photography",
+          "kind": "provider"
+        },
+        {
+          "site": "https://lightcoloursound.co.uk/gimbal-operator",
+          "host": "lightcoloursound.co.uk",
+          "label": "Folder: Aerial Photography",
+          "link": "https://lightcoloursound.co.uk/aerial-photography",
+          "kind": "provider"
+        },
+        {
+          "site": "https://dronescope.co.uk/fpv-drone-filming-london",
+          "host": "dronescope.co.uk",
+          "label": "Drone Photography",
+          "link": "https://dronescope.co.uk/drone-photography",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.bigladder.co.uk/fpv-drone-filming-specialist/",
+          "host": "bigladder.co.uk",
+          "label": "Drone Photography London",
+          "link": "https://www.bigladder.co.uk/drone-photography-london/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://dronesaferegister.org.uk/",
+          "host": "dronesaferegister.org.uk",
+          "label": "Aerial Photography",
+          "link": "https://dronesaferegister.org.uk/services/professional-aerial-photography",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E40",
+      "group": "Production",
+      "service": "Real estate video production",
+      "variants": [
+        "property film production",
+        "estate agent video tours",
+        "commercial real estate filming",
+        "real estate drone video",
+        "architectural property videography"
+      ],
+      "pattern": "real estate video|property videograph|property filming",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.filmfolk.com/jobs/freelance-video-editor",
+          "host": "filmfolk.com",
+          "label": "Property Videographer London",
+          "link": "https://www.filmfolk.com/services/property-videography",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E41",
+      "group": "Production",
+      "service": "Architectural filming",
+      "variants": [
+        "architecture videography",
+        "building film production",
+        "built environment cinematography",
+        "architecture commercial video",
+        "construction property film"
+      ],
+      "pattern": "architectural video|architecture filming|architecture videograph",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E42",
+      "group": "Production",
+      "service": "360-degree virtual tours",
+      "variants": [
+        "360 immersive tour video",
+        "virtual reality property tour",
+        "360 video filming",
+        "interactive virtual tour",
+        "immersive tour production"
+      ],
+      "pattern": "360.?video|virtual tours?|360.?tour|360 photography",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://www.impactaerial.co.uk/2026/11/02/hiring-a-commercial-drone-operator-in-the-uk-for-aerial-services/",
+          "host": "impactaerial.co.uk",
+          "label": "Drone Services For Virtual Tours",
+          "link": "https://www.impactaerial.co.uk/drone-services-for-virtual-tours/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://dronesaferegister.org.uk/",
+          "host": "dronesaferegister.org.uk",
+          "label": "360 Virtual Tour",
+          "link": "https://dronesaferegister.org.uk/services/360-virtual-tour",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E43",
+      "group": "Production",
+      "service": "Time-lapse filming",
+      "variants": [
+        "timelapse film capture",
+        "time lapse construction video",
+        "long-duration interval filming",
+        "cinematic hyperlapse",
+        "time-lapse production"
+      ],
+      "pattern": "time.?lapse|hyperlapse",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://lightcoloursound.co.uk/gimbal-operator",
+          "host": "lightcoloursound.co.uk",
+          "label": "Drone Timelapse",
+          "link": "https://lightcoloursound.co.uk/drone-timelapse",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.halovue.co.uk/drone-filming-teams-uk/",
+          "host": "halovue.co.uk",
+          "label": "Timelapse & Hyperlapse",
+          "link": "https://www.halovue.co.uk/drone-filming-services/drone-hyperlapse-filming-uk/",
+          "kind": "provider"
+        },
+        {
+          "site": "http://www.garethfry.co.uk/immersive",
+          "host": "garethfry.co.uk",
+          "label": "Technique: Time Lapse photography",
+          "link": "http://www.garethfry.co.uk/time-lapse-photography",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://dronesaferegister.org.uk/",
+          "host": "dronesaferegister.org.uk",
+          "label": "Time-lapse Specialist",
+          "link": "https://dronesaferegister.org.uk/services/time-lapse-specialist",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E44",
+      "group": "Production",
+      "service": "High speed slow-motion filming",
+      "variants": [
+        "slow motion camera filming",
+        "high frame rate cinematography",
+        "Phantom high speed camera",
+        "super slow-mo video",
+        "high speed sports filming"
+      ],
+      "pattern": "slow.?motion|high speed camer|high frame rate",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E45",
+      "group": "Production",
+      "service": "Camera equipment hire",
+      "variants": [
+        "camera rental services",
+        "cinema camera hire",
+        "camera kit rental",
+        "professional filmmaking gear hire",
+        "video camera equipment rental"
+      ],
+      "pattern": "camera hire|camera rental|equipment hire|kit rental",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 2,
+      "evidence": [
+        {
+          "site": "https://www.herenow.film/film-crew-hire/london/dop",
+          "host": "herenow.film",
+          "label": "Kit rental",
+          "link": "https://www.herenow.film/film-crew-hire/london/equipment-hire",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "Camera Hire",
+          "link": "https://www.filmfolk.com/services/camera-hire",
+          "kind": "provider"
+        },
+        {
+          "site": "https://camelot-films.co.uk/",
+          "host": "camelot-films.co.uk",
+          "label": "Equipment Hire",
+          "link": "https://camelot-films.co.uk/services/equipment-hire",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://www.4rfv.co.uk/c/38853/parkour-generations-ltd",
+          "host": "4rfv.co.uk",
+          "label": "Equipment Hire",
+          "link": "https://www.4rfv.co.uk/equipment_sales_hire.aspx?equipsoh=hire",
+          "kind": "directory"
+        },
+        {
+          "site": "https://theknowledgeonline.com/listing-category/stunt-co-ordinators-performers",
+          "host": "theknowledgeonline.com",
+          "label": "Equipment Hire",
+          "link": "https://theknowledgeonline.com/equipment-hire",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E46",
+      "group": "Production",
+      "service": "Lighting hire and design",
+      "variants": [
+        "film lighting hire",
+        "on-set lighting design",
+        "cinematography lighting services",
+        "lighting rental film",
+        "commercial shoot lighting"
+      ],
+      "pattern": "lighting hire|lighting design|lighting rental|lighting cameraman",
+      "status": "overlap_or_weak",
+      "providerCount": 3,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://www.jamesmelrosedop.com/service/director/",
+          "host": "jamesmelrosedop.com",
+          "label": "Lighting Cameraman",
+          "link": "https://www.jamesmelrosedop.com/service/lighting-cameraman-dop/",
+          "kind": "provider"
+        },
+        {
+          "site": "http://shootrichard.co.uk/",
+          "host": "shootrichard.co.uk",
+          "label": "Richard Reed | Director of Photography / Lighting Cameraman London",
+          "link": "http://www.shootrichard.co.uk",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "Lighting Hire",
+          "link": "https://www.filmfolk.com/services/lighting-hire",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://www.4rfv.co.uk/directory/818x1/aerial-filming",
+          "host": "4rfv.co.uk",
+          "label": "Bakehouse TV (Peter Moseley Lighting Cameraman Bristol)",
+          "link": "https://www.4rfv.co.uk/c/38385/bakehouse-tv-peter-moseley-lighting-cameraman-bristol",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E47",
+      "group": "Production",
+      "service": "Steadicam operation",
+      "variants": [
+        "steadicam camera operator",
+        "body-mounted stabilised camera",
+        "steadicam filming crew",
+        "steadicam tracking shots",
+        "stabilized camera system operator"
+      ],
+      "pattern": "steadicam",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 2,
+      "evidence": [
+        {
+          "site": "https://www.herenow.film/film-crew-hire/london/dop",
+          "host": "herenow.film",
+          "label": "Steadicam operator",
+          "link": "https://www.herenow.film/film-crew-hire/london/steadicam-operator",
+          "kind": "provider"
+        },
+        {
+          "site": "https://johnfrysteadicam.co.uk/",
+          "host": "johnfrysteadicam.co.uk",
+          "label": "The Steadigimbal Bracket – Camera Gimbal on your Steadicam Arm & Vest!",
+          "link": "https://johnfrysteadicam.co.uk/steadigimbal-bracket/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://saraputt.co.uk/department/heads-of-department/stunt-coordinators/",
+          "host": "saraputt.co.uk",
+          "label": "Camera ' Steadicam Operators",
+          "link": "https://saraputt.co.uk/department/crew/steadicam-operators/",
+          "kind": "directory"
+        },
+        {
+          "site": "https://dronesaferegister.org.uk/",
+          "host": "dronesaferegister.org.uk",
+          "label": "Steadicam and Movi Operators",
+          "link": "https://dronesaferegister.org.uk/services/steadicam-movi-operators",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E48",
+      "group": "Production",
+      "service": "Camera crane and jib services",
+      "variants": [
+        "film camera crane operator",
+        "jib arm cinematography",
+        "camera crane rental crew",
+        "telescopic camera crane",
+        "elevated tracking shot filming"
+      ],
+      "pattern": "camera crane|jib operator|jib camera|crane filming",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E49",
+      "group": "Production",
+      "service": "Location scouting and permits",
+      "variants": [
+        "filming location scouting",
+        "film locations management",
+        "shoot location research",
+        "film permit coordination",
+        "location production services"
+      ],
+      "pattern": "location scout|locations and permits|location management|filming permit",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.herenow.film/film-crew-hire/london/dop",
+          "host": "herenow.film",
+          "label": "Locations and permits",
+          "link": "https://www.herenow.film/film-crew-hire/locations-permits",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E50",
+      "group": "Production",
+      "service": "Production fixer services",
+      "variants": [
+        "film production fixer",
+        "local crew fixer",
+        "shoot logistics coordinator",
+        "international shoot support",
+        "on-location production fixer"
+      ],
+      "pattern": "fixer|fixing services",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.herenow.film/film-crew-hire/london/dop",
+          "host": "herenow.film",
+          "label": "Fixer",
+          "link": "https://www.herenow.film/film-crew-hire/london/fixer",
+          "kind": "provider"
+        },
+        {
+          "site": "https://moonshinefilm.com/products/dji-ronin-4d-8k-hire-london?srsltid=AYCX9vKgtkSX5pQdBkqvBy4P-GDTnbQEHeTtUVSO46VHuezNI4vz-XlO",
+          "host": "moonshinefilm.com",
+          "label": "UK FIXER Production Services",
+          "link": "https://moonshinefilm.com/pages/uk-fixer-london-uk",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E51",
+      "group": "Production",
+      "service": "Crew sourcing and hiring",
+      "variants": [
+        "film crew hire",
+        "video production crew booking",
+        "freelance crew sourcing",
+        "camera crew staffing",
+        "on-set crew hire"
+      ],
+      "pattern": "film crew hire|crew by role|hire crew|production crew hire",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.herenow.film/film-crew-hire/london/dop",
+          "host": "herenow.film",
+          "label": "Film Crew Hire",
+          "link": "https://www.herenow.film/film-crew-hire",
+          "kind": "provider"
+        },
+        {
+          "site": "https://moonshinefilm.com/products/dji-ronin-4d-8k-hire-london?srsltid=AYCX9vKgtkSX5pQdBkqvBy4P-GDTnbQEHeTtUVSO46VHuezNI4vz-XlO",
+          "host": "moonshinefilm.com",
+          "label": "Our Film Crew Hire Packages",
+          "link": "https://moonshinefilm.com/collections/our-film-crew-hire-packages",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E52",
+      "group": "Production",
+      "service": "Creative direction",
+      "variants": [
+        "commercial creative direction",
+        "branded video creative lead",
+        "film concept direction",
+        "advertising creative director",
+        "creative treatment direction"
+      ],
+      "pattern": "creative direction|creative director",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "Creative Director",
+          "link": "https://www.filmfolk.com/services/creative-director",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://www.twine.net/find/stunt-performers/uk",
+          "host": "twine.net",
+          "label": "Creative Directors",
+          "link": "https://www.twine.net/find/creative-directors/uk",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E53",
+      "group": "Production",
+      "service": "Film directing",
+      "variants": [
+        "commercial film director",
+        "music video direction",
+        "film scene direction",
+        "advertising director",
+        "branded film directing"
+      ],
+      "pattern": "film directing|video directing|director services",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E54",
+      "group": "Production",
+      "service": "Production management",
+      "variants": [
+        "commercial film producer",
+        "production management",
+        "line producer for video",
+        "brand video producing",
+        "on-set film production management"
+      ],
+      "pattern": "producing|film producer|line production|production management",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://theplace.org.uk/profile/benjamin-jonsson/",
+          "host": "theplace.org.uk",
+          "label": "Producing and Touring",
+          "link": "https://theplace.org.uk/work-with-us/producing-touring",
+          "kind": "provider"
+        },
+        {
+          "site": "https://lightningstrikeproductions.co.uk/drone-pilot-uk/",
+          "host": "lightningstrikeproductions.co.uk",
+          "label": "Producing 2D geo-referenced maps. 3D digital twins",
+          "link": "https://lightningstrikeproductions.co.uk/drone-mapping/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://klaxon.studio/services/sound-design",
+          "host": "klaxon.studio",
+          "label": "Production Management",
+          "link": "https://klaxon.studio/services/production-management",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E55",
+      "group": "Production",
+      "service": "Scriptwriting and copywriting",
+      "variants": [
+        "commercial script writer",
+        "video script development",
+        "film screenplay writing",
+        "brand film writing",
+        "screenwriting services"
+      ],
+      "pattern": "scriptwriting|script writing|screenwriting|copywriting",
+      "status": "directory_only",
+      "providerCount": 0,
+      "directoryCount": 1,
+      "evidence": [],
+      "directoryEvidence": [
+        {
+          "site": "https://www.twine.net/find/stunt-performers/uk",
+          "host": "twine.net",
+          "label": "Marketing & Content Jobs in marketing from PPC, social and SEO to UGC, podcast production and copywriting.",
+          "link": "https://www.twine.net/freelance/marketing",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E56",
+      "group": "Production",
+      "service": "Storyboarding and previsualization",
+      "variants": [
+        "film storyboard artist",
+        "previsualisation services",
+        "3D shot previsualization",
+        "camera shot planning",
+        "commercial storyboard design"
+      ],
+      "pattern": "storyboard|previs|previsual",
+      "status": "directory_only",
+      "providerCount": 0,
+      "directoryCount": 1,
+      "evidence": [],
+      "directoryEvidence": [
+        {
+          "site": "https://www.twine.net/find/stunt-performers/uk",
+          "host": "twine.net",
+          "label": "Storyboard Artists",
+          "link": "https://www.twine.net/find/storyboard-artists/uk",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E57",
+      "group": "Production",
+      "service": "Content strategy",
+      "variants": [
+        "video content strategy",
+        "branded film strategy",
+        "social content planning",
+        "creative content consulting",
+        "marketing content roadmap"
+      ],
+      "pattern": "content strategy|content planning|creative strategy",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://www.bigladder.co.uk/fpv-drone-filming-specialist/",
+          "host": "bigladder.co.uk",
+          "label": "Social Media Video Content Strategy",
+          "link": "https://www.bigladder.co.uk/social-media-video-content-strategy/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://www.sae.edu/gbr/insights/sound-design-the-unsung-hero-of-film/",
+          "host": "sae.edu",
+          "label": "MA/MSc Content Strategy and Marketing",
+          "link": "https://www.sae.edu/gbr/ma-msc-content-strategy-and-marketing/",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E58",
+      "group": "Production",
+      "service": "Social media video production",
+      "variants": [
+        "social video agency",
+        "short-form brand content filming",
+        "TikTok ad videos",
+        "Instagram Reels production",
+        "vertical commercial film"
+      ],
+      "pattern": "social media video|social video|social content creation",
+      "status": "overlap_or_weak",
+      "providerCount": 1,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.bigladder.co.uk/fpv-drone-filming-specialist/",
+          "host": "bigladder.co.uk",
+          "label": "Social Media Video Content Strategy",
+          "link": "https://www.bigladder.co.uk/social-media-video-content-strategy/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E59",
+      "group": "Production",
+      "service": "TV commercial production",
+      "variants": [
+        "television advert production",
+        "broadcast ad filming",
+        "TV ad production studio",
+        "commercial broadcast production",
+        "television commercial filmmaking"
+      ],
+      "pattern": "tv commercial|television commercial|tv advert",
+      "status": "evidenced",
+      "providerCount": 6,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.herenow.film/film-crew-hire/london/dop",
+          "host": "herenow.film",
+          "label": "TV commercials",
+          "link": "https://www.herenow.film/tv-commercial-production",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.louismurrall.com/commercial-cinematographer-birmingham",
+          "host": "louismurrall.com",
+          "label": "TV Commercial · Huawei Huawei",
+          "link": "https://www.louismurrall.com/louis-murrall-dop-cinematographer/huawei-tv-commercial",
+          "kind": "provider"
+        },
+        {
+          "site": "https://omni-productions.co.uk/video-products/colour-grading-and-correction/",
+          "host": "omni-productions.co.uk",
+          "label": "TV commercials",
+          "link": "https://omni-productions.co.uk/video-products/tv-commercial-production/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.aspectfilmandvideo.co.uk/colour-grading",
+          "host": "aspectfilmandvideo.co.uk",
+          "label": "TV Advertising",
+          "link": "https://www.aspectfilmandvideo.co.uk/tv-advertising/tv-advertising-overview",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E60",
+      "group": "Production",
+      "service": "Brand activation video",
+      "variants": [
+        "experiential marketing video",
+        "event activation film",
+        "brand experience filming",
+        "promotional activation video",
+        "live brand campaign film"
+      ],
+      "pattern": "brand activation video|brand activations.*video",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E61",
+      "group": "Production",
+      "service": "Drone inspection and surveys",
+      "variants": [
+        "UAV property inspection",
+        "industrial drone survey",
+        "commercial aerial inspection",
+        "roof drone survey",
+        "drone survey operator"
+      ],
+      "pattern": "drone survey|drone inspect",
+      "status": "evidenced",
+      "providerCount": 5,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "Drone Surveying",
+          "link": "https://www.filmfolk.com/services/drone-surveying",
+          "kind": "provider"
+        },
+        {
+          "site": "https://lightningstrikeproductions.co.uk/gimbal-operator/",
+          "host": "lightningstrikeproductions.co.uk",
+          "label": "Drone Surveys",
+          "link": "https://lightningstrikeproductions.co.uk/drone-surveys/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://hiredronepilot.uk/pricing/",
+          "host": "hiredronepilot.uk",
+          "label": "Drone surveys",
+          "link": "https://hiredronepilot.uk/services/drone-surveys/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.impactaerial.co.uk/2026/11/02/hiring-a-commercial-drone-operator-in-the-uk-for-aerial-services/",
+          "host": "impactaerial.co.uk",
+          "label": "Drone Surveys – Data Collection",
+          "link": "https://www.impactaerial.co.uk/drone-surveys-data-collection/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://dronesaferegister.org.uk/",
+          "host": "dronesaferegister.org.uk",
+          "label": "Drone Survey",
+          "link": "https://dronesaferegister.org.uk/drone-survey",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E62",
+      "group": "Production",
+      "service": "Drone mapping and photogrammetry",
+      "variants": [
+        "drone photogrammetry",
+        "UAV mapping survey",
+        "3D aerial mapping",
+        "drone terrain model",
+        "aerial orthomosaic capture"
+      ],
+      "pattern": "drone mapping|photogrammetry|aerial mapping",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://lightningstrikeproductions.co.uk/gimbal-operator/",
+          "host": "lightningstrikeproductions.co.uk",
+          "label": "Drone Mapping Services",
+          "link": "https://lightningstrikeproductions.co.uk/drone-mapping/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://hiredronepilot.uk/pricing/",
+          "host": "hiredronepilot.uk",
+          "label": "Photogrammetry",
+          "link": "https://hiredronepilot.uk/services/drone-photogrammetry-survey/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://dronesaferegister.org.uk/",
+          "host": "dronesaferegister.org.uk",
+          "label": "Drone Mapping",
+          "link": "https://dronesaferegister.org.uk/drone-mapping",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E63",
+      "group": "Production",
+      "service": "Production sound recording",
+      "variants": [
+        "location sound recording",
+        "on-set audio capture",
+        "film sound recordist",
+        "location audio mixer",
+        "production sound crew"
+      ],
+      "pattern": "production sound|location sound|sound recordist|sound mixer",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://www.herenow.film/film-crew-hire/london/dop",
+          "host": "herenow.film",
+          "label": "Sound recordist",
+          "link": "https://www.herenow.film/film-crew-hire/london/sound-recordist",
+          "kind": "provider"
+        },
+        {
+          "site": "https://looptalent.co.uk/dop-agency-london/",
+          "host": "looptalent.co.uk",
+          "label": "Production Sound Mixers",
+          "link": "https://looptalent.co.uk/production-sound-mixers/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://saraputt.co.uk/department/heads-of-department/stunt-coordinators/",
+          "host": "saraputt.co.uk",
+          "label": "Sound Mixers",
+          "link": "https://saraputt.co.uk/department/heads-of-department/production-sound-mixers/",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E64",
+      "group": "Post",
+      "service": "Motion graphics",
+      "variants": [
+        "animated graphic design",
+        "motion design for film",
+        "kinetic type animation",
+        "commercial graphics animation",
+        "motion graphic titles"
+      ],
+      "pattern": "motion graphics|motion design",
+      "status": "evidenced",
+      "providerCount": 4,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "Motion Graphics",
+          "link": "https://www.filmfolk.com/services/motion-graphics",
+          "kind": "provider"
+        },
+        {
+          "site": "https://sohoeditors.com/?srsltid=AYCX9vK6OWH4kuBqy5FnkKSt-ok43otizQ9lpD5znw11siXkoTndtXih",
+          "host": "sohoeditors.com",
+          "label": "Motion Graphics",
+          "link": "https://sohoeditors.com/search/talent/skills/designer",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.aspectfilmandvideo.co.uk/colour-grading",
+          "host": "aspectfilmandvideo.co.uk",
+          "label": "Animation & Motion Graphics",
+          "link": "https://www.aspectfilmandvideo.co.uk/animation-and-motion-graphics",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.silvertipfilms.co.uk/music-videos/",
+          "host": "silvertipfilms.co.uk",
+          "label": "Motion Graphics & Animation",
+          "link": "https://www.silvertipfilms.co.uk/motion-graphics-animation/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E65",
+      "group": "Post",
+      "service": "2D animation",
+      "variants": [
+        "two-dimensional video animation",
+        "flat graphic animation",
+        "illustrated explainer animation",
+        "2D character animation",
+        "hand-drawn motion animation"
+      ],
+      "pattern": "2d animation|2d animated",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E66",
+      "group": "Post",
+      "service": "3D animation and CGI",
+      "variants": [
+        "3D video animation",
+        "CGI product films",
+        "computer generated imagery",
+        "3D visual animation",
+        "3D motion design"
+      ],
+      "pattern": "3d animation|cgi|computer generated",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.bensimon.co.uk/freelance-gimbal-operator-uk-brighton/",
+          "host": "bensimon.co.uk",
+          "label": "VFX & CGI artist",
+          "link": "https://www.bensimon.co.uk/vfx-artist-cgi-brighton/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.aspectfilmandvideo.co.uk/colour-grading",
+          "host": "aspectfilmandvideo.co.uk",
+          "label": "VFX & CGI",
+          "link": "https://www.aspectfilmandvideo.co.uk/vfx-and-cgi",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E67",
+      "group": "Post",
+      "service": "Visual effects and compositing",
+      "variants": [
+        "VFX post production",
+        "digital compositing",
+        "visual effects artist",
+        "film VFX services",
+        "screen effects compositing"
+      ],
+      "pattern": "visual effects|vfx|compositing",
+      "status": "evidenced",
+      "providerCount": 11,
+      "directoryCount": 4,
+      "evidence": [
+        {
+          "site": "https://www.bensimon.co.uk/freelance-gimbal-operator-uk-brighton/",
+          "host": "bensimon.co.uk",
+          "label": "VFX & CGI artist",
+          "link": "https://www.bensimon.co.uk/vfx-artist-cgi-brighton/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.aerialcraft.co.uk/cinema-drone",
+          "host": "aerialcraft.co.uk",
+          "label": "VFX Filming",
+          "link": "https://www.aerialcraft.co.uk/vfx-for-films-tv",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.cinelab.co.uk/digital-intermediates",
+          "host": "cinelab.co.uk",
+          "label": "VFX Workflow & Coherence",
+          "link": "https://www.cinelab.co.uk/vfx-workflow",
+          "kind": "provider"
+        },
+        {
+          "site": "https://omni-productions.co.uk/video-products/colour-grading-and-correction/",
+          "host": "omni-productions.co.uk",
+          "label": "Visual Effects – VFX Company Effects that serve the story and never announce themselves.",
+          "link": "https://omni-productions.co.uk/video-products/visual-effects/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://nfts.co.uk/production-coordinators",
+          "host": "nfts.co.uk",
+          "label": "Visual Effects",
+          "link": "https://nfts.co.uk/courses?field_department_target_id=19",
+          "kind": "directory"
+        },
+        {
+          "site": "https://saraputt.co.uk/department/heads-of-department/stunt-coordinators/",
+          "host": "saraputt.co.uk",
+          "label": "VFX Editors",
+          "link": "https://saraputt.co.uk/department/crew/vfx-editors/",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E68",
+      "group": "Post",
+      "service": "Green screen / chroma key",
+      "variants": [
+        "green screen production",
+        "chroma key background removal",
+        "green screen video shoot",
+        "virtual backdrop filming",
+        "keying and compositing"
+      ],
+      "pattern": "green screen|chroma key|greenscreen",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.contrabandevents.com/free-runners-parkour-performers/",
+          "host": "contrabandevents.com",
+          "label": "Fantasy Photos & Green Screen",
+          "link": "https://www.contrabandevents.com/fantasy-photos-green-screen/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "Green Screen",
+          "link": "https://www.filmfolk.com/services/green-screen",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E69",
+      "group": "Post",
+      "service": "Video retouching and cleanup",
+      "variants": [
+        "video object removal",
+        "digital video cleanup",
+        "screen blemish retouch",
+        "film cleanup effects",
+        "beauty video retouching"
+      ],
+      "pattern": "video retouch|cleanup|object removal|digital cleanup",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E70",
+      "group": "Post",
+      "service": "Film scanning and restoration",
+      "variants": [
+        "cine film scanning",
+        "film digitisation service",
+        "motion picture restoration",
+        "archive film transfer",
+        "negative film scanning"
+      ],
+      "pattern": "film scanning|film restoration|digitisation",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.cinelab.co.uk/digital-intermediates",
+          "host": "cinelab.co.uk",
+          "label": "Film Scanning",
+          "link": "https://www.cinelab.co.uk/film-scanning",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E71",
+      "group": "Post",
+      "service": "Online finishing and conform",
+      "variants": [
+        "online film finishing",
+        "post production conform",
+        "final picture online",
+        "broadcast video conforming",
+        "commercial finishing editor"
+      ],
+      "pattern": "online finishing|conform|online edit",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E72",
+      "group": "Post",
+      "service": "Mastering and delivery",
+      "variants": [
+        "video mastering services",
+        "film export finishing",
+        "broadcast delivery masters",
+        "platform-ready video encoding",
+        "final film technical delivery"
+      ],
+      "pattern": "mastering|deliverables|final delivery|broadcast delivery",
+      "status": "evidenced",
+      "providerCount": 4,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.herenow.film/london/post-production-london/colour-grading",
+          "host": "herenow.film",
+          "label": "Finishing and broadcast delivery",
+          "link": "https://www.herenow.film/london/post-production-london/finishing-and-delivery",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.cinelab.co.uk/digital-intermediates",
+          "host": "cinelab.co.uk",
+          "label": "35mm Film Deliverables",
+          "link": "https://www.cinelab.co.uk/35mm-film-deliverables",
+          "kind": "provider"
+        },
+        {
+          "site": "https://soundlister.com/portfolio/liam-cavanagh/",
+          "host": "soundlister.com",
+          "label": "Find Sound Mastering",
+          "link": "https://soundlister.com/sound-mastering/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.motionpost.co.uk/",
+          "host": "motionpost.co.uk",
+          "label": "Production DIT · Data · DCPs · Deliverables",
+          "link": "https://www.motionpost.co.uk/production/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E73",
+      "group": "Post",
+      "service": "Subtitles and captioning",
+      "variants": [
+        "video subtitle services",
+        "closed caption production",
+        "film accessibility captions",
+        "subtitling for commercials",
+        "social video captions"
+      ],
+      "pattern": "subtitle|captioning|closed captions",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E74",
+      "group": "Post",
+      "service": "Localization and dubbing",
+      "variants": [
+        "video localisation",
+        "film language dubbing",
+        "multilingual video versions",
+        "international film localization",
+        "subtitle translation for film"
+      ],
+      "pattern": "locali[sz]ation|dubbing|translation.*video",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://sohoeditors.com/?srsltid=AYCX9vK6OWH4kuBqy5FnkKSt-ok43otizQ9lpD5znw11siXkoTndtXih",
+          "host": "sohoeditors.com",
+          "label": "Dubbing Mixers",
+          "link": "https://sohoeditors.com/search/talent/skills/dubbing-mixer",
+          "kind": "provider"
+        },
+        {
+          "site": "https://foreveraudio.com/services/sound-design",
+          "host": "foreveraudio.com",
+          "label": "Localization & Dubbing",
+          "link": "https://foreveraudio.com/services/international-versioning-and-dubbing",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E75",
+      "group": "Post",
+      "service": "Voiceover recording and direction",
+      "variants": [
+        "commercial voiceover recording",
+        "narration production",
+        "voice artist direction",
+        "advertisement voice casting",
+        "video narration services"
+      ],
+      "pattern": "voiceover|voice over|voice director|narration",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://foreveraudio.com/services/sound-design",
+          "host": "foreveraudio.com",
+          "label": "Voice Over Recording",
+          "link": "https://foreveraudio.com/services/voice-over-recording-london",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://www.twine.net/find/stunt-performers/uk",
+          "host": "twine.net",
+          "label": "Music & Audio Jobs in music production, film composition, live music, vocalists, voiceover work and more.",
+          "link": "https://www.twine.net/freelance/creatives",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E76",
+      "group": "Post",
+      "service": "ADR dialogue replacement",
+      "variants": [
+        "automated dialogue replacement",
+        "film ADR recording",
+        "dialogue re-recording",
+        "looping session for film",
+        "post sync dialogue"
+      ],
+      "pattern": "adr|dialogue replacement|dialogue re.record",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://foreveraudio.com/services/sound-design",
+          "host": "foreveraudio.com",
+          "label": "ADR",
+          "link": "https://foreveraudio.com/services/adr-recording-studio-london",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.sound.co.uk/",
+          "host": "sound.co.uk",
+          "label": "ADR setup at The Sound Company ADR at The Sound Company, London. Click for more.",
+          "link": "https://www.sound.co.uk/adr-studio-london/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.motionpost.co.uk/",
+          "host": "motionpost.co.uk",
+          "label": "Sound Design · Editorial · Mix · ADR",
+          "link": "https://www.motionpost.co.uk/sound/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E77",
+      "group": "Post",
+      "service": "Dialogue editing and cleanup",
+      "variants": [
+        "speech audio restoration",
+        "film dialogue noise reduction",
+        "voice cleanup editing",
+        "dialogue audio repair",
+        "speech post-production"
+      ],
+      "pattern": "dialogue edit|dialogue clean|dialogue restoration",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E78",
+      "group": "Post",
+      "service": "Audio mixing and mastering",
+      "variants": [
+        "film soundtrack mixing",
+        "commercial audio final mix",
+        "video sound mastering",
+        "stereo film mix",
+        "broadcast loudness mixing"
+      ],
+      "pattern": "audio mix|sound mix|mixing and mastering|audio master",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://looptalent.co.uk/dop-agency-london/",
+          "host": "looptalent.co.uk",
+          "label": "Production Sound Mixers",
+          "link": "https://looptalent.co.uk/production-sound-mixers/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.mediadoghire.com/new-dji-ronin-rs-5-in-stock-available-to-hire-now/",
+          "host": "mediadoghire.com",
+          "label": "Audio Mixers",
+          "link": "https://www.mediadoghire.com/audio-mixers",
+          "kind": "provider"
+        },
+        {
+          "site": "https://goldcrestfilms.com/post-production/",
+          "host": "goldcrestfilms.com",
+          "label": "Sound Mixing Theatre One",
+          "link": "https://goldcrestfilms.com/facility/sound-mixing-theatre-one/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://saraputt.co.uk/department/heads-of-department/stunt-coordinators/",
+          "host": "saraputt.co.uk",
+          "label": "Sound Mixers",
+          "link": "https://saraputt.co.uk/department/heads-of-department/production-sound-mixers/",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E79",
+      "group": "Post",
+      "service": "Original music composition",
+      "variants": [
+        "film score composition",
+        "commercial jingle composition",
+        "bespoke soundtrack music",
+        "original music for film",
+        "brand video music composition"
+      ],
+      "pattern": "music composition|original music|film score|soundtrack composition",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.ryan-davies.co.uk/",
+          "host": "ryan-davies.co.uk",
+          "label": "Music Composition",
+          "link": "https://www.ryan-davies.co.uk/audio-services/music-composition/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://foreveraudio.com/services/sound-design",
+          "host": "foreveraudio.com",
+          "label": "Music Composition",
+          "link": "https://foreveraudio.com/services/bespoke-composition",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E80",
+      "group": "Post",
+      "service": "Audio branding",
+      "variants": [
+        "sonic brand identity",
+        "audio logo design",
+        "branded sound signature",
+        "sonic identity creation",
+        "sound branding agency"
+      ],
+      "pattern": "audio branding|sonic branding|audio logo",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://foreveraudio.com/services/sound-design",
+          "host": "foreveraudio.com",
+          "label": "Sonic Branding",
+          "link": "https://foreveraudio.com/services/sonic-branding",
+          "kind": "provider"
+        },
+        {
+          "site": "https://soundlister.com/portfolio/liam-cavanagh/",
+          "host": "soundlister.com",
+          "label": "Audio branding",
+          "link": "https://soundlister.com/find-audio-branding-audio-professionals/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E81",
+      "group": "Post",
+      "service": "Audio advertising",
+      "variants": [
+        "radio advertisement production",
+        "podcast audio ads",
+        "commercial voice and sound advert",
+        "audio ad creative",
+        "radio spot sound design"
+      ],
+      "pattern": "audio advertising|radio advertising|radio advert",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://foreveraudio.com/services/sound-design",
+          "host": "foreveraudio.com",
+          "label": "Audio Advertising",
+          "link": "https://foreveraudio.com/services/audio-advertising",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.happyhourproductions.co.uk/services/post-production",
+          "host": "happyhourproductions.co.uk",
+          "label": "Audio Advertising",
+          "link": "https://www.happyhourproductions.co.uk/services/audio-advertising",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E82",
+      "group": "Post",
+      "service": "Podcast production and editing",
+      "variants": [
+        "podcast editor for hire",
+        "podcast post production",
+        "spoken word audio editing",
+        "podcast recording and mixing",
+        "professional podcast production"
+      ],
+      "pattern": "podcast produc|podcast edit",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://ukjoncollins.com/services/uk-film-crew-services/",
+          "host": "ukjoncollins.com",
+          "label": "video podcast production",
+          "link": "https://ukjoncollins.com/what/video-podcast-filming/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://foreveraudio.com/services/sound-design",
+          "host": "foreveraudio.com",
+          "label": "Podcast Production",
+          "link": "https://foreveraudio.com/services/podcast-production ",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.sound.co.uk/",
+          "host": "sound.co.uk",
+          "label": "Radio & Podcast Production",
+          "link": "https://www.sound.co.uk/radio-podcast-studio-london/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://www.twine.net/find/stunt-performers/uk",
+          "host": "twine.net",
+          "label": "Marketing & Content Jobs in marketing from PPC, social and SEO to UGC, podcast production and copywriting.",
+          "link": "https://www.twine.net/freelance/marketing",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E83",
+      "group": "Post",
+      "service": "Video game sound and audio",
+      "variants": [
+        "video game audio design",
+        "interactive game soundtrack",
+        "game effects sound design",
+        "game audio integration",
+        "game music production"
+      ],
+      "pattern": "game audio|video game audio|game sound",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.ryan-davies.co.uk/",
+          "host": "ryan-davies.co.uk",
+          "label": "Game Audio",
+          "link": "https://www.ryan-davies.co.uk/audio-services/video-game-audio-music/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://soundlister.com/portfolio/liam-cavanagh/",
+          "host": "soundlister.com",
+          "label": "Game audio",
+          "link": "https://soundlister.com/find-game-audio-professionals/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E84",
+      "group": "Post",
+      "service": "Graphic design",
+      "variants": [
+        "commercial graphic designer",
+        "branding graphic design",
+        "marketing visual graphics",
+        "digital design services",
+        "graphic artwork for advertising"
+      ],
+      "pattern": "graphic design|graphics and design",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E85",
+      "group": "Post",
+      "service": "VFX editing",
+      "variants": [
+        "visual effects editor",
+        "VFX editorial workflow",
+        "digital effects cut assembly",
+        "film VFX edit support",
+        "visual effects conform"
+      ],
+      "pattern": "vfx editor|vfx editing",
+      "status": "directory_only",
+      "providerCount": 0,
+      "directoryCount": 1,
+      "evidence": [],
+      "directoryEvidence": [
+        {
+          "site": "https://saraputt.co.uk/department/heads-of-department/stunt-coordinators/",
+          "host": "saraputt.co.uk",
+          "label": "VFX Editors",
+          "link": "https://saraputt.co.uk/department/crew/vfx-editors/",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E86",
+      "group": "Post",
+      "service": "Assistant editing",
+      "variants": [
+        "assistant film editor",
+        "postproduction assistant editor",
+        "media ingest assistant",
+        "picture assistant editor",
+        "edit assist services"
+      ],
+      "pattern": "assistant editor|edit assistant",
+      "status": "directory_only",
+      "providerCount": 0,
+      "directoryCount": 1,
+      "evidence": [],
+      "directoryEvidence": [
+        {
+          "site": "https://saraputt.co.uk/department/heads-of-department/stunt-coordinators/",
+          "host": "saraputt.co.uk",
+          "label": "Edit ' 1st Assistant Editors",
+          "link": "https://saraputt.co.uk/department/crew/assistant-editors/",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E87",
+      "group": "Post",
+      "service": "AI-generated commercial video",
+      "variants": [
+        "AI advertisement creation",
+        "generative video production",
+        "synthetic commercial filmmaking",
+        "AI content for brands",
+        "AI-driven video creative"
+      ],
+      "pattern": "ai video|generative video|ai ad",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 1,
+      "evidence": [
+        {
+          "site": "https://omni-productions.co.uk/video-products/colour-grading-and-correction/",
+          "host": "omni-productions.co.uk",
+          "label": "AI video production",
+          "link": "https://omni-productions.co.uk/video-products/ai-video-production/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": [
+        {
+          "site": "https://www.twine.net/find/stunt-performers/uk",
+          "host": "twine.net",
+          "label": "AI Video Editors",
+          "link": "https://www.twine.net/find/ai-video-editors",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E88",
+      "group": "Post",
+      "service": "Product render and 3D visualization",
+      "variants": [
+        "CG product render",
+        "3D product visualisation",
+        "photorealistic packshot render",
+        "3D advertising product visual",
+        "virtual product photography"
+      ],
+      "pattern": "3d render|product visualization|product visualisation",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E89",
+      "group": "Post",
+      "service": "Interactive film experiences",
+      "variants": [
+        "interactive branded content",
+        "interactive video experience",
+        "web-based film interactive",
+        "digital interactive storytelling",
+        "immersive interactive media"
+      ],
+      "pattern": "interactive film|interactive video|interactive experience",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E90",
+      "group": "Post",
+      "service": "Virtual production LED filming",
+      "variants": [
+        "LED volume virtual production",
+        "in-camera VFX stage filming",
+        "virtual studio production",
+        "XR filming production",
+        "real-time film virtual set"
+      ],
+      "pattern": "virtual production|led volume|xr production",
+      "status": "evidenced",
+      "providerCount": 1,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://www.aspectfilmandvideo.co.uk/colour-grading",
+          "host": "aspectfilmandvideo.co.uk",
+          "label": "Virtual Production",
+          "link": "https://www.aspectfilmandvideo.co.uk/virtual-production",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E91",
+      "group": "Production",
+      "service": "Training and production workshops",
+      "variants": [
+        "filmmaking classes",
+        "creative filmmaking workshop",
+        "film production training",
+        "camera operator courses",
+        "video editing lessons"
+      ],
+      "pattern": "filmmaking course|film workshop|video training",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E92",
+      "group": "Production",
+      "service": "Film equipment sales",
+      "variants": [
+        "cinema gear retail",
+        "professional camera equipment sales",
+        "film kit reseller",
+        "video equipment purchase",
+        "cinema accessory sales"
+      ],
+      "pattern": "equipment sales|camera sales|equipment shop",
+      "status": "directory_only",
+      "providerCount": 0,
+      "directoryCount": 1,
+      "evidence": [],
+      "directoryEvidence": [
+        {
+          "site": "https://www.4rfv.co.uk/c/38853/parkour-generations-ltd",
+          "host": "4rfv.co.uk",
+          "label": "Equipment Sales",
+          "link": "https://www.4rfv.co.uk/equipment_sales_hire.aspx?equipsoh=sale",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "id": "E93",
+      "group": "Production",
+      "service": "Video distribution and advertising",
+      "variants": [
+        "online video campaign delivery",
+        "paid video distribution",
+        "video ad media buying",
+        "campaign amplification",
+        "digital video ad placement"
+      ],
+      "pattern": "video distribution|paid advertising|media buying",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E94",
+      "group": "Production",
+      "service": "Photo booths and event photography",
+      "variants": [
+        "event photo booth hire",
+        "event instant photography",
+        "branded photo booth activation",
+        "mobile photo studio events",
+        "photobooth event entertainment"
+      ],
+      "pattern": "photo booth|photo booths",
+      "status": "evidenced",
+      "providerCount": 6,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://scarlettentertainment.com/gb/categories/circus-entertainment/free-running-and-parkour",
+          "host": "scarlettentertainment.com",
+          "label": "Photo Booths and Photographers",
+          "link": "https://scarlettentertainment.com/gb/categories/event-design/photo-booths-and-photographers",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.contrabandevents.com/free-runners-parkour-performers/",
+          "host": "contrabandevents.com",
+          "label": "Photo Booths",
+          "link": "https://www.contrabandevents.com/hire-photo-booths/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.alivenetwork.com/bandsearch.asp?style=Street%20Entertainers",
+          "host": "alivenetwork.com",
+          "label": "Photo Booths",
+          "link": "https://www.alivenetwork.com/bandsearch.asp?style=Photo%20Booths",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.juliacharleseventmanagement.co.uk/entertainment/opening-shows/themed-stunt-show/",
+          "host": "juliacharleseventmanagement.co.uk",
+          "label": "180 Degree Photo Booth",
+          "link": "https://www.juliacharleseventmanagement.co.uk/entertainment/photo-booths/180-degree-photo-booth/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E95",
+      "group": "Performance",
+      "service": "Sports brand ambassador representation",
+      "variants": [
+        "athlete brand ambassador booking",
+        "sports sponsorship talent",
+        "brand athlete representative",
+        "sports influencer campaign",
+        "athlete endorsement arrangement"
+      ],
+      "pattern": "brand ambassador|athlete sponsorship|sports influencer",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E96",
+      "group": "Production",
+      "service": "Drone light shows",
+      "variants": [
+        "drone swarm light display",
+        "aerial drone performance",
+        "night sky drone show",
+        "animated drone light event",
+        "commercial drone display"
+      ],
+      "pattern": "drone shows|drone light show",
+      "status": "evidenced",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://scarlettentertainment.com/gb/categories/circus-entertainment/free-running-and-parkour",
+          "host": "scarlettentertainment.com",
+          "label": "Drone Shows",
+          "link": "https://scarlettentertainment.com/gb/categories/outdoor-entertainment/drone-shows",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.showmans-directory.co.uk/directory?cat=entertainment",
+          "host": "showmans-directory.co.uk",
+          "label": "Drone Shows",
+          "link": "https://www.showmans-directory.co.uk/directory?cat=drone-shows",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E97",
+      "group": "Post",
+      "service": "Film trailer and promo editing",
+      "variants": [
+        "film teaser editing",
+        "movie trailer cutting",
+        "social promo edit",
+        "cinema trailer post production",
+        "promotional cutdown editing"
+      ],
+      "pattern": "trailer edit|promo editing",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E98",
+      "group": "Production",
+      "service": "Wedding videography",
+      "variants": [
+        "wedding cinematic film",
+        "wedding event filmmaker",
+        "ceremony videography",
+        "wedding highlight film",
+        "marriage event video production"
+      ],
+      "pattern": "wedding video|wedding film",
+      "status": "overlap_or_weak",
+      "providerCount": 2,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://thehonestfilmmaker.co.uk/index.php/2024/04/09/how-to-be-a-fight-choreographer-with-brahim-chab/",
+          "host": "thehonestfilmmaker.co.uk",
+          "label": "What Wedding Videos taught me about Filmmaking",
+          "link": "https://thehonestfilmmaker.co.uk/index.php/2025/02/25/what-wedding-videos-taught-me-about-filmmaking/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://www.filmfolk.com/services/freelance-cameraman",
+          "host": "filmfolk.com",
+          "label": "Wedding Video Editing",
+          "link": "https://www.filmfolk.com/services/wedding-video-editing",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E99",
+      "group": "Production",
+      "service": "Fashion film production",
+      "variants": [
+        "fashion campaign video",
+        "runway film production",
+        "luxury clothing video",
+        "fashion editorial film",
+        "apparel brand filmmaking"
+      ],
+      "pattern": "fashion film|fashion video",
+      "status": "evidenced",
+      "providerCount": 3,
+      "directoryCount": 0,
+      "evidence": [
+        {
+          "site": "https://tailoredmedia.co.uk/freefly-movi-pro-hire-london/",
+          "host": "tailoredmedia.co.uk",
+          "label": "Fashion video production",
+          "link": "https://tailoredmedia.co.uk/services/fashion-films-video-production/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://clockwise.film/post-production-services/",
+          "host": "clockwise.film",
+          "label": "fashion films",
+          "link": "https://clockwise.film/work/toniguy/",
+          "kind": "provider"
+        },
+        {
+          "site": "https://beast.agency/services/feature-film-production/",
+          "host": "beast.agency",
+          "label": "FASHION VIDEO & PHOTOGRAPHY",
+          "link": "https://beast.agency/industries/fashion-video-photography/",
+          "kind": "provider"
+        }
+      ],
+      "directoryEvidence": []
+    },
+    {
+      "id": "E100",
+      "group": "Production",
+      "service": "Beauty and skincare commercial production",
+      "variants": [
+        "beauty product video",
+        "cosmetics commercial filming",
+        "skincare branded content",
+        "makeup brand video",
+        "beauty advertising production"
+      ],
+      "pattern": "beauty video|beauty commercial|skincare video",
+      "status": "not_evidenced",
+      "providerCount": 0,
+      "directoryCount": 0,
+      "evidence": [],
+      "directoryEvidence": []
+    }
+  ]
+}
