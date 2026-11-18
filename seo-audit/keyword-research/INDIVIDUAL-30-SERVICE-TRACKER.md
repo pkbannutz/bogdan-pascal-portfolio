@@ -1,12 +1,12 @@
 # INDIVIDUAL SERVICE RESEARCH TRACKER: 30 CATEGORIES
 
-**Started:** 18 November 2026. **Progress:** **26 / 30 individually reviewed**. **Last individual completed:** **F16 Sound Design** (individual UK market/role and website research complete; project-specific personal sound credits require verification).
+**Started:** 18 November 2026. **Progress:** **30 / 30 individually reviewed. COMPLETE.** **Last four completed:** **F17 Sound Effects/SFX, F18 Film Post-Production, F19 Music Video Filmmaking and F20 Independent Film Production** on 18 November 2026. Research is complete; individual personally claimed services, current live indexing and production SEO implementation still have independent verification/approval gates.
 
 ## New operating rule from the user
 
-**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user requested P03-P05, P06-P09, P10+F01-F03, F04-F07, F08-F11 with stunt-camera synonyms, then **F12-F16 in depth**. All six requested batches are now separately researched. **Do not proceed to F17 automatically.**
+**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user requested P03-P05, P06-P09, P10+F01-F03, F04-F07, F08-F11 with stunt-camera synonyms, then **F12-F16 in depth**. All six original requested batches were separately researched. The user then explicitly requested **the next four together**, F17-F20; that final batch has now been completed. **No further original category remains.**
 
-**Important:** The older seven **family-level** reports remain useful background. They are **not** a substitute for reviewing each of the original 30 categories separately. A family being marked DONE does **not** mark its individual service rows done.
+**Important:** The older seven **family-level** reports remain useful background. They are **not** a substitute for reviewing each of the original 30 categories separately. A family being marked DONE does **not** mark its individual service rows done; the 30 individual records below are now each complete.
 
 Each individual report must document: precise job/service scope and reality checks; credible professional terminology vs synonyms; each of the five original keyword variants; existing page/copy/role evidence; UK qualified search intents and reliable demand measures (or honest "unknown"); historical and recent Trends with normalization limits; independently verified competitor/buyer and SERP evidence with caveats; distinct service-vs-subservice-vs-synonym-vs-unverified decision; honest alternative names and rankings; exact proposed visible/SEO/back-end actions; source links and unknowns. **Research only; no public website edits without approval.** Do not create thirty thin landing pages by default.
 
@@ -40,10 +40,10 @@ Each individual report must document: precise job/service scope and reality chec
 | 24 | **F14** | Colour grading service | CORE | **DONE: CORE COLOUR GRADING & LOOK DEVELOPMENT SERVICE** | [Full F14 decision](individual/F14-COLOUR-GRADING-SERVICE-RESEARCH-2026-11-18.md) |
 | 25 | **F15** | Colourist | CORE | **DONE: PROFESSIONAL ROLE PROVIDING F14 SERVICE** | [Full F15 decision](individual/F15-COLOURIST-RESEARCH-2026-11-18.md) |
 | 26 | **F16** | Sound design | CORE | **DONE: CORE SOUND DESIGN, PROJECT ROLE PROOF TO VERIFY** | [Full F16 decision](individual/F16-SOUND-DESIGN-RESEARCH-2026-11-18.md) |
-| 27 | **F17** | SFX / sound effects | CORE | **WAITING for next instruction** |  |
-| 28 | **F18** | Film post-production | CORE | **NOT STARTED** |  |
-| 29 | **F19** | Music video filmmaking | CORE | **NOT STARTED** |  |
-| 30 | **F20** | Independent film production | CORE/adjacent | **NOT STARTED** |  |
+| 27 | **F17** | SFX / sound effects | CORE | **DONE: SOUND EFFECTS EDITING SUBSERVICE; INDIVIDUAL CREDIT PROOF GATED** | [Full F17 decision](individual/F17-SOUND-EFFECTS-SFX-RESEARCH-2026-11-18.md) |
+| 28 | **F18** | Film post-production | CORE | **DONE: POST-PRODUCTION UMBRELLA, NOT A VERIFIED FULL STUDIO** | [Full F18 decision](individual/F18-FILM-POST-PRODUCTION-RESEARCH-2026-11-18.md) |
+| 29 | **F19** | Music video filmmaking | CORE | **DONE: MUSIC VIDEO DOP PROVED; DIRECTOR/PRODUCER NOT IMPLIED** | [Full F19 decision](individual/F19-MUSIC-VIDEO-FILMMAKING-RESEARCH-2026-11-18.md) |
+| 30 | **F20** | Independent film production | CORE/adjacent | **DONE: FREELANCE CINEMATOGRAPHY CORE; FULL COMPANY CLAIM GATED** | [Full F20 decision](individual/F20-INDEPENDENT-FILM-PRODUCTION-RESEARCH-2026-11-18.md) |
 
 ## P01 research record (18 November 2026)
 
@@ -68,7 +68,7 @@ Each individual report must document: precise job/service scope and reality chec
 - **No production website edits.**
 - **Report:** [P02 Freerunning Performer](individual/P02-FREERUNNING-PERFORMER-RESEARCH-2026-11-18.md).
 
-**NEXT ONLY AFTER ANOTHER USER REQUEST: F17 SFX / Sound Effects.** P01-P10 and F01-F16 each have independent reports. F12/F13 are different editing buyer briefs using one main editing page; F14 Colour Grading Service and F15 Colourist are the result and professional title for the same craft; F16 Sound Design is its own screen audio craft with F17 effects-only specialty still pending. The new GitHub editing and grading source contains `index, follow` but independently current live page directives and actual GSC index status remain unverified. F07's requested stunt camera synonym expansion is documented. No published website changes.
+**HISTORICAL CHECKPOINT (BEFORE THE FINAL FOUR):** At this point F17 was still pending. P01-P10 and F01-F16 had independent reports, and F17-F20 are now complete. F12/F13 are different editing buyer briefs using one main editing page; F14 Colour Grading Service and F15 Colourist are the result and professional title for the same craft; F16 Sound Design is its own screen audio craft; F17 effects-only specialty is now separately researched. The new GitHub editing and grading source contains `index, follow` but independently current live page directives and actual GSC index status remain unverified. F07's requested stunt camera synonym expansion is documented. No published website changes.
 
 ## P03-P05 individual completion record (18 November 2026)
 
@@ -268,13 +268,48 @@ Each individual report must document: precise job/service scope and reality chec
 - [Full F15 standalone report](individual/F15-COLOURIST-RESEARCH-2026-11-18.md).
 
 ### F16: Sound Design
-- **Verdict:** CORE identifiable screen sound craft, best individual role **Film & Commercial Sound Designer**, service **Sound Design & Audio Post-Production**. F17 Sound Effects/SFX is adjacent distinct specialism, independently **not yet reviewed**; do not mark complete here.
+- **Verdict:** CORE identifiable screen sound craft, best individual role **Film & Commercial Sound Designer**, service **Sound Design & Audio Post-Production**. F17 Sound Effects/SFX is an adjacent distinct specialism, **now independently reviewed** in [F17](individual/F17-SOUND-EFFECTS-SFX-RESEARCH-2026-11-18.md).
 - **UK keyword estimates:** `sound designer` ~720/month, `film sound designer` ~20, `freelance sound designer` ~10 (KD43), `sound designer for hire` ~10, `sound design services` ~10, `commercial sound design` ~10. Broad `sound effects` ~22,200 is **mostly downloads and media files**, not independent sound design client leads.
 - **Site:** four layers (voice, Foley/SFX, atmosphere, mix), dialogue/ambience/impact examples, three selected films GeoDomeX, Ffern (spec ad), Speedo and actual GeoDomeX customer quote. Site explicitly says project role varies, so **don't attribute all displayed soundtracks or full mixed credits to Bogdan** without precise verification. No proof of Foley recording stage, theatrical multichannel mix, ADR studio or supervising sound editor rank.
 - **Competition:** genuine UK professionals Martin Cantwell, Rob Ackerman Diaz, Matt Cane/Final Round, Richard Spooner and AMPS/ScreenSkills. One main `/filmmaker/services/sound-design/` page with honest case-specific audio A/B and shared contact.
 - [Full F16 standalone report](individual/F16-SOUND-DESIGN-RESEARCH-2026-11-18.md).
 
-**Checkpoint: 26 of 30 original categories individually researched. Remaining ONLY F17 SFX, F18 Film Post-Production, F19 Music Video Filmmaking and F20 Independent Film Production. Exactly five new reports F12-F16 saved. Public website untouched.**
+**Historical checkpoint: 26 / 30 before the F17-F20 batch. Five F12-F16 reports had been saved. See the current 30 / 30 completion record below. Public website untouched throughout research.**
+
+## F17-F20 final four-category research batch (18 November 2026)
+
+All four original categories were individually audited and saved as separate detailed reports with professional scope, five original variants, extended keyword/search-intent clusters, real current website evidence and credit precautions, historical UK monthly estimates where available, four-window archived Trends interpretations, independent 2026 industry/competitor examples, rankings of credible client-facing names, and proposed VISIBLE / SEARCH / BACKEND actions. These are **research completion records**, not four new automatically publishable personal services or four mandatory website pages.
+
+### F17: Sound Effects / SFX
+- **Verdict:** genuine **Sound Effects Editing & Design** subservice within F16 existing sound page. Recognized job **Sound Effects Editor** only where personally credited; SFX alone is ambiguous between audio and practical special effects.
+- **UK estimates:** `sound effects editing` ~90/month (KD35); `sound effects editor` ~90 (KD46), matching 12-month histories, **do not add**; `sound fx editor` / `sfx editor` ~20 each with matching histories; `sound effects` ~22,200 overwhelmingly download/media intent. All five original long-tail suggestions assessed individually, most exact volumes UNKNOWN.
+- **Proof:** live source lists voice/Foley-SFX/atmosphere/mix interactive layers, but three film examples do not establish individual credited SFX jobs. No personal Foley artist/stage claim.
+- **Recommendation:** visible sound-effects subsection and verified authorial before/after audio case on existing `/filmmaker/services/sound-design/` page; no near-duplicate SFX URL.
+- [Full F17 research](individual/F17-SOUND-EFFECTS-SFX-RESEARCH-2026-11-18.md).
+
+### F18: Film Post-Production
+- **Verdict:** true umbrella **Video Editing & Post-Production** service pathway, supported by three specialist post pages; not proof of staff, post-production supervisor or a full-service facility.
+- **UK estimates:** `film post production` ~70/month (KD0, largely informational), `video post production` ~30 (KD8), `video post production services` ~20 (KD12), `post production editor` ~50 (KD0), `online editor` ~720 (KD82 but unrelated ambiguity). Five original broader facility/finishing phrases individually screened and many UNKNOWN.
+- **Proof:** editing formats and handoff, colour grading cases and audio layer page exist, but GeoDomeX post is credited at **BTHEVISUAL** company level, and work gallery appearances do not all establish Bogdan's personal edit/grade/sound contribution. Mojo Hair expressly identifies his grade/graphics credit, another person's DoP.
+- **Recommendation:** add honest cross-discipline buyer path on services hub; reuse Editing / Colour / Sound URLs, avoid falsely claiming a personal full post-production studio.
+- [Full F18 research](individual/F18-FILM-POST-PRODUCTION-RESEARCH-2026-11-18.md).
+
+### F19: Music Video Filmmaking
+- **Verdict:** strong **Music Video Cinematographer / DoP** personal credit for **Fauness: Inanimate Girl**, directed by Anda Teglas. Artist-video filmmaking as wider end-to-end production is conditional; DoP is not automatically the music-video director or producer.
+- **UK estimates:** `music video production` ~110/month (KD0, mixed intent), `music video filmmaker` ~10 (KD28), `music video videographer` ~20, `music video director` ~170 **different unverified personal role**, `music video editor` ~140 **different craft**. Exact five original service variations have UNKNOWN volume.
+- **Proof:** real Fauness music-video work-page credits, and genre is already described on current film home/service CTA. Do not relabel beauty/fashion films music videos or convert a movement performance credit into camera crew work.
+- **Recommendation:** an actual credited music-video DoP case in existing DoP page, music-video-specific CTA/portfolio metadata, no thin new music-video page or unsupported director credit.
+- [Full F19 research](individual/F19-MUSIC-VIDEO-FILMMAKING-RESEARCH-2026-11-18.md).
+
+### F20: Independent Film Production
+- **Verdict:** authentic independent film **DoP / Cinematographer** experience: Sky Above short film and Dyla documentary, with **Director/Producer roles credited to Anda Teglas** where specified. Renais shows Bogdan's **Director and DoP** commercial role, but not a producer/company attribution. Full production company team and end-to-end producer duties are proof-gated.
+- **UK estimates:** `independent film production` ~10/month (KD48, informational); `film production services` ~40 (KD38), `video production company` ~590 (KD45, company intent), `video production services` ~480 (KD12), `video production freelancer` ~20 (KD31), `filmmaker for hire` ~10. All five original company/team-style proposed phrases assessed, most unmeasured.
+- **Recommendation:** **Freelance Filmmaker & Cinematographer**, secondary independent-film and small-crew camera-language where proven; do not imply his own fully staffed production company or personally credited film producer role.
+- [Full F20 research](individual/F20-INDEPENDENT-FILM-PRODUCTION-RESEARCH-2026-11-18.md).
+
+**FINAL RESEARCH CHECKPOINT: 30 / 30 categories independently reviewed and documented.** All original P01-P10 and F01-F20 have individual reports. Four reports F17-F20 added in this user-requested batch. Existing public website code, public content and deployment configuration were **not changed by this batch**. No claim of all 30 currently offered personal services, thirty URLs, verified indexed status, actual UK top-ten Google rank, or completed live SEO implementation.
+
+**Next work is a separate owner-approved integration step:** consolidate the thirty research decisions into the appropriate small number of verified real services, reconcile individual project credits and compliance, verify Google indexing through GSC, and prioritize production copy, canonicals, performance and internal links **without creating duplicate SEO service pages**. Do not modify public pages unless specifically requested.
 
 ## Background source inventory
 
