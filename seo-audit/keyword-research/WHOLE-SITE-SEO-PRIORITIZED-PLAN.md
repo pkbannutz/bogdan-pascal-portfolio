@@ -2,6 +2,8 @@
 
 **Date:** 18 November 2026. **Status:** DONE for seven core research families, **NOT APPLIED TO THE WEBSITE**. Primary market researched: UK English. All visible or production technical changes require explicit owner approval.
 
+> **LATEST DOCUMENTATION UPDATE, 18 NOVEMBER 2026:** The table below represents an **earlier same-day LIVE snapshot**, not necessarily the current deployed state. A newer independent live FPV raw HTML check returned **`index, follow`** and no self-canonical, superseding FPV `noindex`. Current GitHub Editing and Colour Grading HTML also show **`index, follow`** (no self canonicals), but **newer live raw HTML for these two was not checked**, so do not assert they currently are either indexed or noindexed. Root sitemap/robots historical HTTP 404 in this original plan also must be rechecked before new fixes, as subsequent website work might have changed deployment. Source of truth is fresh live robots, headers and Search Console, not an outdated historical table. See [indexed state audit](LIVE-INDEXING-BLOCKERS-2026-11-18.md), [current FPV research](individual/F08-FPV-DRONE-FILMING-RESEARCH-2026-11-18.md), [editing F12](individual/F12-VIDEO-EDITING-RESEARCH-2026-11-18.md), [grade F14](individual/F14-COLOUR-GRADING-SERVICE-RESEARCH-2026-11-18.md). **No production edits were made here.**
+
 ## Executive decision: fix indexability before chasing additional keywords
 
 **The single most consequential technical finding is a live noindex directive on three public service pages.**
