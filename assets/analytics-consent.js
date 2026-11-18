@@ -29,6 +29,10 @@
     window.gtag("consent", "update", { analytics_storage: "granted" });
     window.gtag("js", new Date());
     window.gtag("config", MEASUREMENT_ID);
+    var events = document.createElement("script");
+    events.async = true;
+    events.src = "/assets/analytics-events.js";
+    document.head.appendChild(events);
     var script = document.createElement("script");
     script.async = true;
     script.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(MEASUREMENT_ID);
@@ -62,7 +66,7 @@
     box.setAttribute("aria-label", "Website analytics privacy choices");
     box.innerHTML = [
       "<h2>Optional website analytics</h2>",
-      "<p>With your permission, we use Google Analytics cookies to understand website visits and improve this portfolio. No Google Analytics tracking loads unless you accept.</p>",
+      "<p>With your permission, Google Analytics measures page visits, clicks and scrolling to improve this portfolio. We do not send form messages or email addresses. No analytics loads unless you accept.</p>",
       '<div class="bp-actions"><button id="bp-privacy-accept" type="button">Accept analytics</button><button id="bp-privacy-decline" type="button">Decline</button></div>'
     ].join("");
 
@@ -80,10 +84,16 @@
       hideChoices();
       if (value === "yes") loadAnalytics();
       else if (wasAccepted && loaded) {
-        // Stop future tracking immediately after withdrawing consent.
+        // Immediately stop future events, revoke consent and clear our GA cookies.
         if (typeof window.gtag === "function") {
           window.gtag("consent", "update", { analytics_storage: "denied" });
         }
+        document.cookie.split(";").forEach(function (part) {
+          var name = part.split("=")[0].trim();
+          if (!/^_ga($|_)|^_gid$|^_gat($|_)/.test(name)) return;
+          document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+          document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=." + location.hostname;
+        });
         location.reload();
       }
     }
