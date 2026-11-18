@@ -5,6 +5,16 @@
 **Scope:** Entire domain, athlete portfolio, filmmaker portfolio.  
 **Status:** AUDIT COMPLETE, IMPLEMENTATION NOT STARTED. No live HTML, CSS, JS, SEO settings, or tracking were changed by this audit.
 
+## Competitor search lists (18 November 2026)
+
+- **[COMPETITORS-ALL-30.md](COMPETITORS-ALL-30.md): 300 linked results**, 10 ranked web-discovery URLs in each of 30 role/search categories (274 unique URLs, 189 unique hostnames).
+- **[COMPETITORS-ALL-30.csv](COMPETITORS-ALL-30.csv):** Same listings in CSV for later analysis, sorting and auditing.
+- **[COMPETITOR-KEYWORDS.md](COMPETITOR-KEYWORDS.md):** 30 job-category keyword clusters with synonym searches and reusable research brief.
+- [COMPETITORS-PERFORMANCE.md](COMPETITORS-PERFORMANCE.md), [COMPETITORS-CAMERA.md](COMPETITORS-CAMERA.md) and [COMPETITORS-POST.md](COMPETITORS-POST.md): same results split by discipline.
+- [COMPETITORS-GOOGLE-VERIFIED.md](COMPETITORS-GOOGLE-VERIFIED.md): *partial* diagnostic Google SERP names, not a reliable URL list because some Google goto links were unresolved. **Do not represent the master list as certified Google top-ten rankings.** The web-discovery feed does not identify paid ads.
+
+No deeper competitor research, curation or website analysis has been performed. No production site files changed.
+
 ## Expanded complete-page audit (18 November 2026)
 
 The follow-up request expanded the scope beyond the initial 10-pass report and second deep dive. **All 35 current production content pages** now have an individual resource-weight measurement; all **23 project galleries** were fully scrolled and measured; both dynamic equipment fragments were activated and measured. The legacy on-set redirect and unlisted/working pages have also been inventoried. **V2/V3 previews are excluded from detailed content/performance scoring, as requested.**
