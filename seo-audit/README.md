@@ -1,5 +1,7 @@
 # Bogdan Pascal Portfolio: SEO Audit
 
+> **Website setup and integrations log (18 November 2026):** [Read the internal operations handoff](website-operations/2026-11-18-SEO-ANALYTICS-INDEXING-SETUP-LOG.md) for GitHub Pages, Search Console verification, sitemap/indexing, GA4, OpenSEO, Microsoft Clarity, consent and privacy policy. It is repository documentation, not a published website page. The website setup has advanced since some historical research snapshots below.
+
 > **UPDATED CURRENT STATUS (18 NOV 2026):** All seven original core service-family SEO studies and a whole-site prioritized plan are DONE **as research**, with every action **NOT APPLIED** to the public site. See [Final integrated strategy](keyword-research/WHOLE-SITE-SEO-PRIORITIZED-PLAN.md), [live indexing blockers](keyword-research/LIVE-INDEXING-BLOCKERS-2026-11-18.md) and [updated roadmap](keyword-research/RESEARCH-ROADMAP.md). Older “ATHLETE PARTIAL” notes below are historical only.
 
 ## New chat continuation: current starting point
