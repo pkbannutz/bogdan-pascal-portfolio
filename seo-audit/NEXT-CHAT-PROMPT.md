@@ -1,5 +1,7 @@
 # COPY INTO THE NEXT CHAT
 
+> **SUPERSEDED NEXT-CHAT PROMPT:** All seven original core SEO research families plus a comprehensive whole-site prioritized plan are **DONE as research**, not implemented. The detailed old request below was already completed on 18 November 2026. For the current next step read [WHOLE-SITE-SEO-PRIORITIZED-PLAN.md](keyword-research/WHOLE-SITE-SEO-PRIORITIZED-PLAN.md), [RESEARCH-ROADMAP.md](keyword-research/RESEARCH-ROADMAP.md) and [LIVE-INDEXING-BLOCKERS-2026-11-18.md](keyword-research/LIVE-INDEXING-BLOCKERS-2026-11-18.md). Important: live FPV, Editing, Colour Grading pages still have `noindex,nofollow`. No production changes allowed without express approval. The historical prompt below is retained for provenance, **not** as current instructions.
+
 I want you to **continue and complete my evidence-based professional-service naming and SEO strategy** for my own portfolio: **https://bogdanpascal.com**, in the connected GitHub repository **https://github.com/pkbannutz/bogdan-pascal-portfolio**.
 
 ## BEFORE DOING RESEARCH: READ THE DOCUMENTED WORK IN GITHUB
