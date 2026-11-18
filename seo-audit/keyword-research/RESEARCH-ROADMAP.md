@@ -26,8 +26,8 @@ A service family can be marked **DONE** only after the report provides:
 | Order | Family | Research status | Required next output |
 |---:|---|---|---|
 | 1 | **Athlete, freerunner, parkour performer, acrobat, stunt performance, coordinator and movement direction** | **DONE (research, NOT APPLIED)**: direct source review, 76 UK queries/44 volume estimates, full 2004/5y/12m/3m Trends synthesis, industry labels, ten incomplete SERP classifications, ranked booking recommendation, copy/SEO/action plan. Exact real Google positions and GSC conversions remain unverified. | [ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md) |
-| 2 | **FPV / drone / aerial cinematography** | **DONE (research, NOT APPLIED)**: 51 UK queries, 31 numeric/20 null, 4 Trends horizons, 7 partially resolved Google SERPs, verified industry/CAA terminology, ranked names and booking copy. Flight permissions, shot attribution and Search Console remain VERIFY. | [FPV-DRONE-AERIAL-SEO-RANKED.md](FPV-DRONE-AERIAL-SEO-RANKED.md) |
-| 3 | **DoP, cinematography, camera, action camera, gimbal, DJI Ronin** | NOT STARTED quantitative ranking. | `CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md` |
+| 2 | **FPV / drone / aerial cinematography** | **DONE (research only, 18 Nov 2026)**: 57 UK terms with Ads volume/KD/intent; Trends 2004-present, 5y/12m/3m; 6 UK desktop Google SERP attempts (4 usable), verified specialist competitors and CAA guidance; role titles, copy and technical priorities. **Live FPV service noindex confirmed, not fixed.** | [Final ranked FPV report](FPV-DRONE-AERIAL-SEO-RANKED.md) |
+| 3 | **DoP, cinematography, camera, action camera, gimbal, DJI Ronin** | **IN PROGRESS**: beginning the next family; service/competitor evidence exists, fresh UK keyword metrics, Trends and SERPs needed. | `CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md` |
 | 4 | **Commercial filmmaking, branded films, music videos, small production** | NOT STARTED quantitative ranking. | `COMMERCIAL-FILMMAKING-SEO-RANKED.md` |
 | 5 | **Film and commercial editing, narrative editing, finishing** | NOT STARTED quantitative ranking. | `VIDEO-EDITING-SEO-RANKED.md` |
 | 6 | **Colour grading and commercial colourist** | NOT STARTED quantitative ranking. | `COLOUR-GRADING-SEO-RANKED.md` |
@@ -54,6 +54,10 @@ A service family can be marked **DONE** only after the report provides:
 - [FPV-DRONE-AERIAL-SEO-RANKED.md](FPV-DRONE-AERIAL-SEO-RANKED.md): **DONE**, research-only ranking and client-facing vs backend proposals.
 - [FPV-KEYWORD-METRICS-51.csv](FPV-KEYWORD-METRICS-51.csv): 51 UK estimated monthly search volume/difficulty/intent queries.
 - [fpv-data-raw-2026-11-18.json](fpv-data-raw-2026-11-18.json), [fpv-trends-raw-2026-11-18.json](fpv-trends-raw-2026-11-18.json), [fpv-google-serp-raw-2026-11-18.json](fpv-google-serp-raw-2026-11-18.json): audit trail.
+
+## Cross-cutting confirmed live indexability obstacle
+
+**P0, verified live 18 Nov 2026:** `/filmmaker/services/fpv/`, `/filmmaker/services/editing/` and `/filmmaker/services/colour-grading/` serve `noindex,nofollow`; DoP and sound design have no explicit robots meta in the inspected live HTML (their actual index status remains unverified). These may block qualified organic discovery; check why directives exist before any user-approved removal. The public site is **untouched**.
 
 ## Research workflow, repeated per family
 
