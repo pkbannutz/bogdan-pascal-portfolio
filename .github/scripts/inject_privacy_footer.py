@@ -75,6 +75,21 @@ def add_in_existing_footer(html: str, route: str) -> str:
         section = section[:close] + " · " + LINK + section[close:]
         return html[:match.start()] + section + html[match.end():]
 
+    # Bespoke service pages have their own styled footer classes
+    # (colour grading, editing, sound design and similar). Preserve their
+    # layout by nesting the new link inside their existing attribution span.
+    footers = list(re.finditer(
+        r'<footer\\b[^>]*>.*?</footer>', html, re.DOTALL | re.IGNORECASE
+    ))
+    if footers:
+        match = footers[-1]
+        section = match.group(0)
+        close = section.find("</span>")
+        if close < 0:
+            raise ValueError(f"No text span inside footer for: {route}")
+        section = section[:close] + " · " + LINK + section[close:]
+        return html[:match.start()] + section + html[match.end():]
+
     raise ValueError(f"No recognised existing footer for: {route}")
 
 
