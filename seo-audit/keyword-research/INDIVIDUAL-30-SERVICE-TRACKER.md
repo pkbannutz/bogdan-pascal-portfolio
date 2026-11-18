@@ -1,10 +1,10 @@
 # INDIVIDUAL SERVICE RESEARCH TRACKER: 30 CATEGORIES
 
-**Started:** 18 November 2026. **Progress:** **17 / 30 individually reviewed**. **Last individual completed:** **F07 Action / Movement Camera Specialist** (research complete, recommended as a specialist camera-operating proposition with personal action-camera clip attribution outstanding).
+**Started:** 18 November 2026. **Progress:** **21 / 30 individually reviewed**. **Last individual completed:** **F11 Underwater Cinematography** (individual qualitative research complete; specific personal commercial underwater role and current certification **NOT VERIFIED**, fresh underwater search-volume measurements unavailable).
 
 ## New operating rule from the user
 
-**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user requested batches P03-P05, P06-P09, P10 plus F01-F03, and then **F04-F07 in depth**. All four batches are individually reported and complete. **Do not proceed to F08 automatically.**
+**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user requested P03-P05, P06-P09, P10+F01-F03, F04-F07, then **F08-F11 in depth** with extra stunt-camera synonym research. All five batches are now individually reported. **Do not proceed to F12 automatically.**
 
 **Important:** The older seven **family-level** reports remain useful background. They are **not** a substitute for reviewing each of the original 30 categories separately. A family being marked DONE does **not** mark its individual service rows done.
 
@@ -31,11 +31,11 @@ Each individual report must document: precise job/service scope and reality chec
 | 15 | **F05** | Gimbal operator | CORE | **DONE: BOOKABLE CAMERA OPERATING SPECIALISM** | [Full F05 decision](individual/F05-GIMBAL-OPERATOR-RESEARCH-2026-11-18.md) |
 | 16 | **F06** | DJI Ronin operator | CORE | **DONE: F05 EQUIPMENT QUALIFIER, EXACT MODEL UNVERIFIED** | [Full F06 decision](individual/F06-DJI-RONIN-OPERATOR-RESEARCH-2026-11-18.md) |
 | 17 | **F07** | Action / movement camera specialist | CORE | **DONE: SPECIALTY, ACTION CLIP PROOF PENDING** | [Full F07 decision](individual/F07-ACTION-MOVEMENT-CAMERA-SPECIALIST-RESEARCH-2026-11-18.md) |
-| 18 | **F08** | FPV drone filming | CORE | **WAITING for next instruction** |  |
-| 19 | **F09** | Commercial drone operator | CORE | **NOT STARTED** |  |
-| 20 | **F10** | Aerial cinematography | CORE | **NOT STARTED** |  |
-| 21 | **F11** | Underwater cinematography | SCOPE TO VERIFY | **NOT STARTED** |  |
-| 22 | **F12** | Video editing | CORE | **NOT STARTED** |  |
+| 18 | **F08** | FPV drone filming | CORE | **DONE: FPV FILM SERVICE, FLIGHT/REEL PROOF TO VERIFY** | [Full F08 decision](individual/F08-FPV-DRONE-FILMING-RESEARCH-2026-11-18.md) |
+| 19 | **F09** | Commercial drone operator | CORE | **DONE: PRODUCTION PILOT/OPERATOR ROLE** | [Full F09 decision](individual/F09-COMMERCIAL-DRONE-OPERATOR-RESEARCH-2026-11-18.md) |
+| 20 | **F10** | Aerial cinematography | CORE | **DONE: CINEMATIC OUTCOME, SAME DRONE PAGE AS F08-F09** | [Full F10 decision](individual/F10-AERIAL-CINEMATOGRAPHY-RESEARCH-2026-11-18.md) |
+| 21 | **F11** | Underwater cinematography | SCOPE TO VERIFY | **DONE: RESEARCH / QUALIFICATION GATED; NUMERIC UK DEMAND UNAVAILABLE** | [Full F11 decision](individual/F11-UNDERWATER-CINEMATOGRAPHY-RESEARCH-2026-11-18.md) |
+| 22 | **F12** | Video editing | CORE | **WAITING for next instruction** |  |
 | 23 | **F13** | Film / narrative editing | CORE | **NOT STARTED** |  |
 | 24 | **F14** | Colour grading service | CORE | **NOT STARTED** |  |
 | 25 | **F15** | Colourist | CORE | **NOT STARTED** |  |
@@ -68,7 +68,7 @@ Each individual report must document: precise job/service scope and reality chec
 - **No production website edits.**
 - **Report:** [P02 Freerunning Performer](individual/P02-FREERUNNING-PERFORMER-RESEARCH-2026-11-18.md).
 
-**NEXT ONLY AFTER ANOTHER USER REQUEST: F08 FPV Drone Filming.** P01-P10 and F01-F07 each have separate individual research. F04 Camera Operator is a distinct crew role, F05 gimbal is a bookable camera specialty, F06 Ronin is an F05 device-specific variant with exact owned model to confirm, and F07 Action/Movement Camera is a differentiated skill with verified camera-operated action footage still to be selected. No public website changes.
+**NEXT ONLY AFTER ANOTHER USER REQUEST: F12 Video Editing.** P01-P10 and F01-F11 each have individual reports. F07 now includes **extensive stunt-camera lexical variants** from `stunt camera` to `stunt camera crew` and `stunt cameraman`, separated by personal-operator vs team/hardware intent. F08-F10 are overlapping but distinct drone production buying tasks. F11 full commercial underwater qualification/role remains unverified and its fresh UK monthly demand was not obtained. No public website changes.
 
 ## P03-P05 individual completion record (18 November 2026)
 
@@ -199,6 +199,42 @@ Each individual report must document: precise job/service scope and reality chec
 - [Full F07 report](individual/F07-ACTION-MOVEMENT-CAMERA-SPECIALIST-RESEARCH-2026-11-18.md).
 
 **Checkpoint: 17 of 30 original service categories have separate individual research reports. 13 remain. This four-report batch is complete. No live site changes. Next F08 only after user explicitly requests it.**
+
+## F07 stunt-camera follow-up and F08-F11 batch completion (18 November 2026)
+
+### Follow-up F07: stunt camera wording and keyphrase families
+- **Owner-requested addition fully saved:** [F07 Action / Movement Camera Specialist, §12 expanded keyword/intent matrix](individual/F07-ACTION-MOVEMENT-CAMERA-SPECIALIST-RESEARCH-2026-11-18.md#12-follow-up-amendment-stunt-camera-search-phrase-expansion-18-november-2026).
+- Covered `stunt camera`, `stunt camera crew`, `stunt camera team`, `stunt cameraman`, `stunt camera man`, `stunt camera operator`, `stunt camera operator for hire`, `stunt cinematography`, `action & stunt camera operator`, `parkour cameraman`, variants of `cameraperson`, `stunt filming`, technique names and excluding equipment/department roles.
+- **Professional hierarchy:** individual `Action & Movement Camera Operator` / conditional `Action & Stunt Camera Operator` vs producer looking for a **Stunt Camera Crew** (team) vs `action camera` hardware/product. Do not market a full crew, stunt risk coordination or project stunt camerawork credits until actual evidence. Industry examples: Stunt Camera Crew company, Gimbalninja individual and ONEblademag historical team interview.
+- **UK measured exact:** `stunt camera operator` ~10/month from earlier 61-term archived camera dataset; all newly proposed exact variants **unknown**. The fresh provider batch requested on 18 Nov **could not run because provider credits were insufficient**, so we did not invent figures.
+
+### F08: FPV Drone Filming
+- **Verdict:** CORE specialty distinct from standard drone aerial shooting, role **FPV Drone Pilot**, offer **FPV Drone Filming for Film & Commercials**. A real personally flown, permissioned FPV reel is a key proof gap. 5-inch/2.5-inch aircraft history and A2CofC are **self-report**, not verified current aircraft/class/authorisations.
+- **UK archived keyword estimates:** `fpv drone pilot` ~30/month; `fpv drone filming` ~20; `fpv drone operator` ~20; `fpv cinematography` ~10. Most original longtails unmeasured, no qualified-conversion data. Larger `drone filming` not direct FPV hiring.
+- **Regulatory:** UK CAA 2026 A2 CofC is *not* blanket specific-category permission; EU/EASA FPV goggles generally need correct nearby visual observer in Open category, and operation risk/class/airspace rules must be checked. No UK/EU blanket `licensed worldwide` statement.
+- **Live SEO check UPDATED:** 18 Nov 2026 fresh zero-cache FPV service HTML HTTP **200**, robots **`index, follow`**, self-canonical **ABSENT**. This **supersedes** older same-day early `FPV noindex` reading. Actual GSC indexing unknown; live editing/colour state not reverified.
+- [Full F08 research](individual/F08-FPV-DRONE-FILMING-RESEARCH-2026-11-18.md).
+
+### F09: Commercial Drone Operator
+- **Verdict:** CORE pilot / flight-operating service, recommended **Drone Pilot for Film & Commercials**, with `Commercial Drone Operator` secondary when contract/regulatory responsibility stated correctly. A remote pilot and legally responsible UAS operator can differ.
+- **UK estimates:** `commercial drone operator` ~10/month (KD 62), `commercial drone pilot` ~30 (KD44), `drone operator` ~260 mostly informational, `drone pilot for hire` ~50, `drone filming services` ~40. Avoid surveys/inspection claims without proven service.
+- **Site:** existing `/filmmaker/services/fpv/` offers FPV and conventional drone work, but current model/registration/insurance and footage-specific pilot roles unverified. Separate airspace permissions UK and EASA; no universal `commercial drone licence`.
+- [Full F09 research](individual/F09-COMMERCIAL-DRONE-OPERATOR-RESEARCH-2026-11-18.md).
+
+### F10: Aerial Cinematography
+- **Verdict:** CORE visual result, not additional pilot licence. Best **Aerial Cinematography**, person **Drone Cinematographer / Aerial Camera Operator** when actually responsible. Same logical current service landing as F08-F09, two clear offerings: close-action FPV vs wide cinematic aerial.
+- **UK estimates:** `aerial cinematography` ~10/month (KD38), `aerial cinematographer` ~10 (identical monthly series, do not add), `drone cinematography` ~20, `aerial filming` ~110, `drone videographer` ~390 but wider audience. Five original F10 exact phrases not measured.
+- **Proof:** current 23 work credits show DoP work but do not substantiate who flew particular aerial shots or owned any heavy lift/helicopter system. Don't claim both pilot and DoP without real on-set role.
+- [Full F10 research](individual/F10-AERIAL-CINEMATOGRAPHY-RESEARCH-2026-11-18.md).
+
+### F11: Underwater Cinematography
+- **Verdict:** legitimate **distinct filming industry**, but full personal commercial `Underwater Camera Operator` / `Underwater Cinematographer` offer **NOT VERIFIED**. Owner's pool-filming background is a starting point, not proof of commercial media scuba qualification, HSE dive medical/contractor/insurance or suitable owned underwater housing.
+- **Real UK professional evidence:** Rob Hill, Rich Stevenson, Zac Macaulay, Marine Film Projects, underwater studios; HSE official **Media Diving Projects L106** includes camera operators, and HSE FAQs say diving regulations can apply **even in swimming pools/tanks**, although requirements can be relaxed in specified cases. Dry pool-side filming vs in-water occupational diving not automatically same rule.
+- **UK exact monthly demand/KD/trends:** **UNKNOWN**; no prior underwater family dataset and a fresh structured provider query **failed before execution due to provider quota**. This is explicitly a qualitative full job/competitor/compliance review, not an invented quantitative search study. F11 is `RESEARCH COMPLETE / NUMERIC SEARCH DATA UNOBTAINED / PERSONAL SERVICE CLAIM GATED`.
+- **Future narrow truthful naming after proof:** **Underwater Pool Filming / Pool-Based Underwater Camera Work**, not automatically open-ocean scuba filming and full underwater dive unit.
+- [Full F11 research](individual/F11-UNDERWATER-CINEMATOGRAPHY-RESEARCH-2026-11-18.md).
+
+**Checkpoint: 21 / 30 individually researched. Nine remain F12-F20. Exactly four new individual reports saved for F08-F11, plus F07 keyword expansion. No live website changes.**
 
 ## Background source inventory
 
