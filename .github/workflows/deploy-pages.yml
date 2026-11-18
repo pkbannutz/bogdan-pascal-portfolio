@@ -36,10 +36,15 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html _site/index.html
+          cp robots.txt _site/robots.txt
+          if [ -f CNAME ]; then cp CNAME _site/CNAME; fi
           if [ -d assets ]; then cp -R assets _site/assets; fi
           if [ -d athlete ]; then cp -R athlete _site/athlete; fi
           if [ -d filmmaker ]; then cp -R filmmaker _site/filmmaker; rm -rf _site/filmmaker/_build; fi
           touch _site/.nojekyll
+
+      - name: Generate and validate sitemap
+        run: python3 .github/scripts/generate_sitemap.py _site
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
