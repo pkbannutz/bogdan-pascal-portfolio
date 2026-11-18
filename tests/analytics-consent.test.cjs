@@ -71,10 +71,9 @@ function harness(initial = {}) {
   };
   const window = {};
   vm.runInNewContext(source, { document, location, localStorage, window, Date }, { timeout: 1000 });
-  const banner = body.find(child => child.id === "bp-privacy-box");
   const privacy = body.find(child => child.id === "bp-privacy-open");
   return {
-    values, window, banner, privacy, input, head, body,
+    values, window, get banner() { return body.find(child => child.id === "bp-privacy-box"); }, privacy, input, head, body,
     scripts: () => head.filter(child => child.src).map(child => child.src),
     reloadCount: () => reloads,
     click: (id) => {
