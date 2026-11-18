@@ -26,6 +26,12 @@ REQUIRED_ROUTES = {
     "/athlete/",
     "/filmmaker/",
     "/filmmaker/equipment/",
+    "/filmmaker/services/",
+    "/filmmaker/services/dop/",
+    "/filmmaker/services/fpv/",
+    "/filmmaker/services/editing/",
+    "/filmmaker/services/colour-grading/",
+    "/filmmaker/services/sound-design/",
 }
 
 
