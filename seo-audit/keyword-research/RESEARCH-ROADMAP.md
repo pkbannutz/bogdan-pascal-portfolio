@@ -1,6 +1,6 @@
 # Service-by-service keyword and naming research roadmap
 
-**Last updated:** 18 November 2026 (athlete and FPV research DONE; cinematography next)
+**Last updated:** 18 November 2026 (athlete, FPV, DoP/camera DONE; commercial filmmaking next)
 **Status:** Research and documentation only. No production SEO/visual changes applied.
 **Read first:** [Full handoff](../START-HERE-NEXT-CHAT.md) and [principles](../RESEARCH-DECISION-PRINCIPLES.md).
 
@@ -27,7 +27,7 @@ A service family can be marked **DONE** only after the report provides:
 |---:|---|---|---|
 | 1 | **Athlete, freerunner, parkour performer, acrobat, stunt performance, coordinator and movement direction** | **DONE (research, NOT APPLIED)**: direct source review, 76 UK queries/44 volume estimates, full 2004/5y/12m/3m Trends synthesis, industry labels, ten incomplete SERP classifications, ranked booking recommendation, copy/SEO/action plan. Exact real Google positions and GSC conversions remain unverified. | [ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md) |
 | 2 | **FPV / drone / aerial cinematography** | **DONE (research only, 18 Nov 2026)**: 57 UK terms with Ads volume/KD/intent; Trends 2004-present, 5y/12m/3m; 6 UK desktop Google SERP attempts (4 usable), verified specialist competitors and CAA guidance; role titles, copy and technical priorities. **Live FPV service noindex confirmed, not fixed.** | [Final ranked FPV report](FPV-DRONE-AERIAL-SEO-RANKED.md) |
-| 3 | **DoP, cinematography, camera, action camera, gimbal, DJI Ronin** | **IN PROGRESS**: beginning the next family; service/competitor evidence exists, fresh UK keyword metrics, Trends and SERPs needed. | `CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md` |
+| 3 | **DoP, cinematography, camera, action camera, gimbal, DJI Ronin** | **DONE (research, NOT APPLIED)**: 61 UK queries (37 numeric/24 null), industry ScreenSkills/camera checks, four Trends horizons (one specialty panel unavailable), seven partial SERP checks, exact attribution safeguards and service hierarchy. | [CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md](CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md) |
 | 4 | **Commercial filmmaking, branded films, music videos, small production** | NOT STARTED quantitative ranking. | `COMMERCIAL-FILMMAKING-SEO-RANKED.md` |
 | 5 | **Film and commercial editing, narrative editing, finishing** | NOT STARTED quantitative ranking. | `VIDEO-EDITING-SEO-RANKED.md` |
 | 6 | **Colour grading and commercial colourist** | NOT STARTED quantitative ranking. | `COLOUR-GRADING-SEO-RANKED.md` |
@@ -47,7 +47,7 @@ A service family can be marked **DONE** only after the report provides:
 
 **Athlete research finished 18 Nov 2026:** [ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md). Final recommendations distinguish active on-camera performance from specialist coordination. A prior independent [athlete naming study](../ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md) is preserved as source evidence. **DONE means the research chapter and proposals are complete, not that changes are published or that Google indexing/leads are verified.**
 
-**Next action:** Begin family #3 **DoP / cinematography / camera operator / gimbal / DJI Ronin**. Inspect actual DoP service page, credit proof and existing competitor taxonomy. Collect UK Google Ads monthly volumes and organic difficulty, buyer intent, Trends (all-time / 5 years / 12 months / 3 months), SERP checks and verified industry job titles. Save `CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md`, then update status. Do not jump to another category without recording its evidence-based decision.
+**Next action:** Begin family #4 **Commercial filmmaking, branded films, music videos and small production** by inspecting current service/filmmaker pages and actual project evidence, then UK search demand, organic difficulty, search intent, Trends four windows, relevant SERPs and buyer-facing naming. Save `COMMERCIAL-FILMMAKING-SEO-RANKED.md`. Only after documenting family #4 move to editing, colour and sound.
 
 ## FPV research evidence and completion
 
@@ -58,6 +58,11 @@ A service family can be marked **DONE** only after the report provides:
 ## Cross-cutting confirmed live indexability obstacle
 
 **P0, verified live 18 Nov 2026:** `/filmmaker/services/fpv/`, `/filmmaker/services/editing/` and `/filmmaker/services/colour-grading/` serve `noindex,nofollow`; DoP and sound design have no explicit robots meta in the inspected live HTML (their actual index status remains unverified). These may block qualified organic discovery; check why directives exist before any user-approved removal. The public site is **untouched**.
+
+## DoP/camera research sources
+
+- [CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md](CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md): ranked and completed research, not applied.
+- [CINEMATOGRAPHY-KEYWORD-METRICS-61.csv](CINEMATOGRAPHY-KEYWORD-METRICS-61.csv), [raw volumes/intent/difficulty](cinematography-data-raw-2026-11-18.json), [Trends](cinematography-trends-raw-2026-11-18.json), [partial SERPs](cinematography-google-serp-raw-2026-11-18.json).
 
 ## Research workflow, repeated per family
 
