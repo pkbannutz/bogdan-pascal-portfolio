@@ -1,0 +1,104 @@
+# Bogdan Pascal Portfolio: SEO Audit
+
+**Audit date:** 18 November 2026  
+**Repository:** [pkbannutz/bogdan-pascal-portfolio](https://github.com/pkbannutz/bogdan-pascal-portfolio)  
+**Scope:** Entire domain, athlete portfolio, filmmaker portfolio.  
+**Status:** AUDIT COMPLETE, IMPLEMENTATION NOT STARTED. No live HTML, CSS, JS, SEO settings, or tracking were changed by this audit.
+
+## Read this first
+
+| Document | Coverage |
+|---|---|
+| [OVERALL.md](OVERALL.md) | Shared domain, deployment, indexing, metadata, analytics, page architecture |
+| [ATHLETE.md](ATHLETE.md) | Parkour athlete, freerunner, acrobat, stunt performer, movement director |
+| [FILMMAKER.md](FILMMAKER.md) | DoP, filmmaker, editing, colour, FPV, services and 23 project pages |
+| [CHECKLIST.md](CHECKLIST.md) | Prioritized to-do list with BACKEND, SEARCH, and VISIBLE labels |
+
+**Change labels:** `BACKEND` changes site code, search infrastructure or metadata without intentionally changing the visible page. `SEARCH` changes how a result or shared link may appear on Google/social platforms, not the page itself. `VISIBLE` changes copy, information architecture, images, navigation or CTAs a visitor sees. Many tasks have two labels.
+
+**Evidence confidence:** `CONFIRMED` means observed in current GitHub files. `VERIFY LIVE` means an HTTP crawl or browser test is still needed. `VERIFY DATA` means private Google Search Console, Analytics or performance data is needed. Do not mistake untested items for demonstrated failures.
+
+## Executive decision
+
+**Keep one personal domain with two clearly differentiated landing pages.** `/` should continue to introduce Bogdan Pascal and route visitors to `/athlete/` or `/filmmaker/`. Each section should rank on its own merits. There is no evidence from this code review that two related careers under one domain are causing an SEO penalty. Do **not** split domains, rename URLs, redesign the homepage or publish new visible copy before review.
+
+Priority order: (1) deployable sitemap/canonical and indexing hygiene, (2) proper page-level headings and search metadata, (3) better performer and filmmaking descriptions, (4) meaningful project-level content, (5) search measurement and actual speed/crawl validation.
+
+## 10-pass audit log
+
+### Pass 1: Repository and URL inventory
+- **CONFIRMED:** Recursive Git tree had 591 entries including 361 JPG/PNG/WebP/AVIF/GIF assets at inspection.
+- **CONFIRMED:** 36 production HTML pages are represented by homepage, athlete, filmmaker landing, filmmaker about/contact/equipment/services, six service subpages including a legacy redirect, and 23 project pages.
+- **CONFIRMED:** There are additional `filmmaker/v2/` and `filmmaker/v3/` previews, plus equipment HTML fragments. Do not accidentally put staging/fragments in a sitemap.
+- **ACTION:** Maintain a list of canonical indexable pages, not all files containing `.html`.
+
+### Pass 2: Build and deployment path
+- **CONFIRMED:** `.github/workflows/deploy-pages.yml` copies `index.html`, `assets/`, `athlete/`, and `filmmaker/` to `_site`, then removes `filmmaker/_build`. Root files like future `sitemap.xml` and `robots.txt` are NOT copied by the current publish step.
+- **CONFIRMED:** Repository contains a root `CNAME`, but the workflow does not explicitly copy it. Check current GitHub Pages custom-domain settings before modifying deployment. Do not infer a broken live domain from this alone.
+- **ACTION:** Change publish workflow when adding root SEO assets; add deploy-time checks and keep preview behavior intentional.
+
+### Pass 3: Crawling, indexability and canonicalization
+- **CONFIRMED:** No `sitemap.xml` or `robots.txt` files in the examined Git tree.
+- **CONFIRMED:** Main production pages examined generally lack `rel="canonical"`; the legacy `/filmmaker/services/on-set/` is an exception, canonicalizing to `/filmmaker/services/dop/` and using noindex + a client-side/meta-refresh redirect.
+- **CONFIRMED:** `/filmmaker/v2/` and `/filmmaker/v3/services/colour-grading/` sample pages include `noindex` directives; `/filmmaker/equipment/` is also explicitly `noindex, nofollow`.
+- **ACTION:** Canonicalize indexable pages to themselves; exclude previews, redirect, noindex equipment and HTML fragments from sitemap; preserve preview noindex. Never block a noindex page in robots.txt before confirming Google can read the tag.
+- **VERIFY LIVE:** Google-selected canonical, www/non-www and HTTP-to-HTTPS redirects, HTTP status codes, actual indexing.
+
+### Pass 4: Titles, descriptions, heading hierarchy and social previews
+- **CONFIRMED:** Homepage title `Bogdan Pascal | Athlete and Filmmaker`, description names both careers, but no H1. Its visible section headings are H2s.
+- **CONFIRMED:** `/filmmaker/` has title `Bogdan Pascal | Filmmaker and DoP`, a short generic description and **no H1**. The visual hero uses `span` text.
+- **CONFIRMED:** `/athlete/` has a role-rich title and description plus one H1, though the H1 is the person's name rather than career terms.
+- **CONFIRMED:** Indexable pages inspected generally have no schema JSON-LD, and most have no canonical.
+- **CONFIRMED:** The filmmaker home `og:image` is a root-relative URL, and project pages use root-relative `og:image`; athlete lacks an og:image in inspected code.
+- **ACTION:** Update semantic headings, page-specific snippets, absolute Open Graph image URLs, canonical and structured data.
+
+### Pass 5: Athlete intent and hireability
+- **CONFIRMED:** Athlete title currently leads with parkour coordinator, stunt performer, movement director. This is relevant but can underrepresent the active **parkour athlete / freerunner / acrobat** hiring intent.
+- **CONFIRMED:** Athlete page presents credits, visual proof, reel and external references. Image alt attributes are present on sampled tags (some empty on decorative assets).
+- **CONFIRMED:** No direct `/filmmaker/` link was found among extracted athlete-page anchor hrefs, whereas filmmaker pages include a link back to athlete.
+- **ACTION:** Keep strong coordinator positioning while explicitly retaining athlete/performer hireability in the first visible introduction, SEO title and CTA; add natural cross-link.
+
+### Pass 6: Filmmaker services and project depth
+- **CONFIRMED:** 23 live project pages have individual titles and H1s, but metadata is largely generated as `Project title. Category.` (for example, `TUI Romania. Commercial.`). That is thin and repetitive.
+- **CONFIRMED:** Filmmaker landing page focuses on visual portfolio cards, with little explanatory landing-page text. Its H1 is missing.
+- **CONFIRMED:** Dedicated DoP, FPV, editing, colour and sound service pages each have H1 headings. The on-set URL is a legacy redirect, not an independent service landing.
+- **ACTION:** Write factual, individually differentiated summaries with roles, scope, techniques and client outcomes where true; introduce a clear filmmaking value proposition without replacing the visual design.
+
+### Pass 7: Visual media, accessibility and performance risks
+- **CONFIRMED:** All sampled main/project/service `img` tags include an `alt` attribute. Presence is good; relevance varies. Some project frames say `GeoDomeX still 1`, etc., which could be improved when the frame itself is meaningful.
+- **CONFIRMED:** Main filmmaker grid marks six thumbnails `loading="eager"`; others are lazy. Most sampled image tags lack explicit HTML `width` and `height`, though CSS may reserve sizes.
+- **CONFIRMED:** Repository contains large assets, including `assets/the-1975-original.gif` around 7.8 MB and `assets/milan-fashion-week-original.png` around 3.3 MB. Presence alone does not prove live page-speed harm. Check where and whether they are loaded.
+- **ACTION:** Measure LCP/CLS/INP on real mobile/desktop; prioritize hero and above-fold images, image dimensions/sizing, modern formats, and video poster behavior. Do not mass-compress archival masters without reviewing quality.
+
+### Pass 8: Links, legacy URLs and content discovery
+- **CONFIRMED:** In a code-to-tree check of the homepage, athlete, filmmaker home, filmmaker services, about and contact, extracted root-relative local references resolved to files/routes in the repo. This is a static path check, **not** an HTTP 200/404 or outbound-link audit.
+- **CONFIRMED:** Filmmaker pages cross-link to athlete; the athlete page did not directly link to filmmaking in its anchor hrefs.
+- **CONFIRMED:** Preview routes are publicly accessible by URL despite noindex, per V2 README. Two equipment HTML partial files are published as fragment-like pages by the folder-copy workflow.
+- **ACTION:** Use a live crawler for broken links/status codes, inspect equipment fragments as standalone URLs, use descriptive natural internal cross-links and confirm staging/noindex rules.
+
+### Pass 9: Conversion, trust and tracking
+- **CONFIRMED:** Homepage has just two category choices, suitable as a clear career selector. Filmmaker work portfolio and contact pages link to a contact email; athlete links to portfolio evidence and social profiles.
+- **CONFIRMED:** No GA4 or Meta tracking tag was identified in inspected homepage and filmmaker landing source. Tracking may be injected through other mechanisms or configured elsewhere, so do not assert it is absent sitewide.
+- **ACTION:** Verify Search Console ownership and GA4 installation, implement consent-aware analytics if desired, track section-specific contact actions, preserve privacy/legal requirements for EU visitors.
+- **VERIFY DATA:** Rankings, clicks, conversions, bounce/engagement and actual preferred landing pages are unknown without account access.
+
+### Pass 10: Independent methods, OpenSEO and validation plan
+- **RESEARCHED:** OpenSEO's free site audit checks crawler access, status codes, broken links, titles, H1s, indexability, redirects, and page counts. Its docs recommend inspecting failed/blocked pages and exporting results. See [OpenSEO site audits](https://www.openseo.so/docs/site-audits).
+- **NOT RUN:** No authenticated OpenSEO project/API, hosted crawler, Google Search Console or GA4 data was available in this session. The public site also could not be fetched by the available web reader. Thus this is a thorough **source-code audit**, not ten independent external crawls, a live Lighthouse score, or a verified Google indexing report.
+- **NEXT VALIDATION:** Use OpenSEO free crawler with Lighthouse OFF, JS rendering OFF initially, 50-page limit and preview exclusions `/filmmaker/v2/`, `/filmmaker/v3/`. Inspect errors, then optionally retest with rendering if content is missing. Crawl core content first. Export results; validate top templates with PageSpeed Insights and GSC.
+- **NEXT RELEASE QA:** Check `/robots.txt`, `/sitemap.xml`, sample canonicals, redirect behavior, indexability, social sharing previews, mobile pages, and Google URL Inspection after changes.
+
+## Boundaries
+
+- **No edits to public pages.** This audit is documentation only.
+- **No estimates of lost traffic, search volume, current rank, or actual Lighthouse scores.**
+- **No guarantee of Google rankings.** Titles, sitemaps, canonical tags and structured data are signals, not ranking promises.
+- **No separate domain recommended at this stage.**
+- **One brand, separate intents:** branded queries should plausibly favor the root; hiring queries should find the appropriate specific page. Search Console will show whether that actually happens.
+
+### Public guidance reviewed
+- [Google Search Essentials](https://developers.google.com/search/docs/essentials)
+- [Google sitemap guidance](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview)
+- [Google canonical guidance](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
+- [OpenSEO site audit documentation](https://www.openseo.so/docs/site-audits)
+- [OpenSEO repository](https://github.com/every-app/open-seo)
