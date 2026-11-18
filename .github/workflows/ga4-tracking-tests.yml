@@ -1,0 +1,27 @@
+name: GA4 interaction tracking tests
+
+on:
+  pull_request:
+    paths:
+      - 'assets/analytics-consent.js'
+      - 'assets/analytics-events.js'
+      - 'tests/analytics-events.test.cjs'
+      - '.github/workflows/ga4-tracking-tests.yml'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Check syntax of both analytics scripts
+        run: |
+          node --check assets/analytics-consent.js
+          node --check assets/analytics-events.js
+      - name: Test consent and event behaviour
+        run: node --test tests/analytics-events.test.cjs
