@@ -5,6 +5,12 @@
 **Scope:** Entire domain, athlete portfolio, filmmaker portfolio.  
 **Status:** AUDIT COMPLETE, IMPLEMENTATION NOT STARTED. No live HTML, CSS, JS, SEO settings, or tracking were changed by this audit.
 
+## New: second-pass live audit
+
+**Read the [DEEP DIVE (18 Nov 2026)](DEEP-DIVE-2026-11-18.md) first for the newly confirmed issues and revised priorities.** A later live crawl verified 35 production URLs at HTTP 200 and confirmed `/robots.txt` and `/sitemap.xml` both return 404. Browser testing found all 23 filmmaker JPG thumbnails fetched (~4.83 MB image payload), two-tap project card navigation on touch devices, and unusually small mobile navigation/contact tap targets. These findings were **not covered by the initial source-only 10 passes**.
+
+This README retains the original static audit log as an evidence record. Later live observations and adjusted priorities in the deep dive supersede earlier statements that live verification was unavailable. No website fixes have been deployed.
+
 ## Read this first
 
 | Document | Coverage |
@@ -12,7 +18,7 @@
 | [OVERALL.md](OVERALL.md) | Shared domain, deployment, indexing, metadata, analytics, page architecture |
 | [ATHLETE.md](ATHLETE.md) | Parkour athlete, freerunner, acrobat, stunt performer, movement director |
 | [FILMMAKER.md](FILMMAKER.md) | DoP, filmmaker, editing, colour, FPV, services and 23 project pages |
-| [CHECKLIST.md](CHECKLIST.md) | Prioritized to-do list with BACKEND, SEARCH, and VISIBLE labels |
+| [CHECKLIST.md](CHECKLIST.md) | Prioritized to-do list with BACKEND, SEARCH, and VISIBLE labels |\n| [DEEP-DIVE-2026-11-18.md](DEEP-DIVE-2026-11-18.md) | Additional ten angles, live 35-page crawl, image-loading and mobile UX issues |
 
 **Change labels:** `BACKEND` changes site code, search infrastructure or metadata without intentionally changing the visible page. `SEARCH` changes how a result or shared link may appear on Google/social platforms, not the page itself. `VISIBLE` changes copy, information architecture, images, navigation or CTAs a visitor sees. Many tasks have two labels.
 
@@ -84,14 +90,14 @@ Priority order: (1) deployable sitemap/canonical and indexing hygiene, (2) prope
 
 ### Pass 10: Independent methods, OpenSEO and validation plan
 - **RESEARCHED:** OpenSEO's free site audit checks crawler access, status codes, broken links, titles, H1s, indexability, redirects, and page counts. Its docs recommend inspecting failed/blocked pages and exporting results. See [OpenSEO site audits](https://www.openseo.so/docs/site-audits).
-- **NOT RUN:** No authenticated OpenSEO project/API, hosted crawler, Google Search Console or GA4 data was available in this session. The public site also could not be fetched by the available web reader. Thus this is a thorough **source-code audit**, not ten independent external crawls, a live Lighthouse score, or a verified Google indexing report.
+- **NOT RUN:** At the initial pass, no authenticated OpenSEO project/API, hosted crawler, Google Search Console or GA4 data was available; the initial public web reader could not fetch the site. **Subsequently** a separate Firecrawl live crawl verified 35 deployed pages and browser testing found additional performance and UX issues, documented in the deep-dive addendum. No OpenSEO crawl, Lighthouse field score, or verified Google indexing report was obtained.
 - **NEXT VALIDATION:** Use OpenSEO free crawler with Lighthouse OFF, JS rendering OFF initially, 50-page limit and preview exclusions `/filmmaker/v2/`, `/filmmaker/v3/`. Inspect errors, then optionally retest with rendering if content is missing. Crawl core content first. Export results; validate top templates with PageSpeed Insights and GSC.
 - **NEXT RELEASE QA:** Check `/robots.txt`, `/sitemap.xml`, sample canonicals, redirect behavior, indexability, social sharing previews, mobile pages, and Google URL Inspection after changes.
 
 ## Boundaries
 
 - **No edits to public pages.** This audit is documentation only.
-- **No estimates of lost traffic, search volume, current rank, or actual Lighthouse scores.**
+- **No estimates of lost traffic, search volume, current rank, or actual Lighthouse scores.** A later live browser test measured resource payload and navigation timing but was not a Lighthouse/CrUX speed assessment.
 - **No guarantee of Google rankings.** Titles, sitemaps, canonical tags and structured data are signals, not ranking promises.
 - **No separate domain recommended at this stage.**
 - **One brand, separate intents:** branded queries should plausibly favor the root; hiring queries should find the appropriate specific page. Search Console will show whether that actually happens.
