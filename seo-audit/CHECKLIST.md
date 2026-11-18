@@ -12,6 +12,30 @@
 - **VERIFY:** Cannot establish without Google Search Console, OpenSEO/live crawler, browser or performance test.
 - **P0:** Start here; **P1:** Next phase; **P2:** Improvement after measurement.
 
+## Full-site audit extensions (every page)
+
+The following documents extend the initial 10-pass and deep-dive work into **all 35 current content pages** plus hidden/functional routes (V2/V3 excluded from page scoring):
+
+- [Every-page resource-speed measurements](SPEED-ALL-PAGES.md): initial-load and full-scroll image bytes for athlete, filmmaker, five services, equipment and **all 23 work pages**.
+- [Each filmmaker service's independent SEO plan](SERVICE-SEO-DETAIL.md): target intent, real content coverage, specific backend/search tasks and visible change proposals.
+- [All 23 projects with specific credits and SEO tasks](PROJECT-SEO-ALL-23.md): correct role attribution, current video visibility and case-study opportunities.
+- [Hidden routes, build bloat and safe cleanup](HIDDEN-ROUTES-AND-CLEANUP.md): normal pages versus redirects/fragments/previews, actual downloads versus dormant files, identical asset duplicates.
+
+### Newly urgent checklist, still not implemented
+
+- [ ] **E01 | FILMMAKER EQUIPMENT | P0 | BACKEND:** Optimize the 97-image expanded equipment view, measuring before/after ~27.2MiB image-resource weight. Keep both functional HTML fragments.
+- [ ] **E02 | ATHLETE | P0 | BACKEND:** Replace ~7.6MiB original GIF with efficient in-page video/modern equivalent and optimize oversized PNGs, preserving visible filmic quality.
+- [ ] **E03 | FILMMAKER PROJECTS | P0/P1 | BACKEND:** Full-scroll galleries Therme (~10.9MiB), Miki (~10.0MiB), RawPot (~8.8MiB), GeoDomeX (~6.7MiB), Dyla (~6.5MiB), Renais (~5.3MiB): responsive preview assets and full-res only in lightbox.
+- [ ] **E04 | FILMMAKER SERVICES | P0 | SEARCH:** Each of DoP, FPV, Editing, Colour, Sound gets independent focused title, description, canonical, truthful proof/roles, internal links and Service schema as appropriate. See full per-page guidance. Do not create duplicate synonym landing pages.
+- [ ] **E05 | FILMMAKER PROJECTS | P0 | SEARCH:** Project-specific, role-accurate meta descriptions and reciprocal service links in a synchronized shared build generator.
+- [ ] **E06 | FILMMAKER PROJECTS | P0 | VERIFY:** Confirm personal credit on Mojo Skincare, avoid falsely attributing cinematography on Mojo Hair, preserve co-DoP on GeoDomeX and Director/DoP on Renais.
+- [ ] **E07 | FILMMAKER PROJECTS | P1 | VISIBLE:** Add concise authentic descriptions to 23 project pages; note four currently have no detected playable video elements. Review copy and role attributions before changes.
+- [ ] **E08 | CLEANUP | P2 | BACKEND:** Exclude maintenance README from published equipment subtree if safe; investigate two SHA-identical asset pairs; keep dynamic equipment fragments and active preview work.
+- [ ] **E09 | BUILD CONSISTENCY | P1 | BACKEND:** Reconcile current `filmmaker/_build/build.py` generated navigation with manually updated production header before any rebuild.
+- [ ] **E10 | SPEED VERIFY | P1 | VERIFY:** Official PageSpeed/Lighthouse and real phone tests for the heaviest templates, plus video/audio transfer while actively used. Source measurements are **image-resource weights, not Lighthouse scores**.
+
+**Definition of complete:** All documented `E` tasks above are recommendations and remain unchecked. No live HTML/CSS/JS/assets/SEO code was modified during the audit.
+
 ## New high-priority issues from the live deep dive (18 Nov 2026)
 
 Read [the second-pass deep dive](DEEP-DIVE-2026-11-18.md) for evidence and caveats. These were found after the original checklist and **should be considered before less impactful metadata work**.
