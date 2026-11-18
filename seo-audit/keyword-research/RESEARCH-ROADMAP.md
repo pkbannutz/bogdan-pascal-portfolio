@@ -1,6 +1,6 @@
 # Service-by-service keyword and naming research roadmap
 
-**Last updated:** 18 November 2026 (athlete ranked report saved, next FPV)
+**Last updated:** 18 November 2026 (athlete and FPV research DONE; cinematography next)
 **Status:** Research and documentation only. No production SEO/visual changes applied.
 **Read first:** [Full handoff](../START-HERE-NEXT-CHAT.md) and [principles](../RESEARCH-DECISION-PRINCIPLES.md).
 
@@ -26,7 +26,7 @@ A service family can be marked **DONE** only after the report provides:
 | Order | Family | Research status | Required next output |
 |---:|---|---|---|
 | 1 | **Athlete, freerunner, parkour performer, acrobat, stunt performance, coordinator and movement direction** | **DONE (research, NOT APPLIED)**: direct source review, 76 UK queries/44 volume estimates, full 2004/5y/12m/3m Trends synthesis, industry labels, ten incomplete SERP classifications, ranked booking recommendation, copy/SEO/action plan. Exact real Google positions and GSC conversions remain unverified. | [ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md) |
-| 2 | **FPV / drone / aerial cinematography** | **IN PROGRESS**, begun after athlete completion; base keyword/competitor discovery exists, provider-grade volume/Trends and full ranked chapter still required. | `FPV-DRONE-AERIAL-SEO-RANKED.md` |
+| 2 | **FPV / drone / aerial cinematography** | **DONE (research, NOT APPLIED)**: 51 UK queries, 31 numeric/20 null, 4 Trends horizons, 7 partially resolved Google SERPs, verified industry/CAA terminology, ranked names and booking copy. Flight permissions, shot attribution and Search Console remain VERIFY. | [FPV-DRONE-AERIAL-SEO-RANKED.md](FPV-DRONE-AERIAL-SEO-RANKED.md) |
 | 3 | **DoP, cinematography, camera, action camera, gimbal, DJI Ronin** | NOT STARTED quantitative ranking. | `CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md` |
 | 4 | **Commercial filmmaking, branded films, music videos, small production** | NOT STARTED quantitative ranking. | `COMMERCIAL-FILMMAKING-SEO-RANKED.md` |
 | 5 | **Film and commercial editing, narrative editing, finishing** | NOT STARTED quantitative ranking. | `VIDEO-EDITING-SEO-RANKED.md` |
@@ -47,7 +47,13 @@ A service family can be marked **DONE** only after the report provides:
 
 **Athlete research finished 18 Nov 2026:** [ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md). Final recommendations distinguish active on-camera performance from specialist coordination. A prior independent [athlete naming study](../ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md) is preserved as source evidence. **DONE means the research chapter and proposals are complete, not that changes are published or that Google indexing/leads are verified.**
 
-**Next action:** Begin family #2 **FPV / drone / aerial cinematography** using existing research (keyword taxonomy, competitor discovery and actual filmmaker page/service proof), collect family-specific UK organic difficulty and estimated volumes when accessible, compare Google Trends across the four agreed windows and relevant SERPs, then publish a ranked chapter. Do not begin family #3 before recording an evidence-based #2 decision and its unknowns.
+**Next action:** Begin family #3 **DoP / cinematography / camera operator / gimbal / DJI Ronin**. Inspect actual DoP service page, credit proof and existing competitor taxonomy. Collect UK Google Ads monthly volumes and organic difficulty, buyer intent, Trends (all-time / 5 years / 12 months / 3 months), SERP checks and verified industry job titles. Save `CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md`, then update status. Do not jump to another category without recording its evidence-based decision.
+
+## FPV research evidence and completion
+
+- [FPV-DRONE-AERIAL-SEO-RANKED.md](FPV-DRONE-AERIAL-SEO-RANKED.md): **DONE**, research-only ranking and client-facing vs backend proposals.
+- [FPV-KEYWORD-METRICS-51.csv](FPV-KEYWORD-METRICS-51.csv): 51 UK estimated monthly search volume/difficulty/intent queries.
+- [fpv-data-raw-2026-11-18.json](fpv-data-raw-2026-11-18.json), [fpv-trends-raw-2026-11-18.json](fpv-trends-raw-2026-11-18.json), [fpv-google-serp-raw-2026-11-18.json](fpv-google-serp-raw-2026-11-18.json): audit trail.
 
 ## Research workflow, repeated per family
 
