@@ -1,5 +1,14 @@
 # Bogdan Pascal Portfolio: SEO Audit
 
+## START HERE: outcome-first research and completed athlete naming study
+
+**Essential instructions for any future AI assistant continuing this work:** Read [RESEARCH-DECISION-PRINCIPLES.md](RESEARCH-DECISION-PRINCIPLES.md) **before** recommending keywords, service names, new pages, speed changes or implementation. The user's suggested methods are hypotheses; the AI must act as the researcher, correct flawed assumptions, use validated data, avoid vanity metrics and prioritize **being hired for genuine services**. Do not blindly chase high-volume keywords or copy the first Google result.
+
+**First completed service family:** [ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md](ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md), covering industry-standard naming, 76 UK keyword metrics, 2004-to-present / five-year / 12-month / three-month trends, hiring-intent distinctions, competitor examples, proposed positioning, implementation categories and remaining uncertainties. The underlying metrics and raw source responses are in [keyword-research/](keyword-research/).
+
+**Scope:** The first detailed research chapter is **athlete only**. Filmmaking families are **not** yet completed to the same quantitative research standard. Work on one service family at a time. No live website changes have been applied.
+
+
 ## Expanded service and keyword inventory (18 November 2026)
 
 - **[MASTER-SERVICE-KEYWORDS.md](MASTER-SERVICE-KEYWORDS.md):** The full combined list, **30 portfolio-aligned categories + 61 additional competitor-evidenced service categories = 91 service/search categories**. Every category has **5 related phrases**: **455 keyword variants**, **546 primary-plus-variant entries** (545 distinct phrases after literal deduplication). Some baseline roles are explicitly marked adjacent or subject to credential checks.
