@@ -1,0 +1,52 @@
+keyword,uk_avg_monthly_searches_12m,organic_difficulty_0_100,ads_competition,ads_competition_index,classified_intent,intent_probability,searches_2025_11,searches_2025_12,searches_2026_01,searches_2026_02,searches_2026_03,searches_2026_04,searches_2026_05,searches_2026_06,searches_2026_07,searches_2026_08,searches_2026_09,searches_2026_10
+"fpv drone pilot","30",,"LOW","28","informational","0.6345","30","20","30","20","30","40","40","40","20","30","30","30"
+"fpv drone pilot uk",,,,,"navigational","0.4956",,,,,,,,,,,,
+"fpv drone pilot hire",,,,,"transactional","0.9943",,,,,,,,,,,,
+"hire fpv drone pilot",,,,,"transactional","1",,,,,,,,,,,,
+"fpv drone cinematographer",,,,,"informational","0.6671",,,,,,,,,,,,
+"fpv drone filming","20","0","LOW","29","informational","0.6081","170","10","30","10","10","10","10","0","10","10","10","10"
+"fpv drone filming uk",,,,,"informational","0.4898",,,,,,,,,,,,
+"fpv drone services","10",,"MEDIUM","43","commercial","0.9919","10","0","20","10","10","20","10","10","10","10","0","10"
+"fpv drone operator","20",,"LOW","5","informational","0.554","20","20","20","20","30","40","10","20","20","20","10","10"
+"fpv drone operator for film",,,,,"informational","0.6976",,,,,,,,,,,,
+"fpv cinematography","10",,,,"informational","0.9689","10","10","10","10","10","10","10","10","10","10","10","0"
+"fpv drone videography","20",,"LOW","17","informational","0.7545","20","20","20","30","20","20","30","20","30","10","20","20"
+"fpv drone video production","0",,,,"commercial","0.9172","0","0","0","0","0","0","0","0","0","0","0","0"
+"fpv drone commercial filming",,,,,"commercial","0.5544",,,,,,,,,,,,
+"fpv drone for film and tv",,,,,"commercial","0.518",,,,,,,,,,,,
+"cinematic fpv drone","10","43","HIGH","100","informational","0.6954","10","10","10","10","10","10","10","10","10","10","10","10"
+"fpv drone chase shots",,,,,"informational","0.4397",,,,,,,,,,,,
+"fpv drone interior filming",,,,,"navigational","0.4798",,,,,,,,,,,,
+"indoor fpv drone filming",,,,,"navigational","0.4338",,,,,,,,,,,,
+"one take fpv drone",,,,,"transactional","0.7544",,,,,,,,,,,,
+"fpv drone film","20",,"LOW","29","informational","0.9284","170","10","30","10","10","10","10","0","10","10","10","10"
+"cinewhoop filming",,,,,"informational","0.6996",,,,,,,,,,,,
+"cinewhoop pilot",,,,,"informational","0.711",,,,,,,,,,,,
+"micro fpv drone filming",,,,,"transactional","0.5676",,,,,,,,,,,,
+"drone pilot for filming",,,,,"transactional","0.8982",,,,,,,,,,,,
+"drone pilot for hire","50","0","MEDIUM","54","transactional","0.999","40","40","90","50","70","90","90","50","50","50","30","30"
+"drone operator","260","28","LOW","22","informational","0.6048","260","210","320","260","390","260","260","260","260","210","210","260"
+"commercial drone operator","10","62","LOW","24","commercial","0.833","10","10","10","10","10","10","10","10","20","10","10","10"
+"commercial drone pilot","30","44","LOW","23","commercial","0.9047","20","20","40","50","20","20","20","40","30","20","30","30"
+"drone filming uk","10","37","MEDIUM","44","informational","0.7634","10","10","10","10","10","10","10","10","10","10","10","10"
+"drone filming services","40","0","MEDIUM","41","commercial","0.9922","50","90","90","50","50","20","40","40","20","20","20","30"
+"drone filming","210","26","MEDIUM","38","informational","0.946","210","170","260","260","480","210","170","170","140","170","110","140"
+"drone cinematography","20","0","LOW","15","informational","0.9969","20","30","20","20","30","10","10","10","20","20","10","10"
+"aerial cinematography","10","38","LOW","0","informational","0.9985","20","10","20","10","20","20","10","10","10","10","20","20"
+"aerial cinematographer","10","39","LOW","0","informational","0.9322","20","10","20","10","20","20","10","10","10","10","20","20"
+"aerial filming","110","0","LOW","15","informational","0.9817","90","170","140","110","90","140","90","110","90","70","70","110"
+"aerial filming services","10","53",,,"commercial","0.9934","0","40","10","10","10","10","10","0","10","10","20","0"
+"cinematic drone filming",,,,,"informational","0.9825",,,,,,,,,,,,
+"drone videographer","390","0","MEDIUM","59","informational","0.661","390","320","480","390","390","390","390","320","320","320","320","260"
+"drone camera operator","10",,"LOW","9","informational","0.4084","10","10","10","10","10","10","10","10","0","10","10","10"
+"drone film crew","10",,,,"informational","0.829","10","0","0","10","10","0","0","0","10","10","0","0"
+"film tv drone pilot",,,,,"informational","0.901",,,,,,,,,,,,
+"drone filming for commercials",,,,,"commercial","0.3265",,,,,,,,,,,,
+"drone shooting","210","0","LOW","23","informational","0.9443","210","170","210","210","260","210","170","210","170","170","210","170"
+"drone video production","30","12","LOW","8","commercial","0.6625","40","30","10","40","40","20","30","20","20","10","40","30"
+"drone showreel","10",,,,"informational","0.5902","10","10","10","0","10","10","10","10","0","0","10","0"
+"drone operator uk","20","38","LOW","31","navigational","0.6308","20","20","30","20","30","30","30","20","20","20","20","10"
+"aerial videographer","110","0","LOW","5","informational","0.6154","140","90","140","110","140","140","90","110","90","110","90","90"
+"drone filming london","20","39","LOW","23","informational","0.6114","10","10","10","10","10","10","50","20","10","30","10","20"
+"aerial filming uk","10",,"HIGH","81","informational","0.9615","10","10","10","10","10","10","10","10","10","10","10","10"
+"gimbal drone cinematography",,,,,"informational","0.8972",,,,,,,,,,,,
