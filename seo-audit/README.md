@@ -1,5 +1,17 @@
 # Bogdan Pascal Portfolio: SEO Audit
 
+## Expanded service and keyword inventory (18 November 2026)
+
+- **[MASTER-SERVICE-KEYWORDS.md](MASTER-SERVICE-KEYWORDS.md):** The full combined list, **30 portfolio-aligned categories + 61 additional competitor-evidenced service categories = 91 service/search categories**. Every category has **5 related phrases**: **455 keyword variants**, **546 primary-plus-variant entries** (545 distinct phrases after literal deduplication). Some baseline roles are explicitly marked adjacent or subject to credential checks.
+- [MASTER-SERVICE-KEYWORDS.csv](MASTER-SERVICE-KEYWORDS.csv): Structured 546-row dataset for sorting and later SEO research.
+- [COMPETITOR-SERVICES-BY-SITE.md](COMPETITOR-SERVICES-BY-SITE.md): Observed link and service/menu labels grouped by **189 hostnames** from **274 unique sampled competitor URLs**; **248 HTTP 200**, **26 not accessible**. Some labels are ordinary navigation, not confirmed services. This is not a complete crawl of every page on each domain.
+- [COMPETITOR-ALL-OBSERVED-LINKS.csv](COMPETITOR-ALL-OBSERVED-LINKS.csv): 5,757 deduplicated URL/menu-link observations with original source page. A raw audit trail, not a list of 5,757 distinct services.
+- [COMPETITOR-EXPANSION-UNVERIFIED.md](COMPETITOR-EXPANSION-UNVERIFIED.md): 39 additional research candidates, each with five suggested phrases, **excluded from evidenced totals** because the sampled competitor pages did not sufficiently verify them or they overlap existing service categories.
+- [competitor-source-data/](competitor-source-data/): Saved read-only website scrape evidence and taxonomy source data; a second pass expanded long menus on 37 pages.
+
+**Important:** Competitor-advertised categories are **not** representations of personal skills, licenses or services available to clients on bogdanpascal.com. Search phrases are research suggestions, not validated Google volume or rankings. No public website files were changed.
+
+
 **Audit date:** 18 November 2026  
 **Repository:** [pkbannutz/bogdan-pascal-portfolio](https://github.com/pkbannutz/bogdan-pascal-portfolio)  
 **Scope:** Entire domain, athlete portfolio, filmmaker portfolio.  
