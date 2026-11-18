@@ -1,10 +1,10 @@
 # INDIVIDUAL SERVICE RESEARCH TRACKER: 30 CATEGORIES
 
-**Started:** 18 November 2026. **Progress:** **13 / 30 individually reviewed**. **Last individual completed:** **F03 Cinematographer** (research complete, recognized occupational synonym of F02 DoP, not a duplicate standalone service page).
+**Started:** 18 November 2026. **Progress:** **17 / 30 individually reviewed**. **Last individual completed:** **F07 Action / Movement Camera Specialist** (research complete, recommended as a specialist camera-operating proposition with personal action-camera clip attribution outstanding).
 
 ## New operating rule from the user
 
-**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user requested batches P03-P05, P06-P09, then **P10 plus F01-F03**. All three batches are complete. **Do not proceed to F04 automatically.**
+**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user requested batches P03-P05, P06-P09, P10 plus F01-F03, and then **F04-F07 in depth**. All four batches are individually reported and complete. **Do not proceed to F08 automatically.**
 
 **Important:** The older seven **family-level** reports remain useful background. They are **not** a substitute for reviewing each of the original 30 categories separately. A family being marked DONE does **not** mark its individual service rows done.
 
@@ -27,11 +27,11 @@ Each individual report must document: precise job/service scope and reality chec
 | 11 | **F01** | Commercial filmmaker | CORE | **DONE** | [Full F01 decision](individual/F01-COMMERCIAL-FILMMAKER-RESEARCH-2026-11-18.md) |
 | 12 | **F02** | Director of Photography (DoP) | CORE | **DONE: SHARED ROLE WITH F03** | [Full F02 decision](individual/F02-DIRECTOR-OF-PHOTOGRAPHY-DOP-RESEARCH-2026-11-18.md) |
 | 13 | **F03** | Cinematographer | CORE | **DONE: F02 OCCUPATIONAL SYNONYM, DIFFERENT SEARCH LANGUAGE** | [Full F03 decision](individual/F03-CINEMATOGRAPHER-RESEARCH-2026-11-18.md) |
-| 14 | **F04** | Camera operator | CORE | **WAITING for next instruction** |  |
-| 15 | **F05** | Gimbal operator | CORE | **NOT STARTED** |  |
-| 16 | **F06** | DJI Ronin operator | CORE | **NOT STARTED** |  |
-| 17 | **F07** | Action / movement camera specialist | CORE | **NOT STARTED** |  |
-| 18 | **F08** | FPV drone filming | CORE | **NOT STARTED** |  |
+| 14 | **F04** | Camera operator | CORE | **DONE: DISTINCT CAMERA CREW ROLE** | [Full F04 decision](individual/F04-CAMERA-OPERATOR-RESEARCH-2026-11-18.md) |
+| 15 | **F05** | Gimbal operator | CORE | **DONE: BOOKABLE CAMERA OPERATING SPECIALISM** | [Full F05 decision](individual/F05-GIMBAL-OPERATOR-RESEARCH-2026-11-18.md) |
+| 16 | **F06** | DJI Ronin operator | CORE | **DONE: F05 EQUIPMENT QUALIFIER, EXACT MODEL UNVERIFIED** | [Full F06 decision](individual/F06-DJI-RONIN-OPERATOR-RESEARCH-2026-11-18.md) |
+| 17 | **F07** | Action / movement camera specialist | CORE | **DONE: SPECIALTY, ACTION CLIP PROOF PENDING** | [Full F07 decision](individual/F07-ACTION-MOVEMENT-CAMERA-SPECIALIST-RESEARCH-2026-11-18.md) |
+| 18 | **F08** | FPV drone filming | CORE | **WAITING for next instruction** |  |
 | 19 | **F09** | Commercial drone operator | CORE | **NOT STARTED** |  |
 | 20 | **F10** | Aerial cinematography | CORE | **NOT STARTED** |  |
 | 21 | **F11** | Underwater cinematography | SCOPE TO VERIFY | **NOT STARTED** |  |
@@ -68,7 +68,7 @@ Each individual report must document: precise job/service scope and reality chec
 - **No production website edits.**
 - **Report:** [P02 Freerunning Performer](individual/P02-FREERUNNING-PERFORMER-RESEARCH-2026-11-18.md).
 
-**NEXT ONLY AFTER ANOTHER USER REQUEST: F04 Camera Operator.** P01-P10 and F01-F03 each have separate individual research; F02 DoP and F03 Cinematographer are overlapping names for one professional job and should share one service URL. P05 full-stunt-coordinator offer remains unverified; P09 remains supporting category.
+**NEXT ONLY AFTER ANOTHER USER REQUEST: F08 FPV Drone Filming.** P01-P10 and F01-F07 each have separate individual research. F04 Camera Operator is a distinct crew role, F05 gimbal is a bookable camera specialty, F06 Ronin is an F05 device-specific variant with exact owned model to confirm, and F07 Action/Movement Camera is a differentiated skill with verified camera-operated action footage still to be selected. No public website changes.
 
 ## P03-P05 individual completion record (18 November 2026)
 
@@ -165,6 +165,40 @@ Each individual report must document: precise job/service scope and reality chec
 - [Full F03 report](individual/F03-CINEMATOGRAPHER-RESEARCH-2026-11-18.md).
 
 **Checkpoint: 13 of 30 individually researched, 17 not yet.** P10 is not a guaranteed full team show package; F03 is a documented **search/terminology category, not separate headcount or occupation**. No website code, SEO or live pages were edited.
+
+## F04-F07 individual research record (18 November 2026)
+
+### F04: Camera Operator
+- **Verdict:** **CORE separate production crew role** from F02 DoP, despite same person potentially working both jobs. Best professional title **Camera Operator (Film & Commercials)**.
+- **Authority and buyers:** ScreenSkills camera operator job definition reports to DoP for scripted film/HETV; specific framing, movement, equipment and collaboration with 1st AC/grip. Individual freelancers and crewing agencies use the title and share director/DoP responsibility in different assignments.
+- **UK monthly search estimates:** `camera operator` ~720 (mostly informational), `freelance camera operator` ~30 (commercial, third-party organic KD 0), `camera operator hire` ~10 (transactional), `cameraman for hire` ~40. **Five original variants individually scored; most exact monthly figures unknown.**
+- **Site:** DoP page already explicitly offers camera operation, while work-page source mostly credits Bogdan as **DoP**, not necessarily separately hired Camera Operator. Add independent operator shot proof and actual job credit if available; no duplicate URL necessary now.
+- **Gear watch:** DoP page lists **DJI RS3 Pro**, [equipment](../../filmmaker/equipment/index.html) says **DJI RS 5 Pro Combo**, and DJI official product catalogue lists RS 5/RS 5 Combo, not a verified `RS 5 Pro Combo`. Reconcile exact model with owner prior to production claims.
+- [Full F04 report](individual/F04-CAMERA-OPERATOR-RESEARCH-2026-11-18.md).
+
+### F05: Gimbal Operator
+- **Verdict:** **Recognized bookable SPECIALIST operating skill**, not necessarily a separate department grade from F04. Best **Gimbal Operator**, subtitle `Commercials, Film & Action`.
+- **UK demand:** `gimbal operator` ~10/month with provider organic KD **36**, machine classified transactional; `gimbal operator for hire`, `freelance gimbal operator` exact volume unknown; `steadicam operator` ~110 but it is a **different operator/rig qualification**, not target synonym.
+- **Competitors:** Ben Simon, Here Now Films Gimbal Hire, Stabilimage, camera freelancers. Google result types include operators, gear rental and educational content; archive not validated exact current top ten.
+- **Site:** short subservice with personally operated reel, rig/role proof, production type, clean shared enquiry; confirm actual stabiliser before listing hardware.
+- [Full F05 report](individual/F05-GIMBAL-OPERATOR-RESEARCH-2026-11-18.md).
+
+### F06: DJI Ronin Operator
+- **Verdict:** **EQUIPMENT-BASED F05 variant**, not a third separate camera role or warrant for dedicated doorway URL. Best after verification **Gimbal Operator (DJI Ronin)**.
+- **Critical equipment issue:** current DoP `RS3 Pro` vs inventory `RS 5 Pro Combo`; official DJI January 2026 RS5 launch says `RS 5 Combo`. No manufacturer-confirmed `RS 5 Pro Combo` model on currently checked official Ronin listing. **No assumption** that user owns older and newer devices or their exact accessories.
+- **UK demand:** `dji ronin operator` provider summary ~10/month but monthly history only **one 10** observation and eleven zero rounded bins; `ronin operator`, `dji rs3 pro operator` unknown. Do not interpret number as ten monthly paid Ronin jobs.
+- **Technical boundaries:** `Ronin 2`, `Ronin 4D`, `RS3 Pro`, `RS 5` and `Steadicam` are not automatically interchangeable. Manufacturer payload is not a guarantee for a fully rigged camera/lens.
+- [Full F06 report](individual/F06-DJI-RONIN-OPERATOR-RESEARCH-2026-11-18.md).
+
+### F07: Action / Movement Camera Specialist
+- **Verdict:** **Differentiated bookable camera specialty**, not universal formal crew grade. Recommended **Action & Movement Camera Operator** and **Movement-Led Cinematography** as supporting creative term.
+- **Unique true skill:** Bogdan actively performs parkour/stunt and operates film cameras, so he can explain subject path, camera timing and movement. **Do not call `Wicked` a camera-op credit**, it is a specialist parkour performer credit; ensure shot-by-shot personal operation on actual camera reels.
+- **UK demand:** `stunt camera operator` ~10/month, `action cinematography` ~10, `tracking shot cinematography` ~10, most five original niche variants unmeasured. Do not take broad `parkour` sport traffic as film crew leads.
+- **Real peers:** Gimbalninja `Action & Stunt Camera Operator`, Scott Bass parkour POV specialist, Claudiu Voicu action sports filmmaker, Movement Management production unit, a DJI parkour Stunt Camera Crew case study. Different professionals' specialized rigs/credits do not establish Bogdan's hardware or safety authority.
+- **Proof:** a short verified behind-camera action reel with subject route, shot and personal filming role; one concise page section on existing DoP page until unique material/user evidence warrants own URL.
+- [Full F07 report](individual/F07-ACTION-MOVEMENT-CAMERA-SPECIALIST-RESEARCH-2026-11-18.md).
+
+**Checkpoint: 17 of 30 original service categories have separate individual research reports. 13 remain. This four-report batch is complete. No live site changes. Next F08 only after user explicitly requests it.**
 
 ## Background source inventory
 
