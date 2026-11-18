@@ -1,209 +1,178 @@
-# ATHLETE: Industry-standard service names, booking intent and ranked SEO plan
+# ATHLETE: ranked professional service names, UK search demand and booking SEO
 
-**Date:** 18 November 2026  
-**Target:** `https://bogdanpascal.com/athlete/`  
-**Research market:** United Kingdom, English-language Google Search, primarily desktop for the saved SERP snapshots. UK search estimates must not be applied to Romania or to global searches.  
-**Status:** **ATHLETE RESEARCH CHAPTER COMPLETE, RECOMMENDATIONS ONLY, NOT IMPLEMENTED.** Live query/conversion measurement and some professional-scope checks remain open.  
-**Source of continuity:** This is the requested canonical, independently readable ranked deliverable. It **extends rather than duplicates or supersedes the evidence** in [the earlier athlete report](../ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md), the [handoff](../START-HERE-NEXT-CHAT.md), the [research principles](../RESEARCH-DECISION-PRINCIPLES.md), and the [athlete status](ATHLETE-RESEARCH-STATUS.md).
+**Status:** DONE (research decision; NOT IMPLEMENTED). **Date:** 18 November 2026. **Market:** UK English, Google search. **Site:** https://bogdanpascal.com/athlete/. **Scope:** personal athlete/casting and specialist parkour-coordination bookings. **No production source files were changed.**
 
 ## Executive recommendation
 
-**Lead with a working, bookable specialist athlete, not a retired athlete and not a generic production manager.**
+Use a single authoritative athlete portfolio and **lead with the person who can actually be cast and perform**. Immediately present a distinct specialist coordination option, without suggesting that being a parkour coordinator makes someone the production's overall stunt coordinator.
 
-**VISIBLE, highest-priority hero line (proposed):**  
-`PARKOUR ATHLETE · STUNT PERFORMER · PARKOUR COORDINATOR`
+**Proposed first-screen service line [VISIBLE; approval needed]:**
 
-**VISIBLE, first readable supporting line (proposed):**  
-`Professional freerunner and acrobat. Specialist parkour performance, movement direction and action choreography for film, TV, commercials and live productions.`
+> PARKOUR ATHLETE · STUNT PERFORMER · PARKOUR COORDINATOR
 
-This places **two distinct hiring routes** together: casting a person who performs, and commissioning a specialist who designs/directs parkour movement. Preserve the existing filmic look, showreel and true credits. The current hero instead reads `PARKOUR COORDINATOR · STUNT PERFORMER · MOVEMENT DIRECTOR`, which buries the active parkour athlete/freerunner identity. The name H1 `BOGDAN PASCAL.` can remain. Use clear adjacent semantic text and an optionally accessible context heading rather than forcing a redesign simply to chase H1 keywords.
+**Supporting readable line [VISIBLE; approval needed]:**
 
-**Professional-service labels**, in order for this particular portfolio: **Parkour Athlete & Freerunner**, **Stunt Performer (Parkour Specialist)**, **Parkour Coordination**, **Movement Direction**, **Acrobat / Acrobatic Performer**, **Parkour Action Choreography**, **Live Parkour Performance** (if bookable), and **Specialist Parkour Talent Sourcing** (only within actual proven scope).
+> Professional freerunner and acrobatic performer. Parkour performance, movement direction and specialist action choreography for film, TV, commercials and live productions.
 
-Do **not** advertise `Stunt Coordinator` as the general job/service title: that is a distinct production safety/leadership role. Do **not** advertise `SPACT Performer` as a formal accreditation without confirming the specific casting brief, category and any requirements. `Stunt Double` is not interchangeable with stunt performer; show actual doubling work before adding it as a marketed offering.
+**Two booking decisions, not a menu of every synonym:** `BOOK AS PERFORMER` and `DISCUSS PARKOUR COORDINATION`, linked to the same clear contact pathway. Keep the cinematic design, credits and reel. The current athlete H1 is the name only; that is legitimate. The role line and nearby descriptive text must make the page meaning unambiguous.
 
-## 1. Evidence and ranking model
+**Why:** A casting director looking for a physical performer and a producer looking for specialist movement design are distinct buyers. The current hero and contact prioritize coordination and omit the explicit active Parkour Athlete identity. There is no reliable evidence that replacing genuine service vocabulary with the highest-volume general terms would increase qualified bookings.
 
-The decision is **editorial and evidence-weighted**, not a fabricated machine-learned booking score. The ordered factors are:
+## 1. Industry-recognized labels: ranking
 
-1. **Truthful fit and safe professional scope** (gate: reject unverified job titles).
-2. **Recognisability to casting directors, stunt coordinators, producers, event/brand clients**.
-3. **Clarity of transaction** (can a buyer immediately understand what work to book?).
-4. **Existing footage, credits, profile and performer measurements** supporting the claim.
-5. **Demand and attainable relevance**, considering UK Google Ads estimates, third-party organic difficulty, search-result intent and stable Trends. Low-volume exact hiring queries may beat high-volume informational queries.
-6. **Distinctness**: does a term deserve a separate service description or is it a synonym or physical skill?
+This is a **professional judgment ranking**, not an invented Google organic ranking or predictive numeric model. Ranking method: (1) true role fit and first-party proof, (2) buyer recognition, (3) booking-intent specificity, (4) observed industry terminology, then (5) demand and credible organic opportunity. Missing DataForSEO volume does not disqualify a job title.
 
-**Confidence rubric:** High = observed page plus authoritative industry/agency vocabulary and adequate proof of role category; Medium = credible industry usage and site claim but specific delivered leadership/credit not independently checked; Conditional = only promote if scope and booking arrangement verified. No numeric authority or conversion score has been invented.
+| Priority | Recommended visitor-facing service / identity | Actual buyer and use | Industry / site evidence | Confidence and limitations |
+|---|---|---|---|---|
+| **1** | **Parkour Athlete & Freerunner**; offer under **Parkour Performer** | Casting directors, film/TV/commercial teams, photographers and brands needing athlete on camera; hero, reel, performer booking | Current skills, physical/casting specs, live-show and film evidence; Movement Management uses parkour athlete, performer and freerunner language | **High** identity/naming. “Athlete” signals active performance; “performer” conveys paid service. |
+| **2** | **Stunt Performer (Parkour Specialist)** | Stunt department and casting; film/TV roles and performer-focused portfolio proof | Current film/stunt credits, Equity's separate stunt-performer term | **High** nomenclature, **medium** scope: only claim exact performed credits and never imply registration/competence beyond verified work. |
+| **3** | **Parkour Coordinator** (optionally **Parkour Consultant**) | Directors, producers, stunt coordinators needing specialty movement design, feasibility, planning, talent and rehearsals | Existing dedicated service section; Scott Bass and Chima Akenzua use this specialist title | **High** terminology, **medium** claim evidence: request exact coordinating credits/examples before implying a credited department-head assignment. |
+| **4** | **Movement Director** | Producers/directors wanting a coherent movement language, physical performances and coaching | Existing site's service statement; One Dance UK identifies this as a distinct job, Chima Akenzua uses it | **High** established title, **medium** evidence for personal commissioned roles. Do not conflate with stunt safety leadership. |
+| **5** | **Acrobat / Acrobatic Performer** | Screen casting and event/live performance production | Current acrobat and tumbling capabilities, Cinderella/live-performance credit descriptions; acrobat hire agencies | **High** term fit. “Acrobatic Performer” disambiguates Adobe; not all searches for “acrobat” concern humans. |
+| **6** | **Parkour Choreography / Action Movement Design** | Specialist parkour sequences, blocking, actor rehearsal and camera-led movement | Site's coordinator six-service grid; independent professional consultancy examples | **Medium**. Treat as specialist activity within coordination, not blanket fight choreography. |
+| **7** | **Parkour & Freerunning Live Performance** | Live events, fashion presentations, brand activations | Current Milan Fashion Week, TV and live show portfolio | **High** live-performance proof, **medium** ongoing event/team booking availability. |
+| **8, conditional** | **Specialist Parkour Performer Sourcing** | Productions requiring a group/team, not simply one performer | Existing coordinator grid says performer casting | **Medium**. Use “performer sourcing” rather than agency/representation unless specific scope, permissions and roster confirmed. |
 
-### Ranked professional names and placements
+**Not primary / rejected:** `Extreme Athlete` is unfocused, `Traceur` is insider vocabulary with weak mass buyer recognition, `Parkour Stunt Artist` is less standard than Stunt Performer, `Professional Acrobat` alone risks screen/event ambiguity, `Stunt Double` only belongs as an actual offered doubling role if demonstrated, and **`Stunt Coordinator` must NOT replace Parkour Coordinator**. UK industry bodies treat stunt coordinators and performers as distinct; verify assignments, competence, registration, insurance and safety accountabilities before advertising the broader title. A `SPACT Performer` label is also a distinct casting category, not automatically a synonym for professional stunt performer.
 
-| Rank | Best visitor-facing name | Confidence and real-world buyer | Associated query intent / topic | Placement and proof |
-|---:|---|---|---|---|
-| **1** | **Parkour Athlete & Freerunner** | **HIGH**, casting, commercial producers, brands, event talent | `parkour athlete`, `parkour performer`, `professional freerunner`, `hire parkour performer` | **Hero identity**, athlete showreel, specific parkour shots, credits; establishes current ability |
-| **2** | **Stunt Performer (Parkour Specialist)** | **HIGH for evidenced credited work**, casting and stunt departments; registration status **not established** | `stunt performer`, `parkour stunt performer`, `stunt performer for hire`, `stunt artist` | Hero, film credits and action reel; carefully distinguish actual credited work from full BSR registration |
-| **3** | **Parkour Coordinator** | **MEDIUM/HIGH for advertised specialist scope**, directors, producers, coordinators hiring specialist assistance | `parkour coordinator`, `parkour consultant`, `parkour movement coordinator` | Preserve `#coordinator`, explain precise design/rehearsal/consultancy responsibilities and coordination with stunt/H&S lead |
-| **4** | **Movement Director** | **MEDIUM**, directors, commercials, music-video production, movement-led creative briefs | `movement director`, `movement direction`, `movement specialist` | Supporting hero sentence, named specialist section; distinguish physical direction from comprehensive stunt safety leadership |
-| **5** | **Acrobat / Acrobatic Performer** | **HIGH as a physical skill**, casting, live-event buyers | `acrobatic performer`, `acrobat performer`, `acrobat for hire`, `tumbling performer` | Performer abilities, showreel and BRITs/live credits; avoid bare `acrobat` as search-only headline because of Adobe collision |
-| **6** | **Parkour Action Choreography** | **MEDIUM**, productions needing specific sequences | `parkour choreography`, `action choreography`, `movement choreography` | Coordinator service/sequence examples; do not claim unrelated fight choreography |
-| **7** | **Parkour & Freerunning Live Performance** | **MEDIUM, contingent on current availability**, event producers and branded activations | `parkour show`, `freerunning show`, `parkour performance team` | Live show and Milan Fashion Week examples; avoid promising a full team or technical rider unless available |
-| **8** | **Specialist Parkour Talent Sourcing** | **CONDITIONAL**, productions with multiple performers | `parkour casting`, `parkour performance team`, `freerunning performers for hire` | Subservice of specialist coordination only; verify actual ability to source, contract and insure a team |
+**Source pages, checked 18 Nov 2026:**
+- Equity: https://www.equity.org.uk/advice-and-support/know-your-rights/engaging-stunt-co-ordinators-and-stunt-performers (industry role distinctions)
+- One Dance UK: https://www.onedanceuk.org/programmes/careers-hub/movement-director (movement direction has distinct creative responsibilities)
+- Chima Akenzua: https://www.chimaakenzua.com/parkourdirector (individual specialist: “Parkour Coordinator & Movement Director”, separate action and coaching credits)
+- Scott Bass: https://www.scottbass.co.uk/consultancy/ (independent consultant: parkour consultancy, sourcing, scouting and choreography)
+- Movement Management: https://movementmanagement.co.uk/hire-parkour-performer (agency/roster: “Hire a Professional Parkour Performer”, athlete and film/event intent)
+- Movement Management: https://movementmanagement.co.uk/parkour-stunt-performers (agency screen-specific stunt casting)
+- Event market example: https://www.oddleentertainment.co.uk/hire-an-acrobat/ (agency and event hire, not a screen-stunt competitor).
 
-**Supporting, not a headline:** `extreme athlete`, `action sports talent`, `traceur`; too broad, unfamiliar to some buyers, or not a client-facing job title. **Exclude:** `Stunt Coordinator`, `Fight Choreographer`, `Aerial Acrobat` (different discipline), `Full-service Stunt Agency` and `Certified BSR Stunt Performer` absent the corresponding documented role, accreditation or business. Having passed gymnastics/trampoline tests is not proof of BSR stunt-performer or coordinator registration.
+These verify observed **terminology and buyer segmentation**, not exact Google top-ten organic positions or individual competitor traffic. Agency authority, rosters and resources differ from an individual portfolio.
 
-**Industry-language basis (checked 18 November 2026):** [British Stunt Register](https://www.bsr.co/) distinguishes performers and coordinators; [Equity](https://www.equity.org.uk/advice-and-support/know-your-rights/engaging-stunt-co-ordinators-and-stunt-performers) treats them separately; [Film London safety guidance](https://filmlondon.org.uk/filming-in-london/make-sure-its-safe) explains stunt supervision. [One Dance UK](https://www.onedanceuk.org/programmes/careers-hub/movement-director) defines Movement Director separately from choreographer. [Scott Bass](https://www.scottbass.co.uk/consultancy/) visibly uses **Parkour Co-Ordinator and Consultant**; [Chima Akenzua](https://www.chimaakenzua.com/parkourdirector) uses **Parkour Coordinator and Movement Director**. [Movement Management's athlete roster](https://movementmanagement.co.uk/athletes) and [hire page](https://movementmanagement.co.uk/hire-parkour-performer) use parkour athletes, freerunners, parkour performers and stunt performers in actual booking language.
+## 2. Keywords ranked by qualified booking opportunity
 
-## 2. Ranked keyword clusters, not a ranking of Google positions
+**Original quantitative source:** DataForSEO UK Google Ads estimated average searches/month, English, historical 12 months **Nov 2025 to Oct 2026**, checked 18 Nov 2026. Difficulty from a third-party organic estimator (0-100); automated intent is fallible. **44 of 76 had non-null volume; 32 unknown.** Ads competition is not organic difficulty. Google Ads can group near-identical phrases; never sum close-variant volumes.
 
-**Provider:** DataForSEO historical Google Ads **UK/English estimated average searches per month, November 2025 through October 2026**. The organic difficulty column is **third-party estimated organic KD (0–100)**. The paid advertiser competition signal is a separate property and is not an SEO difficulty metric. “unknown” means no metric returned, **not 0**. Automated intent classifications are provisional. Complete [76-row source CSV](ATHLETE-KEYWORD-METRICS-76.csv), [raw JSON](athlete-data-raw-2026-11-18.json).
+| Opportunity | Keyword / cluster | UK est. searches/month | Organic difficulty | Main user intent and decision |
+|---|---|---:|---:|---|
+| **A1** | `parkour performer` | 10 | unknown | Provider classed transactional. Small but explicit talent-service wording; use in book CTA, intro and proof. |
+| **A1** | `parkour athlete` | 40 | 5 | Precise active identity; provider mixed/mostly informational; combine with performance-for-hire messaging. |
+| **A1** | `stunt performer` | 170 | 0 | Industry role, but generic query mostly informational; target natural screen credits and service wording. 0 difficulty is not a ranking guarantee. |
+| **A1** | `parkour performer for hire`, `stunt performer for hire` | **unknown** | unknown | Explicit provider-classified transactional intent, relevant conversion support; don't manufacture volumes. |
+| **A2** | `parkour coordinator`, `parkour consultant` | **unknown** | unknown | Qualified specialist producers; volume unmeasured/low, actual role language evidenced. |
+| **A2** | `movement director` | 90 | 0 | Recognised role but mixed creative/jobbing curiosity; portfolio examples and precise scope needed. |
+| **A2** | `freerunner`, `freerunning`, `free running` | 390 EACH, **likely overlapping** | 12 / 7 / 8 | High-fit identity synonyms, mostly informational, gaming-related searches contaminate Trends. **Do not total as 1170.** |
+| **A2** | `acrobat for hire` | 10 | unknown | Transactional, often event/circus buyer; explain parkour/tumbling and screen/live fit. |
+| **A3** | `acrobatic performer` | 20 | unknown | Useful specific secondary term, more relevant than broad software-tainted “acrobat.” |
+| **A3** | `action choreographer`, `action choreography` | 140 EACH, likely grouped | unknown / 0 | Broad research intent; use parkour-specific movement design and avoid claiming fight choreography. |
+| **A3** | `parkour show`, `parkour performance` | 10 each | unknown | Live/event enquiries, only if actively offered. |
+| **A3** | `professional acrobat` | 1,600 | unknown | Human/event intent plausible, but must separate screen vs circus/event and validate SERP; don't select purely on volume. |
+| **BROAD** | `parkour` | 18,100 | 24 | Dominantly information, game, classes and sport curiosity; **not a primary conversion keyword by itself**. |
+| **EXCLUDE until verified** | `stunt double` | 480 | 4 | Only advertise if working as a double is a genuine current role. |
+| **EXCLUDE until verified** | `stunt coordinator` | 110 | 0 | Different production responsibility; not an SEO synonym for specialist parkour coordination. |
 
-| Priority / intent cluster | UK searches/month examples | Organic KD where reported | Buyer interpretation and recommendation |
-|---|---|---|---|
-| **A1: Book a parkour performer / athlete** | `parkour performer` **10**; `parkour athlete` **40**; `parkour performer for hire` **unknown** | performer **unknown**; athlete **5** | **Highest precision for athlete bookings.** Keep `hire` contextual on contact path. Exact low-volume query can be high value. |
-| **A2: Film stunt-performer specialist** | `stunt performer` **170**; `stunt artist` **170**; `parkour stunt performer` **unknown**; `stunt performer for hire` **unknown** | performer **0** (not guaranteed easy) | **High industry recognition and relevant production audience.** Do not count stunt artist as incremental search demand; monthly series are identical. |
-| **B1: Specialist parkour coordination** | `parkour coordinator` **unknown**; `parkour consultant` **unknown**; `parkour choreography` **10** | **unknown** | Niche yet credible industry vocabulary. Retain a distinct strong section with tangible sequence work. Do not rename to stunt coordinator. |
-| **B2: Movement direction** | `movement director` **90**; `movement direction` **20**; `movement coordinator` **10** | director **0**; direction **7** | Clear creative direction specialty, but results include people researching the profession; lead with production outcomes and authentic examples. |
-| **A3: Acrobat performance** | `acrobatic performer` **20**; `acrobat performer` **20**; `acrobat for hire` **10**; `professional acrobat` **1,600** | **unknown** | Confirmed relevant skill, particularly live/performance searches. The 1,600 estimate is **not 1,600 casting leads**; evaluate software/event ambiguity. |
-| **B3: Parkour/action choreography** | `action choreography` **140**; `action choreographer` **140**; `stunt choreography` **10** | action choreography **0**; other **unknown** | Broad and often informational, useful for correctly scoped coordination copy. The 140 pair has identical month series. |
-| **A4: Freerunning identity** | `freerunner`, `freerunning`, `free running` **390 each**; `professional freerunner` **10** | **12**, **7**, **8**, **45** respectively | Use `freerunner` naturally; three **390** entries are effectively grouped near-variants, **not 1,170 distinct searches**. August 2026 anomaly inflates average. |
-| **A5: Live parkour event act** | `parkour show` **10**; `freerunning show` **10**; `parkour shows for events` **unknown** | **unknown** | Qualified only when live shows/teams are genuinely available for booking. |
-| **Awareness, not booking KPI** | `parkour` **18,100**; `stunt double` **480**; `stunt coordinator` **110**; `extreme athlete` **30** | **24**, **4**, **0**, **45** | First = games, curiosity and training; second/third = **distinct job scopes**; fourth = weak specificity. Do not target them indiscriminately as services. |
-| **Deprioritized educational** | `parkour class` **110**; `parkour workshop` **10** | class **0**; workshop **unknown** | Unless offering teaching, likely wrong buyer. |
+**Supporting phrases, deliberately not new URLs:** parkour stunt performer, professional freerunner, parkour choreography, parkour consultant film, parkour athlete for commercials, acrobat for film, freerunning performer, specialist movement direction. Phrases with no source volume remain unquantified, not zero.
 
-**Total original dataset: 76 searched strings, 44 with non-null volume, 32 unknown.** Numeric KD=0 is a model result, not a promise of “no competition”. The specific `hire` phrases are sometimes classified transactional by the model, but the recorded SERP attempts indicate a noisy result environment. No data here measures Bogdan's current Google rank, impressions, leads or actual bookings.
+**Editorial priority:** booking fit > truthful scope > proof > recognisable names > general search volume. The low-volume target terms are not proven to rank easily or convert; that is a testable hypothesis for later Search Console / enquiry attribution.
 
-## 3. Trends: comparative context and anomalous spikes
+## 3. Trends, four time horizons and what they actually mean
 
-All series sourced 18 November 2026 from the saved [5-year / 12-month Google Trends captures](athlete-data-raw-2026-11-18.json) and [2004-present / 3-month / related-query captures](athlete-discovery-and-long-trends-2026-11-18.json). **Google Trends indices are relative to their own query panel, period, location and sampling; never compare the raw 0–100 numbers between separate panels.** Exact professional phrases often show 0 due to insufficient signal.
+**UK Google web search; source:** stored Firecrawl-backed Trends API panels, category 0, web property. Google Trends indices are sample-based **relative interest normalized within each comparison panel**. Do not compare scores from separately normalized panels or interpret zeros as no searches.
 
-| Window, GB web search | Supported signal | Interpretation for bookings |
+| Period and source panel | Observations | Decision |
 |---|---|---|
-| **2004–Nov 2026** | In the same five-term monthly panel (`parkour, freerunning, stunts, acrobatics, extreme sports`), broad parkour's annual panel-normalized mean was approx **21.5 in 2005** and **5.7 in 2026**; `stunts` approx **8.6 in 2005** and **2.4 in 2026**. | Long-standing cultural category with lower current *relative share of search*, not literal 74% fewer searches, and certainly not evidence of reduced paid performance bookings. |
-| **5 years: 2021–2026** | Same-term weekly panel: `parkour` approx **61.9 in 2022**, **54.5 in 2023**, **53.8 in 2024**, **55.3 in 2025**, **54.8 in 2026 YTD**. `stunts` approx **21–25** in those years. | Broad parkour presence **fairly durable over the recent multi-year window**. No defensible basis for rebranding after a recent peak. |
-| **12-month monthly Google Ads estimates** | `parkour` generally **14,800–18,100**, with **22,200 Aug 2026**; `freerunning` usually **110–320**, anomalously **2,400 Aug 2026**; `stunt performer` commonly **110–210**, **390 Nov 2025**; `movement director` mostly **40–110**, **260 Oct 2026**. | Search-estimate spikes are not proven seasonal hiring. Near-identical monthly series for freerunner/free running point to grouping. No causality asserted. |
-| **12-month Trends niche-panel** | The five-term niche role panel for `parkour performer, freerunner, parkour athlete, stunt performer, acrobat` yields near-total zeros beside `acrobat`, and `acrobat` is software-contaminated. | This **does not measure** relative demand for professional physical performers. Discard it as a naming score. |
-| **3 months: Aug–Nov 2026** | In the broad five-term daily panel `parkour` mean approx **61**, `stunts` approx **20**, `freerunning` approx **1**. Last day is potentially incomplete. | General awareness remains, but no discernible breakout in specialist booking searches. Avoid reacting to daily spikes. |
+| **2004 to Nov 2026** `parkour, freerunning, stunts, acrobatics, extreme sports` | Parkour had notable early public awareness peaks. In the all-time graph it now sits at a small fraction of its historical peak. | A decline from an old cultural peak does **not** indicate today's lack of production bookings. |
+| **5 years** same broad five terms | `parkour` 5-year weekly mean index about **56**, `stunts` **22**, `acrobatics` **10**, `extreme sports` **8**, `freerunning` often near 0 **in this shared panel**. Annual parkour mean around **55** in 2023-2026. | Broad parkour awareness is relatively durable, not clear evidence of fast growth. Suppression of niche terms is a scaling artifact. |
+| **12 months** Google Ads monthly snapshots, Nov 2025 to Oct 2026 | `parkour` usually ~14,800-18,100, Aug 2026 ~22,200. `freerunning` typically ~110-320 with **2,400 in Aug 2026**, near-identical sibling phrases. `movement director` usually 40-110 with **260 in Oct 2026**; `stunt performer` usually 110-210 with **390 Nov 2025**. | **Spikes unverified** as production demand. Possible grouped variants, seasonal activity, media or gaming. Do not rename services to chase anomalous months. |
+| **3 months to 18 Nov 2026**, Trends `parkour, freerunning, stunts, acrobatics, extreme sports` | Same-panel average indices approx **61 / 1 / 20 / 4 / 2**. Near-daily movement is noisy, and last day can be partial. | No defensible emerging niche booking trend from this alone. |
 
-**Contamination corroboration:** Among UK Google Trends related queries for `parkour` are `parkour game`, `parkour minecraft`, `what is parkour`; for `freerunning` appears `mtg freerunning`; for `acrobat` are `acrobat adobe`, `acrobat pdf` and `acrobat reader`. This shows why the large generic search pool should **not** drive positioning. The sparse niche-term Trends series cannot support an invented upward “movement director” boom: some 2026 sample peaks occur, but the denominator is tiny/ambiguous. No reliable month-of-year *production booking* seasonality established.
+**Disambiguation checks:** Trends related `parkour` queries include parkour games/Minecraft, and `freerunning` includes `mtg freerunning`. The broad `acrobat` related panel is dominated by Adobe Acrobat and PDF searches. This **does not prove** `professional acrobat` is wholly software-related, but means raw unfiltered Acrobat Trends cannot decide role naming. Sparse niche role panels (`parkour performer`, `stunt performer`, `parkour coordinator`) are often zero because of sample scale. There is no reliable recurring *production booking seasonality* established by these graphs.
 
-## 4. SERP and competitor reality check
+**Trend source files:** [12-month/5-year raw panels](athlete-data-raw-2026-11-18.json), [2004-present and 3-month raw panels](athlete-discovery-and-long-trends-2026-11-18.json), [all keyword monthly series](ATHLETE-KEYWORD-METRICS-76.csv).
 
-**The recorded actual Google SERP data is diagnostically weak.** On 18 November 2026, the DataForSEO collection attempted ten UK/English desktop queries. **Nine searches returned nine organic records and one (`parkour coordinator film TV UK`) yielded zero usable records.** Their returned `rank` integers are the **provider's original positional labels in that snapshot**, *not* an audited stable Google top ten. Destinations are wrapped in `google.com/goto`; many returned titles fail the specified intent. **No meaningful paid ad placements were verified**; this does not imply there were none.
+## 4. Competitive SERP reality and original result types
 
-| Exact attempted query | Saved original snapshot evidence, with reported positions | Result classification | Decision |
+**Collected source:** [10 DataForSEO Google organic query attempts, 18 Nov 2026, UK, English, desktop](athlete-google-serp-2026-11-18.json). Nine queries returned **9 provider-labelled organic items each**, one returned **zero usable results**. Domains in several entries are `google.com/goto` redirect wrappers and result mix looks noisy. **These are original provider-returned rank labels, NOT independently validated live top-ten Google rankings.** Paid placements could not be reliably established.
+
+| Exact UK desktop query | Examples with recorded provider position and classification | What it implies |
+|---|---|---|
+| `parkour performer for hire UK` | #1 and #2 Red Masque regional event listings (event vendor); #3 GateUK (general directory); #9 “Not Found” (broken result) | Returned results poorly match specific individual screen talent. Do not interpret weak SERP relevance as guaranteed low organic competition. |
+| `freerunning performer hire UK` | #2 Find a Performer circus page (talent directory); #3 JM Entertainment bungee-run hire (unrelated equipment); #7 Bookt dancers (event service) | Buyer/event bleed and ambiguous search-provider targeting. |
+| `stunt performer for hire UK` | #1 GateUK (general entertainer directory); #6 Extent Stage Productions (reported parked domain); #9 Red Masque balloon modelling (irrelevant) | Original source looks noisy, insufficient for real competitor domain-rank claims. |
+| `movement director film commercials UK` | #2 Fashioned Films (brand-films company); several Instagram reels; #9 RA Agency blog (editorial) | Creative production pages rather than precise individual movement directors; specialized title may need contextual proof. |
+| `acrobat performer hire UK` | #5 Aries Entertainment acrobatic/circus acts; #7 Julia Charles acrobatic dancers; #8 Forte acrobat hire (event businesses) | A genuine **event/circus buyer**, not always a screen casting buyer. |
+| `parkour stunt performer UK` | #1 YouTube video; #3 parkour tutorial; #6 Mass Talent sports and fitness category (talent directory) | Broad video/educational search surface, not a verified list of castable competition. |
+| `stunt coordinator film UK` | #3 LinkedIn cast jobs; #5 Indeed jobs; #8 Aura Casting explainer; #9 AP Talent Management stunt performers | Job-seeking/explainer/agency results; and larger stunt coordinator scope is not verified personal offering. |
+| `parkour performance team hire UK` | #2 Sportswork Parkour UK jobs; #4 Movement Management blog (commercial editorial); #6 London Parkour hire landing page | Some legitimate hire/service pages amid educational and governing-body results. |
+| `action choreographer film UK` | #1 PerformerHive profile; #5 IMDb credits; other videos/social and editorial results | Mixed casting profiles and unrelated media. |
+| `parkour coordinator film TV UK` | No usable rows (provider's failed/incomplete attempt) | **No conclusion on competition** can be drawn. |
+
+**Independent live competitor page checks on 18 Nov 2026:** Chima Akenzua (individual parkour coordinator), Scott Bass (independent parkour consultant), Movement Management (athlete agency) and One Dance UK (industry description). These confirm roles and page types. They do **not** provide verified Google exact organic ranks, clicks, domain authority or conversion rates. The earlier 300 records are ranked general web discovery, not proven literal Google SERPs. For real competitor keyword overlap, obtain a reliable GB mobile/desktop SERP dataset with resolved URLs, or inspect validated Search Console data plus a dedicated competitor tool, before making rank/keyword gap claims.
+
+## 5. Exact copy proposal and page architecture [NOT APPLIED]
+
+### VISIBLE: above-the-fold wording
+
+**H1:** Keep `BOGDAN PASCAL.` because the person and castability are the page subject. Add descriptive role text adjacent in actual HTML, not only decorative CSS.
+
+**Hero role line:**
+```text
+PARKOUR ATHLETE · STUNT PERFORMER · PARKOUR COORDINATOR
+```
+
+**Intro paragraph:**
+> I am an active parkour athlete, professional freerunner, acrobatic performer and stunt performer. I perform for film, television, commercials and live productions, and bring specialist parkour coordination and movement direction to action-led projects. Based in the UK and available internationally.
+
+**Secondary service introduction:** `Parkour & Freerunning Performance` for individual casting; `Parkour Coordination & Movement Direction` for specialist creative services. Preserve current `#coordinator` section, including carefully qualified responsibilities and collaboration with the production stunt/safety team. Do not promise an unverified stunt safety lead role.
+
+**Suggested contact labels:** `BOOK AS PERFORMER` and `DISCUSS PARKOUR COORDINATION`. These may share a mailto route with distinct subjects or one compact form requiring project type, dates, location, brief, performer count and contact details. A dedicated booking form is an optional **conversion** improvement, not necessary for the initial release.
+
+**Section and evidence hierarchy:** one role-introduction sentence; selected reel; highlighted film/TV performance credits (Wicked, Cinderella, Jingle Jangle with exact individual role verification); live-show/fashion evidence; specialist coordination tasks (only genuine services); physical capabilities and casting specs; clear contact. Include a brief link to `/filmmaker/` for camera-led movement where helpful, not a competing main hero CTA.
+
+### SEARCH: proposed metadata for later approval
+
+```html
+<title>Bogdan Pascal | Parkour Athlete, Stunt Performer & Coordinator</title>
+<meta name="description" content="Professional parkour athlete, freerunner and stunt performer. Bogdan Pascal offers parkour performance, coordination and movement direction for film, TV and brands.">
+<link rel="canonical" href="https://bogdanpascal.com/athlete/">
+```
+
+Google may generate its own title and snippets; a title is not guaranteed to display verbatim. Search/snippet changes still require user approval because they modify published site files.
+
+**OG/share**: absolute `og:url` and `og:image` for the athlete landing, role-aligned `og:title`/`og:description`, page-specific preview imagery, optional Twitter/X card. Design visual unchanged.
+
+### BACKEND and semantic: highest-value work order
+
+| Order | Label | Proposed action | Reason and approval |
 |---|---|---|---|
-| `parkour performer for hire UK` | #1 Red Masque Northern Ireland; #3 GateUK entertainers; #9 Not Found | Event/general directory and broken/noise, **not** demonstrated direct parkour competitors | General “for hire UK” token combination can drift into party-entertainment listings; don't infer easy opportunity. |
-| `freerunning performer hire UK` | #2 Hire Circus Performers; #7 Bookt dancer hire; #9 GigHeaven street entertainers | Event marketplaces, not film stunt portfolios | Different event customer and budget; maintain distinct CTA language. |
-| `stunt performer for hire UK` | #1 GateUK entertainment; #6 a parked domain; #8 event supplier directory | Low-quality directory/parked domain | Snapshot cannot estimate actual stunt-industry SERP competitiveness. |
-| `parkour stunt performer UK` | #1 YouTube parkour clip; #3 parkour tutorial; #6 MASS Talent sports profile | Mixed content, one relevant casting/talent directory | Niche results noisy. A better credible individual profile can differentiate through role proof, not keyword repetition. |
-| `stunt coordinator film UK` | #3 LinkedIn cast jobs; #5 Indeed; #8 Aura Casting explainer; #9 AP Talent stunt performer agency | Jobs, editorial, casting agency | Distinct role; **avoid misleading optimisation**. |
-| `acrobat performer hire UK` | #5 Aries Entertainment circus/acrobat acts; #7 Julia Charles acrobatic dancers; #8 Forte Entertainment acrobat hire | Actual **event entertainment agencies** | Commercial relevance for stage/event work, weaker as evidence for film stunt casting. |
-| `parkour performance team hire UK` | #4 Movement Management parkour campaign article; #6 London Parkour hire | Content marketing and service provider | Proof that this specialty language exists; do not promise troupe if solo availability only. |
-| `parkour coordinator film TV UK` | **0 usable items** | Provider failure/empty snapshot | Unknown competition, **not 0 competitors**. |
+| **P0** | **BACKEND** | Publish a real canonical `/sitemap.xml` and optional minimal `/robots.txt`; ensure GitHub Pages deployment **includes** them. Recheck HTTP status and Search Console. Earlier audit measured both as 404; current fresh web access did not independently confirm. | Existing build's copy whitelist reportedly drops new root SEO files, so adding files only to GitHub without changing workflow is insufficient. **Do not implement until approval**. |
+| **P0** | **SEARCH** | Use the proposed unique title and natural description, canonical and social card once approved; leave service content accurate. | Helps relevance and duplicate management; no invisible keyword bank. |
+| **P0** | **VISIBLE** | Make active performer identity unmissable; keep coordinator as an explicit second hire path; avoid clutter on mobile. | Most direct lead quality improvement. |
+| **P1** | **BACKEND** | Consider `ProfilePage` + `Person` JSON-LD including verified profile links and real occupation/credit claims, validate against Google's guidelines, no unsupported award or organization affiliation. | Machine-readable context, **not a guaranteed special ranking boost**. |
+| **P1** | **VISIBLE/ACCESSIBILITY** | Review descriptive `alt` for meaningful proof images; blank alt for purely decorative; keep real HTML text; ensure mobile tap targets and booking action remain easy to reach. | Accessibility and useful evidence. |
+| **P1** | **PERFORMANCE** | Audit full-page athlete GIF/PNG weight (~13.5 to 14.5 MiB after scroll in previous resource measurement), make optimized delivery versions while preserving originals/visuals; validate mobile LCP/INP/CLS, not fabricated Lighthouse scores. | Better hiring experience; previous first-screen load was comparatively light. |
+| **P1** | **MEASUREMENT** | Verify Google Search Console indexing/selected canonical, queries/CTR for `/athlete/`, group actual enquiries by performer vs coordination, and assess UK vs Romania/international markets separately. | Shift from assumed demand to real outcomes. |
+| **P2** | **CONTENT** | Add accurate performer and coordinator case-study mini-paragraphs, source-verified credits, reel segments and one contextual filmmaker cross-link; do not create doorway synonyms pages. | Trust signals and strong qualified search landing relevance. |
 
-Raw evidence: [all ten original queries and result positions](athlete-google-serp-2026-11-18.json). The page [COMPETITORS-ALL-30.md](../COMPETITORS-ALL-30.md) contains **ranked generic web discovery**, not official Google top-ten positions. Those data sources must never be merged as if they are the same.
+**No `meta keywords` recommendation:** Google does not use that tag for ranking. Keyword-targetable material is accurate titles, headings, visible text, linked role proof, descriptive images and technical consistency. No location spam or “London-based” claim if residence differs; existing site indicates UK base and international availability, verify current practical booking/logistics when implementation is requested.
 
-**Independently opened/verifiable industry and competitor URLs, checked 18 November 2026 (URLs verified, Google positions NOT verified):**
+## 6. Acceptance, missing evidence and next test
 
-| URL | Competitor type | Actual public vocabulary | What it teaches, not what it proves |
-|---|---|---|---|
-| [Movement Management: athletes](https://movementmanagement.co.uk/athletes) | UK specialist athlete **talent agency** | “Professional Parkour Athletes for Hire”, freerunners, stunt performers | Separate search landing/service intent, roster and film/live audience |
-| [Movement Management: hire](https://movementmanagement.co.uk/hire-parkour-performer) | Talent agency transactional landing | “Hire a Parkour Performer”, film/TV, brands, live | Buyer-action wording is more useful than listing 20 related skills |
-| [Movement Management: stunt casting](https://movementmanagement.co.uk/parkour-stunt-performers) | Talent agency specialist stunt category | “Parkour Stunt Performers”, skills/casting, SPACT context | Film casting values role, skills, physical profile; do not claim register status by association |
-| [Scott Bass consultancy](https://www.scottbass.co.uk/consultancy/) | **Individual professional** | “Parkour Co-Ordinator and Consultant” | Authentic specialist industry terminology; can compete on precise proof |
-| [Chima Akenzua](https://www.chimaakenzua.com/parkourdirector) | **Individual professional** | “Parkour Coordinator and Movement Director” | Confirms complementary creative roles, not full statutory stunt coordinator equivalence |
-| [One Dance UK role definition](https://www.onedanceuk.org/programmes/careers-hub/movement-director) | Industry career authority, **not commercial competitor** | “Movement Director” | Legitimate distinct role defined by creative movement direction |
-| [British Stunt Register](https://www.bsr.co/) | Industry professional register, **not personal competitor** | “Stunt Coordinator”, “Stunt Performer” | Distinct safety/qualification responsibility; avoid title substitution |
+- **Done:** direct athlete source read; actual skill/role inventory; ranked and rejected names; 76 estimated-volume data reviewed; organic difficulty versus paid competition distinguished; 2004/5y/12m/3m trends examined; ten raw SERP attempts classified; source-linked industry comparison; exact VISIBLE/SEARCH/BACKEND recommendations.
+- **Not verified:** Google-selected canonical/indexing, true live Google rank positions, GSC clicks and conversion rates, paid SERP placements, exact independent coordination assignments and stunt coordinator credentials, up-to-date Romania/global keyword demand.
+- **Not done:** **any modification to public website**. All recommendations require user approval before implementation.
+- **Next research family:** FPV/drone/aerial cinematography, including separate production-client and real-estate/inspection intent, licensing claims, UK region and compatible flight permissions. Do not claim every drone service in competitors' menus is personally offered.
 
-**What remains impossible from these sources:** independently certified exact top-ten Google organic positions, organic traffic per competitor, their backlinks/domain authority, which keyword caused a ranking or actual enquiries won. Those require a reliable resolved/localized SERP export and/or paid SEO data, **not a guess**. This limitation does not prevent a defensible industry-naming and site-copy recommendation.
+## Repository source index
 
-## 5. Exact proposed website copy: VISIBLE, not published
+- [Research decision principles](../RESEARCH-DECISION-PRINCIPLES.md)
+- [Starting handoff](../START-HERE-NEXT-CHAT.md)
+- [Athlete research status](ATHLETE-RESEARCH-STATUS.md)
+- [Current athlete source](../../athlete/index.html)
+- [Original complete athlete narrative research chapter](../ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md)
+- [Athlete source and technical audit](../ATHLETE.md)
+- [Original Google-result snapshots](athlete-google-serp-2026-11-18.json)
+- [UK 76-keyword CSV](ATHLETE-KEYWORD-METRICS-76.csv)
+- [Full keyword raw responses](athlete-data-raw-2026-11-18.json)
+- [Historical and recent trend responses](athlete-discovery-and-long-trends-2026-11-18.json)
+- [Full all-service research roadmap](RESEARCH-ROADMAP.md)
+- [Website and image-speed audit](../SPEED-ALL-PAGES.md)
 
-### Hero (minimal wording change, keep layout)
-- **H1:** `BOGDAN PASCAL.` (retain, one H1; not necessarily a problem).
-- **Hero role line:** `PARKOUR ATHLETE · STUNT PERFORMER · PARKOUR COORDINATOR`
-- **Accessible first paragraph:** `I'm a professional parkour athlete, freerunner and acrobat working across film, television, commercials and live performance. I perform on camera and bring specialist parkour coordination, movement direction and action choreography to productions that need dynamic physical storytelling.`
-- **If a shorter subtitle is required:** `Freerunning, acrobatics and movement direction for film, TV, commercials and live shows.`
-- **Service-choice controls without crowding:** `BOOK AS PERFORMER` (link to existing `#contact` or email with subject `Performer booking`) and `DISCUSS A PARKOUR SEQUENCE` (existing `#coordinator` or service-aware email). One distinct email endpoint is sufficient. Test mobile first-tap navigation and text size.
-
-### Natural headings and content (avoid a services keyword wall)
-1. **Performer capability** near existing credits/reel: `PARKOUR & STUNT PERFORMANCE`, with two short sentences, real individual skills and a booking CTA.
-2. **Existing `#coordinator`:** keep `PARKOUR COORDINATOR`. Add accessible explanatory H2/H3 or copy for `Parkour Coordination & Movement Direction` covering script breakdown, route design, rehearsal, talent collaboration and coordination alongside designated stunt and safety leads.
-3. **Skills / casting:** mark `Freerunning`, `Acrobatics`, `Tumbling`, `Trampoline` and `Stunt Performance` as **capabilities**, not wholly distinct service businesses. Keep casting measurements accessible on phone.
-4. **Selected proof:** separate `On-camera performance` (Wicked, Cinderella, Jingle Jangle) from `Live performance` (BRIT Awards/Hugh Jackman, event work) and `Specialist sequence design` **only for documented actual coordination credits**. Do not infer a project coordination credit from a performer credit.
-5. **Booking copy:** `Available for parkour performance, stunt work and specialist movement direction. Share your production type, dates, location, action brief and the role you need.`
-
-**Location truthfulness:** The saved site says **“Based in the UK”**, while the owner has also discussed working from Romania recently. **VERIFY current physical base** before publication. `Right to work in the UK` and `available internationally` do not automatically mean physically UK-based. Avoid UK city doorway pages/false “London based” claims. Keep the UK volume study as a target market, not proof of current location.
-
-## 6. SEARCH and BACKEND recommendations, not published
-
-**SEARCH `<title>` candidate:**  
-`Bogdan Pascal | Parkour Athlete & Stunt Performer`  
-Rationale: concise, correct person + high-fit identity, with coordination signaled prominently in the visible first screen. Alternative for coordination-led searches: `Bogdan Pascal | Parkour Performer & Coordinator` (test in Search Console, not randomly). Avoid a laundry list.
-
-**SEARCH meta description candidate:**  
-`Professional parkour athlete, freerunner and stunt performer. Bogdan Pascal also offers specialist parkour coordination and movement direction for film, TV and commercials.`  
-Google may rewrite snippets. A genuine verified live-event addition can fit the readable page instead of lengthening this string indefinitely.
-
-**SEARCH sharing:** `og:title`, `og:description`, `og:url`, `og:type=profile` where appropriate, and an absolute, rights-cleared `og:image` with sensible preview crop; `twitter:card=summary_large_image`. Check how actual messaging apps render. Current source has `og:title` and `og:description` but no athlete `og:image` in inspected head.
-
-**BACKEND canonical:** self-canonical `https://bogdanpascal.com/athlete/`, and verify host redirects (apex/www) and path slash behavior. Canonical is a hint, not an indexing guarantee.
-
-**BACKEND identity markup:** JSON-LD `Person` with verified `name`, `url`, and accurate `sameAs` links to IMDb and direct social profiles; connect to a `WebPage` node about that person. Evaluate `ProfilePage` only if its specific Google guidelines apply to this personal portfolio; do **not** assume rich-result eligibility or improved rankings from schema. Use verified jobTitle descriptions conservatively; no invented award status, employer, alumni, registration or UK address.
-
-**BACKEND crawlability:** the prior 18 Nov crawl found **404 for `/robots.txt` and `/sitemap.xml`**. Confirm again before any fix; a missing robots file does **not necessarily block crawling**, whereas a valid accurate sitemap aids discovery/monitoring. Investigate GitHub Pages build/deployment mapping. In particular ensure `/athlete/`, `/filmmaker/` and actual 23 projects are included, no private/internal preview URLs. Verify no accidental `noindex` and working indexable HTML.
-
-**BACKEND headings/linking:** H1 may remain the person's name if the next readable content clearly specifies working services. Maintain logical headings and descriptive visible links. Add one contextual, subordinate link to `/filmmaker/` for camera-led action work where appropriate, with a reciprocal contextual link if later approved. Avoid two competing hero destinations.
-
-**BACKEND performance:** previous live audit estimated 13.5–14.5 MiB of athlete images after scroll and larger gallery hotspots; not a Lighthouse LCP score. Test real mobile LCP, CLS, INP and resource waterfall; prioritize LCP hero image properly, use responsive `srcset`/sizes and modern format at appropriate resolution, preserve visible photographic quality and original grading. Lazy-load below-the-fold imagery without lazy-loading the hero. Do not delete functional equipment HTML or assume dormant previews hurt page speed.
-
-**BACKEND integrity:** accessible captions/alt only where imagery conveys useful information, useful video title and transcript/short surrounding description, responsive tap targets and booking CTA on mobile. No keyword stuffing. No `meta keywords`: [Google explicitly ignores them](https://developers.google.com/search/docs/crawling-indexing/special-tags).
-
-**VERIFY measurement plan (first 60–90 days after any approved implementation):** GSC inspect athlete URL, indexed canonical, GB queries and device filters, branded vs nonbrand, impressions/clicks/CTR/position by query and page; separate `performer` and `coordination` enquiry subjects or self-reported form roles, log qualified leads/bookings, and review after enough data accumulates. Set baseline **before** publishing. No actual GSC/GA4 or lead data currently available. Never promise a Google ranking.
-
-### Prioritized approval queue
-
-| Order | Kind | Work | Expected benefit | Status |
-|---:|---|---|---|---|
-| P0 | **VISIBLE** | Replace coordination-first hero line and clarify active athlete in readable intro | Fixes highest-risk casting misunderstanding | **PROPOSED ONLY** |
-| P0 | **VISIBLE** | Make performer and parkour-sequence booking routes equally legible on mobile | Better role-qualified enquiry route | **PROPOSED ONLY** |
-| P0 | **SEARCH** | Rewrite title/snippet around relevant, accurate roles | Clearer search-result identity | **PROPOSED ONLY** |
-| P0 | **VERIFY** | Confirm current base, actual coordination credits and UK stunt credentials before expanding claims | Prevents misleading marketing and unsafe title claims | **NOT VERIFIED** |
-| P1 | **BACKEND** | Self-canonical, OG image/url, correct identity data, robots/sitemap checks | Discovery, sharing and technical hygiene | **PROPOSED ONLY** |
-| P1 | **BACKEND** | Test mobile LCP/CLS/INP, preload right hero asset, optimize responsive image delivery | Visitor experience and booking friction | **PROPOSED ONLY** |
-| P1 | **VISIBLE** | Align reel/film/live project proof with distinct roles | Stronger trust and more precise bookings | **PROPOSED ONLY** |
-| P1 | **VERIFY** | GSC baseline + qualified-enquiry measurement | Replaces external estimates with real feedback | **NOT AVAILABLE** |
-| P2 | **VISIBLE/BACKEND** | Contextual filmmaker crosslink and performance-focused headings/alt | More discoverable crossover and clarity | **PROPOSED ONLY** |
-| P3 | **CONDITIONAL** | Separate coordination page, regional page or talent roster | Only if real differentiated content and observed demand justify | **DO NOT CREATE YET** |
-
-## 7. Decisions rejected and remaining limitations
-
-- **Reject “parkour” as a lone primary hiring title** despite 18,100 estimated searches/month: UK related queries prominently include Minecraft/games, definitions and general curiosity.
-- **Reject “professional acrobat” as the primary SEO promise** despite 1,600 searches/month: query intent is not established as film casting; `acrobat` relative Trends are heavily Adobe-software related. Film or live qualified audience matters more.
-- **Reject auto-summing `freerunner` + `freerunning` + `free running`:** identical monthly series indicate closely related/grouped query counts, not additive 1,170.
-- **Reject `Stunt Coordinator` title substitution:** production leadership, risk assessment and stunt safety lead are distinct; full role and accreditation unverified.
-- **Reject claims that KD 0 means Google ranking is easy:** it is a third-party model with narrow samples.
-- **Reject trend spike ≡ bookings:** August freerunning and October movement-director anomalies have no demonstrated commercial explanation.
-- **Reject 8 duplicate service URLs or hidden keyword banks:** visitors need proof, readable service descriptions and a working booking path; Google does not use meta keywords.
-- **Reject false competitor ranking claims:** saved provider screenshots are incomplete and largely unresolved `google.com/goto`; generic web-discovery lists are not certified organic SERPs.
-- **Limitations:** UK desktop bias; no Google Search Console access; no real booking attribution; no competitor organic traffic/backlink data; 32/76 missing volumes; Google Trends low-signal suppression; keyword-ideas endpoint returned **HTTP 502**; no independent audit of all professional role responsibilities/insurance; Romanian or other market volumes not yet gathered.
-- **Acceptance meaning:** the **research and recommended naming chapter is complete**, not the SEO implementation or post-publication validation. Remaining verification tasks are explicitly listed, **not** silently represented as done.
-
-## 8. Research source index
-
-**Primary repo evidence (all collected 18 November 2026):**
-- [Existing production athlete source](../../athlete/index.html)
-- [Earlier comprehensive athlete naming report](../ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md)
-- [Athlete technical notes](../ATHLETE.md)
-- [76 keyword records CSV](ATHLETE-KEYWORD-METRICS-76.csv)
-- [Raw provider searches, organic KD, intent and five-year / 12-month Trends](athlete-data-raw-2026-11-18.json)
-- [Raw long-term, 3-month and related-query Trends](athlete-discovery-and-long-trends-2026-11-18.json)
-- [Ten raw UK desktop Google SERP attempts](athlete-google-serp-2026-11-18.json)
-- [Overall technical audit](../DEEP-DIVE-2026-11-18.md)
-- [Full research principles](../RESEARCH-DECISION-PRINCIPLES.md)
-
-**Independent role and competitor evidence checked 18 November 2026:**
-- [British Stunt Register](https://www.bsr.co/); [Equity](https://www.equity.org.uk/advice-and-support/know-your-rights/engaging-stunt-co-ordinators-and-stunt-performers); [Film London safety](https://filmlondon.org.uk/filming-in-london/make-sure-its-safe); [One Dance UK Movement Director](https://www.onedanceuk.org/programmes/careers-hub/movement-director).
-- [Scott Bass consultancy](https://www.scottbass.co.uk/consultancy/); [Chima Akenzua](https://www.chimaakenzua.com/parkourdirector); [Movement Management athlete roster](https://movementmanagement.co.uk/athletes), [direct hire](https://movementmanagement.co.uk/hire-parkour-performer) and [stunt category](https://movementmanagement.co.uk/parkour-stunt-performers).
-- [Google Search Essentials](https://developers.google.com/search/docs/essentials); [title link guidance](https://developers.google.com/search/docs/appearance/title-link); [canonical instructions](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls); [Person/ProfilePage feature guidance](https://developers.google.com/search/docs/appearance/structured-data/profile-page); [Google meta tags](https://developers.google.com/search/docs/crawling-indexing/special-tags); [Google Trends normalization](https://support.google.com/trends/answer/4365533).
-
-**Implementation status: NOTHING ALTERED on the public website.** Scope of GitHub changes in this session is documentation only under `seo-audit/`. **Next service:** FPV/drone/aerial, then DoP/cinematography/camera/gimbal, then commercial filmmaking, editing, colour grading and sound design, each completed separately before the next.
+**Decision status:** Research DONE, implementation NOT APPLIED. Organic position / lead conversion validation remain future measurement tasks, not falsified completion blockers.
