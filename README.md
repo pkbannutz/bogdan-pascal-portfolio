@@ -4,7 +4,9 @@ Personal portfolio website for Bogdan Pascal. Inspired by the clean, monochrome 
 
 ## Preview
 
-This is a standalone static site. Open `index.html` in a browser, or deploy the repository using GitHub Pages (Settings → Pages → Deploy from a branch → main / root).
+This is a standalone static site. Open `index.html` in a browser. **Deployment is through GitHub Actions:** merging changes to `main` runs `.github/workflows/deploy-pages.yml`, which builds and publishes the public site to GitHub Pages. Do not switch Pages back to branch-based deployment without reviewing the workflow.
+
+**Setup history:** [18 Nov 2026 website operations log](seo-audit/website-operations/2026-11-18-SEO-ANALYTICS-INDEXING-SETUP-LOG.md) records Search Console, sitemap/indexing, GA4, OpenSEO, Microsoft Clarity, consent, privacy and completed GitHub PRs. This Markdown log is not published on the website, but is readable in the public repository.
 
 ## Features
 
