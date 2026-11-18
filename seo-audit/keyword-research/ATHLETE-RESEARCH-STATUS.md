@@ -1,5 +1,8 @@
 # ATHLETE KEYWORD RESEARCH: VERIFIED STATUS AND PRELIMINARY SIGNALS
 
+> **Guiding objective for future AI:** Use [research decision principles](../RESEARCH-DECISION-PRINCIPLES.md) and the [full handoff](../START-HERE-NEXT-CHAT.md). The user wants the most effective business and SEO results, not uncritical execution of their speculative tactics. Recommend the most recognizable professional service naming and real booking-intent strategy, even when that means rejecting the user's initial keyword ideas. Do not rely on a hidden meta-keywords list. Use actual researched evidence and natural page content. The next chat prompt is [here](../NEXT-CHAT-PROMPT.md).
+
+
 **As of:** 18 November 2026
 **Scope:** `https://bogdanpascal.com/athlete/`
 **Phase:** Data collection begun, NOT a finished naming / SEO recommendation.
