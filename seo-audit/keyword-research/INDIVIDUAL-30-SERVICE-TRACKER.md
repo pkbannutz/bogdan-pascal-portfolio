@@ -1,10 +1,10 @@
 # INDIVIDUAL SERVICE RESEARCH TRACKER: 30 CATEGORIES
 
-**Started:** 18 November 2026. **Progress:** **5 / 30 individually reviewed**. **Last individual completed:** **P05 Stunt Coordinator** (research complete, public offering **NOT VERIFIED**).
+**Started:** 18 November 2026. **Progress:** **9 / 30 individually reviewed**. **Last individual completed:** **P09 Extreme Athlete / Action Sports Talent** (research complete, recommended as supporting market category rather than separate occupation).
 
 ## New operating rule from the user
 
-**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user explicitly requested the NEXT THREE together: P03, P04 and P05. **Do not proceed to P06 automatically.**
+**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user explicitly requested P03-P05 together, followed by the **next four P06-P09**. Both batches are complete. **Do not proceed to P10 automatically.**
 
 **Important:** The older seven **family-level** reports remain useful background. They are **not** a substitute for reviewing each of the original 30 categories separately. A family being marked DONE does **not** mark its individual service rows done.
 
@@ -19,11 +19,11 @@ Each individual report must document: precise job/service scope and reality chec
 | 3 | **P03** | Parkour coordinator / consultant | CORE | **DONE** | [Full P03 decision](individual/P03-PARKOUR-COORDINATOR-CONSULTANT-RESEARCH-2026-11-18.md) |
 | 4 | **P04** | Stunt performer | CORE | **DONE** | [Full P04 decision](individual/P04-STUNT-PERFORMER-RESEARCH-2026-11-18.md) |
 | 5 | **P05** | Stunt coordinator | ADJACENT: qualification check | **DONE: SERVICE CLAIM GATED, NOT VERIFIED** | [Full P05 evidence/eligibility decision](individual/P05-STUNT-COORDINATOR-ELIGIBILITY-RESEARCH-2026-11-18.md) |
-| 6 | **P06** | Acrobat / acrobatic performer | CORE | **WAITING for next instruction** |  |
-| 7 | **P07** | Movement director | CORE | **NOT STARTED** |  |
-| 8 | **P08** | Action choreographer | CORE/adjacent | **NOT STARTED** |  |
-| 9 | **P09** | Extreme athlete / action sports talent | CORE/adjacent | **NOT STARTED** |  |
-| 10 | **P10** | Parkour performance / live show | CORE/adjacent | **NOT STARTED** |  |
+| 6 | **P06** | Acrobat / acrobatic performer | CORE | **DONE** | [Full P06 decision](individual/P06-ACROBAT-ACROBATIC-PERFORMER-RESEARCH-2026-11-18.md) |
+| 7 | **P07** | Movement director | CORE | **DONE: NAMED ROLE PROOF TO VERIFY** | [Full P07 decision](individual/P07-MOVEMENT-DIRECTOR-RESEARCH-2026-11-18.md) |
+| 8 | **P08** | Action choreographer | CORE/adjacent | **DONE: SPECIALIST SCOPE PREFERRED** | [Full P08 decision](individual/P08-ACTION-CHOREOGRAPHER-RESEARCH-2026-11-18.md) |
+| 9 | **P09** | Extreme athlete / action sports talent | CORE/adjacent | **DONE: SUPPORTING CASTING CATEGORY, NOT SEPARATE SERVICE** | [Full P09 decision](individual/P09-EXTREME-ATHLETE-ACTION-SPORTS-TALENT-RESEARCH-2026-11-18.md) |
+| 10 | **P10** | Parkour performance / live show | CORE/adjacent | **WAITING for next instruction** |  |
 | 11 | **F01** | Commercial filmmaker | CORE | **NOT STARTED** |  |
 | 12 | **F02** | Director of Photography (DoP) | CORE | **NOT STARTED** |  |
 | 13 | **F03** | Cinematographer | CORE | **NOT STARTED** |  |
@@ -68,7 +68,7 @@ Each individual report must document: precise job/service scope and reality chec
 - **No production website edits.**
 - **Report:** [P02 Freerunning Performer](individual/P02-FREERUNNING-PERFORMER-RESEARCH-2026-11-18.md).
 
-**NEXT ONLY AFTER ANOTHER USER REQUEST: P06 Acrobat / Acrobatic Performer.** P03, P04 and P05 are individually researched. P05 is NOT approved to advertise because personal full-stunt-coordinator qualifications/credits remain unverified.
+**NEXT ONLY AFTER ANOTHER USER REQUEST: P10 Parkour Performance / Live Show.** P01-P09 each have dedicated individual research. P05 personal full-stunt-coordinator service remains unverified; P09 is supporting discovery/casting categorization, not an independent core service.
 
 ## P03-P05 individual completion record (18 November 2026)
 
@@ -95,6 +95,39 @@ Each individual report must document: precise job/service scope and reality chec
 - [Full P05 report](individual/P05-STUNT-COORDINATOR-ELIGIBILITY-RESEARCH-2026-11-18.md)
 
 **At this checkpoint: 5 / 30 complete as individual research, 25 not yet individually researched.** P05's **role offer** remains unverified despite research being done. **No public website edited.**
+
+## P06-P09 individual completion record (18 November 2026)
+
+### P06 Acrobat / Acrobatic Performer
+- **Verdict:** **CORE** professional performance service. Best label **Acrobat & Acrobatic Performer**, with specific camera and live-performance proof. Better to surface within existing `/athlete/` than create overlapping P01/P02 landing pages.
+- **Website proof:** BRIT Awards/Greatest Showman, Expo Dubai performance, The 1975 music-video acrobatics, various TV/live/music/commercial acrobatic roles; exact per-project casting credit and clip usage still need verification. Neither flying-rigging nor trapeze/circus disciplines are automatically offered.
+- **UK keywords:** `acrobatic performer` ~20/month, `acrobat for hire` ~10/month; `professional acrobat` ~1,600/month **but heavily ambiguous with Adobe Acrobat Professional** and not 1,600 human talent buyers. Acrobat performer 20 has identical monthly history to `acrobatic performer`, so do not sum.
+- **Competitors:** Acrobat Productions (including its own 2019 BRIT Awards listing, no assumption it contracted Bogdan), UKCF Entertainment, Movement Management, event agencies and specialist talent casting.
+- **Research:** [P06 full report](individual/P06-ACROBAT-ACROBATIC-PERFORMER-RESEARCH-2026-11-18.md).
+
+### P07 Movement Director
+- **Verdict:** **VALID distinct industry creative role, already advertised in website hero.** But exact **personal lead movement-director production credits** not established by performer CV alone. Strengthen verified movement direction project proofs and define contracted scope.
+- **Industry:** One Dance UK and Equity distinguish Movement Director, Movement Choreographer and Movement Coach by responsibility and work type; real B2B freelancer/agency competition in film, fashion, stage and commercials.
+- **UK keywords:** `movement director` ~90/month, `movement direction` ~20, `movement specialist` ~40 (ambiguous). `movement director` KD 0 from third party **is not rank guarantee**. Oct 2026 260 search spike does not establish seasonal hiring.
+- **Website:** Movement Director title/hero and P03's movement-direction section already visible, but no independently attributed named lead movement-director case. Self-choreographed Expo solo action is not automatically direction of all talent.
+- **Research:** [P07 full report](individual/P07-MOVEMENT-DIRECTOR-RESEARCH-2026-11-18.md).
+
+### P08 Action Choreographer
+- **Verdict:** **RECOGNIZED action creative function, recommended personal scope `Parkour Action Choreography & Movement Design`** instead of broad unsupported full Fight Choreographer/Action Director claims. Distinct sequence design deliverable within P03.
+- **UK keywords:** `action choreographer` ~140/month and `action choreography` ~140 with **identical monthly series; not additive**. `parkour choreography` ~10 and `stunt choreography` ~10; exact `parkour action choreography` unknown.
+- **Website:** P03 concept/script/action design and rehearsal/camera-led action already advertised; Expo campaign says self-choreographed movement but is **not full-ensemble choreography**. The 1975 video names a different credited choreographer; don't misattribute role or awards.
+- **Competitors:** Peter Pedrero Stunts4Reel is a strong role-specific case-proof model; Scott Bass and Chima Akenzua specialist parkour consultancy, Chase Armitage broader action directing. No validated competitor exact Google ranking.
+- **Research:** [P08 full report](individual/P08-ACTION-CHOREOGRAPHER-RESEARCH-2026-11-18.md).
+
+### P09 Extreme Athlete / Action Sports Talent
+- **Verdict:** **BUYER / CASTING CATEGORY, NOT RECOMMENDED AS A STANDALONE PERSONAL SERVICE.** Best commercially accurate wording **`Parkour Athlete for Brand Campaigns`** or directory classification `Action Sports Talent (Parkour & Freerunning)`.
+- **Why:** `Extreme Athlete` is broad and can imply BMX, skating, skiing, driving, mountaineering and other unsupported disciplines. Real agencies sell many sports, not one portfolio's universal credentials.
+- **UK keywords:** `extreme athlete` ~30/month (third-party KD 45, mostly informational), `extreme sports athlete` ~10, exact `action sports athlete` unknown; discipline-specific `parkour athlete` ~40/month better brand fit. Trends general sport genre, not qualified bookings.
+- **Competitors:** Extreme International (multi-discipline athlete/creator management), Sport & Motion (sports casting), Movement Management (parkour agency) and talent/brand representation markets. No trustworthy dedicated P09 literal Google SERP ranking obtained.
+- **Website:** promote genuine commercial performer campaigns where helpful; do not fabricate sponsorship deals, follower numbers, team/agency or professional cross-sport experience.
+- **Research:** [P09 full report](individual/P09-EXTREME-ATHLETE-ACTION-SPORTS-TALENT-RESEARCH-2026-11-18.md).
+
+**Checkpoint:** **9 of 30 original categories individually researched**. Original family reports remain useful separate background, but do not count as remaining 21 category reviews. **Website unchanged**.
 
 ## Background source inventory
 
