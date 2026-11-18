@@ -4,7 +4,7 @@
 **Status:** Research and documentation only. No production SEO/visual changes applied.
 **Read first:** [Full handoff](../START-HERE-NEXT-CHAT.md) and [principles](../RESEARCH-DECISION-PRINCIPLES.md).
 
-> **NEW 30-CATEGORY OPERATING RULE (18 November 2026):** The prior seven service-family reports are complete at the **family** level, but they do NOT mean all 30 original professional categories have received an individual research verdict. The user now requires **one original service category per user turn**, saved in a standalone file, followed by a hard stop pending "continue". See the authoritative [individual 30-category tracker](INDIVIDUAL-30-SERVICE-TRACKER.md). **P01 through P05 individually researched (5/30); P05 service eligibility NOT VERIFIED; next P06 only after the user's next instruction.** No website edits.
+> **NEW 30-CATEGORY OPERATING RULE (18 November 2026):** The prior seven service-family reports are complete at the **family** level, but they do NOT mean all 30 original professional categories have received an individual research verdict. The user now requires **one original service category per user turn**, saved in a standalone file, followed by a hard stop pending "continue". See the authoritative [individual 30-category tracker](INDIVIDUAL-30-SERVICE-TRACKER.md). **P01 through P09 individually researched (9/30), with four separate P06-P09 reports; P05 service eligibility NOT VERIFIED, P09 is supporting action-sports market category not a standalone occupation; next P10 ONLY after the user's next instruction.** No website edits.
 
 ## The rule for future AI
 
