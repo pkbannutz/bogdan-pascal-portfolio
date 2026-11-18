@@ -1,0 +1,99 @@
+# SEO implementation checklist
+
+**Snapshot:** 18 November 2026  
+**Repository:** `pkbannutz/bogdan-pascal-portfolio`  
+**Implementation status:** **0 SEO fixes implemented**. The four companion audit documents are already written; existing website code is untouched.
+
+## How to read the labels
+
+- **BACKEND:** Code, HTML semantics, deployment, indexing, analytics, URLs, assets. Should not intentionally change how the site looks. Verify any performance/layout side effects.
+- **SEARCH:** What Google or social link previews may display, not what a site visitor sees inside the page.
+- **VISIBLE:** Text, hero wording, cases, CTAs, sections, layout or navigation visibly changes on the website. Show proposed designs/copy for review first.
+- **VERIFY:** Cannot establish without Google Search Console, OpenSEO/live crawler, browser or performance test.
+- **P0:** Start here; **P1:** Next phase; **P2:** Improvement after measurement.
+
+## Priority 0: Core technical SEO
+
+- [ ] **O01 | OVERALL | P0 | BACKEND:** Update `.github/workflows/deploy-pages.yml` to ship root sitemap/robots when created, while checking how the existing CNAME and Pages domain are managed. `SEO-AUDIT ONLY NOW`.
+- [ ] **O02 | OVERALL | P0 | BACKEND:** Publish canonical-only sitemap of production pages. Exclude `/filmmaker/v2/`, `/filmmaker/v3/`, legacy on-set, noindex equipment and HTML partials.
+- [ ] **O03 | OVERALL | P0 | BACKEND:** Self-canonical tags for intended indexable pages, preserving redirect canonical.
+- [ ] **O04 | OVERALL | P0 | BACKEND:** Minimal robots.txt with sitemap reference, without hiding noindex previews from crawlers.
+- [ ] **F01 | FILMMAKER | P0 | BACKEND + maybe VISIBLE:** Fix filmmaker homepage missing H1. Prefer semantic markup of existing hero without changing typography; if new visible headline proposed, review first.
+- [ ] **F02 | FILMMAKER | P0 | SEARCH:** Rewrite filmmaker landing title/description; no visible website change.
+- [ ] **A01/A02 | ATHLETE | P0 | SEARCH:** Improve title/description to include active parkour performer intent, not just coordinator; no visible website change.
+- [ ] **F05 | FILMMAKER | P0 | SEARCH + BACKEND:** Improve 23 project descriptions centrally in `_build/build.py` and source content; no visible website change if restricted to metadata.
+
+## Priority 1: Strong improvements without changing the visual design
+
+- [ ] **O05 | OVERALL | P1 | SEARCH:** Unique, intent-specific titles and meta descriptions across all intended indexable pages.
+- [ ] **O06 | OVERALL | P1 | SEARCH:** Absolute Open Graph images, correct OG titles/descriptions and test social cards.
+- [ ] **O07 | OVERALL | P1 | BACKEND:** Accurate Person, Website, ProfilePage, Service or CreativeWork structured data as appropriate, schema validated.
+- [ ] **O08 | OVERALL | P1 | BACKEND:** Add automated HTML/SEO checks to deployment, including no accidental preview indexing.
+- [ ] **A03/A04/A05 | ATHLETE | P1 | BACKEND + SEARCH:** Athlete canonical, share image, validated professional profile schema.
+- [ ] **F03/F04/F06 | FILMMAKER | P1 | BACKEND + SEARCH:** Film canonical, share image and schema across generated work pages, services and landing pages.
+- [ ] **O09/O10 | OVERALL | P1 | VERIFY:** Check HTTPS host redirects, Google indexing, and Search Console sitemap/canonical/search terms.
+- [ ] **O12/O13 | OVERALL | P1 | VERIFY:** Live crawl all current production URLs, then mobile/desktop Lighthouse and Core Web Vitals tests.
+- [ ] **O14 | OVERALL | P1 | BACKEND:** Optimize proven image/video bottlenecks only after measurement; retain originals and original film appearance.
+
+## Priority 1: Suggested visible changes, approval needed
+
+- [ ] **O17 | OVERALL | P1 | VISIBLE only if new content added:** Give root meaningful H1; try existing brand markup first so visual appearance can remain identical.
+- [ ] **A09 | ATHLETE | P0 | VISIBLE:** Make active athlete/freerunner/acrobat/stunt performer status explicit in the first paragraphs without diminishing coordinator/movement director work.
+- [ ] **A10 | ATHLETE | P1 | VISIBLE:** Clarify performer-booking CTA distinct from coordination work.
+- [ ] **A11 | ATHLETE | P1 | VISIBLE:** Audit credits, showreel and externally linked proof for accuracy and hireability.
+- [ ] **F12/F13 | FILMMAKER | P0/P1 | VISIBLE:** Add a short, authentic filmmaker/DoP intro above or immediately below portfolio hero; preserve current cinematic design.
+- [ ] **F14/F15 | FILMMAKER | P1 | VISIBLE:** Add accurate project role/brief/approach details to selected priority case studies; explicitly label spec ads.
+- [ ] **F16 | FILMMAKER | P1 | VISIBLE:** Make service page copy client-centric and clear about specific deliverables.
+- [ ] **F18 | FILMMAKER | P2 | VISIBLE:** Improve enquiry CTA labels and path without clutter.
+
+## Priority 2: Additional improvements
+
+- [ ] **O15/O16 | OVERALL | P2 | BACKEND:** Decide indexation/format for equipment HTML fragments and the noindex equipment page.
+- [ ] **O19/O20 | OVERALL | P2 | VISIBLE:** Add useful career cross-links and section-specific booking routes.
+- [ ] **O22 | OVERALL | P2 | VISIBLE:** Consider genuine Romanian translation only if audience demand supports it; then correct hreflang.
+- [ ] **A06/A07 | ATHLETE | P2 | BACKEND:** Review alt text, page weight and mobile loading based on real measurements.
+- [ ] **A12/A13/A14 | ATHLETE | P2 | VISIBLE:** Optional filmmaking crossover link, clear performer capabilities/specifications, short capability sections.
+- [ ] **F07 | FILMMAKER | P2 | BACKEND:** Review images/video posters and responsive media behavior across templates.
+- [ ] **F08/F09/F10 | FILMMAKER | P2 | BACKEND:** Preserve preview noindex; review equipment indexing; maintain legacy redirect hygiene.
+- [ ] **F17/F19/F20 | FILMMAKER | P2 | VISIBLE:** Richer About, selected meaningful captions and contextual project-to-service links.
+- [ ] **O11 | OVERALL | P2 | BACKEND:** Consent-aware GA4 and optional event tracking for real enquiries. No tracking installed as part of this audit.
+
+## Scope-specific impact at a glance
+
+| Scope | What visitors currently see | What only search engines / backend would change | What could visibly change later |
+|---|---|---|---|
+| **OVERALL** | Same two-choice athlete/filmmaker homepage | Sitemap, canonicals, robots, schema, OG, deploy tests, GSC/GA4 | Optional brief person/role intro and links |
+| **ATHLETE** | Same portfolio and showreel | Role-focused metadata, canonical, share image, schema | Clearly active performer positioning, hiring CTA, selected copy and cross-link |
+| **FILMMAKER** | Same cinematic hero, 23 films and service pages | Better snippets, H1 semantics where visual-neutral, canonical, OG, project metadata/schema | Short DoP intro, real case studies, client-facing service copy and CTA refinements |
+
+## Suggested release order
+
+**Release 1 (backend/search only, after review):** O01-O08, A01-A05, F01-F06 when visual-neutral. Change nothing visible if possible. Validate that deployment, domain and previews remain intact.
+
+**Release 2 (visitor-visible, after reviewing exact copy):** A09, A10, F12-F16. Change only approved sections and retain existing layout, photography and animations.
+
+**Release 3 (measure and iterate):** Connect GSC and GA4 where appropriate, check indexing and actual acquisition, fix speed bottlenecks confirmed by Lighthouse, and make smaller site-specific improvements.
+
+## OpenSEO free validation playbook
+
+1. Connect a site audit in [OpenSEO](https://www.openseo.so/docs/site-audits) or use self-hosted open source code.
+2. Start at `https://bogdanpascal.com/`, cap 50 pages on free tier, exclude `/filmmaker/v2/` and `/filmmaker/v3/` so previews cannot consume the limit.
+3. Set Lighthouse **OFF** and JavaScript rendering **OFF** for the first crawl to avoid optional charges.
+4. Confirm the crawler actually reached each production landing page and checked statuses; a "no issues" report from blocked pages is not a clean bill of health.
+5. Check: pages crawled, HTTP status, missing H1, title/meta duplication, canonical/indexability, redirects, link errors, orphan content and robots/sitemap.
+6. Export report as JSON/CSV, compare findings against the IDs above, and retest after fixes. Only enable JS rendering for pages the non-rendering crawler cannot read.
+7. Separately run PageSpeed Insights on representative pages and check Search Console for indexing and query data.
+
+**Not done here:** An actual OpenSEO crawl, live HTTP status scan, Lighthouse tests, GSC verification or real keyword research. No credentials were available. This checklist is based on a code review plus OpenSEO's documented audit methods.
+
+## Acceptance checklist for any actual implementation
+
+- [ ] Live domain, assets, reels and custom-domain routing remain working.
+- [ ] Both `/athlete/` and `/filmmaker/` stay accessible, distinct and indexable.
+- [ ] Preview V2/V3 URLs remain noindex, not in sitemap; legacy on-set remains out of sitemap.
+- [ ] Indexable URLs have the correct unique title, meaningful H1, canonical, metadata and valid structured data.
+- [ ] Social cards show the right image.
+- [ ] No additional visible design or copy changes beyond approved changes.
+- [ ] Mobile layout, keyboard navigation, load speed and video playback remain functional.
+- [ ] Search Console can discover the sitemap and chosen landing-page URLs.
+- [ ] Every factual credit/role is verified; spec work is not mislabelled as paid client work.
