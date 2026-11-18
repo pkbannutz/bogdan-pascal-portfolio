@@ -1,10 +1,10 @@
 # INDIVIDUAL SERVICE RESEARCH TRACKER: 30 CATEGORIES
 
-**Started:** 18 November 2026. **Progress:** **2 / 30 individually reviewed**. **Last individual completed:** **P02 Freerunning Performer**.
+**Started:** 18 November 2026. **Progress:** **5 / 30 individually reviewed**. **Last individual completed:** **P05 Stunt Coordinator** (research complete, public offering **NOT VERIFIED**).
 
 ## New operating rule from the user
 
-**Analyze exactly ONE of the original 30 service categories per user turn. Stop when that one category is completed, save every finding, report completion, and WAIT for the user's "continue" before researching the next.** Do not advance automatically.
+**By default analyze exactly ONE of the original 30 service categories per user turn, save a detailed individual report, then STOP until the next user instruction. When the user expressly requests a batch of N, complete precisely N individual reports, update the tracker, and STOP.** On 18 Nov 2026 the user explicitly requested the NEXT THREE together: P03, P04 and P05. **Do not proceed to P06 automatically.**
 
 **Important:** The older seven **family-level** reports remain useful background. They are **not** a substitute for reviewing each of the original 30 categories separately. A family being marked DONE does **not** mark its individual service rows done.
 
@@ -16,10 +16,10 @@ Each individual report must document: precise job/service scope and reality chec
 |---:|---|---|---|---|---|
 | 1 | **P01** | Parkour athlete / performer | CORE | **DONE** | [Full P01 decision](individual/P01-PARKOUR-ATHLETE-PERFORMER-RESEARCH-2026-11-18.md) |
 | 2 | **P02** | Freerunning performer | CORE | **DONE** | [Full P02 decision](individual/P02-FREERUNNING-PERFORMER-RESEARCH-2026-11-18.md) |
-| 3 | **P03** | Parkour coordinator / consultant | CORE | **WAITING for user continue** |  |
-| 4 | **P04** | Stunt performer | CORE | **NOT STARTED** |  |
-| 5 | **P05** | Stunt coordinator | ADJACENT: qualification check | **NOT STARTED** |  |
-| 6 | **P06** | Acrobat / acrobatic performer | CORE | **NOT STARTED** |  |
+| 3 | **P03** | Parkour coordinator / consultant | CORE | **DONE** | [Full P03 decision](individual/P03-PARKOUR-COORDINATOR-CONSULTANT-RESEARCH-2026-11-18.md) |
+| 4 | **P04** | Stunt performer | CORE | **DONE** | [Full P04 decision](individual/P04-STUNT-PERFORMER-RESEARCH-2026-11-18.md) |
+| 5 | **P05** | Stunt coordinator | ADJACENT: qualification check | **DONE: SERVICE CLAIM GATED, NOT VERIFIED** | [Full P05 evidence/eligibility decision](individual/P05-STUNT-COORDINATOR-ELIGIBILITY-RESEARCH-2026-11-18.md) |
+| 6 | **P06** | Acrobat / acrobatic performer | CORE | **WAITING for next instruction** |  |
 | 7 | **P07** | Movement director | CORE | **NOT STARTED** |  |
 | 8 | **P08** | Action choreographer | CORE/adjacent | **NOT STARTED** |  |
 | 9 | **P09** | Extreme athlete / action sports talent | CORE/adjacent | **NOT STARTED** |  |
@@ -68,7 +68,33 @@ Each individual report must document: precise job/service scope and reality chec
 - **No production website edits.**
 - **Report:** [P02 Freerunning Performer](individual/P02-FREERUNNING-PERFORMER-RESEARCH-2026-11-18.md).
 
-**NEXT ONLY AFTER USER SAYS "CONTINUE": P03 Parkour Coordinator / Consultant.** P03 is not complete merely because previous seven family-level reports included it.
+**NEXT ONLY AFTER ANOTHER USER REQUEST: P06 Acrobat / Acrobatic Performer.** P03, P04 and P05 are individually researched. P05 is NOT approved to advertise because personal full-stunt-coordinator qualifications/credits remain unverified.
+
+## P03-P05 individual completion record (18 November 2026)
+
+### P03: Parkour Coordinator / Consultant
+- **Decision:** CORE, distinct specialist service, with existing first-screen title, dedicated six-function service block and helpful `DISCUSS YOUR SEQUENCE` CTA.
+- **Recommended label:** **Parkour Coordinator**; **Parkour Coordinator & Consultant** for fuller B2B positioning. Real independent professional usage verified at Chima Akenzua and Scott Bass sites.
+- **SEO evidence:** exact `parkour coordinator` and `parkour consultant` UK volumes **unknown**, `parkour choreography` ~10 and `movement director` ~90 but latter separate P07. The failed exact SERP must not be interpreted as zero competition.
+- **Main issue:** no personally evidenced production-specific `Parkour Coordinator` credit confidently tied to the broad six functions; don't misattribute `Wicked` parkour performer work as heading stunt department.
+- **Verdict/action:** retain P03 visibility, strengthen **real specialist coordination project proof**, clarify working **with** production-appointed stunt/safety team. No page modification.
+- [Full P03 report](individual/P03-PARKOUR-COORDINATOR-CONSULTANT-RESEARCH-2026-11-18.md)
+
+### P04: Stunt Performer
+- **Decision:** CORE, distinct UK screen/production role, correctly present in hero. Preferred **Stunt Performer**, qualified as **Parkour & Acrobatics Specialist** when appropriate.
+- **SEO evidence:** UK `stunt performer` ~170 monthly, `stunt actor` ~90, `special action performer` ~10, `stunt double` ~480 **but doubling only if documented**, `stunt performer for hire` unknown; difficulty 0 is no promise.
+- **Critical direct source finding:** Current `Cinderella` project detail describes **dancer** while broader credits array calls it `actor, dancer, stunts and acrobat`. Verify actual roles rather than overstating. `Wicked` specialist parkour team and `Jingle Jangle` stunt-department work support real performance credentials subject to precise individual source.
+- **Industry:** Equity, BSR, Film London and Take 3 Agency confirm separation from full coordination and SPACT/doubling distinctions. No invented professional register membership.
+- [Full P04 report](individual/P04-STUNT-PERFORMER-RESEARCH-2026-11-18.md)
+
+### P05: Stunt Coordinator
+- **Decision:** REAL recognized job **but personal full-role evidence presently UNVERIFIED**. NOT a currently approved advertised service. **Do not conflate P03 Parkour Coordinator with P05 Stunt Coordinator**.
+- **UK SEO evidence:** `stunt coordinator` ~110 monthly (KD 0 misleadingly "easy"), `stunt coordinator uk` ~20 (KD 42). Five original SEO variations have unknown exact volumes and often imply different responsibilities.
+- **Critical legal/industry nuance:** Equity states **no legal requirement to engage a member of a specified professional organization**, and hiring depends on competence/track record/training. Film London recommends BSR-recognized stunt coordinator or person of comparable experience with documented safety and coordination competence. BSR has structured progression. Do NOT state BSR membership is universally legally mandatory, nor that anyone can lead without evidence.
+- **Proof missing:** personally credited `Stunt Coordinator` jobs, safety responsibility, current training/grade, supervising crew and production acceptance. Practical gymnastics/trampoline assessments or film stunt performer roles do not alone establish full coordinator status.
+- [Full P05 report](individual/P05-STUNT-COORDINATOR-ELIGIBILITY-RESEARCH-2026-11-18.md)
+
+**At this checkpoint: 5 / 30 complete as individual research, 25 not yet individually researched.** P05's **role offer** remains unverified despite research being done. **No public website edited.**
 
 ## Background source inventory
 
