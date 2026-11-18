@@ -25,8 +25,8 @@ A service family can be marked **DONE** only after the report provides:
 
 | Order | Family | Research status | Required next output |
 |---:|---|---|---|
-| 1 | **Athlete, freerunner, parkour performer, acrobat, stunt performance, coordinator and movement direction** | **PARTIAL**: 76 UK queries, volume/difficulty/intent; historical and recent Trends; 10 Google SERP attempts. Synthesis and final recommended roles pending. | `ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md` |
-| 2 | **FPV / drone / aerial cinematography** | NOT STARTED quantitative ranking (base keyword/competitor discovery exists). | `FPV-DRONE-AERIAL-SEO-RANKED.md` |
+| 1 | **Athlete, freerunner, parkour performer, acrobat, stunt performance, coordinator and movement direction** | **DONE (research/recommendation only, 18 Nov 2026)**: sourced ranked industry names; 76 UK queries; four Trends windows; assessed ten imperfect UK desktop SERPs and verified industry/agency pages; exact proposed visible/search/backend changes. All site changes remain unimplemented, with GSC, live bookings and credential checks flagged. | [Final ranked report](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md) |
+| 2 | **FPV / drone / aerial cinematography** | **IN PROGRESS**, begun after athlete completion; base keyword/competitor discovery exists, provider-grade volume/Trends and full ranked chapter still required. | `FPV-DRONE-AERIAL-SEO-RANKED.md` |
 | 3 | **DoP, cinematography, camera, action camera, gimbal, DJI Ronin** | NOT STARTED quantitative ranking. | `CINEMATOGRAPHY-CAMERA-GIMBAL-SEO-RANKED.md` |
 | 4 | **Commercial filmmaking, branded films, music videos, small production** | NOT STARTED quantitative ranking. | `COMMERCIAL-FILMMAKING-SEO-RANKED.md` |
 | 5 | **Film and commercial editing, narrative editing, finishing** | NOT STARTED quantitative ranking. | `VIDEO-EDITING-SEO-RANKED.md` |
@@ -35,16 +35,19 @@ A service family can be marked **DONE** only after the report provides:
 | 8 | **Other directly verified specialties, e.g. underwater cinematography** | NOT STARTED; verify actual client offering and current scope. | `ADDITIONAL-VERIFIED-SERVICES-SEO-RANKED.md` |
 | 9 | **Whole-site final implementation strategy** | NOT STARTED; depends on completed chapters. | `WHOLE-SITE-SEO-PRIORITIZED-PLAN.md` |
 
-## Athlete inputs already collected
+## Athlete inputs already collected and finalized
 
-- [ATHLETE-RESEARCH-STATUS.md](ATHLETE-RESEARCH-STATUS.md): trustworthy status and preliminary signals.
+- [ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md): **COMPLETED athlete service naming and SEO recommendations (NOT APPLIED)**.
+- [ATHLETE-RESEARCH-STATUS.md](ATHLETE-RESEARCH-STATUS.md): legacy collection-era status; its PARTIAL flag describes the earlier stage and is superseded by this roadmap for current progress.
 - `athlete-data-raw-2026-11-18.json`: Google Ads volume for 76 UK terms, difficulty, intent; Trends five-year and 12-month.
 - `athlete-discovery-and-long-trends-2026-11-18.json`: long-history Trends, last three months; DataForSEO keyword ideas had HTTP 502 and did not complete.
 - `athlete-google-serp-2026-11-18.json`: ten UK desktop organic SERP attempts, with several incomplete results/Google redirect wrapping.
 - `ATHLETE-KEYWORD-METRICS-76.csv`: compact derived table.
 - [../ATHLETE.md](../ATHLETE.md) and the actual `athlete/index.html` source.
 
-**Next action:** Finish a properly ranked athlete industry-naming and hiring-SEO report from **existing raw data first**. Compare the names in the site's hero to the real work and observed buyer queries. Highlight active athlete and stunt-performer hireability, not simply coordinator authority. Validate important competitor SERPs as required. Give exact recommended visible hero/service labels, reasoned alternatives, metadata/content targets and a marked backend/search/visible action list. Save it to `ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md`, mark athlete DONE only when it meets the checklist.
+**Athlete research finished 18 Nov 2026:** [ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md](ATHLETE-INDUSTRY-NAMES-AND-SEO-RANKED.md). Final recommendations distinguish active on-camera performance from specialist coordination. A prior independent [athlete naming study](../ATHLETE-INDUSTRY-NAMING-SEO-RESEARCH-2026-11-18.md) is preserved as source evidence. **DONE means the research chapter and proposals are complete, not that changes are published or that Google indexing/leads are verified.**
+
+**Next action:** Begin family #2 **FPV / drone / aerial cinematography** using existing research (keyword taxonomy, competitor discovery and actual filmmaker page/service proof), collect family-specific UK organic difficulty and estimated volumes when accessible, compare Google Trends across the four agreed windows and relevant SERPs, then publish a ranked chapter. Do not begin family #3 before recording an evidence-based #2 decision and its unknowns.
 
 ## Research workflow, repeated per family
 
