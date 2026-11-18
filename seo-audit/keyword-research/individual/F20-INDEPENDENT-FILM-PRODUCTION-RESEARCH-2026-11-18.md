@@ -162,7 +162,7 @@ Link truthful case cards: **Sky Above (short film, DoP)**, **Dyla's Atelier (doc
 
 **GATED / NOT VERIFIED:** personally credited independent **Producer** roles and full production-company management; small-crew talent under contract; insurance/permits and legal entity; client booking/search conversion figures; exact volume/KD for five original seed variants; fresh live complete UK organic Google positions and GSC indexing; current production-company pricing. These gaps do not invalidate the user's actual independent **cinematography** work.
 
-**All original 30 research categories are now complete as **individual research verdicts** when F20 and master tracker are committed. This does **not** mean every proposed category is a currently proven personally advertised service, nor that the public site SEO has been implemented.**
+**All 30 original categories are complete as separate research verdicts** following the F20 and master-tracker commits. This does **not** mean every proposed category is a verified personally offered service, or that its website SEO has been implemented.
 
 ## 10. Evidence index
 
