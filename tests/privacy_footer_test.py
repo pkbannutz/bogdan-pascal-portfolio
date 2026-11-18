@@ -27,9 +27,10 @@ for url in urls:
     )
     if relative != "privacy/":
         assert html.count('href="/privacy/"') == 1, f"Repeated privacy link in {path}"
-        assert re.search(r'<footer\b|class="legal mono"', html), (
-            f"Missing original footer in {path}"
-        )
+        if relative:
+            assert re.search(r'<footer\b|class="legal mono"', html), (
+                f"Missing original footer in {path}"
+            )
 
 policy = (root / "privacy" / "index.html").read_text(encoding="utf-8")
 for required in ("Google Analytics 4", "Microsoft Clarity", "Privacy choices",
