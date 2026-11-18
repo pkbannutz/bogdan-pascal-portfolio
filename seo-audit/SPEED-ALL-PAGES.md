@@ -5,6 +5,10 @@
 **Result:** **Measured image-resource audit for all 35 public content pages, and full-scroll passes on all 23 film galleries.** This is not an official Lighthouse/PageSpeed/Core Web Vitals score.  
 **Code changes:** None.
 
+## Official PageSpeed Insights attempt
+
+A direct mobile `runPagespeed` API request for `https://bogdanpascal.com/filmmaker/` was attempted during this audit. Google returned **HTTP 429, daily API quota exceeded**, so **no official Lighthouse/PageSpeed score was obtained**. Do not interpret the browser's observed navigation duration or transferred bytes as a substitute. Future official reports require an available API quota/key or manual PageSpeed Insights run.
+
 ## How to read the measurements
 
 - **At load:** Image bytes observed in Chrome Resource Timing around the browser's page load event at an approximately **390 × 844 CSS-pixel mobile viewport**.
