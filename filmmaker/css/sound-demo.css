@@ -1,0 +1,36 @@
+/* Original Sound Design page only: real-stem video demonstration. */
+.sd-real-demo[hidden]{display:none!important}
+.sd-real-demo{display:grid;grid-template-columns:minmax(260px,.83fr) minmax(0,1.17fr);border:1px solid var(--edge);background:var(--panel);min-height:440px}
+.sd-real-stack{padding:22px 22px 18px;border-right:1px solid var(--edge);display:flex;flex-direction:column;min-width:0}
+.sd-real-head,.sd-real-foot,.sd-real-caption,.sd-real-status{font:700 10px/1.5 'Space Mono',ui-monospace,monospace;letter-spacing:.04em}
+.sd-real-head,.sd-real-caption{display:flex;gap:10px;justify-content:space-between}
+.sd-real-head{color:var(--muted)}
+.sd-real-head span:last-child{white-space:nowrap}
+.sd-real-intro{max-width:47ch;color:var(--muted);font-size:14px;line-height:1.5;margin:18px 0}
+.sd-real-tracks{display:grid;gap:8px;flex:1}
+.sd-real-track{display:grid;grid-template-columns:28px minmax(0,1fr) 14px;align-items:center;text-align:left;gap:12px;border:1px solid var(--edge);background:var(--bg);padding:12px;min-height:62px}
+.sd-real-track:hover{border-color:var(--accent)}
+.sd-real-track[aria-pressed=true]{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+.sd-real-no{font:700 10px 'Space Mono',monospace;opacity:.7}
+.sd-real-name{font-size:clamp(15px,1.5vw,21px);font-weight:800;line-height:1.15;letter-spacing:-.04em}
+.sd-real-name small{display:block;font:600 9px/1.5 'Space Mono',monospace;letter-spacing:0;margin-top:5px;opacity:.7}
+.sd-real-led{width:9px;height:9px;border-radius:50%;border:1px solid currentColor}
+.sd-real-track[aria-pressed=true] .sd-real-led{background:currentColor}
+.sd-real-foot{color:var(--muted);margin:18px 0 0;font-size:9px}
+.sd-real-screen{display:flex;flex-direction:column;min-width:0;padding:14px}
+.sd-real-video-wrap{position:relative;aspect-ratio:16/9;background:#090b09;overflow:hidden}
+.sd-real-video-wrap video{display:block;width:100%;height:100%;object-fit:contain;background:#090b09}
+.sd-real-overlay{position:absolute;inset:0;border:0;border-radius:0;display:flex;align-items:center;justify-content:center;gap:12px;flex-direction:column;color:#fff;background:linear-gradient(#0002,#0008);font:700 12px 'Space Mono',monospace;letter-spacing:.08em}
+.sd-real-overlay span{border:1px solid #fff;border-radius:50%;width:64px;height:64px;display:grid;place-items:center;font-size:25px;padding-left:4px;transition:transform .2s}
+.sd-real-overlay:hover{background:linear-gradient(#0001,#0007);color:#fff}
+.sd-real-overlay:hover span{transform:scale(1.07)}
+.sd-real-overlay[hidden]{display:none!important}
+.sd-real-controls{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;padding:13px 3px}
+.sd-real-play,.sd-real-mute{border:1px solid var(--edge);background:var(--bg);padding:9px 10px;font:700 10px 'Space Mono',monospace;white-space:nowrap}
+.sd-real-controls input[type=range]{width:100%;min-width:0;accent-color:var(--accent);cursor:pointer}
+.sd-real-caption{padding:10px 3px;color:var(--muted);border-top:1px solid var(--edge);font-size:9px;flex-wrap:wrap}
+.sd-real-caption span:first-child{color:var(--accent)}
+.sd-real-status{margin:auto 3px 4px;color:var(--muted);font-size:10px;font-weight:500}
+@media(max-width:780px){.sd-real-demo{grid-template-columns:1fr}.sd-real-stack{border-right:0;border-bottom:1px solid var(--edge)}.sd-real-screen{padding:10px}.sd-real-track{min-height:58px}.sd-real-intro{margin:12px 0}.sd-real-foot{margin:13px 0 0}}
+@media(max-width:560px){.sd-real-stack{padding:13px}.sd-real-head{font-size:9px}.sd-real-play,.sd-real-mute{font-size:9px;padding:8px 7px}.sd-real-controls{gap:7px}}
+@media(prefers-reduced-motion:reduce){.sd-real-demo *{transition:none!important}}
