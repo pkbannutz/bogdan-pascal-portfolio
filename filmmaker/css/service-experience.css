@@ -132,3 +132,22 @@
   .svc-post-grid .svc-service-card:last-child{grid-column:auto}
   .svc-phase-meta{font-size:9px}
 }
+
+/* DoP equipment panel: clear route to the complete, current in-house kit. */
+.svc-rig-copy .svc-rig-kit-button{
+  display:inline-flex;align-items:center;justify-content:space-between;gap:22px;
+  align-self:flex-start;min-height:47px;padding:13px 16px;
+  border:1px solid var(--accent);background:var(--accent);color:var(--ink);
+  font:700 11px/1.4 'Space Mono',ui-monospace,monospace;
+  letter-spacing:.05em;text-decoration:none;text-transform:uppercase;
+}
+.svc-rig-copy .svc-rig-kit-button:hover{
+  background:var(--text);border-color:var(--text);color:var(--bg);transform:translateY(-2px);
+}
+.svc-rig-kit-arrow{font-size:17px;line-height:1}
+@media(max-width:560px){
+  .svc-rig-copy .svc-rig-kit-button{align-self:stretch;width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+  .svc-rig-copy .svc-rig-kit-button:hover{transform:none}
+}
