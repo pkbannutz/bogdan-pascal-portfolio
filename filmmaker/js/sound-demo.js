@@ -196,11 +196,12 @@
 
   /* A track click is one gesture: switch instantly if already playing,
      or start from the current frame, resetting after the ending. */
-  async function startFromGesture() {
+  async function startFromGesture(preserveWaveformSeek = false) {
     if (!ready || busy) return;
     busy = true;
     try {
-      if (video.ended || video.currentTime >= mediaDuration() - .04) video.currentTime = 0;
+      // A deliberate waveform seek takes priority over replay-from-start.
+      if (!preserveWaveformSeek && (video.ended || video.currentTime >= mediaDuration() - .04)) video.currentTime = 0;
       video.muted = true;
       const resume = context.resume();
       const movie = video.play();
@@ -220,10 +221,24 @@
   }
 
   for (const button of buttons) {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', event => {
       const key = button.dataset.realStem;
+      const wave = event.target.closest('.sd-real-wave');
+      const isWaveformSeek = Boolean(wave);
+      if (wave) {
+        const rect = wave.getBoundingClientRect();
+        if (rect.width > 0) {
+          const fraction = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
+          const duration = mediaDuration();
+          // Stay slightly before the final frame so seeking to 100% remains playable.
+          video.currentTime = Math.max(0, Math.min(duration - .08, fraction * duration));
+          updatePlayhead();
+          updateUi();
+        }
+      }
       setTrack(key);
-      if (video.paused || video.ended) startFromGesture();
+      // Track labels resume from the current position. Waveform clicks also seek first.
+      if (video.paused || video.ended) startFromGesture(isWaveformSeek);
     });
   }
   overlay.addEventListener('click', togglePlay);
