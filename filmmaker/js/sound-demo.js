@@ -51,7 +51,6 @@
     loading = (async () => {
       status.textContent = 'LOADING SOUNDTRACKS / KEEP THIS TAB OPEN';
       context = new (window.AudioContext || window.webkitAudioContext)();
-      await context.resume();
       const files = await Promise.all(keys.map(async key => {
         const response = await fetch(base + sources[key], {mode:'cors'});
         if (!response.ok) throw Error('A soundtrack could not load (' + response.status + ')');
@@ -95,11 +94,14 @@
     if (!video.paused) {video.pause();return;}
     busy = true;
     try {
-      await prepare();
-      await context.resume();
+      if (!loading) { prepare().catch(() => {}); return; }
+      if (!keys.every(key => buffers[key])) { status.textContent = 'PREPARING THE AUDIO. TRY PLAY AGAIN IN A MOMENT.'; return; }
       if (video.ended || video.currentTime >= video.duration - .04) video.currentTime = 0;
       video.muted = true;
-      await video.play();
+      // Both requests happen in this user gesture for mobile browser playback policies.
+      const audioResume = context.resume();
+      const videoStart = video.play();
+      await Promise.all([audioResume, videoStart]);
     } catch (error) {status.textContent = 'PLAYBACK FAILED. CHECK YOUR CONNECTION AND TRY AGAIN.';}
     finally {busy = false;updateUi();}
   }
@@ -109,6 +111,9 @@
   video.addEventListener('seeking',() => {stopAudio();updateUi()});
   video.addEventListener('seeked',() => {if (!video.paused) startAudio();updateUi()});
   video.addEventListener('ratechange',() => {if (!video.paused) startAudio()});
+  video.addEventListener('waiting',stopAudio);
+  video.addEventListener('stalled',stopAudio);
+  video.addEventListener('playing',() => {if (context && keys.every(k => buffers[k]) && !Object.keys(playing).length) startAudio()});
   video.addEventListener('timeupdate',() => {
     if (context && Object.keys(playing).length && !video.paused) {
       const audioPosition = (context.currentTime - playStart) * video.playbackRate;
@@ -138,5 +143,6 @@
     const fallback = demo.nextElementSibling;
     if (fallback && fallback.classList.contains('sd-layer-room')) fallback.hidden = true;
     updateUi();
+    prepare().catch(() => {});
   }).catch(() => {});
 })();
