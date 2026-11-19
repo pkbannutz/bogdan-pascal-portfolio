@@ -38,8 +38,8 @@
 
 /* Recorded WAV waveform, selected track timeline and animated playhead. */
 .sd-real-track{grid-template-rows:auto 36px;min-height:99px;row-gap:8px;position:relative}
-.sd-real-wave{grid-column:2 / -1;grid-row:2;position:relative;display:block;min-width:0;width:100%;height:36px;overflow:visible;pointer-events:none}
-.sd-real-wave canvas{display:block;width:100%;height:36px}
+.sd-real-wave{grid-column:2 / -1;grid-row:2;position:relative;display:block;min-width:0;width:100%;height:36px;overflow:visible;pointer-events:auto;cursor:crosshair}
+.sd-real-wave canvas{display:block;width:100%;height:36px;pointer-events:none}
 .sd-real-playhead{position:absolute;top:0;bottom:0;left:0;width:2px;border-radius:2px;background:currentColor;opacity:0;transform:translateX(-1px);pointer-events:none;box-shadow:0 0 0 1px color-mix(in srgb, var(--bg) 45%, transparent)}
 .sd-real-track[aria-pressed=true] .sd-real-playhead{opacity:1}
 .sd-real-no,.sd-real-name,.sd-real-led{grid-row:1}
