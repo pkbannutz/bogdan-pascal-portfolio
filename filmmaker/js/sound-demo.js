@@ -224,8 +224,10 @@
     button.addEventListener('click', event => {
       const key = button.dataset.realStem;
       const wave = event.target.closest('.sd-real-wave');
-      const isWaveformSeek = Boolean(wave);
-      if (wave) {
+      // First click on a different track only selects it. A second click
+      // on that same track's waveform is what seeks the video.
+      const isWaveformSeek = Boolean(wave) && key === selected;
+      if (isWaveformSeek) {
         const rect = wave.getBoundingClientRect();
         if (rect.width > 0) {
           const fraction = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
@@ -237,7 +239,7 @@
         }
       }
       setTrack(key);
-      // Track labels resume from the current position. Waveform clicks also seek first.
+      // A newly selected track continues at the current frame; only a repeat waveform click seeks.
       if (video.paused || video.ended) startFromGesture(isWaveformSeek);
     });
   }
