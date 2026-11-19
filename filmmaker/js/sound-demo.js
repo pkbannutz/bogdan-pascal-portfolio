@@ -1,9 +1,9 @@
 /* Real film / stem switcher. The old explainer remains visible until R2 assets exist. */
 (() => {
   'use strict';
-  const base = 'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/sound-design/';
-  const sources = {all:'hotel-all.m4a',folley:'hotel-folley.m4a',vo:'hotel-vo.m4a',music:'hotel-music.m4a'};
-  const labels = {all:'FULL MIX',folley:'FOLEY & SFX',vo:'VOICEOVER',music:'MUSIC'};
+  const base = 'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/';
+  const sources = {"all":"SFX_ALL_16X9HOTEL_LONG_FINAL GRADE & SOUND-.wav","foley":"SFX_FOLLEY_16X9HOTEL_LONG_FINAL GRADE & SOUND-.wav","vo":"SFX_VO_16X9HOTEL_LONG_FINAL GRADE & SOUND-.wav","music":"SFX_MUSIC_16X9HOTEL_LONG_FINAL GRADE & SOUND-.wav"};
+  const labels = {all:'FULL MIX',foley:'FOLEY & SFX',vo:'VOICEOVER',music:'MUSIC'};
   const demo = document.getElementById('sd-real-demo');
   if (!demo) return;
   const video = document.getElementById('sd-real-video');
@@ -18,7 +18,6 @@
   const keys = Object.keys(sources);
   let context, gains = {}, buffers = {}, playing = {}, playStart = 0;
   let selected = 'all', silenced = false, loading, busy = false, isScrubbing = false;
-  let refreshTimeout;
   const formatTime = value => {
     const seconds = Math.max(0, Math.floor(Number.isFinite(value) ? value : 0));
     return String(Math.floor(seconds / 60)).padStart(2,'0') + ':' + String(seconds % 60).padStart(2,'0');
@@ -52,7 +51,7 @@
       status.textContent = 'LOADING SOUNDTRACKS / KEEP THIS TAB OPEN';
       context = new (window.AudioContext || window.webkitAudioContext)();
       const files = await Promise.all(keys.map(async key => {
-        const response = await fetch(base + sources[key], {mode:'cors'});
+        const response = await fetch(base + encodeURIComponent(sources[key]), {mode:'cors'});
         if (!response.ok) throw Error('A soundtrack could not load (' + response.status + ')');
         const bytes = await response.arrayBuffer();
         return [key,await context.decodeAudioData(bytes)];
@@ -135,8 +134,8 @@
     if (document.hidden && !video.paused) video.pause();
   });
   // Never replace the working original explainer unless every asset is published.
-  Promise.all(['hotel-film.mp4','hotel-poster.jpg',...Object.values(sources)].map(async filename => {
-    const response = await fetch(base + filename, {method:'HEAD',mode:'cors',cache:'no-store'});
+  Promise.all(["16X9HOTEL_LONG_FINAL GRADE & SOUND-.mp4",...Object.values(sources)].map(async filename => {
+    const response = await fetch(base + encodeURIComponent(filename), {method:'HEAD',mode:'cors',cache:'no-store'});
     if (!response.ok) throw Error('Media pending: ' + filename);
   })).then(() => {
     demo.hidden = false;
