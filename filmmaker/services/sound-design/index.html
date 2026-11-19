@@ -15,7 +15,7 @@
   <script src="/filmmaker/js/theme.js"></script>
   <link rel="stylesheet" href="/filmmaker/css/folio.css">
   <link rel="stylesheet" href="/filmmaker/css/sound.css">
-  <link rel="stylesheet" href="/filmmaker/css/sound-demo.css?v=20261119">
+  <link rel="stylesheet" href="/filmmaker/css/sound-demo.css?v=20261119c">
 </head>
 <body>
   <header class="mast">
@@ -75,14 +75,15 @@
       <div class="sd-real-demo" id="sd-real-demo" hidden aria-label="Interactive synchronized film soundtrack">
         <div class="sd-real-stack">
           <div class="sd-real-head"><span>TUI ROMANIA | EGYPT | JAZ ELITE ASTERIA HOTEL</span><span id="sd-real-time">00:00 / 00:52</span></div>
-          <p class="sd-real-intro">Play the film, then select any track. Picture keeps running while the sound changes at the same moment.</p>
+          <p class="sd-real-intro">Select a layer to play the film. Switch at any moment without stopping the picture.</p>
           <div class="sd-real-tracks" role="group" aria-label="Choose the soundtrack to hear">
-            <button type="button" class="sd-real-track" data-real-stem="all" aria-pressed="true"><span class="sd-real-no">01</span><span class="sd-real-name">ALL<small>COMPLETE SOUNDTRACK</small></span><span class="sd-real-led" aria-hidden="true"></span></button>
-            <button type="button" class="sd-real-track" data-real-stem="foley" aria-pressed="false"><span class="sd-real-no">02</span><span class="sd-real-name">FOLEY<small>MOVEMENT / TEXTURE / EFFECTS</small></span><span class="sd-real-led" aria-hidden="true"></span></button>
-            <button type="button" class="sd-real-track" data-real-stem="vo" aria-pressed="false"><span class="sd-real-no">03</span><span class="sd-real-name">VO<small>VOICEOVER / STORY</small></span><span class="sd-real-led" aria-hidden="true"></span></button>
-            <button type="button" class="sd-real-track" data-real-stem="music" aria-pressed="false"><span class="sd-real-no">04</span><span class="sd-real-name">MUSIC<small>RHYTHM / EMOTION</small></span><span class="sd-real-led" aria-hidden="true"></span></button>
+            <button type="button" class="sd-real-track" data-real-stem="all" aria-pressed="true"><span class="sd-real-no">01</span><span class="sd-real-name">ALL<small>COMPLETE SOUNDTRACK</small></span><span class="sd-real-led" aria-hidden="true"></span><span class="sd-real-wave" aria-hidden="true"><canvas data-sd-wave="all"></canvas><span class="sd-real-playhead"></span></span></button>
+            <button type="button" class="sd-real-track" data-real-stem="foley" aria-pressed="false"><span class="sd-real-no">02</span><span class="sd-real-name">FOLEY<small>MOVEMENT / TEXTURE / EFFECTS</small></span><span class="sd-real-led" aria-hidden="true"></span><span class="sd-real-wave" aria-hidden="true"><canvas data-sd-wave="foley"></canvas><span class="sd-real-playhead"></span></span></button>
+            <button type="button" class="sd-real-track" data-real-stem="foleyvo" aria-pressed="false"><span class="sd-real-no">03</span><span class="sd-real-name">FOLEY + VO<small>EFFECTS / VOICE COMBINED</small></span><span class="sd-real-led" aria-hidden="true"></span><span class="sd-real-wave" aria-hidden="true"><canvas data-sd-wave="foleyvo"></canvas><span class="sd-real-playhead"></span></span></button>
+            <button type="button" class="sd-real-track" data-real-stem="vo" aria-pressed="false"><span class="sd-real-no">04</span><span class="sd-real-name">VO<small>VOICEOVER / STORY</small></span><span class="sd-real-led" aria-hidden="true"></span><span class="sd-real-wave" aria-hidden="true"><canvas data-sd-wave="vo"></canvas><span class="sd-real-playhead"></span></span></button>
+            <button type="button" class="sd-real-track" data-real-stem="music" aria-pressed="false"><span class="sd-real-no">05</span><span class="sd-real-name">MUSIC<small>RHYTHM / EMOTION</small></span><span class="sd-real-led" aria-hidden="true"></span><span class="sd-real-wave" aria-hidden="true"><canvas data-sd-wave="music"></canvas><span class="sd-real-playhead"></span></span></button>
           </div>
-          <p class="sd-real-foot">ONE TIMELINE / FOUR ISOLATED SOUNDTRACKS / SWITCH WITHOUT RESTARTING</p>
+          <p class="sd-real-foot">ONE TIMELINE / FIVE REAL SOUNDTRACKS / SWITCH WITHOUT RESTARTING</p>
         </div>
         <div class="sd-real-screen">
           <div class="sd-real-video-wrap">
@@ -182,6 +183,6 @@
   </main>
   <script src="/filmmaker/js/studio.js"></script>
   <script src="/filmmaker/js/sound.js"></script>
-  <script src="/filmmaker/js/sound-demo.js?v=20261119"></script>
+  <script src="/filmmaker/js/sound-demo.js?v=20261119c"></script>
 </body>
 </html>
