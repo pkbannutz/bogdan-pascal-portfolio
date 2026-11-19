@@ -133,24 +133,6 @@
   .svc-phase-meta{font-size:9px}
 }
 
-/* DoP equipment panel: clear route to the complete, current in-house kit. */
-.svc-rig-copy .svc-rig-kit-button{
-  display:inline-flex;align-items:center;justify-content:space-between;gap:22px;
-  align-self:flex-start;min-height:47px;padding:13px 16px;
-  border:1px solid var(--accent);background:var(--accent);color:var(--ink);
-  font:700 11px/1.4 'Space Mono',ui-monospace,monospace;
-  letter-spacing:.05em;text-decoration:none;text-transform:uppercase;
-}
-.svc-rig-copy .svc-rig-kit-button:hover{
-  background:var(--text);border-color:var(--text);color:var(--bg);transform:translateY(-2px);
-}
-.svc-rig-kit-arrow{font-size:17px;line-height:1}
-@media(max-width:560px){
-  .svc-rig-copy .svc-rig-kit-button{align-self:stretch;width:100%}
-}
-@media(prefers-reduced-motion:reduce){
-  .svc-rig-copy .svc-rig-kit-button:hover{transform:none}
-}
 
 /* DoP selected gear marquee, joined flush to the camera package above. */
 #onset-kit .svc-kit-marquee{position:relative;margin-top:-1px;border:1px solid var(--edge);background:var(--panel);padding:9px 0;overflow:hidden}
@@ -171,3 +153,17 @@
 @media(max-width:680px){#onset-kit .svc-kit-tile{width:134px;height:134px;padding:8px}#onset-kit .svc-kit-tile strong{font-size:10px;min-height:24px}}
 @media(hover:none),(pointer:coarse){#onset-kit .svc-kit-marquee-viewport.is-rolling{overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:thin}#onset-kit .svc-kit-marquee-viewport.is-rolling .svc-kit-marquee-track{animation:none}#onset-kit .svc-kit-marquee-set.is-copy{display:none}#onset-kit .svc-kit-tile{scroll-snap-align:start}}
 @media(prefers-reduced-motion:reduce){#onset-kit .svc-kit-marquee-viewport.is-rolling{overflow-x:auto;scrollbar-width:thin}#onset-kit .svc-kit-marquee-viewport.is-rolling .svc-kit-marquee-track{animation:none}#onset-kit .svc-kit-marquee-set.is-copy{display:none}#onset-kit .svc-kit-tile img{transition:none}}
+
+/* Full-width kit CTA sits directly below the selected equipment ticker. */
+#onset-kit .svc-kit-full-width{
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  width:100%;min-height:67px;margin-top:-1px;padding:19px clamp(20px,3vw,38px);
+  background:var(--accent);border:1px solid var(--accent);color:var(--ink);
+  font:700 12px/1.4 'Space Mono',ui-monospace,monospace;
+  letter-spacing:.075em;text-transform:uppercase;text-decoration:none;
+}
+#onset-kit .svc-kit-full-width:hover{background:var(--text);border-color:var(--text);color:var(--bg)}
+#onset-kit .svc-kit-full-width-arrow{font-size:23px;line-height:1;transition:transform .22s ease}
+#onset-kit .svc-kit-full-width:hover .svc-kit-full-width-arrow{transform:translate(3px,-3px)}
+@media(max-width:680px){#onset-kit .svc-kit-full-width{min-height:58px;padding:16px 19px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){#onset-kit .svc-kit-full-width-arrow{transition:none}#onset-kit .svc-kit-full-width:hover .svc-kit-full-width-arrow{transform:none}}
