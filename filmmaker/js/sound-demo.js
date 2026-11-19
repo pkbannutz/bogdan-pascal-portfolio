@@ -3,7 +3,7 @@
   'use strict';
   const base = 'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/';
   const sources = {"all":"SFX_ALL_16X9HOTEL_LONG_FINAL GRADE & SOUND-.wav","foley":"SFX_FOLLEY_16X9HOTEL_LONG_FINAL GRADE & SOUND-.wav","vo":"SFX_VO_16X9HOTEL_LONG_FINAL GRADE & SOUND-.wav","music":"SFX_MUSIC_16X9HOTEL_LONG_FINAL GRADE & SOUND-.wav"};
-  const labels = {all:'FULL MIX',foley:'FOLEY & SFX',vo:'VOICEOVER',music:'MUSIC'};
+  const labels = {all:'ALL',foley:'FOLEY',vo:'VO',music:'MUSIC'};
   const demo = document.getElementById('sd-real-demo');
   if (!demo) return;
   const video = document.getElementById('sd-real-video');
