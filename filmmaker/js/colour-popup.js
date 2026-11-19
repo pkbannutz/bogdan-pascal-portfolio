@@ -1,7 +1,7 @@
-/* Colour Grading V3 preview only: launch the active project in a lightweight film dialog. */
+/* Colour Grading: launch the selected project film in a compact popup. */
 (() => {
   'use strict';
-  const openButton = document.querySelector('.cg .v3-watch-selected');
+  const openButton = document.querySelector('.cg .cg-watch-selected');
   if (!openButton) return;
 
   // Media details match the originals used by the film viewer.
@@ -15,20 +15,20 @@
   };
 
   const dialog = document.createElement('dialog');
-  dialog.className = 'v3-watch-dialog';
+  dialog.className = 'cg-watch-dialog';
   dialog.setAttribute('aria-label', 'Selected colour grading film');
   dialog.innerHTML = `
-    <div class="v3-watch-head">
-      <div><span>SELECTED FILM</span><h2 id="v3-watch-title"></h2></div>
-      <button type="button" class="v3-watch-close" aria-label="Close film viewer">CLOSE ×</button>
+    <div class="cg-watch-head">
+      <div><span>SELECTED FILM</span><h2 id="cg-watch-title"></h2></div>
+      <button type="button" class="cg-watch-close" aria-label="Close film viewer">CLOSE ×</button>
     </div>
-    <div class="v3-watch-media" aria-label="Film player"></div>
-    <div class="v3-watch-foot"><span>FINISHED FILM / COLOUR GRADING</span><a href="/filmmaker/work/geodome/" class="v3-watch-project">VIEW FULL PROJECT ↗</a></div>`;
+    <div class="cg-watch-media" aria-label="Film player"></div>
+    <div class="cg-watch-foot"><span>FINISHED FILM / COLOUR GRADING</span><a href="/filmmaker/work/geodome/" class="cg-watch-project">VIEW FULL PROJECT ↗</a></div>`;
   document.body.appendChild(dialog);
-  const media = dialog.querySelector('.v3-watch-media');
-  const filmTitle = dialog.querySelector('#v3-watch-title');
-  const filmLink = dialog.querySelector('.v3-watch-project');
-  const closeButton = dialog.querySelector('.v3-watch-close');
+  const media = dialog.querySelector('.cg-watch-media');
+  const filmTitle = dialog.querySelector('#cg-watch-title');
+  const filmLink = dialog.querySelector('.cg-watch-project');
+  const closeButton = dialog.querySelector('.cg-watch-close');
 
   function clearMedia() {
     const video = media.querySelector('video');

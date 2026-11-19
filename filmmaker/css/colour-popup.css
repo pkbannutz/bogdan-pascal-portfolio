@@ -1,0 +1,33 @@
+/* Selected film popup for the Colour Grading portfolio. */
+.cg-frame-actions{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;
+  margin-top:26px;padding:24px 0 0;border-top:1px solid var(--edge)}
+.cg-frame-actions span{font-size:13px;line-height:1.6;color:var(--muted)}
+.cg-watch-selected{padding:14px 20px;background:var(--text);color:var(--bg);
+  border:1px solid var(--text);font:700 12px/1.4 'Space Mono',ui-monospace,monospace;
+  letter-spacing:.045em;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.cg-watch-selected:hover,.cg-watch-selected:focus-visible{background:#d7ff3a;color:#10130d;border-color:#d7ff3a}
+.cg-watch-dialog{position:fixed;inset:0;margin:auto;
+  width:min(960px,calc(100% - 30px));max-width:960px;max-height:90svh;
+  box-sizing:border-box;padding:clamp(14px,2.4vw,26px);
+  border:1px solid #52584b;background:#10130f;color:#f3f4ea;
+  box-shadow:0 20px 80px #000a;overflow:auto}
+.cg-watch-dialog::backdrop{background:rgba(0,0,0,.86);backdrop-filter:blur(7px)}
+.cg-watch-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:16px}
+.cg-watch-head span,.cg-watch-foot span{display:block;color:#a4aa99;
+  font:700 11px/1.5 'Space Mono',ui-monospace,monospace;letter-spacing:.09em}
+.cg-watch-head h2{margin:8px 0 0;font-size:clamp(17px,2.5vw,28px);
+  line-height:1.2;letter-spacing:-.045em;color:#f3f4ea}
+.cg-watch-close,.cg-watch-project{flex-shrink:0;border:1px solid #636c5d;
+  background:transparent;color:#fff;padding:11px 15px;text-decoration:none;
+  font:700 11px/1.4 'Space Mono',ui-monospace,monospace;cursor:pointer}
+.cg-watch-close:hover,.cg-watch-project:hover{border-color:#d7ff3a;color:#d7ff3a}
+.cg-watch-media{position:relative;width:100%;aspect-ratio:16/9;background:#020302;overflow:hidden}
+.cg-watch-media video,.cg-watch-media iframe{display:block;width:100%;height:100%;border:0}
+.cg-watch-foot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:16px}
+@media(max-width:600px){
+.cg-frame-actions{align-items:flex-start}
+ .cg-watch-dialog{width:calc(100% - 16px);padding:10px;max-height:94svh}
+ .cg-watch-close{padding:9px}
+ .cg-watch-head h2{font-size:18px}
+ .cg-watch-foot{align-items:flex-start}
+}

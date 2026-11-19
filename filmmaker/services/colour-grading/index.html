@@ -16,6 +16,7 @@
   <script src="/filmmaker/js/theme.js"></script>
   <link rel="stylesheet" href="/filmmaker/css/folio.css">
   <link rel="stylesheet" href="/filmmaker/css/colour.css">
+  <link rel="stylesheet" href="/filmmaker/css/colour-popup.css?v=main-20261119">
 </head>
 <body>
   <header class="mast">
@@ -54,25 +55,12 @@
     <div class="cg-stripe">
       <nav class="cg-mono" aria-label="Colour grading page sections">
         <a href="#frames">01 / THE FRAMES</a>
-        <a href="#motion">02 / THE FILMS</a>
+        <a href="#watch-selected-film">02 / THE FILMS</a>
         <a href="#approach">03 / THE APPROACH</a>
         <a href="#brief">04 / THE BRIEF</a>
       </nav>
       <span class="cg-mono">THE LOOK IS NEVER AN AFTERTHOUGHT</span>
-    </div>
-
-    <section class="cg-intro" aria-labelledby="cg-intro-title">
-      <div>
-        <span class="cg-kicker">THE INTENTION</span>
-        <h2 id="cg-intro-title">MORE<br>THAN A<br><em>LOOK.</em></h2>
-      </div>
-      <div class="cg-intro-copy">
-        <p>A change in contrast can alter a mood. A shift in colour can make a moment feel warmer, quieter or more uncertain.</p>
-        <p>For me, grading starts with the intention of the film. I balance the images, develop the palette and carry that feeling consistently through the edit. The goal is a world that feels considered, not a collection of individually beautiful shots.</p>
-      </div>
-    </section>
-
-    <section class="cg-section" id="frames" aria-labelledby="cg-frames-title">
+    </div><section class="cg-section" id="frames" aria-labelledby="cg-frames-title">
       <div class="cg-section-top">
         <div>
           <span class="cg-kicker">01 / SELECTED COLOUR GRADING WORK</span>
@@ -140,39 +128,12 @@
         <a class="cg-archive-card" href="/filmmaker/work/particle/"><img src="/assets/filmmaker/particle/01.jpg" alt="Particle film frame" loading="lazy"><span><small>05 / COMMERCIAL</small>PARTICLE</span></a>
         <a class="cg-archive-card" href="/filmmaker/work/leo/"><img src="/assets/filmmaker/leo/01.jpg" alt="Dear Leo film frame" loading="lazy"><span><small>06 / ONLINE CONTENT</small>DEAR LEO</span></a>
       </div>
-      <p class="cg-work-note">All six featured projects were colour graded by Bogdan Pascal. Visit the individual project pages for complete production credits.</p>
-    </section>
-
-
-    <section class="cg-section cg-motion" id="motion" aria-label="Watch the selected film">
-      <div class="cg-motion-stage">
-        <div class="cg-motion-media">
-          <video id="cg-film-player" controls playsinline preload="metadata" poster="/assets/filmmaker/geodome/t.jpg">
-            <source src="https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/geodome-main.mp4" type="video/mp4">
-            Your browser does not support video playback.
-          </video>
-          <iframe id="cg-film-embed" hidden title="Selected project film" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
-        <div class="cg-motion-controls">
-          <div><span class="cg-kicker">VIEWING ROOM / LINKED TO SELECTED PROJECT</span><h3 id="cg-film-title" aria-live="polite">GeoDomeX / Hers by Day, His by Night</h3></div>
-          <div class="cg-film-choices" role="group" aria-label="Choose a film to watch">
-            <button type="button" data-cg-film="geodome" aria-pressed="true">01 / GEODOMEX</button>
-            <button type="button" data-cg-film="therme" aria-pressed="false">02 / THERME</button>
-            <button type="button" data-cg-film="dyla" aria-pressed="false">03 / DYLA&#39;S ATELIER</button>
-            <button type="button" data-cg-film="push" aria-pressed="false">04 / SPEEDO</button>
-            <button type="button" data-cg-film="particle" aria-pressed="false">05 / PARTICLE</button>
-            <button type="button" data-cg-film="leo" aria-pressed="false">06 / DEAR LEO</button>
-          </div>
-          <a id="cg-film-link" href="/filmmaker/work/geodome/">VIEW PROJECT ↗</a>
-        </div>
+      <div class="cg-frame-actions">
+        <button type="button" id="watch-selected-film" class="cg-watch-selected" aria-haspopup="dialog">WATCH SELECTED FILM ↗</button>
+        <span>Watch the selected project without leaving the frame explorer.</span>
       </div>
-      <p class="cg-work-note">These featured films were colour graded by Bogdan Pascal. Each project page lists the full production team.</p>
     </section>
 
-    <section class="cg-statement" aria-label="Grading philosophy">
-      <span class="cg-kicker">LESS PRESET. MORE PURPOSE.</span>
-      <blockquote>GOOD COLOUR IS<br><em>FELT</em> BEFORE<br>IT'S NOTICED.</blockquote>
-    </section>
 
     <section class="cg-section" id="approach" aria-labelledby="cg-approach-title">
       <div class="cg-section-top">
@@ -236,5 +197,5 @@
   </dialog>
   <script src="/filmmaker/js/studio.js"></script>
   <script src="/filmmaker/js/colour.js"></script>
-</body>
+  <script src="/filmmaker/js/colour-popup.js?v=main-20261119"></script></body>
 </html>
