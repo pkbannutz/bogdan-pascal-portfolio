@@ -18,7 +18,7 @@ This directory contains unlisted, directly accessible preview pages. All origina
 4. FPV: preserve flight lab, show 2 of 4 films initially with an expand option, remove repeat process and statement sections.
 5. Editing: reduce to hero, one film browser, brief approach, interactive Format Lab, real RawPot versions and CTA.
 6. Colour Grading: keep frame explorer/contact sheet; show film on demand in a dialog; remove duplicate viewer, additional philosophy and briefing sections.
-7. Sound Design: keep interactive layer explorer, selected film player and CTA; remove repeat four-part explanation and oversized slogan.
+7. Sound Design: V2 draft retired on 19 November 2026. The approved original page remains at `/filmmaker/services/sound-design/`; V2 service navigation links there directly.
 8. Equipment and About: preserve content.
 9. Contact: remove duplicated footer invitation.
 
