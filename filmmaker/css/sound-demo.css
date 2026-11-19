@@ -35,3 +35,14 @@
 @media(max-width:780px){.sd-real-demo{grid-template-columns:1fr}.sd-real-stack{border-right:0;border-bottom:1px solid var(--edge)}.sd-real-screen{padding:10px}.sd-real-track{min-height:58px}.sd-real-intro{margin:12px 0}.sd-real-foot{margin:13px 0 0}}
 @media(max-width:560px){.sd-real-stack{padding:13px}.sd-real-head{font-size:9px}.sd-real-play,.sd-real-mute{font-size:9px;padding:8px 7px}.sd-real-controls{gap:7px}}
 @media(prefers-reduced-motion:reduce){.sd-real-demo *{transition:none!important}}
+
+/* Recorded WAV waveform, selected track timeline and animated playhead. */
+.sd-real-track{grid-template-rows:auto 36px;min-height:99px;row-gap:8px;position:relative}
+.sd-real-wave{grid-column:2 / -1;grid-row:2;position:relative;display:block;min-width:0;width:100%;height:36px;overflow:visible;pointer-events:none}
+.sd-real-wave canvas{display:block;width:100%;height:36px}
+.sd-real-playhead{position:absolute;top:0;bottom:0;left:0;width:2px;border-radius:2px;background:currentColor;opacity:0;transform:translateX(-1px);pointer-events:none;box-shadow:0 0 0 1px color-mix(in srgb, var(--bg) 45%, transparent)}
+.sd-real-track[aria-pressed=true] .sd-real-playhead{opacity:1}
+.sd-real-no,.sd-real-name,.sd-real-led{grid-row:1}
+.sd-real-track[aria-pressed=true] .sd-real-wave{color:var(--ink)}
+.sd-real-track:focus-visible{outline-offset:2px}
+@media(max-width:560px){.sd-real-track{min-height:92px;grid-template-rows:auto 30px;row-gap:5px}.sd-real-wave,.sd-real-wave canvas{height:30px}}
