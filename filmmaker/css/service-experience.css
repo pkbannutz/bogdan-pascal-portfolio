@@ -141,10 +141,11 @@
 #onset-kit .svc-kit-marquee-set{display:flex;gap:6px;padding-right:6px;flex:none}
 #onset-kit .svc-kit-tile{width:106px;height:106px;flex:none;display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:3px;padding:6px;background:var(--bg);border:1px solid var(--edge);color:var(--text);text-decoration:none}
 #onset-kit .svc-kit-tile-type{font:700 8px/1.1 'Space Mono',ui-monospace,monospace;letter-spacing:.07em;color:var(--muted)}
-#onset-kit .svc-kit-tile img{width:100%;height:100%;min-height:0;object-fit:contain;filter:none;transition:transform .35s ease}
+#onset-kit .svc-kit-tile-media{display:block;position:relative;min-width:0;min-height:0;width:100%;height:100%;overflow:hidden}
+#onset-kit .svc-kit-tile-media img{display:block;width:100%;height:100%;min-height:0;object-fit:contain;filter:none;transform-origin:center center;scale:1;transition:scale .35s ease}
 #onset-kit .svc-kit-tile strong{font:700 9px/1.15 'Space Grotesk',sans-serif;letter-spacing:-.02em;min-height:21px;display:flex;align-items:end}
 #onset-kit .svc-kit-tile:hover{border-color:var(--accent);color:var(--text);background:var(--panel)}
-#onset-kit .svc-kit-tile:hover img{transform:scale(1.07)}
+#onset-kit .svc-kit-tile:hover .svc-kit-tile-media img{scale:1.035}
 #onset-kit .svc-kit-marquee-viewport.is-rolling{overflow-x:hidden;scrollbar-width:none}
 #onset-kit .svc-kit-marquee-viewport.is-rolling .svc-kit-marquee-track{animation:svc-kit-travel 63s linear infinite}
 #onset-kit .svc-kit-marquee-viewport.is-rolling:hover .svc-kit-marquee-track,
@@ -152,7 +153,7 @@
 @keyframes svc-kit-travel{to{transform:translateX(-50%)}}
 @media(max-width:680px){#onset-kit .svc-kit-tile{width:94px;height:94px;padding:5px}#onset-kit .svc-kit-tile strong{font-size:9px;min-height:20px}}
 @media(hover:none),(pointer:coarse){#onset-kit .svc-kit-marquee-viewport.is-rolling{overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:thin}#onset-kit .svc-kit-marquee-viewport.is-rolling .svc-kit-marquee-track{animation:none}#onset-kit .svc-kit-marquee-set.is-copy{display:none}#onset-kit .svc-kit-tile{scroll-snap-align:start}}
-@media(prefers-reduced-motion:reduce){#onset-kit .svc-kit-marquee-viewport.is-rolling{overflow-x:auto;scrollbar-width:thin}#onset-kit .svc-kit-marquee-viewport.is-rolling .svc-kit-marquee-track{animation:none}#onset-kit .svc-kit-marquee-set.is-copy{display:none}#onset-kit .svc-kit-tile img{transition:none}}
+@media(prefers-reduced-motion:reduce){#onset-kit .svc-kit-marquee-viewport.is-rolling{overflow-x:auto;scrollbar-width:thin}#onset-kit .svc-kit-marquee-viewport.is-rolling .svc-kit-marquee-track{animation:none}#onset-kit .svc-kit-marquee-set.is-copy{display:none}#onset-kit .svc-kit-tile-media img{transition:none;scale:1}}
 
 /* Full-width kit CTA sits directly below the selected equipment ticker. */
 #onset-kit .svc-kit-full-width{
