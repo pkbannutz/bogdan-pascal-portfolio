@@ -1,4 +1,5 @@
 /* Original Sound Design page only: real-stem video demonstration. */
+.sd-layer-room[hidden]{display:none!important}
 .sd-real-demo[hidden]{display:none!important}
 .sd-real-demo{display:grid;grid-template-columns:minmax(260px,.83fr) minmax(0,1.17fr);border:1px solid var(--edge);background:var(--panel);min-height:440px}
 .sd-real-stack{padding:22px 22px 18px;border-right:1px solid var(--edge);display:flex;flex-direction:column;min-width:0}
