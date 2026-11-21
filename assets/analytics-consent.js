@@ -88,8 +88,7 @@
   function initialize() {
     var style = document.createElement("style");
     style.textContent = [
-      "#bp-privacy-open{position:fixed;bottom:12px;left:12px;z-index:2147483646;padding:7px 10px;border:1px solid #bcbcbc;border-radius:7px;background:#fff;color:#111;font:12px/1.2 system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 12px #0002}",
-      "#bp-privacy-box{position:fixed;bottom:54px;left:12px;z-index:2147483647;width:min(410px,calc(100vw - 24px));padding:18px;background:#fff;color:#111;border:1px solid #ddd;border-radius:12px;box-shadow:0 6px 30px #0003;font:14px/1.5 system-ui,sans-serif}",
+      "#bp-privacy-box{position:fixed;bottom:12px;left:12px;z-index:2147483647;width:min(410px,calc(100vw - 24px));padding:18px;background:#fff;color:#111;border:1px solid #ddd;border-radius:12px;box-shadow:0 6px 30px #0003;font:14px/1.5 system-ui,sans-serif}",
       "#bp-privacy-box h2{margin:0 0 7px;font:bold 16px/1.3 system-ui,sans-serif;color:#111;letter-spacing:normal;text-transform:none}",
       "#bp-privacy-box p{margin:0 0 12px;color:#333;font:13px/1.5 system-ui,sans-serif}",
       "#bp-privacy-box .bp-option{display:flex;gap:9px;align-items:flex-start;margin:12px 0;font:13px/1.4 system-ui,sans-serif;color:#111}",
@@ -100,16 +99,9 @@
       "#bp-privacy-save{background:#111;color:#fff}",
       "#bp-privacy-all,#bp-privacy-decline{background:#fff;color:#111}",
       "#bp-privacy-status{display:block;margin-top:7px;color:#af2525;font:12px/1.4 system-ui,sans-serif}",
-      "@media (max-width:950px),(hover:none) and (pointer:coarse){#bp-privacy-open{display:none!important}#bp-privacy-box{bottom:max(12px,env(safe-area-inset-bottom,12px));max-height:calc(100dvh - 24px);overflow-y:auto}}"
+      "@media (max-width:950px),(hover:none) and (pointer:coarse){#bp-privacy-box{bottom:max(12px,env(safe-area-inset-bottom,12px));max-height:calc(100dvh - 24px);overflow-y:auto}}"
     ].join("\n");
     document.head.appendChild(style);
-
-    var opener = document.createElement("button");
-    opener.type = "button";
-    opener.id = "bp-privacy-open";
-    opener.textContent = "Privacy choices";
-    opener.setAttribute("aria-label", "Review website tracking preferences");
-    document.body.appendChild(opener);
 
     var box = document.createElement("section");
     box.id = "bp-privacy-box";
@@ -177,8 +169,6 @@
     box.querySelector("#bp-privacy-decline").addEventListener("click", function () {
       choose(false, false);
     });
-    opener.addEventListener("click", showChoices);
-
     // All published page footers offer this persistent, non-floating way to
     // review, change or withdraw consent, including after declining tracking.
     if (typeof document.addEventListener === "function") {
