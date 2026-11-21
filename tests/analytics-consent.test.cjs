@@ -14,6 +14,7 @@ function harness(initial = {}) {
   const body = [];
   const allElements = [];
   let reloads = 0;
+  const documentListeners = {};
 
   function element(tag) {
     const controls = {};
@@ -62,7 +63,8 @@ function harness(initial = {}) {
     body: bodyEl,
     cookie: "",
     createElement: element,
-    querySelectorAll() { return allElements; }
+    querySelectorAll() { return allElements; },
+    addEventListener(name, cb) { documentListeners[name] = cb; }
   };
   const location = { hostname: "bogdanpascal.com", reload() { reloads++; } };
   const localStorage = {
@@ -80,7 +82,12 @@ function harness(initial = {}) {
       const pane = body.find(child => child.id === "bp-privacy-box") || banner;
       pane.querySelector("#" + id).listeners.click();
     },
-    show: () => privacy.listeners.click()
+    show: () => privacy.listeners.click(),
+    clickFooterSettings: () => {
+      const listener = documentListeners.click;
+      assert.equal(typeof listener, "function", "footer cookie control must be available");
+      listener({target:{closest(selector){return selector === "[data-bp-consent-open]" ? {} : null;}},preventDefault(){}});
+    }
   };
 }
 
@@ -154,4 +161,17 @@ test("declining both never installs tracking and records both refusals", () => {
   assert.equal(h.values.get(GA), "no");
   assert.equal(h.values.get(CL), "no");
   assert.equal(h.scripts().length, 0);
+});
+
+
+test("footer cookie settings reopens consent after accepting or declining", () => {
+  for (const decision of ["bp-privacy-all", "bp-privacy-decline"]) {
+    const h = harness();
+    h.click(decision);
+    assert.equal(h.banner, undefined);
+    h.clickFooterSettings();
+    assert.ok(h.banner);
+    assert.equal(h.banner.querySelector("#bp-consent-ga").checked, decision === "bp-privacy-all");
+    assert.equal(h.banner.querySelector("#bp-consent-clarity").checked, decision === "bp-privacy-all");
+  }
 });
