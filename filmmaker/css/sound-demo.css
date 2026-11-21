@@ -299,3 +299,22 @@
   .sd-real-topbar { padding: 8px 10px; }
   .sd-real-topbar .sd-real-intro { font-size: 10px; }
 }
+
+/* Header labels follow their corresponding panels on every screen size. */
+@media (min-width: 951px) {
+  .sd-real-topbar .sd-real-intro { grid-column: 1; grid-row: 1; }
+  .sd-real-topbar .sd-real-head { grid-column: 2; grid-row: 1; }
+}
+@media (min-width: 621px) and (max-width: 950px) and (orientation: landscape) {
+  .sd-real-topbar { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); }
+  .sd-real-topbar .sd-real-intro { grid-column: 1; grid-row: 1; }
+  .sd-real-topbar .sd-real-head { grid-column: 2; grid-row: 1; }
+}
+@media (max-width: 780px) and (orientation: portrait) {
+  .sd-real-topbar .sd-real-head { order: 0; }
+  .sd-real-video-wrap { order: 1; }
+  .sd-real-controls { order: 2; }
+  .sd-real-caption { order: 3; }
+  .sd-real-topbar .sd-real-intro { order: 4; margin: 5px 0 6px; }
+  .sd-real-tracks { order: 5; }
+}
