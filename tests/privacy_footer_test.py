@@ -22,7 +22,7 @@ for url in urls:
     assert 'href="/privacy/"' in html or (
         relative == "privacy/" and 'href="https://bogdanpascal.com/privacy/"' in html
     ), f"Missing policy link in {path}"
-    assert '<script defer src="/assets/analytics-consent.js?v=20261121-privacy-footer"></script>' in html, (
+    assert '<script defer src="/assets/analytics-consent.js?v=20261121-no-floating-pill"></script>' in html, (
         f"Missing analytics/Clarity consent on {path}"
     )
     assert 'data-bp-consent-open' in html, f"Missing cookie settings control in {path}"
