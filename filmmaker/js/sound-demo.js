@@ -2,7 +2,6 @@
 (() => {
   'use strict';
   const base = 'https://pub-3547ec32a0d34f27b0847acdf37e296f.r2.dev/';
-  const filmFile = '16X9HOTEL_LONG_FINAL GRADE & SOUND-.mp4';
   const sources = {
     all: 'SFX_ALL_16X9HOTEL_LONG_FINAL GRADE & SOUND-.wav',
     foley: 'SFX_FOLLEY_16X9HOTEL_LONG_FINAL GRADE & SOUND-.wav',
@@ -139,7 +138,6 @@
     if (loadPromise) return loadPromise;
     loadPromise = (async () => {
       status.textContent = 'LOADING REAL SOUNDTRACKS AND WAVEFORMS';
-      updateUi();
       const AudioContextType = window.AudioContext || window.webkitAudioContext;
       if (!AudioContextType) throw Error('Web Audio unavailable');
       context = new AudioContextType();
@@ -166,7 +164,8 @@
     })().catch(error => {
       loadPromise = undefined;
       ready = false;
-      status.textContent = 'A SOUNDTRACK COULD NOT LOAD. PLEASE REFRESH.';
+      status.textContent = 'A SOUNDTRACK COULD NOT LOAD. SELECT PLAY TO RETRY.';
+      updateUi();
       throw error;
     });
     return loadPromise;
@@ -318,5 +317,7 @@
   // No HEAD requests or obsolete layer explorer can hide it on a slow network.
   updateUi();
   prepare().catch(() => {});
+  // loadPromise has been assigned: display loading rather than retry on first render.
+  updateUi();
 
 })();
