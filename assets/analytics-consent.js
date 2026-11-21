@@ -99,7 +99,8 @@
       "#bp-privacy-box button{padding:10px 13px;border:1px solid #111;border-radius:6px;font:600 12px/1.2 system-ui,sans-serif;cursor:pointer}",
       "#bp-privacy-save{background:#111;color:#fff}",
       "#bp-privacy-all,#bp-privacy-decline{background:#fff;color:#111}",
-      "#bp-privacy-status{display:block;margin-top:7px;color:#af2525;font:12px/1.4 system-ui,sans-serif}"
+      "#bp-privacy-status{display:block;margin-top:7px;color:#af2525;font:12px/1.4 system-ui,sans-serif}",
+      "@media (max-width:950px),(hover:none) and (pointer:coarse){#bp-privacy-open{display:none!important}#bp-privacy-box{bottom:max(12px,env(safe-area-inset-bottom,12px));max-height:calc(100dvh - 24px);overflow-y:auto}}"
     ].join("\n");
     document.head.appendChild(style);
 
@@ -177,6 +178,19 @@
       choose(false, false);
     });
     opener.addEventListener("click", showChoices);
+
+    // All published page footers offer this persistent, non-floating way to
+    // review, change or withdraw consent, including after declining tracking.
+    if (typeof document.addEventListener === "function") {
+      document.addEventListener("click", function (event) {
+        var target = event.target;
+        var settingsButton = target && typeof target.closest === "function"
+          ? target.closest("[data-bp-consent-open]") : null;
+        if (!settingsButton) return;
+        event.preventDefault();
+        showChoices();
+      });
+    }
 
     var ga = readChoice(GA_KEY);
     var clarity = readChoice(CLARITY_KEY);
