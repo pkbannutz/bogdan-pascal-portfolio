@@ -231,3 +231,71 @@
     border-color: var(--edge);
   }
 }
+
+/* Desktop: common soundtrack header and five equal rows beside the film. */
+.sd-real-topbar {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, .83fr) minmax(0, 1.17fr);
+  align-items: center;
+  column-gap: 28px;
+  border-bottom: 1px solid var(--edge);
+  padding: 13px 17px;
+  min-width: 0;
+}
+.sd-real-topbar .sd-real-head {
+  gap: 7px 18px;
+  min-width: 0;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+.sd-real-topbar .sd-real-head span:first-child {
+  flex: 1 1 210px;
+  min-width: 0;
+}
+.sd-real-topbar .sd-real-head span:last-child { margin-left: auto; }
+.sd-real-topbar .sd-real-intro {
+  max-width: 66ch;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+@media (min-width: 951px) {
+  .sd-real-stack { align-self: start; padding: 12px 14px 11px; }
+  .sd-real-tracks { flex: none; gap: 6px; }
+  .sd-real-track {
+    min-height: 76px;
+    grid-template-rows: auto 25px;
+    row-gap: 4px;
+    padding: 7px 10px;
+    gap: 5px 10px;
+  }
+  .sd-real-name { font-size: clamp(14px, 1.4vw, 18px); }
+  .sd-real-name small { font-size: 9px; margin-top: 3px; }
+  .sd-real-wave, .sd-real-wave canvas { height: 25px; }
+  .sd-real-foot { margin-top: 10px; font-size: 9px; }
+  .sd-real-screen { padding: 12px; }
+  .sd-real-status { margin: 8px 3px 4px; }
+}
+
+@media (max-width: 950px) {
+  .sd-real-topbar {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 7px;
+    padding: 11px 12px;
+  }
+  .sd-real-topbar .sd-real-head { font-size: 9px; }
+  .sd-real-topbar .sd-real-intro { max-width: 80ch; font-size: 11px; }
+}
+
+@media (max-width: 780px) and (orientation: portrait) {
+  .sd-real-topbar { display: contents; }
+  .sd-real-topbar .sd-real-head { order: 0; }
+  .sd-real-topbar .sd-real-intro { order: 1; }
+}
+
+@media (min-width: 621px) and (max-width: 950px) and (orientation: landscape) {
+  .sd-real-topbar { padding: 8px 10px; }
+  .sd-real-topbar .sd-real-intro { font-size: 10px; }
+}
