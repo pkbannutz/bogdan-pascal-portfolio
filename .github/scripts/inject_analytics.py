@@ -11,7 +11,7 @@ import re
 import sys
 
 SITE_HOST = "bogdanpascal.com"
-INCLUDE = '<script defer src="/assets/analytics-consent.js?v=20261121-privacy-footer"></script>'
+INCLUDE = '<script defer src="/assets/analytics-consent.js?v=20261121-no-floating-pill"></script>'
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
 
