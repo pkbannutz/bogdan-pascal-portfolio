@@ -15,7 +15,7 @@
   <script src="/filmmaker/js/theme.js"></script>
   <link rel="stylesheet" href="/filmmaker/css/folio.css">
   <link rel="stylesheet" href="/filmmaker/css/sound.css">
-  <link rel="stylesheet" href="/filmmaker/css/sound-demo.css?v=20261121-mobile2">
+  <link rel="stylesheet" href="/filmmaker/css/sound-demo.css?v=20261121-no-legacy">
 </head>
 <body>
   <header class="mast">
@@ -68,11 +68,11 @@
     <section class="sd-section sd-anatomy" id="anatomy" aria-labelledby="sd-anatomy-title">
       <div class="sd-section-heading">
         <div><span class="sd-label">01 / THE ANATOMY OF A SOUNDTRACK</span><h2 id="sd-anatomy-title">THE ART OF<br><em>THE LAYERS.</em></h2></div>
-        <p>What sounds effortless on screen is often built one detail at a time. Select a layer to explore what it contributes to the story.</p>
+        <p>What sounds effortless on screen is built one detail at a time. Select a layer to hear how it shapes the film.</p>
       </div>
       
-      <!-- The real-stem demo appears only when every R2 media file is available. -->
-      <div class="sd-real-demo" id="sd-real-demo" hidden aria-label="Interactive synchronized film soundtrack">
+      <!-- The real video and synchronized audio player is the only sound-layer interface. -->
+      <div class="sd-real-demo" id="sd-real-demo" aria-label="Interactive synchronized film soundtrack">
         <div class="sd-real-stack">
           <div class="sd-real-head"><span>TUI ROMANIA | EGYPT | JAZ ELITE ASTERIA HOTEL</span><span id="sd-real-time">00:00 / 00:52</span></div>
           <p class="sd-real-intro">Select a layer to play from the current moment. Once selected, click its waveform to move forward or back.</p>
@@ -96,30 +96,10 @@
             <button type="button" class="sd-real-mute" id="sd-real-mute" aria-label="Mute soundtrack">SOUND ON</button>
           </div>
           <div class="sd-real-caption"><span id="sd-real-active">NOW HEARING / ALL</span><span>HEADPHONES RECOMMENDED</span></div>
-          <p class="sd-real-status" id="sd-real-status" role="status" aria-live="polite">Select play to explore the original sound layers.</p>
+          <p class="sd-real-status" id="sd-real-status" role="status" aria-live="polite">Preparing the real sound layers and waveforms.</p>
         </div>
       </div>
-      <div class="sd-layer-room">
-        <div class="sd-layer-stack">
-          <div class="sd-layer-timeline"><span>SESSION / LAYERS</span><span>00:00 <span aria-hidden="true">────────</span> 00:12</span></div>
-          <div class="sd-layer-tracks" role="group" aria-label="Explore sound design layers">
-            <button type="button" class="sd-track" data-sd-layer="voice" aria-pressed="true"><span class="sd-track-id">01</span><span class="sd-track-name">VOICE<small>CLARITY / EMOTION</small></span><span class="sd-track-wave" aria-hidden="true"></span><span class="sd-track-plus" aria-hidden="true">↗</span></button>
-            <button type="button" class="sd-track" data-sd-layer="foley" aria-pressed="false"><span class="sd-track-id">02</span><span class="sd-track-name">FOLEY &amp; SFX<small>MOVEMENT / IMPACT</small></span><span class="sd-track-wave" aria-hidden="true"></span><span class="sd-track-plus" aria-hidden="true">↗</span></button>
-            <button type="button" class="sd-track" data-sd-layer="world" aria-pressed="false"><span class="sd-track-id">03</span><span class="sd-track-name">THE WORLD<small>ATMOSPHERE / DETAIL</small></span><span class="sd-track-wave" aria-hidden="true"></span><span class="sd-track-plus" aria-hidden="true">↗</span></button>
-            <button type="button" class="sd-track" data-sd-layer="space" aria-pressed="false"><span class="sd-track-id">04</span><span class="sd-track-name">SPACE &amp; MIX<small>DEPTH / BALANCE</small></span><span class="sd-track-wave" aria-hidden="true"></span><span class="sd-track-plus" aria-hidden="true">↗</span></button>
-          </div>
-          <p class="sd-layer-footnote">INTERACTIVE EXPLAINER / SOUND LAYERS IN CONTEXT</p>
-        </div>
-        <div class="sd-layer-detail" aria-live="polite" aria-atomic="true">
-          <span class="sd-label" id="sd-layer-index">01 / THE HUMAN ELEMENT</span>
-          <div class="sd-layer-orbit" aria-hidden="true"><span class="sd-orbit-one"></span><span class="sd-orbit-two"></span><span class="sd-orbit-three"></span><span class="sd-orbit-dot"></span></div>
-          <div class="sd-layer-detail-copy">
-            <h3 id="sd-layer-title">MAKE EVERY<br>WORD LAND.</h3>
-            <p id="sd-layer-desc">The quietest part of a film can carry the most meaning. Dialogue cleanup, consistent tone and careful placement keep the voice natural and the story clear.</p>
-            <span class="sd-layer-tag" id="sd-layer-tags">DIALOGUE EDIT / NOISE CONTROL / PRESENCE</span>
-          </div>
-        </div>
-      </div>
+
     </section>
 
     <section class="sd-banner" aria-label="Sound design statement">
@@ -183,6 +163,6 @@
   </main>
   <script src="/filmmaker/js/studio.js"></script>
   <script src="/filmmaker/js/sound.js"></script>
-  <script src="/filmmaker/js/sound-demo.js?v=20261119e"></script>
+  <script src="/filmmaker/js/sound-demo.js?v=20261121-no-legacy"></script>
 </body>
 </html>
