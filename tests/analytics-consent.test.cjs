@@ -73,16 +73,14 @@ function harness(initial = {}) {
   };
   const window = {};
   vm.runInNewContext(source, { document, location, localStorage, window, Date }, { timeout: 1000 });
-  const privacy = body.find(child => child.id === "bp-privacy-open");
   return {
-    values, window, get banner() { return body.find(child => child.id === "bp-privacy-box"); }, privacy, input, head, body,
+    values, window, get banner() { return body.find(child => child.id === "bp-privacy-box"); }, input, head, body,
     scripts: () => head.filter(child => child.src).map(child => child.src),
     reloadCount: () => reloads,
     click: (id) => {
       const pane = body.find(child => child.id === "bp-privacy-box") || banner;
       pane.querySelector("#" + id).listeners.click();
     },
-    show: () => privacy.listeners.click(),
     clickFooterSettings: () => {
       const listener = documentListeners.click;
       assert.equal(typeof listener, "function", "footer cookie control must be available");
@@ -144,7 +142,7 @@ test("Clarity permission is separate from Google Analytics", () => {
 test("withdrawing recording consent revokes Clarity and reloads", () => {
   const h = harness({ [GA]: "yes", [CL]: "yes" });
   assert.equal(h.scripts().some(url => url.includes("clarity.ms")), true);
-  h.show();
+  h.clickFooterSettings();
   h.banner.querySelector("#bp-consent-clarity").checked = false;
   h.click("bp-privacy-save");
   assert.equal(h.values.get(GA), "yes");
@@ -174,4 +172,12 @@ test("footer cookie settings reopens consent after accepting or declining", () =
     assert.equal(h.banner.querySelector("#bp-consent-ga").checked, decision === "bp-privacy-all");
     assert.equal(h.banner.querySelector("#bp-consent-clarity").checked, decision === "bp-privacy-all");
   }
+});
+
+
+test("no floating Privacy choices pill is inserted on any device", () => {
+  const h = harness({ [GA]: "yes", [CL]: "yes" });
+  assert.equal(h.body.some(child => child.id === "bp-privacy-open"), false);
+  h.clickFooterSettings();
+  assert.ok(h.banner);
 });
