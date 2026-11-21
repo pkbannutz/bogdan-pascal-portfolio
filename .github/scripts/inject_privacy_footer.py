@@ -13,6 +13,7 @@ import sys
 SITE_HOST = "bogdanpascal.com"
 POLICY_PATH = "/privacy/"
 LINK = '<a class="bp-footer-privacy" href="/privacy/">Privacy Policy</a>'
+COOKIE_LINK = '<button class="bp-footer-consent" type="button" data-bp-consent-open>Cookie settings</button>'
 STYLE = (
     "<style>"
     ".bp-footer-privacy{color:inherit;font:inherit;text-decoration:none;"
@@ -26,6 +27,16 @@ STYLE = (
     "text-decoration:none;white-space:nowrap}"
     ".bp-home-privacy:hover,.bp-home-privacy:focus-visible{"
     "text-decoration:underline}"
+    ".bp-home-privacy{display:flex;align-items:center;gap:10px}"
+    ".bp-home-privacy a{color:inherit;text-decoration:none}"
+    ".bp-home-privacy button{font:inherit;color:inherit;background:none;"
+    "border:0;padding:0;cursor:pointer}"
+    ".bp-home-privacy button:hover,.bp-home-privacy button:focus-visible,"
+    ".bp-home-privacy a:hover,.bp-home-privacy a:focus-visible{text-decoration:underline}"
+    ".bp-footer-consent{display:inline;padding:0;border:0;background:none;"
+    "color:inherit;font:inherit;opacity:.82;cursor:pointer}"
+    ".bp-footer-consent:hover,.bp-footer-consent:focus-visible{"
+    "text-decoration:underline;opacity:1}"
     "</style>"
 )
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
@@ -35,14 +46,17 @@ def add_in_existing_footer(html: str, route: str) -> str:
     if route == "/":
         # The split-screen landing page has no footer. Add only a tiny legal
         # link, without adding another footer bar or altering its split layout.
-        home_link = '<a class="bp-home-privacy" href="/privacy/">Privacy Policy</a>'
+        home_link = ('<nav class="bp-home-privacy" aria-label="Privacy links">'
+                     '<a href="/privacy/">Privacy Policy</a>'
+                     '<button type="button" data-bp-consent-open>Cookie settings</button>'
+                     '</nav>')
         return re.sub(r"</body\s*>", home_link + "\n</body>", html,
                       count=1, flags=re.IGNORECASE)
 
     # Athlete page: insert into its existing footer links row.
     if 'class="footer-links"' in html:
         return html.replace('<div class="footer-links">',
-                            '<div class="footer-links">' + LINK, 1)
+                            '<div class="footer-links">' + LINK + ' · ' + COOKIE_LINK, 1)
 
     # Filmmaker pages: place link in their existing small legal line, not in
     # the larger "Let's shoot" call to action.
@@ -57,7 +71,7 @@ def add_in_existing_footer(html: str, route: str) -> str:
         close = section.rfind("</span>")
         if close == -1:
             raise ValueError("Cannot find filmmaker legal footer text")
-        updated = section[:close] + " &nbsp;·&nbsp; " + LINK + section[close:]
+        updated = section[:close] + " &nbsp;·&nbsp; " + LINK + " &nbsp;·&nbsp; " + COOKIE_LINK + section[close:]
         return html[:match.start()] + updated + html[match.end():]
 
     # Service and equipment pages already have a compact single-line footer.
@@ -72,7 +86,7 @@ def add_in_existing_footer(html: str, route: str) -> str:
         close = section.find("</span>")
         if close < 0:
             raise ValueError(f"Cannot find text in {footer_class} footer")
-        section = section[:close] + " · " + LINK + section[close:]
+        section = section[:close] + " · " + LINK + " · " + COOKIE_LINK + section[close:]
         return html[:match.start()] + section + html[match.end():]
 
     # Bespoke service pages have their own styled footer classes
@@ -87,7 +101,7 @@ def add_in_existing_footer(html: str, route: str) -> str:
         close = section.find("</span>")
         if close < 0:
             raise ValueError(f"No text span inside footer for: {route}")
-        section = section[:close] + " · " + LINK + section[close:]
+        section = section[:close] + " · " + LINK + " · " + COOKIE_LINK + section[close:]
         return html[:match.start()] + section + html[match.end():]
 
     raise ValueError(f"No recognised existing footer for: {route}")
