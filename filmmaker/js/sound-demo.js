@@ -44,7 +44,9 @@
     const running = !video.paused && !video.ended;
     play.textContent = running ? 'PAUSE' : 'PLAY';
     overlay.hidden = running;
-    overlay.querySelector('strong').textContent = video.ended ? 'REPLAY THE FILM' : 'PLAY THE FILM';
+    overlay.querySelector('strong').textContent = !ready
+      ? (loadPromise ? 'LOADING SOUNDTRACKS' : 'RETRY SOUNDTRACKS')
+      : (video.ended ? 'REPLAY THE FILM' : 'PLAY THE FILM');
     mute.textContent = silenced ? 'SOUND OFF' : 'SOUND ON';
     mute.setAttribute('aria-pressed', String(silenced));
   }
@@ -136,7 +138,8 @@
   async function prepare() {
     if (loadPromise) return loadPromise;
     loadPromise = (async () => {
-      status.textContent = 'PREPARING THE REAL WAVEFORMS AND SOUNDTRACKS';
+      status.textContent = 'LOADING REAL SOUNDTRACKS AND WAVEFORMS';
+      updateUi();
       const AudioContextType = window.AudioContext || window.webkitAudioContext;
       if (!AudioContextType) throw Error('Web Audio unavailable');
       context = new AudioContextType();
@@ -157,6 +160,9 @@
       }
       ready = true;
       status.textContent = 'SELECT ANY LAYER TO START. SWITCH AT ANY TIME.';
+      updateUi();
+      redrawAll();
+      updatePlayhead();
     })().catch(error => {
       loadPromise = undefined;
       ready = false;
@@ -197,7 +203,15 @@
   /* A track click is one gesture: switch instantly if already playing,
      or start from the current frame, resetting after the ending. */
   async function startFromGesture(preserveWaveformSeek = false) {
-    if (!ready || busy) return;
+    if (busy) return;
+    if (!ready) {
+      status.textContent = loadPromise
+        ? 'SOUNDTRACKS ARE LOADING. PLAY WILL BE AVAILABLE WHEN READY.'
+        : 'RETRYING SOUNDTRACKS. PLEASE SELECT PLAY WHEN READY.';
+      if (!loadPromise) prepare().catch(() => {});
+      updateUi();
+      return;
+    }
     busy = true;
     try {
       // A deliberate waveform seek takes priority over replay-from-start.
@@ -300,18 +314,9 @@
   window.addEventListener('resize', redrawAll);
   new MutationObserver(redrawAll).observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
 
-  /* Keep the original explainer until every Cloudflare asset has loaded and decoded.
-     No broken media player is shown to visitors on a slow or interrupted connection. */
-  Promise.all([filmFile, ...Object.values(sources)].map(async filename => {
-    const response = await fetch(fileUrl(filename), {method: 'HEAD', mode: 'cors', cache: 'no-store'});
-    if (!response.ok) throw Error('Media pending: ' + filename);
-  })).then(async () => {
-    await prepare();
-    demo.hidden = false;
-    const fallback = demo.nextElementSibling;
-    if (fallback && fallback.classList.contains('sd-layer-room')) fallback.hidden = true;
-    updateUi();
-    redrawAll();
-    updatePlayhead();
-  }).catch(() => {});
+  // The player is visible from initial HTML render. Load real audio in place.
+  // No HEAD requests or obsolete layer explorer can hide it on a slow network.
+  updateUi();
+  prepare().catch(() => {});
+
 })();
