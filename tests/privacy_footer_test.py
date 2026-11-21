@@ -22,9 +22,10 @@ for url in urls:
     assert 'href="/privacy/"' in html or (
         relative == "privacy/" and 'href="https://bogdanpascal.com/privacy/"' in html
     ), f"Missing policy link in {path}"
-    assert '<script defer src="/assets/analytics-consent.js"></script>' in html, (
+    assert '<script defer src="/assets/analytics-consent.js?v=20261121-privacy-footer"></script>' in html, (
         f"Missing analytics/Clarity consent on {path}"
     )
+    assert 'data-bp-consent-open' in html, f"Missing cookie settings control in {path}"
     if relative != "privacy/":
         assert html.count('href="/privacy/"') == 1, f"Repeated privacy link in {path}"
         if relative:
@@ -33,7 +34,7 @@ for url in urls:
             )
 
 policy = (root / "privacy" / "index.html").read_text(encoding="utf-8")
-for required in ("Google Analytics 4", "Microsoft Clarity", "Privacy choices",
+for required in ("Google Analytics 4", "Microsoft Clarity", "Cookie settings",
                  "GitHub Pages", "hello@bogdanpascal.com"):
     assert required in policy, f"Privacy policy missing {required}"
 
